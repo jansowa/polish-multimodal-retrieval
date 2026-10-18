@@ -1,0 +1,63 @@
+{
+  "scope": "First 22 completed pairs, read-only snapshot; not a representative quality estimate for the whole dataset.",
+  "ids": [
+    "MSCOCO_t2i:12",
+    "MSCOCO_t2i:5",
+    "MSCOCO_t2i:24",
+    "MSCOCO_t2i:32",
+    "MSCOCO_t2i:40",
+    "MSCOCO_t2i:64",
+    "MSCOCO_t2i:66",
+    "MSCOCO_t2i:75",
+    "MSCOCO_t2i:87",
+    "MSCOCO_t2i:4",
+    "MSCOCO_t2i:90",
+    "MSCOCO_t2i:92",
+    "MSCOCO_t2i:96",
+    "MSCOCO_t2i:120",
+    "MSCOCO_t2i:94",
+    "MSCOCO_t2i:131",
+    "MSCOCO_t2i:134",
+    "MSCOCO_t2i:138",
+    "MSCOCO_t2i:147",
+    "MSCOCO_t2i:137",
+    "MSCOCO_t2i:149",
+    "MSCOCO_t2i:165"
+  ],
+  "review_changes": {
+    "MSCOCO_t2i:24": {
+      "semantic": "improved",
+      "language": "unchanged",
+      "note": "Restores lined up as w rzedzie; relevant spatial arrangement."
+    },
+    "MSCOCO_t2i:4": {
+      "semantic": "improved",
+      "language": "unchanged",
+      "note": "Corrects hill side from mountain slope to hill slope."
+    },
+    "MSCOCO_t2i:137": {
+      "semantic": "unchanged",
+      "language": "improved",
+      "note": "Corrects leciace spelling to lecace; no object or relation change."
+    },
+    "MSCOCO_t2i:75": {
+      "semantic": "unchanged",
+      "language": "neutral",
+      "note": "Paraphrase na nim to na wierzchu; no retrieval-relevant improvement."
+    }
+  },
+  "counts": {
+    "completed": 22,
+    "unchanged": 18,
+    "changed": 4,
+    "semantic_improvements": 2,
+    "language_only_improvements": 1,
+    "neutral_rewrites": 1,
+    "observed_review_regressions": 0
+  },
+  "remaining_issues": {
+    "MSCOCO_t2i:64": "na sygnale swietlnym is an incorrect rendering of at a stop light; not flagged.",
+    "MSCOCO_t2i:40": "down a street rendered w dol ulicy adds an unsupported downhill reading; not flagged.",
+    "MSCOCO_t2i:149": "zywia sie drzewami is over-literal and less clear than feeding from trees; not flagged."
+  }
+}

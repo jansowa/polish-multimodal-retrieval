@@ -1,0 +1,20 @@
+{
+  "run_name": "qwen3.8-27b-absence-extension-v3b",
+  "datasets": {
+    "sugarcrepe_continuation": {
+      "completed": 40,
+      "expected": 40,
+      "failures": {}
+    },
+    "mbeir_mscoco": {
+      "completed": 40,
+      "expected": 40,
+      "failures": {}
+    },
+    "mbeir_visualnews": {
+      "completed": 40,
+      "expected": 40,
+      "failures": {}
+    }
+  }
+}

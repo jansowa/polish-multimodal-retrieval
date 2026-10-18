@@ -1,0 +1,11 @@
+{
+  "state": "complete",
+  "updated_at": "2026-10-17T12:32:22.031343+00:00",
+  "worker_pid": 37448,
+  "full_run": "qwen3.8-27b-full-v2-single",
+  "full": {
+    "completed": 1000,
+    "failures": 0
+  },
+  "exit_code": 0
+}

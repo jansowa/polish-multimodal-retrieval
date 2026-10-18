@@ -1,0 +1,31 @@
+{
+  "groups": {
+    "diagnostic": {
+      "completed": 20,
+      "changed": 9,
+      "flagged": 4
+    },
+    "random": {
+      "completed": 79,
+      "changed": 16,
+      "flagged": 4
+    }
+  },
+  "stages": {
+    "draft": {
+      "mean_seconds": 5.8,
+      "tokens": 137130
+    },
+    "review": {
+      "mean_seconds": 16.53,
+      "tokens": 229379
+    }
+  },
+  "failures": [
+    [
+      "MSCOCO_t2i:746",
+      "TranslationError: TranslationError: Model returned empty content (finish_reason='length')",
+      2
+    ]
+  ]
+}

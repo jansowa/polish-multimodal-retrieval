@@ -1,0 +1,17 @@
+.env
+.venv/
+.venv-windows/
+__pycache__/
+*.pyc
+.cache/
+outputs/
+dist/
+*.egg-info/
+.pytest_cache/
+reviewer/*.sqlite3*
+reviewer/image_index.json
+reviewer/image_index.tmp
+*.log
+*.lock
+combined-ca.pem
+benchmark/results/

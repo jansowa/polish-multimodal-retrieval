@@ -1,0 +1,8 @@
+[wsl2]
+memory=32GB
+swap=16GB
+networkingMode=mirrored
+dnsTunneling=true
+
+[experimental]
+autoMemoryReclaim=dropcache

@@ -1,0 +1,35 @@
+{
+  "run_name": "qwen3.8-27b-absence-v3b-single",
+  "datasets": {
+    "sugarcrepe": {
+      "completed": 40,
+      "expected": 40,
+      "failures": {}
+    },
+    "cirr": {
+      "completed": 40,
+      "expected": 40,
+      "failures": {}
+    },
+    "fashioniq": {
+      "completed": 40,
+      "expected": 40,
+      "failures": {}
+    },
+    "refcoco": {
+      "completed": 40,
+      "expected": 40,
+      "failures": {}
+    },
+    "aro_visual_relation": {
+      "completed": 40,
+      "expected": 40,
+      "failures": {}
+    },
+    "aro_visual_attribution": {
+      "completed": 40,
+      "expected": 40,
+      "failures": {}
+    }
+  }
+}

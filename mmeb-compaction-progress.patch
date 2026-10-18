@@ -1,0 +1,468 @@
+diff --git a/README.md b/README.md
+index 81f931b..d163247 100644
+--- a/README.md
++++ b/README.md
+@@ -200,3 +200,10 @@ If multiple text fields form a semantic contrast, keep them in the same record a
+ ## Licenses / gated datasets
+ 
+ The code does not bypass dataset terms. Some Hugging Face datasets (notably Winoground) can require accepting their license or authenticating with `HF_TOKEN`. Put your token in `.env` when needed.
++
++
++### MMEB repeated-candidate compaction and progress
++
++For MMEB retrieval rows, repeated candidate text values are compacted inside a single benchmark example before the API request and expanded back after translation. This avoids asking the model to emit the same translated instruction hundreds of times while preserving the original output list length/order. Examples are never mixed across requests.
++
++For datasets with a known size (MMEB: 1000 examples), the runner displays completed/total, failures in the current run, requests in flight, throughput, and ETA. `BATCH_SIZE` remains the maximum number of concurrent one-example requests.
+diff --git a/src/pl_mmb_translate/openai_translator.py b/src/pl_mmb_translate/openai_translator.py
+index 42a6e89..ccbe33f 100644
+--- a/src/pl_mmb_translate/openai_translator.py
++++ b/src/pl_mmb_translate/openai_translator.py
+@@ -69,6 +69,109 @@ def _validate_same_shape(source: JsonText, translated: Any, path: str = "texts")
+     )
+ 
+ 
++def _compact_json_text(value: JsonText) -> tuple[JsonText, Any]:
++    """Compact repeated string lists before sending them to the model.
++
++    MMEB retrieval rows can contain hundreds/thousands of candidate entries whose text is
++    identical (for example ``<|image_1|>\\nRepresent the given image.`` for image-only
++    candidates). Asking the model to emit the same translation hundreds of times wastes
++    output tokens and can truncate otherwise valid JSON.
++
++    The returned expansion spec is local-only metadata. The model still sees one logical
++    benchmark example, and the original list length/order is restored after translation.
++    """
++    if isinstance(value, str):
++        return value, None
++
++    if isinstance(value, dict):
++        compacted: dict[str, JsonText] = {}
++        specs: dict[str, Any] = {}
++        changed = False
++        for key, child in value.items():
++            compact_child, child_spec = _compact_json_text(child)
++            compacted[key] = compact_child
++            specs[key] = child_spec
++            changed = changed or child_spec is not None
++        return compacted, {"kind": "dict", "children": specs} if changed else None
++
++    if isinstance(value, list):
++        # The important MMEB case: long candidate lists with identical/repeated strings.
++        if all(isinstance(item, str) for item in value):
++            unique: list[str] = []
++            positions: dict[str, int] = {}
++            indices: list[int] = []
++            for item in value:
++                idx = positions.get(item)
++                if idx is None:
++                    idx = len(unique)
++                    positions[item] = idx
++                    unique.append(item)
++                indices.append(idx)
++            if len(unique) < len(value):
++                return unique, {
++                    "kind": "dedupe_string_list",
++                    "indices": indices,
++                    "original_len": len(value),
++                }
++            return value, None
++
++        compacted_list: list[JsonText] = []
++        child_specs: list[Any] = []
++        changed = False
++        for child in value:
++            compact_child, child_spec = _compact_json_text(child)
++            compacted_list.append(compact_child)
++            child_specs.append(child_spec)
++            changed = changed or child_spec is not None
++        return (
++            compacted_list,
++            {"kind": "list", "children": child_specs} if changed else None,
++        )
++
++    raise TranslationError(f"Unsupported source text type: {type(value).__name__}")
++
++
++def _expand_json_text(value: JsonText, spec: Any) -> JsonText:
++    if spec is None:
++        return value
++
++    kind = spec.get("kind")
++    if kind == "dedupe_string_list":
++        if not isinstance(value, list):
++            raise TranslationError("Compacted translation is not a list")
++        indices = spec["indices"]
++        try:
++            return [value[index] for index in indices]
++        except (IndexError, TypeError) as exc:
++            raise TranslationError("Model changed compacted list shape") from exc
++
++    if kind == "dict":
++        if not isinstance(value, dict):
++            raise TranslationError("Compacted translation is not an object")
++        return {
++            key: _expand_json_text(value[key], child_spec)
++            for key, child_spec in spec["children"].items()
++        }
++
++    if kind == "list":
++        if not isinstance(value, list) or len(value) != len(spec["children"]):
++            raise TranslationError("Model changed compacted nested-list shape")
++        return [
++            _expand_json_text(child, child_spec)
++            for child, child_spec in zip(value, spec["children"], strict=True)
++        ]
++
++    raise TranslationError(f"Unknown expansion spec: {kind!r}")
++
++
++def _compact_texts(texts: dict[str, JsonText]) -> tuple[dict[str, JsonText], dict[str, Any]]:
++    compacted: dict[str, JsonText] = {}
++    specs: dict[str, Any] = {}
++    for key, value in texts.items():
++        compacted[key], specs[key] = _compact_json_text(value)
++    return compacted, specs
++
++
+ def _exception_chain(exc: BaseException) -> str:
+     parts: list[str] = []
+     current: BaseException | None = exc
+@@ -95,9 +198,12 @@ class OpenAITranslator:
+     async def close(self) -> None:
+         await self.client.close()
+ 
+-    def _build_content(self, unit: TranslationUnit, with_image: bool) -> list[dict[str, Any]]:
++    def _build_content(
++        self, unit: TranslationUnit, texts_for_model: dict[str, JsonText], with_image: bool
++    ) -> list[dict[str, Any]]:
+         # IMPORTANT: one TranslationUnit == one benchmark example == one API request.
+-        record = {"id": unit.unit_id, "texts": unit.texts}
++        # Repeated values inside the example may be compacted, but examples are never mixed.
++        record = {"id": unit.unit_id, "texts": texts_for_model}
+         content: list[dict[str, Any]] = [
+             {"type": "text", "text": user_payload([record], unit.prompt_profile)}
+         ]
+@@ -135,9 +241,13 @@ class OpenAITranslator:
+     async def translate_one(
+         self, unit: TranslationUnit, *, with_image: bool
+     ) -> dict[str, Any]:
++        texts_for_model, expansion_specs = _compact_texts(unit.texts)
++
+         # Image decoding/resizing/base64 encoding is CPU/file-I/O work. Keep it off the event loop
+         # so other API requests can remain in flight while the next example is prepared.
+-        content = await asyncio.to_thread(self._build_content, unit, with_image)
++        content = await asyncio.to_thread(
++            self._build_content, unit, texts_for_model, with_image
++        )
+ 
+         last_error: Exception | None = None
+         for attempt in range(self.settings.max_retries + 1):
+@@ -151,7 +261,19 @@ class OpenAITranslator:
+                     temperature=self.settings.temperature,
+                     max_tokens=self.settings.max_output_tokens,
+                 )
+-                text = response.choices[0].message.content or ""
++                choice = response.choices[0]
++                text = choice.message.content or ""
++                finish_reason = getattr(choice, "finish_reason", None)
++                if not text.strip():
++                    raise TranslationError(
++                        f"Model returned empty content (finish_reason={finish_reason!r})"
++                    )
++                if finish_reason not in (None, "stop"):
++                    raise TranslationError(
++                        f"Model response ended with finish_reason={finish_reason!r}; "
++                        f"response_prefix={text[:500]!r}"
++                    )
++
+                 obj = _extract_json(text)
+                 items = obj.get("translations")
+                 if not isinstance(items, list) or len(items) != 1:
+@@ -160,18 +282,29 @@ class OpenAITranslator:
+                     )
+                 item = items[0]
+                 if not isinstance(item, dict) or item.get("id") != unit.unit_id:
++                    got_id = item.get("id") if isinstance(item, dict) else None
+                     raise TranslationError(
+-                        f"Expected translation id={unit.unit_id!r}, got {item.get('id')!r}"
++                        f"Expected translation id={unit.unit_id!r}, got {got_id!r}"
+                     )
+-                translated = item.get("texts")
+-                if not isinstance(translated, dict):
++                translated_compact = item.get("texts")
++                if not isinstance(translated_compact, dict):
+                     raise TranslationError("Translation must contain object 'texts'")
+-                if set(translated) != set(unit.texts):
++                if set(translated_compact) != set(texts_for_model):
+                     raise TranslationError(
+                         f"Text keys changed for {unit.unit_id}: "
+-                        f"expected={sorted(unit.texts)} got={sorted(translated)}"
++                        f"expected={sorted(texts_for_model)} got={sorted(translated_compact)}"
++                    )
++
++                translated: dict[str, JsonText] = {}
++                for key in texts_for_model:
++                    _validate_same_shape(
++                        texts_for_model[key],
++                        translated_compact[key],
++                        f"{unit.unit_id}.{key}.compacted",
++                    )
++                    translated[key] = _expand_json_text(
++                        translated_compact[key], expansion_specs[key]
+                     )
+-                for key in unit.texts:
+                     _validate_same_shape(
+                         unit.texts[key], translated[key], f"{unit.unit_id}.{key}"
+                     )
+diff --git a/src/pl_mmb_translate/prompts.py b/src/pl_mmb_translate/prompts.py
+index ac70e8a..ae9dfda 100644
+--- a/src/pl_mmb_translate/prompts.py
++++ b/src/pl_mmb_translate/prompts.py
+@@ -12,7 +12,8 @@ Hard requirements:
+ 5. Preserve the input JSON structure exactly: same record IDs, same object keys, same list lengths and order.
+ 6. Translate only string values inside the `texts` object. Do not translate IDs or add commentary.
+ 7. Empty strings must remain empty strings.
+-8. Return valid JSON only, with this top-level form: {\"translations\": [{\"id\": \"...\", \"texts\": {...}}]}.
++8. Preserve multimodal/control placeholders such as <|image_1|>, <image>, and similar special tokens exactly; never translate or alter them.
++9. Return valid JSON only, with this top-level form: {\"translations\": [{\"id\": \"...\", \"texts\": {...}}]}.
+ """
+ 
+ PROFILE_HINTS = {
+diff --git a/src/pl_mmb_translate/registry.py b/src/pl_mmb_translate/registry.py
+index 207a1a1..1627ee3 100644
+--- a/src/pl_mmb_translate/registry.py
++++ b/src/pl_mmb_translate/registry.py
+@@ -16,6 +16,7 @@ class DatasetSpec:
+     key: str
+     description: str
+     factory: Callable[[], DatasetAdapter]
++    expected_examples: int | None = None
+ 
+ 
+ def _key(name: str) -> str:
+@@ -46,6 +47,7 @@ for config_name in MMEB_CONFIGS:
+         key=key,
+         description=f"MMEB-eval / {config_name}",
+         factory=lambda c=config_name, p=profile: MMEBAdapter(c, prompt_profile=p),
++        expected_examples=1000,
+     )
+ 
+ DATASETS.update(
+@@ -62,6 +64,7 @@ DATASETS.update(
+                 image_fields=("images",),
+                 prompt_profile="contrastive",
+             ),
++            expected_examples=7511,
+         ),
+         "winoground": DatasetSpec(
+             "winoground",
+@@ -76,6 +79,7 @@ DATASETS.update(
+                 id_field="id",
+                 prompt_profile="contrastive",
+             ),
++            expected_examples=400,
+         ),
+         "aro_visual_relation": DatasetSpec(
+             "aro_visual_relation",
+diff --git a/src/pl_mmb_translate/runner.py b/src/pl_mmb_translate/runner.py
+index c435053..d7e61f3 100644
+--- a/src/pl_mmb_translate/runner.py
++++ b/src/pl_mmb_translate/runner.py
+@@ -2,6 +2,8 @@ from __future__ import annotations
+ 
+ import asyncio
+ import json
++import sys
++import time
+ import traceback
+ from pathlib import Path
+ from typing import Iterator
+@@ -77,6 +79,8 @@ async def _run_concurrently(
+     store: CheckpointStore,
+     settings: Settings,
+     with_image: bool,
++    expected_total: int | None,
++    completed_before: int,
+ ) -> None:
+     """Keep at most settings.batch_size independent one-example requests in flight."""
+ 
+@@ -84,6 +88,54 @@ async def _run_concurrently(
+     in_flight: set[asyncio.Task] = set()
+     submitted = 0
+     finished = 0
++    succeeded = 0
++    failed_this_run = 0
++    started_at = time.monotonic()
++    pending_at_start = (
++        max(expected_total - completed_before, 0)
++        if expected_total is not None
++        else None
++    )
++    last_line_len = 0
++
++    def clear_progress_line() -> None:
++        nonlocal last_line_len
++        if sys.stdout.isatty() and last_line_len:
++            print("\r" + (" " * last_line_len) + "\r", end="", flush=True)
++            last_line_len = 0
++
++    def render_progress(*, force_newline: bool = False) -> None:
++        nonlocal last_line_len
++        elapsed = max(time.monotonic() - started_at, 1e-9)
++        rate = finished / elapsed
++        completed_total = completed_before + succeeded
++
++        if pending_at_start is not None:
++            remaining = max(pending_at_start - finished, 0)
++            pct = (finished / pending_at_start * 100.0) if pending_at_start else 100.0
++            eta = remaining / rate if rate > 0 else None
++            eta_text = _format_duration(eta) if eta is not None else "?"
++            line = (
++                f"  progress: {finished}/{pending_at_start} ({pct:5.1f}%) | "
++                f"completed={completed_total}/{expected_total} | "
++                f"failed_this_run={failed_this_run} | in_flight={len(in_flight)} | "
++                f"{rate:.2f} ex/s | ETA {eta_text}"
++            )
++        else:
++            line = (
++                f"  progress: processed_this_run={finished} | "
++                f"completed_total={completed_total} | failed_this_run={failed_this_run} | "
++                f"in_flight={len(in_flight)} | {rate:.2f} ex/s"
++            )
++
++        if sys.stdout.isatty() and not force_newline:
++            padded = line.ljust(last_line_len)
++            print("\r" + padded, end="", flush=True)
++            last_line_len = len(line)
++        else:
++            # In redirected logs avoid one line per example; print every 10 or at the end.
++            if force_newline or finished == 1 or finished % 10 == 0:
++                print(line, flush=True)
+ 
+     def submit_next() -> bool:
+         nonlocal submitted
+@@ -103,11 +155,17 @@ async def _run_concurrently(
+         if not submit_next():
+             break
+ 
++    if pending_at_start is not None:
++        print(
++            f"  total={expected_total}; already_completed={completed_before}; "
++            f"pending_this_run={pending_at_start}"
++        )
+     if in_flight:
+         print(
+             f"  concurrency={concurrency}; one benchmark example per request; "
+             f"started={len(in_flight)}"
+         )
++        render_progress()
+ 
+     while in_flight:
+         done, _ = await asyncio.wait(
+@@ -125,21 +183,34 @@ async def _run_concurrently(
+                     model=settings.model,
+                     with_image=with_image,
+                 )
++                succeeded += 1
+             else:
+                 assert error is not None
+                 store.put_failure(unit.unit_id, f"{type(error).__name__}: {error}")
+-                print(f"  FAILED {unit.unit_id}: {error}")
++                failed_this_run += 1
++                clear_progress_line()
++                print(f"  FAILED {unit.unit_id}: {error}", flush=True)
+ 
+-            # Refill the window immediately, so BATCH_SIZE means max simultaneous connections,
+-            # not a barrier-style batch that waits for all N requests to finish.
++            # Refill immediately: BATCH_SIZE is max simultaneous connections.
+             submit_next()
++            render_progress()
+ 
+-            if finished % 10 == 0:
+-                completed, failed = store.counts()
+-                print(
+-                    f"  progress: finished_this_run={finished}, submitted={submitted}, "
+-                    f"in_flight={len(in_flight)}, completed={completed}, failures={failed}"
+-                )
++    if finished:
++        clear_progress_line()
++        render_progress(force_newline=True)
++
++
++def _format_duration(seconds: float | None) -> str:
++    if seconds is None or seconds < 0:
++        return "?"
++    seconds_i = int(round(seconds))
++    hours, rem = divmod(seconds_i, 3600)
++    minutes, secs = divmod(rem, 60)
++    if hours:
++        return f"{hours:d}h{minutes:02d}m"
++    if minutes:
++        return f"{minutes:d}m{secs:02d}s"
++    return f"{secs:d}s"
+ 
+ 
+ async def run_dataset(
+@@ -164,6 +235,9 @@ async def run_dataset(
+     adapter = spec.factory()
+     print(f"\n=== {dataset_key}: {spec.description} | image={with_image} ===")
+     completed_before, failed_before = store.counts()
++    expected_total = spec.expected_examples
++    if limit is not None:
++        expected_total = min(expected_total, limit) if expected_total is not None else limit
+     print(f"checkpoint: completed={completed_before}, failures={failed_before}")
+ 
+     def pending_units() -> Iterator[TranslationUnit]:
+@@ -182,6 +256,8 @@ async def run_dataset(
+             store=store,
+             settings=settings,
+             with_image=with_image,
++            expected_total=expected_total,
++            completed_before=completed_before,
+         )
+     except KeyboardInterrupt:
+         print("\nInterrupted. Checkpoint is safe; rerun the same command to resume.")
+diff --git a/tests/test_core.py b/tests/test_core.py
+index c6fab79..b995682 100644
+--- a/tests/test_core.py
++++ b/tests/test_core.py
+@@ -1,5 +1,10 @@
+ from pl_mmb_translate.cli import parse_bool
+-from pl_mmb_translate.openai_translator import _extract_json, _validate_same_shape
++from pl_mmb_translate.openai_translator import (
++    _compact_json_text,
++    _expand_json_text,
++    _extract_json,
++    _validate_same_shape,
++)
+ from pl_mmb_translate.registry import resolve_target
+ 
+ 
+@@ -20,3 +25,27 @@ def test_shape():
+ def test_registry():
+     assert resolve_target("CIRR") == ["cirr"]
+     assert "sugarcrepe" in resolve_target("compositionality")
++
++
++def test_compact_repeated_string_list_roundtrip():
++    source = ["<|image_1|>\
++Represent the given image.\
++"] * 1000
++    compacted, spec = _compact_json_text(source)
++    assert compacted == ["<|image_1|>\
++Represent the given image.\
++"]
++    translated = ["<|image_1|>\
++Przedstaw podany obraz.\
++"]
++    expanded = _expand_json_text(translated, spec)
++    assert len(expanded) == 1000
++    assert expanded[0] == translated[0]
++    assert expanded[-1] == translated[0]
++
++
++def test_compact_preserves_distinct_string_order():
++    source = ["a", "b", "a", "c", "b"]
++    compacted, spec = _compact_json_text(source)
++    assert compacted == ["a", "b", "c"]
++    assert _expand_json_text(["A", "B", "C"], spec) == ["A", "B", "A", "C", "B"]

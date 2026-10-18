@@ -1,0 +1,690 @@
+diff --git a/.env.example b/.env.example
+index 9bcbf072a1d5abe84100209aca2b33f0817f0619..8ccfffdec3750f4d980ccfa64e1018672ebbf733 100644
+--- a/.env.example
++++ b/.env.example
+@@ -3,7 +3,8 @@ OPENAI_BASE_URL=http://127.0.0.1:8000/v1
+ OPENAI_API_KEY=not-needed
+ OPENAI_MODEL=your-vllm-model-name
+ 
+-# Number of dataset records translated in ONE API request.
++# Maximum number of simultaneous OpenAI API requests.
++# Every request contains EXACTLY ONE benchmark example.
+ BATCH_SIZE=8
+ REQUEST_TIMEOUT=180
+ MAX_RETRIES=4
+@@ -20,6 +21,9 @@ HF_STREAMING=true
+ IMAGE_MAX_SIDE=1280
+ IMAGE_JPEG_QUALITY=88
+ MAX_IMAGES_PER_RECORD=2
++# Safety check for the server limit within ONE benchmark example.
++# Examples are never split across requests.
++MAX_IMAGES_PER_REQUEST=4
+ 
+ # M-BEIR keeps images separately (~very large). Required only for M-BEIR + WITH_IMAGE=true.
+ # Point this at the extracted M-BEIR image directory.
+diff --git a/src/pl_mmb_translate/adapters/mmeb.py b/src/pl_mmb_translate/adapters/mmeb.py
+index c4f582136f3a37e4e9299703c173c1889615bae3..fcf7b4f5565ab0e88dcf11cdea283d177f0b8478 100644
+--- a/src/pl_mmb_translate/adapters/mmeb.py
++++ b/src/pl_mmb_translate/adapters/mmeb.py
+@@ -17,8 +17,14 @@ MMEB_PATH = "TIGER-Lab/MMEB-eval"
+ MMEB_REVISION = "eb3a8af230a66be5c9308cd2be5779b9d6de4cb3"
+ 
+ 
+-def _nonempty(value: Any) -> bool:
+-    return isinstance(value, str) and bool(value.strip())
++def _has_text(value: Any) -> bool:
++    if isinstance(value, str):
++        return bool(value.strip())
++    if isinstance(value, list):
++        return any(_has_text(v) for v in value)
++    if isinstance(value, dict):
++        return any(_has_text(v) for v in value.values())
++    return False
+ 
+ 
+ def _as_list(value: Any) -> list[Any]:
+@@ -75,69 +81,57 @@ class MMEBAdapter(DatasetAdapter):
+         )
+ 
+         for row_index, row in enumerate(ds):
++            # One MMEB row is one benchmark example and therefore one TranslationUnit/request.
++            # Keeping query + candidate texts together gives the translator the full local context
++            # and avoids cross-example contamination from unrelated records.
++            texts: dict[str, Any] = {}
+             qry_text = row.get("qry_text")
+-            qry_images = _as_list(row.get("qry_img_path"))
+-            tgt_texts = _as_list(row.get("tgt_text"))
+-            tgt_images = _as_list(row.get("tgt_img_path"))
+-
+-            # Query is translated independently from the candidate list. If a textual query has no
+-            # query-side image (typical text->image retrieval), the first target image is ground truth
+-            # in MMEB and is useful only as disambiguation context.
+-            if _nonempty(qry_text):
+-                images: list[ImageRef] = []
+-                if with_image:
+-                    if qry_images:
+-                        images.append(ImageRef("query_image", qry_images[0], root=image_root))
+-                    elif tgt_images:
+-                        images.append(ImageRef("groundtruth_target_image", tgt_images[0], root=image_root))
+-                yield TranslationUnit(
+-                    unit_id=f"{self.config_name}:{row_index}:query",
+-                    texts={"qry_text": qry_text},
+-                    images=images,
+-                    metadata={
+-                        "dataset": self.config_name,
+-                        "hf_path": MMEB_PATH,
+-                        "hf_config": self.config_name,
+-                        "split": "test",
+-                        "row_index": row_index,
+-                        "kind": "query",
+-                    },
+-                    prompt_profile=self.prompt_profile,
+-                )
+-
+-            # Targets are separate resumable units. This avoids oversized prompts when MMEB provides
+-            # many candidates and lets us associate an image with exactly the text it belongs to.
+-            for target_index, text in enumerate(tgt_texts):
+-                if not _nonempty(text):
+-                    continue
+-                images = []
+-                if with_image:
+-                    if target_index < len(tgt_images) and tgt_images[target_index]:
++            tgt_text = row.get("tgt_text")
++            if _has_text(qry_text):
++                texts["qry_text"] = qry_text
++            if _has_text(tgt_text):
++                texts["tgt_text"] = tgt_text
++            if not texts:
++                continue
++
++            images: list[ImageRef] = []
++            if with_image:
++                qry_images = _as_list(row.get("qry_img_path"))
++                tgt_images = _as_list(row.get("tgt_img_path"))
++
++                # Prioritize query-side visual context, then the positive/first target image.
++                # MMEB documents candidate 0 as the ground-truth target. We intentionally do not
++                # attach every candidate image: images are context for translation, not data to rank.
++                for pos, value in enumerate(qry_images):
++                    if value:
+                         images.append(
+-                            ImageRef(
+-                                f"target_image[{target_index}]",
+-                                tgt_images[target_index],
+-                                root=image_root,
+-                            )
++                            ImageRef(f"query_image[{pos}]", value, root=image_root)
+                         )
+-                    elif target_index == 0 and qry_images:
+-                        # MMEB documents that candidate 0 is ground truth. For image->text tasks only
+-                        # the positive caption gets the query image; negative candidates remain text-only
+-                        # so the translator is not tempted to 'repair' them from visual evidence.
+-                        images.append(ImageRef("groundtruth_query_image", qry_images[0], root=image_root))
+-                yield TranslationUnit(
+-                    unit_id=f"{self.config_name}:{row_index}:target:{target_index}",
+-                    texts={"tgt_text": text},
+-                    images=images,
+-                    metadata={
+-                        "dataset": self.config_name,
+-                        "hf_path": MMEB_PATH,
+-                        "hf_config": self.config_name,
+-                        "split": "test",
+-                        "row_index": row_index,
+-                        "kind": "target",
+-                        "target_index": target_index,
+-                        "is_groundtruth": target_index == 0,
+-                    },
+-                    prompt_profile=self.prompt_profile,
+-                )
++                    if len(images) >= settings.max_images_per_record:
++                        break
++                if len(images) < settings.max_images_per_record:
++                    for pos, value in enumerate(tgt_images):
++                        if value:
++                            label = (
++                                "groundtruth_target_image"
++                                if pos == 0
++                                else f"target_image[{pos}]"
++                            )
++                            images.append(ImageRef(label, value, root=image_root))
++                        if len(images) >= settings.max_images_per_record:
++                            break
++
++            yield TranslationUnit(
++                unit_id=f"{self.config_name}:{row_index}",
++                texts=texts,
++                images=images,
++                metadata={
++                    "dataset": self.config_name,
++                    "hf_path": MMEB_PATH,
++                    "hf_config": self.config_name,
++                    "split": "test",
++                    "row_index": row_index,
++                    "kind": "benchmark_example",
++                },
++                prompt_profile=self.prompt_profile,
++            )
+diff --git a/src/pl_mmb_translate/cli.py b/src/pl_mmb_translate/cli.py
+index d5521b7eabd805decf1fcfc8443495a28793813e..3b7a59f818f391b53ef3bff9ed9f7a9f6d9c6dfb 100644
+--- a/src/pl_mmb_translate/cli.py
++++ b/src/pl_mmb_translate/cli.py
+@@ -1,6 +1,7 @@
+ from __future__ import annotations
+ 
+ import argparse
++import asyncio
+ import sys
+ 
+ from .config import Settings
+@@ -59,8 +60,11 @@ def main() -> None:
+     print(f"target={args.target} -> {len(dataset_keys)} dataset(s)")
+     print(f"model={settings.model}")
+     print(f"base_url={settings.base_url}")
+-    print(f"batch_size={settings.batch_size}")
++    print(f"concurrency(BATCH_SIZE)={settings.batch_size}")
+     print(f"with_image={args.with_image}")
+ 
+-    for key in dataset_keys:
+-        run_dataset(key, settings, with_image=args.with_image, limit=args.limit)
++    async def run_all() -> None:
++        for key in dataset_keys:
++            await run_dataset(key, settings, with_image=args.with_image, limit=args.limit)
++
++    asyncio.run(run_all())
+diff --git a/src/pl_mmb_translate/config.py b/src/pl_mmb_translate/config.py
+index 40a752b387669a5a0f7ee30d59958ec11d224401..96f543c89b9d37c400abe1c5a15edbefad51f5f7 100644
+--- a/src/pl_mmb_translate/config.py
++++ b/src/pl_mmb_translate/config.py
+@@ -38,6 +38,7 @@ class Settings:
+     image_max_side: int
+     image_jpeg_quality: int
+     max_images_per_record: int
++    max_images_per_request: int
+     mbeir_image_root: Path | None
+     run_name: str
+ 
+@@ -75,6 +76,7 @@ class Settings:
+             image_max_side=int(os.getenv("IMAGE_MAX_SIDE", "1280")),
+             image_jpeg_quality=image_quality,
+             max_images_per_record=int(os.getenv("MAX_IMAGES_PER_RECORD", "2")),
++            max_images_per_request=int(os.getenv("MAX_IMAGES_PER_REQUEST", "4")),
+             mbeir_image_root=Path(mbeir_root).expanduser().resolve() if mbeir_root else None,
+             run_name=_slug(run_name),
+         )
+diff --git a/src/pl_mmb_translate/openai_translator.py b/src/pl_mmb_translate/openai_translator.py
+index 728496aef9e2feb43a5ca57f7e385ae7578d951b..42a6e89faedee5b24ad4ceae35478337931d2b89 100644
+--- a/src/pl_mmb_translate/openai_translator.py
++++ b/src/pl_mmb_translate/openai_translator.py
+@@ -1,11 +1,11 @@
+ from __future__ import annotations
+ 
++import asyncio
+ import json
+ import re
+-import time
+ from typing import Any
+ 
+-from openai import OpenAI
++from openai import AsyncOpenAI
+ 
+ from .config import Settings
+ from .image_utils import image_to_data_uri
+@@ -37,18 +37,24 @@ def _extract_json(text: str) -> dict[str, Any]:
+             if isinstance(obj, dict):
+                 return obj
+         except json.JSONDecodeError as exc:
+-            raise TranslationError(f"Model returned invalid JSON: {exc}; response={text[:1000]!r}") from exc
++            raise TranslationError(
++                f"Model returned invalid JSON: {exc}; response={text[:1000]!r}"
++            ) from exc
+     raise TranslationError(f"Model returned no JSON object: {text[:1000]!r}")
+ 
+ 
+ def _validate_same_shape(source: JsonText, translated: Any, path: str = "texts") -> None:
+     if isinstance(source, str):
+         if not isinstance(translated, str):
+-            raise TranslationError(f"Shape mismatch at {path}: expected string, got {type(translated).__name__}")
++            raise TranslationError(
++                f"Shape mismatch at {path}: expected string, got {type(translated).__name__}"
++            )
+         return
+     if isinstance(source, list):
+         if not isinstance(translated, list) or len(source) != len(translated):
+-            raise TranslationError(f"Shape mismatch at {path}: expected list of len {len(source)}")
++            raise TranslationError(
++                f"Shape mismatch at {path}: expected list of len {len(source)}"
++            )
+         for i, (a, b) in enumerate(zip(source, translated, strict=True)):
+             _validate_same_shape(a, b, f"{path}[{i}]")
+         return
+@@ -58,52 +64,85 @@ def _validate_same_shape(source: JsonText, translated: Any, path: str = "texts")
+         for key in source:
+             _validate_same_shape(source[key], translated[key], f"{path}.{key}")
+         return
+-    raise TranslationError(f"Unsupported source text shape at {path}: {type(source).__name__}")
++    raise TranslationError(
++        f"Unsupported source text shape at {path}: {type(source).__name__}"
++    )
++
++
++def _exception_chain(exc: BaseException) -> str:
++    parts: list[str] = []
++    current: BaseException | None = exc
++    seen: set[int] = set()
++    while current is not None and id(current) not in seen:
++        seen.add(id(current))
++        parts.append(f"{type(current).__name__}: {current}")
++        current = current.__cause__ or current.__context__
++    return " <- ".join(parts)
+ 
+ 
+ class OpenAITranslator:
++    """Translate exactly one benchmark example per OpenAI request."""
++
+     def __init__(self, settings: Settings):
+         self.settings = settings
+-        self.client = OpenAI(
++        self.client = AsyncOpenAI(
+             api_key=settings.api_key,
+             base_url=settings.base_url,
+             timeout=settings.request_timeout,
+             max_retries=0,  # retries are controlled here for predictable resume behavior
+         )
+ 
+-    def translate(self, units: list[TranslationUnit], with_image: bool) -> dict[str, dict[str, Any]]:
+-        if not units:
+-            return {}
+-        profiles = {u.prompt_profile for u in units}
+-        profile = profiles.pop() if len(profiles) == 1 else "faithful"
+-        records = [{"id": u.unit_id, "texts": u.texts} for u in units]
++    async def close(self) -> None:
++        await self.client.close()
+ 
++    def _build_content(self, unit: TranslationUnit, with_image: bool) -> list[dict[str, Any]]:
++        # IMPORTANT: one TranslationUnit == one benchmark example == one API request.
++        record = {"id": unit.unit_id, "texts": unit.texts}
+         content: list[dict[str, Any]] = [
+-            {"type": "text", "text": user_payload(records, profile)}
++            {"type": "text", "text": user_payload([record], unit.prompt_profile)}
+         ]
+-        if with_image:
+-            for unit in units:
+-                for image in unit.images[: self.settings.max_images_per_record]:
+-                    content.append(
+-                        {
+-                            "type": "text",
+-                            "text": (
+-                                f"Context image for record id={unit.unit_id!r}, label={image.label!r}. "
+-                                "Use it only to disambiguate the translation; never repair benchmark semantics."
+-                            ),
+-                        }
+-                    )
+-                    content.append(
+-                        {
+-                            "type": "image_url",
+-                            "image_url": {"url": image_to_data_uri(image, self.settings)},
+-                        }
+-                    )
++
++        if not with_image:
++            return content
++
++        images = unit.images[: self.settings.max_images_per_record]
++        if len(images) > self.settings.max_images_per_request:
++            raise TranslationError(
++                f"Example {unit.unit_id!r} needs {len(images)} images after "
++                f"MAX_IMAGES_PER_RECORD, but MAX_IMAGES_PER_REQUEST="
++                f"{self.settings.max_images_per_request}. A benchmark example is never "
++                "split across requests; lower MAX_IMAGES_PER_RECORD or raise the server limit."
++            )
++
++        for image in images:
++            content.append(
++                {
++                    "type": "text",
++                    "text": (
++                        f"Context image for this benchmark example, label={image.label!r}. "
++                        "Use it only to disambiguate the translation; never repair benchmark semantics."
++                    ),
++                }
++            )
++            content.append(
++                {
++                    "type": "image_url",
++                    "image_url": {"url": image_to_data_uri(image, self.settings)},
++                }
++            )
++        return content
++
++    async def translate_one(
++        self, unit: TranslationUnit, *, with_image: bool
++    ) -> dict[str, Any]:
++        # Image decoding/resizing/base64 encoding is CPU/file-I/O work. Keep it off the event loop
++        # so other API requests can remain in flight while the next example is prepared.
++        content = await asyncio.to_thread(self._build_content, unit, with_image)
+ 
+         last_error: Exception | None = None
+         for attempt in range(self.settings.max_retries + 1):
+             try:
+-                response = self.client.chat.completions.create(
++                response = await self.client.chat.completions.create(
+                     model=self.settings.model,
+                     messages=[
+                         {"role": "system", "content": SYSTEM_PROMPT},
+@@ -115,32 +154,36 @@ class OpenAITranslator:
+                 text = response.choices[0].message.content or ""
+                 obj = _extract_json(text)
+                 items = obj.get("translations")
+-                if not isinstance(items, list):
+-                    raise TranslationError("JSON must contain a top-level 'translations' list")
+-                by_id: dict[str, dict[str, Any]] = {}
+-                for item in items:
+-                    if not isinstance(item, dict) or not isinstance(item.get("id"), str):
+-                        raise TranslationError("Each translation must be an object with string 'id'")
+-                    if not isinstance(item.get("texts"), dict):
+-                        raise TranslationError("Each translation must contain object 'texts'")
+-                    by_id[item["id"]] = item["texts"]
+-
+-                expected_ids = {u.unit_id for u in units}
+-                if set(by_id) != expected_ids:
+-                    missing = expected_ids - set(by_id)
+-                    extra = set(by_id) - expected_ids
+-                    raise TranslationError(f"ID mismatch. missing={sorted(missing)} extra={sorted(extra)}")
+-
+-                for unit in units:
+-                    translated = by_id[unit.unit_id]
+-                    if set(translated) != set(unit.texts):
+-                        raise TranslationError(f"Text keys changed for {unit.unit_id}")
+-                    for key in unit.texts:
+-                        _validate_same_shape(unit.texts[key], translated[key], f"{unit.unit_id}.{key}")
+-                return by_id
++                if not isinstance(items, list) or len(items) != 1:
++                    raise TranslationError(
++                        "JSON must contain exactly one item in top-level 'translations' list"
++                    )
++                item = items[0]
++                if not isinstance(item, dict) or item.get("id") != unit.unit_id:
++                    raise TranslationError(
++                        f"Expected translation id={unit.unit_id!r}, got {item.get('id')!r}"
++                    )
++                translated = item.get("texts")
++                if not isinstance(translated, dict):
++                    raise TranslationError("Translation must contain object 'texts'")
++                if set(translated) != set(unit.texts):
++                    raise TranslationError(
++                        f"Text keys changed for {unit.unit_id}: "
++                        f"expected={sorted(unit.texts)} got={sorted(translated)}"
++                    )
++                for key in unit.texts:
++                    _validate_same_shape(
++                        unit.texts[key], translated[key], f"{unit.unit_id}.{key}"
++                    )
++                return translated
++            except asyncio.CancelledError:
++                raise
+             except Exception as exc:  # API errors + malformed model output
+                 last_error = exc
+                 if attempt >= self.settings.max_retries:
+                     break
+-                time.sleep(min(2**attempt, 8))
+-        raise TranslationError(str(last_error) if last_error else "Unknown translation failure")
++                await asyncio.sleep(min(2**attempt, 8))
++
++        if last_error is not None:
++            raise TranslationError(_exception_chain(last_error)) from last_error
++        raise TranslationError("Unknown translation failure")
+diff --git a/src/pl_mmb_translate/runner.py b/src/pl_mmb_translate/runner.py
+index 28f2f01c89df283baef78963660d1550d0b8968f..c435053dcddb6ceb742e1f303a0ec92a7fa8e2dc 100644
+--- a/src/pl_mmb_translate/runner.py
++++ b/src/pl_mmb_translate/runner.py
+@@ -1,77 +1,148 @@
+ from __future__ import annotations
+ 
++import asyncio
+ import json
+ import traceback
+ from pathlib import Path
+-from typing import Iterable
++from typing import Iterator
+ 
+ from .checkpoint import CheckpointStore
+ from .config import Settings
+ from .models import TranslationUnit
+-from .openai_translator import OpenAITranslator, TranslationError
++from .openai_translator import OpenAITranslator
+ from .registry import DATASETS
+ 
+ 
+-def _chunks(items: Iterable[TranslationUnit], size: int):
+-    batch: list[TranslationUnit] = []
+-    for item in items:
+-        batch.append(item)
+-        if len(batch) >= size:
+-            yield batch
+-            batch = []
+-    if batch:
+-        yield batch
+-
+-
+-def _write_manifest(path: Path, *, dataset_key: str, settings: Settings, with_image: bool) -> None:
++def _write_manifest(
++    path: Path, *, dataset_key: str, settings: Settings, with_image: bool
++) -> None:
+     path.parent.mkdir(parents=True, exist_ok=True)
+     manifest = {
+         "dataset_key": dataset_key,
+         "model": settings.model,
+         "base_url": settings.base_url,
++        # Historical env name retained for compatibility. Semantics are concurrency.
+         "batch_size": settings.batch_size,
++        "request_semantics": "one_benchmark_example_per_request",
+         "with_image": with_image,
+         "run_name": settings.run_name,
+     }
+     if path.exists():
+         previous = json.loads(path.read_text(encoding="utf-8"))
+         invariant_keys = ("dataset_key", "model", "with_image", "run_name")
+-        changed = {k: (previous.get(k), manifest.get(k)) for k in invariant_keys if previous.get(k) != manifest.get(k)}
++        changed = {
++            k: (previous.get(k), manifest.get(k))
++            for k in invariant_keys
++            if previous.get(k) != manifest.get(k)
++        }
+         if changed:
+             raise RuntimeError(
+                 f"Existing checkpoint was created with different settings: {changed}. "
+                 "Use a different RUN_NAME or remove that output directory."
+             )
++        previous_semantics = previous.get("request_semantics")
++        if previous_semantics != manifest["request_semantics"]:
++            raise RuntimeError(
++                "This output directory was created by the old multi-example batching pipeline. "
++                "The new pipeline uses one benchmark example per request and, for MMEB, different "
++                "checkpoint unit IDs. Remove this dataset/mode output directory or set a new "
++                "RUN_NAME before resuming."
++            )
+     else:
+-        path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
++        path.write_text(
++            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
++            encoding="utf-8",
++        )
+ 
+ 
+-def _translate_with_split(
++async def _translate_task(
+     translator: OpenAITranslator,
+-    store: CheckpointStore,
+-    units: list[TranslationUnit],
++    unit: TranslationUnit,
+     *,
+-    settings: Settings,
+     with_image: bool,
+-) -> None:
++) -> tuple[TranslationUnit, dict | None, Exception | None]:
+     try:
+-        result = translator.translate(units, with_image=with_image)
+-        for unit in units:
+-            store.put_completed(unit, result[unit.unit_id], model=settings.model, with_image=with_image)
+-        return
++        translated = await translator.translate_one(unit, with_image=with_image)
++        return unit, translated, None
++    except asyncio.CancelledError:
++        raise
+     except Exception as exc:
+-        if len(units) > 1:
+-            mid = len(units) // 2
+-            print(f"  Batch failed ({exc}); splitting {len(units)} -> {mid}+{len(units)-mid}")
+-            _translate_with_split(translator, store, units[:mid], settings=settings, with_image=with_image)
+-            _translate_with_split(translator, store, units[mid:], settings=settings, with_image=with_image)
+-            return
+-        unit = units[0]
+-        store.put_failure(unit.unit_id, f"{type(exc).__name__}: {exc}")
+-        print(f"  FAILED {unit.unit_id}: {exc}")
+-
+-
+-def run_dataset(
++        return unit, None, exc
++
++
++async def _run_concurrently(
++    units: Iterator[TranslationUnit],
++    *,
++    translator: OpenAITranslator,
++    store: CheckpointStore,
++    settings: Settings,
++    with_image: bool,
++) -> None:
++    """Keep at most settings.batch_size independent one-example requests in flight."""
++
++    concurrency = settings.batch_size
++    in_flight: set[asyncio.Task] = set()
++    submitted = 0
++    finished = 0
++
++    def submit_next() -> bool:
++        nonlocal submitted
++        try:
++            unit = next(units)
++        except StopIteration:
++            return False
++        task = asyncio.create_task(
++            _translate_task(translator, unit, with_image=with_image),
++            name=f"translate:{unit.unit_id}",
++        )
++        in_flight.add(task)
++        submitted += 1
++        return True
++
++    for _ in range(concurrency):
++        if not submit_next():
++            break
++
++    if in_flight:
++        print(
++            f"  concurrency={concurrency}; one benchmark example per request; "
++            f"started={len(in_flight)}"
++        )
++
++    while in_flight:
++        done, _ = await asyncio.wait(
++            in_flight, return_when=asyncio.FIRST_COMPLETED
++        )
++        for task in done:
++            in_flight.remove(task)
++            unit, translated, error = await task
++            finished += 1
++
++            if error is None and translated is not None:
++                store.put_completed(
++                    unit,
++                    translated,
++                    model=settings.model,
++                    with_image=with_image,
++                )
++            else:
++                assert error is not None
++                store.put_failure(unit.unit_id, f"{type(error).__name__}: {error}")
++                print(f"  FAILED {unit.unit_id}: {error}")
++
++            # Refill the window immediately, so BATCH_SIZE means max simultaneous connections,
++            # not a barrier-style batch that waits for all N requests to finish.
++            submit_next()
++
++            if finished % 10 == 0:
++                completed, failed = store.counts()
++                print(
++                    f"  progress: finished_this_run={finished}, submitted={submitted}, "
++                    f"in_flight={len(in_flight)}, completed={completed}, failures={failed}"
++                )
++
++
++async def run_dataset(
+     dataset_key: str,
+     settings: Settings,
+     *,
+@@ -81,7 +152,12 @@ def run_dataset(
+     spec = DATASETS[dataset_key]
+     mode = "with_image" if with_image else "text_only"
+     out_dir = settings.output_dir / settings.run_name / dataset_key / mode
+-    _write_manifest(out_dir / "manifest.json", dataset_key=dataset_key, settings=settings, with_image=with_image)
++    _write_manifest(
++        out_dir / "manifest.json",
++        dataset_key=dataset_key,
++        settings=settings,
++        with_image=with_image,
++    )
+ 
+     store = CheckpointStore(out_dir)
+     translator = OpenAITranslator(settings)
+@@ -90,7 +166,7 @@ def run_dataset(
+     completed_before, failed_before = store.counts()
+     print(f"checkpoint: completed={completed_before}, failures={failed_before}")
+ 
+-    def pending_units():
++    def pending_units() -> Iterator[TranslationUnit]:
+         seen = 0
+         for unit in adapter.iter_units(settings, with_image):
+             if limit is not None and seen >= limit:
+@@ -100,28 +176,25 @@ def run_dataset(
+                 yield unit
+ 
+     try:
+-        batch_no = 0
+-        for batch in _chunks(pending_units(), settings.batch_size):
+-            batch_no += 1
+-            print(f"  batch {batch_no}: {len(batch)} pending records")
+-            _translate_with_split(
+-                translator,
+-                store,
+-                batch,
+-                settings=settings,
+-                with_image=with_image,
+-            )
+-            if batch_no % 10 == 0:
+-                done, failed = store.counts()
+-                print(f"  progress checkpoint: completed={done}, failures={failed}")
++        await _run_concurrently(
++            iter(pending_units()),
++            translator=translator,
++            store=store,
++            settings=settings,
++            with_image=with_image,
++        )
+     except KeyboardInterrupt:
+         print("\nInterrupted. Checkpoint is safe; rerun the same command to resume.")
++    except asyncio.CancelledError:
++        print("\nCancelled. Checkpoint is safe; rerun the same command to resume.")
++        raise
+     except Exception:
+         print(traceback.format_exc())
+         raise
+     finally:
++        await translator.close()
+         path = store.export_jsonl()
+-        done, failed = store.counts()
+-        print(f"export: {path} | completed={done}, failures={failed}")
++        completed, failed = store.counts()
++        print(f"export: {path} | completed={completed}, failures={failed}")
+         store.close()
+     return path

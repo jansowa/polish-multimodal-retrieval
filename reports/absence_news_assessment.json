@@ -1,0 +1,83 @@
+{
+  "run_name": "qwen3.8-27b-visualnews-v3c",
+  "reviewer": "Codex, manual inspection of all 40 EN/PL pairs",
+  "reviewed_at": "2026-10-18T17:44:46.152376+00:00",
+  "approved": {
+    "mbeir_visualnews": {
+      "source_sha256": "7203bbd00434e4485d5c543b1b06b38f3fefef80b4b3333b8ff5eae81a4a5d25",
+      "translation_config": {
+        "pipeline_version": "translation-v3",
+        "policy_sha256": "10bcb7945dab9b258015c2f3c9b10469a60fcbdf168e96024d1f25de54e307f9",
+        "temperature": 0.0,
+        "max_output_tokens": 8192,
+        "quality_review": false,
+        "image_settings": null,
+        "draft_capture": "compact-stages-v1"
+      },
+      "reviewed_ids": [
+        "MBeirvisualnews:0:745641",
+        "MBeirvisualnews:0:38230",
+        "MBeirvisualnews:0:507155",
+        "MBeirvisualnews:0:522996",
+        "MBeirvisualnews:0:1029436",
+        "MBeirvisualnews:0:227137",
+        "MBeirvisualnews:0:136300",
+        "MBeirvisualnews:0:789932",
+        "MBeirvisualnews:0:859313",
+        "MBeirvisualnews:0:157964",
+        "MBeirvisualnews:0:802731",
+        "MBeirvisualnews:0:577601",
+        "MBeirvisualnews:0:415721",
+        "MBeirvisualnews:0:1061150",
+        "MBeirvisualnews:0:996970",
+        "MBeirvisualnews:0:943357",
+        "MBeirvisualnews:0:368869",
+        "MBeirvisualnews:0:623633",
+        "MBeirvisualnews:0:695276",
+        "MBeirvisualnews:0:631995",
+        "MBeirvisualnews:0:5800",
+        "MBeirvisualnews:0:621270",
+        "MBeirvisualnews:0:2582",
+        "MBeirvisualnews:0:896567",
+        "MBeirvisualnews:0:647641",
+        "MBeirvisualnews:0:661038",
+        "MBeirvisualnews:0:523747",
+        "MBeirvisualnews:0:659018",
+        "MBeirvisualnews:0:132884",
+        "MBeirvisualnews:0:1017380",
+        "MBeirvisualnews:0:669104",
+        "MBeirvisualnews:0:395488",
+        "MBeirvisualnews:0:472058",
+        "MBeirvisualnews:0:699127",
+        "MBeirvisualnews:0:110630",
+        "MBeirvisualnews:0:220329",
+        "MBeirvisualnews:0:757040",
+        "MBeirvisualnews:0:569661",
+        "MBeirvisualnews:0:954606",
+        "MBeirvisualnews:0:611265"
+      ],
+      "decision": "Provisional benchmark quality; improved caption syntax and proper-name retention"
+    }
+  },
+  "declined": {},
+  "observed_improvements": [
+    {
+      "id": "MBeirvisualnews:0:5800",
+      "finding": "left is now photo position; chats is translated as rozmawia, rather than left a conversation"
+    },
+    {
+      "id": "MBeirvisualnews:0:157964",
+      "finding": "The proper name Idiots of Ants is retained"
+    },
+    {
+      "id": "MBeirvisualnews:0:647641",
+      "finding": "Photo position retained; eleven seniors no longer changed to eleven girls"
+    }
+  ],
+  "limitations": [
+    "Polish grammar and collocations remain imperfect, especially in long or unpunctuated source captions.",
+    "Specialist species names and official work titles need later checking (e.g. 0:789932, 0:523747).",
+    "Missing punctuation and merged numbers in source are preserved as facts; this is not a validated gold translation.",
+    "Directional east-northeast wording in 0:996970 is imprecise."
+  ]
+}

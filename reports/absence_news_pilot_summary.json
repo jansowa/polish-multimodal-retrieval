@@ -1,0 +1,10 @@
+{
+  "run_name": "qwen3.8-27b-visualnews-v3c",
+  "datasets": {
+    "mbeir_visualnews": {
+      "completed": 40,
+      "expected": 40,
+      "failures": {}
+    }
+  }
+}

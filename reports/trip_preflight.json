@@ -1,0 +1,175 @@
+{
+  "created_at": "2026-10-17T15:23:14.056765+00:00",
+  "configured_model": "qwen3.8-27b",
+  "hf_token_present": false,
+  "datasets": [
+    {
+      "dataset_key": "sugarcrepe",
+      "ready_for_pilot": false,
+      "error": "AttributeError: 'dict' object has no attribute 'num_examples'",
+      "seconds": 22.31
+    },
+    {
+      "dataset_key": "cirr",
+      "path": "TIGER-Lab/MMEB-eval",
+      "revision": "eb3a8af230a66be5c9308cd2be5779b9d6de4cb3",
+      "config": "CIRR",
+      "split": "test",
+      "profile": "retrieval",
+      "expected_examples": 1000,
+      "features": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "missing_text_fields": [],
+      "sample_texts": {
+        "qry_text": "<|image_1|>\nGiven an image, find a similar everyday image with the described changes: Show three bottles of soft drink.\n",
+        "tgt_text": [
+          "<|image_1|>\nRepresent the given image.\n",
+          "<|image_1|>\nRepresent the given image.\n",
+          "<|image_1|>\nRepresent the given image.\n"
+        ]
+      },
+      "image_fields_present": [],
+      "target_count": 1000,
+      "unique_target_texts": 1,
+      "unique_target_characters": 39,
+      "query_image_present": true,
+      "target_images_present": true,
+      "large_output_risk": false,
+      "ready_for_pilot": true,
+      "seconds": 14.57
+    },
+    {
+      "dataset_key": "fashioniq",
+      "path": "TIGER-Lab/MMEB-eval",
+      "revision": "eb3a8af230a66be5c9308cd2be5779b9d6de4cb3",
+      "config": "FashionIQ",
+      "split": "test",
+      "profile": "retrieval",
+      "expected_examples": 1000,
+      "features": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "missing_text_fields": [],
+      "sample_texts": {
+        "qry_text": "<|image_1|>\nFind an image to match the fashion image and style note: Is shiny and silver with shorter sleeves and fit and flare.\n",
+        "tgt_text": [
+          "<|image_1|>\nRepresent the given image.\n",
+          "<|image_1|>\nRepresent the given image.\n",
+          "<|image_1|>\nRepresent the given image.\n"
+        ]
+      },
+      "image_fields_present": [],
+      "target_count": 1000,
+      "unique_target_texts": 1,
+      "unique_target_characters": 39,
+      "query_image_present": true,
+      "target_images_present": true,
+      "large_output_risk": false,
+      "ready_for_pilot": true,
+      "seconds": 13.39
+    },
+    {
+      "dataset_key": "refcoco",
+      "path": "TIGER-Lab/MMEB-eval",
+      "revision": "eb3a8af230a66be5c9308cd2be5779b9d6de4cb3",
+      "config": "RefCOCO",
+      "split": "test",
+      "profile": "retrieval",
+      "expected_examples": 1000,
+      "features": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "missing_text_fields": [],
+      "sample_texts": {
+        "qry_text": "<|image_1|>\nSelect the portion of the image that follows the language expressions. \"bowl behind the others can only see part\"\n",
+        "tgt_text": [
+          "<|image_1|>\nRepresent the given cropped image of the object",
+          "<|image_1|>\nRepresent the given cropped image of the object",
+          "<|image_1|>\nRepresent the given cropped image of the object"
+        ]
+      },
+      "image_fields_present": [],
+      "target_count": 1000,
+      "unique_target_texts": 1,
+      "unique_target_characters": 59,
+      "query_image_present": true,
+      "target_images_present": true,
+      "large_output_risk": false,
+      "ready_for_pilot": true,
+      "seconds": 13.59
+    },
+    {
+      "dataset_key": "aro_visual_relation",
+      "path": "mteb/ARO-Visual-Relation",
+      "revision": "53c1115ab5871ab33b09d5bb8856236d46bdaf2d",
+      "config": null,
+      "split": "test",
+      "profile": "contrastive",
+      "expected_examples": 23937,
+      "features": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "relation_name",
+        "bbox"
+      ],
+      "missing_text_fields": [],
+      "sample_texts": {
+        "true_caption": "the door is to the left of the shirt",
+        "false_caption": "the shirt is to the left of the door"
+      },
+      "image_fields_present": [
+        "image"
+      ],
+      "ready_for_pilot": true,
+      "seconds": 15.53
+    },
+    {
+      "dataset_key": "aro_visual_attribution",
+      "path": "mteb/ARO-Visual-Attribution",
+      "revision": "25fe9b460426ff67cdb0608a737c94f8f49a901e",
+      "config": null,
+      "split": "test",
+      "profile": "contrastive",
+      "expected_examples": 28748,
+      "features": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "bbox",
+        "obj1",
+        "obj2",
+        "attributes"
+      ],
+      "missing_text_fields": [],
+      "sample_texts": {
+        "true_caption": "the open door and the crouched man",
+        "false_caption": "the crouched door and the open man"
+      },
+      "image_fields_present": [
+        "image"
+      ],
+      "ready_for_pilot": true,
+      "seconds": 15.45
+    },
+    {
+      "dataset_key": "winoground",
+      "ready_for_pilot": false,
+      "error": "DatasetNotFoundError: Dataset 'facebook/winoground' is a gated dataset on the Hub. Visit the dataset page at https://huggingface.co/datasets/facebook/winoground to ask for access.",
+      "seconds": 0.14
+    }
+  ],
+  "available_models": [
+    "qwen3.8-27b"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "AROVisualAttribution:19837",
+  "source": {
+    "true_caption": "the green tree and the weathered fence",
+    "false_caption": "the weathered tree and the green fence"
+  },
+  "polish": {
+    "true_caption": "zielone drzewo i płot noszący ślady działania warunków atmosferycznych",
+    "false_caption": "drzewo noszące ślady działania warunków atmosferycznych i zielony płot"
+  },
+  "previous_failure": [
+    "TranslationError: TranslationError: Model returned empty content (finish_reason='length')",
+    4
+  ],
+  "method": "codex_manual_fallback",
+  "created_at": "2026-10-18T17:36:57.896733+00:00"
+}
