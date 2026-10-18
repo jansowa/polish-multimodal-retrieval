@@ -65,3 +65,18 @@ sterownika WSL przy przełączaniu wielu modeli w jednym procesie.
 Nowe aliasy: `siglip2-pl-32768`, `clip-b32-pl-32768`, `siglip2-naflex`,
 `embeddinggemma-2`. NaFlex zachowuje proporcje i domyślny limit 256 patchy;
 nie jest wymuszany resize do kwadratu 512×512.
+
+## Środowisko pozostałych modeli i cache
+
+CLIP, MetaCLIP, MobileCLIP oraz SigLIP korzystają z
+`~/.venvs/pl-mmb-legacy-cu130`: PyTorch 2.14.1+cu130, Transformers 4.57.6,
+Sentence Transformers 5.7.0. CLI automatycznie dobiera to środowisko, a dla Gemma
+wybiera `pl-mmb-modern`. Zmienne `PL_MMB_LEGACY_PYTHON` i `PL_MMB_MODERN_PYTHON`
+pozwalają wskazać inne interpretery. Oba środowiska tworzy `setup_modern_wsl.sh`.
+Środowisko tłumaczeń pozostaje oddzielne.
+
+Klucz cache zawiera również wersje PyTorch i Transformers. Enkodery wizji trzech
+wariantów SigLIP 512 mają identyczne wagi i preprocessing (audyt SHA256:
+`reports/benchmark-shared-vision-audit.json`); ich embeddingi obrazów są
+współdzielone. Warianty CLIP PL współdzielą obrazowy enkoder OpenAI z tą samą
+przypiętą rewizją. Trafienia cache są zapisywane w metadanych wyniku.

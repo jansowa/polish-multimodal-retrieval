@@ -10,7 +10,9 @@ from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
 RESULTS = ROOT / 'benchmark/results'
-PYTHON = Path.home() / '.venvs/pl-mmb-benchmark/bin/python'
+PYTHON = Path.home() / '.venvs/pl-mmb-legacy-cu130/bin/python'
+if not PYTHON.is_file():
+    PYTHON = Path.home() / '.venvs/pl-mmb-benchmark/bin/python'
 
 
 def main():

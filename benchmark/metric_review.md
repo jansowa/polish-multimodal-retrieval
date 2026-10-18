@@ -30,8 +30,9 @@ ustalać główną metrykę na poziomie konkretnego zadania, a nie globalnie wym
 Średnia w lokalnym leaderboardzie jest nieważoną średnią datasetów, liczoną tylko
 dla kompletnego wiersza modelu i jednej wybranej metryki.
 
-Obecna implementacja CLIP jest lokalnym wariantem: zachowuje instrukcje tekstowe
-i sumuje embeddingi obrazu oraz tekstu. Publikacja MMEB dla baseline'ów CLIP pomija
-instrukcje. Dlatego zgodność głównej metryki nie oznacza zgodności całego protokołu.
+Aktualizacja protokołu: poprzednie wyniki z instrukcjami są zachowane w archiwum.
+Bieżący leaderboard używa wersji v2: bez instrukcji, z sumowaniem surowych
+embeddingów i końcowym cosine. Pełne zasady i ograniczenie dotyczące nieznanych
+flag oryginalnej tabeli opisano w [protocol_v2.md](protocol_v2.md).
 ARO w obecnym adapterze ma accuracy po przykładach; oficjalny kod zawiera dodatkowo
 rozbicie na grupy. Tych różnych sposobów agregacji nie należy utożsamiać.

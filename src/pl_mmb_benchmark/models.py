@@ -2,6 +2,7 @@ from pathlib import Path
 import os
 import hashlib
 import json
+from importlib.metadata import version
 
 MODELS = {
     'metaclip-s16': 'alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384',
@@ -76,6 +77,7 @@ class Encoder:
         self.sentence_clip = repo in (MODELS['clip-b32-pl'], MODELS['clip-b32-pl-32768'])
         self.native_multimodal = repo == MODELS['embeddinggemma-2']
         self.components = {}
+        self.cache_hits = []
         self.text_max_length = 77
         self.autocast_dtype = torch.float16
         self.precision = 'cuda-fp32' if self.mobile else 'cuda-fp16-autocast'
@@ -141,6 +143,7 @@ class Encoder:
             cached = self.torch.load(cache, map_location='cpu', weights_only=True)
             if cached.ndim == 2 and len(cached) == len(values) and self.torch.isfinite(cached).all():
                 print(f'Embedding cache: {len(values)} {"images" if images else "texts"}', flush=True)
+                self.cache_hits.append('images' if images else 'texts')
                 return cached
         from PIL import Image
         torch = self.torch
@@ -197,7 +200,15 @@ class Encoder:
     def _cache_path(self, values, modality):
         identity = dict(policy='native-features-v2', repo=self.repo, revision=self.revision,
                         components=self.components, precision=self.precision,
-                        text_max_length=self.text_max_length, modality=modality, values=values)
+                        text_max_length=self.text_max_length, modality=modality, values=values,
+                        torch=self.torch.__version__, transformers=version('transformers'))
+        if modality == 'images' and self.sentence_clip:
+            identity.update(repo=CLIP_IMAGE_REPO, revision=CLIP_IMAGE_REVISION, components={}, text_max_length=None)
+        elif modality == 'images' and self.repo in (MODELS['siglip2-pl'], MODELS['siglip2-pl-32768'], MODELS['siglip2-base']):
+            # Bitwise equality of all vision tensors verified in benchmark-shared-vision-audit.json.
+            identity.update(repo='siglip2-512-shared-vision',
+                            revision='57b0579795b818d558016142ad391bb62323f6f653a987150f0f8e57ab7f830f',
+                            components={}, text_max_length=None)
         digest = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()
         root = Path(os.environ.get('HF_HOME', str(Path.home()/'.cache/huggingface'))) / 'pl_mmb_benchmark/embeddings'
         root.mkdir(parents=True, exist_ok=True)
@@ -215,6 +226,7 @@ class Encoder:
         if cache.exists():
             cached = torch.load(cache, map_location='cpu', weights_only=True)
             if len(cached) == len(texts) and torch.isfinite(cached).all():
+                self.cache_hits.append('native-joint')
                 return cached
         chunks = []
         offset = 0

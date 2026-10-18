@@ -77,6 +77,7 @@ def evaluate(encoder, key, examples, translation_sha, output, limit=None):
                   parameters=encoder.parameter_count,
                   text_max_length=encoder.text_max_length,
                   reference_revision=REFERENCE_REVISION,
+                  embedding_cache_hits=encoder.cache_hits,
                   fusion='native-joint' if encoder.native_multimodal else 'raw-addition-before-final-l2', similarity='cosine', task_instructions=False,
                   device=torch.cuda.get_device_name(), torch_version=torch.__version__,
                   libraries={name: version(name) for name in ('transformers', 'open_clip_torch', 'timm', 'datasets') +

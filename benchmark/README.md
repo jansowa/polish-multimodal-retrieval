@@ -151,8 +151,8 @@ angielskiego enkodera tekstowego OpenAI. Rewizja enkodera obrazu jest częścią
 Oba SigLIP2 używają oryginalnego preprocessingu 512×512, szybkiego tokenizera
 z przypiętego repozytorium, paddingu do 64 tokenów i CUDA BF16 autocast.
 Batch 32 daje zapas pamięci dla większej rozdzielczości; przy OOM działa redukcja.
-Geometria porównania pozostaje taka sama: znormalizowane embeddingi i suma
-embeddingów obrazu oraz tekstu w zapytaniach mieszanych. Nie zmieniamy starszych wyników.
+W protokole v2 sumujemy surowe embeddingi obrazu i tekstu, a cosine liczymy
+dopiero po połączeniu. Starsze wyniki pozostają w archiwum.
 
 Kontrola 10 par EN/PL, oddzielna od pełnych benchmarków:
 
@@ -162,3 +162,22 @@ Kontrola 10 par EN/PL, oddzielna od pełnych benchmarków:
 
 Kontrole są zapisywane pod `benchmark/results/checks/<revision>/paired_control.json`.
 Wszystkie pobrania modeli, w tym dodatkowy enkoder obrazu, trafiają do natywnego cache HF.
+
+## Cztery kolejne modele i przeliczenie v2
+
+Najpierw zainstaluj środowiska CUDA 13: `bash benchmark/setup_modern_wsl.sh`.
+
+```bash
+python3 benchmark/manage.py start --wait \
+  --datasets mscoco_t2i cirr fashioniq refcoco \
+  --models metaclip-s16 metaclip-m16 mobileclip2-s2 clip-b32-pl siglip2-pl siglip2-base \
+    siglip2-pl-32768 embeddinggemma-2 siglip2-naflex clip-b32-pl-32768 \
+  --batch-size 8
+```
+
+CLI automatycznie dobiera środowisko HF dla modelu. Gemma ma ograniczenie batcha
+do 16, pozostałe modele zmniejszają batch po OOM. Ukończone przebiegi tego samego
+protokołu, rewizji i tłumaczenia są pomijane przed inicjalizacją GPU.
+Parametry i licencje wszystkich dziesięciu modeli znajdują się w leaderboardzie.
+Szczegóły selektywnego ładowania Gemma (438,76M, bez audio), NaFlex i protokołu
+znajdują się w [protocol_v2.md](protocol_v2.md).

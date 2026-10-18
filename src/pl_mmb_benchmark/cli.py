@@ -53,7 +53,8 @@ def main():
                 if completed:
                     print(f'Skip completed {repo} / {key}', flush=True)
                     continue
-                executable = sys.executable
+                legacy = Path.home() / '.venvs/pl-mmb-legacy-cu130/bin/python'
+                executable = os.environ.get('PL_MMB_LEGACY_PYTHON', str(legacy) if legacy.is_file() else sys.executable)
                 if repo == MODELS['embeddinggemma-2']:
                     executable = os.environ.get('PL_MMB_MODERN_PYTHON', str(Path.home() / '.venvs/pl-mmb-modern/bin/python'))
                     if not Path(executable).is_file():
