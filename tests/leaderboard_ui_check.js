@@ -10,12 +10,14 @@
     const headers = Array.from(document.querySelectorAll('thead th'));
     assert(headers.length === data.datasets.length + 4, 'Metadata plus dataset columns');
     assert(headers[3].getAttribute('aria-sort') === 'descending', 'Default: descending average');
-    for (let i = 1; i < models().length; i++) {
-      assert(mean(models()[i - 1]) >= mean(models()[i]), 'Default average ordering');
+    let means = models().map(mean).filter(v => v !== null);
+    for (let i = 1; i < means.length; i++) {
+      assert(means[i - 1] >= means[i], 'Default average ordering');
     }
     headers[3].querySelector('button').click();
-    for (let i = 1; i < models().length; i++) {
-      assert(mean(models()[i - 1]) <= mean(models()[i]), 'Ascending average ordering');
+    means = models().map(mean).filter(v => v !== null);
+    for (let i = 1; i < means.length; i++) {
+      assert(means[i - 1] <= means[i], 'Ascending average ordering');
     }
     for (let column = 0; column < headers.length; column++) {
       headers[column].querySelector('button').click();
@@ -30,8 +32,10 @@
     metric.dispatchEvent(new Event('change'));
     for (const row of rows()) {
       const model = data.models[row.dataset.row];
-      const expected = data.datasets.reduce((sum, d) => sum + model.cells[d].metrics['ndcg@10'], 0) / data.datasets.length;
-      assert(row.querySelector('[data-score="mean"]').textContent === (expected * 100).toFixed(2), 'NDCG mean updates');
+      assert(row.querySelector('th').textContent === model.model, 'Full model ID includes publisher');
+      const scores = data.datasets.map(d => model.cells[d]?.metrics['ndcg@10'] ?? null);
+      const expected = scores.some(v => v === null) ? '—' : (scores.reduce((a, b) => a + b, 0) / scores.length * 100).toFixed(2);
+      assert(row.querySelector('[data-score="mean"]').textContent === expected, 'NDCG mean updates');
     }
     const filter = document.getElementById('filter');
     filter.value = models()[0].model;
