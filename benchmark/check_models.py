@@ -2,6 +2,8 @@
 import argparse
 import gc
 import json
+import os
+import subprocess
 import sys
 from pathlib import Path
 
@@ -14,8 +16,17 @@ from pl_mmb_benchmark.protocol import PROTOCOL
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--models', nargs='+', required=True)
+    parser.add_argument('--internal-worker', action='store_true', help=argparse.SUPPRESS)
     args = parser.parse_args()
     check_cache()
+    if not args.internal_worker:
+        for alias in args.models:
+            repo = MODELS.get(alias, alias)
+            modern = repo == MODELS['embeddinggemma-2']
+            path = Path.home() / ('.venvs/pl-mmb-modern/bin/python' if modern else '.venvs/pl-mmb-legacy-cu130/bin/python')
+            executable = os.environ.get('PL_MMB_MODERN_PYTHON' if modern else 'PL_MMB_LEGACY_PYTHON', str(path) if path.is_file() else sys.executable)
+            subprocess.run([executable, '-u', str(Path(__file__).resolve()), '--internal-worker', '--models', repo], check=True)
+        return
     import torch
     from datasets import Dataset
     from huggingface_hub import hf_hub_download
