@@ -18,6 +18,7 @@ dependencies = [
 
 [project.scripts]
 pl-mmb-translate = "pl_mmb_translate.cli:main"
+pl-mmb-benchmark = "pl_mmb_benchmark.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/pl_mmb_translate"]
+packages = ["src/pl_mmb_translate", "src/pl_mmb_benchmark"]

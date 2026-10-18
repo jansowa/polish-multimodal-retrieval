@@ -1,8 +1,16 @@
-# Polish Multimodal Benchmark Translator
+# Polish Multimodal Benchmark
+
+Projekt ma dwa niezależne obszary:
+
+- [Tłumaczenie danych](translation/README.md): zewnętrzny serwer API, checkpointy, kolejki i przeglądarka.
+- [Benchmarkowanie](benchmark/README.md): lokalne GPU w WSL, wybór datasetów/modeli/batch size, wyniki i graficzny leaderboard.
+
+Pierwsze porównanie: `~/.venvs/pl-mmb-benchmark/bin/python benchmark.py --datasets mscoco_t2i --batch-size 64`.
+Poniższa dokumentacja dotyczy obszaru tłumaczeń. Jego instalacja nadal nie wymaga GPU.
 
 Resumable English → Polish translation pipeline for multimodal embedding benchmarks. Translation is performed through the **OpenAI Python library** and therefore works with OpenAI-compatible servers such as vLLM/SGLang as long as they implement `chat.completions` with image inputs.
 
-The project deliberately contains **no GPU / CUDA / PyTorch dependency**. Image preprocessing uses Pillow on CPU. Hugging Face `datasets` is used only for dataset I/O.
+The translation environment contains **no GPU / CUDA / PyTorch dependency**. Image preprocessing uses Pillow on CPU. Hugging Face `datasets` is used only for dataset I/O. GPU dependencies are isolated in the separate benchmark environment.
 
 ## Supported targets
 
