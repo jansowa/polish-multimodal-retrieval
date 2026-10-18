@@ -1,4 +1,5 @@
 import hashlib
+import math
 import json
 import time
 from importlib.metadata import version
@@ -52,10 +53,13 @@ def evaluate(encoder, key, examples, translation_sha, output, limit=None):
     n = len(predictions)
     metrics = {f'recall@{k}': sum(p['rank'] <= k for p in predictions) / n for k in (1, 5, 10)}
     metrics['mrr'] = sum(1 / p['rank'] for p in predictions) / n
+    metrics['precision@1'] = metrics['recall@1']
+    metrics['ndcg@10'] = sum(1 / math.log2(p['rank'] + 1) if p['rank'] <= 10 else 0 for p in predictions) / n
     if key.startswith('aro_'):
         metrics = {'pair_accuracy': metrics['recall@1']}
     result = dict(**identity, run_id=run_id, examples=n, full_dataset=limit is None,
                   metrics=metrics, batch_size=encoder.batch_size, precision=encoder.precision,
+                  parameters=encoder.parameter_count,
                   device=torch.cuda.get_device_name(), torch_version=torch.__version__,
                   libraries={name: version(name) for name in ('transformers', 'open_clip_torch', 'timm', 'datasets')},
                   peak_vram_gib=torch.cuda.max_memory_allocated() / 2**30,

@@ -6,9 +6,48 @@ from unittest.mock import patch
 
 from pl_mmb_benchmark.models import check_cache
 from pl_mmb_benchmark.leaderboard import build
+from pl_mmb_benchmark.leaderboard_view import matrix
 
 
 class BenchmarkTests(unittest.TestCase):
+    def test_matrix_latest_full_run_and_complete_mean(self):
+        def result(model, dataset, score, timestamp='2026-01-01', full=True):
+            return dict(model=model, dataset=dataset, metrics={'recall@1': score},
+                        timestamp=timestamp, full_dataset=full)
+        datasets, rows = matrix([
+            result('a', 'one', .9), result('a', 'one', .3, '2026-01-02'),
+            result('a', 'two', .5), result('a', 'two', 1., '2026-01-03', full=False),
+            result('b', 'one', .8), result('b', 'two', .6), result('c', 'one', 1.),
+        ])
+        self.assertEqual(datasets, ['one', 'two'])
+        self.assertEqual([r['model'] for r in rows], ['b', 'a', 'c'])
+        self.assertAlmostEqual(rows[0]['mean'], .7)
+        self.assertAlmostEqual(rows[1]['mean'], .4)
+        self.assertIsNone(rows[2]['mean'])
+
+    def test_ndcg_from_saved_ranks_preserves_originals(self):
+        import json
+        import math
+        with tempfile.TemporaryDirectory() as directory:
+            run = Path(directory) / 'valid'
+            run.mkdir()
+            result = dict(run_id='valid', model='publisher/test', dataset='example', examples=3,
+                          full_dataset=True, metrics={'recall@1': 1/3})
+            original = json.dumps(result)
+            (run / 'result.json').write_text(original)
+            predictions = ''.join(json.dumps(dict(rank=r, candidates=20, positive_score=.5)) + '\n' for r in [1, 2, 11])
+            (run / 'predictions.jsonl').write_text(predictions)
+            page = build(directory)
+            derived = json.loads((Path(directory) / 'derived_metrics.json').read_text())
+            self.assertAlmostEqual(derived['valid']['ndcg@10'], (1 + 1/math.log2(3))/3)
+            self.assertEqual((run / 'result.json').read_text(), original)
+            self.assertEqual((run / 'predictions.jsonl').read_text(), predictions)
+            content = page.read_text(encoding='utf-8')
+            self.assertNotIn('batch_size', content)
+            self.assertNotIn('seconds', content)
+            self.assertEqual(content.count('<table>'), 1)
+            self.assertIn('>publisher/test</th>', content)
+
     def test_reject_windows_cache(self):
         with patch.dict(os.environ, {'HF_HOME': '/mnt/d/models'}):
             with self.assertRaises(RuntimeError):

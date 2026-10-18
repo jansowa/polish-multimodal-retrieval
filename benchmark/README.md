@@ -37,14 +37,17 @@ czas i rewizja modelu trafiają do wyniku. Brak cichego przejścia na CPU.
 - Polskie tłumaczenia są łączone ze źródłem przez `metadata.row_index`, nigdy przez
   kolejność JSONL. Wymagane jest 100% rekordów bez duplikatów i identyczny tekst źródła.
 - MMEB: lokalna pula kandydatów z każdego wiersza, poprawna odpowiedź na pozycji 0.
-  Metryki: Recall@1/5/10 i MRR. To nie globalne wyszukiwanie w pełnym COCO/M-BEIR.
+  Metryka bazowa: Precision@1 (równe Recall@1 i Hit@1 przy jednej oznaczonej poprawnej
+  odpowiedzi). Dodatkowo: NDCG@10, Recall@5/10 i MRR. To nie globalne wyszukiwanie w pełnym COCO/M-BEIR.
 - Wariant tekst → obraz używa całego przetłumaczonego zapytania, z zachowaniem instrukcji.
   Usuwane są wyłącznie znaczniki obrazów. Tekst jest obcinany do kontekstu 77 tokenów.
 - CIRR/FashionIQ/RefCOCO: zapytanie jest znormalizowaną sumą jednostkowego embeddingu
   tekstu i obrazu. To jawny baseline CLIP, nie oficjalny wynik modelu multimodalnego MMEB.
   Instrukcje kandydatów obrazowych nie są kodowane.
 - ARO: podpis prawdziwy i fałszywy porównywane z obrazem; pair accuracy.
-- Remisy liczone są jako błędy. Nie ma średniej między nieporównywalnymi zadaniami.
+- Remisy liczone są jako błędy. Średnia w tabeli jest nieważoną średnią wyników
+  datasetów dla wybranej metryki; pojawia się dopiero po ukończeniu wszystkich
+  datasetów w tabeli. Nie jest to oficjalny zbiorczy wynik MMEB ani MIEB.
 - `--limit N` służy wyłącznie pilotom. Wynik ma `full_dataset=false` i osobne ID.
   Nie należy porównywać pilota z pełnym przebiegiem.
 
@@ -72,8 +75,20 @@ wcześniejsze pliki pozostają nienaruszone. `validation.json` wskazuje przebieg
 wyłączone z leaderboardu z powodu NaN lub błędnego preprocessingu MobileCLIP2. Nowy evaluator odrzuca nieprawidłowe
 embeddingi i podobieństwa, a zapis JSON nie dopuszcza NaN ani nieskończoności.
 
-`benchmark/results/index.html` to samodzielny graficzny leaderboard z filtrem;
-`leaderboard.csv` zawiera wszystkie metryki. Odbudowa i serwer (port odrębny od reviewera):
+`benchmark/results/index.html` zawiera jedną tabelę: pełny identyfikator modelu HF,
+liczba parametrów [M], licencja, średnia, a następnie kolumny datasetów. Każdy model
+ma jeden wiersz. Parametry obejmują model obrazu i tekstu, przed reparametryzacją;
+dla pierwszych trzech modeli zostały policzone z wag na CPU. Licencje mają linki
+do dokumentów wydawców. Wszystkie kolumny można sortować; domyślnie średnia malejąco.
+Tabela nie wyświetla czasu obliczeń ani batch size.
+
+Przełącznik metryki aktualizuje komórki, średnią i sortowanie. NDCG@10 dla historycznych
+przebiegów jest liczone z zapisanych rang na CPU i zapisywane w `derived_metrics.json`;
+oryginalne `result.json` i `predictions.jsonl` nie są modyfikowane.
+`leaderboard.csv` odzwierciedla tabelę dla metryki bazowej, a `metrics.csv` zawiera
+wszystkie metryki najnowszych pełnych wyników. Oba eksporty pomijają czas i batch size.
+Uzasadnienie metryk i źródła: [metric_review.md](metric_review.md).
+Odbudowa i serwer (port odrębny od reviewera):
 
 ```bash
 ~/.venvs/pl-mmb-benchmark/bin/python benchmark.py --leaderboard
@@ -92,7 +107,7 @@ tail -f benchmark/results/worker.log
 ```
 
 `start --wait` ustawia kolejne zadanie w kolejce za już działającym workerem,
-bez przerywania jego obliczeń. Piloty w leaderboardzie są domyślnie ukryte.
+bez przerywania jego obliczeń. Piloty nie wchodzą do tabeli ani średniej.
 
 Blokada zapobiega uruchomieniu dwóch kolejek przez `manage.py`. Procesy uruchomione
 bezpośrednio przez `benchmark.py` nie korzystają z tej blokady. Po restarcie WSL

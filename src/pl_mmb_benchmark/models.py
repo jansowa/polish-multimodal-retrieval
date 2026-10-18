@@ -11,6 +11,14 @@ REVISIONS = {
     MODELS['metaclip-m16']: 'bc15d9f5ddabe0497898578493a6e81288057c90',
     MODELS['mobileclip2-s2']: '72424e7025436db18f15c3eff6ee8c7c15ad4481',
 }
+MODEL_METADATA = {
+    MODELS['metaclip-s16']: {'parameters': 49722241, 'license': 'CC-BY-NC-4.0',
+        'license_url': 'https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384/blob/006223472923ba925226b59b6acd1e3e266c2382/README.md'},
+    MODELS['metaclip-m16']: {'parameters': 85301761, 'license': 'CC-BY-NC-4.0',
+        'license_url': 'https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384/blob/bc15d9f5ddabe0497898578493a6e81288057c90/README.md'},
+    MODELS['mobileclip2-s2']: {'parameters': 99243329, 'license': 'Apple AMLR',
+        'license_url': 'https://huggingface.co/apple/MobileCLIP2-S2/blob/72424e7025436db18f15c3eff6ee8c7c15ad4481/LICENSE'},
+}
 
 
 def check_cache():
@@ -46,12 +54,14 @@ class Encoder:
                 image_mean=(0., 0., 0.), image_std=(1., 1., 1.), image_interpolation='bilinear')
             from timm.utils import reparameterize_model
             self.model.eval()
+            self.parameter_count = sum(p.numel() for p in self.model.parameters())
             self.model = reparameterize_model(self.model, inplace=True)
             self.tokenizer = open_clip.get_tokenizer('MobileCLIP2-S2')
         else:
             from transformers import AutoModel, AutoProcessor
             self.processor = AutoProcessor.from_pretrained(repo, revision=self.revision, use_fast=False)
             self.model = AutoModel.from_pretrained(repo, revision=self.revision)
+            self.parameter_count = sum(p.numel() for p in self.model.parameters())
         self.model.eval().to('cuda')
 
     def encode(self, values, images=False):
