@@ -1,5 +1,9 @@
 # Benchmarkowanie na GPU w WSL
 
+**Bieżący protokół: [v2](protocol_v2.md)** — bez instrukcji, suma surowych
+embeddingów CLIP i cosine po połączeniu. Poprzednie wyniki pozostają w archiwum.
+EmbeddingGemma-2 używa natywnego wspólnego kodowania tekstu i obrazu, bez audio.
+
 Kod znajduje się w `src/pl_mmb_benchmark/`, niezależnie od `src/pl_mmb_translate/`.
 Tłumaczenie oraz przeglądarka mogą pracować jednocześnie z benchmarkiem.
 
@@ -14,7 +18,8 @@ bash benchmark/setup_wsl.sh
 ```
 
 `--model` jest aliasem `--models`. Można podać alias lub repozytorium HF kompatybilne
-z interfejsem CLIP w Transformers. Domyślnie uruchamianych jest wszystkich sześć modeli.
+z interfejsem CLIP w Transformers. Dostępnych jest dziesięć modeli. EmbeddingGemma-2
+jest automatycznie kierowane do oddzielnego środowiska `pl-mmb-modern`.
 `all` oznacza wszystkie **zaimplementowane, ukończone** zbiory: cztery warianty MMEB
 po 1000 rekordów oraz dwa ARO. Kolejność rośnie według liczby przykładów; wszystkie
 modele kończą mały dataset przed przejściem do kolejnego. Nie uruchamiamy automatycznie
@@ -39,14 +44,16 @@ czas i rewizja modelu trafiają do wyniku. Brak cichego przejścia na CPU.
 - MMEB: lokalna pula kandydatów z każdego wiersza, poprawna odpowiedź na pozycji 0.
   Metryka bazowa: Precision@1 (równe Recall@1 i Hit@1 przy jednej oznaczonej poprawnej
   odpowiedzi). Dodatkowo: NDCG@10, Recall@5/10 i MRR. To nie globalne wyszukiwanie w pełnym COCO/M-BEIR.
-- Wariant tekst → obraz używa całego przetłumaczonego zapytania, z zachowaniem instrukcji.
-  Usuwane są wyłącznie znaczniki obrazów. Limit tekstu zależy od architektury:
+- Wariant tekst → obraz używa treści przetłumaczonego zapytania po usunięciu instrukcji
+  zadania i znaczników obrazów. Limit tekstu zależy od architektury:
   MetaCLIP/MobileCLIP2 — 77, SigLIP2 — 64, multilingual CLIP — 128 tokenów.
-- CIRR/FashionIQ/RefCOCO: zapytanie jest znormalizowaną sumą jednostkowego embeddingu
-  tekstu i obrazu. To jawny baseline CLIP, nie oficjalny wynik modelu multimodalnego MMEB.
+- CIRR/FashionIQ/RefCOCO: dla CLIP zapytanie jest sumą surowych embeddingów tekstu
+  i obrazu; normalizacja zachodzi dopiero podczas cosine similarity. Referencja:
+  `get_pred(normalization=True)` w kodzie MMEB v1. To nie deklaracja reprodukcji
+  wszystkich ustawień modeli z angielskiej tabeli. EmbeddingGemma-2 koduje zapytanie wspólnie.
   Instrukcje kandydatów obrazowych nie są kodowane.
 - ARO: podpis prawdziwy i fałszywy porównywane z obrazem; pair accuracy.
-- Remisy liczone są jako błędy. Średnia w tabeli jest nieważoną średnią wyników
+- Remisy rozstrzyga pierwsza pozycja, zgodnie z oryginalnym `np.argmax`. Średnia w tabeli jest nieważoną średnią wyników
   datasetów dla wybranej metryki; pojawia się dopiero po ukończeniu wszystkich
   datasetów w tabeli. Nie jest to oficjalny zbiorczy wynik MMEB ani MIEB.
 - `--limit N` służy wyłącznie pilotom. Wynik ma `full_dataset=false` i osobne ID.

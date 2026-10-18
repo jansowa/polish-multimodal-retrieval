@@ -77,7 +77,9 @@ def load(key):
                 raise ValueError(f'Source mismatch: {p["id"]}')
             images = [str(image_root / x) for x in row['tgt_img_path']]
             query = str(image_root / row['qry_img_path']) if row['qry_img_path'] else None
-            examples.append(Example(p['id'], [clean(p['translated']['qry_text'])], images, query))
+            from .protocol import without_instruction
+            caption = without_instruction(key, p['source']['qry_text'], p['translated']['qry_text'])
+            examples.append(Example(p['id'], [caption], images, query))
     if len(examples) != expected:
         raise ValueError('Source length mismatch')
     unique_images = {image for e in examples for image in e.images + ([e.query_image] if e.query_image else [])}

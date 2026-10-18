@@ -84,7 +84,9 @@ th:first-child,td:first-child{text-align:left}th:nth-child(3),td:nth-child(3){te
 .mean{font-weight:750;background:#153147;color:#a5e4ff}.score{font-variant-numeric:tabular-nums}.arrow{font-size:11px;color:#7dd3fc}.note{font-size:13px}
 @media(max-width:700px){body{padding:20px}h1{font-size:23px}}
 </style></head><body><h1>Porównanie modeli — polskie dane</h1>
-<p>Jeden wiersz na model, wyniki w skali 0–100. Średnia arytmetyczna nadaje każdemu datasetowi taką samą wagę;
+<p>MMEB v1: bez instrukcji zadania, suma surowych embeddingów CLIP i normalizacja końcowa (cosine).
+EmbeddingGemma-2 używa natywnego wspólnego kodowania obrazu i tekstu; audio jest wyłączone.
+Jeden wiersz na model, wyniki w skali 0–100. Średnia arytmetyczna nadaje każdemu datasetowi taką samą wagę;
 pojawia się po ukończeniu wszystkich widocznych datasetów. Uwzględniane są najnowsze prawidłowe pełne przebiegi.</p>
 <div class="controls"><input id="filter" type="search" placeholder="Filtruj modele" aria-label="Filtruj modele">
 <label>Metryka <select id="metric"><option value="official">Oficjalna dla benchmarku</option><option value="ndcg@10">NDCG@10</option><option value="recall@5">Recall@5</option><option value="recall@10">Recall@10</option><option value="mrr">MRR</option></select></label>
@@ -92,7 +94,7 @@ pojawia się po ukończeniu wszystkich widocznych datasetów. Uwzględniane są 
 <p id="metric-note" class="note">MMEB: Precision@1 (równe Recall@1 przy jednej poprawnej odpowiedzi). ARO: pair accuracy.</p>
 <div class="table-wrap"><table><thead><tr>__HEADERS__</tr></thead><tbody>__ROWS__</tbody></table></div>
 <p class="note">Kliknij nagłówek, aby zmienić sortowanie. Parametry obejmują enkoder obrazu i tekstu, przed reparametryzacją.
-<a href="validation.json">Raport wykluczonych przebiegów</a></p>
+<a href="validation.json">Raport wykluczonych przebiegów</a> · <a href="index.protocol-v1.html">Archiwum wcześniejszego protokołu</a></p>
 <script id="leaderboard-data" type="application/json">__DATA__</script><script>
 const data=JSON.parse(document.getElementById('leaderboard-data').textContent);
 const body=document.querySelector('tbody'),metric=document.getElementById('metric');

@@ -6,14 +6,21 @@ from importlib.metadata import version
 from datetime import datetime, timezone
 from pathlib import Path
 
-PROTOCOL = 'pl-clip-local-candidates-v1'
+from .protocol import PROTOCOL, REFERENCE_REVISION
 
 
 def rank(scores):
-    """Positive is position zero. Ties count against the model."""
+    """Positive is position zero; ties follow original np.argmax (first position)."""
     if not bool((abs(scores) < float('inf')).all()):
         raise ValueError('Nonfinite similarities cannot be ranked')
-    return 1 + int((scores[1:] >= scores[0]).sum())
+    return 1 + int((scores[1:] > scores[0]).sum())
+
+
+def cosine_scores(text, image, candidates):
+    """Match MMEB get_pred(normalization=True), after adding native features."""
+    import torch
+    query = text if image is None else text + image
+    return torch.nn.functional.normalize(candidates, dim=-1) @ torch.nn.functional.normalize(query, dim=0)
 
 
 def evaluate(encoder, key, examples, translation_sha, output, limit=None):
@@ -34,22 +41,28 @@ def evaluate(encoder, key, examples, translation_sha, output, limit=None):
         return
     started = time.monotonic()
     torch.cuda.reset_peak_memory_stats()
-    images = list(dict.fromkeys(p for e in examples for p in e.images + ([e.query_image] if e.query_image else [])))
+    images = list(dict.fromkeys(p for e in examples for p in e.images + ([e.query_image] if e.query_image and not encoder.native_multimodal else [])))
     texts = list(dict.fromkeys(t for e in examples for t in e.texts))
     print(f'{key}: {len(examples)} examples, {len(images)} unique images, {len(texts)} unique texts', flush=True)
     image_features = encoder.encode(images, images=True)
     text_features = encoder.encode(texts)
+    normalized_images = torch.nn.functional.normalize(image_features, dim=-1)
+    normalized_texts = torch.nn.functional.normalize(text_features, dim=-1)
+    native_queries = None
+    if encoder.native_multimodal and any(e.query_image for e in examples):
+        if not all(e.query_image for e in examples):
+            raise ValueError('Mixed native query modalities require an explicit adapter')
+        native_queries = encoder.encode_joint([e.texts[0] for e in examples], [e.query_image for e in examples])
     image_index = {v: i for i, v in enumerate(images)}
     text_index = {v: i for i, v in enumerate(texts)}
     predictions = []
-    for e in examples:
+    for row_index, e in enumerate(examples):
         if key.startswith('aro_'):
-            scores = text_features[[text_index[t] for t in e.texts]] @ image_features[image_index[e.images[0]]]
+            scores = normalized_texts[[text_index[t] for t in e.texts]] @ normalized_images[image_index[e.images[0]]]
         else:
-            query = text_features[text_index[e.texts[0]]]
-            if e.query_image:
-                query = torch.nn.functional.normalize(query + image_features[image_index[e.query_image]], dim=0)
-            scores = image_features[[image_index[p] for p in e.images]] @ query
+            query_text = native_queries[row_index] if native_queries is not None else text_features[text_index[e.texts[0]]]
+            query_image = image_features[image_index[e.query_image]] if e.query_image and native_queries is None else None
+            scores = cosine_scores(query_text, query_image, image_features[[image_index[p] for p in e.images]])
         predictions.append(dict(id=e.id, rank=rank(scores), candidates=len(scores),
                                 positive_score=float(scores[0]), best_index=int(scores.argmax())))
     n = len(predictions)
@@ -63,9 +76,11 @@ def evaluate(encoder, key, examples, translation_sha, output, limit=None):
                   metrics=metrics, batch_size=encoder.batch_size, precision=encoder.precision,
                   parameters=encoder.parameter_count,
                   text_max_length=encoder.text_max_length,
+                  reference_revision=REFERENCE_REVISION,
+                  fusion='native-joint' if encoder.native_multimodal else 'raw-addition-before-final-l2', similarity='cosine', task_instructions=False,
                   device=torch.cuda.get_device_name(), torch_version=torch.__version__,
                   libraries={name: version(name) for name in ('transformers', 'open_clip_torch', 'timm', 'datasets') +
-                             (('sentence-transformers',) if encoder.sentence_clip else ())},
+                             (('sentence-transformers',) if encoder.sentence_clip or encoder.native_multimodal else ())},
                   peak_vram_gib=torch.cuda.max_memory_allocated() / 2**30,
                   seconds=time.monotonic() - started, timestamp=datetime.now(timezone.utc).isoformat())
     (dest / 'predictions.jsonl').write_text(''.join(json.dumps(p, allow_nan=False) + '\n' for p in predictions))

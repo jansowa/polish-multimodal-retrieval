@@ -8,6 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 from pl_mmb_benchmark.models import Encoder, MODELS, check_cache
 from pl_mmb_benchmark.data import ROOT, REVISION, translation_path
+from pl_mmb_benchmark.protocol import PROTOCOL
 
 
 def main():
@@ -34,11 +35,15 @@ def main():
             texts = [source[i]['qry_text'] if language == 'en' else patches[i]['translated']['qry_text'] for i in indices]
             features = encoder.encode(texts)
             assert features.shape == visual.shape
-            similarities = features @ visual.T
+            similarities = torch.nn.functional.normalize(features, dim=-1) @ torch.nn.functional.normalize(visual, dim=-1).T
             result[language] = dict(accuracy_10_candidates=float((similarities.argmax(1) == torch.arange(10)).float().mean()),
                                     diagonal_scores=similarities.diag().tolist())
+        if encoder.native_multimodal:
+            joint = encoder.encode_joint([patches[i]['translated']['qry_text'] for i in indices[:2]], images[:2])
+            assert joint.shape == (2, visual.shape[1]) and torch.isfinite(joint).all()
+            result['native_joint_checked'] = True
         print(json.dumps(result, allow_nan=False), flush=True)
-        target = ROOT / 'benchmark/results/checks' / encoder.revision
+        target = ROOT / 'benchmark/results/checks' / PROTOCOL / encoder.revision
         target.mkdir(parents=True, exist_ok=True)
         (target / 'paired_control.json').write_text(json.dumps(result, indent=2, allow_nan=False))
         del encoder

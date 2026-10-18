@@ -7,9 +7,37 @@ from unittest.mock import patch
 from pl_mmb_benchmark.models import check_cache
 from pl_mmb_benchmark.leaderboard import build
 from pl_mmb_benchmark.leaderboard_view import matrix
+from pl_mmb_benchmark.protocol import PROTOCOL, without_instruction
 
 
 class BenchmarkTests(unittest.TestCase):
+    def test_instruction_removal_preserves_caption_colons_and_quotes(self):
+        self.assertEqual(without_instruction('mscoco_t2i',
+            'Find me an everyday image that matches the given caption: A sign: STOP.',
+            'Znajdź obraz z życia codziennego pasujący do podanego opisu: Znak: STOP.'), 'Znak: STOP.')
+        self.assertEqual(without_instruction('refcoco',
+            '<|image_1|>\nSelect the portion of the image that follows the language expressions. "girl"',
+            '<|image_1|>\nWybierz fragment obrazu odpowiadający opisowi. "dziewczynka"'), '"dziewczynka"')
+        with self.assertRaises(ValueError):
+            without_instruction('cirr', 'Unknown instruction: test', 'Nieznana instrukcja: test')
+
+    def test_raw_fusion_matches_reference_and_not_unit_feature_sum(self):
+        import numpy as np
+        try:
+            import torch
+        except ImportError:
+            self.skipTest('PyTorch is isolated in the benchmark environment')
+        from pl_mmb_benchmark.evaluate import cosine_scores
+        text, image = torch.tensor([0., 1.]), torch.tensor([100., 0.])
+        targets = torch.tensor([[1., 0.], [.8, .6]])
+        scores = cosine_scores(text, image, targets)
+        q = (text + image).numpy(); t = targets.numpy()
+        expected = t @ q / (np.linalg.norm(t, axis=1) * np.linalg.norm(q))
+        np.testing.assert_allclose(scores.numpy(), expected, rtol=1e-6)
+        self.assertEqual(int(scores.argmax()), 0)
+        wrong = cosine_scores(torch.nn.functional.normalize(text, dim=0), torch.nn.functional.normalize(image, dim=0), targets)
+        self.assertEqual(int(wrong.argmax()), 1)
+
     def test_matrix_latest_full_run_and_complete_mean(self):
         def result(model, dataset, score, timestamp='2026-01-01', full=True):
             return dict(model=model, dataset=dataset, metrics={'recall@1': score},
@@ -32,7 +60,7 @@ class BenchmarkTests(unittest.TestCase):
             run = Path(directory) / 'valid'
             run.mkdir()
             result = dict(run_id='valid', model='publisher/test', dataset='example', examples=3,
-                          full_dataset=True, metrics={'recall@1': 1/3})
+                          protocol=PROTOCOL, full_dataset=True, metrics={'recall@1': 1/3})
             original = json.dumps(result)
             (run / 'result.json').write_text(original)
             predictions = ''.join(json.dumps(dict(rank=r, candidates=20, positive_score=.5)) + '\n' for r in [1, 2, 11])
@@ -73,11 +101,11 @@ class BenchmarkTests(unittest.TestCase):
             self.assertEqual(audit['excluded'][0]['run_id'], 'old-run')
             self.assertNotIn('old-run', (Path(d) / 'leaderboard.csv').read_text())
 
-    def test_positive_rank_ties_are_errors(self):
+    def test_positive_rank_ties_follow_original_argmax(self):
         import numpy as np
         from pl_mmb_benchmark.evaluate import rank
         self.assertEqual(rank(np.array([1., .5, .1])), 1)
-        self.assertEqual(rank(np.array([1., 1., .1])), 2)
+        self.assertEqual(rank(np.array([1., 1., .1])), 1)
         self.assertEqual(rank(np.array([.2, .5, .1])), 2)
         for values in ([float('nan'), .5], [.5, float('nan')], [.5, float('inf')]):
             with self.assertRaises(ValueError):

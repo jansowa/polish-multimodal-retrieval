@@ -3,6 +3,7 @@ import math
 from pathlib import Path
 
 from .leaderboard_view import render
+from .protocol import PROTOCOL
 
 
 def build(root):
@@ -13,6 +14,9 @@ def build(root):
     derived = {}
     for p in root.glob('*/result.json'):
         result = json.loads(p.read_text())
+        if result.get('protocol') != PROTOCOL:
+            invalid.append({'run_id': result['run_id'], 'reason': 'Archived protocol: instructions or pre-fusion normalization'})
+            continue
         predictions = p.parent / 'predictions.jsonl'
         reason = None
         if result.get('model') == 'apple/MobileCLIP2-S2' and result.get('numerics') != 'mobile-fp32-unit-range-reparam-v3':
