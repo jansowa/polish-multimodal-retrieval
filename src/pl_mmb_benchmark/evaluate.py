@@ -24,6 +24,8 @@ def evaluate(encoder, key, examples, translation_sha, output, limit=None):
                     dataset=key, translations_sha256=translation_sha, limit=limit)
     if encoder.mobile:
         identity['numerics'] = 'mobile-fp32-unit-range-reparam-v3'
+    if encoder.components:
+        identity['components'] = encoder.components
     run_id = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()[:20]
     dest = Path(output) / run_id
     dest.mkdir(parents=True, exist_ok=True)
@@ -60,8 +62,10 @@ def evaluate(encoder, key, examples, translation_sha, output, limit=None):
     result = dict(**identity, run_id=run_id, examples=n, full_dataset=limit is None,
                   metrics=metrics, batch_size=encoder.batch_size, precision=encoder.precision,
                   parameters=encoder.parameter_count,
+                  text_max_length=encoder.text_max_length,
                   device=torch.cuda.get_device_name(), torch_version=torch.__version__,
-                  libraries={name: version(name) for name in ('transformers', 'open_clip_torch', 'timm', 'datasets')},
+                  libraries={name: version(name) for name in ('transformers', 'open_clip_torch', 'timm', 'datasets') +
+                             (('sentence-transformers',) if encoder.sentence_clip else ())},
                   peak_vram_gib=torch.cuda.max_memory_allocated() / 2**30,
                   seconds=time.monotonic() - started, timestamp=datetime.now(timezone.utc).isoformat())
     (dest / 'predictions.jsonl').write_text(''.join(json.dumps(p, allow_nan=False) + '\n' for p in predictions))

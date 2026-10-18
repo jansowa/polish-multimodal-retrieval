@@ -14,7 +14,7 @@ bash benchmark/setup_wsl.sh
 ```
 
 `--model` jest aliasem `--models`. Można podać alias lub repozytorium HF kompatybilne
-z interfejsem CLIP w Transformers. Domyślnie uruchamiane są wszystkie trzy modele.
+z interfejsem CLIP w Transformers. Domyślnie uruchamianych jest wszystkich sześć modeli.
 `all` oznacza wszystkie **zaimplementowane, ukończone** zbiory: cztery warianty MMEB
 po 1000 rekordów oraz dwa ARO. Kolejność rośnie według liczby przykładów; wszystkie
 modele kończą mały dataset przed przejściem do kolejnego. Nie uruchamiamy automatycznie
@@ -40,7 +40,8 @@ czas i rewizja modelu trafiają do wyniku. Brak cichego przejścia na CPU.
   Metryka bazowa: Precision@1 (równe Recall@1 i Hit@1 przy jednej oznaczonej poprawnej
   odpowiedzi). Dodatkowo: NDCG@10, Recall@5/10 i MRR. To nie globalne wyszukiwanie w pełnym COCO/M-BEIR.
 - Wariant tekst → obraz używa całego przetłumaczonego zapytania, z zachowaniem instrukcji.
-  Usuwane są wyłącznie znaczniki obrazów. Tekst jest obcinany do kontekstu 77 tokenów.
+  Usuwane są wyłącznie znaczniki obrazów. Limit tekstu zależy od architektury:
+  MetaCLIP/MobileCLIP2 — 77, SigLIP2 — 64, multilingual CLIP — 128 tokenów.
 - CIRR/FashionIQ/RefCOCO: zapytanie jest znormalizowaną sumą jednostkowego embeddingu
   tekstu i obrazu. To jawny baseline CLIP, nie oficjalny wynik modelu multimodalnego MMEB.
   Instrukcje kandydatów obrazowych nie są kodowane.
@@ -118,3 +119,39 @@ Sprawdzenie regresji:
 ```bash
 PYTHONPATH=src ~/.venvs/pl-mmb-benchmark/bin/python -m unittest discover -s tests -p test_benchmark.py -v
 ```
+
+## Dodatkowe modele CLIP i SigLIP2
+
+```bash
+python3 benchmark/manage.py start --datasets mscoco_t2i cirr fashioniq refcoco \
+  --models clip-b32-pl siglip2-pl siglip2-base --batch-size 32
+```
+
+Aliasy odpowiadają pełnym identyfikatorom:
+
+| Alias | Model | Parametry [M] | Licencja |
+|---|---|---:|---|
+| `clip-b32-pl` | `alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384` | 143,75 | MIT |
+| `siglip2-pl` | `alphaedge-ai/siglip2-base-patch16-512-pol-16384` | 191,80 | Apache-2.0 |
+| `siglip2-base` | `google/siglip2-base-patch16-512` | 375,82 | Apache-2.0 |
+
+Multilingual CLIP zawiera osobny enkoder tekstowy DistilBERT z mean pooling
+i projekcją Dense w Sentence Transformers. Obrazy koduje przypięty
+`openai/clip-vit-base-patch32`, zgodnie z zalecanym połączeniem w karcie modelu.
+Liczba parametrów obejmuje oba używane enkodery (143747328), bez nieużywanego
+angielskiego enkodera tekstowego OpenAI. Rewizja enkodera obrazu jest częścią ID wyniku.
+
+Oba SigLIP2 używają oryginalnego preprocessingu 512×512, szybkiego tokenizera
+z przypiętego repozytorium, paddingu do 64 tokenów i CUDA BF16 autocast.
+Batch 32 daje zapas pamięci dla większej rozdzielczości; przy OOM działa redukcja.
+Geometria porównania pozostaje taka sama: znormalizowane embeddingi i suma
+embeddingów obrazu oraz tekstu w zapytaniach mieszanych. Nie zmieniamy starszych wyników.
+
+Kontrola 10 par EN/PL, oddzielna od pełnych benchmarków:
+
+```bash
+~/.venvs/pl-mmb-benchmark/bin/python benchmark/check_models.py --models clip-b32-pl siglip2-pl siglip2-base
+```
+
+Kontrole są zapisywane pod `benchmark/results/checks/<revision>/paired_control.json`.
+Wszystkie pobrania modeli, w tym dodatkowy enkoder obrazu, trafiają do natywnego cache HF.
