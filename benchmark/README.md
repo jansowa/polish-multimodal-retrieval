@@ -27,7 +27,8 @@ Benchmark nie czyta `.env` tłumaczenia. Odrzuca zmienne cache wskazujące na `/
 (również przez symlinki). Istniejące obrazy i źródła MMEB są czytane z cache projektu,
 bez ponownego kopiowania. Nowe modele zawsze pobierają się do natywnego cache HF.
 
-RTX 5070 Ti: początkowy batch 64, CUDA z autocast FP16. Przy CUDA OOM batch jest
+RTX 5070 Ti: początkowy batch 64; MetaCLIP używa CUDA z autocast FP16, a MobileCLIP2
+FP32, obrazy 0–1 i reparametryzację FastViT. Przy CUDA OOM batch jest
 zmniejszany dwukrotnie i ponawiany. Rzeczywisty końcowy batch, GPU, szczyt VRAM,
 czas i rewizja modelu trafiają do wyniku. Brak cichego przejścia na CPU.
 
@@ -52,7 +53,12 @@ Repozytoria modeli i ich instrukcje:
 [MetaCLIP M16](https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384),
 [MobileCLIP2-S2](https://huggingface.co/apple/MobileCLIP2-S2).
 MetaCLIP używa Transformers; MobileCLIP2 używa architektury `MobileCLIP2-S2` w OpenCLIP
-i oficjalnego checkpointu Apple. Dane ARO zawierają pojedynczy ręczny fallback
+i oficjalnego checkpointu Apple. Zgodnie z [instrukcją Apple](https://github.com/apple/ml-mobileclip#openclip-support),
+S2 wymaga `image_mean=(0,0,0)`, `image_std=(1,1,1)`; interpolacja bilinear
+odpowiada konfiguracji `dfndr2b` w OpenCLIP. Reparametryzację realizuje timm.
+Kontrola ładowania na 10 angielskich parach (oddzielna od benchmarku):
+`~/.venvs/pl-mmb-benchmark/bin/python benchmark/check_mobileclip.py`.
+Dane ARO zawierają pojedynczy ręczny fallback
 tłumaczenia opisany w `reports/aro_manual_fallback.json`.
 
 ## Wyniki i leaderboard
@@ -61,6 +67,10 @@ tłumaczenia opisany w `reports/aro_manual_fallback.json`.
 `predictions.jsonl` — ID, pozycję odpowiedzi, liczbę kandydatów i wyniki podobieństwa.
 ID obejmuje protokół, dataset, SHA256 tłumaczeń, model, rewizję i zakres. Ponowne
 uruchomienie pomija ukończone identyczne wyniki. Niedokończony dataset jest liczony od nowa.
+Poprawiony MobileCLIP2 ma dodatkowe `numerics=mobile-fp32-unit-range-reparam-v3` w identyfikatorze;
+wcześniejsze pliki pozostają nienaruszone. `validation.json` wskazuje przebiegi
+wyłączone z leaderboardu z powodu NaN lub błędnego preprocessingu MobileCLIP2. Nowy evaluator odrzuca nieprawidłowe
+embeddingi i podobieństwa, a zapis JSON nie dopuszcza NaN ani nieskończoności.
 
 `benchmark/results/index.html` to samodzielny graficzny leaderboard z filtrem;
 `leaderboard.csv` zawiera wszystkie metryki. Odbudowa i serwer (port odrębny od reviewera):
@@ -72,6 +82,22 @@ python3 -m http.server 8766 --bind 0.0.0.0 --directory benchmark/results
 
 Otwórz `http://localhost:8766`. HTML odświeża się co minutę; pliki powstają po każdym
 ukończonym modelu/datasetcie. Wyniki są lokalne, ignorowane przez Git.
+
+Odłączona kolejka (przeżywa zamknięcie terminala/czatu):
+
+```bash
+python3 benchmark/manage.py start --datasets mscoco_t2i cirr fashioniq refcoco --batch-size 64
+python3 benchmark/manage.py status
+tail -f benchmark/results/worker.log
+```
+
+`start --wait` ustawia kolejne zadanie w kolejce za już działającym workerem,
+bez przerywania jego obliczeń. Piloty w leaderboardzie są domyślnie ukryte.
+
+Blokada zapobiega uruchomieniu dwóch kolejek przez `manage.py`. Procesy uruchomione
+bezpośrednio przez `benchmark.py` nie korzystają z tej blokady. Po restarcie WSL
+uruchom tę samą komendę kolejki. Ukończone wyniki zostaną pominięte.
+Dokładne wersje z przygotowanego środowiska zapisano w `environment-wsl.lock.txt`.
 
 Sprawdzenie regresji:
 ```bash

@@ -20,12 +20,29 @@ class BenchmarkTests(unittest.TestCase):
             self.assertIn('Porównanie modeli', page.read_text(encoding='utf-8'))
             self.assertTrue((Path(d) / 'leaderboard.csv').exists())
 
+    def test_historical_nan_excluded_without_modifying_original(self):
+        import json
+        with tempfile.TemporaryDirectory() as d:
+            run = Path(d) / 'old-run'
+            run.mkdir()
+            original = json.dumps({'run_id': 'old-run', 'examples': 1})
+            (run / 'result.json').write_text(original)
+            (run / 'predictions.jsonl').write_text('{"positive_score": NaN}\n')
+            build(d)
+            self.assertEqual((run / 'result.json').read_text(), original)
+            audit = json.loads((Path(d) / 'validation.json').read_text())
+            self.assertEqual(audit['excluded'][0]['run_id'], 'old-run')
+            self.assertNotIn('old-run', (Path(d) / 'leaderboard.csv').read_text())
+
     def test_positive_rank_ties_are_errors(self):
         import numpy as np
         from pl_mmb_benchmark.evaluate import rank
         self.assertEqual(rank(np.array([1., .5, .1])), 1)
         self.assertEqual(rank(np.array([1., 1., .1])), 2)
         self.assertEqual(rank(np.array([.2, .5, .1])), 2)
+        for values in ([float('nan'), .5], [.5, float('nan')], [.5, float('inf')]):
+            with self.assertRaises(ValueError):
+                rank(np.array(values))
 
     def test_source_export_order_is_not_row_order(self):
         # Exports are ordered by asynchronous completion, so the join must use row_index.

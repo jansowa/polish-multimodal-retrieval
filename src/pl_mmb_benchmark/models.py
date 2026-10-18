@@ -6,6 +6,11 @@ MODELS = {
     'metaclip-m16': 'alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384',
     'mobileclip2-s2': 'apple/MobileCLIP2-S2',
 }
+REVISIONS = {
+    MODELS['metaclip-s16']: '006223472923ba925226b59b6acd1e3e266c2382',
+    MODELS['metaclip-m16']: 'bc15d9f5ddabe0497898578493a6e81288057c90',
+    MODELS['mobileclip2-s2']: '72424e7025436db18f15c3eff6ee8c7c15ad4481',
+}
 
 
 def check_cache():
@@ -29,17 +34,23 @@ class Encoder:
             raise RuntimeError('CUDA GPU required; CPU fallback disabled')
         self.torch = torch
         self.batch_size = batch_size
-        self.revision = HfApi().model_info(repo).sha
+        self.revision = REVISIONS.get(repo) or HfApi().model_info(repo, timeout=30).sha
         self.repo = repo
         self.mobile = repo == MODELS['mobileclip2-s2']
+        self.precision = 'cuda-fp32' if self.mobile else 'cuda-fp16-autocast'
         if self.mobile:
             import open_clip
             checkpoint = hf_hub_download(repo, 'mobileclip2_s2.pt', revision=self.revision)
-            self.model, _, self.processor = open_clip.create_model_and_transforms('MobileCLIP2-S2', pretrained=checkpoint)
+            self.model, _, self.processor = open_clip.create_model_and_transforms(
+                'MobileCLIP2-S2', pretrained=checkpoint,
+                image_mean=(0., 0., 0.), image_std=(1., 1., 1.), image_interpolation='bilinear')
+            from timm.utils import reparameterize_model
+            self.model.eval()
+            self.model = reparameterize_model(self.model, inplace=True)
             self.tokenizer = open_clip.get_tokenizer('MobileCLIP2-S2')
         else:
             from transformers import AutoModel, AutoProcessor
-            self.processor = AutoProcessor.from_pretrained(repo, revision=self.revision)
+            self.processor = AutoProcessor.from_pretrained(repo, revision=self.revision, use_fast=False)
             self.model = AutoModel.from_pretrained(repo, revision=self.revision)
         self.model.eval().to('cuda')
 
@@ -56,7 +67,8 @@ class Encoder:
                     for path in batch:
                         with Image.open(path) as im:
                             opened.append(im.convert('RGB'))
-                with torch.inference_mode(), torch.autocast('cuda', dtype=torch.float16):
+                # FastViT activations can overflow FP16 before final normalization.
+                with torch.inference_mode(), torch.autocast('cuda', dtype=torch.float16, enabled=not self.mobile):
                     if self.mobile:
                         inputs = torch.stack([self.processor(im) for im in opened]).cuda() if images else self.tokenizer(batch).cuda()
                         output = self.model.encode_image(inputs) if images else self.model.encode_text(inputs)
@@ -65,6 +77,8 @@ class Encoder:
                         inputs = {k: v.cuda() for k, v in inputs.items()}
                         output = self.model.get_image_features(**inputs) if images else self.model.get_text_features(**inputs)
                     output = torch.nn.functional.normalize(output.float(), dim=-1).cpu()
+                    if not torch.isfinite(output).all():
+                        raise RuntimeError('Nonfinite model embeddings')
                 chunks.append(output)
                 offset += len(batch)
             except torch.cuda.OutOfMemoryError:

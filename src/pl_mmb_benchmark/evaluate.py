@@ -1,6 +1,7 @@
 import hashlib
 import json
 import time
+from importlib.metadata import version
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -9,6 +10,8 @@ PROTOCOL = 'pl-clip-local-candidates-v1'
 
 def rank(scores):
     """Positive is position zero. Ties count against the model."""
+    if not bool((abs(scores) < float('inf')).all()):
+        raise ValueError('Nonfinite similarities cannot be ranked')
     return 1 + int((scores[1:] >= scores[0]).sum())
 
 
@@ -18,6 +21,8 @@ def evaluate(encoder, key, examples, translation_sha, output, limit=None):
         examples = examples[:limit]
     identity = dict(protocol=PROTOCOL, model=encoder.repo, revision=encoder.revision,
                     dataset=key, translations_sha256=translation_sha, limit=limit)
+    if encoder.mobile:
+        identity['numerics'] = 'mobile-fp32-unit-range-reparam-v3'
     run_id = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()[:20]
     dest = Path(output) / run_id
     dest.mkdir(parents=True, exist_ok=True)
@@ -50,12 +55,13 @@ def evaluate(encoder, key, examples, translation_sha, output, limit=None):
     if key.startswith('aro_'):
         metrics = {'pair_accuracy': metrics['recall@1']}
     result = dict(**identity, run_id=run_id, examples=n, full_dataset=limit is None,
-                  metrics=metrics, batch_size=encoder.batch_size, precision='cuda-fp16-autocast',
+                  metrics=metrics, batch_size=encoder.batch_size, precision=encoder.precision,
                   device=torch.cuda.get_device_name(), torch_version=torch.__version__,
+                  libraries={name: version(name) for name in ('transformers', 'open_clip_torch', 'timm', 'datasets')},
                   peak_vram_gib=torch.cuda.max_memory_allocated() / 2**30,
                   seconds=time.monotonic() - started, timestamp=datetime.now(timezone.utc).isoformat())
-    (dest / 'predictions.jsonl').write_text(''.join(json.dumps(p) + '\n' for p in predictions))
+    (dest / 'predictions.jsonl').write_text(''.join(json.dumps(p, allow_nan=False) + '\n' for p in predictions))
     temp = dest / 'result.tmp'
-    temp.write_text(json.dumps(result, indent=2))
+    temp.write_text(json.dumps(result, indent=2, allow_nan=False))
     temp.replace(dest / 'result.json')
     print(json.dumps(result), flush=True)
