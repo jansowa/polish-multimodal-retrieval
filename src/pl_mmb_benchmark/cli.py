@@ -4,12 +4,34 @@ import subprocess
 import sys
 import hashlib
 import json
+import time
+from collections import deque
 from pathlib import Path
 
 from .data import SPECS, ROOT, load, translation_path
-from .models import MODELS, REVISIONS, Encoder, check_cache, worker_python, model_batch_size
+from .models import MODELS, REVISIONS, Encoder, check_cache, worker_python, model_batch_size, encoding_is_current
 from .protocol import PROTOCOL
 from .leaderboard import build
+
+
+def run_worker(command):
+    for attempt in range(3):
+        recent = deque(maxlen=100)
+        with subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                              text=True, bufsize=1) as child:
+            for line in child.stdout:
+                print(line, end='', flush=True)
+                recent.append(line)
+            code = child.wait()
+        if code == 0:
+            return
+        message = ''.join(recent)
+        transient = any(marker in message for marker in
+            ('CUDA out of memory', 'torch.OutOfMemoryError', 'CUBLAS_STATUS_ALLOC_FAILED', 'CUDA error: out of memory'))
+        if not transient or attempt == 2:
+            raise subprocess.CalledProcessError(code, command)
+        print(f'CUDA allocation failed; retry {attempt + 2}/3 in a fresh process', flush=True)
+        time.sleep(1)
 
 
 def main():
@@ -47,7 +69,7 @@ def main():
                     result = json.loads(path.read_text())
                     if (result.get('protocol'), result.get('model'), result.get('dataset'),
                         result.get('revision'), result.get('translations_sha256'), result.get('limit')) == (
-                        PROTOCOL, repo, key, REVISIONS.get(repo), sha, args.limit):
+                        PROTOCOL, repo, key, REVISIONS.get(repo), sha, args.limit) and encoding_is_current(result):
                         completed.append(path)
                 if completed:
                     print(f'Skip completed {repo} / {key}', flush=True)
@@ -59,7 +81,7 @@ def main():
                 if args.limit:
                     command += ['--limit', str(args.limit)]
                 print(f'Worker: {repo} / {key}', flush=True)
-                subprocess.run(command, check=True)
+                run_worker(command)
         print('Leaderboard:', build(args.output), flush=True)
         return
     from .evaluate import evaluate

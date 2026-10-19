@@ -90,6 +90,12 @@ MODEL_METADATA[MODELS['tipsv2-l14']]['parameters'] = 487941120
 MODEL_METADATA[MODELS['pe-core-b16']]['parameters'] = 447659521
 MODEL_METADATA[MODELS['fashion-siglip']]['parameters'] = 203155970
 
+def encoding_is_current(result):
+    if result.get('model') == MODELS['pe-core-b16']:
+        return result.get('precision') == 'cuda-bf16' and result.get('components', {}).get('precision_policy') == 'native-bf16-weights'
+    return True
+
+
 def model_batch_size(repo, requested):
     if repo in (MODELS['tipsv2-b14'], MODELS['tipsv2-l14']):
         return min(requested, 2)
@@ -165,6 +171,10 @@ class Encoder:
             self.model, self.processor, self.tokenizer, self.components, self.text_max_length = load_special(repo, self.revision)
             self.autocast_dtype = torch.bfloat16
             self.precision = 'cuda-fp32' if self.tips else 'cuda-fp32-weights-bf16-autocast'
+            if self.pe:
+                self.model.bfloat16()
+                self.precision = 'cuda-bf16'
+                self.components['precision_policy'] = 'native-bf16-weights'
             place_mclip_text(self.model)
             self.parameter_count = sum(p.numel() for p in self.model.parameters())
         elif self.mclip:

@@ -4,6 +4,7 @@ from pathlib import Path
 
 from .leaderboard_view import render
 from .protocol import PROTOCOL
+from .models import encoding_is_current
 
 
 def build(root):
@@ -16,6 +17,9 @@ def build(root):
         result = json.loads(p.read_text())
         if result.get('protocol') != PROTOCOL:
             invalid.append({'run_id': result['run_id'], 'reason': 'Archived protocol: instructions or pre-fusion normalization'})
+            continue
+        if not encoding_is_current(result):
+            invalid.append({'run_id': result['run_id'], 'reason': 'Archived PE precision: current encoder uses native BF16 weights'})
             continue
         predictions = p.parent / 'predictions.jsonl'
         reason = None

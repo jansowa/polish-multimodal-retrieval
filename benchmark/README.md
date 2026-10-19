@@ -219,7 +219,7 @@ przez `local-dir:` z natywnego cache HF, bez pobierania innej wersji `main`.
 Dla M-CLIP CLI automatycznie wybiera środowisko `pl-mmb-benchmark` z PyTorch
 2.11.0+cu128. Pozostałe nowe modele korzystają z `pl-mmb-legacy-cu130`.
 `PL_MMB_MCLIP_PYTHON` pozwala zmienić interpreter M-CLIP. Jego wagi tekstowe
-trafiają do jednego bufora GPU transferami do 8 MB, bez zmiany wartości wag.
+trafiają do bloków GPU transferami do 8 MB, bez zmiany wartości wag.
 
 ## TIPSv2, BGE-VL, Perception Encoder i FashionSigLIP
 
@@ -254,3 +254,5 @@ Wszystkie modele zachowują protokół v2 (bez instrukcji MMEB, suma surowych ce
 końcowy cosine). Wagi są pobierane wyłącznie do natywnego cache HF w WSL.
 Po zakończeniu i walidacji tej serii wagi zostają usunięte dla oszczędności miejsca;
 wyniki, konfiguracje, tokenizery i embeddingi pozostają dostępne.
+
+Transfery parametrów używają wyrównanych bloków GPU do 256 MiB (większy pojedynczy parametr zachowuje wymagane ciągłe miejsce) i fragmentów host→GPU do 8 MiB. Po błędzie alokacji CUDA worker jest ponawiany najwyżej trzy razy w osobnym procesie; inne błędy kończą przebieg od razu. Gotowe wyniki są zachowywane.

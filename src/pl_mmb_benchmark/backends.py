@@ -57,17 +57,26 @@ def load_mclip(repo, revision):
 
 
 def place_mclip_text(model, device='cuda'):
-    # One GPU allocation, small host transfers: avoid WSL pinning a giant CPU block.
+    # Bounded, aligned allocations avoid large WSL CUDA mappings and host pinning.
     parameters = list(model.parameters())
+    groups, current, used, dtype = [], [], 0, None
+    for parameter in parameters:
+        alignment = max(1, 256 // parameter.element_size())
+        start = ((used + alignment - 1) // alignment) * alignment
+        if current and (dtype != parameter.dtype or (start + parameter.numel()) * parameter.element_size() > 256 * 1024**2):
+            groups.append((current, used, dtype))
+            current, used, start = [], 0, 0
+        current.append((parameter, start))
+        used, dtype = start + parameter.numel(), parameter.dtype
+    if current: groups.append((current, used, dtype))
     with torch.no_grad():
-        packed = torch.empty(sum(p.numel() for p in parameters), dtype=parameters[0].dtype, device=device)
-        offset = 0
-        for parameter in parameters:
-            flat = parameter.detach().reshape(-1)
-            chunk_items = 8 * 1024**2 // parameter.element_size()
-            for start in range(0, flat.numel(), chunk_items):
-                end = min(start + chunk_items, flat.numel())
-                packed[offset + start:offset + end].copy_(flat[start:end])
-            offset += flat.numel()
-        torch.nn.utils.vector_to_parameters(packed, parameters)
+        for group, size, dtype in groups:
+            packed = torch.empty(size, dtype=dtype, device=device)
+            for parameter, offset in group:
+                flat = parameter.detach().reshape(-1)
+                chunk_items = 8 * 1024**2 // parameter.element_size()
+                for start in range(0, flat.numel(), chunk_items):
+                    end = min(start + chunk_items, flat.numel())
+                    packed[offset + start:offset + end].copy_(flat[start:end])
+                parameter.data = packed[offset:offset + flat.numel()].view_as(parameter)
     model.to(device)
