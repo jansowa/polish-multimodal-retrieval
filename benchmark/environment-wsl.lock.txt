@@ -11,6 +11,7 @@ cuda-pathfinder==1.6.0
 cuda-toolkit==12.8.1
 datasets==4.8.5
 dill==0.4.1
+einops==0.8.1
 filelock==3.32.3
 frozenlist==1.8.0
 fsspec==2026.2.0
@@ -60,6 +61,7 @@ safetensors==0.8.0
 scikit-learn==1.9.1
 scipy==1.18.1
 sentence-transformers==5.7.0
+sentencepiece==0.2.1
 setuptools==78.1.0
 six==1.17.0
 sympy==1.14.0

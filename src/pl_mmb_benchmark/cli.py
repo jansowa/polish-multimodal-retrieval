@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 from .data import SPECS, ROOT, load, translation_path
-from .models import MODELS, REVISIONS, Encoder, check_cache, worker_python
+from .models import MODELS, REVISIONS, Encoder, check_cache, worker_python, model_batch_size
 from .protocol import PROTOCOL
 from .leaderboard import build
 
@@ -54,7 +54,7 @@ def main():
                     continue
                 executable = worker_python(repo, sys.executable)
                 command = [executable, '-u', str(ROOT/'benchmark.py'), '--internal-worker', '--datasets', key,
-                           '--models', repo, '--batch-size', str(min(args.batch_size, 16) if repo == MODELS['embeddinggemma-2'] else args.batch_size),
+                           '--models', repo, '--batch-size', str(model_batch_size(repo, args.batch_size)),
                            '--output', str(args.output)]
                 if args.limit:
                     command += ['--limit', str(args.limit)]
@@ -70,7 +70,7 @@ def main():
         examples, sha = load(key)
         for model in args.models:
             repo = MODELS.get(model, model)
-            encoder = Encoder(repo, min(args.batch_size, 16) if repo == MODELS['embeddinggemma-2'] else args.batch_size)
+            encoder = Encoder(repo, model_batch_size(repo, args.batch_size))
             try:
                 evaluate(encoder, key, examples, sha, args.output, args.limit)
                 print('Leaderboard:', build(args.output), flush=True)

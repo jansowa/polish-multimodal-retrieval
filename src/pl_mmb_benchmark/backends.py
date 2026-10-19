@@ -64,8 +64,9 @@ def place_mclip_text(model, device='cuda'):
         offset = 0
         for parameter in parameters:
             flat = parameter.detach().reshape(-1)
-            for start in range(0, flat.numel(), 4_194_304):
-                end = min(start + 4_194_304, flat.numel())
+            chunk_items = 8 * 1024**2 // parameter.element_size()
+            for start in range(0, flat.numel(), chunk_items):
+                end = min(start + chunk_items, flat.numel())
                 packed[offset + start:offset + end].copy_(flat[start:end])
             offset += flat.numel()
         torch.nn.utils.vector_to_parameters(packed, parameters)

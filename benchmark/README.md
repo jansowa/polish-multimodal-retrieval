@@ -18,7 +18,7 @@ bash benchmark/setup_wsl.sh
 ```
 
 `--model` jest aliasem `--models`. Można podać alias lub repozytorium HF kompatybilne
-z interfejsem CLIP w Transformers. Dostępnych jest piętnaście modeli. EmbeddingGemma-2
+z interfejsem CLIP w Transformers. Dostępnych jest dwadzieścia modeli. EmbeddingGemma-2
 jest automatycznie kierowane do oddzielnego środowiska `pl-mmb-modern`.
 `all` oznacza wszystkie **zaimplementowane, ukończone** zbiory: cztery warianty MMEB
 po 1000 rekordów oraz dwa ARO. Kolejność rośnie według liczby przykładów; wszystkie
@@ -220,3 +220,37 @@ Dla M-CLIP CLI automatycznie wybiera środowisko `pl-mmb-benchmark` z PyTorch
 2.11.0+cu128. Pozostałe nowe modele korzystają z `pl-mmb-legacy-cu130`.
 `PL_MMB_MCLIP_PYTHON` pozwala zmienić interpreter M-CLIP. Jego wagi tekstowe
 trafiają do jednego bufora GPU transferami do 8 MB, bez zmiany wartości wag.
+
+## TIPSv2, BGE-VL, Perception Encoder i FashionSigLIP
+
+```bash
+python3 benchmark/manage.py start --wait \
+  --datasets mscoco_t2i cirr fashioniq refcoco \
+  --models tipsv2-b14 bge-vl-base tipsv2-l14 pe-core-b16 fashion-siglip \
+  --batch-size 8
+```
+
+Nowe aliasy odpowiadają `google/tipsv2-b14`, `BAAI/BGE-VL-base`,
+`google/tipsv2-l14`, `facebook/PE-Core-B16-224`, `Marqo/marqo-fashionSigLIP`.
+CLI dobiera dla nich `pl-mmb-benchmark` (PyTorch 2.11.0+cu128); interpreter można
+zmienić przez `PL_MMB_CU128_PYTHON`. Dodatkowe niewielkie zależności:
+`sentencepiece==0.2.1` i `einops==0.8.1`.
+
+- TIPS: przypięty kod z repozytorium HF, rozdzielczość 448, bilinear resize,
+  piksele w [0,1], pierwszy CLS jako globalny embedding, natywny SentencePiece,
+  lowercase i 64 tokeny. FP32 i batch najwyżej 2; Torch attention bez xFormers.
+- BGE-VL: przypięty oficjalny kod HF, CLIPProcessor 224, maksymalnie 77 tokenów.
+  Używane są surowe cechy. Oficjalne `encode_multimodal` również sumuje surowe
+  cechy i normalizuje dopiero wynik, co odpowiada obecnemu protokołowi.
+- PE: dokładnie checkpoint Facebooka i oficjalny kod
+  `facebookresearch/perception_models` przypięty do
+  `3e352cca660658d4b5c90f42a7808b11469e4c66`. Oba enkodery są ładowane ze ścisłą
+  kontrolą kluczy; natywny preprocessing 224 z bilinear squash, zakres [-1,1],
+  kontekst 32. Nie jest używany zamiennik wag z repozytorium timm.
+- Marqo: OpenCLIP z lokalnego snapshotu przypiętej rewizji HF, 224 piksele,
+  canonicalization i 64 tokeny, surowe cechy z `normalize=False`.
+
+Wszystkie modele zachowują protokół v2 (bez instrukcji MMEB, suma surowych cech,
+końcowy cosine). Wagi są pobierane wyłącznie do natywnego cache HF w WSL.
+Po zakończeniu i walidacji tej serii wagi zostają usunięte dla oszczędności miejsca;
+wyniki, konfiguracje, tokenizery i embeddingi pozostają dostępne.

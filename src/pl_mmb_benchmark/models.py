@@ -20,6 +20,11 @@ MODELS = {
     'siglip2-base-256': 'google/siglip2-base-patch16-256',
     'siglip-i18n-256': 'timm/ViT-B-16-SigLIP-i18n-256',
     'siglip2-b32-256': 'timm/ViT-B-32-SigLIP2-256',
+    'tipsv2-b14': 'google/tipsv2-b14',
+    'bge-vl-base': 'BAAI/BGE-VL-base',
+    'tipsv2-l14': 'google/tipsv2-l14',
+    'pe-core-b16': 'facebook/PE-Core-B16-224',
+    'fashion-siglip': 'Marqo/marqo-fashionSigLIP',
 }
 REVISIONS = {
     MODELS['metaclip-s16']: '006223472923ba925226b59b6acd1e3e266c2382',
@@ -37,6 +42,11 @@ REVISIONS = {
     MODELS['siglip2-base-256']: '3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab',
     MODELS['siglip-i18n-256']: 'ec35f9450b91a8ea263a50e31f55ae069069d1df',
     MODELS['siglip2-b32-256']: 'cd1efb47643f2794413dd79ef24397c175032780',
+    MODELS['tipsv2-b14']: 'ed1e4dc6b74bf3935ae099e9d5eb30fa96528454',
+    MODELS['bge-vl-base']: 'cc4c733ed997dbee4ac70ccffb911e70c9c24b93',
+    MODELS['tipsv2-l14']: '52847a71eb02a3082c370fbcd98cd799687bd4d0',
+    MODELS['pe-core-b16']: 'a16450b46fef32363459920c2685a1b4ef13dcd9',
+    MODELS['fashion-siglip']: 'c56244cc94f92419e8369fa71efdaf403b124ce8',
 }
 CLIP_IMAGE_REPO = 'openai/clip-vit-base-patch32'
 CLIP_IMAGE_REVISION = '3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268'
@@ -69,10 +79,28 @@ MODEL_METADATA[MODELS['siglip-i18n-256']]['parameters'] = 370626050
 MODEL_METADATA[MODELS['siglip2-b32-256']]['parameters'] = 376856066
 MODEL_METADATA[MODELS['mclip-b16plus']]['display_name'] = MODELS['mclip-b16plus'] + ' + timm/vit_base_patch16_plus_clip_240.laion400m_e31'
 
+MODEL_METADATA[MODELS['tipsv2-b14']] = {'license': 'Apache-2.0', 'license_url': 'https://huggingface.co/google/tipsv2-b14'}
+MODEL_METADATA[MODELS['bge-vl-base']] = {'license': 'MIT', 'license_url': 'https://huggingface.co/BAAI/BGE-VL-base'}
+MODEL_METADATA[MODELS['tipsv2-l14']] = {'license': 'Apache-2.0', 'license_url': 'https://huggingface.co/google/tipsv2-l14'}
+MODEL_METADATA[MODELS['pe-core-b16']] = {'license': 'Apache-2.0', 'license_url': 'https://huggingface.co/facebook/PE-Core-B16-224'}
+MODEL_METADATA[MODELS['fashion-siglip']] = {'license': 'Apache-2.0', 'license_url': 'https://huggingface.co/Marqo/marqo-fashionSigLIP'}
+MODEL_METADATA[MODELS['tipsv2-b14']]['parameters'] = 195948288
+MODEL_METADATA[MODELS['bge-vl-base']]['parameters'] = 149620737
+MODEL_METADATA[MODELS['tipsv2-l14']]['parameters'] = 487941120
+MODEL_METADATA[MODELS['pe-core-b16']]['parameters'] = 447659521
+MODEL_METADATA[MODELS['fashion-siglip']]['parameters'] = 203155970
+
+def model_batch_size(repo, requested):
+    if repo in (MODELS['tipsv2-b14'], MODELS['tipsv2-l14']):
+        return min(requested, 2)
+    return min(requested, 16) if repo == MODELS['embeddinggemma-2'] else requested
+
 
 def worker_python(repo, fallback):
     if repo == MODELS['embeddinggemma-2']:
         variable, name, required = 'PL_MMB_MODERN_PYTHON', 'pl-mmb-modern', True
+    elif repo in tuple(MODELS[a] for a in ('tipsv2-b14', 'bge-vl-base', 'tipsv2-l14', 'pe-core-b16', 'fashion-siglip')):
+        variable, name, required = 'PL_MMB_CU128_PYTHON', 'pl-mmb-benchmark', True
     elif repo == MODELS['mclip-b16plus']:
         variable, name, required = 'PL_MMB_MCLIP_PYTHON', 'pl-mmb-benchmark', True
     else:
@@ -108,8 +136,11 @@ class Encoder:
         self.revision = REVISIONS.get(repo) or HfApi().model_info(repo, timeout=30).sha
         self.repo = repo
         self.mobile = repo == MODELS['mobileclip2-s2']
+        self.tips = repo in (MODELS['tipsv2-b14'], MODELS['tipsv2-l14'])
+        self.pe = repo == MODELS['pe-core-b16']
+        self.bge = repo == MODELS['bge-vl-base']
         self.mclip = repo == MODELS['mclip-b16plus']
-        self.open_clip = repo in (MODELS['siglip-i18n-256'], MODELS['siglip2-b32-256'])
+        self.open_clip = repo in (MODELS['siglip-i18n-256'], MODELS['siglip2-b32-256'], MODELS['fashion-siglip'])
         self.sentence_clip = repo in (MODELS['clip-b32-pl'], MODELS['clip-b32-pl-32768'])
         self.native_multimodal = repo == MODELS['embeddinggemma-2']
         self.components = {}
@@ -128,6 +159,14 @@ class Encoder:
             self.parameter_count = sum(p.numel() for p in self.model.parameters())
             self.model = reparameterize_model(self.model, inplace=True)
             self.tokenizer = open_clip.get_tokenizer('MobileCLIP2-S2')
+        elif self.tips or self.pe or self.bge:
+            from .special_models import load_special
+            from .backends import place_mclip_text
+            self.model, self.processor, self.tokenizer, self.components, self.text_max_length = load_special(repo, self.revision)
+            self.autocast_dtype = torch.bfloat16
+            self.precision = 'cuda-fp32' if self.tips else 'cuda-fp32-weights-bf16-autocast'
+            place_mclip_text(self.model)
+            self.parameter_count = sum(p.numel() for p in self.model.parameters())
         elif self.mclip:
             from .backends import load_mclip
             self.model, self.vision_model, self.processor, self.tokenizer, self.components = load_mclip(repo, self.revision)
@@ -146,6 +185,9 @@ class Encoder:
             self.model, _, self.processor = open_clip.create_model_and_transforms('local-dir:' + local)
             self.tokenizer = open_clip.get_tokenizer('local-dir:' + local)
             self.model.bfloat16()
+            if repo == MODELS['fashion-siglip']:
+                from .backends import place_mclip_text
+                place_mclip_text(self.model)
             self.text_max_length = self.model.context_length
             self.autocast_dtype = torch.bfloat16
             self.precision = 'cuda-bf16'
@@ -217,10 +259,19 @@ class Encoder:
                         with Image.open(path) as im:
                             opened.append(im.convert('RGB'))
                 # FastViT activations can overflow FP16 before final normalization.
-                with torch.inference_mode(), torch.autocast('cuda', dtype=self.autocast_dtype, enabled=not self.mobile):
+                with torch.inference_mode(), torch.autocast('cuda', dtype=self.autocast_dtype, enabled=not (self.mobile or self.tips)):
                     if self.mobile:
                         inputs = torch.stack([self.processor(im) for im in opened]).cuda() if images else self.tokenizer(batch).cuda()
                         output = self.model.encode_image(inputs) if images else self.model.encode_text(inputs)
+                    elif self.tips:
+                        output = self.model.encode_image(torch.stack([self.processor(im) for im in opened]).cuda()).cls_token[:, 0, :] if images else self.model.encode_text(batch)
+                    elif self.pe:
+                        inputs = torch.stack([self.processor(im) for im in opened]).cuda() if images else self.tokenizer(batch).cuda()
+                        output = self.model.encode_image(inputs, normalize=False) if images else self.model.encode_text(inputs, normalize=False)
+                    elif self.bge:
+                        inputs = self.processor(images=opened, return_tensors='pt') if images else self.processor(text=batch, padding=True, truncation=True, max_length=self.text_max_length, return_tensors='pt')
+                        inputs = {k: v.cuda() for k, v in inputs.items()}
+                        output = self.model.get_image_features(**inputs) if images else self.model.get_text_features(**inputs)
                     elif self.mclip:
                         if images:
                             inputs = torch.stack([self.processor(im) for im in opened]).cuda()

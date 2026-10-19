@@ -5,3 +5,5 @@ timm>=1.0.22,<2
 datasets>=4,<5
 python-dotenv>=1,<2
 sentence-transformers>=5,<6
+sentencepiece>=0.2,<0.3
+einops>=0.8,<1
