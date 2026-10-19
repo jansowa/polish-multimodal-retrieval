@@ -52,12 +52,21 @@ def load_special(repo, revision):
         from core.vision_encoder import pe
         from core.vision_encoder import transforms as pe_transforms
         checkpoint = hf_hub_download(repo, 'PE-Core-B16-224.pt', revision=revision)
-        model = pe.CLIP.from_config('PE-Core-B16-224', pretrained=False)
-        state = torch.load(checkpoint, map_location='cpu', weights_only=True)
+        import zipfile
+        with torch.device('meta'):
+            model = pe.CLIP.from_config('PE-Core-B16-224', pretrained=False)
+        state = torch.load(checkpoint, map_location='cpu', weights_only=True, mmap=zipfile.is_zipfile(checkpoint))
         if 'state_dict' in state: state = state['state_dict']
         elif 'weights' in state: state = state['weights']
-        state = {k.removeprefix('module.'): v for k, v in state.items()}
-        model.load_state_dict(state, strict=True)
+        state = {k.removeprefix('module.'): v.bfloat16() if v.is_floating_point() else v for k, v in state.items()}
+        model.load_state_dict(state, strict=True, assign=True)
+        # RoPE is held by an unregistered helper, so state_dict cannot restore it.
+        model.visual.rope.init_tensors()
+        # Recreate the author's nonpersistent mask outside the meta-device context.
+        if model.attn_mask is not None:
+            model.attn_mask = model.build_causal_mask()
+        if any(t.is_meta for t in list(model.parameters()) + list(model.buffers())):
+            raise RuntimeError('Unrestored PE meta tensor')
         return model, pe_transforms.get_image_transform(model.image_size), pe_transforms.get_text_tokenizer(model.context_length), {
             'implementation': 'facebookresearch/perception_models', 'implementation_revision': PE_CODE_REVISION,
             'image_resolution': model.image_size, 'tokenizer_context': model.context_length}, model.context_length
