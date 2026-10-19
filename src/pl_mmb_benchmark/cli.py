@@ -1,6 +1,5 @@
 import argparse
 import gc
-import os
 import subprocess
 import sys
 import hashlib
@@ -8,7 +7,7 @@ import json
 from pathlib import Path
 
 from .data import SPECS, ROOT, load, translation_path
-from .models import MODELS, REVISIONS, Encoder, check_cache
+from .models import MODELS, REVISIONS, Encoder, check_cache, worker_python
 from .protocol import PROTOCOL
 from .leaderboard import build
 
@@ -17,7 +16,7 @@ def main():
     p = argparse.ArgumentParser(description='Polish CLIP benchmark (WSL CUDA)')
     p.add_argument('--datasets', nargs='+', default=['mscoco_t2i'], choices=[*SPECS, 'all'])
     p.add_argument('--models', '--model', nargs='+', default=list(MODELS))
-    p.add_argument('--batch-size', type=int, default=64)
+    p.add_argument('--batch-size', type=int, default=8)
     p.add_argument('--limit', type=int, help='Pilot only; separated from full results')
     p.add_argument('--output', type=Path, default=ROOT / 'benchmark/results')
     p.add_argument('--list', action='store_true')
@@ -53,12 +52,7 @@ def main():
                 if completed:
                     print(f'Skip completed {repo} / {key}', flush=True)
                     continue
-                legacy = Path.home() / '.venvs/pl-mmb-legacy-cu130/bin/python'
-                executable = os.environ.get('PL_MMB_LEGACY_PYTHON', str(legacy) if legacy.is_file() else sys.executable)
-                if repo == MODELS['embeddinggemma-2']:
-                    executable = os.environ.get('PL_MMB_MODERN_PYTHON', str(Path.home() / '.venvs/pl-mmb-modern/bin/python'))
-                    if not Path(executable).is_file():
-                        raise RuntimeError('EmbeddingGemma-2 requires benchmark/setup_modern_wsl.sh')
+                executable = worker_python(repo, sys.executable)
                 command = [executable, '-u', str(ROOT/'benchmark.py'), '--internal-worker', '--datasets', key,
                            '--models', repo, '--batch-size', str(min(args.batch_size, 16) if repo == MODELS['embeddinggemma-2'] else args.batch_size),
                            '--output', str(args.output)]

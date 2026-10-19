@@ -178,17 +178,17 @@ python3 benchmark/manage.py start --wait \
 CLI automatycznie dobiera środowisko HF dla modelu. Gemma ma ograniczenie batcha
 do 16, pozostałe modele zmniejszają batch po OOM. Ukończone przebiegi tego samego
 protokołu, rewizji i tłumaczenia są pomijane przed inicjalizacją GPU.
-Parametry i licencje wszystkich dziesięciu modeli znajdują się w leaderboardzie.
+Parametry i licencje wszystkich piętnastu modeli znajdują się w leaderboardzie.
 Szczegóły selektywnego ładowania Gemma (438,76M, bez audio), NaFlex i protokołu
 znajdują się w [protocol_v2.md](protocol_v2.md).
 
 ## M-CLIP oraz dodatkowe warianty SigLIP
 
 ```bash
-PYTORCH_ALLOC_CONF=expandable_segments:True python3 benchmark/manage.py start --wait \
+python3 benchmark/manage.py start --wait \
   --datasets mscoco_t2i cirr fashioniq refcoco \
   --models siglip2-base-384 siglip2-base-256 siglip-i18n-256 siglip2-b32-256 mclip-b16plus \
-  --batch-size 32
+  --batch-size 8
 ```
 
 | Alias | Model |
@@ -215,3 +215,8 @@ preprocessing checkpointu. Modele 256 i 384 korzystają ze swojej natywnej rozdz
 
 Checkpointy i tokenizery są pobierane z przypiętych rewizji. OpenCLIP ładuje je
 przez `local-dir:` z natywnego cache HF, bez pobierania innej wersji `main`.
+
+Dla M-CLIP CLI automatycznie wybiera środowisko `pl-mmb-benchmark` z PyTorch
+2.11.0+cu128. Pozostałe nowe modele korzystają z `pl-mmb-legacy-cu130`.
+`PL_MMB_MCLIP_PYTHON` pozwala zmienić interpreter M-CLIP. Jego wagi tekstowe
+trafiają do jednego bufora GPU transferami do 8 MB, bez zmiany wartości wag.

@@ -54,3 +54,19 @@ def load_mclip(repo, revision):
                   'text_config_repo': info['repo'], 'text_config_revision': info['revision']}
     return model, vision, processor, tokenizer, components
 
+
+
+def place_mclip_text(model, device='cuda'):
+    # One GPU allocation, small host transfers: avoid WSL pinning a giant CPU block.
+    parameters = list(model.parameters())
+    with torch.no_grad():
+        packed = torch.empty(sum(p.numel() for p in parameters), dtype=parameters[0].dtype, device=device)
+        offset = 0
+        for parameter in parameters:
+            flat = parameter.detach().reshape(-1)
+            for start in range(0, flat.numel(), 4_194_304):
+                end = min(start + 4_194_304, flat.numel())
+                packed[offset + start:offset + end].copy_(flat[start:end])
+            offset += flat.numel()
+        torch.nn.utils.vector_to_parameters(packed, parameters)
+    model.to(device)

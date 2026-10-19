@@ -70,6 +70,20 @@ MODEL_METADATA[MODELS['siglip2-b32-256']]['parameters'] = 376856066
 MODEL_METADATA[MODELS['mclip-b16plus']]['display_name'] = MODELS['mclip-b16plus'] + ' + timm/vit_base_patch16_plus_clip_240.laion400m_e31'
 
 
+def worker_python(repo, fallback):
+    if repo == MODELS['embeddinggemma-2']:
+        variable, name, required = 'PL_MMB_MODERN_PYTHON', 'pl-mmb-modern', True
+    elif repo == MODELS['mclip-b16plus']:
+        variable, name, required = 'PL_MMB_MCLIP_PYTHON', 'pl-mmb-benchmark', True
+    else:
+        variable, name, required = 'PL_MMB_LEGACY_PYTHON', 'pl-mmb-legacy-cu130', False
+    path = Path.home() / f'.venvs/{name}/bin/python'
+    executable = os.environ.get(variable, str(path) if required or path.is_file() else fallback)
+    if not Path(executable).is_file():
+        raise RuntimeError(f'Missing benchmark interpreter: {executable}; see benchmark/README.md')
+    return executable
+
+
 def check_cache():
     # Run before importing HF libraries. Reject mounted Windows caches, including symlinks.
     default = Path.home() / '.cache/huggingface'
@@ -122,6 +136,8 @@ class Encoder:
             self.precision = 'cuda-bf16'
             self.vision_model.eval().bfloat16().to('cuda')
             self.model.bfloat16()
+            from .backends import place_mclip_text
+            place_mclip_text(self.model)
             self.parameter_count = sum(p.numel() for p in self.model.parameters()) + sum(p.numel() for p in self.vision_model.parameters())
         elif self.open_clip:
             import open_clip
