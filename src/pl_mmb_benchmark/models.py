@@ -15,6 +15,11 @@ MODELS = {
     'embeddinggemma-2': 'google/embeddinggemma-2',
     'siglip2-naflex': 'google/siglip2-base-patch16-naflex',
     'clip-b32-pl-32768': 'alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768',
+    'mclip-b16plus': 'M-CLIP/XLM-Roberta-Large-Vit-B-16Plus',
+    'siglip2-base-384': 'google/siglip2-base-patch16-384',
+    'siglip2-base-256': 'google/siglip2-base-patch16-256',
+    'siglip-i18n-256': 'timm/ViT-B-16-SigLIP-i18n-256',
+    'siglip2-b32-256': 'timm/ViT-B-32-SigLIP2-256',
 }
 REVISIONS = {
     MODELS['metaclip-s16']: '006223472923ba925226b59b6acd1e3e266c2382',
@@ -27,6 +32,11 @@ REVISIONS = {
     MODELS['embeddinggemma-2']: '914f7f89142e33e77833254d9c9b90c3cef7303b',
     MODELS['siglip2-naflex']: 'b53b807d3a2d5e2b3911292f2d69e5341cdc064c',
     MODELS['clip-b32-pl-32768']: '62436cd6cd74f072dda57463b6916c95324e5b85',
+    MODELS['mclip-b16plus']: '15c3aee9b9e96fd7de1c1d488810a604bab98e78',
+    MODELS['siglip2-base-384']: 'f775b65a79762255128c981547af89addcfe0f88',
+    MODELS['siglip2-base-256']: '3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab',
+    MODELS['siglip-i18n-256']: 'ec35f9450b91a8ea263a50e31f55ae069069d1df',
+    MODELS['siglip2-b32-256']: 'cd1efb47643f2794413dd79ef24397c175032780',
 }
 CLIP_IMAGE_REPO = 'openai/clip-vit-base-patch32'
 CLIP_IMAGE_REVISION = '3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268'
@@ -48,6 +58,16 @@ MODEL_METADATA = {
     MODELS['siglip2-naflex']: {'parameters': 375234050, 'license': 'Apache-2.0', 'license_url': 'https://huggingface.co/google/siglip2-base-patch16-naflex'},
     MODELS['clip-b32-pl-32768']: {'parameters': 156330240, 'license': 'MIT', 'license_url': 'https://huggingface.co/alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768'},
 }
+for _alias in ['mclip-b16plus', 'siglip2-base-384', 'siglip2-base-256', 'siglip-i18n-256', 'siglip2-b32-256']:
+    _repo = MODELS[_alias]
+    MODEL_METADATA[_repo] = {'license': 'Nie podano (tekst); MIT (wizja)' if _alias == 'mclip-b16plus' else 'Apache-2.0',
+                             'license_url': 'https://huggingface.co/' + _repo}
+MODEL_METADATA[MODELS['mclip-b16plus']]['parameters'] = 677760256
+MODEL_METADATA[MODELS['siglip2-base-384']]['parameters'] = 375479810
+MODEL_METADATA[MODELS['siglip2-base-256']]['parameters'] = 375234050
+MODEL_METADATA[MODELS['siglip-i18n-256']]['parameters'] = 370626050
+MODEL_METADATA[MODELS['siglip2-b32-256']]['parameters'] = 376856066
+MODEL_METADATA[MODELS['mclip-b16plus']]['display_name'] = MODELS['mclip-b16plus'] + ' + timm/vit_base_patch16_plus_clip_240.laion400m_e31'
 
 
 def check_cache():
@@ -74,6 +94,8 @@ class Encoder:
         self.revision = REVISIONS.get(repo) or HfApi().model_info(repo, timeout=30).sha
         self.repo = repo
         self.mobile = repo == MODELS['mobileclip2-s2']
+        self.mclip = repo == MODELS['mclip-b16plus']
+        self.open_clip = repo in (MODELS['siglip-i18n-256'], MODELS['siglip2-b32-256'])
         self.sentence_clip = repo in (MODELS['clip-b32-pl'], MODELS['clip-b32-pl-32768'])
         self.native_multimodal = repo == MODELS['embeddinggemma-2']
         self.components = {}
@@ -92,6 +114,27 @@ class Encoder:
             self.parameter_count = sum(p.numel() for p in self.model.parameters())
             self.model = reparameterize_model(self.model, inplace=True)
             self.tokenizer = open_clip.get_tokenizer('MobileCLIP2-S2')
+        elif self.mclip:
+            from .backends import load_mclip
+            self.model, self.vision_model, self.processor, self.tokenizer, self.components = load_mclip(repo, self.revision)
+            self.text_max_length = 512
+            self.autocast_dtype = torch.bfloat16
+            self.precision = 'cuda-bf16'
+            self.vision_model.eval().bfloat16().to('cuda')
+            self.model.bfloat16()
+            self.parameter_count = sum(p.numel() for p in self.model.parameters()) + sum(p.numel() for p in self.vision_model.parameters())
+        elif self.open_clip:
+            import open_clip
+            from .backends import open_clip_snapshot
+            local = open_clip_snapshot(repo, self.revision)
+            self.model, _, self.processor = open_clip.create_model_and_transforms('local-dir:' + local)
+            self.tokenizer = open_clip.get_tokenizer('local-dir:' + local)
+            self.model.bfloat16()
+            self.text_max_length = self.model.context_length
+            self.autocast_dtype = torch.bfloat16
+            self.precision = 'cuda-bf16'
+            self.parameter_count = sum(p.numel() for p in self.model.parameters())
+            self.components = {'backend': 'open_clip', 'tokenizer_revision': self.revision}
         elif self.sentence_clip:
             from sentence_transformers import SentenceTransformer
             from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
@@ -118,7 +161,7 @@ class Encoder:
                                'pooling': 'mean', 'vision_soft_tokens': 280, 'prompt': ''}
         else:
             from transformers import AutoModel, AutoProcessor
-            if repo in (MODELS['siglip2-pl'], MODELS['siglip2-base'], MODELS['siglip2-pl-32768']):
+            if repo in (MODELS['siglip2-pl'], MODELS['siglip2-base'], MODELS['siglip2-pl-32768'], MODELS['siglip2-base-384'], MODELS['siglip2-base-256']):
                 from transformers import AutoImageProcessor, AutoTokenizer, SiglipProcessor
                 self.processor = SiglipProcessor(
                     image_processor=AutoImageProcessor.from_pretrained(repo, revision=self.revision, use_fast=False),
@@ -162,6 +205,16 @@ class Encoder:
                     if self.mobile:
                         inputs = torch.stack([self.processor(im) for im in opened]).cuda() if images else self.tokenizer(batch).cuda()
                         output = self.model.encode_image(inputs) if images else self.model.encode_text(inputs)
+                    elif self.mclip:
+                        if images:
+                            inputs = torch.stack([self.processor(im) for im in opened]).cuda()
+                            output = self.vision_model(inputs)
+                        else:
+                            tokens = self.tokenizer(batch, padding=True, truncation=True, max_length=self.text_max_length, return_tensors='pt')
+                            output = self.model({k: v.cuda() for k, v in tokens.items()})
+                    elif self.open_clip:
+                        inputs = torch.stack([self.processor(im) for im in opened]).cuda() if images else self.tokenizer(batch).cuda()
+                        output = self.model.encode_image(inputs, normalize=False) if images else self.model.encode_text(inputs, normalize=False)
                     elif self.sentence_clip:
                         if images:
                             inputs = {k: v.cuda() for k, v in self.processor(images=opened, return_tensors='pt').items()}

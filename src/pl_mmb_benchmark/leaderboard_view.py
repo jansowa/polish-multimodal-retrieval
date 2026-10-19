@@ -26,7 +26,7 @@ def matrix(results):
         cells = {d: latest[(model, d)] for d in datasets if (model, d) in latest}
         parameters = meta.get('parameters') or next((r.get('parameters') for r in cells.values() if r.get('parameters')), None)
         mean = sum(primary(r) for r in cells.values()) / len(datasets) if datasets and len(cells) == len(datasets) else None
-        models.append(dict(model=model, parameters_m=parameters / 1e6 if parameters else None,
+        models.append(dict(model=model, display_name=meta.get('display_name', model), parameters_m=parameters / 1e6 if parameters else None,
                            license=meta.get('license', 'Nie podano'), license_url=meta.get('license_url'), cells=cells, mean=mean))
     models.sort(key=lambda r: (r['mean'] is None, -(r['mean'] or 0), r['model']))
     return datasets, models
@@ -38,7 +38,7 @@ def render(root, results):
         writer = csv.writer(stream)
         writer.writerow(['model', 'parameters_m', 'license', 'mean', *datasets])
         for m in models:
-            writer.writerow([m['model'], m['parameters_m'], m['license'], m['mean'],
+            writer.writerow([m['display_name'], m['parameters_m'], m['license'], m['mean'],
                              *[primary(m['cells'][d]) if d in m['cells'] else '' for d in datasets]])
     with (root / 'metrics.csv').open('w', newline='', encoding='utf-8') as stream:
         writer = csv.writer(stream)
@@ -56,7 +56,7 @@ def render(root, results):
             license_label = f'<a href="{html.escape(m["license_url"], quote=True)}" target="_blank" rel="noopener">{license_label}</a>'
         size = f'{m["parameters_m"]:.2f}' if m['parameters_m'] is not None else '—'
         mean = f'{m["mean"] * 100:.2f}' if m['mean'] is not None else '—'
-        cells = [f'<th scope="row" title="{html.escape(m["model"], quote=True)}">{html.escape(m["model"])}</th>',
+        cells = [f'<th scope="row" title="{html.escape(m["model"], quote=True)}">{html.escape(m["display_name"])}</th>',
                  f'<td>{size}</td>', f'<td>{license_label}</td>', f'<td class="mean score" data-score="mean">{mean}</td>']
         for d in datasets:
             r = m['cells'].get(d)
@@ -101,9 +101,9 @@ const body=document.querySelector('tbody'),metric=document.getElementById('metri
 let sortColumn=3,descending=true;
 function score(result){if(!result)return null;const m=result.metrics;return metric.value==='official'?(m.pair_accuracy??m['precision@1']??m['recall@1']):(m[metric.value]??null)}
 function mean(model){const values=data.datasets.map(d=>score(model.cells[d]));return values.length&&values.every(v=>v!==null)?values.reduce((a,b)=>a+b,0)/values.length:null}
-function value(model,column){if(column===0)return model.model;if(column===1)return model.parameters_m;if(column===2)return model.license;if(column===3)return mean(model);return score(model.cells[data.datasets[column-4]])}
+function value(model,column){if(column===0)return model.display_name;if(column===1)return model.parameters_m;if(column===2)return model.license;if(column===3)return mean(model);return score(model.cells[data.datasets[column-4]])}
 function sortRows(){const rows=Array.from(body.rows);rows.sort((a,b)=>{const x=value(data.models[a.dataset.row],sortColumn),y=value(data.models[b.dataset.row],sortColumn);if(x===null||y===null)return x===y?0:x===null?1:-1;const cmp=typeof x==='string'?x.localeCompare(y):x-y;return descending?-cmp:cmp});rows.forEach(r=>body.appendChild(r));document.querySelectorAll('thead th').forEach((th,i)=>{th.setAttribute('aria-sort',i===sortColumn?(descending?'descending':'ascending'):'none');th.querySelector('.arrow').textContent=i===sortColumn?(descending?'▼':'▲'):'↕'})}
 function render(){Array.from(body.rows).forEach(row=>{const model=data.models[row.dataset.row];row.querySelectorAll('[data-score]').forEach(cell=>{const key=cell.dataset.score,v=key==='mean'?mean(model):score(model.cells[key]);const target=cell.querySelector('a')||cell;target.textContent=v===null?'—':(v*100).toFixed(2)})});document.getElementById('metric-note').textContent=metric.value==='official'?'MMEB: Precision@1 (równe Recall@1 przy jednej poprawnej odpowiedzi). ARO: pair accuracy.':'Metryka dodatkowa: '+metric.options[metric.selectedIndex].text+'. Brak metryki dla zadania oznaczono kreską.';sortRows()}
 document.querySelectorAll('thead button').forEach(button=>button.addEventListener('click',()=>{const column=Number(button.dataset.column);descending=column===sortColumn?!descending:![0,2].includes(column);sortColumn=column;sortRows()}));
-metric.addEventListener('change',render);document.getElementById('filter').addEventListener('input',event=>{const query=event.target.value.toLocaleLowerCase('pl');Array.from(body.rows).forEach(row=>row.hidden=!data.models[row.dataset.row].model.toLocaleLowerCase('pl').includes(query))});render();
+metric.addEventListener('change',render);document.getElementById('filter').addEventListener('input',event=>{const query=event.target.value.toLocaleLowerCase('pl');Array.from(body.rows).forEach(row=>row.hidden=!data.models[row.dataset.row].display_name.toLocaleLowerCase('pl').includes(query))});render();
 </script></body></html>'''

@@ -32,7 +32,7 @@
     metric.dispatchEvent(new Event('change'));
     for (const row of rows()) {
       const model = data.models[row.dataset.row];
-      assert(row.querySelector('th').textContent === model.model, 'Full model ID includes publisher');
+      assert(row.querySelector('th').textContent === model.display_name, 'Full model ID includes publisher');
       const scores = data.datasets.map(d => model.cells[d]?.metrics['ndcg@10'] ?? null);
       const expected = scores.some(v => v === null) ? '—' : (scores.reduce((a, b) => a + b, 0) / scores.length * 100).toFixed(2);
       assert(row.querySelector('[data-score="mean"]').textContent === expected, 'NDCG mean updates');

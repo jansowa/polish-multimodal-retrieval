@@ -18,7 +18,7 @@ bash benchmark/setup_wsl.sh
 ```
 
 `--model` jest aliasem `--models`. Można podać alias lub repozytorium HF kompatybilne
-z interfejsem CLIP w Transformers. Dostępnych jest dziesięć modeli. EmbeddingGemma-2
+z interfejsem CLIP w Transformers. Dostępnych jest piętnaście modeli. EmbeddingGemma-2
 jest automatycznie kierowane do oddzielnego środowiska `pl-mmb-modern`.
 `all` oznacza wszystkie **zaimplementowane, ukończone** zbiory: cztery warianty MMEB
 po 1000 rekordów oraz dwa ARO. Kolejność rośnie według liczby przykładów; wszystkie
@@ -181,3 +181,37 @@ protokołu, rewizji i tłumaczenia są pomijane przed inicjalizacją GPU.
 Parametry i licencje wszystkich dziesięciu modeli znajdują się w leaderboardzie.
 Szczegóły selektywnego ładowania Gemma (438,76M, bez audio), NaFlex i protokołu
 znajdują się w [protocol_v2.md](protocol_v2.md).
+
+## M-CLIP oraz dodatkowe warianty SigLIP
+
+```bash
+PYTORCH_ALLOC_CONF=expandable_segments:True python3 benchmark/manage.py start --wait \
+  --datasets mscoco_t2i cirr fashioniq refcoco \
+  --models siglip2-base-384 siglip2-base-256 siglip-i18n-256 siglip2-b32-256 mclip-b16plus \
+  --batch-size 32
+```
+
+| Alias | Model |
+|---|---|
+| `mclip-b16plus` | `M-CLIP/XLM-Roberta-Large-Vit-B-16Plus` + `timm/vit_base_patch16_plus_clip_240.laion400m_e31` |
+| `siglip2-base-384` | `google/siglip2-base-patch16-384` |
+| `siglip2-base-256` | `google/siglip2-base-patch16-256` |
+| `siglip-i18n-256` | `timm/ViT-B-16-SigLIP-i18n-256` |
+| `siglip2-b32-256` | `timm/ViT-B-32-SigLIP2-256` |
+
+M-CLIP używa maskowanego mean poolingu XLM-R i projekcji liniowej do 640 wymiarów,
+zgodnie z [kodem autora](https://github.com/FreddeFrallan/Multilingual-CLIP/blob/main/multilingual_clip/pt_multilingual_clip.py).
+Ładowany jest dokładnie wskazany wariant obrazu `e31` (karta tekstowego M-CLIP
+pokazuje przykład z `e32`). Liczba parametrów obejmuje wyłącznie używany model
+tekstowy i wizualny, bez angielskiej wieży tekstowej OpenCLIP.
+Wagi tekstowe M-CLIP nie mają deklaracji licencji w karcie HF; tabela pokazuje
+brak deklaracji dla tekstu oraz MIT dla wskazanego enkodera wizji.
+
+Wagi M-CLIP i nowych modeli OpenCLIP są przechowywane na GPU w BF16, a Google
+SigLIP używa BF16 autocast. Wszystkie warianty stosują protokół v2: brak
+instrukcji MMEB, surowe embeddingi, suma tekst+obraz i końcowy cosine.
+OpenCLIP zachowuje oficjalne `canonicalize`, padding i kontekst 64 tokenów oraz
+preprocessing checkpointu. Modele 256 i 384 korzystają ze swojej natywnej rozdzielczości.
+
+Checkpointy i tokenizery są pobierane z przypiętych rewizji. OpenCLIP ładuje je
+przez `local-dir:` z natywnego cache HF, bez pobierania innej wersji `main`.
