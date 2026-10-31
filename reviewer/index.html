@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Przegląd tłumaczeń · EN / PL</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand"><span class="brand-icon" aria-hidden="true">↔</span><div><strong>Przegląd tłumaczeń</strong><span>Multimodal benchmark · EN → PL</span></div></div>
+    <div class="header-actions"><span class="live"><i></i> Dane z checkpointu</span><button id="export" class="button quiet">Eksport ocen ↓</button></div>
+  </header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">RĘCZNA KONTROLA JAKOŚCI</p><h1>Tekst, tłumaczenie i obraz.</h1><p class="subtitle">Sprawdź, czy polski opis zachowuje sens angielskiego. Obraz służy jako kontekst.</p></div><div id="stats" class="stats" aria-live="polite">Ładowanie danych…</div></section>
+    <section class="toolbar" aria-label="Wybór przykładów">
+      <label class="run-control">Przebieg<select id="run" aria-label="Przebieg tłumaczenia"></select></label>
+      <label class="search-control">Szukaj<input id="search" type="search" placeholder="Słowo po polsku, angielsku lub ID…"></label>
+      <label>Ocena<select id="filter"><option value="all">Wszystkie</option><option value="unreviewed">Nieocenione</option><option value="ok">Poprawne</option><option value="fix">Do poprawy</option><option value="unclear">Niejasne źródło</option><option value="flagged">Z uwagą modelu</option></select></label>
+      <button id="refresh" class="button quiet refresh">Odśwież ↻</button>
+    </section>
+    <div id="error" class="error" role="alert" hidden></div>
+    <section id="empty" class="empty" hidden><h2>Brak przykładów do pokazania</h2><p id="empty-message">Wybierz inny przebieg lub zmień filtr.</p></section>
+    <section id="workspace" class="workspace" hidden>
+      <div class="visual-panel">
+        <div class="panel-top"><span class="eyebrow">KONTEKST WIZUALNY</span><a id="full-image" href="#" target="_blank" rel="noopener" hidden>Powiększ ↗</a></div>
+        <div class="image-stage"><div id="image-gallery" hidden></div><p id="image-message">Ładowanie obrazów…</p></div>
+        <div class="image-footer"><code id="record-id"></code><span id="record-status" class="status-pill"></span></div>
+      </div>
+      <div class="text-panel">
+        <article class="caption-card english"><div class="caption-heading"><span class="language">EN</span><span>Oryginał</span><button class="copy" data-copy="source" aria-label="Kopiuj angielski tekst">Kopiuj</button></div><p id="source" class="caption"></p></article>
+        <article class="caption-card polish"><div class="caption-heading"><span class="language">PL</span><span>Tłumaczenie</span><button class="copy" data-copy="translated" aria-label="Kopiuj polski tekst">Kopiuj</button></div><p id="translated" class="caption"></p></article>
+        <details id="flags" class="flags" hidden><summary id="flags-title">Uwagi modelu</summary><ul id="flags-list"></ul></details>
+        <section class="review-card" aria-label="Twoja ocena">
+          <div class="review-heading"><h2>Twoja ocena</h2><span id="save-state" role="status">Bez oceny</span></div>
+          <div class="rating-buttons" role="group" aria-label="Ocena tłumaczenia"><button data-status="ok">✓ Poprawne <kbd>1</kbd></button><button data-status="fix">✎ Do poprawy <kbd>2</kbd></button><button data-status="unclear">? Niejasne źródło <kbd>3</kbd></button></div>
+          <label for="note">Notatka <span>opcjonalnie</span></label><textarea id="note" rows="2" maxlength="4000" placeholder="Np. pominięta liczba, zmieniony obiekt lub relacja…"></textarea>
+          <details id="correction-details"><summary>Zaproponuj polską wersję</summary><label class="sr-only" for="correction">Proponowana poprawka</label><textarea id="correction" rows="3" maxlength="4000" placeholder="Wpisz proponowane tłumaczenie…"></textarea></details>
+          <div class="review-bottom"><button id="clear-rating" class="text-button">Wyczyść ocenę</button><button id="save-next" class="button primary">Zapisz i następny →</button></div>
+        </section>
+      </div>
+    </section>
+    <nav class="navigation" aria-label="Nawigacja między przykładami"><button id="previous" class="button quiet">← Poprzedni</button><div><span id="position">0 / 0</span><button id="random" class="text-button">Losowy przykład ⤨</button></div><button id="next" class="button quiet">Następny →</button></nav>
+    <footer><span>Oceny zapisują się automatycznie i nie zmieniają tłumaczeń benchmarku.</span><span>Skróty: <kbd>←</kbd> <kbd>→</kbd> nawigacja · <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> ocena</span></footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

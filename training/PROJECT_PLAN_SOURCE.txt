@@ -1,0 +1,469 @@
+CEL PROJEKTU
+
+Zbudować polski multimodalny embedder:
+- zachować jakość PolDense w text↔text,
+- maksymalizować text↔image i image↔text,
+- później dodać composed retrieval typu CIRR/FashionIQ,
+- jak najdłużej NIE ruszać text encodera.
+
+Aktualny baseline:
+- text encoder: PolDense, frozen
+- vision encoder: frozen
+- trainable: image projector
+- trening na pełnej dostępnej puli ~70k
+- MSCOCO text→image R@1 = 41.70 ± 0.20
+- wcześniejszy pilot 6k = 13.07 R@1
+
+To jest baseline E1 i wszystkie kolejne eksperymenty mają być porównywane do niego.
+
+==================================================
+P0 — INFRA / EWALUACJA
+==================================================
+
+[ ] 1. Zamrozić baseline E1
+- zachować config
+- zachować checkpoint
+- zachować wszystkie 3 seedy
+- zapisać średnią i std
+- baseline:
+  MSCOCO_t2i R@1 = 41.70 ± 0.20
+
+[ ] 2. Rozszerzyć metryki retrieval
+Dla MSCOCO liczyć:
+- text→image R@1
+- text→image R@5
+- text→image R@10
+- image→text R@1
+- image→text R@5
+- image→text R@10
+
+[ ] 3. Przygotować własny validation split
+- nie stroić hiperparametrów na benchmark test
+- wszystkie decyzje dot. architektury/loss/LR podejmować na val
+- benchmark test odpalać tylko dla wybranych konfiguracji
+
+[ ] 4. Każdy run loguje:
+- run_id
+- seed
+- dataset size
+- number of unique examples seen
+- text model
+- vision model
+- projector type
+- loss
+- batch size
+- LR
+- scheduler
+- temperature/logit_scale
+- trainable parameter count
+- best validation score
+- wszystkie metryki benchmarków
+
+==================================================
+P1 — LOSS ABLATION
+NAJWAŻNIEJSZY KOLEJNY EKSPERYMENT
+==================================================
+
+Zasada:
+NIC poza lossem nie zmieniać względem E1.
+
+Text encoder:
+- frozen
+
+Vision encoder:
+- frozen
+
+Projector:
+- dokładnie taki sam jak E1
+
+Training data:
+- dokładnie ten sam split co E1
+
+[ ] 5. E2a — symmetric InfoNCE / CLIP-style loss
+
+Zaimplementować similarity matrix:
+
+S_ij = cosine(text_i, image_j) / temperature
+
+Loss:
+L =
+0.5 * CE(text→image)
++
+0.5 * CE(image→text)
+
+Wymagania:
+- learnable albo tunable temperature/logit_scale
+- L2 normalization przed similarity
+- multi-positive support
+
+BARDZO WAŻNE:
+jeśli kilka captionów wskazuje ten sam obraz,
+nie traktować ich jako negatives.
+
+[ ] 6. E2b — SigLIP-style sigmoid loss
+
+Ten sam:
+- model
+- dataset
+- batching
+- optimizer budget
+
+Zmiana wyłącznie loss.
+
+Porównać:
+- E1 current loss
+- E2a InfoNCE
+- E2b SigLIP
+
+Na początku odpalać po 1 seedzie.
+Jeśli model poprawia MSCOCO_t2i R@1 o >= 1 p.p.,
+odpalić 3 seedy.
+
+==================================================
+P2 — PROJECTOR
+==================================================
+
+Na najlepszym lossie z P1:
+
+[ ] 7. E3a — Linear projector
+baseline / obecna architektura
+
+[ ] 8. E3b — 2-layer MLP projector
+
+Przykład:
+
+vision_dim
+→ Linear(hidden)
+→ GELU
+→ Linear(poldense_dim)
+→ L2 normalize
+
+Nie robić dużego MLP.
+
+Opcjonalnie:
+- residual jeśli dimensions pozwalają
+- LayerNorm jako mała ablation
+
+Cel:
+sprawdzić, czy mapping vision-space → PolDense-space
+jest prawie liniowy czy istotnie nieliniowy.
+
+==================================================
+P3 — VISION BACKBONE ABLATION
+==================================================
+
+Na najlepszym lossie + projectorze:
+
+[ ] 9. Wybrać 2–4 mocne pretrained vision encoders
+
+Priorytet:
+- SigLIP / SigLIP2
+- backbone'y modeli, które dobrze wypadają
+  na naszym polskim benchmarku
+
+Każdy testować przy:
+- tym samym PolDense
+- tym samym train split
+- tym samym loss
+- podobnym compute budget
+- frozen vision encoder
+
+[ ] 10. Raportować dla każdego backbone:
+- params
+- embedding dim
+- trainable params
+- MSCOCO t2i R@1/5/10
+- MSCOCO i2t R@1/5/10
+- CIRR
+- FashionIQ
+- RefCOCO
+- latency jeśli łatwo policzyć
+
+Główny selection metric na tym etapie:
+MSCOCO text→image + image→text.
+
+Nie optymalizować architektury pod CIRR.
+
+==================================================
+P4 — PARTIAL VISION FINETUNING
+==================================================
+
+Dla najlepszego vision backbone:
+
+[ ] 11. E5a — frozen vision
+baseline dla tej architektury
+
+[ ] 12. E5b — unfreeze last vision block
+
+[ ] 13. E5c — unfreeze last 2 vision blocks
+
+[ ] 14. Opcjonalnie E5d — LoRA na vision tower
+
+PolDense pozostaje frozen.
+
+Zasady:
+- LR dla vision dużo mniejszy niż dla projectora
+- monitorować overfitting
+- porównywać z frozen baseline
+
+==================================================
+P5 — TEACHER DISTILLATION
+==================================================
+
+Dopiero po ustaleniu mocnego normalnego baseline.
+
+[ ] 15. Wybrać mocny multimodalny teacher
+
+Teacher może używać:
+- oryginalnego angielskiego captionu
+
+Student używa:
+- polskiego tłumaczenia
+
+Nie destylować raw embeddingów jako główny sygnał.
+
+[ ] 16. Cache teacher embeddings/logits offline
+
+Dla batcha policzyć:
+
+Teacher:
+S_T(i,j)
+
+Student:
+S_S(i,j)
+
+[ ] 17. E6 — ranking / similarity distillation
+
+Loss:
+
+L =
+L_contrastive
++
+lambda * KL(
+    softmax(S_T / tau_T)
+    ||
+    softmax(S_S / tau_S)
+)
+
+Przetestować np.:
+lambda:
+- 0
+- 0.1
+- 0.3
+- 1.0
+
+Teacher:
+EN text + image
+
+Student:
+PL text + image
+
+Cel:
+przenieść multimodalną geometrię teachera
+do przestrzeni PolDense.
+
+==================================================
+P6 — HARD NEGATIVE MINING
+==================================================
+
+[ ] 18. Offline mining hard negatives
+
+Dla każdego caption/query:
+- wyszukać top-K podobnych, ale niepoprawnych obrazów
+  wg teachera lub najlepszego studenta
+
+Na początek:
+K = 16 lub 32
+
+[ ] 19. Usuwać false negatives
+- ten sam image_id
+- alternatywne captiony tego samego obrazu
+- oczywiste duplikaty
+- near-duplicates jeśli możliwe
+
+[ ] 20. E7 — training z:
+- positive
+- teacher/student hard negatives
+- in-batch negatives
+
+Porównać z czystym contrastive baseline.
+
+==================================================
+P7 — POLdense SCALE
+==================================================
+
+Dopiero gdy loss + projector + vision recipe jest ustalona.
+
+[ ] 21. Przenieść najlepszy setup 1:1 na:
+
+- OPI-PIB/PolDense-17M
+- OPI-PIB/PolDense-32M
+- OPI-PIB/PolDense-68M
+
+Nie zmieniać nic poza text encoderem.
+
+Raportować:
+- text model params
+- multimodal results
+- trainable params
+- inference cost
+
+Cel:
+sprawdzić, czy lepszy/większy text space
+przekłada się na lepszą multimodalność.
+
+==================================================
+P8 — DATA SCALING
+==================================================
+
+Na najlepszym setupie:
+
+[ ] 22. Trening na różnych liczbach przykładów:
+
+- 6k
+- 20k
+- 40k
+- 70k
+- pełne ~100k, jeśli dostępne
+
+Zrobić learning curve:
+
+number of unique image-text pairs
+vs
+MSCOCO t2i R@1
+
+Cel:
+sprawdzić, czy nadal jesteśmy data-limited.
+
+==================================================
+P9 — COMPOSED RETRIEVAL
+CIRR / FASHIONIQ
+DOPIERO PO MOCNYM CORE MODELU
+==================================================
+
+Nie zmieniać bazowej przestrzeni embeddings.
+
+Bazowy model:
+
+text:
+PolDense(text)
+
+image:
+Vision(image) → projector → PolDense-space
+
+Dodać osobny composition head.
+
+Dla:
+
+reference image embedding = r
+modification text embedding = t
+
+[ ] 23. CIRR-A — prosta suma
+
+q = normalize(r + alpha * t)
+
+alpha:
+- fixed albo learnable scalar
+
+[ ] 24. CIRR-B — linear fusion
+
+q = normalize(
+    Linear(concat(r, t))
+)
+
+[ ] 25. CIRR-C — residual MLP
+
+x = concat(
+    r,
+    t,
+    r * t,
+    r - t
+)
+
+delta = MLP(x)
+
+q = normalize(r + delta)
+
+Target:
+embedding target image.
+
+Train:
+contrastive / ranking loss.
+
+[ ] 26. Dodać CIRR hard negatives
+Szczególnie obrazy z tej samej / podobnej grupy.
+
+Composition head ma być dodatkiem.
+Nie wolno degradować bazowego:
+- text↔text
+- text↔image
+- image↔text
+
+==================================================
+P10 — REFCoco / GROUNDING
+==================================================
+
+[ ] 27. Traktować RefCOCO jako osobną capability
+
+Nie zmieniać core architecture tylko dlatego,
+że globalny image-text embedder słabo wypada na grounding.
+
+Najpierw sprawdzić:
+- zero-shot core model
+- później ewentualnie osobny grounding head
+
+==================================================
+P11 — TEXT TOWER FINETUNING
+TYLKO JEŚLI KONIECZNE
+==================================================
+
+Na razie PolDense pozostaje frozen.
+
+[ ] 28. Text tower odmrozić dopiero jeśli:
+- vision finetuning ma plateau
+- teacher KD ma plateau
+- hard negatives mają plateau
+- większy vision backbone nie pomaga
+
+Jeśli odmrażamy PolDense:
+
+MUSI BYĆ:
+- replay oryginalnych text retrieval danych
+- distillation do frozen original PolDense
+- benchmark text↔text przed/po
+
+Warunek akceptacji:
+brak istotnej regresji jakości tekstowej.
+
+==================================================
+KOLEJNOŚĆ DO WYKONANIA
+==================================================
+
+WYKONAĆ TERAZ:
+
+1. P0 — poprawić/logować pełny retrieval evaluation
+2. E2a — InfoNCE
+3. E2b — SigLIP loss
+4. wybrać najlepszy loss
+5. E3 — Linear vs small MLP
+6. E4 — 2–4 vision backbone'y
+7. E5 — partial vision finetuning
+8. E6 — ranking distillation
+9. E7 — hard negatives
+10. PolDense scaling
+11. dopiero później CIRR/FashionIQ composition head
+
+==================================================
+ZASADY EKSPERYMENTÓW
+==================================================
+
+- Zmieniać jedną rzecz naraz.
+- Najpierw 1 seed jako scouting.
+- Jeśli gain >= 1 p.p., odpalać 3 seedy.
+- PolDense frozen aż do bardzo późnego etapu.
+- Nie wybierać hiperparametrów na benchmark test.
+- Cache'ować vision/text/teacher embeddings gdzie się da.
+- Nie optymalizować teraz pod CIRR kosztem MSCOCO.
+- Główny cel:
+  możliwie mocny wspólny Polish text-image embedding space.
+- CIRR/FashionIQ mają dostać osobny composition head.

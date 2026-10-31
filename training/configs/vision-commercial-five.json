@@ -1,0 +1,18 @@
+{
+  "backbones": ["tinyclip-39m", "tinyclip-40m", "chinese-clip-rn50", "rn50-cc12m", "rn50-yfcc15m"],
+  "scout_seed": 42,
+  "repeat_seeds": [42, 43, 44],
+  "repeat_threshold": 0.47,
+  "size_class_upper_bounds": [40000000, 50000000, 60000000],
+  "substantially_smaller_fraction": 0.8,
+  "mobileclip_reference_r1": 0.491,
+  "mobileclip_reference_parameters": 35815232,
+  "mobileclip_max_gap": 0.02,
+  "encoding_batch_size": 32,
+  "loss": "siglip_sigmoid",
+  "projector": "linear",
+  "stop_after_five": true,
+  "replication_scope": "first-five-only; class winners among permissively licensed new candidates and known permissive references",
+  "checkpoint_selection": "minimum_validation_loss",
+  "data_and_optimization": "exactly_full_E1_and_E2b"
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pl-multimodal-benchmark-translator"
+version = "0.1.0"
+description = "Resumable English-to-Polish translation pipeline for multimodal embedding benchmarks using an OpenAI-compatible API."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=2.0.0,<3",
+  "python-dotenv>=1.0.1,<2",
+  "datasets>=4.0.0,<5",
+  "Pillow>=10.4.0,<13",
+  "huggingface-hub>=0.34.0,<2",
+]
+
+[project.scripts]
+pl-mmb-translate = "pl_mmb_translate.cli:main"
+pl-mmb-benchmark = "pl_mmb_benchmark.cli:main"
+pl-mmb-train = "pl_mmb_training.cli:main"
+pl-mmb-collect = "pl_mmb_collection.cli:main"
+
+[project.optional-dependencies]
+collection = ["pyarrow>=14,<24", "PyYAML>=6,<7", "requests>=2.32,<3"]
+collection-phash = ["ImageHash>=4.3,<5"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pl_mmb_translate", "src/pl_mmb_benchmark", "src/pl_mmb_training", "src/pl_mmb_collection"]
