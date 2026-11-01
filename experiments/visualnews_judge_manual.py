@@ -1,0 +1,76 @@
+"""Codex image-based diagnostic annotations, created independently of v2 outputs."""
+import json
+from visualnews_judge_pilot import OUT, save
+
+# Plausible grounding intervals, not a claim of expert consensus or gold labels.
+REVIEWS = [
+ (199,1,2,'Microphone and speaking pose visible; identity, candidacy, venue and date external.'),
+ (744,0,1,'Football player visible; arrest, assault, date and argument are not depicted.'),
+ (556,1,2,'Fire and firefighting visible; factory type, location and recovered-body total unverified.'),
+ (707,0,1,'People behind railing visible; dates, named race and later horse victory contextual.'),
+ (545,0,1,'Small aircraft visible; regulatory exemption is not visible.'),
+ (927,0,1,'Two men visible; actor names, movie and Oscar nominations external.'),
+ (258,0,1,'Woman with sunglasses visible; CIA role, raid and promotion story unverified.'),
+ (254,1,2,'Woman at photographed formal event; identity and exact Oscars venue require text or context.'),
+ (215,1,2,'People assist or carry a person; shooting cause, protester role, city and weekday unverified.'),
+ (765,0,2,'Dark distant horizon; smoke detail weak at contact resolution, airstrike attribution external.'),
+ (782,1,2,'Person seated in vehicle visible; person and destination not established.'),
+ (239,2,4,'Soldiers/vehicle and a visible headline support security patrol and Kashmir-attack context; requires OCR.'),
+ (419,0,1,'Portrait/speaking scene; party, candidacy and name not verified from face alone.'),
+ (605,1,2,'Staged group and banners visible; court case details, motive and exact place need evidence.'),
+ (703,1,2,'Man gestures/speaks; name alone is not verified. Action must still get credit.'),
+ (49,1,2,'Formal group photo visible; extensive identities, honor status, year and dinner chronology external.'),
+ (535,2,3,'Person transports boxes; evidence contents and courthouse designation not established.'),
+ (481,1,2,'Two seated women talking; names, professional role, visit destination and book promotion partly external.'),
+ (43,1,2,'Two men converse; exact identities and official positions not pixel verified.'),
+ (205,2,3,'Crowd with raised hands visible; protest interpretation plausible, city not established.'),
+ (631,0,2,'Wide convention crowd/stage; specific introduction and first-day chronology uncertain.'),
+ (598,1,2,'People stand near one another; no handshake seen but lifetime claims and interview are external.'),
+ (788,1,2,'Group assists/interacts with seated man; factions, evacuation history and city control external.'),
+ (322,1,2,'Ceremonial group/oath-like pose visible; identities, legal roles and specific room contextual.'),
+ (458,1,2,'Small protest gathering visible; hunger-strike status and motivation not established.'),
+ (991,0,1,'Two people pose; their names, occupation and studio number not established.'),
+ (811,4,4,'Multiple killer whales swim close together; direct visual description.'),
+ (777,2,3,'People handle ballot-like papers; Witney and England unverified.'),
+ (249,0,1,'News commentator and on-screen name visible; claim about media coverage not established.'),
+ (946,0,1,'Baseball player pitching visible; future assignment to Game 2 external.'),
+ (941,1,2,'Interaction between standing and seated people visible; named history and year external.'),
+ (784,0,1,'Seated woman visible; age and future voting intent not visible.'),
+ (984,0,1,'Chart with turnout/competitiveness is visible, not an identified university view. Institution may be a source attribution.'),
+ (936,1,2,'Woman/children walking in dry landscape visible; purpose, destination and refugee statistics external.'),
+ (38,2,3,'People use/display smartphones and laptop; residence status and Hyderabad unverified.'),
+ (378,1,2,'Crowd and mourning/burial setting plausible; named person, police role and exact cemetery contextual.'),
+ (370,2,3,'Wedding clothing, flowers and aisle visible; tears and vague difference not clearly verifiable.'),
+ (236,3,4,'Distinctive Capitol silhouette and sunrise-like horizon provide strong scene evidence; location requires landmark interpretation.'),
+ (14,1,2,'Hockey players embrace/celebrate; identities and exact 4-0 result require additional evidence.'),
+ (338,2,3,'Child playing in spray water visible; name, age and park address external.'),
+ (307,1,2,'Person in kitchen visible; sexuality, asylum and later move mostly external.'),
+ (997,1,2,'Photography setup/person visible; names and kinship not verifiable.'),
+ (240,2,3,'Hockey player shooting/diving toward goal visible; identities, qualification stage and final score contextual.'),
+ (538,0,2,'Near-black image at contact resolution; inspect original before concluding support or mismatch.'),
+ (794,1,2,'Man poses outdoors; name, exact date and city unverified.'),
+ (155,1,2,'People carrying a person visible; national identity, place and agency plans external.'),
+ (577,2,3,'Woman arranges visible voting stickers; named person and exact center external.'),
+ (8,0,1,'Woman photographed in meeting; name, building and date external.'),
+ (364,2,3,'Reservoir with very low water visible; named lake, duration and household shutoffs external.'),
+ (852,1,2,'Children getting golf instruction visible; economic narrative, exclusivity and Beijing external.'),
+ (413,2,3,'Football scoring scene visible; player identities and exact minute not established.'),
+ (959,0,1,'Pair posing visible; names, friendship and later murder/year unverified.'),
+ (45,1,2,'Panel discussion visible; identities, named event and exact location external.'),
+ (893,0,1,'Portrait with drink visible; release context and personal statement external.'),
+ (101,0,1,'Basketball scene visible but caption consists solely of unverified identity.'),
+ (961,1,2,'Person addressing audience visible; conceding an election and exact hotel require context.'),
+ (922,0,1,'Basketball action visible; first-person playing-history claim not visible.'),
+ (912,0,1,'Man in suit near vehicle visible; idiomatic statement has no concrete supported scene claim.'),
+ (853,0,0,'Chart visible; source-credit attribution does not describe its visual content.'),
+ (926,1,2,'Two people talking at meeting visible; titles, subject, date and exact place external.'),
+]
+
+def main():
+    data=[dict(id=f'VisualNews_t2i:{uid}',grounding_min=lo,grounding_max=hi,note=note,
+        reviewer='Codex',method='Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.',
+        annotation_stage='After v1 diagnostics, before inspecting v2 outputs') for uid,lo,hi,note in REVIEWS]
+    save(OUT/'manual_reviews.json',data)
+    print('Saved',len(data),'manual diagnostic assessments')
+
+if __name__=='__main__':main()

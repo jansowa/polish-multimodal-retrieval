@@ -48,6 +48,8 @@ def prepare():
 
 
 if __name__ == "__main__":
+    if (ROOT / 'reports/visualnews_image_plan.json').exists() and len(sys.argv) > 1 and sys.argv[1] in {'full', '_translate'}:
+        raise RuntimeError('VisualNews now requires cross-method deduplication and images; use experiments/visualnews_images_production.py in Windows')
     base.PLAN, base.STATE, base.RUN = PLAN, STATE, RUN
     base.PRIMARY_STATE = OLD_STATE
     base.configure()

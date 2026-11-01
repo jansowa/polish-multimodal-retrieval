@@ -1,5 +1,8 @@
 # Tłumaczenie danych
 
+VisualNews: bieżąca produkcja używa [kontynuacji z grafiką](visualnews-image-continuation.md),
+z reasoningiem i pomijaniem ukończonych rekordów ze wszystkich wcześniejszych metod.
+
 Kod: `src/pl_mmb_translate/`. Punkt wejścia: `translate.py` lub `pl-mmb-translate`.
 Kolejki i eksperymenty: `experiments/`. Przegląd danych: `reviewer/` (port 8765).
 Stan oraz wznowienie: [../reports/absence_work_status.md](../reports/absence_work_status.md).
