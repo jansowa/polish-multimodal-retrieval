@@ -1,0 +1,103 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-20T09:42:17.688900+00:00",
+  "pid": 447736,
+  "platform": "nt",
+  "production_run": "qwen3.8-27b-visualnews-v3c",
+  "model": "qwen3.8-27b",
+  "policy": {
+    "pipeline_version": "translation-v3",
+    "policy_sha256": "10bcb7945dab9b258015c2f3c9b10469a60fcbdf168e96024d1f25de54e307f9",
+    "temperature": 0.0,
+    "max_output_tokens": 8192,
+    "quality_review": false,
+    "image_settings": null,
+    "draft_capture": "compact-stages-v1"
+  },
+  "source_sha256": "7203bbd00434e4485d5c543b1b06b38f3fefef80b4b3333b8ff5eae81a4a5d25",
+  "starting_completed": 25076,
+  "seconds_per_stage": 1200,
+  "order": [
+    4,
+    8,
+    16
+  ],
+  "sampling": "seeded shuffle of first 20000 pending texts; distinct texts per stage",
+  "stages": [
+    {
+      "concurrency": 4,
+      "finished_at": "2026-10-20T10:02:54.142596+00:00",
+      "measurement_seconds": 1200,
+      "wall_seconds": 1235.3909999998286,
+      "submitted": 341,
+      "succeeded": 341,
+      "failures": 0,
+      "window_successes": 337,
+      "window_failures": 0,
+      "texts_per_hour": 1011.0,
+      "texts_per_hour_including_drain": 993.6934946103463,
+      "cancelled_after_drain": 0,
+      "requests": {
+        "attempts": 354,
+        "http_success": 347,
+        "completion_tokens": 581812,
+        "error_504": 7
+      },
+      "text_seconds_median": 8.405999999959022,
+      "text_seconds_p95": 39.39100000006147,
+      "request_seconds_median": 8.593999999924563,
+      "source_chars_mean": 119.42228739002933
+    },
+    {
+      "concurrency": 8,
+      "finished_at": "2026-10-20T10:23:29.005255+00:00",
+      "measurement_seconds": 1200,
+      "wall_seconds": 1234.7660000000615,
+      "submitted": 537,
+      "succeeded": 537,
+      "failures": 0,
+      "window_successes": 529,
+      "window_failures": 0,
+      "texts_per_hour": 1587.0,
+      "texts_per_hour_including_drain": 1565.6407772807995,
+      "cancelled_after_drain": 0,
+      "requests": {
+        "attempts": 575,
+        "http_success": 544,
+        "completion_tokens": 877880,
+        "error_504": 31
+      },
+      "text_seconds_median": 9.936999999918044,
+      "text_seconds_p95": 48.71900000004098,
+      "request_seconds_median": 10.327999999979511,
+      "source_chars_mean": 120.29050279329608
+    },
+    {
+      "concurrency": 16,
+      "finished_at": "2026-10-20T10:45:11.342339+00:00",
+      "measurement_seconds": 1200,
+      "wall_seconds": 1302.2650000001304,
+      "submitted": 617,
+      "succeeded": 609,
+      "failures": 8,
+      "window_successes": 594,
+      "window_failures": 7,
+      "texts_per_hour": 1782.0,
+      "texts_per_hour_including_drain": 1683.528314129444,
+      "cancelled_after_drain": 0,
+      "requests": {
+        "attempts": 736,
+        "http_success": 614,
+        "completion_tokens": 975097,
+        "error_504": 122
+      },
+      "text_seconds_median": 14.719000000040978,
+      "text_seconds_p95": 106.0319999998901,
+      "request_seconds_median": 18.523500000010245,
+      "source_chars_mean": 134.05582922824303
+    }
+  ],
+  "current_concurrency": 16,
+  "finished_at": "2026-10-20T10:45:11.342339+00:00",
+  "completed": 26563
+}

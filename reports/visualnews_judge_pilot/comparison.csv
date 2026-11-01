@@ -1,0 +1,8 @@
+variant,n,raw_json_valid_rate,recovered_schema_rate,controls_passed,controls_expected,controls_evaluable,natural_false_alarms,manual_interval_misses,manual_severe_misses,grounding_repeat_exact,all_labels_repeat_exact,grounding_repeat_mae
+A_direct,360,0.7777777777777778,1,48,48,48,6,10,1,0.715,0.545,0.295
+B_taxonomy,360,0.6722222222222223,1,41,48,43,7,11,3,0.6934673366834171,0.49246231155778897,0.3316582914572864
+C_claims,360,0.9611111111111111,1,48,48,48,6,12,2,0.75,0.565,0.255
+D_skeptical,360,0.9222222222222223,1,48,48,48,7,12,1,0.695,0.49,0.335
+B_taxonomy_v2,360,1,1,48,48,48,7,6,0,0.74,0.52,0.265
+C_claims_v2,360,1,1,48,48,48,9,7,1,0.755,0.53,0.245
+B_taxonomy_v3,360,1,1,48,48,48,6,8,0,0.82,0.6,0.18

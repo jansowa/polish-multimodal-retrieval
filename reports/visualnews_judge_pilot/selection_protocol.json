@@ -1,0 +1,6 @@
+{
+  "selection": "At most two finalists. Prioritize complete controls and fewer severe visual-review errors, then interval-distance, logical anomalies and repeat stability. Native JSON reliability is reported separately from schema-constrained execution. Distribution inspected for collapse, never forced uniform.",
+  "manual_review": "60 Codex diagnostic intervals; not expert gold. Changes derive from exploratory v1 diagnostics; 260-pair remainder must not be described as blinded holdout.",
+  "confidence": "Model self-report, never empirically calibrated.",
+  "text_filter": "Do not hard-filter solely on named entities or text-only context scores."
+}

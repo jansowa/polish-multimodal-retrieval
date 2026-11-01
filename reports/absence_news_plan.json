@@ -3,8 +3,8 @@
   "settings": {
     "model": "qwen3.8-27b",
     "base_url": "https://inference-server.insert-ad.insert.intranet/v1",
-    "batch_size": 4,
-    "request_timeout": 180.0,
+    "batch_size": 16,
+    "request_timeout": 3900.0,
     "max_retries": 4,
     "max_output_tokens": 8192,
     "temperature": 0.0,

@@ -1,0 +1,58 @@
+{
+  "variant_checks": {
+    "A_direct": {
+      "expected_unique_requests": 624,
+      "observed": 624,
+      "http_success": 624,
+      "recovered_schema_valid": 624
+    },
+    "B_taxonomy": {
+      "expected_unique_requests": 624,
+      "observed": 624,
+      "http_success": 624,
+      "recovered_schema_valid": 622
+    },
+    "C_claims": {
+      "expected_unique_requests": 624,
+      "observed": 624,
+      "http_success": 624,
+      "recovered_schema_valid": 624
+    },
+    "D_skeptical": {
+      "expected_unique_requests": 624,
+      "observed": 624,
+      "http_success": 624,
+      "recovered_schema_valid": 624
+    },
+    "B_taxonomy_v2": {
+      "expected_unique_requests": 624,
+      "observed": 624,
+      "http_success": 624,
+      "recovered_schema_valid": 624
+    },
+    "C_claims_v2": {
+      "expected_unique_requests": 624,
+      "observed": 624,
+      "http_success": 624,
+      "recovered_schema_valid": 624
+    },
+    "B_taxonomy_v3": {
+      "expected_unique_requests": 624,
+      "observed": 624,
+      "http_success": 624,
+      "recovered_schema_valid": 624
+    }
+  },
+  "text_only_n": 360,
+  "sample_sha256_verified": true,
+  "image_hashes_verified": 360,
+  "original_parquet_sha256": "f9e72514ed28b3806f22fb775d7d2faaf65d724075665254273721be48160a3c",
+  "original_zip_sha256": "bc8950dda82b9d1fb0dc7a4ae04ec9aeaf13edf7bccdb8baffabb21cbd098cd6",
+  "total_http_attempts": 5088,
+  "token_usage": {
+    "prompt_tokens": 4274373,
+    "completion_tokens": 812489,
+    "total_tokens": 5086862
+  },
+  "note": "No corpus-wide judge job was launched. Original translation jobs/checkpoints untouched. Raw responses preserve formatting failures."
+}

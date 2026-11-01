@@ -1,0 +1,10 @@
+{
+  "verified_at": "2026-10-20T13:28:03.130925+00:00",
+  "starting_completed": 27241,
+  "new_with_image": 31,
+  "combined_completed": 27272,
+  "overlap_with_previously_completed": 0,
+  "invalid_image_or_reasoning_metadata": 0,
+  "responses_with_reasoning_tokens": 31,
+  "started_at": "2026-10-20T13:26:28.519472+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-10-20T18:20:02.946761+00:00",
+  "rows_scanned": 44998,
+  "unique_english_texts": 44955,
+  "sources": [
+    {
+      "path": "C:\\Users\\jsowa\\benchmark-translations\\qwen3.8-27b-absence-extension-v3b-pilot\\mbeir_visualnews\\text_only\\checkpoint.sqlite3",
+      "rows": 40
+    },
+    {
+      "path": "C:\\Users\\jsowa\\benchmark-translations\\qwen3.8-27b-visualnews-v3c\\mbeir_visualnews\\text_only\\checkpoint.sqlite3",
+      "rows": 27204
+    },
+    {
+      "path": "C:\\Users\\jsowa\\benchmark-translations\\qwen3.8-27b-visualnews-v3c\\mbeir_visualnews\\with_image\\checkpoint.sqlite3",
+      "rows": 17714
+    },
+    {
+      "path": "C:\\Users\\jsowa\\benchmark-translations\\qwen3.8-27b-visualnews-v3c-pilot\\mbeir_visualnews\\text_only\\checkpoint.sqlite3",
+      "rows": 40
+    }
+  ],
+  "matching": "Exact English text after removing only the fixed MMEB retrieval instruction and edge whitespace; no name/punctuation/fuzzy matching."
+}

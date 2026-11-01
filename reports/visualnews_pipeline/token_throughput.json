@@ -1,0 +1,326 @@
+{
+  "status": "interrupted",
+  "error": "Disk reserve below 4 GiB",
+  "started_at": "2026-10-21T13:20:41.141102+00:00",
+  "stopped_at": "2026-10-21T13:39:19.654514+00:00",
+  "concurrency": 32,
+  "ready": 36325,
+  "disk_free_bytes": 3427930112,
+  "whole_run": {
+    "seconds": 1118.5134119987488,
+    "requests": 3760,
+    "with_usage": 3694,
+    "errors": 37,
+    "input": 4290520,
+    "output": 932060,
+    "reasoning": 394584,
+    "cached": 0,
+    "per_second": {
+      "input": 3835.91,
+      "output": 833.3,
+      "reasoning": 352.78,
+      "cached": 0.0
+    },
+    "per_day": {
+      "input": 331422873,
+      "output": 71997334,
+      "reasoning": 30479793,
+      "cached": 0
+    }
+  },
+  "stable": {
+    "seconds": 998.5134119987488,
+    "requests": 3406,
+    "with_usage": 3375,
+    "errors": 34,
+    "input": 3918380,
+    "output": 856593,
+    "reasoning": 364569,
+    "cached": 0,
+    "per_second": {
+      "input": 3924.21,
+      "output": 857.87,
+      "reasoning": 365.11,
+      "cached": 0.0
+    },
+    "per_day": {
+      "input": 339052063,
+      "output": 74119821,
+      "reasoning": 31545657,
+      "cached": 0
+    }
+  },
+  "last_5min": {
+    "seconds": 300.0,
+    "requests": 966,
+    "with_usage": 955,
+    "errors": 14,
+    "input": 1106195,
+    "output": 248968,
+    "reasoning": 105493,
+    "cached": 0,
+    "per_second": {
+      "input": 3687.32,
+      "output": 829.89,
+      "reasoning": 351.64,
+      "cached": 0.0
+    },
+    "per_day": {
+      "input": 318584160,
+      "output": 71702784,
+      "reasoning": 30381984,
+      "cached": 0
+    }
+  },
+  "last_10min": {
+    "seconds": 600.0,
+    "requests": 1951,
+    "with_usage": 1928,
+    "errors": 26,
+    "input": 2233095,
+    "output": 495895,
+    "reasoning": 214075,
+    "cached": 0,
+    "per_second": {
+      "input": 3721.82,
+      "output": 826.49,
+      "reasoning": 356.79,
+      "cached": 0.0
+    },
+    "per_day": {
+      "input": 321565680,
+      "output": 71408880,
+      "reasoning": 30826800,
+      "cached": 0
+    }
+  },
+  "best_5min_by_output": {
+    "seconds": 300.0,
+    "requests": 1097,
+    "with_usage": 1093,
+    "errors": 4,
+    "input": 1272505,
+    "output": 278207,
+    "reasoning": 118982,
+    "cached": 0,
+    "per_second": {
+      "input": 4241.68,
+      "output": 927.36,
+      "reasoning": 396.61,
+      "cached": 0.0
+    },
+    "per_day": {
+      "input": 366481440,
+      "output": 80123616,
+      "reasoning": 34266816,
+      "cached": 0
+    }
+  },
+  "best_5min_by_input": {
+    "seconds": 300.0,
+    "requests": 1097,
+    "with_usage": 1093,
+    "errors": 4,
+    "input": 1272505,
+    "output": 278207,
+    "reasoning": 118982,
+    "cached": 0,
+    "per_second": {
+      "input": 4241.68,
+      "output": 927.36,
+      "reasoning": 396.61,
+      "cached": 0.0
+    },
+    "per_day": {
+      "input": 366481440,
+      "output": 80123616,
+      "reasoning": 34266816,
+      "cached": 0
+    }
+  },
+  "by_stage": {
+    "judge": {
+      "seconds": 998.5134119987488,
+      "requests": 1010,
+      "with_usage": 1010,
+      "errors": 0,
+      "input": 1525766,
+      "output": 156421,
+      "reasoning": 0,
+      "cached": 0,
+      "per_second": {
+        "input": 1528.04,
+        "output": 156.65,
+        "reasoning": 0.0,
+        "cached": 0.0
+      },
+      "per_day": {
+        "input": 132022445,
+        "output": 13534895,
+        "reasoning": 0,
+        "cached": 0
+      }
+    },
+    "recheck": {
+      "seconds": 998.5134119987488,
+      "requests": 776,
+      "with_usage": 776,
+      "errors": 0,
+      "input": 1174857,
+      "output": 93510,
+      "reasoning": 0,
+      "cached": 0,
+      "per_second": {
+        "input": 1176.61,
+        "output": 93.65,
+        "reasoning": 0.0,
+        "cached": 0.0
+      },
+      "per_day": {
+        "input": 101658770,
+        "output": 8091292,
+        "reasoning": 0,
+        "cached": 0
+      }
+    },
+    "recycle": {
+      "seconds": 998.5134119987488,
+      "requests": 780,
+      "with_usage": 780,
+      "errors": 3,
+      "input": 480667,
+      "output": 175279,
+      "reasoning": 0,
+      "cached": 0,
+      "per_second": {
+        "input": 481.38,
+        "output": 175.54,
+        "reasoning": 0.0,
+        "cached": 0.0
+      },
+      "per_day": {
+        "input": 41591458,
+        "output": 15166652,
+        "reasoning": 0,
+        "cached": 0
+      }
+    },
+    "translate": {
+      "seconds": 998.5134119987488,
+      "requests": 840,
+      "with_usage": 809,
+      "errors": 31,
+      "input": 737090,
+      "output": 431383,
+      "reasoning": 364569,
+      "cached": 0,
+      "per_second": {
+        "input": 738.19,
+        "output": 432.03,
+        "reasoning": 365.11,
+        "cached": 0.0
+      },
+      "per_day": {
+        "input": 63779390,
+        "output": 37326981,
+        "reasoning": 31545657,
+        "cached": 0
+      }
+    }
+  },
+  "usage_shapes": [
+    {
+      "stage": "judge",
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "detail_keys": [
+        "reasoning_tokens"
+      ]
+    },
+    {
+      "stage": "recheck",
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "detail_keys": [
+        "reasoning_tokens"
+      ]
+    },
+    {
+      "stage": "recycle",
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "detail_keys": [
+        "reasoning_tokens"
+      ]
+    },
+    {
+      "stage": "translate",
+      "usage_keys": [
+        "completion_tokens",
+        "completion_tokens_details",
+        "prompt_tokens",
+        "prompt_tokens_details",
+        "total_tokens"
+      ],
+      "detail_keys": [
+        "accepted_prediction_tokens",
+        "audio_tokens",
+        "reasoning_tokens",
+        "rejected_prediction_tokens"
+      ]
+    }
+  ],
+  "benchmarks": {
+    "16": {
+      "seconds": 144.54699999999866,
+      "input": 538973,
+      "output": 115418,
+      "reasoning": 48614,
+      "requests": 470,
+      "with_usage": 470,
+      "per_second": {
+        "input": 3728.7,
+        "output": 798.48,
+        "reasoning": 336.32
+      },
+      "per_day": {
+        "input": 322160039,
+        "output": 68988739,
+        "reasoning": 29058020
+      }
+    },
+    "32": {
+      "seconds": 130.125,
+      "input": 532722,
+      "output": 112620,
+      "reasoning": 47533,
+      "requests": 464,
+      "with_usage": 464,
+      "per_second": {
+        "input": 4093.93,
+        "output": 865.48,
+        "reasoning": 365.29
+      },
+      "per_day": {
+        "input": 353715126,
+        "output": 74777084,
+        "reasoning": 31560816
+      }
+    }
+  }
+}

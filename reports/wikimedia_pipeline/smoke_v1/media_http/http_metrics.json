@@ -1,0 +1,16 @@
+{
+  "started_at": "2026-10-21T17:42:58.203571+00:00",
+  "requests": 6,
+  "successes": 0,
+  "cache_hits": 0,
+  "bytes_received": 0,
+  "errors": {},
+  "by_host": {
+    "upload.wikimedia.org": 6
+  },
+  "elapsed_seconds": 61.64099999999962,
+  "requests_per_hour": 350.4161191414827,
+  "configured_requests_per_minute": 180,
+  "effective_min_interval": 0.35,
+  "cooldowns": {}
+}

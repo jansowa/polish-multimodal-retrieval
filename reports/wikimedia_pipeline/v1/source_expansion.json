@@ -1,0 +1,8 @@
+{
+  "migrated_at": "2026-10-27T14:10:08.029774+00:00",
+  "previous_source": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\outputs\\polish_culture_fast",
+  "source": "C:\\Users\\jsowa\\datasets\\polish_culture",
+  "previous_fingerprint": "468ee2acf4fecb9b2f9d1968de83baa4aa9ab91bf27bc28c4b51d30ea8f802d2",
+  "verified_existing_images": 8235,
+  "backup": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\wikimedia_pipeline\\v1\\checkpoint.before_source_expansion.sqlite3"
+}

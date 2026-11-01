@@ -1,0 +1,90 @@
+{
+  "status": "stopped_by_request",
+  "pid": 107508,
+  "run_dir": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\visualnews_pipeline\\v1",
+  "checkpoint": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\visualnews_pipeline\\v1\\checkpoint.sqlite3",
+  "started_at": "2026-10-31T20:04:22.464123+00:00",
+  "concurrency": 10,
+  "fingerprint": "47cdc526d1a8a2f92dc6bfc3080f8492927c0098ac9bc7efb1b454ce184dac8b",
+  "total": 283012,
+  "shared_total_concurrency": 10,
+  "updated_at": "2026-10-31T20:04:30.131021+00:00",
+  "completed": 230975,
+  "routes": {
+    "ready_original": 16075,
+    "ready_recycled": 144898,
+    "ready_reused_original": 4252,
+    "ready_reused_recycled": 91,
+    "rejected_grounding": 61196,
+    "rejected_no_visual_core": 48,
+    "review_mismatch": 4129,
+    "review_recycling_failed": 286
+  },
+  "stages": [
+    {
+      "stage": "judge",
+      "status": "pending",
+      "n": 51819
+    },
+    {
+      "stage": "recheck",
+      "status": "pending",
+      "n": 9
+    },
+    {
+      "stage": "recycle",
+      "status": "error",
+      "n": 59
+    },
+    {
+      "stage": "recycle",
+      "status": "pending",
+      "n": 2
+    },
+    {
+      "stage": "terminal",
+      "status": "completed",
+      "n": 230975
+    },
+    {
+      "stage": "translate",
+      "status": "error",
+      "n": 140
+    },
+    {
+      "stage": "translate",
+      "status": "pending",
+      "n": 8
+    }
+  ],
+  "requests": 688040,
+  "ready": 165316,
+  "finalized_per_hour": 0.0,
+  "elapsed_seconds": 8.01600000000326,
+  "request_stats": [
+    {
+      "stage": "judge",
+      "n": 228245,
+      "valid": 228163,
+      "seconds_mean": 6.4369972091392755
+    },
+    {
+      "stage": "recheck",
+      "n": 145475,
+      "valid": 145409,
+      "seconds_mean": 5.131157298504911
+    },
+    {
+      "stage": "recycle",
+      "n": 146226,
+      "valid": 145466,
+      "seconds_mean": 9.202775710202031
+    },
+    {
+      "stage": "translate",
+      "n": 168094,
+      "valid": 160973,
+      "seconds_mean": 16.67734125548797
+    }
+  ]
+}

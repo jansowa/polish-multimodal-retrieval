@@ -1,0 +1,4327 @@
+[
+  {
+    "id": "VisualNews_t2i:456",
+    "caption": "Two women selling candy while dressed in Victorian outfits walk toward Independence Square in Kiev For weeks thousands have been protesting against a decision by Ukrainian President Viktor Yanukovych to suspend a trade and partnership agreement with the European Union in favor of incentives from Russia.",
+    "source_query": "Retrieve an image of this news caption. Two women selling candy while dressed in Victorian outfits walk toward Independence Square in Kiev For weeks thousands have been protesting against a decision by Ukrainian President Viktor Yanukovych to suspend a trade and partnership agreement with the European Union in favor of incentives from Russia.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0538_774.jpg",
+    "tags": [
+      "role",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:role",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_456.jpg",
+    "image_sha256": "c18f35744d13f3a3f23b7fbbff53212e210b28e18555ceab446d727931fbe611",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": true,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two women in period costumes holding umbrellas, but the caption claims they are 'selling candy' and 'walking toward' a specific location, which is not supported by the static pose or lack of visible merchandise.",
+        "unsupported_information": [
+          "selling candy",
+          "walking toward Independence Square",
+          "protesting against a decision by Ukrainian President Viktor Yanukovych",
+          "suspension of trade agreement with EU"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": true,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two women in Victorian-style dresses holding umbrellas, but they are not selling candy, and the caption describes a specific political protest event in Kiev that cannot be verified from the visual content.",
+        "unsupported_information": [
+          "selling candy",
+          "walking toward Independence Square in Kiev",
+          "protesting against a decision by Ukrainian President Viktor Yanukovych",
+          "suspend a trade and partnership agreement with the European Union",
+          "incentives from Russia"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two women in Victorian-style dresses holding umbrellas on a street with tents and police tape, but the specific location (Independence Square, Kiev), the action (selling candy), and the political context (protests against Yanukovych) are not visible.",
+        "unsupported_information": [
+          "selling candy",
+          "walk toward Independence Square in Kiev",
+          "protesting against a decision by Ukrainian President Viktor Yanukovych",
+          "suspend a trade and partnership agreement with the European Union",
+          "incentives from Russia"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "Two figures in long Victorian-style dresses hold umbrellas on a city street with barricades and tents, but no candy is visible and the square/location cannot be confirmed.",
+        "unsupported_information": [
+          "selling candy",
+          "walking toward Independence Square in Kiev",
+          "protests against Viktor Yanukovych's suspension of EU trade agreement",
+          "incentives from Russia"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two women in Victorian-style dresses holding umbrellas on a street with tents, but the specific location, their activity (selling candy), and the political context of the protest are not visible.",
+        "unsupported_information": [
+          "selling candy",
+          "walk toward Independence Square in Kiev",
+          "protesting against a decision by Ukrainian President Viktor Yanukovych",
+          "suspend a trade and partnership agreement with the European Union",
+          "incentives from Russia"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows two women in Victorian-style dresses holding umbrellas on a street with tents and barricades, but the specific location (Independence Square, Kiev) and the political context (protests against Viktor Yanukovych) are not visually verifiable.",
+        "unsupported_information": [
+          "selling candy",
+          "walk toward Independence Square in Kiev",
+          "protesting against a decision by Ukrainian President Viktor Yanukovych",
+          "suspend a trade and partnership agreement with the European Union",
+          "incentives from Russia"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": true,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two women in traditional folk costumes holding umbrellas, not Victorian outfits, and there is no visual evidence of candy sales or specific political protest activities.",
+        "unsupported_information": [
+          "selling candy",
+          "Victorian outfits",
+          "walking toward Independence Square in Kiev",
+          "protesting against a decision by Ukrainian President Viktor Yanukovych",
+          "suspend a trade and partnership agreement with the European Union",
+          "incentives from Russia"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:916",
+    "caption": "Medical workers aid an injured person.",
+    "source_query": "Retrieve an image of this news caption. Medical workers aid an injured person.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0579_093.jpg",
+    "tags": [
+      "cause_effect",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:cause_effect",
+    "original_size": [
+      256,
+      276
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_916.jpg",
+    "image_sha256": "acaa76f22e9c2d0e5f955778de5753569af34e89c338d0366a61a536cdbe70d1",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 4,
+        "external_context_dependency": 0,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description",
+        "confidence": 1.0,
+        "evidence": "The image clearly shows individuals in high-visibility vests and medical gloves attending to a person lying on the ground.",
+        "unsupported_information": []
+      },
+      "B_taxonomy": {
+        "visual_grounding": 4,
+        "external_context_dependency": 0,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description",
+        "confidence": 1.0,
+        "evidence": "The image shows a woman in a high-visibility vest and a man in a plaid shirt attending to a person lying on the ground, consistent with the description of medical workers aiding an injured person.",
+        "unsupported_information": []
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 4,
+        "external_context_dependency": 0,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description",
+        "confidence": 0.95,
+        "evidence": "The image shows individuals in high-visibility vests and medical gloves attending to a person lying on the ground, which directly supports the description of medical workers aiding an injured person.",
+        "unsupported_information": []
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 4,
+        "external_context_dependency": 0,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description",
+        "confidence": 1.0,
+        "evidence": "The image shows a person in a high-visibility vest and blue gloves (a medical worker) attending to a person lying on the ground, while another man leans over the injured individual.",
+        "unsupported_information": []
+      },
+      "C_claims": {
+        "visual_grounding": 4,
+        "external_context_dependency": 0,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description",
+        "confidence": 1.0,
+        "evidence": "The image clearly shows individuals in high-visibility vests and casual clothing attending to a person lying on the ground.",
+        "unsupported_information": []
+      },
+      "C_claims_v2": {
+        "visual_grounding": 4,
+        "external_context_dependency": 0,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description",
+        "confidence": 1.0,
+        "evidence": "The image shows individuals in high-visibility vests and medical gloves attending to a person lying on the ground, consistent with medical workers aiding an injured person.",
+        "unsupported_information": []
+      },
+      "D_skeptical": {
+        "visual_grounding": 4,
+        "external_context_dependency": 0,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description",
+        "confidence": 0.95,
+        "evidence": "The image clearly shows individuals in high-visibility vests and medical gloves attending to a person lying on the ground.",
+        "unsupported_information": []
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:815",
+    "caption": "Shaun Donovan Obama s new budget director argues that ignoring climate change is the height of fiscal irresponsibility.",
+    "source_query": "Retrieve an image of this news caption. Shaun Donovan Obama s new budget director argues that ignoring climate change is the height of fiscal irresponsibility.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0381_938.jpg",
+    "tags": [
+      "role",
+      "entity"
+    ],
+    "selection": "targeted:role",
+    "original_size": [
+      410,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_815.jpg",
+    "image_sha256": "75fd522f60bd1d5cf9f932bc19eade0056317f3f2137a172155bdc6f9df81a80",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows a man standing at a podium with a nameplate reading 'HON. DONOVAN', but the caption adds specific roles and arguments not visible in the image.",
+        "unsupported_information": [
+          "Shaun Donovan",
+          "Obama's new budget director",
+          "argues that ignoring climate change is the height of fiscal irresponsibility"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": true,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man standing at a podium with a nameplate reading 'HON. DONOVAN', but the caption's specific claims about his role as 'budget director' and his argument regarding 'climate change' are not visible in the image.",
+        "unsupported_information": [
+          "Shaun Donovan",
+          "Obama's new budget director",
+          "argues that ignoring climate change is the height of fiscal irresponsibility"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows a man standing at a podium with a nameplate reading 'HON. DONOVAN', but the caption identifies him as 'Shaun Donovan' and attributes specific arguments and a role ('Obama's new budget director') that are not visible.",
+        "unsupported_information": [
+          "Shaun Donovan",
+          "Obama's new budget director",
+          "argues that ignoring climate change is the height of fiscal irresponsibility"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": true,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The nameplate 'HON. DONOVAN' is visible, and the man is standing in a formal hearing room, but the specific role and argument are not visible.",
+        "unsupported_information": [
+          "Shaun Donovan",
+          "Obama's new budget director",
+          "argues that ignoring climate change is the height of fiscal irresponsibility"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man standing at a podium with a nameplate reading 'HON. DONOVAN', but the caption's claims about his role as 'Obama's new budget director' and his argument regarding 'climate change' are not visible in the image.",
+        "unsupported_information": [
+          "Shaun Donovan is Obama's new budget director",
+          "He argues that ignoring climate change is the height of fiscal irresponsibility"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man standing at a desk with a nameplate reading 'HON. DONOVAN' in a hearing room, which supports the identity but not the specific role or argument.",
+        "unsupported_information": [
+          "Obama's new budget director",
+          "argues that ignoring climate change is the height of fiscal irresponsibility"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man standing at a podium with a nameplate reading 'HON. DONOVAN', but the caption's claims about his identity as 'Shaun Donovan', his role as 'Obama's new budget director', and his specific argument regarding climate change are not visible in the pixels.",
+        "unsupported_information": [
+          "Shaun Donovan",
+          "Obama's new budget director",
+          "argues that ignoring climate change is the height of fiscal irresponsibility"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:927",
+    "caption": "Michael Keaton and Edward Norton are both up for Oscars for roles in Birdman.",
+    "source_query": "Retrieve an image of this news caption. Michael Keaton and Edward Norton are both up for Oscars for roles in Birdman.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0074_393.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_927.jpg",
+    "image_sha256": "28acb8eb29e1ab3a4fc609d10a2990741cb7c7026acfa49c983307787dcb4b72",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two men in a tense confrontation, but the caption's claims about their identities, the movie 'Birdman', and Oscar nominations are not visible in the pixels.",
+        "unsupported_information": [
+          "Michael Keaton",
+          "Edward Norton",
+          "Oscars",
+          "Birdman"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows two men in a confrontation, but the caption's claims about their identities, the movie 'Birdman', and their Oscar nominations are not visible in the pixels.",
+        "unsupported_information": [
+          "Michael Keaton",
+          "Edward Norton",
+          "up for Oscars",
+          "roles in Birdman"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two men in a confrontation, but the caption's claims about their identities (Keaton/Norton), the movie (Birdman), and the event (Oscar nominations) are not visible in the pixels.",
+        "unsupported_information": [
+          "Michael Keaton",
+          "Edward Norton",
+          "Oscars",
+          "Birdman"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows two men in a confrontation, but the caption's claims about their specific identities (Michael Keaton, Edward Norton), the movie title (Birdman), and the context (Oscar nominations) are not visible in the pixels.",
+        "unsupported_information": [
+          "Michael Keaton",
+          "Edward Norton",
+          "Oscars",
+          "roles in Birdman"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two men in a tense interaction, but the caption's claims about their identities, the movie 'Birdman', and their Oscar nominations are not visible in the pixels.",
+        "unsupported_information": [
+          "The actors are Michael Keaton and Edward Norton",
+          "They are in the movie Birdman",
+          "They are up for Oscars"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows two men in a tense confrontation, but the caption's claims about their identities, the film 'Birdman', and Oscar nominations are not verifiable from the pixels alone.",
+        "unsupported_information": [
+          "The actors are Michael Keaton and Edward Norton",
+          "The roles are from the film 'Birdman'",
+          "They are up for Oscars"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two men in a confrontation, but the specific identities (Keaton/Norton), the movie title (Birdman), and the Oscar nominations are not visible in the pixels.",
+        "unsupported_information": [
+          "Michael Keaton",
+          "Edward Norton",
+          "Oscars",
+          "Birdman"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:191",
+    "caption": "Kerry condemns Jakarta attacks.",
+    "source_query": "Retrieve an image of this news caption. Kerry condemns Jakarta attacks.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0011_651.jpg",
+    "tags": [
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      455,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_191.jpg",
+    "image_sha256": "4c45c5be2f8578cc056897570655aa3084912ae868cf27a4ff811d9c9847de55",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man in a suit and a man in traditional Arab dress standing in front of flags, but there is no visual evidence of Jakarta or any attacks.",
+        "unsupported_information": [
+          "Kerry condemns Jakarta attacks"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows two men standing in front of flags, but there is no visual evidence of the Jakarta attacks or the act of condemning them.",
+        "unsupported_information": [
+          "Kerry condemns Jakarta attacks"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two men standing in front of flags (US and Saudi), but the caption describes a specific political statement regarding an event in Jakarta which is not visible in the frame.",
+        "unsupported_information": [
+          "Kerry condemns Jakarta attacks",
+          "The specific event of the Jakarta attacks",
+          "The act of condemning"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a diplomatic meeting between John Kerry and a man in traditional Arab dress, but the visual content does not depict the Jakarta attacks or the act of condemnation.",
+        "unsupported_information": [
+          "Kerry condemns Jakarta attacks"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two men standing in front of flags, but there is no visual evidence of the specific event (Jakarta attacks) or the action (condemning) described in the caption.",
+        "unsupported_information": [
+          "Kerry condemns Jakarta attacks"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two men standing in front of flags, but there is no visual evidence of Jakarta, attacks, or the act of condemnation.",
+        "unsupported_information": [
+          "Kerry condemns Jakarta attacks"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two men standing in front of flags, but there is no visual evidence of Jakarta, attacks, or the act of condemnation.",
+        "unsupported_information": [
+          "Kerry",
+          "condemns",
+          "Jakarta attacks"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:314",
+    "caption": "First lady Michelle Obama chats with host Seth Meyers of Saturday Night Live at the start of the 2011 White House Correspondents Association Dinner.",
+    "source_query": "Retrieve an image of this news caption. First lady Michelle Obama chats with host Seth Meyers of Saturday Night Live at the start of the 2011 White House Correspondents Association Dinner.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0504_212.jpg",
+    "tags": [
+      "date",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      256,
+      364
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_314.jpg",
+    "image_sha256": "45754a09d812b463c1faea8c0d6d6c654cfec272e11abd0e308fddd050580fc2",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a man and a woman in formal attire at a seated event, but their specific identities and the event details are not visually verifiable.",
+        "unsupported_information": [
+          "Michelle Obama",
+          "Seth Meyers",
+          "Saturday Night Live",
+          "2011 White House Correspondents Association Dinner"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man and a woman in formal attire at a table with flowers, but their specific identities and the event details are not visually verifiable.",
+        "unsupported_information": [
+          "Michelle Obama",
+          "Seth Meyers",
+          "Saturday Night Live",
+          "2011 White House Correspondents Association Dinner"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man and a woman in formal attire standing together and interacting, which supports the 'chats' description, but the specific identities and event details are not visually verifiable.",
+        "unsupported_information": [
+          "Michelle Obama",
+          "Seth Meyers",
+          "Saturday Night Live",
+          "2011 White House Correspondents Association Dinner"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "A man in a black suit and a woman in a mauve dress are standing and talking at a table with flowers, but their identities and the specific event are not visible.",
+        "unsupported_information": [
+          "Michelle Obama",
+          "Seth Meyers",
+          "Saturday Night Live",
+          "2011 White House Correspondents Association Dinner"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a man and a woman in formal wear at a table with flowers, but their identities, the specific event, and the year are not visible.",
+        "unsupported_information": [
+          "Michelle Obama",
+          "Seth Meyers",
+          "Saturday Night Live",
+          "2011 White House Correspondents Association Dinner"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man and a woman in formal wear at a table with flowers, but the specific identities, event, and year are not visible in the pixels.",
+        "unsupported_information": [
+          "Michelle Obama",
+          "Seth Meyers",
+          "Saturday Night Live",
+          "2011",
+          "White House Correspondents Association Dinner"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man and a woman in formal attire at a table with flowers, but their identities and the specific event are not visible.",
+        "unsupported_information": [
+          "Michelle Obama",
+          "Seth Meyers",
+          "Saturday Night Live",
+          "2011 White House Correspondents Association Dinner"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:283",
+    "caption": "Afghan election workers unload ballot boxes from a truck at a counting center in Kabul.",
+    "source_query": "Retrieve an image of this news caption. Afghan election workers unload ballot boxes from a truck at a counting center in Kabul.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0490_252.jpg",
+    "tags": [
+      "event",
+      "location",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:event",
+    "original_size": [
+      366,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_283.jpg",
+    "image_sha256": "9c1673abf885700733ad85e73b9a731c419b0e43aedf2fed63b23993857a40f7",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows people unloading boxes from a truck in a large tent, but the specific context of 'Afghan election workers' and 'Kabul' is not visually verifiable.",
+        "unsupported_information": [
+          "Afghan election workers",
+          "Kabul",
+          "counting center"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows people unloading boxes from a truck, but the specific context of an election in Kabul is not visually verifiable.",
+        "unsupported_information": [
+          "Afghan election workers",
+          "ballot boxes",
+          "counting center",
+          "Kabul"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 3,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows men unloading boxes from a truck into a large tent, which aligns with the visual description of unloading ballot boxes at a counting center.",
+        "unsupported_information": [
+          "Afghan election workers",
+          "Kabul",
+          "ballot boxes"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows people inside a large tent-like structure handling boxes, consistent with unloading ballot boxes at a counting center, but the specific location (Kabul) and nationality (Afghan) are not visually verifiable.",
+        "unsupported_information": [
+          "Afghan",
+          "Kabul",
+          "election workers"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows people moving boxes inside a large tent structure, consistent with a counting center, but the specific location (Kabul) and the nature of the boxes (ballots) are not visually verifiable.",
+        "unsupported_information": [
+          "Afghan election workers",
+          "ballot boxes",
+          "Kabal",
+          "counting center"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows men unloading large boxes from a truck, but the specific location (Kabul), the identity of the workers (Afghan election workers), and the nature of the event (counting center) are not visually verifiable.",
+        "unsupported_information": [
+          "Afghan election workers",
+          "Kabul",
+          "counting center"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows people unloading boxes from a truck, but the specific context of 'Afghan election workers' and 'Kabul' is not visually verifiable.",
+        "unsupported_information": [
+          "Afghan election workers",
+          "ballot boxes",
+          "counting center",
+          "Kabul"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:921",
+    "caption": "Children look at the fin of a mortar projectile that was found at the AlAbassi camp for internally displaced persons after an attack by rebels in Mellit town North Darfur in this March 25 2014 photo REUTERSMohamed Nureldin Abdallah.",
+    "source_query": "Retrieve an image of this news caption. Children look at the fin of a mortar projectile that was found at the AlAbassi camp for internally displaced persons after an attack by rebels in Mellit town North Darfur in this March 25 2014 photo REUTERSMohamed Nureldin Abdallah.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0494_180.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "location",
+      "entity",
+      "ambiguous_candidate"
+    ],
+    "selection": "targeted:ambiguous_candidate",
+    "original_size": [
+      393,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_921.jpg",
+    "image_sha256": "0c2b36ddb725143e8179d8b80bb0559fc94aba380a5aef565db0000c92d94c4a",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows children observing a metallic object in a desert, but the specific location, date, and cause (attack) are not visible.",
+        "unsupported_information": [
+          "AlAbassi camp for internally displaced persons",
+          "attack by rebels in Mellit town North Darfur",
+          "March 25 2014",
+          "mortar projectile"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows children looking at a metal object in a desert, but the specific location, date, and cause (attack by rebels) are not visible.",
+        "unsupported_information": [
+          "AlAbassi camp for internally displaced persons",
+          "attack by rebels in Mellit town North Darfur",
+          "March 25 2014",
+          "mortar projectile"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows three children in a desert environment looking at a metal object with fins on the ground, which matches the visual description of children looking at a projectile fin.",
+        "unsupported_information": [
+          "AlAbassi camp for internally displaced persons",
+          "attack by rebels in Mellit town North Darfur",
+          "March 25 2014",
+          "REUTERS Mohamed Nureldin Abdallah"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows three children in a desert environment looking at a metal object with fins on the ground, which matches the visual description of children looking at a mortar projectile fin.",
+        "unsupported_information": [
+          "AlAbassi camp for internally displaced persons",
+          "attack by rebels in Mellit town North Darfur",
+          "March 25 2014",
+          "REUTERS Mohamed Nureldin Abdallah"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows three children in a desert landscape looking at a metal object on the ground, but the specific location, date, and cause of the object's presence are not visible.",
+        "unsupported_information": [
+          "AlAbassi camp for internally displaced persons",
+          "found after an attack by rebels",
+          "Mellit town North Darfur",
+          "March 25 2014",
+          "mortar projectile"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows three children in a desert environment looking at a metal object on the ground that resembles a projectile fin, but the specific location, date, and cause are not visible.",
+        "unsupported_information": [
+          "AlAbassi camp for internally displaced persons",
+          "attack by rebels in Mellit town North Darfur",
+          "March 25 2014",
+          "REUTERS Mohamed Nureldin Abdallah"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows three children in a desert environment looking at a metal object with fins on the ground, which matches the visual description of children looking at a projectile fin.",
+        "unsupported_information": [
+          "AlAbassi camp for internally displaced persons",
+          "attack by rebels",
+          "Mellit town North Darfur",
+          "March 25 2014",
+          "REUTERS Mohamed Nureldin Abdallah"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:544",
+    "caption": "An Indian boatman feeds birds on the Yamuna River in New Delhi.",
+    "source_query": "Retrieve an image of this news caption. An Indian boatman feeds birds on the Yamuna River in New Delhi.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0570_903.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:short_visual_candidate",
+    "original_size": [
+      380,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_544.jpg",
+    "image_sha256": "c0b458b019c709c9c970ccc3ec2872d1bd2ee25eda71c2a024d431aa530d2649",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a flock of birds and a boat on a river, but the specific location (Yamuna River, New Delhi) and the specific action (feeding) are not visually verifiable.",
+        "unsupported_information": [
+          "Indian boatman",
+          "Yamuna River",
+          "New Delhi",
+          "feeds birds"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a flock of birds and a boat on a river, but the specific location (Yamuna River, New Delhi) and the identity of the boatman (Indian) are not visually verifiable.",
+        "unsupported_information": [
+          "Indian boatman",
+          "Yamuna River",
+          "New Delhi",
+          "feeds birds"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows a boat and a large flock of birds over a body of water, but the specific location (Yamuna River, New Delhi) and the action of feeding are not visually verifiable.",
+        "unsupported_information": [
+          "Indian boatman",
+          "Yamuna River",
+          "New Delhi",
+          "feeds birds"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a boat on a river with a large flock of birds, but the specific location (Yamuna River, New Delhi) and the identity of the boatman (Indian) are not visually verifiable.",
+        "unsupported_information": [
+          "Indian boatman",
+          "Yamuna River",
+          "New Delhi",
+          "feeds birds"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a flock of birds and a boat on a river, but the specific location (Yamuna River, New Delhi) and the action (feeding) are not visually verifiable.",
+        "unsupported_information": [
+          "Indian boatman",
+          "Yamuna River",
+          "New Delhi",
+          "feeds birds"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows a boat and a large flock of birds over a body of water, but the specific location (Yamuna River, New Delhi) and the action of feeding are not visible.",
+        "unsupported_information": [
+          "Indian boatman",
+          "feeds birds",
+          "Yamuna River",
+          "New Delhi"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a flock of birds and a boat on a river, but the specific location (Yamuna River, New Delhi) and the identity of the boatman (Indian) are not visually verifiable.",
+        "unsupported_information": [
+          "Indian boatman",
+          "Yamuna River",
+          "New Delhi",
+          "feeds birds"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:453",
+    "caption": "Hispanic business group commends Macy s for ending ties with Trump.",
+    "source_query": "Retrieve an image of this news caption. Hispanic business group commends Macy s for ending ties with Trump.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0477_943.jpg",
+    "tags": [
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:short_visual_candidate",
+    "original_size": [
+      458,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_453.jpg",
+    "image_sha256": "9293e1b5b9a5df192a94f050997a1434f1f544dd32b67ce0c3ca31d2c65994f2",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a press conference at the National Press Club with a backdrop for the Hispanic Association on Corporate Responsibility (HACR), but the specific news event regarding Macy's and Trump is not visible.",
+        "unsupported_information": [
+          "Hispanic business group commends Macy's",
+          "Macy's ending ties with Trump"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a press conference at the National Press Club, but the specific action of 'commending Macy's' and the reason 'for ending ties with Trump' are not visible in the pixels.",
+        "unsupported_information": [
+          "Hispanic business group commends Macy's",
+          "Macy's ending ties with Trump"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": true,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a press conference with a podium labeled 'THE NATIONAL PRESS CLUB' and a backdrop for the 'HISPANIC ASSOCIATION ON CORPORATE RESPONSIBILITY' (HACR), but the specific action of commending Macy's is not visible.",
+        "unsupported_information": [
+          "commends Macy's",
+          "ending ties with Trump"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": true,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a press conference with a podium labeled 'THE NATIONAL PRESS CLUB' and a backdrop for the 'Hispanic Association on Corporate Responsibility' (HACR), but no visual evidence of Macy's or Trump.",
+        "unsupported_information": [
+          "Macy's is being commended",
+          "Macy's is ending ties with Trump",
+          "The specific reason for the press conference is related to Trump"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a press conference at the National Press Club with a backdrop for the Hispanic Association on Corporate Responsibility (HACR), but the specific action of 'commending Macy's' and the involvement of 'Trump' are not visible.",
+        "unsupported_information": [
+          "Hispanic business group commends Macy's",
+          "Macy's ending ties with Trump"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a press conference with a podium labeled 'THE NATIONAL PRESS CLUB' and a backdrop for the 'HISPANIC ASSOCIATION ON CORPORATE RESPONSIBILITY', but the visual content does not support the specific claim about Macy's or Trump.",
+        "unsupported_information": [
+          "Macy's is the subject of the commendation",
+          "Macy's ended ties with Trump",
+          "The group is specifically a 'business group' (though HACR is visible)"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a press conference at the National Press Club with a backdrop for the Hispanic Association on Corporate Responsibility (HACR), but the specific claim about 'Macy's' and 'Trump' is not visible in the image.",
+        "unsupported_information": [
+          "Macy's",
+          "ending ties with Trump",
+          "commendation"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:423",
+    "caption": "Jeb Bush speaks to the media at the Iowa State Fair.",
+    "source_query": "Retrieve an image of this news caption. Jeb Bush speaks to the media at the Iowa State Fair.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0273_220.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_423.jpg",
+    "image_sha256": "304ae9d122151515c0baf7b61d6981228a8f4cd04e0276c3ccf5bce0121595c6",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a man speaking into a microphone surrounded by cameras and a crowd, but the specific identity of the man and the location are not visually verifiable.",
+        "unsupported_information": [
+          "Jeb Bush",
+          "Iowa State Fair"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man speaking into a microphone through a camera viewfinder, but his identity and the specific location are not visually verifiable.",
+        "unsupported_information": [
+          "Jeb Bush",
+          "Iowa State Fair"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows a man speaking into a microphone while being filmed by a camera, which supports the 'speaks to the media' portion, but the specific identity of Jeb Bush and the location of the Iowa State Fair are not visually verifiable.",
+        "unsupported_information": [
+          "Jeb Bush",
+          "Iowa State Fair"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows a man speaking into a microphone while being filmed by a camera, with a crowd of people and media personnel in the background, which supports the action of speaking to the media.",
+        "unsupported_information": [
+          "Jeb Bush",
+          "Iowa State Fair"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man speaking into a microphone through a camera viewfinder, but his identity and the specific location are not visually verifiable.",
+        "unsupported_information": [
+          "Jeb Bush",
+          "Iowa State Fair"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows a man speaking into a microphone while being filmed by a camera and observed by a crowd, which supports the action of speaking to the media, but the specific identity of Jeb Bush and the location of the Iowa State Fair are not visually verifiable.",
+        "unsupported_information": [
+          "Jeb Bush",
+          "Iowa State Fair"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man speaking into a microphone through a camera viewfinder, but his identity and the specific location are not visually verifiable.",
+        "unsupported_information": [
+          "Jeb Bush",
+          "Iowa State Fair"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:830",
+    "caption": "Peyton Manning and the Broncos will host the defending champion Ravens on the field where Baltimore knocked Denver out of the playoffs last season.",
+    "source_query": "Retrieve an image of this news caption. Peyton Manning and the Broncos will host the defending champion Ravens on the field where Baltimore knocked Denver out of the playoffs last season.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0246_387.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_830.jpg",
+    "image_sha256": "cff396cb1ba53162808f79e78a4c6945dd1bed5afe4d597c37d957528ea13ed8",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a football player in a Denver Broncos uniform, but the caption's claims about Peyton Manning, the Ravens, and a specific playoff game are not visible.",
+        "unsupported_information": [
+          "Peyton Manning",
+          "host the defending champion Ravens",
+          "Baltimore knocked Denver out of the playoffs last season"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows a quarterback in a Denver Broncos uniform (orange jersey, number 18) signaling, but the specific identity of Peyton Manning and the upcoming game against the Ravens are not visible.",
+        "unsupported_information": [
+          "Peyton Manning",
+          "host the defending champion Ravens",
+          "on the field where Baltimore knocked Denver out of the playoffs last season"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a football player in a Denver Broncos uniform (orange jersey, number 18) making a signal, which supports the team and general role but not the specific identity or the upcoming game against the Ravens.",
+        "unsupported_information": [
+          "Peyton Manning",
+          "host the defending champion Ravens",
+          "Baltimore knocked Denver out of the playoffs last season"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a football player in a Denver Broncos uniform (orange jersey, number 18) on a field, which supports the team identity but not the specific event or location.",
+        "unsupported_information": [
+          "Peyton Manning",
+          "host the defending champion Ravens",
+          "on the field where Baltimore knocked Denver out of the playoffs last season"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a football player in an orange jersey with number 18, but the caption describes a specific future game, past playoff history, and location that are not visible.",
+        "unsupported_information": [
+          "Peyton Manning",
+          "Broncos will host the defending champion Ravens",
+          "on the field where Baltimore knocked Denver out of the playoffs last season"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a football player in a Denver Broncos uniform (orange jersey, number 18) making a throwing motion, which supports the team and action context, but the specific identity and future event are not visible.",
+        "unsupported_information": [
+          "Peyton Manning",
+          "host the defending champion Ravens",
+          "Baltimore knocked Denver out of the playoffs last season"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a quarterback in a Denver Broncos uniform (number 18) making a signal, but the specific identity, the opposing team, and the historical playoff context are not visible.",
+        "unsupported_information": [
+          "Peyton Manning",
+          "host the defending champion Ravens",
+          "where Baltimore knocked Denver out of the playoffs last season"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:199",
+    "caption": "Democratic presidential candidate Hillary Rodham Clinton speaks at an event at the the Iowa State University Alumni Center in Ames on July 26 2015.",
+    "source_query": "Retrieve an image of this news caption. Democratic presidential candidate Hillary Rodham Clinton speaks at an event at the the Iowa State University Alumni Center in Ames on July 26 2015.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0588_098.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_199.jpg",
+    "image_sha256": "43fc694e520363ee776fbcfa3f9292aeee6f27f481e8218d302a78f227c0a3dd",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman speaking into a microphone, but the specific identity, location, and date are not visible.",
+        "unsupported_information": [
+          "Democratic presidential candidate",
+          "Hillary Rodham Clinton",
+          "Iowa State University Alumni Center",
+          "Ames",
+          "July 26 2015"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman speaking into a microphone, but the specific identity, location, and date are not visible in the pixels.",
+        "unsupported_information": [
+          "Democratic presidential candidate",
+          "Hillary Rodham Clinton",
+          "Iowa State University Alumni Center",
+          "Ames",
+          "July 26 2015"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows a woman speaking into a microphone, but the specific identity (Hillary Clinton), location (Iowa State University), and date (July 26, 2015) are not visually verifiable from the pixels alone.",
+        "unsupported_information": [
+          "Hillary Rodham Clinton",
+          "Democratic presidential candidate",
+          "Iowa State University Alumni Center",
+          "Ames",
+          "July 26 2015"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman speaking into a microphone and gesturing, which supports the action of 'speaks at an event,' but the specific identity, location, and date are not visually verifiable.",
+        "unsupported_information": [
+          "Democratic presidential candidate",
+          "Hillary Rodham Clinton",
+          "Iowa State University Alumni Center",
+          "Ames",
+          "July 26 2015"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman speaking into a microphone, but the specific identity, location, and date are not visible in the pixels.",
+        "unsupported_information": [
+          "Democratic presidential candidate",
+          "Hillary Rodham Clinton",
+          "Iowa State University Alumni Center",
+          "Ames",
+          "July 26 2015"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a woman speaking into a microphone and gesturing, but the specific identity, location, and date are not visually verifiable.",
+        "unsupported_information": [
+          "Democratic presidential candidate Hillary Rodham Clinton",
+          "Iowa State University Alumni Center in Ames",
+          "July 26 2015"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman speaking into a microphone, but the specific identity, location, and date are not visible in the pixels.",
+        "unsupported_information": [
+          "Democratic presidential candidate",
+          "Hillary Rodham Clinton",
+          "Iowa State University Alumni Center",
+          "Ames",
+          "July 26 2015"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:325",
+    "caption": "Paul Norden wipes his brow during a break from physical therapy exercises I just want to be prepared and they re going to get me prepared he says about leaving Spaulding sometime soon So I think I ll be confident.",
+    "source_query": "Retrieve an image of this news caption. Paul Norden wipes his brow during a break from physical therapy exercises I just want to be prepared and they re going to get me prepared he says about leaving Spaulding sometime soon So I think I ll be confident.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0375_381.jpg",
+    "tags": [
+      "temporal",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_325.jpg",
+    "image_sha256": "06281c80048d19dd1a0d460de25f890d683d03ba670541fe55a1f0b85fb64334",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a man with tattoos wiping his face, but the specific identity (Paul Norden), location (Spaulding), and context (physical therapy) are not visually verifiable.",
+        "unsupported_information": [
+          "Paul Norden",
+          "physical therapy exercises",
+          "Spaulding",
+          "leaving Spaulding sometime soon",
+          "quote"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man wiping his face in a clinical setting, but the specific identity, location, and quoted speech are not visible.",
+        "unsupported_information": [
+          "Paul Norden",
+          "physical therapy exercises",
+          "Spaulding",
+          "leaving soon",
+          "quoted speech"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man with tattoos wiping his face, but the specific identity (Paul Norden), the location (Spaulding), and the context of physical therapy are not visually verifiable.",
+        "unsupported_information": [
+          "Paul Norden",
+          "physical therapy exercises",
+          "Spaulding",
+          "leaving Spaulding sometime soon",
+          "quote"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man with tattoos wiping his face in a clinical setting, which supports the physical description but not the specific identity, location, or the quoted dialogue.",
+        "unsupported_information": [
+          "Paul Norden",
+          "Spaulding",
+          "physical therapy exercises",
+          "leaving Spaulding sometime soon",
+          "I just want to be prepared and they re going to get me prepared he says about leaving Spaulding sometime soon So I think I ll be confident"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man wiping his face, but his identity, the specific location (Spaulding), and the context of physical therapy are not visually verifiable.",
+        "unsupported_information": [
+          "The man is Paul Norden",
+          "He is on a break from physical therapy",
+          "He is at Spaulding",
+          "He is preparing to leave soon"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man with tattoos wiping his face, but the specific identity (Paul Norden), location (Spaulding), and the context of 'physical therapy' are not visually verifiable.",
+        "unsupported_information": [
+          "Paul Norden",
+          "during a break from physical therapy exercises",
+          "leaving Spaulding",
+          "I just want to be prepared and they re going to get me prepared he says",
+          "So I think I ll be confident"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a bald man with tattoos wiping his face in a clinical setting, but the specific identity (Paul Norden), location (Spaulding), and the extensive quoted dialogue are not visible in the pixels.",
+        "unsupported_information": [
+          "Paul Norden",
+          "physical therapy exercises",
+          "leaving Spaulding",
+          "quoted speech about being prepared and confident"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:765",
+    "caption": "Plumes of smoke rise above buildings during airstrikes allegedly carried out by the Saudiled alliance on a weapons storage depot in Sanaa.",
+    "source_query": "Retrieve an image of this news caption. Plumes of smoke rise above buildings during airstrikes allegedly carried out by the Saudiled alliance on a weapons storage depot in Sanaa.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0472_532.jpg",
+    "tags": [
+      "temporal",
+      "location"
+    ],
+    "selection": "random",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_765.jpg",
+    "image_sha256": "409651077509c64cabc0690b6802e5eb50c324375371573f63dc7ed33de37fd7",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a textured foreground and a distant glow on the horizon, but no buildings, smoke plumes, or specific event details are visible.",
+        "unsupported_information": [
+          "Plumes of smoke",
+          "buildings",
+          "airstrikes",
+          "Saudiled alliance",
+          "weapons storage depot",
+          "Sanaa"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a dark sky with orange fire and smoke rising from behind a textured foreground, but the specific buildings, weapons depot, and location are not visible.",
+        "unsupported_information": [
+          "buildings",
+          "airstrikes",
+          "Saudiled alliance",
+          "weapons storage depot",
+          "Sanaa"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a dark scene with a fire or explosion on the horizon behind a textured foreground, but no buildings, smoke plumes, or specific location details are visible.",
+        "unsupported_information": [
+          "buildings",
+          "airstrikes",
+          "Saudiled alliance",
+          "weapons storage depot",
+          "Sanaa"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a dark scene with a textured foreground and a distant fire or explosion, but no buildings, smoke plumes, or specific location markers are visible.",
+        "unsupported_information": [
+          "Plumes of smoke",
+          "buildings",
+          "airstrikes",
+          "Saudiled alliance",
+          "weapons storage depot",
+          "Sanaa"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a textured foreground (resembling a roof or wall) and a distant fire or explosion on the horizon, but no buildings, smoke plumes, or specific location are visible.",
+        "unsupported_information": [
+          "Plumes of smoke",
+          "Buildings",
+          "Airstrikes",
+          "Saudiled alliance",
+          "Weapons storage depot",
+          "Sanaa"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a dark sky with orange light and smoke rising from behind a textured foreground, but the specific buildings, weapons depot, and location are not visible.",
+        "unsupported_information": [
+          "airstrikes",
+          "Saudiled alliance",
+          "weapons storage depot",
+          "Sanaa"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a close-up of a textured surface (likely a tire or mat) with a dark background and orange glow, but contains no buildings, smoke, or visual evidence of an airstrike.",
+        "unsupported_information": [
+          "Plumes of smoke",
+          "buildings",
+          "airstrikes",
+          "Saudi-led alliance",
+          "weapons storage depot",
+          "Sanaa"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:777",
+    "caption": "Votes are counted in Witney England.",
+    "source_query": "Retrieve an image of this news caption. Votes are counted in Witney England.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0516_186.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:short_visual_candidate",
+    "original_size": [
+      446,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_777.jpg",
+    "image_sha256": "ee589b081d6fe3d17e4b9d4892122bba05b71cd3e8792f8cf782ba018bc4a484",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows hands sorting papers, but the specific action of counting votes and the location of Witney, England are not visually verifiable.",
+        "unsupported_information": [
+          "Votes are counted",
+          "Witney England"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows hands sorting papers, but the specific action of counting votes and the location of Witney, England, are not visible.",
+        "unsupported_information": [
+          "Votes are counted",
+          "Witney England"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows people handling stacks of paper, which is consistent with counting, but the specific location 'Witney England' and the specific act of 'voting' are not visible.",
+        "unsupported_information": [
+          "Votes",
+          "Witney England"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows hands sorting through stacks of paper ballots, which supports the action of counting votes, but the location 'Witney England' is not visible.",
+        "unsupported_information": [
+          "Witney England"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows people handling papers and using a red stamp, which is consistent with counting or processing votes, but the specific location of Witney, England is not visible.",
+        "unsupported_information": [
+          "Votes are counted",
+          "in Witney England"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows a person's hands sorting through a stack of papers, which is consistent with the action of counting votes, but the location 'Witney England' is not visually verifiable.",
+        "unsupported_information": [
+          "Witney England"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows people handling stacks of paper, which is consistent with counting, but the specific location of Witney, England, and the nature of the papers as votes are not visible.",
+        "unsupported_information": [
+          "Votes",
+          "Witney",
+          "England"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:854",
+    "caption": "Kesha drops Calif sex abuse lawsuit against Dr Luke.",
+    "source_query": "Retrieve an image of this news caption. Kesha drops Calif sex abuse lawsuit against Dr Luke.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0553_011.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:short_visual_candidate",
+    "original_size": [
+      386,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_854.jpg",
+    "image_sha256": "5e5f338466aa40f5923eb740e20685dea8ddd214bfcabd6f6d1548a98a686325",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a blonde woman in sunglasses and a tan coat walking through a crowd, but the caption describes a specific legal action (dropping a lawsuit) and names individuals (Kesha, Dr. Luke) that are not visually verifiable.",
+        "unsupported_information": [
+          "Kesha",
+          "drops Calif sex abuse lawsuit",
+          "against Dr Luke"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows a blonde woman in sunglasses and a tan coat, but the caption describes a specific legal action (dropping a lawsuit) that is not visible in the pixels.",
+        "unsupported_information": [
+          "Kesha",
+          "Calif sex abuse lawsuit",
+          "Dr Luke",
+          "dropping the lawsuit"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows a blonde woman in sunglasses and a tan coat surrounded by people holding cameras, but the specific legal action of dropping a lawsuit is not visible.",
+        "unsupported_information": [
+          "Kesha drops Calif sex abuse lawsuit against Dr Luke"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a blonde woman in sunglasses and a tan coat walking through a crowd of photographers, but the visual content does not support the specific legal claim of dropping a lawsuit.",
+        "unsupported_information": [
+          "Kesha",
+          "Calif sex abuse lawsuit",
+          "Dr Luke",
+          "dropping the lawsuit"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows a blonde woman in sunglasses and a tan coat, but the caption's specific legal claim about dropping a lawsuit is not visible in the pixels.",
+        "unsupported_information": [
+          "Kesha drops Calif sex abuse lawsuit against Dr Luke"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a blonde woman in sunglasses being escorted by a person in handcuffs, but the specific legal action of dropping a lawsuit is not visible.",
+        "unsupported_information": [
+          "Kesha drops Calif sex abuse lawsuit against Dr Luke"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a blonde woman in sunglasses and a tan coat walking through a crowd, but the specific legal action and identities mentioned in the caption are not visible.",
+        "unsupported_information": [
+          "Kesha",
+          "Calif sex abuse lawsuit",
+          "Dr Luke",
+          "drops lawsuit"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:982",
+    "caption": "Mark Peterson attends his family reunion at the Kerr Community Center in Bastrop Texas The term I hate to hear is we want our country back Mr Peterson said Where did it go I did nt know we d lost it.",
+    "source_query": "Retrieve an image of this news caption. Mark Peterson attends his family reunion at the Kerr Community Center in Bastrop Texas The term I hate to hear is we want our country back Mr Peterson said Where did it go I did nt know we d lost it.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0576_221.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_982.jpg",
+    "image_sha256": "f6bba181814c77979d134d24b7544742cfada4168b5ec65c5f3baaeea9b4ec0d",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a person in a blue shirt standing near a white truck, but the caption provides specific names, locations, and quotes that are not visible in the pixels.",
+        "unsupported_information": [
+          "Mark Peterson",
+          "family reunion",
+          "Kerr Community Center",
+          "Bastrop Texas",
+          "Quote: 'The term I hate to hear is we want our country back...'"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a person in a blue shirt standing by a white truck, but the caption provides a specific name, event, location, and quote that are not visible in the pixels.",
+        "unsupported_information": [
+          "Identity as Mark Peterson",
+          "Event is a family reunion",
+          "Location is Kerr Community Center in Bastrop Texas",
+          "The specific quote regarding 'our country back'"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a person in a blue shirt standing by a white truck, but the caption describes a specific named individual, a specific event (family reunion), a specific location (Kerr Community Center in Bastrop), and a specific quote, none of which are visible in the pixels.",
+        "unsupported_information": [
+          "Identity of Mark Peterson",
+          "Family reunion event",
+          "Location at Kerr Community Center in Bastrop Texas",
+          "Quote regarding 'we want our country back'"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a person in a blue shirt standing near a white truck, but the caption provides specific names, locations, and quotes that are not visible in the image.",
+        "unsupported_information": [
+          "Mark Peterson",
+          "family reunion",
+          "Kerr Community Center",
+          "Bastrop Texas",
+          "quote about the country"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a person in a blue shirt standing next to a white vehicle, but the caption provides specific names, locations, and quotes that are not visible in the pixels.",
+        "unsupported_information": [
+          "Mark Peterson",
+          "family reunion",
+          "Kerr Community Center",
+          "Bastrop Texas",
+          "quote about the country"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a person in a blue shirt standing by a white vehicle, but the caption describes a specific named individual (Mark Peterson), a specific event (family reunion), a specific location (Kerr Community Center in Bastrop), and a specific quote, none of which are visible in the pixels.",
+        "unsupported_information": [
+          "Mark Peterson attends his family reunion",
+          "at the Kerr Community Center in Bastrop Texas",
+          "The term I hate to hear is we want our country back Mr Peterson said",
+          "Where did it go I did nt know we d lost it"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a person in a blue shirt standing next to a white truck, but provides no visual evidence for the name Mark Peterson, the location Bastrop Texas, or the specific event of a family reunion.",
+        "unsupported_information": [
+          "Mark Peterson",
+          "family reunion",
+          "Kerr Community Center",
+          "Bastrop Texas",
+          "quote about the country"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:675",
+    "caption": "The Saylor family from left Patti Ron Emma and Adam pose for a portrait this past summer in Mount Airy Md.",
+    "source_query": "Retrieve an image of this news caption. The Saylor family from left Patti Ron Emma and Adam pose for a portrait this past summer in Mount Airy Md.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0073_060.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:location",
+    "original_size": [
+      386,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_675.jpg",
+    "image_sha256": "2c532346ae3712a12f6ce09d583079adda67abc3fbccd5ae1214b3015b343c6b",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows four people posing in a living room, but the specific names, family relation, location, and time are not visible in the pixels.",
+        "unsupported_information": [
+          "Saylor family",
+          "Patti",
+          "Ron",
+          "Emma",
+          "Adam",
+          "Mount Airy Md",
+          "this past summer"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows four people sitting in a living room, but their specific identities, family name, location, and the time of year are not visible.",
+        "unsupported_information": [
+          "Saylor family",
+          "Patti",
+          "Ron",
+          "Emma",
+          "Adam",
+          "Mount Airy Md",
+          "this past summer"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows four people sitting in a living room, but their identities, the specific family name, the location in Maryland, and the time of year are not visible in the pixels.",
+        "unsupported_information": [
+          "Saylor family",
+          "Patti",
+          "Ron",
+          "Emma",
+          "Adam",
+          "Mount Airy Md",
+          "this past summer"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows four people (three women, one man) posing in a living room, which supports the visual description of a family portrait, but the specific names, location (Mount Airy, Md.), and time (summer) are not visible.",
+        "unsupported_information": [
+          "Saylor family",
+          "Patti Ron Emma and Adam",
+          "Mount Airy Md.",
+          "this past summer"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows four people sitting in a living room, but their identities, the family name, the specific location, and the time of year are not visible in the pixels.",
+        "unsupported_information": [
+          "Saylor family",
+          "Patti",
+          "Ron",
+          "Emma",
+          "Adam",
+          "Mount Airy Md.",
+          "this past summer"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows four people (two women, two men) sitting in a living room, which supports the visual description of a family portrait, but the specific names, location, and time are not visible.",
+        "unsupported_information": [
+          "The names Patti, Ron, Emma, and Adam",
+          "The location Mount Airy, Md.",
+          "The time period 'this past summer'"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows four people posing in a living room, but the specific names (Patti, Ron, Emma, Adam), family name (Saylor), location (Mount Airy, Md.), and time (this past summer) are not visible in the pixels.",
+        "unsupported_information": [
+          "Saylor family",
+          "Patti",
+          "Ron",
+          "Emma",
+          "Adam",
+          "Mount Airy Md.",
+          "this past summer"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:565",
+    "caption": "Details emerge in Ukraine of alleged payments to Manafort.",
+    "source_query": "Retrieve an image of this news caption. Details emerge in Ukraine of alleged payments to Manafort.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0566_653.jpg",
+    "tags": [
+      "location",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:location",
+    "original_size": [
+      455,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_565.jpg",
+    "image_sha256": "8b91664b6736355892afd4f8c70a87d67990972463f803996f89ce46b8d72e2d",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man in a suit at a table, but the caption describes a specific news event regarding alleged payments in Ukraine which is not visible in the pixels.",
+        "unsupported_information": [
+          "Details emerge in Ukraine",
+          "alleged payments",
+          "Manafort"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man in a suit at a table with water bottles, but the caption describes a specific news event regarding alleged payments in Ukraine which is not visible in the pixels.",
+        "unsupported_information": [
+          "Details emerge in Ukraine",
+          "alleged payments",
+          "Manafort"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a man in a suit at a table, but the caption describes a specific news event and legal allegations that are not visible in the pixels.",
+        "unsupported_information": [
+          "Ukraine",
+          "alleged payments",
+          "Manafort"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "A man in a suit sits at a table with water bottles, but no visible text or objects indicate Ukraine, payments, or the specific legal case.",
+        "unsupported_information": [
+          "Ukraine",
+          "alleged payments",
+          "Manafort"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man in a suit at a table, but the caption describes a specific news event regarding alleged payments in Ukraine which is not visible in the pixels.",
+        "unsupported_information": [
+          "Details emerge in Ukraine",
+          "alleged payments to Manafort"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a man in a suit at a table with water bottles, but the caption describes a specific news event regarding alleged payments in Ukraine which is not visible in the pixels.",
+        "unsupported_information": [
+          "Details emerge in Ukraine",
+          "alleged payments to Manafort"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man in a suit at a table with water bottles, but the caption describes a specific news event regarding alleged payments in Ukraine which is not visible in the pixels.",
+        "unsupported_information": [
+          "Details emerge in Ukraine",
+          "alleged payments",
+          "Manafort identity"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:784",
+    "caption": "Kahlida Lloyd 31 says she is planning on voting for Hillary Clinton.",
+    "source_query": "Retrieve an image of this news caption. Kahlida Lloyd 31 says she is planning on voting for Hillary Clinton.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0138_460.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_784.jpg",
+    "image_sha256": "50f39adba3ae20981061d8f97012c0ae04f2841ac85ed180dedc5623987656cf",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows a woman sitting on a bench, but the caption's claims regarding her identity (Kahlida Lloyd), age (31), and political intent (voting for Hillary Clinton) are not visible in the pixels.",
+        "unsupported_information": [
+          "Kahlida Lloyd",
+          "31",
+          "planning on voting for Hillary Clinton"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows a woman sitting on a bench, but her identity, age, and political intent are not visible.",
+        "unsupported_information": [
+          "Kahlida Lloyd",
+          "31",
+          "planning on voting for Hillary Clinton"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows a woman sitting on a bench, but the caption's claims regarding her identity (Kahlida Lloyd), age (31), and political intent (voting for Hillary Clinton) are not visually verifiable.",
+        "unsupported_information": [
+          "Kahlida Lloyd",
+          "31",
+          "planning on voting for Hillary Clinton"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman sitting on a dark wicker bench, but the caption provides specific identity, age, and political intent that are not visible in the pixels.",
+        "unsupported_information": [
+          "Kahlida Lloyd",
+          "31",
+          "planning on voting for Hillary Clinton"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman sitting on a bench, but the caption's claims about her identity (Kahlida Lloyd), age (31), and political intent (voting for Hillary Clinton) are not visible in the pixels.",
+        "unsupported_information": [
+          "Kahlida Lloyd",
+          "31",
+          "planning on voting for Hillary Clinton"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman sitting on a bench, but the caption's claims about her identity, age, and political intent are not visible in the pixels.",
+        "unsupported_information": [
+          "Kahlida Lloyd",
+          "31",
+          "planning on voting for Hillary Clinton"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 1.0,
+        "evidence": "The image shows a woman sitting on a bench, but there is no visual evidence to support her identity as Kahlida Lloyd, her age, or her political intentions.",
+        "unsupported_information": [
+          "Kahlida Lloyd",
+          "31",
+          "planning on voting for Hillary Clinton"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:771",
+    "caption": "Travelers make their way to flights at Reagan National Airport during the Thanksgiving holidays in 2011.",
+    "source_query": "Retrieve an image of this news caption. Travelers make their way to flights at Reagan National Airport during the Thanksgiving holidays in 2011.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0095_639.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      415,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_771.jpg",
+    "image_sha256": "d0459c28f95fbfa2eababa096584f6dad0848f1d83ab03e4ddb4799eecd15350",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows silhouetted travelers with luggage in a large terminal, but the specific location (Reagan National), date (2011), and event (Thanksgiving) are not visually verifiable.",
+        "unsupported_information": [
+          "Reagan National Airport",
+          "Thanksgiving holidays",
+          "2011"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows silhouetted figures with luggage in a large terminal, but the specific location (Reagan National), event (Thanksgiving), and date (2011) are not visible.",
+        "unsupported_information": [
+          "Reagan National Airport",
+          "Thanksgiving holidays",
+          "2011",
+          "make their way to flights"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows silhouettes of people with luggage in a large, glass-walled terminal, but the specific location (Reagan National Airport), event (Thanksgiving), and date (2011) are not visually verifiable.",
+        "unsupported_information": [
+          "Reagan National Airport",
+          "Thanksgiving holidays",
+          "2011"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows silhouettes of people with luggage in a large terminal, which supports the 'travelers' description, but the specific location, date, and holiday are not visible.",
+        "unsupported_information": [
+          "Reagan National Airport",
+          "Thanksgiving holidays",
+          "2011"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows silhouettes of people with luggage in a large terminal, but the specific location, date, and holiday are not visible.",
+        "unsupported_information": [
+          "Reagan National Airport",
+          "Thanksgiving holidays",
+          "2011"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows silhouetted figures with luggage in a large terminal, but the specific location (Reagan National Airport) and time (Thanksgiving 2011) are not visually verifiable.",
+        "unsupported_information": [
+          "Reagan National Airport",
+          "Thanksgiving holidays",
+          "2011"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows silhouettes of people with luggage in a large terminal, but the specific location (Reagan National), date (2011), and event (Thanksgiving) are not visible.",
+        "unsupported_information": [
+          "Reagan National Airport",
+          "Thanksgiving holidays",
+          "2011"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:255",
+    "caption": "Afghan policemen carry shells to be used as explosives to destroy highly explosive ammonium nitrate that was seized in Baricahb Afghanistan Although vast majority of the fertilizer is used for farming in Pakistan the insurgents have been able to get thier hands on it to produce powerful bombs.",
+    "source_query": "Retrieve an image of this news caption. Afghan policemen carry shells to be used as explosives to destroy highly explosive ammonium nitrate that was seized in Baricahb Afghanistan Although vast majority of the fertilizer is used for farming in Pakistan the insurgents have been able to get thier hands on it to produce powerful bombs.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0359_194.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_255.jpg",
+    "image_sha256": "c632598539a7b01eb506da57bc253973dad12de28d1a1985ead30c1cc8d69916",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows men in police uniforms holding large cylindrical objects, but the specific context of ammonium nitrate destruction and the location of Barikot are not visible.",
+        "unsupported_information": [
+          "shells to be used as explosives",
+          "destroy highly explosive ammonium nitrate",
+          "seized in Baricahb Afghanistan",
+          "fertilizer used for farming in Pakistan",
+          "insurgents have been able to get their hands on it"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows men in uniform holding large cylindrical objects, but the specific identity as 'Afghan policemen' and the context of 'ammonium nitrate' or 'Baricahb' are not visually verifiable.",
+        "unsupported_information": [
+          "Afghan policemen",
+          "shells to be used as explosives",
+          "destroy highly explosive ammonium nitrate",
+          "seized in Baricahb Afghanistan",
+          "fertilizer used for farming in Pakistan",
+          "insurgents have been able to get thier hands on it"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.9,
+        "evidence": "The image shows men in uniform holding large cylindrical objects, but the specific identity as 'Afghan policemen' and the context of 'ammonium nitrate' or 'Baricahb' are not visible.",
+        "unsupported_information": [
+          "Afghan policemen",
+          "shells to be used as explosives",
+          "destroy highly explosive ammonium nitrate",
+          "seized in Baricahb Afghanistan",
+          "fertilizer used for farming in Pakistan",
+          "insurgents have been able to get their hands on it"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows men in blue uniforms carrying large cylindrical objects on a dirt hill, which supports the visual description of carrying shells, but the specific location and purpose are not visible.",
+        "unsupported_information": [
+          "Afghan policemen",
+          "Baricahb Afghanistan",
+          "to destroy highly explosive ammonium nitrate",
+          "seized in Baricahb",
+          "fertilizer is used for farming in Pakistan",
+          "insurgents have been able to get their hands on it to produce powerful bombs"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows men in uniform holding cylindrical objects, but the specific identity as 'Afghan policemen' and the context of 'ammonium nitrate' or 'Baricahb' are not visually verifiable.",
+        "unsupported_information": [
+          "Afghan policemen",
+          "shells to be used as explosives",
+          "destroy highly explosive ammonium nitrate",
+          "seized in Baricahb Afghanistan",
+          "fertilizer used for farming in Pakistan",
+          "insurgents have been able to get their hands on it"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows men in police-style uniforms holding large cylindrical objects that resemble shells or pipes, but the specific location (Baricahb), the material (ammonium nitrate), and the purpose (destroying seized fertilizer) are not visible.",
+        "unsupported_information": [
+          "Afghan policemen",
+          "Baricahb Afghanistan",
+          "shells to be used as explosives",
+          "destroy highly explosive ammonium nitrate",
+          "seized ammonium nitrate",
+          "insurgents have been able to get their hands on it to produce powerful bombs"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows men in uniform carrying cylindrical objects, but the specific identification of them as Afghan police, the objects as shells for ammonium nitrate, and the location as Baricahb are not visible.",
+        "unsupported_information": [
+          "Afghan policemen",
+          "shells to be used as explosives",
+          "destroy highly explosive ammonium nitrate",
+          "seized in Baricahb Afghanistan",
+          "insurgents have been able to get their hands on it"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:233",
+    "caption": "Campaign 2014 Michelle Nunn Familiar.",
+    "source_query": "Retrieve an image of this news caption. Campaign 2014 Michelle Nunn Familiar.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0573_450.jpg",
+    "tags": [
+      "date",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      453,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_233.jpg",
+    "image_sha256": "59b2848589aba83f10f72b5b062a659566b3195708a4c2f45a7e19b81cfc19a7",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a woman in a suit and background photos, but the specific identity 'Michelle Nunn' and the 'Campaign 2014' context are not visually verifiable.",
+        "unsupported_information": [
+          "Michelle Nunn",
+          "Campaign 2014",
+          "Familiar"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a suit and background photos, but there is no visual evidence to confirm her identity as Michelle Nunn or the specific 'Campaign 2014' context.",
+        "unsupported_information": [
+          "Michelle Nunn",
+          "Campaign 2014",
+          "Familiar"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a blue blazer and three framed photos, but the specific identity 'Michelle Nunn' and the context 'Campaign 2014' are not visually verifiable.",
+        "unsupported_information": [
+          "Michelle Nunn",
+          "Campaign 2014",
+          "Familiar"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a woman in a suit, likely a news anchor, with three background photos of a man in various settings, but the specific identity 'Michelle Nunn' and the context 'Campaign 2014' are not visually verifiable.",
+        "unsupported_information": [
+          "Michelle Nunn",
+          "Campaign 2014",
+          "Familiar"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman and three photos, but the specific identity 'Michelle Nunn' and the context 'Campaign 2014' are not visually verifiable from the pixels alone.",
+        "unsupported_information": [
+          "Michelle Nunn",
+          "Campaign 2014",
+          "Familiar"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a suit and three framed photos, but the specific identity 'Michelle Nunn' and the context 'Campaign 2014' are not visually verifiable from the pixels.",
+        "unsupported_information": [
+          "Michelle Nunn",
+          "Campaign 2014"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a suit and background photos, but there is no visual evidence to confirm her identity as Michelle Nunn, the year 2014, or that it is a campaign.",
+        "unsupported_information": [
+          "Michelle Nunn",
+          "Campaign 2014",
+          "Familiar"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:577",
+    "caption": "Poll worker Nancy Barksdale arranges voting stickers at the Martin Luther King Community Center in Columbia.",
+    "source_query": "Retrieve an image of this news caption. Poll worker Nancy Barksdale arranges voting stickers at the Martin Luther King Community Center in Columbia.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0382_318.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:location",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_577.jpg",
+    "image_sha256": "7e563c194c03f071260bedaaa79a0607f494ef0753fcd4ef1afca1ad31ee9ced",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows a woman arranging blue stickers on a table, which aligns with the action described, but the specific identity, role, and location are not visible.",
+        "unsupported_information": [
+          "Poll worker Nancy Barksdale",
+          "Martin Luther King Community Center in Columbia"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows a woman arranging blue stickers on a table, but her identity and the specific location are not visible.",
+        "unsupported_information": [
+          "Nancy Barksdale",
+          "Poll worker",
+          "Martin Luther King Community Center",
+          "Columbia"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a pink shirt arranging blue stickers on a table, which supports the action, but the specific identity and location are not visible.",
+        "unsupported_information": [
+          "Nancy Barksdale",
+          "Martin Luther King Community Center",
+          "Columbia"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows a woman in a pink shirt arranging blue stickers on a table, which matches the action, but the specific identity and location are not visually verifiable.",
+        "unsupported_information": [
+          "Nancy Barksdale",
+          "Martin Luther King Community Center",
+          "Columbia"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman arranging stickers, but her identity, the specific location, and the nature of the stickers as 'voting' materials are not visible.",
+        "unsupported_information": [
+          "Nancy Barksdale",
+          "Poll worker",
+          "voting stickers",
+          "Martin Luther King Community Center",
+          "Columbia"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": false,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "visual_description_plus_context",
+        "confidence": 0.9,
+        "evidence": "The image shows a woman arranging blue stickers on a table, which supports the action, but her identity and the specific location are not visible.",
+        "unsupported_information": [
+          "Nancy Barksdale",
+          "Poll worker",
+          "Martin Luther King Community Center",
+          "Columbia"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman arranging blue stickers on a table, but her identity, the specific location, and the nature of the stickers as 'voting' materials are not visible.",
+        "unsupported_information": [
+          "Nancy Barksdale",
+          "Poll worker",
+          "voting stickers",
+          "Martin Luther King Community Center",
+          "Columbia"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:961",
+    "caption": "Ken Cuccinelli concedes the race at the downtown Marriott Hotel in Richmond Virginia.",
+    "source_query": "Retrieve an image of this news caption. Ken Cuccinelli concedes the race at the downtown Marriott Hotel in Richmond Virginia.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0594_217.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      388,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_961.jpg",
+    "image_sha256": "083b84e3b3c42abe3cee764dad6e7e2d1f6b6ce09a8ccf2b38bae8736545a63d",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a man in a suit waving at a podium with a 'Marriott' logo, but the specific identity, location, and act of conceding are not visible.",
+        "unsupported_information": [
+          "Ken Cuccinelli",
+          "concedes the race",
+          "downtown Marriott Hotel in Richmond Virginia"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man waving at a podium with a nameplate reading 'Arrington' and a map of Virginia, but the specific identity of the man as Ken Cuccinelli, the location as the Marriott Hotel, and the action as a concession are not visually verifiable.",
+        "unsupported_information": [
+          "Ken Cuccinelli",
+          "concedes the race",
+          "downtown Marriott Hotel",
+          "Richmond Virginia"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man in a suit waving at a podium with a nameplate reading 'Cuccinelli', which supports the identity and the act of addressing a crowd, but the specific location and the act of 'conceding' are not visible.",
+        "unsupported_information": [
+          "concedes the race",
+          "downtown Marriott Hotel",
+          "Richmond Virginia"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a man in a suit waving at a podium with a nameplate reading 'Cuccinelli' and a Virginia state flag, which supports the identity and general setting, but the specific action of 'conceding' and the exact location 'Marriott Hotel' are not visually verifiable.",
+        "unsupported_information": [
+          "concedes the race",
+          "downtown Marriott Hotel",
+          "Richmond Virginia"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a man at a podium with a microphone and a flag, but his identity, the specific location, and the act of conceding a race are not visually verifiable.",
+        "unsupported_information": [
+          "Ken Cuccinelli",
+          "concedes the race",
+          "downtown Marriott Hotel",
+          "Richmond Virginia"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man waving at a podium with a nameplate reading 'Cuccinelli', but the specific location (Marriott Hotel) and the act of conceding are not visible.",
+        "unsupported_information": [
+          "Ken Cuccinelli",
+          "concedes the race",
+          "downtown Marriott Hotel",
+          "Richmond Virginia"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a man at a podium with a nameplate reading 'Arrington' and a woman behind him, which contradicts the caption's identification of the speaker as Ken Cuccinelli.",
+        "unsupported_information": [
+          "Ken Cuccinelli is the speaker",
+          "concedes the race",
+          "downtown Marriott Hotel",
+          "Richmond Virginia"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:751",
+    "caption": "Justin Zemser center is seen with childhood friends at Channel View School for Research in Rockaway Queens Zemser was killed in Tuesday s Amtrak derailment in Philadelphia From left to right Breland Archbold Christopher Carr Zemser Nkozi Stewart and Folorunso Fatukasi.",
+    "source_query": "Retrieve an image of this news caption. Justin Zemser center is seen with childhood friends at Channel View School for Research in Rockaway Queens Zemser was killed in Tuesday s Amtrak derailment in Philadelphia From left to right Breland Archbold Christopher Carr Zemser Nkozi Stewart and Folorunso Fatukasi.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0582_441.jpg",
+    "tags": [
+      "date",
+      "cause_effect",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:cause_effect",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_751.jpg",
+    "image_sha256": "e33d8fdde13198e90d0e01c8651d224e50b7c2d16cdfb9a54316752da5d07335",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows five young men posing together, but their specific identities, the school name, and the context of the Amtrak derailment are not visible in the pixels.",
+        "unsupported_information": [
+          "Justin Zemser is the person in the center",
+          "They are childhood friends",
+          "Location is Channel View School for Research in Rockaway Queens",
+          "Zemser was killed in the Amtrak derailment in Philadelphia",
+          "Names of the other individuals: Breland Archbold, Christopher Carr, Nkozi Stewart, Folorunso Fatukasi"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows five young men sitting together, but their identities, the school name, the location, and the fatal accident are not visible in the pixels.",
+        "unsupported_information": [
+          "Justin Zemser is the person in the center",
+          "The group are childhood friends",
+          "The location is Channel View School for Research in Rockaway Queens",
+          "Zemser was killed in the Amtrak derailment in Philadelphia",
+          "The names and left-to-right order of the individuals"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows five young men sitting together, but the specific identities (Justin Zemser, etc.), the school name, and the Amtrak derailment context are not visually verifiable from the pixels.",
+        "unsupported_information": [
+          "Justin Zemser center",
+          "childhood friends",
+          "Channel View School for Research",
+          "Rockaway Queens",
+          "Zemser was killed in Tuesday's Amtrak derailment in Philadelphia",
+          "Breland Archbold",
+          "Christopher Carr",
+          "Nkozi Stewart",
+          "Folorunso Fatukasi"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.9,
+        "evidence": "Five young men are seated together in an indoor setting with caps on the table, but their identities, the school name, the Amtrak derailment and the specific location are not visible in the image.",
+        "unsupported_information": [
+          "Justin Zemser is the center person",
+          "the others are Breland Archbold, Christopher Carr, Nkozi Stewart, Folorunso Fatukasi",
+          "Channel View School for Research in Rockaway Queens",
+          "Zemser was killed in Tuesday's Amtrak derailment in Philadelphia"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows five young men, but the specific identities, the school name, and the details of the Amtrak derailment are not visible in the pixels.",
+        "unsupported_information": [
+          "Justin Zemser is the person in the center",
+          "The location is Channel View School for Research in Rockaway Queens",
+          "Zemser was killed in the Amtrak derailment in Philadelphia",
+          "The names of the other individuals are Breland Archbold, Christopher Carr, Nkozi Stewart, and Folorunso Fatukasi"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows five young men, but the specific identities, the school name, the location, and the reference to the Amtrak derailment are not visible in the pixels.",
+        "unsupported_information": [
+          "Justin Zemser center",
+          "childhood friends",
+          "Channel View School for Research",
+          "Rockaway Queens",
+          "Zemser was killed in Tuesday's Amtrak derailment in Philadelphia",
+          "Breland Archbold",
+          "Christopher Carr",
+          "Nkozi Stewart",
+          "Folorunso Fatukasi"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows five young men posing indoors, but the specific identities, the school name, the location in Queens, and the connection to the Amtrak derailment are not visible in the pixels.",
+        "unsupported_information": [
+          "Justin Zemser identity",
+          "Childhood friends relationship",
+          "Channel View School for Research location",
+          "Rockaway Queens location",
+          "Killed in Amtrak derailment",
+          "Philadelphia location",
+          "Names of all individuals (Breland Archbold, Christopher Carr, Nkozi Stewart, Folorunso Fatukasi)"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:685",
+    "caption": "Courts in India are overburdened with rampant judge shortages and 22 million pending cases some taking 10 or more years to complete In one case a woman who was gangraped in 2005 when she was a teenager waited 11 years for a guilty verdict for the ringleader in the case and it s not over yet The young woman pictured above is now in her 20s.",
+    "source_query": "Retrieve an image of this news caption. Courts in India are overburdened with rampant judge shortages and 22 million pending cases some taking 10 or more years to complete In one case a woman who was gangraped in 2005 when she was a teenager waited 11 years for a guilty verdict for the ringleader in the case and it s not over yet The young woman pictured above is now in her 20s.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0322_119.jpg",
+    "tags": [
+      "date",
+      "location",
+      "ambiguous_candidate"
+    ],
+    "selection": "targeted:ambiguous_candidate",
+    "original_size": [
+      341,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_685.jpg",
+    "image_sha256": "9bcfca68e115b09c3e2dc4e663cab668c1de6939681bb934e9049bfab13316be",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a niqab sitting on a bed, but the caption describes a specific legal case, a 2005 gang rape, and a 2016 verdict that are not visible in the pixels.",
+        "unsupported_information": [
+          "Courts in India are overburdened",
+          "22 million pending cases",
+          "woman was gangraped in 2005",
+          "waited 11 years for a guilty verdict",
+          "ringleader in the case",
+          "woman is now in her 20s"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 1.0,
+        "evidence": "The image shows a woman in a yellow niqab sitting on a bed, but the caption describes a specific legal case, court statistics, and a history of gang rape that are not visible in the pixels.",
+        "unsupported_information": [
+          "Courts in India are overburdened",
+          "22 million pending cases",
+          "Woman was gangraped in 2005",
+          "Waited 11 years for a guilty verdict",
+          "Woman is now in her 20s"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 1.0,
+        "evidence": "The image shows a woman wearing a yellow niqab sitting on a bed, but the caption describes a specific legal case, a 2005 gang rape, and a verdict that are not visible in the pixels.",
+        "unsupported_information": [
+          "Courts in India are overburdened",
+          "22 million pending cases",
+          "woman was gangraped in 2005",
+          "waited 11 years for a guilty verdict",
+          "ringleader in the case",
+          "now in her 20s"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a yellow niqab sitting on a bed, but the caption describes a specific legal case, a 2005 gang rape, and a 2016 verdict which are not visible in the pixels.",
+        "unsupported_information": [
+          "Courts in India are overburdened",
+          "22 million pending cases",
+          "woman was gangraped in 2005",
+          "waited 11 years for a guilty verdict",
+          "ringleader in the case",
+          "young woman pictured above is now in her 20s"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a niqab, but the caption describes a specific legal case, a 2005 gang rape, and an 11-year wait for a verdict, none of which are visible in the pixels.",
+        "unsupported_information": [
+          "Courts in India are overburdened",
+          "22 million pending cases",
+          "Woman was gangraped in 2005",
+          "She was a teenager at the time",
+          "Waited 11 years for a guilty verdict",
+          "The case is not over yet",
+          "The woman is now in her 20s"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a yellow niqab sitting on a bed, but the caption describes a specific legal case, a 2005 gang rape, and an 11-year wait for a verdict, none of which are visible in the pixels.",
+        "unsupported_information": [
+          "Courts in India are overburdened",
+          "22 million pending cases",
+          "woman was gangraped in 2005",
+          "waited 11 years for a guilty verdict",
+          "ringleader in the case",
+          "woman is now in her 20s"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a niqab sitting on a bed, but the caption describes a specific legal case, a 2005 gang rape, and a 2016 verdict that are not visible in the pixels.",
+        "unsupported_information": [
+          "Courts in India are overburdened",
+          "22 million pending cases",
+          "woman was gangraped in 2005",
+          "waited 11 years for a guilty verdict",
+          "ringleader in the case",
+          "woman is now in her 20s"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:357",
+    "caption": "The bodies were discovered shortly before noon local time after a highway patrol officer investigated a foul liquid seeping out of truck s cargo hold on the main expressway between Vienna and Budapest.",
+    "source_query": "Retrieve an image of this news caption. The bodies were discovered shortly before noon local time after a highway patrol officer investigated a foul liquid seeping out of truck s cargo hold on the main expressway between Vienna and Budapest.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0357_683.jpg",
+    "tags": [
+      "temporal"
+    ],
+    "selection": "random",
+    "original_size": [
+      389,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_357.jpg",
+    "image_sha256": "b0be38183054bb7bcbdd386ac8aa78d4b375a6487a1c663ec502a141694c6082",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows forensic investigators in white suits and a truck, but the caption's specific claims about bodies, the time of day, the cause (foul liquid), and the location (Vienna-Budapest) are not visible in the pixels.",
+        "unsupported_information": [
+          "bodies were discovered",
+          "shortly before noon local time",
+          "highway patrol officer investigated",
+          "foul liquid seeping out",
+          "main expressway between Vienna and Budapest"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows forensic investigators in white suits and a truck, but the caption's specific claims about bodies, the time of day, the cause (foul liquid), and the location (Vienna-Budapest) are not visible in the pixels.",
+        "unsupported_information": [
+          "bodies were discovered",
+          "shortly before noon local time",
+          "highway patrol officer investigated",
+          "foul liquid seeping out of truck's cargo hold",
+          "main expressway between Vienna and Budapest"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows forensic investigators in white suits and a truck, but the specific location (Vienna-Budapest), time (before noon), and cause (foul liquid) are not visible.",
+        "unsupported_information": [
+          "bodies were discovered",
+          "shortly before noon local time",
+          "highway patrol officer investigated",
+          "foul liquid seeping out of truck's cargo hold",
+          "main expressway between Vienna and Budapest"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows people in white hazmat suits and a truck, which are consistent with a crime scene investigation, but the specific details about the bodies, the time, the location, and the cause are not visible.",
+        "unsupported_information": [
+          "The bodies were discovered shortly before noon local time",
+          "a highway patrol officer investigated a foul liquid seeping out of truck s cargo hold",
+          "on the main expressway between Vienna and Budapest"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows forensic investigators in white suits near a truck, but the caption's specific details about bodies, time, and location are not visible.",
+        "unsupported_information": [
+          "bodies were discovered",
+          "shortly before noon local time",
+          "highway patrol officer investigated",
+          "foul liquid seeping out of truck's cargo hold",
+          "main expressway between Vienna and Budapest"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows forensic investigators in white suits and a truck, but the specific details of the event (bodies, foul liquid, highway patrol, Vienna-Budapest route) are not visible.",
+        "unsupported_information": [
+          "bodies were discovered",
+          "shortly before noon local time",
+          "highway patrol officer investigated",
+          "foul liquid seeping out of truck's cargo hold",
+          "main expressway between Vienna and Budapest"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 0,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows forensic investigators in white suits and a truck, but the caption's specific claims about bodies, the time of day, the cause (foul liquid), and the location (Vienna-Budapest) are not visible in the pixels.",
+        "unsupported_information": [
+          "bodies were discovered",
+          "shortly before noon local time",
+          "highway patrol officer investigated",
+          "foul liquid seeping out of truck's cargo hold",
+          "main expressway between Vienna and Budapest"
+        ]
+      }
+    }
+  },
+  {
+    "id": "VisualNews_t2i:169",
+    "caption": "Christine Wade a registered nurse at the University of Texas Medical Branch greets Carnival Magic cruise ship passengers disembarking in Galveston Tex on Oct 19 2014 Nurses met passengers with Ebola virus fact sheets and to answer any questions after a Dallas healthcare worker was in voluntary isolation in her cabin aboard the cruise ship because of her potential contact with the Ebola virus.",
+    "source_query": "Retrieve an image of this news caption. Christine Wade a registered nurse at the University of Texas Medical Branch greets Carnival Magic cruise ship passengers disembarking in Galveston Tex on Oct 19 2014 Nurses met passengers with Ebola virus fact sheets and to answer any questions after a Dallas healthcare worker was in voluntary isolation in her cabin aboard the cruise ship because of her potential contact with the Ebola virus.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0471_705.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "cause_effect",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      372,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_169.jpg",
+    "image_sha256": "5ba06b245549984084ed56b186d37578b6c00de33681f8806a244ea1de9194c4",
+    "outputs": {
+      "A_direct": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a black t-shirt holding a paper and talking to a man, but the specific identity, location, date, and the context of the Ebola virus are not visible.",
+        "unsupported_information": [
+          "Christine Wade",
+          "registered nurse",
+          "University of Texas Medical Branch",
+          "Carnival Magic cruise ship",
+          "Galveston Tex",
+          "Oct 19 2014",
+          "Ebola virus fact sheets",
+          "Dallas healthcare worker",
+          "voluntary isolation"
+        ]
+      },
+      "B_taxonomy": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a black t-shirt holding a paper and talking to a man, but the specific identity, location, date, and the context of the Ebola virus are not visible.",
+        "unsupported_information": [
+          "Christine Wade",
+          "registered nurse at the University of Texas Medical Branch",
+          "Carnival Magic cruise ship",
+          "Galveston Tex",
+          "Oct 19 2014",
+          "Ebola virus fact sheets",
+          "Dallas healthcare worker in voluntary isolation"
+        ]
+      },
+      "B_taxonomy_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a black t-shirt holding papers and speaking to a man, but the specific identity (Christine Wade), location (Galveston), ship name (Carnival Magic), and the context of the Ebola virus are not visible.",
+        "unsupported_information": [
+          "Christine Wade",
+          "registered nurse",
+          "University of Texas Medical Branch",
+          "Carnival Magic cruise ship",
+          "Galveston Tex",
+          "Oct 19 2014",
+          "passengers disembarking",
+          "Ebola virus fact sheets",
+          "Dallas healthcare worker",
+          "voluntary isolation"
+        ]
+      },
+      "B_taxonomy_v3": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a black t-shirt holding papers and talking to a man, but the specific identity, location (Galveston), date, and the context of the Ebola virus are not visible.",
+        "unsupported_information": [
+          "Christine Wade",
+          "registered nurse at the University of Texas Medical Branch",
+          "Carnival Magic cruise ship",
+          "Galveston Tex",
+          "Oct 19 2014",
+          "Ebola virus fact sheets",
+          "Dallas healthcare worker",
+          "voluntary isolation"
+        ]
+      },
+      "C_claims": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows people interacting with a document, but the specific identities, location, date, and the context of the Ebola virus are not visible in the pixels.",
+        "unsupported_information": [
+          "Christine Wade is a registered nurse at UTMB",
+          "Carnival Magic cruise ship passengers",
+          "Disembarking in Galveston, Tex",
+          "Date is Oct 19, 2014",
+          "Ebola virus fact sheets",
+          "Dallas healthcare worker in isolation"
+        ]
+      },
+      "C_claims_v2": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a black t-shirt holding papers and talking to a man, but the specific identity (Christine Wade), location (Galveston), date (Oct 19 2014), and the context of the Ebola virus are not visible in the pixels.",
+        "unsupported_information": [
+          "Christine Wade is a registered nurse at the University of Texas Medical Branch",
+          "Passengers are from the Carnival Magic cruise ship",
+          "Location is Galveston, Tex",
+          "Date is Oct 19 2014",
+          "Context involves Ebola virus fact sheets and a Dallas healthcare worker in isolation"
+        ]
+      },
+      "D_skeptical": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman in a black t-shirt holding a paper and talking to a man, but the specific identity, location, date, and the context of Ebola fact sheets are not visible.",
+        "unsupported_information": [
+          "Christine Wade",
+          "registered nurse",
+          "University of Texas Medical Branch",
+          "Carnival Magic cruise ship",
+          "Galveston Tex",
+          "Oct 19 2014",
+          "Ebola virus fact sheets",
+          "Dallas healthcare worker",
+          "voluntary isolation"
+        ]
+      }
+    }
+  }
+]

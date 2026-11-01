@@ -1,0 +1,13 @@
+{
+  "origin": "http://127.0.0.1:8767",
+  "checks": [
+    "12 real ready pairs displayed",
+    "pagination",
+    "source-grade A and recycling filters",
+    "detail: final Polish, original, recycled text and both scores",
+    "desktop and mobile rendering",
+    "no JavaScript exceptions"
+  ],
+  "loaded_images": 6,
+  "status": "passed"
+}

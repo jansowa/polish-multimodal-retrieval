@@ -1,0 +1,687 @@
+[
+  {
+    "id": "VisualNews_t2i:839",
+    "caption": "A woman walks past a poster for the film The Interview outside of Regal Theater in New York.",
+    "source_query": "Retrieve an image of this news caption. A woman walks past a poster for the film The Interview outside of Regal Theater in New York.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0443_218.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:location",
+    "original_size": [
+      404,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_839.jpg",
+    "image_sha256": "0ccedbbdceee12d8fe310175643df3f2ca1fce295ef4de5fe1f0daf960a51e9b",
+    "multimodal": {
+      "visual_grounding": 3,
+      "external_context_dependency": 1,
+      "named_entity_dependency": "incidental",
+      "event_or_temporal_context": false,
+      "location_context_not_visually_verifiable": true,
+      "ocr_dependency": true,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description_plus_context",
+      "confidence": 0.9,
+      "evidence": "A woman in a white coat walks past a storefront window displaying a movie poster with the title 'INTERVIEW' and Korean text, alongside another red poster.",
+      "unsupported_information": [
+        "Regal Theater",
+        "New York"
+      ]
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": true,
+        "potentially_good_visual_query": true,
+        "confidence": 0.95,
+        "reasons": [
+          "The query relies heavily on the specific named entity 'The Interview' to identify the poster content.",
+          "The location 'Regal Theater in New York' provides specific visual context for the background and setting.",
+          "The event context (a film poster outside a theater) is crucial for understanding the scene composition.",
+          "While the text describes a specific moment, the visual core (woman, poster, theater exterior) is concrete enough for retrieval."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": true,
+        "potentially_good_visual_query": false,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption references 'The Interview', a specific film whose poster design is a distinct visual artifact requiring external knowledge to identify correctly.",
+          "The location 'Regal Theater in New York' is a specific named entity that implies a particular architectural context or signage style not generic to all theaters.",
+          "The event context (a woman walking past a specific movie poster) suggests a news or documentary-style shot tied to the film's release or controversy, which is not visually self-evident without knowing the film's identity.",
+          "Visual retrieval would likely fail or be ambiguous without knowing the specific visual characteristics of 'The Interview' poster or the specific Regal Theater facade."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  },
+  {
+    "id": "VisualNews_t2i:323",
+    "caption": "A dog licks the face of a woman during a blessing of animals service outside the San Francisco church in Lima.",
+    "source_query": "Retrieve an image of this news caption. A dog licks the face of a woman during a blessing of animals service outside the San Francisco church in Lima.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0585_528.jpg",
+    "tags": [
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:temporal",
+    "original_size": [
+      374,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_323.jpg",
+    "image_sha256": "44614dad936954897dc353512f5b69492f1f8ab1f130972bb458f15b82067037",
+    "multimodal": {
+      "visual_grounding": 3,
+      "external_context_dependency": 2,
+      "named_entity_dependency": "incidental",
+      "event_or_temporal_context": true,
+      "location_context_not_visually_verifiable": true,
+      "ocr_dependency": false,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description_plus_context",
+      "confidence": 0.95,
+      "evidence": "The image clearly shows a dog licking a woman's face, but the background is too blurry to verify the specific location or event.",
+      "unsupported_information": [
+        "blessing of animals service",
+        "outside the San Francisco church in Lima"
+      ]
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": true,
+        "potentially_good_visual_query": false,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption contains a significant geographical contradiction: 'San Francisco church in Lima' (Lima is in Peru, San Francisco is in the US).",
+          "Resolving this contradiction requires external knowledge to determine if it is a specific church name, a typo, or a hallucination, which dominates the interpretation.",
+          "The event 'blessing of animals' provides specific temporal and cultural context not immediately obvious from a generic image of a dog and a woman.",
+          "The visual query is ambiguous because the location and event context are conflicting or highly specific, making it difficult to retrieve the correct image without resolving the text-based ambiguity."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": true,
+        "confidence": 0.9,
+        "reasons": [
+          "The caption describes a specific religious event ('blessing of animals service') which provides context for the interaction between the dog and the woman.",
+          "The location 'San Francisco church in Lima' is a specific named entity that grounds the scene but is not strictly necessary to identify the core visual action of a dog licking a woman's face.",
+          "The visual query 'dog licking woman's face' is strong and descriptive on its own, but the context of a church service helps distinguish this from a casual petting scenario.",
+          "The dependency is substantial because the 'blessing' context explains the specific nature of the interaction (ceremonial vs. casual), but the core visual elements are clear without it."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  },
+  {
+    "id": "VisualNews_t2i:529",
+    "caption": "People gather for a rally in favor of the no vote in London s Trafalgar Square.",
+    "source_query": "Retrieve an image of this news caption. People gather for a rally in favor of the no vote in London s Trafalgar Square.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0580_446.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      385,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_529.jpg",
+    "image_sha256": "84916f856700cffa53df1fd42d767500895427a775882665105b8d1c9c8cf444",
+    "multimodal": {
+      "visual_grounding": 3,
+      "external_context_dependency": 1,
+      "named_entity_dependency": "incidental",
+      "event_or_temporal_context": true,
+      "location_context_not_visually_verifiable": false,
+      "ocr_dependency": false,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description_plus_context",
+      "confidence": 0.9,
+      "evidence": "The image shows a large crowd in a square with Nelson's Column, holding Union Jacks and Scottish Saltires, which supports the location and the visual context of a rally, though the specific 'no vote' stance is inferred from the flags.",
+      "unsupported_information": [
+        "rally in favor of the no vote"
+      ]
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": true,
+        "potentially_good_visual_query": false,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption describes a specific political event (a rally for the 'no vote') which requires external knowledge to identify the specific referendum (likely the 2016 EU referendum) and the specific visual markers (banners, signs) associated with that campaign.",
+          "The location 'Trafalgar Square' is a specific landmark, but the core of the query is the event and the political stance, which are not visually self-evident without knowing the context of the specific rally.",
+          "A visual search for 'people in Trafalgar Square' would return generic images of the square, not specifically a 'no vote' rally, making the text query dependent on external context to be useful for retrieval."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": true,
+        "potentially_good_visual_query": false,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption references a specific political event ('rally in favor of the no vote') which requires external knowledge to identify the specific referendum (likely Brexit) and the specific date/timeframe to find the correct visual match.",
+          "The location 'Trafalgar Square' is precise, but without the temporal context of the specific 'no vote' campaign, a visual search would return generic images of the square or unrelated rallies.",
+          "The phrase 'no vote' is ambiguous without knowing which specific referendum is being discussed, making the query dependent on external context to be visually accurate."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  },
+  {
+    "id": "VisualNews_t2i:282",
+    "caption": "A woman stands between cardboard cutouts of President Obama and first lady Michelle Obama during the rally.",
+    "source_query": "Retrieve an image of this news caption. A woman stands between cardboard cutouts of President Obama and first lady Michelle Obama during the rally.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0516_666.jpg",
+    "tags": [
+      "temporal",
+      "role",
+      "entity"
+    ],
+    "selection": "targeted:role",
+    "original_size": [
+      360,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_282.jpg",
+    "image_sha256": "5f5821ca9a0b6b0114dcbbc9c88a6da7cc2941ad7c474f659256a604233640a0",
+    "multimodal": {
+      "visual_grounding": 4,
+      "external_context_dependency": 0,
+      "named_entity_dependency": "incidental",
+      "event_or_temporal_context": false,
+      "location_context_not_visually_verifiable": false,
+      "ocr_dependency": false,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description",
+      "confidence": 0.9,
+      "evidence": "The central figure is a woman standing between two flat, life-sized figures resembling President Obama and First Lady Michelle Obama, consistent with cardboard cutouts.",
+      "unsupported_information": []
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": false,
+        "confidence": 0.9,
+        "reasons": [
+          "The query relies heavily on recognizing specific named entities (President Obama and Michelle Obama) to identify the cardboard cutouts.",
+          "The context of a 'rally' implies a specific event or political setting that is not visually self-evident without knowing who the figures are.",
+          "Without external knowledge of what Obama and Michelle Obama look like, the visual description of 'cardboard cutouts' is generic and insufficient for precise retrieval."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": true,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption explicitly names President Obama and Michelle Obama, making the identification of the cardboard cutouts essential to the scene's meaning.",
+          "The term 'rally' provides specific event context that distinguishes this from a generic portrait or studio setting.",
+          "The visual query relies on recognizing the specific likenesses of the named entities on the cutouts, which is a strong visual anchor despite the text dependency."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  },
+  {
+    "id": "VisualNews_t2i:873",
+    "caption": "A Donald Trump supporter flexes his arms with the words build the wall written on them as Republican presidential nominee speaks at a campaign rally April 15 in Plattsburgh NY.",
+    "source_query": "Retrieve an image of this news caption. A Donald Trump supporter flexes his arms with the words build the wall written on them as Republican presidential nominee speaks at a campaign rally April 15 in Plattsburgh NY.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0380_755.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      364,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_873.jpg",
+    "image_sha256": "3cbb6deba34ae7a9fa24a27eaaef3515ce20fc259c4d312f7c4905dd5b71ae27",
+    "multimodal": {
+      "visual_grounding": 3,
+      "external_context_dependency": 2,
+      "named_entity_dependency": "incidental",
+      "event_or_temporal_context": true,
+      "location_context_not_visually_verifiable": true,
+      "ocr_dependency": true,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description_plus_context",
+      "confidence": 0.95,
+      "evidence": "The man is flexing his arms which clearly display the text 'Build' and 'Wall' (with 'THE' visible on his chest), and he wears a red hat with 'TRUMP' visible, supporting the visual description and the 'supporter' label.",
+      "unsupported_information": [
+        "Republican presidential nominee speaks",
+        "campaign rally",
+        "April 15",
+        "Plattsburgh NY"
+      ]
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": true,
+        "potentially_good_visual_query": true,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption describes a specific visual action (flexing arms with text) which is a strong visual query core.",
+          "The named entity 'Donald Trump' is essential to identifying the subject of the photo.",
+          "The specific date and location (April 15, Plattsburgh NY) provide substantial context that helps distinguish this specific rally from others, increasing the dependency on external context for precise retrieval.",
+          "The phrase 'build the wall' on the arms is a distinctive visual feature that makes it a good visual query."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": true,
+        "potentially_good_visual_query": false,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption relies heavily on specific named entities (Donald Trump, Republican presidential nominee) and a specific date (April 15) to identify the event.",
+          "The location (Plattsburgh, NY) is precise but requires external knowledge to link to the specific rally context.",
+          "The visual description ('flexes his arms with the words build the wall') is specific, but the overall scene is defined by the political event and the specific candidate, making the text context essential for accurate retrieval or understanding.",
+          "Without the context of the specific rally and date, the image of a supporter flexing arms is generic and could refer to many different events."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  },
+  {
+    "id": "VisualNews_t2i:915",
+    "caption": "Your new rights under HIPAA.",
+    "source_query": "Retrieve an image of this news caption. Your new rights under HIPAA.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0064_196.jpg",
+    "tags": [
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      455,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_915.jpg",
+    "image_sha256": "276eb9c1b5a92e412798765d1a80b9875dcdcba803b857be31deb345094434d5",
+    "multimodal": {
+      "visual_grounding": 3,
+      "external_context_dependency": 1,
+      "named_entity_dependency": "incidental",
+      "event_or_temporal_context": false,
+      "location_context_not_visually_verifiable": false,
+      "ocr_dependency": true,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description_plus_context",
+      "confidence": 0.9,
+      "evidence": "The word 'HIPAA' is clearly visible in large orange text, and a woman is standing next to it.",
+      "unsupported_information": [
+        "Your new rights"
+      ]
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": false,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": false,
+        "confidence": 0.9,
+        "reasons": [
+          "The caption refers to a specific legal framework (HIPAA) and a dynamic set of rights, which are abstract concepts rather than visual objects.",
+          "The phrase 'Your new rights' implies a specific regulatory update or timeline that is not visually inherent to the text itself.",
+          "A visual search for this caption would likely return generic medical or legal imagery rather than specific content about the rights themselves, making it a poor visual query without additional context."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 0,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": false,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": true,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption refers to a general legal/regulatory topic (HIPAA rights) which is commonly illustrated with generic icons, documents, or medical imagery.",
+          "HIPAA is a named entity, but it functions as a subject matter descriptor rather than a specific person or unique event requiring external context to identify the visual content.",
+          "There are no specific dates, locations, or causal narratives that would require external knowledge to interpret the likely visual representation.",
+          "The query is broad enough to be satisfied by standard stock imagery related to healthcare privacy or legal documents."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  },
+  {
+    "id": "VisualNews_t2i:931",
+    "caption": "The front page of the VirginianPilot features a quote by former South Africa president Nelson Mandela Never never and never again shall it be that this beautiful land will again experience the oppression of one by another.",
+    "source_query": "Retrieve an image of this news caption. The front page of the VirginianPilot features a quote by former South Africa president Nelson Mandela Never never and never again shall it be that this beautiful land will again experience the oppression of one by another.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0391_602.jpg",
+    "tags": [
+      "role",
+      "entity"
+    ],
+    "selection": "targeted:role",
+    "original_size": [
+      256,
+      489
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_931.jpg",
+    "image_sha256": "d5dcea224a76201b3ac9a71438133fabf131b7afe65f383dc8a63b928f1bdfb3",
+    "multimodal": {
+      "visual_grounding": 4,
+      "external_context_dependency": 0,
+      "named_entity_dependency": "incidental",
+      "event_or_temporal_context": false,
+      "location_context_not_visually_verifiable": false,
+      "ocr_dependency": true,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description",
+      "confidence": 1.0,
+      "evidence": "The image shows the front page of 'The Virginian-Pilot' with a large photo of Nelson Mandela and the specific quote 'Never, never and never again shall it be that this beautiful land will again experience the oppression of one by another' clearly legible in the top right column.",
+      "unsupported_information": []
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": true,
+        "confidence": 0.9,
+        "reasons": [
+          "The caption describes a specific newspaper front page (Virginian-Pilot) featuring a specific quote by a specific person (Nelson Mandela).",
+          "To verify or retrieve this image, one needs to know the specific edition or date of the newspaper, as front pages change daily.",
+          "The quote is a famous historical statement, linking the visual to a specific temporal context (likely around Mandela's death or a related commemorative event).",
+          "The visual query is concrete (newspaper front page with specific text), but the dependency on the specific date/edition makes it context-heavy."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": false,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": true,
+        "confidence": 0.9,
+        "reasons": [
+          "The caption identifies a specific newspaper (Virginian-Pilot) and a specific person (Nelson Mandela), making the named entities essential for identifying the subject.",
+          "The quote is attributed to Mandela but is not a standard visual identifier; the visual query relies on the combination of the newspaper masthead and the presence of the quote or image of Mandela.",
+          "The dependency is substantial because finding the specific front page requires knowing which issue featured this specific quote, though the newspaper name provides a strong visual anchor."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  },
+  {
+    "id": "VisualNews_t2i:888",
+    "caption": "Vice President Biden listens as Rep Paul Ryan.",
+    "source_query": "Retrieve an image of this news caption. Vice President Biden listens as Rep Paul Ryan.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0295_932.jpg",
+    "tags": [
+      "role",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:role",
+    "original_size": [
+      352,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_888.jpg",
+    "image_sha256": "8dd398ce90ab041725ad372ad35dc8b750bfdd4d1ee5499058d4824646e22253",
+    "multimodal": {
+      "visual_grounding": 3,
+      "external_context_dependency": 1,
+      "named_entity_dependency": "incidental",
+      "event_or_temporal_context": false,
+      "location_context_not_visually_verifiable": false,
+      "ocr_dependency": false,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description_plus_context",
+      "confidence": 0.9,
+      "evidence": "Two men in suits are seated at a table with papers and microphones; the man on the left is leaning forward with hands clasped near his face, consistent with listening, while the man on the right is looking toward him.",
+      "unsupported_information": [
+        "The specific identities of the individuals as Vice President Biden and Rep. Paul Ryan cannot be confirmed from the image alone."
+      ]
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": true,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption identifies specific individuals (Vice President Biden, Rep Paul Ryan) which are essential for visual identification.",
+          "The title 'Vice President' implies a specific temporal context (2009-2017) that affects visual appearance (age, attire, setting).",
+          "The action 'listens' provides a specific pose/behavior cue for visual retrieval.",
+          "The query is concrete enough to find images of these two individuals together in a political setting."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": false,
+        "confidence": 0.9,
+        "reasons": [
+          "The caption identifies specific individuals (Vice President Biden, Rep Paul Ryan) and a specific interaction (listening as Ryan speaks), which implies a specific historical event or debate.",
+          "Visual retrieval would require identifying the specific occasion (e.g., a debate, press conference, or meeting) to distinguish this image from thousands of other photos of these two politicians together.",
+          "The role titles (Vice President, Rep) provide temporal context (Biden as VP, Ryan as Rep) but do not pinpoint the exact date or event without external knowledge.",
+          "The phrase 'listens as' describes a dynamic interaction that is difficult to verify from a static image without knowing the specific context of who was speaking at that moment."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  },
+  {
+    "id": "VisualNews_t2i:624",
+    "caption": "This time in June with Sen Ted Cruz.",
+    "source_query": "Retrieve an image of this news caption. This time in June with Sen Ted Cruz.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0507_974.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      455,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_624.jpg",
+    "image_sha256": "79f6b43cc171ec90b935eb02913389e29ced201f21a19855f6c7013be53c756a",
+    "multimodal": {
+      "visual_grounding": 3,
+      "external_context_dependency": 0,
+      "named_entity_dependency": "incidental",
+      "event_or_temporal_context": false,
+      "location_context_not_visually_verifiable": false,
+      "ocr_dependency": true,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description_plus_context",
+      "confidence": 0.95,
+      "evidence": "The on-screen text explicitly identifies the speaker as 'SEN. TED CRUZ' and the setting as 'U.S. SENATE IMMIGRATION POLICY', while the visual shows a man speaking at a podium in a legislative chamber.",
+      "unsupported_information": [
+        "The specific month of June"
+      ]
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": true,
+        "confidence": 0.9,
+        "reasons": [
+          "The caption explicitly names 'Sen Ted Cruz', making the named entity essential for identifying the subject.",
+          "The phrase 'This time in June' provides temporal context that may be relevant for distinguishing specific events or appearances, though it is less critical than the identity.",
+          "The core visual query is concrete: a photo of Senator Ted Cruz.",
+          "The dependency is substantial because without knowing who Ted Cruz is or the specific context of 'this time', the image might be ambiguous if it were a generic crowd shot, but for a portrait, the name is the primary key."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": false,
+        "confidence": 0.9,
+        "reasons": [
+          "The phrase 'This time in June' implies a specific recurring news segment or broadcast context that is not self-contained.",
+          "The query relies on the specific identity of 'Sen Ted Cruz' to be useful, making the named entity essential.",
+          "Without knowing which specific June event or news cycle is being referenced, the visual query is ambiguous and likely to return generic images rather than the specific intended context."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  },
+  {
+    "id": "VisualNews_t2i:382",
+    "caption": "Looking down from one of the cathedral s many stainedglass windowsThese also were cleaned and fixed and some have been sent out for repairs.",
+    "source_query": "Retrieve an image of this news caption. Looking down from one of the cathedral s many stainedglass windowsThese also were cleaned and fixed and some have been sent out for repairs.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0147_556.jpg",
+    "tags": [],
+    "selection": "random",
+    "original_size": [
+      394,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_382.jpg",
+    "image_sha256": "a78eb8ba4bae30b70204fdd16752ef0b39a7507a1a966d2374beffef13b98015",
+    "multimodal": {
+      "visual_grounding": 3,
+      "external_context_dependency": 1,
+      "named_entity_dependency": "none",
+      "event_or_temporal_context": false,
+      "location_context_not_visually_verifiable": false,
+      "ocr_dependency": false,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description_plus_context",
+      "confidence": 0.95,
+      "evidence": "The image clearly shows a stained glass ceiling viewed from below, matching the visual description, while the claim about cleaning and repairs is contextual.",
+      "unsupported_information": [
+        "cleaned and fixed",
+        "sent out for repairs"
+      ]
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": false,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": true,
+        "confidence": 0.9,
+        "reasons": [
+          "The caption describes a specific visual perspective ('Looking down from one of the cathedral's many stained glass windows') which provides a concrete visual query core.",
+          "The mention of 'cathedral' is a generic architectural type rather than a specific named entity, so it does not create a strong dependency on external knowledge for identification.",
+          "The second sentence regarding cleaning and repairs adds context about the condition/history but does not dominate the visual description of the scene itself.",
+          "The visual query is strong because it specifies the subject (stained glass windows), the location type (cathedral), and the angle (looking down)."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "none",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": false,
+        "potentially_good_visual_query": true,
+        "confidence": 0.9,
+        "reasons": [
+          "The caption describes a specific viewpoint ('Looking down from one of the cathedral's many stained glass windows') which is a strong visual cue for image retrieval.",
+          "The mention of 'cleaned and fixed' and 'sent out for repairs' provides temporal and causal context that is not visually verifiable from a static image, creating a dependency on external information to fully understand the state of the windows.",
+          "No specific named entities (like a specific cathedral name) are mentioned, so the query relies on generic visual features of stained glass and cathedral architecture."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  },
+  {
+    "id": "VisualNews_t2i:670",
+    "caption": "Rainfall estimated by radar over the last 30 days in the DC area and Northeast.",
+    "source_query": "Retrieve an image of this news caption. Rainfall estimated by radar over the last 30 days in the DC area and Northeast.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0303_474.jpg",
+    "tags": [
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:short_visual_candidate",
+    "original_size": [
+      441,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_670.jpg",
+    "image_sha256": "378dbf1fde1eb69d78ca86ad197e78051d3b6d57e3a9dd97108f030fc5e698ee",
+    "multimodal": {
+      "visual_grounding": 4,
+      "external_context_dependency": 0,
+      "named_entity_dependency": "incidental",
+      "event_or_temporal_context": false,
+      "location_context_not_visually_verifiable": false,
+      "ocr_dependency": true,
+      "image_caption_mismatch": false,
+      "caption_type": "visual_description",
+      "confidence": 0.95,
+      "evidence": "The image is a weather map showing a color-coded rainfall intensity scale (0.0 to 20.0) over the US Northeast, with visible labels for states like Pennsylvania, New York, and Maryland, and a timestamp '21 08 27 03' in the corner.",
+      "unsupported_information": []
+    },
+    "text_only": {
+      "T1": {
+        "potential_external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": true,
+        "potentially_good_visual_query": false,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption describes a specific meteorological dataset (radar-estimated rainfall) rather than a static visual scene.",
+          "The query relies heavily on temporal context ('last 30 days') and specific geographic regions ('DC area and Northeast') which are not visually inherent to a single static image without external data mapping.",
+          "A static image of rain or a map does not inherently convey the specific 30-day radar estimation data described, making the text context dominant for understanding the content."
+        ]
+      },
+      "T2": {
+        "potential_external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "precise_location_mentioned": true,
+        "potentially_good_visual_query": true,
+        "confidence": 0.95,
+        "reasons": [
+          "The caption specifies a time-sensitive dataset ('last 30 days') which requires external temporal context to be accurate.",
+          "It references a specific geographic region ('DC area and Northeast') and a specific data source/method ('radar estimated'), implying a specific meteorological visualization.",
+          "While the location is named, the primary dependency is on the temporal window and the specific type of meteorological data (radar rainfall accumulation) rather than just the place name."
+        ]
+      }
+    },
+    "assessment": "Potential overfilter candidate, not an independently confirmed text-only false positive."
+  }
+]

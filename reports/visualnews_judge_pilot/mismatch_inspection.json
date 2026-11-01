@@ -1,0 +1,242 @@
+[
+  {
+    "id": "VisualNews_t2i:538",
+    "caption": "Hills protruding from the fog near lower Zachariae Glacier Credits NASAJohn Sonntag.",
+    "source_query": "Retrieve an image of this news caption. Hills protruding from the fog near lower Zachariae Glacier Credits NASAJohn Sonntag.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0140_456.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_538.jpg",
+    "image_sha256": "d96c87991fc4984f396d2cebd6fe51f6a5bb222be92a13d214fe77771e556d21"
+  },
+  {
+    "id": "VisualNews_t2i:323",
+    "caption": "A dog licks the face of a woman during a blessing of animals service outside the San Francisco church in Lima.",
+    "source_query": "Retrieve an image of this news caption. A dog licks the face of a woman during a blessing of animals service outside the San Francisco church in Lima.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0585_528.jpg",
+    "tags": [
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:temporal",
+    "original_size": [
+      374,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_323.jpg",
+    "image_sha256": "44614dad936954897dc353512f5b69492f1f8ab1f130972bb458f15b82067037"
+  },
+  {
+    "id": "VisualNews_t2i:987",
+    "caption": "A pack of tigers eye a live chicken that a tourist purchased for 60 RMB.",
+    "source_query": "Retrieve an image of this news caption. A pack of tigers eye a live chicken that a tourist purchased for 60 RMB.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0516_167.jpg",
+    "tags": [
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:short_visual_candidate",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_987.jpg",
+    "image_sha256": "1b7148fc69dd45dd0e2fcd1817f1461528616c20e297dc2da03395f280c0cfab"
+  },
+  {
+    "id": "VisualNews_t2i:282",
+    "caption": "A woman stands between cardboard cutouts of President Obama and first lady Michelle Obama during the rally.",
+    "source_query": "Retrieve an image of this news caption. A woman stands between cardboard cutouts of President Obama and first lady Michelle Obama during the rally.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0516_666.jpg",
+    "tags": [
+      "temporal",
+      "role",
+      "entity"
+    ],
+    "selection": "targeted:role",
+    "original_size": [
+      360,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_282.jpg",
+    "image_sha256": "5f5821ca9a0b6b0114dcbbc9c88a6da7cc2941ad7c474f659256a604233640a0"
+  },
+  {
+    "id": "VisualNews_t2i:845",
+    "caption": "Protesters chant slogans under a banner reading Together with our brothers and sisters Greece Cyprus United Mikis Theodorakis during a military parade marking the Greek Independence Day in Athens Fears of antiausterity protests have prompted an unprecedented security mobilization ahead of national parade to mark Greece s Independence Day Mikis Theodorakis is a Greek songwriter and composer who has mixed music with politics.",
+    "source_query": "Retrieve an image of this news caption. Protesters chant slogans under a banner reading Together with our brothers and sisters Greece Cyprus United Mikis Theodorakis during a military parade marking the Greek Independence Day in Athens Fears of antiausterity protests have prompted an unprecedented security mobilization ahead of national parade to mark Greece s Independence Day Mikis Theodorakis is a Greek songwriter and composer who has mixed music with politics.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0210_764.jpg",
+    "tags": [
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_845.jpg",
+    "image_sha256": "e0cba7cbe5eff17d38d3e6c8893b00db220945847ec1a1c6fee75b8d03ce69e0"
+  },
+  {
+    "id": "VisualNews_t2i:861",
+    "caption": "Khalil center attends a panel discussion about curbing violence among the city s youth led by John Comer of Communities United right Read the story Coming of age in a city coming apart.",
+    "source_query": "Retrieve an image of this news caption. Khalil center attends a panel discussion about curbing violence among the city s youth led by John Comer of Communities United right Read the story Coming of age in a city coming apart.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0300_912.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_861.jpg",
+    "image_sha256": "1f345b08d040237ab7dc3742d9875900edb07f19e8ab91f6922acac42ed87e9c"
+  },
+  {
+    "id": "VisualNews_t2i:237",
+    "caption": "Representative Darrell Issa a Republican from California center chairs a House Oversight and Government Reform Committee on Friday June 17 2011 Photographer Stephen MortonBloomberg.",
+    "source_query": "Retrieve an image of this news caption. Representative Darrell Issa a Republican from California center chairs a House Oversight and Government Reform Committee on Friday June 17 2011 Photographer Stephen MortonBloomberg.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0096_307.jpg",
+    "tags": [
+      "date",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      379,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_237.jpg",
+    "image_sha256": "6a9ba02a44fed17abc5401f8de161ba16129df2ae06b886593d4fb30c942ff88"
+  },
+  {
+    "id": "VisualNews_t2i:660",
+    "caption": "Jeb Bush Honor.",
+    "source_query": "Retrieve an image of this news caption. Jeb Bush Honor.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0231_946.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      455,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_660.jpg",
+    "image_sha256": "e1995638bf843364eb86469966c6ff933e013b58cb435cd256aa963b7ca2e86f"
+  },
+  {
+    "id": "VisualNews_t2i:202",
+    "caption": "A projectionscreen TV covers a window.",
+    "source_query": "Retrieve an image of this news caption. A projectionscreen TV covers a window.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0057_858.jpg",
+    "tags": [
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      397,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_202.jpg",
+    "image_sha256": "a674eb685bd336576de4b4dd276e85049ce30c49cc0f87d9528d0636ee72fde6"
+  },
+  {
+    "id": "VisualNews_t2i:266",
+    "caption": "Robert Plant left and Jimmy Page sitting in the courtroom.",
+    "source_query": "Retrieve an image of this news caption. Robert Plant left and Jimmy Page sitting in the courtroom.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0333_804.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:short_visual_candidate",
+    "original_size": [
+      329,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_266.jpg",
+    "image_sha256": "41139e44060fc3d8bde720b3ef4df921ae362c6a79576fbd10bf74193704355b"
+  },
+  {
+    "id": "VisualNews_t2i:511",
+    "caption": "Washington Post reporter Justin Jouvenal crosses a bridge while covering a story on the Ebola virus near Quewein.",
+    "source_query": "Retrieve an image of this news caption. Washington Post reporter Justin Jouvenal crosses a bridge while covering a story on the Ebola virus near Quewein.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0511_838.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_511.jpg",
+    "image_sha256": "eba6d1221292c6cccdf09e67a6317af397e756c3dff1932afa2664d977cb2fbe"
+  },
+  {
+    "id": "VisualNews_t2i:253",
+    "caption": "View Photo Gallery The US secretary of state traveled to London for a conference to discuss terrorism famine and security issues involving Somalia In Tunisia she attended the Friends of Syria conference attended by highlevel US European Turkish and Arab League officials.",
+    "source_query": "Retrieve an image of this news caption. View Photo Gallery The US secretary of state traveled to London for a conference to discuss terrorism famine and security issues involving Somalia In Tunisia she attended the Friends of Syria conference attended by highlevel US European Turkish and Arab League officials.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0409_883.jpg",
+    "tags": [
+      "entity",
+      "ambiguous_candidate"
+    ],
+    "selection": "targeted:ambiguous_candidate",
+    "original_size": [
+      369,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_253.jpg",
+    "image_sha256": "f4c5b88fbbb81ce25c015e345d49fba2045163aa51ba688cb77b612e25ef6d01"
+  },
+  {
+    "id": "VisualNews_t2i:400",
+    "caption": "The steeple of Emanuel AME Church in Charleston SC is reflected in a window.",
+    "source_query": "Retrieve an image of this news caption. The steeple of Emanuel AME Church in Charleston SC is reflected in a window.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0142_920.jpg",
+    "tags": [
+      "location",
+      "short_visual_candidate"
+    ],
+    "selection": "targeted:location",
+    "original_size": [
+      404,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_400.jpg",
+    "image_sha256": "294963e488380f96d0bc513e86502ca75f2e7fa159254b5cae127f04bfe7565e"
+  },
+  {
+    "id": "VisualNews_t2i:593",
+    "caption": "A woman wrapped in the Ukrainian flag holds a placard at a mass prayer service in the northeastern Ukrainian city of Kharkiv More than 2000 people attended the service for A United Ukraine Ukraine s plan to go ahead with its May 25 presidential election without first consulting proRussian voters is very destructive for the country Russian Foreign Minister Sergei Lavrov told statecontrolled RT television.",
+    "source_query": "Retrieve an image of this news caption. A woman wrapped in the Ukrainian flag holds a placard at a mass prayer service in the northeastern Ukrainian city of Kharkiv More than 2000 people attended the service for A United Ukraine Ukraine s plan to go ahead with its May 25 presidential election without first consulting proRussian voters is very destructive for the country Russian Foreign Minister Sergei Lavrov told statecontrolled RT television.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0423_383.jpg",
+    "tags": [
+      "date",
+      "role",
+      "event",
+      "entity"
+    ],
+    "selection": "targeted:event",
+    "original_size": [
+      361,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_593.jpg",
+    "image_sha256": "f2fc92ba671cf616b1e816a57ffcd16bde038bcd915ad6b3ab211227edf1788c"
+  }
+]

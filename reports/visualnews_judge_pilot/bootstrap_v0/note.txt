@@ -1,0 +1,1 @@
+Four-call bootstrap: raw schema echo and markdown failures. Replaced schema-in-prompt with JSON instance template. Removed MMEB retrieval instruction from caption before freezing actual experiment. Bootstrap excluded from variant comparison.

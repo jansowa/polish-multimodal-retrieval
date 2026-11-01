@@ -1,0 +1,122 @@
+[
+  {
+    "id": "VisualNews_t2i:282",
+    "expected_mismatch": false,
+    "status": "false",
+    "note": "Visible flat cutout borders and scene support cardboard figures; skin texture is not proof of live people.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:323",
+    "expected_mismatch": false,
+    "status": "false",
+    "note": "San Francisco modifies church name; caption places the church in Lima. No geographic contradiction.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:845",
+    "expected_mismatch": false,
+    "status": "false",
+    "note": "Greek banner is compatible with translated English; language difference and inferred parade context do not prove mismatch.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:253",
+    "expected_mismatch": false,
+    "status": "false",
+    "note": "Diplomatic clothing/meeting does not disprove London or Tunisia.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:400",
+    "expected_mismatch": false,
+    "status": "false",
+    "note": "Central window frame and symmetric steeple scene are compatible with reflection; no bridge contradiction.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:266",
+    "expected_mismatch": false,
+    "status": "false",
+    "note": "Courtroom sketch is compatible with people sitting in court. Absence of judge furniture is not contradiction.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:202",
+    "expected_mismatch": false,
+    "status": "false",
+    "note": "Projection screen can hide a window; behind-screen wall/window not visible.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:987",
+    "expected_mismatch": false,
+    "status": "false",
+    "note": "No clearly visible chicken does not prove chicken absent; many occluded/remote regions.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:237",
+    "expected_mismatch": false,
+    "status": "false",
+    "note": "Local chamber sign does not disprove a congressional field hearing; institutional role not a geographic restriction.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:511",
+    "expected_mismatch": null,
+    "status": "uncertain",
+    "note": "No obvious bridge; cannot confidently establish support or contradiction from this framing.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:660",
+    "expected_mismatch": null,
+    "status": "uncertain",
+    "note": "OCR identifies Leo Thorsness but short caption Jeb Bush Honor need not assert pictured identity.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:593",
+    "expected_mismatch": null,
+    "status": "uncertain",
+    "note": "Flag cloth could be partly occluded; not enough evidence to assert conflict confidently.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:861",
+    "expected_mismatch": null,
+    "status": "unusable",
+    "note": "Decoded image is visual glitch; asset-quality failure should not imply semantic contradiction.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:538",
+    "expected_mismatch": null,
+    "status": "unusable",
+    "note": "Decoded image almost entirely black; insufficient usable visual evidence.",
+    "reviewer": "Codex",
+    "inspection": "mismatches_v2.jpg and captions, before v3 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:413",
+    "expected_mismatch": false,
+    "status": "false",
+    "reviewer": "Codex",
+    "inspection": "Full-resolution image after completed v3; no further tuning",
+    "note": "White jersey visibly carries 19, not 28; blue jersey reads DEMICHELIS, not HENDERSON. Claimed visual contradiction uses hallucinated OCR and external jersey association."
+  }
+]

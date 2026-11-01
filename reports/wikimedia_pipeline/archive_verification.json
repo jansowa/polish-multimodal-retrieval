@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-31T15:50:20.435491+00:00",
+  "status": "passed",
+  "allocation_and_limiter_unchanged": true,
+  "total_max_parallel_requests": 30,
+  "configured_shares": {
+    "visualnews": 6,
+    "wikimedia": 24
+  },
+  "verified_live_originals": [
+    {
+      "id": "wikimedia:174689862",
+      "stage": "translate",
+      "sha1": "48f0f739309f76a95d2557284823faa2ca925bb2",
+      "producer": "wikimedia_grounding_pipeline"
+    },
+    {
+      "id": "wikimedia:174688591",
+      "stage": "recycle",
+      "sha1": "2eb8b4f55192f045d0e44ee735d7dd9f8e77784f",
+      "producer": "wikimedia_grounding_pipeline"
+    },
+    {
+      "id": "wikimedia:174688381",
+      "stage": "recycle",
+      "sha1": "79299cc688fadb57150fda8c7cdf8360a8b31aa1",
+      "producer": "wikimedia_grounding_pipeline"
+    },
+    {
+      "id": "wikimedia:174692035",
+      "stage": "judge",
+      "sha1": "a6419fdc0f36e96d9a573d5a146d535dfb3d65c8",
+      "producer": "wikimedia_grounding_pipeline"
+    },
+    {
+      "id": "wikimedia:174690217",
+      "stage": "recycle",
+      "sha1": "c4a149e5fb5c60adb651ed7e921c331f3e221249",
+      "producer": "wikimedia_grounding_pipeline"
+    }
+  ],
+  "ws_archive_tests": 12,
+  "pipeline_tests": 33
+}

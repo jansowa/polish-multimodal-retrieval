@@ -1,0 +1,14 @@
+{
+  "records": 239497,
+  "open_license": 239497,
+  "eligible_open_license_pl_en": 238317,
+  "local_image_paths": 0,
+  "has_source_sha1": 239497,
+  "already_in_old_pipeline": 8235,
+  "new_eligible_not_in_old_pipeline": 230082,
+  "distinct_source_file_ids": 239497,
+  "distinct_original_urls": 239497,
+  "distinct_source_sha1": 239497,
+  "directory": "outputs\\polish_culture_expanded",
+  "resolved_checkpoint": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\outputs\\polish_culture_expanded\\checkpoint.sqlite3"
+}

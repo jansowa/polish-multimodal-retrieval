@@ -1,0 +1,197 @@
+{
+  "status": "complete",
+  "selected_concurrency": 32,
+  "gain_32_ready_throughput": 0.10208518459687199,
+  "selection_rule": "32 only if >5% faster in final ready-pair throughput and >=98% successful prompt outputs; otherwise 16.",
+  "aggregates": {
+    "16": {
+      "seconds": 144.54699999999866,
+      "valid_requests_per_second": 3.251537562177038,
+      "finalized_per_hour": 3187.8904439386793,
+      "ready_per_hour": 3162.9850498454084,
+      "valid": 470,
+      "requests": 470
+    },
+    "32": {
+      "seconds": 130.125,
+      "valid_requests_per_second": 3.5658021133525457,
+      "finalized_per_hour": 3541.2103746397693,
+      "ready_per_hour": 3485.878962536023,
+      "valid": 464,
+      "requests": 464
+    }
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "concurrency": 16,
+      "seconds": 69.84400000000096,
+      "requests": 235,
+      "valid": 235,
+      "valid_requests_per_second": 3.364641200389393,
+      "finalized_per_hour": 3298.7801385945368,
+      "ready_per_hour": 3298.7801385945368,
+      "ready": 64,
+      "routes": {
+        "ready_recycled": 57,
+        "ready_reused_original": 7
+      },
+      "request_stats": [
+        {
+          "stage": "judge",
+          "n": 64,
+          "valid": 64,
+          "seconds_mean": 3.1684531249994166
+        },
+        {
+          "stage": "recheck",
+          "n": 57,
+          "valid": 57,
+          "seconds_mean": 2.28714035087659
+        },
+        {
+          "stage": "recycle",
+          "n": 57,
+          "valid": 57,
+          "seconds_mean": 3.6807017543862712
+        },
+        {
+          "stage": "translate",
+          "n": 57,
+          "valid": 57,
+          "seconds_mean": 8.539912280702035
+        }
+      ],
+      "run_dir": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\visualnews_pipeline\\benchmark\\round1-c16"
+    },
+    {
+      "round": 2,
+      "concurrency": 32,
+      "seconds": 64.21899999999732,
+      "requests": 232,
+      "valid": 232,
+      "valid_requests_per_second": 3.6126380043290873,
+      "finalized_per_hour": 3587.7232594716456,
+      "ready_per_hour": 3531.665083542401,
+      "ready": 63,
+      "routes": {
+        "ready_recycled": 56,
+        "ready_reused_original": 7,
+        "rejected_grounding": 1
+      },
+      "request_stats": [
+        {
+          "stage": "judge",
+          "n": 64,
+          "valid": 64,
+          "seconds_mean": 6.9243906249997735
+        },
+        {
+          "stage": "recheck",
+          "n": 56,
+          "valid": 56,
+          "seconds_mean": 4.414107142857249
+        },
+        {
+          "stage": "recycle",
+          "n": 56,
+          "valid": 56,
+          "seconds_mean": 7.223678571428342
+        },
+        {
+          "stage": "translate",
+          "n": 56,
+          "valid": 56,
+          "seconds_mean": 12.433071428571566
+        }
+      ],
+      "run_dir": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\visualnews_pipeline\\benchmark\\round2-c32"
+    },
+    {
+      "round": 3,
+      "concurrency": 32,
+      "seconds": 65.90600000000268,
+      "requests": 232,
+      "valid": 232,
+      "valid_requests_per_second": 3.5201650836037777,
+      "finalized_per_hour": 3495.8880830272,
+      "ready_per_hour": 3441.2648317299,
+      "ready": 63,
+      "routes": {
+        "ready_recycled": 56,
+        "ready_reused_original": 7,
+        "rejected_grounding": 1
+      },
+      "request_stats": [
+        {
+          "stage": "judge",
+          "n": 64,
+          "valid": 64,
+          "seconds_mean": 6.859906249999881
+        },
+        {
+          "stage": "recheck",
+          "n": 56,
+          "valid": 56,
+          "seconds_mean": 4.355214285714283
+        },
+        {
+          "stage": "recycle",
+          "n": 56,
+          "valid": 56,
+          "seconds_mean": 7.315071428571628
+        },
+        {
+          "stage": "translate",
+          "n": 56,
+          "valid": 56,
+          "seconds_mean": 14.497714285714014
+        }
+      ],
+      "run_dir": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\visualnews_pipeline\\benchmark\\round3-c32"
+    },
+    {
+      "round": 4,
+      "concurrency": 16,
+      "seconds": 74.7029999999977,
+      "requests": 235,
+      "valid": 235,
+      "valid_requests_per_second": 3.1457906643643123,
+      "finalized_per_hour": 3084.2134854022875,
+      "ready_per_hour": 3036.0226496928767,
+      "ready": 63,
+      "routes": {
+        "ready_recycled": 57,
+        "ready_reused_original": 6,
+        "rejected_grounding": 1
+      },
+      "request_stats": [
+        {
+          "stage": "judge",
+          "n": 64,
+          "valid": 64,
+          "seconds_mean": 3.2612656249999645
+        },
+        {
+          "stage": "recheck",
+          "n": 57,
+          "valid": 57,
+          "seconds_mean": 2.165877192982487
+        },
+        {
+          "stage": "recycle",
+          "n": 57,
+          "valid": 57,
+          "seconds_mean": 3.968368421052442
+        },
+        {
+          "stage": "translate",
+          "n": 57,
+          "valid": 57,
+          "seconds_mean": 9.63514035087728
+        }
+      ],
+      "run_dir": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\visualnews_pipeline\\benchmark\\round4-c16"
+    }
+  ]
+}

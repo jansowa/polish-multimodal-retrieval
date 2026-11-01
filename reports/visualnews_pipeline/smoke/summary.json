@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "pid": 51496,
+  "run_dir": "reports\\visualnews_pipeline\\smoke",
+  "checkpoint": "reports\\visualnews_pipeline\\smoke\\checkpoint.sqlite3",
+  "started_at": "2026-10-20T18:20:03.834892+00:00",
+  "concurrency": 16,
+  "fingerprint": "6cab2f60986b05888784554fced628a76321ed7f07b8e9c41604b7b3536a0c99",
+  "total": 14,
+  "updated_at": "2026-10-20T18:20:14.141105+00:00",
+  "completed": 14,
+  "routes": {
+    "ready_recycled": 6,
+    "ready_reused_original": 4,
+    "rejected_grounding": 2,
+    "review_mismatch": 2
+  },
+  "stages": [
+    {
+      "stage": "terminal",
+      "status": "completed",
+      "n": 14
+    }
+  ],
+  "requests": 18,
+  "ready": 10,
+  "finalized_per_hour": 3496.5034965040204,
+  "elapsed_seconds": 10.295999999998457,
+  "request_stats": [
+    {
+      "stage": "recheck",
+      "n": 6,
+      "valid": 6,
+      "seconds_mean": 1.2261666666666617
+    },
+    {
+      "stage": "recycle",
+      "n": 6,
+      "valid": 6,
+      "seconds_mean": 2.330999999999525
+    },
+    {
+      "stage": "translate",
+      "n": 6,
+      "valid": 6,
+      "seconds_mean": 4.1821666666667925
+    }
+  ]
+}

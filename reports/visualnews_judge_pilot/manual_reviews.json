@@ -1,0 +1,542 @@
+[
+  {
+    "id": "VisualNews_t2i:199",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Microphone and speaking pose visible; identity, candidacy, venue and date external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:744",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Football player visible; arrest, assault, date and argument are not depicted.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:556",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Fire and firefighting visible; factory type, location and recovered-body total unverified.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:707",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "People behind railing visible; dates, named race and later horse victory contextual.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:545",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Small aircraft visible; regulatory exemption is not visible.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:927",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Two men visible; actor names, movie and Oscar nominations external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:258",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Woman with sunglasses visible; CIA role, raid and promotion story unverified.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:254",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Woman at photographed formal event; identity and exact Oscars venue require text or context.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:215",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "People assist or carry a person; shooting cause, protester role, city and weekday unverified.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:765",
+    "grounding_min": 0,
+    "grounding_max": 2,
+    "note": "Dark distant horizon; smoke detail weak at contact resolution, airstrike attribution external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:782",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Person seated in vehicle visible; person and destination not established.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:239",
+    "grounding_min": 2,
+    "grounding_max": 4,
+    "note": "Soldiers/vehicle and a visible headline support security patrol and Kashmir-attack context; requires OCR.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:419",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Portrait/speaking scene; party, candidacy and name not verified from face alone.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:605",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Staged group and banners visible; court case details, motive and exact place need evidence.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:703",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Man gestures/speaks; name alone is not verified. Action must still get credit.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:49",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Formal group photo visible; extensive identities, honor status, year and dinner chronology external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:535",
+    "grounding_min": 2,
+    "grounding_max": 3,
+    "note": "Person transports boxes; evidence contents and courthouse designation not established.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:481",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Two seated women talking; names, professional role, visit destination and book promotion partly external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:43",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Two men converse; exact identities and official positions not pixel verified.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:205",
+    "grounding_min": 2,
+    "grounding_max": 3,
+    "note": "Crowd with raised hands visible; protest interpretation plausible, city not established.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:631",
+    "grounding_min": 0,
+    "grounding_max": 2,
+    "note": "Wide convention crowd/stage; specific introduction and first-day chronology uncertain.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:598",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "People stand near one another; no handshake seen but lifetime claims and interview are external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:788",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Group assists/interacts with seated man; factions, evacuation history and city control external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:322",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Ceremonial group/oath-like pose visible; identities, legal roles and specific room contextual.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:458",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Small protest gathering visible; hunger-strike status and motivation not established.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:991",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Two people pose; their names, occupation and studio number not established.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:811",
+    "grounding_min": 4,
+    "grounding_max": 4,
+    "note": "Multiple killer whales swim close together; direct visual description.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:777",
+    "grounding_min": 2,
+    "grounding_max": 3,
+    "note": "People handle ballot-like papers; Witney and England unverified.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:249",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "News commentator and on-screen name visible; claim about media coverage not established.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:946",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Baseball player pitching visible; future assignment to Game 2 external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:941",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Interaction between standing and seated people visible; named history and year external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:784",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Seated woman visible; age and future voting intent not visible.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:984",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Chart with turnout/competitiveness is visible, not an identified university view. Institution may be a source attribution.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:936",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Woman/children walking in dry landscape visible; purpose, destination and refugee statistics external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:38",
+    "grounding_min": 2,
+    "grounding_max": 3,
+    "note": "People use/display smartphones and laptop; residence status and Hyderabad unverified.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:378",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Crowd and mourning/burial setting plausible; named person, police role and exact cemetery contextual.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:370",
+    "grounding_min": 2,
+    "grounding_max": 3,
+    "note": "Wedding clothing, flowers and aisle visible; tears and vague difference not clearly verifiable.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:236",
+    "grounding_min": 3,
+    "grounding_max": 4,
+    "note": "Distinctive Capitol silhouette and sunrise-like horizon provide strong scene evidence; location requires landmark interpretation.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:14",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Hockey players embrace/celebrate; identities and exact 4-0 result require additional evidence.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:338",
+    "grounding_min": 2,
+    "grounding_max": 3,
+    "note": "Child playing in spray water visible; name, age and park address external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:307",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Person in kitchen visible; sexuality, asylum and later move mostly external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:997",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Photography setup/person visible; names and kinship not verifiable.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:240",
+    "grounding_min": 2,
+    "grounding_max": 3,
+    "note": "Hockey player shooting/diving toward goal visible; identities, qualification stage and final score contextual.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:538",
+    "grounding_min": 0,
+    "grounding_max": 2,
+    "note": "Near-black image at contact resolution; inspect original before concluding support or mismatch.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:794",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Man poses outdoors; name, exact date and city unverified.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:155",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "People carrying a person visible; national identity, place and agency plans external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:577",
+    "grounding_min": 2,
+    "grounding_max": 3,
+    "note": "Woman arranges visible voting stickers; named person and exact center external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:8",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Woman photographed in meeting; name, building and date external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:364",
+    "grounding_min": 2,
+    "grounding_max": 3,
+    "note": "Reservoir with very low water visible; named lake, duration and household shutoffs external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:852",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Children getting golf instruction visible; economic narrative, exclusivity and Beijing external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:413",
+    "grounding_min": 2,
+    "grounding_max": 3,
+    "note": "Football scoring scene visible; player identities and exact minute not established.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:959",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Pair posing visible; names, friendship and later murder/year unverified.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:45",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Panel discussion visible; identities, named event and exact location external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:893",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Portrait with drink visible; release context and personal statement external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:101",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Basketball scene visible but caption consists solely of unverified identity.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:961",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Person addressing audience visible; conceding an election and exact hotel require context.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:922",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Basketball action visible; first-person playing-history claim not visible.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:912",
+    "grounding_min": 0,
+    "grounding_max": 1,
+    "note": "Man in suit near vehicle visible; idiomatic statement has no concrete supported scene claim.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:853",
+    "grounding_min": 0,
+    "grounding_max": 0,
+    "note": "Chart visible; source-credit attribution does not describe its visual content.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  },
+  {
+    "id": "VisualNews_t2i:926",
+    "grounding_min": 1,
+    "grounding_max": 2,
+    "note": "Two people talking at meeting visible; titles, subject, date and exact place external.",
+    "reviewer": "Codex",
+    "method": "Caption and contact sheet inspected; uncertainty intervals are diagnostic, not expert gold.",
+    "annotation_stage": "After v1 diagnostics, before inspecting v2 outputs"
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "snapshot_utc": "2026-10-21T13:31:10.268116+00:00",
+  "ready_pairs": 35937,
+  "processed_pairs": 44685,
+  "payloads": {
+    "pl": {
+      "rows": 35937,
+      "bytes": 11133635,
+      "gzip_bytes": 2703840
+    },
+    "pl_en": {
+      "rows": 35937,
+      "bytes": 22159064,
+      "gzip_bytes": 7030623
+    },
+    "requests_all": {
+      "rows": 138983,
+      "bytes": 438409926,
+      "gzip_bytes": 55891200
+    },
+    "requests_ready": {
+      "rows": 130494,
+      "bytes": 420217918,
+      "gzip_bytes": 52368762
+    },
+    "outputs_all": {
+      "rows": 144276,
+      "bytes": 93311105,
+      "gzip_bytes": 16768899
+    },
+    "outputs_ready": {
+      "rows": 135310,
+      "bytes": 86733576,
+      "gzip_bytes": 15521059
+    }
+  },
+  "images": {
+    "ready_unique": 35937,
+    "ready_bytes": 669632647,
+    "processed_unique": 44685,
+    "processed_bytes": 807428726
+  },
+  "local_files": {
+    "checkpoint.sqlite3": {
+      "bytes": 803692544,
+      "modified_utc": "2026-10-21T13:31:33.682565+00:00"
+    },
+    "checkpoint.sqlite3-shm": {
+      "bytes": 32768,
+      "modified_utc": "2026-10-21T13:20:32.139331+00:00"
+    },
+    "checkpoint.sqlite3-wal": {
+      "bytes": 8005192,
+      "modified_utc": "2026-10-21T13:31:34.490656+00:00"
+    },
+    "errors.jsonl": {
+      "bytes": 1010322,
+      "modified_utc": "2026-10-21T13:31:23.560374+00:00"
+    },
+    "final_pairs.jsonl": {
+      "bytes": 105149045,
+      "modified_utc": "2026-10-21T13:30:46.643791+00:00"
+    },
+    "judge_prompt.txt": {
+      "bytes": 7078,
+      "modified_utc": "2026-10-20T18:34:38.277493+00:00"
+    },
+    "manifest.json": {
+      "bytes": 19763,
+      "modified_utc": "2026-10-20T18:34:38.277493+00:00"
+    },
+    "recycle_prompt.txt": {
+      "bytes": 1593,
+      "modified_utc": "2026-10-20T18:34:38.293122+00:00"
+    },
+    "stage_outputs.jsonl": {
+      "bytes": 7802411,
+      "modified_utc": "2026-10-20T18:37:13.071566+00:00"
+    },
+    "state.json": {
+      "bytes": 1819,
+      "modified_utc": "2026-10-21T13:31:16.814374+00:00"
+    },
+    "summary.json": {
+      "bytes": 2195,
+      "modified_utc": "2026-10-21T05:11:29.730851+00:00"
+    }
+  },
+  "notes": [
+    "JSONL sizes measured exactly; gzip level 6 measured exactly without writing archives.",
+    "Images are original encoded bytes, deduplicated by verified shard/row; archive overhead and recompression not included.",
+    "Full flow is requests plus outputs plus manifest and prompt files; includes rejected examples and failures, without reasoning."
+  ]
+}

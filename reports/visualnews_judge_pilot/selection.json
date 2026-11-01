@@ -1,0 +1,13 @@
+{
+  "recommended_multimodal": "B_taxonomy_v3",
+  "second_finalist": "B_taxonomy_v2",
+  "recommended_text_only": "T1",
+  "ranking": [
+    "B_taxonomy_v3",
+    "B_taxonomy_v2",
+    "C_claims_v2"
+  ],
+  "criteria": "Complete controls, then fewer independently inspected natural false alarms, then severe grounding interval misses, mean interval distance, logical flags and repeat agreement. Exploratory diagnostic ranking, not statistically proven superiority.",
+  "schema": "schema.json",
+  "request_config": "B_taxonomy_v3_config.json"
+}

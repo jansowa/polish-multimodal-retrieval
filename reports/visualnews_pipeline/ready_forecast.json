@@ -1,0 +1,96 @@
+{
+  "as_of": "2026-10-20T18:49:44.091041+00:00",
+  "ready_now": 1355,
+  "recent_ready_rates": {
+    "5min": {
+      "ready_delta": 324,
+      "seconds": 301.432662,
+      "ready_per_hour": 3869.5209479323116
+    },
+    "10min": {
+      "ready_delta": 665,
+      "seconds": 602.676064,
+      "ready_per_hour": 3972.283193247907
+    }
+  },
+  "planning_ready_per_hour": 3000,
+  "planning_range": [
+    2500,
+    3500
+  ],
+  "note": "Counts only accepted bilingual ready routes. Recent rates process already-judged recycling backlog; future full pipeline also needs first-stage judging. Ranges assume uninterrupted operation and similar server load.",
+  "forecast_from_now": [
+    {
+      "hours": 1,
+      "central_ready_total": 4355,
+      "low": 3855,
+      "high": 4855
+    },
+    {
+      "hours": 2,
+      "central_ready_total": 7355,
+      "low": 6355,
+      "high": 8355
+    },
+    {
+      "hours": 3,
+      "central_ready_total": 10355,
+      "low": 8855,
+      "high": 11855
+    },
+    {
+      "hours": 4,
+      "central_ready_total": 13355,
+      "low": 11355,
+      "high": 15355
+    },
+    {
+      "hours": 5,
+      "central_ready_total": 16355,
+      "low": 13855,
+      "high": 18855
+    },
+    {
+      "hours": 6,
+      "central_ready_total": 19355,
+      "low": 16355,
+      "high": 22355
+    },
+    {
+      "hours": 7,
+      "central_ready_total": 22355,
+      "low": 18855,
+      "high": 25855
+    },
+    {
+      "hours": 8,
+      "central_ready_total": 25355,
+      "low": 21355,
+      "high": 29355
+    },
+    {
+      "hours": 9,
+      "central_ready_total": 28355,
+      "low": 23855,
+      "high": 32855
+    },
+    {
+      "hours": 10,
+      "central_ready_total": 31355,
+      "low": 26355,
+      "high": 36355
+    },
+    {
+      "hours": 11,
+      "central_ready_total": 34355,
+      "low": 28855,
+      "high": 39855
+    },
+    {
+      "hours": 12,
+      "central_ready_total": 37355,
+      "low": 31355,
+      "high": 43355
+    }
+  ]
+}

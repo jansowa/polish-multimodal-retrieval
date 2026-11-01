@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "pid": 35200,
+  "run_dir": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\visualnews_pipeline\\benchmark\\round4-c16",
+  "checkpoint": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\visualnews_pipeline\\benchmark\\round4-c16\\checkpoint.sqlite3",
+  "started_at": "2026-10-20T18:25:34.013431+00:00",
+  "concurrency": 16,
+  "fingerprint": "67ec0e96a46680cf858afa45e48ded08896320b3e666c4c008dbeb21bf0dd4bc",
+  "total": 64,
+  "updated_at": "2026-10-20T18:26:48.702721+00:00",
+  "completed": 64,
+  "routes": {
+    "ready_recycled": 57,
+    "ready_reused_original": 6,
+    "rejected_grounding": 1
+  },
+  "stages": [
+    {
+      "stage": "terminal",
+      "status": "completed",
+      "n": 64
+    }
+  ],
+  "requests": 235,
+  "ready": 63,
+  "finalized_per_hour": 3084.2134854022875,
+  "elapsed_seconds": 74.7029999999977,
+  "request_stats": [
+    {
+      "stage": "judge",
+      "n": 64,
+      "valid": 64,
+      "seconds_mean": 3.2612656249999645
+    },
+    {
+      "stage": "recheck",
+      "n": 57,
+      "valid": 57,
+      "seconds_mean": 2.165877192982487
+    },
+    {
+      "stage": "recycle",
+      "n": 57,
+      "valid": 57,
+      "seconds_mean": 3.968368421052442
+    },
+    {
+      "stage": "translate",
+      "n": 57,
+      "valid": 57,
+      "seconds_mean": 9.63514035087728
+    }
+  ]
+}

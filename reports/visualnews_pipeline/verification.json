@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-10-20T18:38:26.382675+00:00",
+  "items": 283012,
+  "ready_checked": 599,
+  "recycled_checked": 315,
+  "reused_translation_sources_verified": 284,
+  "new_translations_checked": 315,
+  "request_image_and_reasoning_controls_checked": 1067,
+  "reasoning_text_absent": true,
+  "ready_routes_and_recheck_gates_valid": true,
+  "sqlite_quick_check": "ok"
+}

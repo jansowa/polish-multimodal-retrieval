@@ -1,0 +1,19 @@
+{
+  "updated_at": "2026-10-21T18:44:15.395701+00:00",
+  "ids": [
+    "wikimedia:108815663",
+    "wikimedia:114936230",
+    "wikimedia:114936231",
+    "wikimedia:114936232",
+    "wikimedia:114936233",
+    "wikimedia:114936236",
+    "wikimedia:114936237",
+    "wikimedia:114936239",
+    "wikimedia:114936240",
+    "wikimedia:115207265",
+    "wikimedia:115237099",
+    "wikimedia:115713153",
+    "wikimedia:115740402"
+  ],
+  "reason": "Retry earlier transient permission errors after a successful image-download probe."
+}

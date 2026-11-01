@@ -1,0 +1,18 @@
+{
+  "order": [
+    16,
+    32,
+    32,
+    16
+  ],
+  "same_ids_each_round": true,
+  "fresh_initial_judge_each_round": true,
+  "sample": {
+    "direct": 8,
+    "grounding_1": 28,
+    "grounding_2": 28
+  },
+  "seed": 20261020,
+  "metric": "Valid prompt outputs per second, finalized source pairs per hour, final bilingual ready pairs per hour; include all pipeline stages, cache reuse and errors.",
+  "note": "ABBA counterbalances warm-up and drift. A small matched local experiment is not a universal server benchmark."
+}

@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-31T12:52:39.125973+00:00",
+  "status": "passed",
+  "id": "wikimedia:144653948",
+  "original_sha1": "0000686707452f7d667044274edbdd4cebd722a1",
+  "reused_without_download": true,
+  "existing_receipt_and_assets_unchanged": true,
+  "source_metadata_path": "/mnt/c/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/compact_receipts/source_metadata/0000686707452f7d667044274edbdd4cebd722a1/81d07c48df944b599c6052c399ed7836711f45de38fbd11d56e4f3dc29913094.json",
+  "model_image_source": "verified_full_frame_master1536"
+}

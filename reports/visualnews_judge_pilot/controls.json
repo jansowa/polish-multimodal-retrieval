@@ -1,0 +1,1370 @@
+[
+  {
+    "id": "control:199:base",
+    "caption": "A woman in a grey jacket holds a microphone.",
+    "source_query": "Retrieve an image of this news caption. Democratic presidential candidate Hillary Rodham Clinton speaks at an event at the the Iowa State University Alumni Center in Ames on July 26 2015.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0588_098.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_199.jpg",
+    "image_sha256": "43fc694e520363ee776fbcfa3f9292aeee6f27f481e8218d302a78f227c0a3dd",
+    "base_id": "control:199:base",
+    "control_kind": "base",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:199:name",
+    "caption": "A woman in a grey jacket holds a microphone, photographed by Evelyn Hart.",
+    "source_query": "Retrieve an image of this news caption. Democratic presidential candidate Hillary Rodham Clinton speaks at an event at the the Iowa State University Alumni Center in Ames on July 26 2015.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0588_098.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_199.jpg",
+    "image_sha256": "43fc694e520363ee776fbcfa3f9292aeee6f27f481e8218d302a78f227c0a3dd",
+    "base_id": "control:199:base",
+    "control_kind": "name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:199:remove_name",
+    "caption": "A woman in a grey jacket holds a microphone.",
+    "source_query": "Retrieve an image of this news caption. Democratic presidential candidate Hillary Rodham Clinton speaks at an event at the the Iowa State University Alumni Center in Ames on July 26 2015.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0588_098.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_199.jpg",
+    "image_sha256": "43fc694e520363ee776fbcfa3f9292aeee6f27f481e8218d302a78f227c0a3dd",
+    "base_id": "control:199:name",
+    "control_kind": "remove_name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:199:date",
+    "caption": "A woman in a grey jacket holds a microphone on March 17, 2014.",
+    "source_query": "Retrieve an image of this news caption. Democratic presidential candidate Hillary Rodham Clinton speaks at an event at the the Iowa State University Alumni Center in Ames on July 26 2015.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0588_098.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_199.jpg",
+    "image_sha256": "43fc694e520363ee776fbcfa3f9292aeee6f27f481e8218d302a78f227c0a3dd",
+    "base_id": "control:199:base",
+    "control_kind": "date",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:199:event",
+    "caption": "A woman in a grey jacket holds a microphone during the opening of the 2014 Global Media Forum.",
+    "source_query": "Retrieve an image of this news caption. Democratic presidential candidate Hillary Rodham Clinton speaks at an event at the the Iowa State University Alumni Center in Ames on July 26 2015.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0588_098.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_199.jpg",
+    "image_sha256": "43fc694e520363ee776fbcfa3f9292aeee6f27f481e8218d302a78f227c0a3dd",
+    "base_id": "control:199:base",
+    "control_kind": "event",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:199:precise_location",
+    "caption": "A woman in a grey jacket holds a microphone at 1479 West Ash Street, Springfield, Illinois.",
+    "source_query": "Retrieve an image of this news caption. Democratic presidential candidate Hillary Rodham Clinton speaks at an event at the the Iowa State University Alumni Center in Ames on July 26 2015.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0588_098.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_199.jpg",
+    "image_sha256": "43fc694e520363ee776fbcfa3f9292aeee6f27f481e8218d302a78f227c0a3dd",
+    "base_id": "control:199:base",
+    "control_kind": "precise_location",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:199:later_outcome",
+    "caption": "A woman in a grey jacket holds a microphone. Two days later, this photograph won the National Press Award.",
+    "source_query": "Retrieve an image of this news caption. Democratic presidential candidate Hillary Rodham Clinton speaks at an event at the the Iowa State University Alumni Center in Ames on July 26 2015.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0588_098.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_199.jpg",
+    "image_sha256": "43fc694e520363ee776fbcfa3f9292aeee6f27f481e8218d302a78f227c0a3dd",
+    "base_id": "control:199:base",
+    "control_kind": "later_outcome",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:199:wrong_color",
+    "caption": "A woman in a bright red jacket holds a microphone.",
+    "source_query": "Retrieve an image of this news caption. Democratic presidential candidate Hillary Rodham Clinton speaks at an event at the the Iowa State University Alumni Center in Ames on July 26 2015.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0588_098.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_199.jpg",
+    "image_sha256": "43fc694e520363ee776fbcfa3f9292aeee6f27f481e8218d302a78f227c0a3dd",
+    "base_id": "control:199:base",
+    "control_kind": "wrong_color",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:744:base",
+    "caption": "A football player in a red jersey numbered 58 holds up a cap.",
+    "source_query": "Retrieve an image of this news caption. The Arizona linebacker was arrested May 3 for assault after an argument with an exgirlfriend in Phoenix.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0274_253.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:temporal",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_744.jpg",
+    "image_sha256": "50005d0a07d02b296bed7cd7dce2065436ac6eba46cf61260d5ab3aabaad43b9",
+    "base_id": "control:744:base",
+    "control_kind": "base",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:744:name",
+    "caption": "A football player in a red jersey numbered 58 holds up a cap, photographed by Evelyn Hart.",
+    "source_query": "Retrieve an image of this news caption. The Arizona linebacker was arrested May 3 for assault after an argument with an exgirlfriend in Phoenix.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0274_253.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:temporal",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_744.jpg",
+    "image_sha256": "50005d0a07d02b296bed7cd7dce2065436ac6eba46cf61260d5ab3aabaad43b9",
+    "base_id": "control:744:base",
+    "control_kind": "name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:744:remove_name",
+    "caption": "A football player in a red jersey numbered 58 holds up a cap.",
+    "source_query": "Retrieve an image of this news caption. The Arizona linebacker was arrested May 3 for assault after an argument with an exgirlfriend in Phoenix.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0274_253.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:temporal",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_744.jpg",
+    "image_sha256": "50005d0a07d02b296bed7cd7dce2065436ac6eba46cf61260d5ab3aabaad43b9",
+    "base_id": "control:744:name",
+    "control_kind": "remove_name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:744:date",
+    "caption": "A football player in a red jersey numbered 58 holds up a cap on March 17, 2014.",
+    "source_query": "Retrieve an image of this news caption. The Arizona linebacker was arrested May 3 for assault after an argument with an exgirlfriend in Phoenix.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0274_253.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:temporal",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_744.jpg",
+    "image_sha256": "50005d0a07d02b296bed7cd7dce2065436ac6eba46cf61260d5ab3aabaad43b9",
+    "base_id": "control:744:base",
+    "control_kind": "date",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:744:event",
+    "caption": "A football player in a red jersey numbered 58 holds up a cap during the opening of the 2014 Global Media Forum.",
+    "source_query": "Retrieve an image of this news caption. The Arizona linebacker was arrested May 3 for assault after an argument with an exgirlfriend in Phoenix.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0274_253.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:temporal",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_744.jpg",
+    "image_sha256": "50005d0a07d02b296bed7cd7dce2065436ac6eba46cf61260d5ab3aabaad43b9",
+    "base_id": "control:744:base",
+    "control_kind": "event",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:744:precise_location",
+    "caption": "A football player in a red jersey numbered 58 holds up a cap at 1479 West Ash Street, Springfield, Illinois.",
+    "source_query": "Retrieve an image of this news caption. The Arizona linebacker was arrested May 3 for assault after an argument with an exgirlfriend in Phoenix.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0274_253.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:temporal",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_744.jpg",
+    "image_sha256": "50005d0a07d02b296bed7cd7dce2065436ac6eba46cf61260d5ab3aabaad43b9",
+    "base_id": "control:744:base",
+    "control_kind": "precise_location",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:744:later_outcome",
+    "caption": "A football player in a red jersey numbered 58 holds up a cap. Two days later, this photograph won the National Press Award.",
+    "source_query": "Retrieve an image of this news caption. The Arizona linebacker was arrested May 3 for assault after an argument with an exgirlfriend in Phoenix.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0274_253.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:temporal",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_744.jpg",
+    "image_sha256": "50005d0a07d02b296bed7cd7dce2065436ac6eba46cf61260d5ab3aabaad43b9",
+    "base_id": "control:744:base",
+    "control_kind": "later_outcome",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:744:wrong_color",
+    "caption": "A football player in a blue jersey numbeblue 58 holds up a cap.",
+    "source_query": "Retrieve an image of this news caption. The Arizona linebacker was arrested May 3 for assault after an argument with an exgirlfriend in Phoenix.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0274_253.jpg",
+    "tags": [
+      "date",
+      "temporal",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:temporal",
+    "original_size": [
+      383,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_744.jpg",
+    "image_sha256": "50005d0a07d02b296bed7cd7dce2065436ac6eba46cf61260d5ab3aabaad43b9",
+    "base_id": "control:744:base",
+    "control_kind": "wrong_color",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:556:base",
+    "caption": "Orange flames are visible in the windows of a building at night.",
+    "source_query": "Retrieve an image of this news caption. Firefighters battle a fire at a garment factory outside Dhaka Bangladesh An official said firefighters have recovered more than 100 bodies.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0538_714.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_556.jpg",
+    "image_sha256": "3b9af8b8c2aec6d911c9bd96734e88769fd618c6e82ca8a3bb0ae1f2a4357c29",
+    "base_id": "control:556:base",
+    "control_kind": "base",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:556:name",
+    "caption": "Orange flames are visible in the windows of a building at night, photographed by Evelyn Hart.",
+    "source_query": "Retrieve an image of this news caption. Firefighters battle a fire at a garment factory outside Dhaka Bangladesh An official said firefighters have recovered more than 100 bodies.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0538_714.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_556.jpg",
+    "image_sha256": "3b9af8b8c2aec6d911c9bd96734e88769fd618c6e82ca8a3bb0ae1f2a4357c29",
+    "base_id": "control:556:base",
+    "control_kind": "name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:556:remove_name",
+    "caption": "Orange flames are visible in the windows of a building at night.",
+    "source_query": "Retrieve an image of this news caption. Firefighters battle a fire at a garment factory outside Dhaka Bangladesh An official said firefighters have recovered more than 100 bodies.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0538_714.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_556.jpg",
+    "image_sha256": "3b9af8b8c2aec6d911c9bd96734e88769fd618c6e82ca8a3bb0ae1f2a4357c29",
+    "base_id": "control:556:name",
+    "control_kind": "remove_name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:556:date",
+    "caption": "Orange flames are visible in the windows of a building at night on March 17, 2014.",
+    "source_query": "Retrieve an image of this news caption. Firefighters battle a fire at a garment factory outside Dhaka Bangladesh An official said firefighters have recovered more than 100 bodies.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0538_714.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_556.jpg",
+    "image_sha256": "3b9af8b8c2aec6d911c9bd96734e88769fd618c6e82ca8a3bb0ae1f2a4357c29",
+    "base_id": "control:556:base",
+    "control_kind": "date",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:556:event",
+    "caption": "Orange flames are visible in the windows of a building at night during the opening of the 2014 Global Media Forum.",
+    "source_query": "Retrieve an image of this news caption. Firefighters battle a fire at a garment factory outside Dhaka Bangladesh An official said firefighters have recovered more than 100 bodies.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0538_714.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_556.jpg",
+    "image_sha256": "3b9af8b8c2aec6d911c9bd96734e88769fd618c6e82ca8a3bb0ae1f2a4357c29",
+    "base_id": "control:556:base",
+    "control_kind": "event",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:556:precise_location",
+    "caption": "Orange flames are visible in the windows of a building at night at 1479 West Ash Street, Springfield, Illinois.",
+    "source_query": "Retrieve an image of this news caption. Firefighters battle a fire at a garment factory outside Dhaka Bangladesh An official said firefighters have recovered more than 100 bodies.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0538_714.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_556.jpg",
+    "image_sha256": "3b9af8b8c2aec6d911c9bd96734e88769fd618c6e82ca8a3bb0ae1f2a4357c29",
+    "base_id": "control:556:base",
+    "control_kind": "precise_location",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:556:later_outcome",
+    "caption": "Orange flames are visible in the windows of a building at night. Two days later, this photograph won the National Press Award.",
+    "source_query": "Retrieve an image of this news caption. Firefighters battle a fire at a garment factory outside Dhaka Bangladesh An official said firefighters have recovered more than 100 bodies.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0538_714.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_556.jpg",
+    "image_sha256": "3b9af8b8c2aec6d911c9bd96734e88769fd618c6e82ca8a3bb0ae1f2a4357c29",
+    "base_id": "control:556:base",
+    "control_kind": "later_outcome",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:556:wrong_color",
+    "caption": "Green flames are visible in the windows of a building at night.",
+    "source_query": "Retrieve an image of this news caption. Firefighters battle a fire at a garment factory outside Dhaka Bangladesh An official said firefighters have recovered more than 100 bodies.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0538_714.jpg",
+    "tags": [
+      "location",
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_556.jpg",
+    "image_sha256": "3b9af8b8c2aec6d911c9bd96734e88769fd618c6e82ca8a3bb0ae1f2a4357c29",
+    "base_id": "control:556:base",
+    "control_kind": "wrong_color",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:707:base",
+    "caption": "A group of people stand behind a green railing.",
+    "source_query": "Retrieve an image of this news caption. In 2007 they attended the 133rd Kentucky Derby at Churchill Downs in Louisville The queen has bred and owned thoroughbreds for most of her life Her horse Estimate won the Ascot Gold Cup in 2013.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0324_978.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      353,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_707.jpg",
+    "image_sha256": "9633c898e2124bc08306f0f6522f667c8eb4f5c7df5a9f9b33e0bbb80390a238",
+    "base_id": "control:707:base",
+    "control_kind": "base",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:707:name",
+    "caption": "A group of people stand behind a green railing, photographed by Evelyn Hart.",
+    "source_query": "Retrieve an image of this news caption. In 2007 they attended the 133rd Kentucky Derby at Churchill Downs in Louisville The queen has bred and owned thoroughbreds for most of her life Her horse Estimate won the Ascot Gold Cup in 2013.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0324_978.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      353,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_707.jpg",
+    "image_sha256": "9633c898e2124bc08306f0f6522f667c8eb4f5c7df5a9f9b33e0bbb80390a238",
+    "base_id": "control:707:base",
+    "control_kind": "name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:707:remove_name",
+    "caption": "A group of people stand behind a green railing.",
+    "source_query": "Retrieve an image of this news caption. In 2007 they attended the 133rd Kentucky Derby at Churchill Downs in Louisville The queen has bred and owned thoroughbreds for most of her life Her horse Estimate won the Ascot Gold Cup in 2013.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0324_978.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      353,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_707.jpg",
+    "image_sha256": "9633c898e2124bc08306f0f6522f667c8eb4f5c7df5a9f9b33e0bbb80390a238",
+    "base_id": "control:707:name",
+    "control_kind": "remove_name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:707:date",
+    "caption": "A group of people stand behind a green railing on March 17, 2014.",
+    "source_query": "Retrieve an image of this news caption. In 2007 they attended the 133rd Kentucky Derby at Churchill Downs in Louisville The queen has bred and owned thoroughbreds for most of her life Her horse Estimate won the Ascot Gold Cup in 2013.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0324_978.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      353,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_707.jpg",
+    "image_sha256": "9633c898e2124bc08306f0f6522f667c8eb4f5c7df5a9f9b33e0bbb80390a238",
+    "base_id": "control:707:base",
+    "control_kind": "date",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:707:event",
+    "caption": "A group of people stand behind a green railing during the opening of the 2014 Global Media Forum.",
+    "source_query": "Retrieve an image of this news caption. In 2007 they attended the 133rd Kentucky Derby at Churchill Downs in Louisville The queen has bred and owned thoroughbreds for most of her life Her horse Estimate won the Ascot Gold Cup in 2013.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0324_978.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      353,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_707.jpg",
+    "image_sha256": "9633c898e2124bc08306f0f6522f667c8eb4f5c7df5a9f9b33e0bbb80390a238",
+    "base_id": "control:707:base",
+    "control_kind": "event",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:707:precise_location",
+    "caption": "A group of people stand behind a green railing at 1479 West Ash Street, Springfield, Illinois.",
+    "source_query": "Retrieve an image of this news caption. In 2007 they attended the 133rd Kentucky Derby at Churchill Downs in Louisville The queen has bred and owned thoroughbreds for most of her life Her horse Estimate won the Ascot Gold Cup in 2013.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0324_978.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      353,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_707.jpg",
+    "image_sha256": "9633c898e2124bc08306f0f6522f667c8eb4f5c7df5a9f9b33e0bbb80390a238",
+    "base_id": "control:707:base",
+    "control_kind": "precise_location",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:707:later_outcome",
+    "caption": "A group of people stand behind a green railing. Two days later, this photograph won the National Press Award.",
+    "source_query": "Retrieve an image of this news caption. In 2007 they attended the 133rd Kentucky Derby at Churchill Downs in Louisville The queen has bred and owned thoroughbreds for most of her life Her horse Estimate won the Ascot Gold Cup in 2013.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0324_978.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      353,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_707.jpg",
+    "image_sha256": "9633c898e2124bc08306f0f6522f667c8eb4f5c7df5a9f9b33e0bbb80390a238",
+    "base_id": "control:707:base",
+    "control_kind": "later_outcome",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:707:wrong_color",
+    "caption": "A group of people stand behind a bright orange railing.",
+    "source_query": "Retrieve an image of this news caption. In 2007 they attended the 133rd Kentucky Derby at Churchill Downs in Louisville The queen has bred and owned thoroughbreds for most of her life Her horse Estimate won the Ascot Gold Cup in 2013.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0324_978.jpg",
+    "tags": [
+      "date",
+      "location",
+      "entity"
+    ],
+    "selection": "targeted:date",
+    "original_size": [
+      353,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_707.jpg",
+    "image_sha256": "9633c898e2124bc08306f0f6522f667c8eb4f5c7df5a9f9b33e0bbb80390a238",
+    "base_id": "control:707:base",
+    "control_kind": "wrong_color",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:545:base",
+    "caption": "A small blue and white aircraft flies above fields.",
+    "source_query": "Retrieve an image of this news caption. The Terrafugia Transition received an exemption from the Federal Aviation Administration to be classified as a light sport aircraft.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0119_966.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      341,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_545.jpg",
+    "image_sha256": "3aeeadd300a657e25a91533f971800c30aec761ec6e5601b812298bcd4072938",
+    "base_id": "control:545:base",
+    "control_kind": "base",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:545:name",
+    "caption": "A small blue and white aircraft flies above fields, photographed by Evelyn Hart.",
+    "source_query": "Retrieve an image of this news caption. The Terrafugia Transition received an exemption from the Federal Aviation Administration to be classified as a light sport aircraft.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0119_966.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      341,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_545.jpg",
+    "image_sha256": "3aeeadd300a657e25a91533f971800c30aec761ec6e5601b812298bcd4072938",
+    "base_id": "control:545:base",
+    "control_kind": "name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:545:remove_name",
+    "caption": "A small blue and white aircraft flies above fields.",
+    "source_query": "Retrieve an image of this news caption. The Terrafugia Transition received an exemption from the Federal Aviation Administration to be classified as a light sport aircraft.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0119_966.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      341,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_545.jpg",
+    "image_sha256": "3aeeadd300a657e25a91533f971800c30aec761ec6e5601b812298bcd4072938",
+    "base_id": "control:545:name",
+    "control_kind": "remove_name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:545:date",
+    "caption": "A small blue and white aircraft flies above fields on March 17, 2014.",
+    "source_query": "Retrieve an image of this news caption. The Terrafugia Transition received an exemption from the Federal Aviation Administration to be classified as a light sport aircraft.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0119_966.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      341,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_545.jpg",
+    "image_sha256": "3aeeadd300a657e25a91533f971800c30aec761ec6e5601b812298bcd4072938",
+    "base_id": "control:545:base",
+    "control_kind": "date",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:545:event",
+    "caption": "A small blue and white aircraft flies above fields during the opening of the 2014 Global Media Forum.",
+    "source_query": "Retrieve an image of this news caption. The Terrafugia Transition received an exemption from the Federal Aviation Administration to be classified as a light sport aircraft.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0119_966.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      341,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_545.jpg",
+    "image_sha256": "3aeeadd300a657e25a91533f971800c30aec761ec6e5601b812298bcd4072938",
+    "base_id": "control:545:base",
+    "control_kind": "event",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:545:precise_location",
+    "caption": "A small blue and white aircraft flies above fields at 1479 West Ash Street, Springfield, Illinois.",
+    "source_query": "Retrieve an image of this news caption. The Terrafugia Transition received an exemption from the Federal Aviation Administration to be classified as a light sport aircraft.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0119_966.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      341,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_545.jpg",
+    "image_sha256": "3aeeadd300a657e25a91533f971800c30aec761ec6e5601b812298bcd4072938",
+    "base_id": "control:545:base",
+    "control_kind": "precise_location",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:545:later_outcome",
+    "caption": "A small blue and white aircraft flies above fields. Two days later, this photograph won the National Press Award.",
+    "source_query": "Retrieve an image of this news caption. The Terrafugia Transition received an exemption from the Federal Aviation Administration to be classified as a light sport aircraft.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0119_966.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      341,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_545.jpg",
+    "image_sha256": "3aeeadd300a657e25a91533f971800c30aec761ec6e5601b812298bcd4072938",
+    "base_id": "control:545:base",
+    "control_kind": "later_outcome",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:545:wrong_color",
+    "caption": "A small bright red aircraft flies above fields.",
+    "source_query": "Retrieve an image of this news caption. The Terrafugia Transition received an exemption from the Federal Aviation Administration to be classified as a light sport aircraft.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0119_966.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "random",
+    "original_size": [
+      341,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_545.jpg",
+    "image_sha256": "3aeeadd300a657e25a91533f971800c30aec761ec6e5601b812298bcd4072938",
+    "base_id": "control:545:base",
+    "control_kind": "wrong_color",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:258:base",
+    "caption": "A woman wearing sunglasses and a black shirt stands outdoors.",
+    "source_query": "Retrieve an image of this news caption. The female CIA spotter behind the SEAL team s Osama bin Laden raid has been passed over for promotion shocking her colleagues At left Maya as portrayed by Jessica Chastain in the movie Read the story.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0273_908.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_258.jpg",
+    "image_sha256": "3fadb3f3f93eb57432fdcc6b1c748c0fe83622007423d7936bb8cb549b9dad88",
+    "base_id": "control:258:base",
+    "control_kind": "base",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:258:name",
+    "caption": "A woman wearing sunglasses and a black shirt stands outdoors, photographed by Evelyn Hart.",
+    "source_query": "Retrieve an image of this news caption. The female CIA spotter behind the SEAL team s Osama bin Laden raid has been passed over for promotion shocking her colleagues At left Maya as portrayed by Jessica Chastain in the movie Read the story.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0273_908.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_258.jpg",
+    "image_sha256": "3fadb3f3f93eb57432fdcc6b1c748c0fe83622007423d7936bb8cb549b9dad88",
+    "base_id": "control:258:base",
+    "control_kind": "name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:258:remove_name",
+    "caption": "A woman wearing sunglasses and a black shirt stands outdoors.",
+    "source_query": "Retrieve an image of this news caption. The female CIA spotter behind the SEAL team s Osama bin Laden raid has been passed over for promotion shocking her colleagues At left Maya as portrayed by Jessica Chastain in the movie Read the story.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0273_908.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_258.jpg",
+    "image_sha256": "3fadb3f3f93eb57432fdcc6b1c748c0fe83622007423d7936bb8cb549b9dad88",
+    "base_id": "control:258:name",
+    "control_kind": "remove_name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:258:date",
+    "caption": "A woman wearing sunglasses and a black shirt stands outdoors on March 17, 2014.",
+    "source_query": "Retrieve an image of this news caption. The female CIA spotter behind the SEAL team s Osama bin Laden raid has been passed over for promotion shocking her colleagues At left Maya as portrayed by Jessica Chastain in the movie Read the story.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0273_908.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_258.jpg",
+    "image_sha256": "3fadb3f3f93eb57432fdcc6b1c748c0fe83622007423d7936bb8cb549b9dad88",
+    "base_id": "control:258:base",
+    "control_kind": "date",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:258:event",
+    "caption": "A woman wearing sunglasses and a black shirt stands outdoors during the opening of the 2014 Global Media Forum.",
+    "source_query": "Retrieve an image of this news caption. The female CIA spotter behind the SEAL team s Osama bin Laden raid has been passed over for promotion shocking her colleagues At left Maya as portrayed by Jessica Chastain in the movie Read the story.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0273_908.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_258.jpg",
+    "image_sha256": "3fadb3f3f93eb57432fdcc6b1c748c0fe83622007423d7936bb8cb549b9dad88",
+    "base_id": "control:258:base",
+    "control_kind": "event",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:258:precise_location",
+    "caption": "A woman wearing sunglasses and a black shirt stands outdoors at 1479 West Ash Street, Springfield, Illinois.",
+    "source_query": "Retrieve an image of this news caption. The female CIA spotter behind the SEAL team s Osama bin Laden raid has been passed over for promotion shocking her colleagues At left Maya as portrayed by Jessica Chastain in the movie Read the story.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0273_908.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_258.jpg",
+    "image_sha256": "3fadb3f3f93eb57432fdcc6b1c748c0fe83622007423d7936bb8cb549b9dad88",
+    "base_id": "control:258:base",
+    "control_kind": "precise_location",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:258:later_outcome",
+    "caption": "A woman wearing sunglasses and a black shirt stands outdoors. Two days later, this photograph won the National Press Award.",
+    "source_query": "Retrieve an image of this news caption. The female CIA spotter behind the SEAL team s Osama bin Laden raid has been passed over for promotion shocking her colleagues At left Maya as portrayed by Jessica Chastain in the movie Read the story.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0273_908.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_258.jpg",
+    "image_sha256": "3fadb3f3f93eb57432fdcc6b1c748c0fe83622007423d7936bb8cb549b9dad88",
+    "base_id": "control:258:base",
+    "control_kind": "later_outcome",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:258:wrong_color",
+    "caption": "A woman wearing sunglasses and a bright yellow shirt stands outdoors.",
+    "source_query": "Retrieve an image of this news caption. The female CIA spotter behind the SEAL team s Osama bin Laden raid has been passed over for promotion shocking her colleagues At left Maya as portrayed by Jessica Chastain in the movie Read the story.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0273_908.jpg",
+    "tags": [
+      "entity"
+    ],
+    "selection": "targeted:entity",
+    "original_size": [
+      384,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_258.jpg",
+    "image_sha256": "3fadb3f3f93eb57432fdcc6b1c748c0fe83622007423d7936bb8cb549b9dad88",
+    "base_id": "control:258:base",
+    "control_kind": "wrong_color",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:254:base",
+    "caption": "A woman in a grey dress stands near photographers.",
+    "source_query": "Retrieve an image of this news caption. Daisy Ridley arrives at the 88th Oscars at the Dolby Theatre in Hollywood Calif.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0576_451.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      385,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_254.jpg",
+    "image_sha256": "2824726b113318450e0f6c9c7492d3056ed0154b0f9390f0794193601739aba7",
+    "base_id": "control:254:base",
+    "control_kind": "base",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:254:name",
+    "caption": "A woman in a grey dress stands near photographers, photographed by Evelyn Hart.",
+    "source_query": "Retrieve an image of this news caption. Daisy Ridley arrives at the 88th Oscars at the Dolby Theatre in Hollywood Calif.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0576_451.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      385,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_254.jpg",
+    "image_sha256": "2824726b113318450e0f6c9c7492d3056ed0154b0f9390f0794193601739aba7",
+    "base_id": "control:254:base",
+    "control_kind": "name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:254:remove_name",
+    "caption": "A woman in a grey dress stands near photographers.",
+    "source_query": "Retrieve an image of this news caption. Daisy Ridley arrives at the 88th Oscars at the Dolby Theatre in Hollywood Calif.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0576_451.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      385,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_254.jpg",
+    "image_sha256": "2824726b113318450e0f6c9c7492d3056ed0154b0f9390f0794193601739aba7",
+    "base_id": "control:254:name",
+    "control_kind": "remove_name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:254:date",
+    "caption": "A woman in a grey dress stands near photographers on March 17, 2014.",
+    "source_query": "Retrieve an image of this news caption. Daisy Ridley arrives at the 88th Oscars at the Dolby Theatre in Hollywood Calif.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0576_451.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      385,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_254.jpg",
+    "image_sha256": "2824726b113318450e0f6c9c7492d3056ed0154b0f9390f0794193601739aba7",
+    "base_id": "control:254:base",
+    "control_kind": "date",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:254:event",
+    "caption": "A woman in a grey dress stands near photographers during the opening of the 2014 Global Media Forum.",
+    "source_query": "Retrieve an image of this news caption. Daisy Ridley arrives at the 88th Oscars at the Dolby Theatre in Hollywood Calif.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0576_451.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      385,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_254.jpg",
+    "image_sha256": "2824726b113318450e0f6c9c7492d3056ed0154b0f9390f0794193601739aba7",
+    "base_id": "control:254:base",
+    "control_kind": "event",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:254:precise_location",
+    "caption": "A woman in a grey dress stands near photographers at 1479 West Ash Street, Springfield, Illinois.",
+    "source_query": "Retrieve an image of this news caption. Daisy Ridley arrives at the 88th Oscars at the Dolby Theatre in Hollywood Calif.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0576_451.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      385,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_254.jpg",
+    "image_sha256": "2824726b113318450e0f6c9c7492d3056ed0154b0f9390f0794193601739aba7",
+    "base_id": "control:254:base",
+    "control_kind": "precise_location",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:254:later_outcome",
+    "caption": "A woman in a grey dress stands near photographers. Two days later, this photograph won the National Press Award.",
+    "source_query": "Retrieve an image of this news caption. Daisy Ridley arrives at the 88th Oscars at the Dolby Theatre in Hollywood Calif.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0576_451.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      385,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_254.jpg",
+    "image_sha256": "2824726b113318450e0f6c9c7492d3056ed0154b0f9390f0794193601739aba7",
+    "base_id": "control:254:base",
+    "control_kind": "later_outcome",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:254:wrong_color",
+    "caption": "A woman in a bright red dress stands near photographers.",
+    "source_query": "Retrieve an image of this news caption. Daisy Ridley arrives at the 88th Oscars at the Dolby Theatre in Hollywood Calif.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0576_451.jpg",
+    "tags": [
+      "location",
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      385,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_254.jpg",
+    "image_sha256": "2824726b113318450e0f6c9c7492d3056ed0154b0f9390f0794193601739aba7",
+    "base_id": "control:254:base",
+    "control_kind": "wrong_color",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:703:base",
+    "caption": "A man wearing glasses and a dark suit gestures with his hands.",
+    "source_query": "Retrieve an image of this news caption. Bernie Sanders speaks.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0265_161.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      375,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_703.jpg",
+    "image_sha256": "8bcb923c688f646369d0acf437019089be44c125737d265575bc3f66f1bbe9de",
+    "base_id": "control:703:base",
+    "control_kind": "base",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:703:name",
+    "caption": "A man wearing glasses and a dark suit gestures with his hands, photographed by Evelyn Hart.",
+    "source_query": "Retrieve an image of this news caption. Bernie Sanders speaks.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0265_161.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      375,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_703.jpg",
+    "image_sha256": "8bcb923c688f646369d0acf437019089be44c125737d265575bc3f66f1bbe9de",
+    "base_id": "control:703:base",
+    "control_kind": "name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:703:remove_name",
+    "caption": "A man wearing glasses and a dark suit gestures with his hands.",
+    "source_query": "Retrieve an image of this news caption. Bernie Sanders speaks.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0265_161.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      375,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_703.jpg",
+    "image_sha256": "8bcb923c688f646369d0acf437019089be44c125737d265575bc3f66f1bbe9de",
+    "base_id": "control:703:name",
+    "control_kind": "remove_name",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:703:date",
+    "caption": "A man wearing glasses and a dark suit gestures with his hands on March 17, 2014.",
+    "source_query": "Retrieve an image of this news caption. Bernie Sanders speaks.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0265_161.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      375,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_703.jpg",
+    "image_sha256": "8bcb923c688f646369d0acf437019089be44c125737d265575bc3f66f1bbe9de",
+    "base_id": "control:703:base",
+    "control_kind": "date",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:703:event",
+    "caption": "A man wearing glasses and a dark suit gestures with his hands during the opening of the 2014 Global Media Forum.",
+    "source_query": "Retrieve an image of this news caption. Bernie Sanders speaks.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0265_161.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      375,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_703.jpg",
+    "image_sha256": "8bcb923c688f646369d0acf437019089be44c125737d265575bc3f66f1bbe9de",
+    "base_id": "control:703:base",
+    "control_kind": "event",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:703:precise_location",
+    "caption": "A man wearing glasses and a dark suit gestures with his hands at 1479 West Ash Street, Springfield, Illinois.",
+    "source_query": "Retrieve an image of this news caption. Bernie Sanders speaks.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0265_161.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      375,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_703.jpg",
+    "image_sha256": "8bcb923c688f646369d0acf437019089be44c125737d265575bc3f66f1bbe9de",
+    "base_id": "control:703:base",
+    "control_kind": "precise_location",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:703:later_outcome",
+    "caption": "A man wearing glasses and a dark suit gestures with his hands. Two days later, this photograph won the National Press Award.",
+    "source_query": "Retrieve an image of this news caption. Bernie Sanders speaks.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0265_161.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      375,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_703.jpg",
+    "image_sha256": "8bcb923c688f646369d0acf437019089be44c125737d265575bc3f66f1bbe9de",
+    "base_id": "control:703:base",
+    "control_kind": "later_outcome",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  },
+  {
+    "id": "control:703:wrong_color",
+    "caption": "A man wearing glasses and a bright yellow suit gestures with his hands.",
+    "source_query": "Retrieve an image of this news caption. Bernie Sanders speaks.\n",
+    "archive_path": "VisualNews_t2i/washington_post_images_0265_161.jpg",
+    "tags": [
+      "entity",
+      "short_visual_candidate"
+    ],
+    "selection": "random",
+    "original_size": [
+      375,
+      256
+    ],
+    "image": "reports\\visualnews_judge_pilot\\images\\VisualNews_t2i_703.jpg",
+    "image_sha256": "8bcb923c688f646369d0acf437019089be44c125737d265575bc3f66f1bbe9de",
+    "base_id": "control:703:base",
+    "control_kind": "wrong_color",
+    "intervention_only": true,
+    "inspection": "Codex visual review of contact_0.jpg; visible color checked before model controls"
+  }
+]

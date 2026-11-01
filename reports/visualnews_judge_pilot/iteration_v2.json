@@ -1,0 +1,12 @@
+{
+  "changes": [
+    "credit positive visual propositions before contextual penalty",
+    "source credits are provenance, not visual descriptions",
+    "explicit OCR and landmark evidence rules",
+    "mismatch requires positive conflicting evidence",
+    "native schema-constrained output"
+  ],
+  "reason": "v1 overcredits identity/source provenance in several manually inspected cases and undercredits concrete scenes; raw JSON validity differs greatly across strategies.",
+  "design": "Two revised strategies retain common scales and schema. Structured decoding is a separate execution change: do not attribute improved JSON validity solely to prompt wording.",
+  "evaluation": "All variants use identical 360 natural pairs; 64 curated controls; three draws on the same 100 records. Exploratory diagnostics, not a blinded holdout accuracy claim."
+}

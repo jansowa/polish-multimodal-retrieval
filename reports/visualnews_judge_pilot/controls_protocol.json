@@ -1,0 +1,10 @@
+{
+  "n_images": 8,
+  "n_captions": 64,
+  "primary_checks": [
+    "external context strictly increases for date, event, precise location, later outcome versus clean visual base",
+    "removing an unverifiable named photographer does not lower visual grounding",
+    "wrong visible color creates mismatch when clean base has none"
+  ],
+  "caveat": "Controls are curated development diagnostics, not a blinded accuracy benchmark. Synthetic event/date/location claims are unsupported, not presumed visually false."
+}

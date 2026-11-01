@@ -1,0 +1,384 @@
+{
+  "snapshot_at": "2026-10-20T18:02:19.184197+00:00",
+  "run_id": "B_taxonomy_v3-5daebe83778a",
+  "completed": 1813,
+  "eligible_pairs": 283012,
+  "total_captions": 537568,
+  "without_verified_image": 254556,
+  "progress_fraction": 0.006406088787754583,
+  "grounding_counts": {
+    "0": 368,
+    "1": 641,
+    "2": 637,
+    "3": 99,
+    "4": 68
+  },
+  "grounding_percent": {
+    "0": 20.29784886927744,
+    "1": 35.3557639271925,
+    "2": 35.13513513513514,
+    "3": 5.4605626034197465,
+    "4": 3.750689464975179
+  },
+  "caption_types": {
+    "mostly_contextual": 254,
+    "event_caption": 540,
+    "visual_description_plus_context": 500,
+    "entity_caption": 447,
+    "visual_description": 62,
+    "noisy_or_mismatched": 10
+  },
+  "external_context": {
+    "3": 1130,
+    "2": 474,
+    "0": 95,
+    "1": 114
+  },
+  "groups": {
+    "keep_original_vg_at_least_3_no_mismatch": {
+      "n": 167,
+      "percent": 9.211252068394925
+    },
+    "recycling_candidates_vg_1_2_no_mismatch": {
+      "n": 1263,
+      "percent": 69.66354109211252
+    },
+    "vg_0_no_mismatch": {
+      "n": 359,
+      "percent": 19.801434087148372
+    },
+    "manual_review_mismatch": {
+      "n": 24,
+      "percent": 1.323772752344181
+    }
+  },
+  "hypothetical_policies": {
+    "strict_reject_original_vg_below_3_or_mismatch": {
+      "n": 1646,
+      "percent": 90.78874793160507
+    },
+    "moderate_reject_original_vg_below_2_or_mismatch": {
+      "n": 1011,
+      "percent": 55.76392719249862
+    },
+    "vg_0_only": {
+      "n": 368,
+      "percent": 20.29784886927744
+    }
+  },
+  "source_distribution": {
+    "washington_post": 1813
+  },
+  "shard_distribution": {
+    "corpus-test-00000.parquet": 1813
+  },
+  "examples": [
+    {
+      "id": "MBeirvisualnews:0:3",
+      "caption": "Veterans from the Kansas Honor Flight watch as the Sentinels begin the Changing of the Guard ceremony.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0433/581.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 1,
+      "result": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows two uniformed guards standing at attention and a group of older men, some in wheelchairs, watching them, which supports the visual description of a ceremony and spectators.",
+        "unsupported_information": [
+          "Kansas Honor Flight",
+          "Sentinels",
+          "Changing of the Guard ceremony"
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:7",
+      "caption": "Civilians who fled the recent fighting stack their belongings up outside the gate of the United Nations Mission in South Sudan.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0526/319.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 3,
+      "result": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a large pile of miscellaneous belongings and people in a dry, outdoor setting, but there is no visible United Nations gate, flag, or signage to support the specific location or identity of the people.",
+        "unsupported_information": [
+          "Civilians who fled the recent fighting",
+          "United Nations Mission in South Sudan",
+          "outside the gate"
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:9",
+      "caption": "US first lady Michelle Obama enters the East Room for a session of a Fashion Education Workshop at the White House on Oct 8 in Washington DC.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0510/613.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 4,
+      "result": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a woman resembling Michelle Obama walking through a formal room with red carpeting and gold-framed portraits, consistent with a White House interior, but the specific event, date, and location are not visible.",
+        "unsupported_information": [
+          "US first lady",
+          "Michelle Obama",
+          "East Room",
+          "session of a Fashion Education Workshop",
+          "White House",
+          "Oct 8",
+          "Washington DC"
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:19",
+      "caption": "Prince William left returns from an active ambulance sortie ahead of the Queen s visit to the new East Anglian Air Ambulance Base at Cambridge Airport in Cambridge England.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0512/847.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 9,
+      "result": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two men in high-visibility jackets walking near a yellow helicopter, but the specific identity of Prince William and the location of Cambridge Airport are not visually verifiable.",
+        "unsupported_information": [
+          "Prince William",
+          "active ambulance sortie",
+          "Queen's visit",
+          "East Anglian Air Ambulance Base",
+          "Cambridge Airport",
+          "Cambridge England"
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:21",
+      "caption": "Investigators and onlookers gather after a security guard at the Family Research Council was shot and wounded in Washington.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0453/231.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 10,
+      "result": {
+        "visual_grounding": 2,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.8,
+        "evidence": "A street scene shows a white police car, yellow crime-scene tape, and a crowd of onlookers and people with cameras, consistent with a post-incident gathering.",
+        "unsupported_information": [
+          "the specific event (a security guard at the Family Research Council was shot and wounded)",
+          "the location (Washington)"
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:26",
+      "caption": "After Aiken s runnerup turn on American Idol he launched a performing career that took him to the American Music Awards in 2003 pictured to stadiums and to Broadway.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0566/849.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 12,
+      "result": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "entity_caption",
+        "confidence": 0.9,
+        "evidence": "A person in a light patterned jacket and dark shirt is singing into a microphone on a stage, but no text or distinctive landmarks identify the individual, the 2003 American Music Awards, or any specific venue.",
+        "unsupported_information": [
+          "identity as Aiken",
+          "being American Idol runner-up",
+          "launching a performing career",
+          "performing at the American Music Awards in 2003",
+          "performing in stadiums",
+          "performing on Broadway"
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:40",
+      "caption": "Ivanka Trump waits for the start of the third presidential debate at the Thomas Mack Center in Las Vegas.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0208/623.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 19,
+      "result": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows a blonde woman in a light blue dress sitting in an audience, but the specific identity, event (third debate), and location (Thomas Mack Center) are not visually verifiable.",
+        "unsupported_information": [
+          "Ivanka Trump",
+          "third presidential debate",
+          "Thomas Mack Center",
+          "Las Vegas"
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:44",
+      "caption": "People protest the Confederate flag flying in front of the South Carolina State House in Columbia on June 20 2015.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0225/727.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 21,
+      "result": {
+        "visual_grounding": 2,
+        "external_context_dependency": 2,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": true,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "The image shows a protest with a sign reading 'South Carolina compromised: black lives compromised' and a domed building in the background, but the Confederate flag mentioned in the caption is not visible.",
+        "unsupported_information": [
+          "Confederate flag flying",
+          "June 20 2015"
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:48",
+      "caption": "Katie Ledecky swims in the 200meter freestyle prelims during the 2014 US National Championships in Irvine Calif.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0165/663.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 23,
+      "result": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "A swimmer in a pool is performing a freestyle stroke with goggles and a cap, but no text or landmarks identify the person, event, year, or location.",
+        "unsupported_information": [
+          "Katie Ledecky",
+          "200meter freestyle prelims",
+          "2014 US National Championships",
+          "Irvine, Calif."
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:46",
+      "caption": "It sounded like a boom like something crashed into a building said Ali Jalloh 27 who saw a big chunk of concrete coming down from the pedestrian bridge Wednesday.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0436/200.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 22,
+      "result": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": false,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "mostly_contextual",
+        "confidence": 0.95,
+        "evidence": "The image shows a worker on a ladder near a bridge structure, but the caption describes a crash, falling concrete, and a specific witness (Ali Jalloh) which are not visible.",
+        "unsupported_information": [
+          "sounded like a boom",
+          "something crashed into a building",
+          "Ali Jalloh 27",
+          "big chunk of concrete coming down",
+          "Wednesday"
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:52",
+      "caption": "Palestinians wait hoping to be given the permission to cross into Egypt at the Rafah crossing between Egypt and the southern Gaza Strip in late August as a ceasefire ended two months of bloody fighting SAID KHATIBAFPGetty Images.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0402/925.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 25,
+      "result": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "incidental",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.95,
+        "evidence": "The image shows two men standing near yellow taxis in front of a barbed wire fence, which aligns with the visual description of waiting, but the specific location (Rafah), nationality (Palestinians), and historical context (ceasefire) are not visible.",
+        "unsupported_information": [
+          "Palestinians",
+          "Rafah crossing",
+          "between Egypt and the southern Gaza Strip",
+          "late August",
+          "ceasefire ended two months of bloody fighting",
+          "SAID KHATIB/AFP/Getty Images"
+        ]
+      }
+    },
+    {
+      "id": "MBeirvisualnews:0:72",
+      "caption": "Hillary Clinton former Secretary of State and 2016 Democratic presidential candidate speaks during a Democratic Town Hall event in Des Moines Iowa Jan 25 2016.",
+      "image_path": "mbeir_images/visualnews_images/washington_post/images/0217/719.jpg",
+      "shard": "C:\\Users\\jsowa\\benchmark-translations\\visualnews-image-cache\\corpus-test-00000.parquet",
+      "row_index": 35,
+      "result": {
+        "visual_grounding": 1,
+        "external_context_dependency": 3,
+        "named_entity_dependency": "essential",
+        "event_or_temporal_context": true,
+        "location_context_not_visually_verifiable": true,
+        "ocr_dependency": false,
+        "image_caption_mismatch": false,
+        "caption_type": "event_caption",
+        "confidence": 0.9,
+        "evidence": "A woman in a red jacket is gesturing with both hands in front of a blue-lit stage and blurred audience, but the specific identity, event, location, and date are not visually verifiable.",
+        "unsupported_information": [
+          "Hillary Clinton",
+          "former Secretary of State",
+          "2016 Democratic presidential candidate",
+          "Democratic Town Hall event",
+          "Des Moines Iowa",
+          "Jan 25 2016"
+        ]
+      }
+    }
+  ],
+  "caveat": "Queue ordered by image shard and row, not a random sample. Recycling eligibility is unmeasured; candidates are not confirmed salvageable. No filtering performed."
+}

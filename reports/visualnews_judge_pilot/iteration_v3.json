@@ -1,0 +1,11 @@
+{
+  "reason": "Manual inspection of all 14 natural v2 mismatch candidates exposed unsupported inferences, reflection/cutout errors and linguistic/geographic misreadings.",
+  "changes": [
+    "explicit positive contradiction threshold",
+    "reflection/cutout/sketch/occlusion audit",
+    "no language or geographic inference as contradiction",
+    "unusable assets yield insufficient evidence rather than semantic mismatch"
+  ],
+  "evaluation": "Same 360 pairs, 64 controls and three draws on fixed 100-record subset; nine adjudicable natural false-alarm cases plus five ambiguous/unusable cases. These are tuning diagnostics, not independent test accuracy.",
+  "strategy": "Refine B, the v2 strategy with lower distance to the 60 manual grounding intervals and no severe interval errors. Stop after this v3 iteration and report remaining errors."
+}

@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-31T12:54:16.943401+00:00",
+  "unchanged_files": {
+    "reports/balanced_inference_config.json": "7c80a346fdc13a67ab1a7ce4bb360b913b7f9cbcfce64d5d092d63d8809f6242",
+    "src/pl_mmb_collection/sources/rate_limit.py": "e9c50b0d4163367fd002a6e34c34adb6337f578132f9e387b8f2dd24b1c74d93",
+    "src/pl_mmb_collection/sources/http.py": "8565c63e22fc1c759b5fbef569ad89298d5b98fa390d7b90a41915c8f729491f"
+  },
+  "allocation": {
+    "total": 30,
+    "visualnews_enabled": true,
+    "wikimedia_enabled": true,
+    "mode": "wiki_priority_elastic",
+    "shares": {
+      "visualnews": 6,
+      "wikimedia": 24
+    },
+    "work_conserving": true,
+    "updated_at": "2026-10-30T23:46:23.9200728Z"
+  }
+}
