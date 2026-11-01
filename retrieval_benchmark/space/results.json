@@ -6741,6 +6741,27 @@
       "revision": "a33161305bb0c4154173fdb306de6a224440f616",
       "role": "reference"
     },
+    "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8": {
+      "efficiency": null,
+      "label": "nomic-embed-vision-v1.5",
+      "license": {
+        "display": "apache-2.0",
+        "spdx": "apache-2.0",
+        "status": "reported",
+        "url": "https://huggingface.co/nomic-ai/nomic-embed-vision-v1.5/blob/e3a725bce72db07ca4adb1d83da08903f3ee02f8/README.md"
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 0,
+        "text": 136731648,
+        "total": 229678336,
+        "vision": 92946688
+      },
+      "repository": "nomic-ai/nomic-embed-vision-v1.5",
+      "representative": true,
+      "revision": "e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "role": "reference"
+    },
     "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df": {
       "efficiency": {
         "cpu_threads": 2,
@@ -33369,6 +33390,580 @@
           "prefix": "",
           "truncation_fraction": 0.007884972170686457
         }
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.2058332543532356,
+          "ndcg@10": 0.22140910886357976,
+          "recall@1": 0.1486146095717884,
+          "recall@10": 0.3198992443324937,
+          "recall@5": 0.24433249370277077
+        },
+        "t2i": {
+          "mrr": 0.1676359885984293,
+          "ndcg@10": 0.17131532043586783,
+          "recall@1": 0.10876132930513595,
+          "recall@10": 0.256797583081571,
+          "recall@5": 0.21148036253776434
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "ec0d9d5043ed482890c338ade890a5d4ea9a66a642e4c747f744dd3505a8281e",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.09716909366445238,
+          "ndcg@10": 0.11237988661024373,
+          "recall@1": 0.05128205128205128,
+          "recall@10": 0.19843924191750278,
+          "recall@5": 0.13712374581939799
+        },
+        "t2i": {
+          "mrr": 0.08464912348057863,
+          "ndcg@10": 0.09427313486184259,
+          "recall@1": 0.045707915273132664,
+          "recall@10": 0.1616499442586399,
+          "recall@5": 0.11594202898550725
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "f8b61eb8345d7c5e38326c3829ae40f54e42328d6cfc78357ba3bc7d9428acb0",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.09478925140258676,
+          "ndcg@10": 0.11134002306373213,
+          "recall@1": 0.048,
+          "recall@10": 0.2,
+          "recall@5": 0.134
+        },
+        "t2i": {
+          "mrr": 0.07919780600684131,
+          "ndcg@10": 0.09152901644559762,
+          "recall@1": 0.04,
+          "recall@10": 0.165,
+          "recall@5": 0.112
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "faa6a371e90767677e64d94469d618a26e0638ebe8b501c40254276fb235d702",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.1742358257218204,
+          "ndcg@10": 0.09940498875845588,
+          "recall@1": 0.121,
+          "recall@10": 0.281,
+          "recall@5": 0.223
+        },
+        "t2i": {
+          "mrr": 0.09729696660851354,
+          "ndcg@10": 0.10418650836649414,
+          "recall@1": 0.06261595547309833,
+          "recall@10": 0.1572356215213358,
+          "recall@5": 0.12082560296846011
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "65934d744f66cae737f0f8f4a5ffd42f2a43adfc3828f33f2f8474229cdd481a",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.15315215094108436,
+          "ndcg@10": 0.16312744386966677,
+          "recall@1": 0.114,
+          "recall@10": 0.22,
+          "recall@5": 0.1865
+        },
+        "t2i": {
+          "mrr": 0.1243086455282906,
+          "ndcg@10": 0.13408196880748155,
+          "recall@1": 0.08936595107338992,
+          "recall@10": 0.18871692461308037,
+          "recall@5": 0.15426859710434349
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "c570dd1cf84f53e53c1a94382b16b0d917ce005fd51440c6a3a891f027c391ac",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.09812758107272154,
+          "ndcg@10": 0.11238812062470349,
+          "recall@1": 0.05239687848383501,
+          "recall@10": 0.19732441471571907,
+          "recall@5": 0.12709030100334448
+        },
+        "t2i": {
+          "mrr": 0.08406669574086315,
+          "ndcg@10": 0.09626008155878886,
+          "recall@1": 0.04124860646599777,
+          "recall@10": 0.1705685618729097,
+          "recall@5": 0.11817168338907469
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "49c1e8456997298f2bf5a0ad05b048236876b53d5d9e744db59b6689d048b38f",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.11346473989665838,
+          "ndcg@10": 0.09121842935696783,
+          "recall@1": 0.0778426466499861,
+          "recall@10": 0.18154017236586045,
+          "recall@5": 0.14706700027800945
+        },
+        "t2i": {
+          "mrr": 0.05478337175869676,
+          "ndcg@10": 0.060388327416720365,
+          "recall@1": 0.03262550977359021,
+          "recall@10": 0.0946421037828716,
+          "recall@5": 0.07326676979327802
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "7a6aa28459c4bc1da8a7e40854e93d999b15f21d85dac1baa688e28d5cb51343",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.12022094164849176,
+          "ndcg@10": 0.06667109821611444,
+          "recall@1": 0.08088235294117647,
+          "recall@10": 0.20168067226890757,
+          "recall@5": 0.15336134453781514
+        },
+        "t2i": {
+          "mrr": 0.06000358220924599,
+          "ndcg@10": 0.06462966758243496,
+          "recall@1": 0.031394858828487145,
+          "recall@10": 0.10429835651074588,
+          "recall@5": 0.07943531394858828
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "591d9c4774f352978131079e9de47e4313258c0306293a46b82253f5dbb8dfe5",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.1136653093971621,
+          "ndcg@10": 0.09092199188038538,
+          "recall@1": 0.07812065610230748,
+          "recall@10": 0.18098415346121768,
+          "recall@5": 0.14484292465943843
+        },
+        "t2i": {
+          "mrr": 0.05785096527068436,
+          "ndcg@10": 0.06291254222997814,
+          "recall@1": 0.036281816903389115,
+          "recall@10": 0.09590774855857123,
+          "recall@5": 0.07354802418787794
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "065b7324d0a235202e1c711a5292794875eda6f6ffe2f6a540aab711d97982e1",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.09473753072774899,
+          "ndcg@10": 0.10958072057636499,
+          "recall@1": 0.049,
+          "recall@10": 0.195,
+          "recall@5": 0.127
+        },
+        "t2i": {
+          "mrr": 0.07921780801661933,
+          "ndcg@10": 0.09168105331903686,
+          "recall@1": 0.036,
+          "recall@10": 0.166,
+          "recall@5": 0.117
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "5ea8501f9535603da96815ec124df669b5dd1a64c526094d94db0c39f8e3eadb",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.20888271050436208,
+          "ndcg@10": 0.22006680197745238,
+          "recall@1": 0.14357682619647355,
+          "recall@10": 0.30730478589420657,
+          "recall@5": 0.25692695214105793
+        },
+        "t2i": {
+          "mrr": 0.17145635450449145,
+          "ndcg@10": 0.17652621279469044,
+          "recall@1": 0.11782477341389729,
+          "recall@10": 0.2598187311178248,
+          "recall@5": 0.19939577039274925
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "dc17c00afbbe89184df960d5679fd842ad766d877a703b512641f2ecd10677ae",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.15610867656343358,
+          "ndcg@10": 0.1675054632433853,
+          "recall@1": 0.118,
+          "recall@10": 0.229,
+          "recall@5": 0.1875
+        },
+        "t2i": {
+          "mrr": 0.12398271239880068,
+          "ndcg@10": 0.13202735035455304,
+          "recall@1": 0.08936595107338992,
+          "recall@10": 0.18272591113330006,
+          "recall@5": 0.15426859710434349
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "59ef7edf875768a3b2d80f4e0af849dae6958d72e6be9edf2307839b4779639a",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.1769312829562715,
+          "ndcg@10": 0.1020977341170344,
+          "recall@1": 0.124,
+          "recall@10": 0.286,
+          "recall@5": 0.229
+        },
+        "t2i": {
+          "mrr": 0.09585725598520432,
+          "ndcg@10": 0.10396321120891734,
+          "recall@1": 0.05890538033395176,
+          "recall@10": 0.16001855287569575,
+          "recall@5": 0.12453617810760668
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "42f8bc6cfe2fa25bb775d748875c9d18a6d9452dec4b464e6c2b843f6e47d074",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.11964224961689587,
+          "ndcg@10": 0.06698319436243005,
+          "recall@1": 0.07668067226890757,
+          "recall@10": 0.20798319327731093,
+          "recall@5": 0.15861344537815125
+        },
+        "t2i": {
+          "mrr": 0.06250499516339639,
+          "ndcg@10": 0.06742005539467619,
+          "recall@1": 0.034344711335861776,
+          "recall@10": 0.10935524652338811,
+          "recall@5": 0.08027812895069532
+        }
+      },
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "aab5b3362dd91aa8d796c171c2dad5d790659953a832b326f12926352c4e8b35",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
       }
     }
   ],
