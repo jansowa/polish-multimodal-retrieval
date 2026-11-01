@@ -1,10 +1,10 @@
 # STATUS — seria F / M
 
-Aktualizacja: 2026-11-01; sesja S00-BOOT zakończona. S00 jest bootstrapem, nie realizacją pakietu F01.
+Aktualizacja: 2026-11-01; sesja S01-F01-a zakończona jako blocked przed implementacją: checkout nie spełnia warunku czystego startu (AGENTS.md, protokół sesji pkt 4; 09 §1 pkt 4).
 
 | Pakiet | Stan | Blokery | Oczekujące bramki | Ostatnia aktualizacja | Linki (plan / raport / decyzja) |
 |---|---|---|---|---|---|
-| F01 | todo | Nie rozpoczęto; zależności sprawdzi kolejna sesja w 04. | — | 2026-11-01 | — / — / — |
+| F01 | blocked | Nieczysty checkout na starcie; nie rozpoczęto kroków protokołu/katalogu. | H-OPS-S01 (organizacyjna, nie H1–H6) | 2026-11-01 | — / [dowody](S01-F01-a-evidence.json) / [eskalacja](handoffs/S01-F01-a.md) |
 | F02 | todo | Nie rozpoczęto; zależności sprawdzi kolejna sesja w 04. | H1 | 2026-11-01 | — / — / — |
 | F03 | todo | Nie rozpoczęto; zależności sprawdzi kolejna sesja w 04. | — | 2026-11-01 | — / — / — |
 | F04 | todo | Nie rozpoczęto; zależności sprawdzi kolejna sesja w 04. | — | 2026-11-01 | — / — / — |
@@ -45,3 +45,5 @@ Następna sesja: **S01-F01-a**, wyłącznie protokół v3-F, VizWiz A/B i nowy k
 Źródło rozbieżności i zakres sprawdzenia: [audyt S00](S00-BOOT-audit.md), [agregaty i SHA źródeł](S00-BOOT-evidence.json). W domknięciu ich nie rozstrzygano.
 
 Domknięcie S00-BOOT (2026-11-01): artefakty scalono fast-forward do `master`; worktree i gałąź `f/boot` usunięto. Dalsza praca na bieżącej gałęzi głównego checkoutu, bez nowych gałęzi, worktree i PR. Wszystkie pakiety pozostają `todo`, GUARD=0, TEST=0; historyczny GUARD #0 pozostaje zapisany. Następny etap: [NEXT.md](NEXT.md).
+
+S01-F01-a: warunek czystego startu niespełniony; pełny stan i SHA w [dowodach](S01-F01-a-evidence.json). GUARD/TEST bez nowych odczytów; brak jobów tej sesji. Następny etap oczekuje na H-OPS-S01, następnie ponowienie zakresu F01 kroki 1–2; nie przechodzono do S02-F01-b.

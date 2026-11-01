@@ -7,3 +7,5 @@
 - F01: sprawdzić rozbieżność total parametrów leaderboardu względem sumy vision/text/head; bez poprawiania w S00.
 
 Rozbieżności S00 pozostają otwarte: R3 G2 tylko seed43 w leaderboardzie; PE-Core-B16 ma latencję; VN 53 794 niepotwierdzone. Szczegóły i dowody: STATUS.md / „Rozbieżności do wyjaśnienia” oraz S00-BOOT-audit.md.
+
+- H-OPS-S01: rozstrzygnąć konflikt nieczystego głównego checkoutu z warunkiem czystego startu; bez usuwania, stashowania ani commitowania cudzych zmian. Dowody: S01-F01-a-evidence.json; eskalacja: handoffs/S01-F01-a.md.

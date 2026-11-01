@@ -1,0 +1,18 @@
+{
+  "session": "S01-F01-a",
+  "date": "2026-11-01",
+  "head": "c36c5523dbf000c7f486989c26004ca4d5261118",
+  "branch": "master",
+  "initial_index_empty": true,
+  "status_path": "reports\\f_series\\S01-F01-a-start-status.txt",
+  "status_sha256": "97014b4c984c1de7706cd4f65a5b5712d9f0073a6701fb8c942297fa74a3be40",
+  "source_sha256": {
+    "AGENTS.md": "f5b78913f9cf1f6ce4b3c647fff003d0238223bec6b4b89ef0bebc796a92f96b",
+    "docs/agent_spec_f/09_PROTOKOL_SESJI_CODEX.md": "6553bb0d6987fa947c763456c5821a6c0dc4a53e56229c0edc5679e2a3fe9d9d",
+    "docs/agent_spec_f/07_OPERACJE_ARTEFAKTY.md": "bed2ec54d329f0fbe08307534b4211625712e252c392ac846b93f82fe5e86ea2",
+    "src/pl_mmb_training/holdouts.py": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3",
+    "retrieval_benchmark/catalog.json": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8",
+    "retrieval_benchmark/catalog-current.json": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010"
+  },
+  "result": "blocked: clean checkout prerequisite failed; no F01 implementation or evaluation"
+}
