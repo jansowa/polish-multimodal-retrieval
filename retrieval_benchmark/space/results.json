@@ -33965,6 +33965,110 @@
         "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
         "status": "unavailable"
       }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7901690841122209,
+          "ndcg@10": 0.7490742380103789,
+          "recall@1": 0.7000278009452321,
+          "recall@10": 0.9460661662496525,
+          "recall@5": 0.9090909090909091
+        },
+        "t2i": {
+          "mrr": 0.6855391738114207,
+          "ndcg@10": 0.7266888449053368,
+          "recall@1": 0.5821965968218253,
+          "recall@10": 0.8724511320489383,
+          "recall@5": 0.8108564196315567
+        }
+      },
+      "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "fcf625e0a57aad6f84359d85943bb2a014b25a9daba21ae752f623cf2852c7ba",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 86,
+          "mean": 19.714948671072985,
+          "prefix": "",
+          "truncation_fraction": 0.001546899170299536
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 86,
+          "mean": 19.714948671072985,
+          "prefix": "",
+          "truncation_fraction": 0.001546899170299536
+        }
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7901690841122209,
+          "ndcg@10": 0.7490742380103789,
+          "recall@1": 0.7000278009452321,
+          "recall@10": 0.9460661662496525,
+          "recall@5": 0.9090909090909091
+        },
+        "t2i": {
+          "mrr": 0.6855391738114207,
+          "ndcg@10": 0.7266888449053368,
+          "recall@1": 0.5821965968218253,
+          "recall@10": 0.8724511320489383,
+          "recall@5": 0.8108564196315567
+        }
+      },
+      "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "e8f006d3de3a8512788fd40422878d05e8f2d512ecaceb39e9fd1ccfb9f3d4ec",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 86,
+          "mean": 19.714948671072985,
+          "prefix": "",
+          "truncation_fraction": 0.001546899170299536
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 86,
+          "mean": 19.714948671072985,
+          "prefix": "",
+          "truncation_fraction": 0.001546899170299536
+        }
+      }
     }
   ],
   "schema_version": 1,
