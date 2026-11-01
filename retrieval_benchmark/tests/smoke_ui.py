@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'space'))
 from app import build_app
-from view import default_columns, default_tasks, load, organizations
+from view import default_columns, default_tasks, license_category, load, organizations
 from gradio_client import Client
 import httpx
 
@@ -19,7 +19,7 @@ def main():
         client = Client('http://127.0.0.1:7864', verbose=False)
         document = load()
         inputs = ['recall@1', 'v2_no_instructions', 'historical-native-v2', 100, False, False,
-                  default_columns(document), default_tasks(document), 0, organizations(document), [], False, True]
+                  default_columns(document), default_tasks(document), 0, organizations(document), [], 'all', False, True]
         result = client.predict(*inputs, api_name='/leaderboard')
         # Gradio versions return either a table value or a component update.
         table = lambda response: response[0].get('value', response[0])
@@ -43,14 +43,14 @@ def main():
         single = client.predict(*inputs, api_name='/leaderboard')
         assert table(single)['data'] != table(changed)['data']
         assert single[2] != changed[2]
-        inputs[11] = True
+        inputs[12] = True
         logarithmic = client.predict(*inputs, api_name='/leaderboard')
         assert 'skala logarytmiczna' in logarithmic[2]
-        inputs[12] = False
+        inputs[13] = False
         hover_only = client.predict(*inputs, api_name='/leaderboard')
         assert 'class="model-label"' not in hover_only[2]
         assert '<title>' in hover_only[2]
-        inputs[12] = True
+        inputs[13] = True
         inputs[6] = default_columns(document)
         inputs[8] = 50
         inputs[9] = ['jansowa']
@@ -65,12 +65,17 @@ def main():
         assert len(table(narrowed)['data'])==len(chosen)==2
         assert set(re.findall(r'data-model-id="([^"]+)"',narrowed[2]))==set(chosen)
         inputs[10] = []
+        inputs[11] = 'commercial'
+        commercial=client.predict(*inputs,api_name='/leaderboard')
+        commercial_ids=re.findall(r'data-model-id="([^"]+)"',commercial[2])
+        assert commercial_ids and all(license_category(mid,document['models'][mid])=='commercial' for mid in commercial_ids)
+        inputs[11] = 'all'
         inputs[9] = []
         empty = client.predict(*inputs, api_name='/leaderboard')
         assert table(empty)['data'] == []
         assert 'Brak modeli' in empty[2]
         inputs[9] = ['jansowa']
-        path = client.predict(*inputs[:11], api_name='/export_csv')
+        path = client.predict(*inputs[:12], api_name='/export_csv')
         assert Path(path).read_text(encoding='utf-8-sig').startswith('Model;Średni wynik [%]')
         print('HTTP_SMOKE_OK: table/Pareto identity, specific model picker, nearby labels, filters, toggle, CSV')
     finally:

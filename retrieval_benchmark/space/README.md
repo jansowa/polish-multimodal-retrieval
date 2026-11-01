@@ -43,6 +43,9 @@ rozmieszczane w najbliższych wolnych miejscach, z krótkimi liniami do punktów
 nie nachodzą na siebie ani na kropki. Wyszukiwany wybór konkretnych modeli nad
 wykresem pozwala ograniczyć tabelę i obie linie Pareto do małego zestawu.
 Pusty wybór modeli oznacza wszystkie spełniające pozostałe filtry.
+Filtr licencji obejmuje wszystkie, komercyjne (w tym własne checkpointy),
+niekomercyjne oraz nieustalone. Modele bez deklaracji nie są automatycznie
+oznaczane jako niekomercyjne. Filtr działa też na wykres, obie granice i CSV.
 Przy wąskim oknie można przewijać wykres poziomo. Przełącznik pozwala pozostawić
 nazwy tylko po najechaniu. Dostępna jest logarytmiczna oś rozmiaru.
 Wykres SVG nie wymaga dodatkowych pakietów ani dostępu do sieci.

@@ -2,6 +2,56 @@
 from pathlib import Path
 
 
+def require_last_token_pooling(config):
+    """Sentence Transformers 5 and 6 serialize the same pooling differently."""
+    modern = config.get('pooling_mode')
+    if modern is not None and modern != 'lasttoken':
+        raise ValueError('Author pooling is not last-token')
+    if modern != 'lasttoken' and config.get('pooling_mode_lasttoken') is not True:
+        raise ValueError('Author pooling is not last-token')
+    if any(value is True for key,value in config.items() if key.startswith('pooling_mode_') and key!='pooling_mode_lasttoken'):
+        raise ValueError('Author pooling combines multiple modes')
+
+
+def last_token_pool(hidden,mask):
+    import torch
+    if mask.ndim!=2 or hidden.shape[:2]!=mask.shape or not mask.bool().any(1).all():
+        raise ValueError('Invalid pooling attention mask')
+    last=mask.shape[1]-1-mask.flip(1).argmax(1)
+    return hidden[torch.arange(len(hidden),device=hidden.device),last]
+
+
+def smoke_encoder(encoder,destination):
+    """Tiny synthetic text/image checks in both prompt modes, not benchmark scores."""
+    import json
+    import time
+    import torch
+    from PIL import Image
+    destination=Path(destination)
+    destination.mkdir(parents=True,exist_ok=True)
+    paths=[]
+    for name,color in [('red','red'),('blue','blue')]:
+        path=destination/(name+'.png')
+        Image.new('RGB',(224,224),color).save(path)
+        paths.append(str(path))
+    started=time.monotonic()
+    if any(p.device.type!='cuda' for p in encoder.model.parameters()):
+        raise ValueError('2B smoke requires the entire encoder on CUDA')
+    checks=[]
+    for mode in ['v2_no_instructions','author_recommended']:
+        encoder.mode=mode
+        text=encoder.encode(['A red square.','Niebieski kwadrat.'])
+        vision=encoder.encode(paths,images=True)
+        if text.shape!=vision.shape or len(text)!=2:
+            raise ValueError('Text/image embedding dimensions differ')
+        checks.append(dict(mode=mode,text_shape=list(text.shape),image_shape=list(vision.shape),finite=True))
+    encoder.mode='v2_no_instructions'
+    result=dict(status='passed',checks=checks,seconds=time.monotonic()-started,all_parameters_cuda=True,
+                repository=encoder.repo,revision=encoder.revision,precision=encoder.precision)
+    (destination/'adapter-smoke.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+    return result
+
+
 class RequestedEncoder:
     def __init__(self, job, cache):
         import torch
@@ -68,11 +118,12 @@ class RequestedEncoder:
                 min_pixels=4096 if self.kind == 'qwen3' else 256*28*28,
                 max_pixels=1800*32*32 if self.kind == 'qwen3' else 1280*28*28)
             self.model.eval()
+            if not self.repo.endswith('-8B'):
+                self.model.to('cuda')
             self.text_max_length = 8192 if self.kind == 'qwen3' else 1800
             import json
             pooling = json.loads((Path(local)/'1_Pooling/config.json').read_text())
-            if not pooling.get('pooling_mode_lasttoken'):
-                raise ValueError('Author pooling is not last-token')
+            require_last_token_pooling(pooling)
             self.components.update(pooling='author last non-padding token',
                                    image_resize='native processor with author min/max pixels',
                                    cpu_offload=self.repo.endswith('-8B'))
@@ -138,8 +189,7 @@ class RequestedEncoder:
                         inputs = inputs.to('cuda')
                         hidden = self.model(**inputs, use_cache=False).last_hidden_state
                         mask = inputs['attention_mask']
-                        last = mask.shape[1]-1-mask.flip(1).argmax(1)
-                        output = hidden[torch.arange(len(batch), device=hidden.device), last]
+                        output = last_token_pool(hidden,mask)
                     else:
                         if images:
                             inputs = {k:v.cuda() for k,v in self.processor(images=opened, return_tensors='pt').items()}

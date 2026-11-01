@@ -1,0 +1,754 @@
+{
+  "amendment": "Before any inference: finalized adapters, private cleanup and no-repeat resumption tests. Failed launch before inference: D needs only 128MiB for logs; use Windows publisher; append-only export.",
+  "authorization": "Owner explicitly requested repair and evaluation of both 2B embedders; no 8B retry; serial cleanup and publication remain authorized.",
+  "baseline_results_sha256": "8fcb8fc8ce5f389bda0382d90077a9448f01a79fd01bc46d73df14b6b913559e",
+  "cleanup": "Only weight blobs in this queue private HF cache; never remove shared caches, datasets or result files.",
+  "config": {
+    "data_study_results": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/evaluation",
+    "datasets": {
+      "VN_dev": {
+        "image_manifest": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\vn_dev_protocol\\manifest.jsonl",
+        "protocol": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\vn_dev_protocol\\retrieval_protocol.json",
+        "protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74"
+      },
+      "flickr30k_pl_local_test": {
+        "image_manifest": "C:\\Users\\jsowa\\benchmark-translations\\data-ood-20261030\\B\\frozen\\flickr30k_pl_local_test\\manifest.json",
+        "protocol": "C:\\Users\\jsowa\\benchmark-translations\\data-ood-20261030\\B\\frozen\\flickr30k_pl_local_test\\retrieval_protocol.json",
+        "protocol_sha256": "2f590ee80e6f3b4d84baf0cdc51c285f10a73c862ee4600cd5221fef28e03a6e"
+      },
+      "vizwiz_pl_local_validation": {
+        "image_manifest": "C:\\Users\\jsowa\\benchmark-translations\\data-ood-20261030\\B\\frozen\\vizwiz_pl_local_validation\\manifest.json",
+        "protocol": "C:\\Users\\jsowa\\benchmark-translations\\data-ood-20261030\\B\\frozen\\vizwiz_pl_local_validation\\retrieval_protocol.json",
+        "protocol_sha256": "63725b9983e19c0bea9fb6ec22775f577e06df7f00ce5fb83de601126397f70e"
+      },
+      "wiki_native_dev": {
+        "image_manifest": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\wiki_v2\\wiki_dev.jsonl",
+        "protocol": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\wiki_v2\\retrieval_protocol.json",
+        "protocol_sha256": "7e823db150884c06b4477c09eb729d51f1a0e321e30ffa483109778cc0e9fb2f"
+      },
+      "xm3600_pl": {
+        "image_manifest": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/xm3600-20261031/manifest.jsonl",
+        "protocol": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/xm3600-20261031/retrieval_protocol.json",
+        "protocol_sha256": "76f7c71b339ee73737fa8d5daee1feb7ed6b6f858e050c75b237a78cf24fc883"
+      },
+      "xtd10_full_1k": {
+        "image_manifest": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\xtd10_v2\\full_1k.jsonl",
+        "protocol": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\xtd10_v2\\full_retrieval_protocol.json",
+        "protocol_sha256": "b11d7ffc02794cad1322269f87d70c531da0ab91e5da55ac03634dd13219e2a0"
+      },
+      "xtd10_no_overlap": {
+        "image_manifest": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\xtd10_v2\\no_overlap.jsonl",
+        "protocol": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\xtd10_v2\\clean_retrieval_protocol.json",
+        "protocol_sha256": "f824eb00d96cccfb165ed8f7e2a9a2b8159d3771a0c8b842686cdd61e87982a9"
+      }
+    },
+    "flickr_parquet": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/flickr30k/test.parquet",
+    "models": {
+      "R0_seed42": {
+        "checkpoint": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-source-ablation-v1/VN_FULL/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743",
+        "role": "project",
+        "seed": 42,
+        "trained_on_wiki": false
+      },
+      "R0_seed43": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-43/VN_FULL/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "626127451432301b1127478a3b47f2394139753c9e3f2bdb52570a44b8273776",
+        "role": "project",
+        "seed": 43,
+        "trained_on_wiki": false
+      },
+      "R0_seed44": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-44/VN_FULL/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": true,
+        "revision": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+        "role": "project",
+        "seed": 44,
+        "trained_on_wiki": false
+      },
+      "R1_seed42": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-42/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "d45ce719846c060bfa489c8fa89a9caef8ee8275ffbd2c1d75f059c85491d622",
+        "role": "project",
+        "seed": 42,
+        "trained_on_wiki": false
+      },
+      "R1_seed43": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-43/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "ab6e24c0887777da50baca820f5a10d66bf12dd398c10f83e37d656e3620ad02",
+        "role": "project",
+        "seed": 43,
+        "trained_on_wiki": false
+      },
+      "R1_seed44": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-44/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": true,
+        "revision": "6437c7234d01a88c2895399e7a3b7e1577843f6507fe79cb8b04356ac2e1dbd9",
+        "role": "project",
+        "seed": 44,
+        "trained_on_wiki": false
+      },
+      "R3_seed42": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R3/seed-42/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "ID / development",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "09e4a96224eb18e0a8ed25011258980b03865873126d8cc9d1ce565689a07a89",
+        "role": "diagnostic",
+        "seed": 42,
+        "trained_on_wiki": true
+      },
+      "R3_seed43": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R3/seed-43/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "ID / development",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "65e695e33c54d41a402e55583c2b616075ed16fcd52f39fea64d95aa4b4baeca",
+        "role": "diagnostic",
+        "seed": 43,
+        "trained_on_wiki": true
+      },
+      "R3_seed44": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R3/seed-44/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "ID / development",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": true,
+        "revision": "0cd560a39263fc165e4e7cd4949a9f8deda77ec207ff10f1e34d6d9af03d0285",
+        "role": "diagnostic",
+        "seed": 44,
+        "trained_on_wiki": true
+      },
+      "R3_wiki2_seed43": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/runs/R3/seed-43/best.pt",
+        "exposure": {
+          "VN_dev": "ID / checkpoint selection",
+          "flickr30k_pl_local_test": "source-OOD to projector; pretrained encoder exposure unknown",
+          "vizwiz_pl_local_validation": "source-OOD to projector; pretrained encoder exposure unknown",
+          "wiki_native_dev": "ID / Wiki variant selection",
+          "xm3600_pl": "held-out Open Images; pretrained encoder exposure unknown",
+          "xtd10_full_1k": "ID source COCO; known historical overlap",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "generation": 2,
+        "representative": true,
+        "revision": "094122a574d8f2322b1434bb0eb0a5d539b510c36b5cfc74c2eb140c0e1f7636",
+        "role": "project",
+        "seed": 43,
+        "trained_on_wiki": true
+      },
+      "bge-vl-base": {
+        "download_budget_bytes": 299289098,
+        "repository": "BAAI/BGE-VL-base",
+        "revision": "cc4c733ed997dbee4ac70ccffb911e70c9c24b93",
+        "role": "reference"
+      },
+      "clip-b32-pl": {
+        "download_budget_bytes": 828850679,
+        "repository": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384",
+        "revision": "f889319e4605da4342341fdb62ad39386396d6e1",
+        "role": "reference"
+      },
+      "clip-b32-pl-32768": {
+        "download_budget_bytes": 879182383,
+        "repository": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768",
+        "revision": "62436cd6cd74f072dda57463b6916c95324e5b85",
+        "role": "reference"
+      },
+      "embeddinggemma-2": {
+        "download_budget_bytes": 1488915288,
+        "repository": "google/embeddinggemma-2",
+        "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+        "role": "reference"
+      },
+      "fashion-siglip": {
+        "download_budget_bytes": 812658408,
+        "repository": "Marqo/marqo-fashionSigLIP",
+        "revision": "c56244cc94f92419e8369fa71efdaf403b124ce8",
+        "role": "reference"
+      },
+      "mclip-b16plus": {
+        "download_budget_bytes": 3075890977,
+        "repository": "M-CLIP/XLM-Roberta-Large-Vit-B-16Plus",
+        "revision": "15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+        "role": "reference"
+      },
+      "metaclip-b16-32768": {
+        "download_budget_bytes": 565618932,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-b16-384-pol-32768",
+        "revision": "10800b373c918e68abe60e38cc90bea2aa3831f7",
+        "role": "reference"
+      },
+      "metaclip-l14-32768": {
+        "download_budget_bytes": 1659419604,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-l14-pol-32768",
+        "revision": "ca70ffb896e9e5c616d22827ab8659f31d25bc50",
+        "role": "reference"
+      },
+      "metaclip-m16": {
+        "download_budget_bytes": 341254292,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384",
+        "revision": "bc15d9f5ddabe0497898578493a6e81288057c90",
+        "role": "reference"
+      },
+      "metaclip-m16-32768": {
+        "download_budget_bytes": 374808820,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-32768",
+        "revision": "c3410d687df164929aafdd02f6d323b5b4f168dd",
+        "role": "reference"
+      },
+      "metaclip-s16": {
+        "download_budget_bytes": 198936052,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384",
+        "revision": "006223472923ba925226b59b6acd1e3e266c2382",
+        "role": "reference"
+      },
+      "metaclip-s16-32768": {
+        "download_budget_bytes": 224101988,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-32768",
+        "revision": "9565b93ba0049a67775c24f332e46fe12e0e1796",
+        "role": "reference"
+      },
+      "mobileclip2-s2": {
+        "download_budget_bytes": 398071149,
+        "repository": "apple/MobileCLIP2-S2",
+        "revision": "72424e7025436db18f15c3eff6ee8c7c15ad4481",
+        "role": "english_control"
+      },
+      "openvision-s16-384": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 222976922,
+        "native_language": "English",
+        "repository": "UCSC-VLAA/openvision-vit-small-patch16-384",
+        "representative": true,
+        "revision": "74f6c00184e7e51b8c1756fd70a3eec8df7a2107",
+        "role": "reference"
+      },
+      "openvision-s8-224": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 222411674,
+        "native_language": "English",
+        "repository": "UCSC-VLAA/openvision-vit-small-patch8-224",
+        "representative": true,
+        "revision": "1ec9256da492b2676b4b1432f2065185946a3394",
+        "role": "reference"
+      },
+      "openvision-t8-384": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 69660570,
+        "native_language": "English",
+        "repository": "UCSC-VLAA/openvision-vit-tiny-patch8-384",
+        "representative": true,
+        "revision": "13268359ab5bf487f38c6827beaedf631e484eb4",
+        "role": "reference"
+      },
+      "pe-core-b16": {
+        "download_budget_bytes": 1790786632,
+        "repository": "facebook/PE-Core-B16-224",
+        "revision": "a16450b46fef32363459920c2685a1b4ef13dcd9",
+        "role": "english_control"
+      },
+      "pe-core-s16": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 348852712,
+        "native_language": "English",
+        "repository": "facebook/PE-Core-S16-384",
+        "representative": true,
+        "revision": "aabf3b990573d8114ae6e501b4697106beac8f19",
+        "role": "reference"
+      },
+      "pe-core-t16": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 278284008,
+        "native_language": "English",
+        "repository": "facebook/PE-Core-T16-384",
+        "representative": true,
+        "revision": "8b4722741a516c18e7d311f158f13c600fea6c78",
+        "role": "reference"
+      },
+      "siglip-i18n-256": {
+        "download_budget_bytes": 1482539144,
+        "repository": "timm/ViT-B-16-SigLIP-i18n-256",
+        "revision": "ec35f9450b91a8ea263a50e31f55ae069069d1df",
+        "role": "reference"
+      },
+      "siglip2-b32-256": {
+        "download_budget_bytes": 1507459216,
+        "repository": "timm/ViT-B-32-SigLIP2-256",
+        "revision": "cd1efb47643f2794413dd79ef24397c175032780",
+        "role": "reference"
+      },
+      "siglip2-base": {
+        "download_budget_bytes": 1503344520,
+        "repository": "google/siglip2-base-patch16-512",
+        "revision": "a89f5c5093f902bf39d3cd4d81d2c09867f0724b",
+        "role": "reference"
+      },
+      "siglip2-base-256": {
+        "download_budget_bytes": 1500985224,
+        "repository": "google/siglip2-base-patch16-256",
+        "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+        "role": "reference"
+      },
+      "siglip2-base-384": {
+        "download_budget_bytes": 1501968264,
+        "repository": "google/siglip2-base-patch16-384",
+        "revision": "f775b65a79762255128c981547af89addcfe0f88",
+        "role": "reference"
+      },
+      "siglip2-naflex": {
+        "download_budget_bytes": 1500985224,
+        "repository": "google/siglip2-base-patch16-naflex",
+        "revision": "b53b807d3a2d5e2b3911292f2d69e5341cdc064c",
+        "role": "reference"
+      },
+      "siglip2-pl": {
+        "download_budget_bytes": 767243552,
+        "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-16384",
+        "revision": "002ad19c05defef76aae6bc20e048c5fe930995b",
+        "role": "reference"
+      },
+      "siglip2-pl-32768": {
+        "download_budget_bytes": 817575248,
+        "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-32768",
+        "revision": "1a0edc19692189ba5ee44da531995cfd4138dd57",
+        "role": "reference"
+      },
+      "tinyclip-39m-native": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 332443148,
+        "native_language": "English",
+        "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+        "representative": true,
+        "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+        "role": "reference"
+      },
+      "tinyclip-40m-native": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 336859508,
+        "native_language": "English",
+        "repository": "wkcn/TinyCLIP-ViT-40M-32-Text-19M-LAION400M",
+        "representative": true,
+        "revision": "95ec8197b3f2fe7f747865c61ca556cf0768b2f7",
+        "role": "reference"
+      },
+      "tinyclip-61m-native": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 461571500,
+        "native_language": "English",
+        "repository": "wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M",
+        "representative": true,
+        "revision": "94cbbea5c7949cfe7bdafde64bcea5e403f59852",
+        "role": "reference"
+      },
+      "tinyclip-8m-native": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 93812468,
+        "native_language": "English",
+        "repository": "wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M",
+        "representative": true,
+        "revision": "a2a8c6eaa2549ad66eb7c31b85022bf58273a26c",
+        "role": "reference"
+      },
+      "tipsv2-b14": {
+        "download_budget_bytes": 783830160,
+        "repository": "google/tipsv2-b14",
+        "revision": "ed1e4dc6b74bf3935ae099e9d5eb30fa96528454",
+        "role": "reference"
+      },
+      "tipsv2-l14": {
+        "download_budget_bytes": 1951820760,
+        "repository": "google/tipsv2-l14",
+        "revision": "52847a71eb02a3082c370fbcd98cd799687bd4d0",
+        "role": "reference"
+      },
+      "uform3-english-small": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 157779880,
+        "native_language": "English",
+        "repository": "unum-cloud/uform3-image-text-english-small",
+        "representative": true,
+        "revision": "a8d990ed0dc6340b9c25cb47f06f86b9ecb67fa6",
+        "role": "reference"
+      },
+      "vitamin-s": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 250017253,
+        "native_language": "English",
+        "repository": "jienengchen/ViTamin-S",
+        "representative": true,
+        "revision": "a33161305bb0c4154173fdb306de6a224440f616",
+        "role": "reference"
+      },
+      "vitamin-s-ltt": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 583432933,
+        "native_language": "English",
+        "repository": "jienengchen/ViTamin-S-LTT",
+        "representative": true,
+        "revision": "53fdf22e7a2bc0b48b6f64bdc7c2182c5030a367",
+        "role": "reference"
+      }
+    },
+    "ood_frozen": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen",
+    "ood_results": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results",
+    "output": "C:/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs",
+    "series_results": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/evaluation"
+  },
+  "created": "2026-11-01T22:30:50.343170+00:00",
+  "datasets": {
+    "VN_dev": {
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74"
+    },
+    "flickr30k_pl_local_test": {
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "protocol_sha256": "2f590ee80e6f3b4d84baf0cdc51c285f10a73c862ee4600cd5221fef28e03a6e"
+    },
+    "vizwiz_pl_local_validation": {
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "protocol_sha256": "63725b9983e19c0bea9fb6ec22775f577e06df7f00ce5fb83de601126397f70e"
+    },
+    "wiki_native_dev": {
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "protocol_sha256": "7e823db150884c06b4477c09eb729d51f1a0e321e30ffa483109778cc0e9fb2f"
+    },
+    "xm3600_pl": {
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "protocol_sha256": "76f7c71b339ee73737fa8d5daee1feb7ed6b6f858e050c75b237a78cf24fc883"
+    },
+    "xtd10_full_1k": {
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "protocol_sha256": "b11d7ffc02794cad1322269f87d70c531da0ab91e5da55ac03634dd13219e2a0"
+    },
+    "xtd10_no_overlap": {
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "protocol_sha256": "f824eb00d96cccfb165ed8f7e2a9a2b8159d3771a0c8b842686cdd61e87982a9"
+    }
+  },
+  "implementation": {
+    "retrieval_benchmark/requested_2b_retry.py": "2e2e8e77bec1703c463d6b7eade73410f798d3cfb9bdf02a5de61a9d9bcf5970",
+    "retrieval_benchmark/requested_models.py": "183b86bae9a9d86532f3ae89c144f8bca51e72388714e5035a0691cab6e1094e",
+    "retrieval_benchmark/requested_queue.py": "75626272d1347ab2eeb7e9abca113f4e742d17c9ba47dbf68d88f4e235f4f8d4",
+    "src/pl_mmb_benchmark/full_gallery.py": "ca5410c0781af7fefb99db2069f24b269678542a53030da7dc0e851cf184ae2f",
+    "src/pl_mmb_benchmark/models.py": "5c0b75ed2d4ca10add71f55e069cb762eb429eb4f8bb0dea981c7bd931b34228"
+  },
+  "jobs": [
+    {
+      "alias": "Qwen3-VL-Embedding-2B",
+      "backend": "qwen3",
+      "batch_size": 1,
+      "components": [
+        {
+          "download_files": [
+            "1_Pooling/config.json",
+            "added_tokens.json",
+            "chat_template.jinja",
+            "config.json",
+            "config_sentence_transformers.json",
+            "merges.txt",
+            "model.safetensors",
+            "modules.json",
+            "preprocessor_config.json",
+            "scripts/qwen3_vl_embedding.py",
+            "sentence_bert_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "video_preprocessor_config.json",
+            "vocab.json"
+          ],
+          "repository": "Qwen/Qwen3-VL-Embedding-2B",
+          "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+          "weights": [
+            {
+              "bytes": 4255140312,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "c73fa9caeddeb3ff831d46c085a7a5708343248ca777e90f2d486964464509c1",
+                "size": 4255140312
+              },
+              "name": "model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-modern",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "repository": "Qwen/Qwen3-VL-Embedding-2B",
+      "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "weight_bytes": 4255140312
+    },
+    {
+      "alias": "gme-Qwen2-VL-2B-Instruct",
+      "backend": "gme",
+      "batch_size": 1,
+      "components": [
+        {
+          "download_files": [
+            "1_Pooling/config.json",
+            "added_tokens.json",
+            "chat_template.json",
+            "config.json",
+            "config_sentence_transformers.json",
+            "custom_st.py",
+            "generation_config.json",
+            "gme_inference.py",
+            "merges.txt",
+            "model-00001-of-00003.safetensors",
+            "model-00002-of-00003.safetensors",
+            "model-00003-of-00003.safetensors",
+            "model.safetensors.index.json",
+            "modeling_gme_qwen2vl.py",
+            "modules.json",
+            "preprocessor_config.json",
+            "results.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ],
+          "repository": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+          "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+          "weights": [
+            {
+              "bytes": 4046085544,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "ce525de1d47307ebf63285ce4f2f80ca8ffffd94235b2151585e5714307e4e99",
+                "size": 4046085544
+              },
+              "name": "model-00001-of-00003.safetensors"
+            },
+            {
+              "bytes": 4063188000,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "7b42b76064f5d14ee9d0390f9a1f3571fc66eae4f40764f818cb5e9aafc5d6f5",
+                "size": 4063188000
+              },
+              "name": "model-00002-of-00003.safetensors"
+            },
+            {
+              "bytes": 726747736,
+              "lfs": {
+                "pointerSize": 134,
+                "sha256": "e3f1342fe1dd7df1582be00ebd45557316015050ae2edb841e61150825f16adc",
+                "size": 726747736
+              },
+              "name": "model-00003-of-00003.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-benchmark",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "repository": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+      "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "weight_bytes": 8836021280
+    }
+  ],
+  "preflight_registration_sha256": "b1fd26e0b0de352675841f384b8cea9bca97018f2e5cb07568acaa6943a2534d",
+  "previous_registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+  "profile": "historical-native-v2",
+  "protected": {
+    "protocols/protocol-v3-f.json": "a734e9fb97ff7ee2d12e35fcae84a67d467c87197a627b9f930e634586c33fb3",
+    "retrieval_benchmark/catalog-current.json": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010",
+    "retrieval_benchmark/catalog.json": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8",
+    "src/pl_mmb_training/holdouts.py": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3"
+  },
+  "schema_version": 1,
+  "scope": "Ordinary leaderboard reference evaluation, no F-series training or selection; frozen F protocol untouched.",
+  "stage": "S09-LEADERBOARD-2B-REPAIR"
+}

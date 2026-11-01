@@ -1,0 +1,21 @@
+{
+  "cleanup": "Only registered private weight blobs, after model process exits; shared cache untouched.",
+  "estimated_end": "Several hours; refine from first completed gallery, no measured ETA yet.",
+  "git_target": "origin/main",
+  "log": "training/runs/f_series/leaderboard-2b-repair-20261101/supervisor.log",
+  "models": [
+    "Qwen/Qwen3-VL-Embedding-2B",
+    "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct"
+  ],
+  "output": "C:/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs",
+  "pid": 7519,
+  "registration": "reports/f_series/S09-LEADERBOARD-2B-REPAIR/registration.json",
+  "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+  "resume_command": "~/.venvs/pl-mmb-benchmark/bin/python retrieval_benchmark/requested_2b_retry.py start",
+  "run_id": "leaderboard-2b-repair-20261101",
+  "simultaneous_models": 1,
+  "smoke_before_full_runs": true,
+  "start_command": "~/.venvs/pl-mmb-benchmark/bin/python retrieval_benchmark/requested_2b_retry.py start",
+  "started": "2026-11-01T22:30:50.979689+00:00",
+  "state": "training/runs/f_series/leaderboard-2b-repair-20261101/STATE.json"
+}

@@ -1,5 +1,12 @@
 # STATUS — seria F / M
 
+S09-LEADERBOARD-2B-REPAIR (2026-11-01): adaptery Qwen/GME 2B naprawione;
+oba rzeczywiste testy tekst/obraz CUDA passed, pełna odłączona kolejka działa.
+Dodano i wdrożono filtr komercyjne/niekomercyjne/nieustalone, własne komercyjne.
+[Raport i dowody SHA](S09-LEADERBOARD-2B-REPAIR/REPORT.md).
+Job: training/runs/f_series/leaderboard-2b-repair-20261101/JOB.json.
+Następny etap: S10-LEADERBOARD-2B-RECEIVE. F01 i liczniki F bez zmian.
+
 S08-LEADERBOARD-COMPACT (2026-11-01) done: nazwy rozmieszczane przy punktach
 zamiast w bocznych kolumnach; wyszukiwany wybór konkretnych modeli wspólny
 dla tabeli, wykresu i CSV. Wdrożono i sprawdzono live na localhost:7865.

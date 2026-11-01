@@ -21,3 +21,5 @@
 | S07-LEADERBOARD-LABELS | 2026-11-01 | Stałe pełne nazwy, przełącznik hover-only, rozłączne pola i wdrożenie live | done | [handoff](handoffs/S07-LEADERBOARD-LABELS.md) | commit zawierający wpis: `[S07-LEADERBOARD-LABELS] Show persistent nonoverlapping model labels` |
 
 | S08-LEADERBOARD-COMPACT | 2026-11-01 | Lokalne etykiety i wybór konkretnych modeli; wspólne filtry i wdrożenie live | done | [handoff](handoffs/S08-LEADERBOARD-COMPACT.md) | commit zawierający wpis: `[S08-LEADERBOARD-COMPACT] Place labels near dots and filter specific models` |
+
+| S09-LEADERBOARD-2B-REPAIR | 2026-11-01 | Naprawa i start obu 2B; dwa GPU smokes passed; filtr licencji wdrożony | partial (job działa; odbiór osobno) | [handoff](handoffs/S09-LEADERBOARD-2B-REPAIR.md) | commit zawierający wpis: `[S09-LEADERBOARD-2B-REPAIR] Repair 2B embedding queue and add commercial license filter` |

@@ -87,3 +87,4 @@ training/runs/f_series/**
 /reports/f_series/S07-LEADERBOARD-LABELS/*.dom.html
 /reports/f_series/S08-LEADERBOARD-COMPACT/*.browser.log
 /reports/f_series/S08-LEADERBOARD-COMPACT/*.dom.html
+/training/runs/f_series/leaderboard-2b-repair-20261101/

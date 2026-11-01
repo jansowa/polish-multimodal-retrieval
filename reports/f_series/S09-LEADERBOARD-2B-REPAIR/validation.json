@@ -1,0 +1,238 @@
+{
+  "adapter_smokes": [
+    {
+      "path": "training/runs/f_series/leaderboard-2b-repair-20261101/Alibaba-NLP--gme-Qwen2-VL-2B-Instruct/adapter-smoke.json",
+      "result": {
+        "all_parameters_cuda": true,
+        "checks": [
+          {
+            "finite": true,
+            "image_shape": [
+              2,
+              1536
+            ],
+            "mode": "v2_no_instructions",
+            "text_shape": [
+              2,
+              1536
+            ]
+          },
+          {
+            "finite": true,
+            "image_shape": [
+              2,
+              1536
+            ],
+            "mode": "author_recommended",
+            "text_shape": [
+              2,
+              1536
+            ]
+          }
+        ],
+        "precision": "cuda-bf16",
+        "repository": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+        "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+        "seconds": 1.1138390490000347,
+        "status": "passed"
+      },
+      "sha256": "4b49b0ff96f95268c9dda723801a63c6d65944ead9e897b5fe2139be13d1cd18"
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-2b-repair-20261101/Qwen--Qwen3-VL-Embedding-2B/adapter-smoke.json",
+      "result": {
+        "all_parameters_cuda": true,
+        "checks": [
+          {
+            "finite": true,
+            "image_shape": [
+              2,
+              2048
+            ],
+            "mode": "v2_no_instructions",
+            "text_shape": [
+              2,
+              2048
+            ]
+          },
+          {
+            "finite": true,
+            "image_shape": [
+              2,
+              2048
+            ],
+            "mode": "author_recommended",
+            "text_shape": [
+              2,
+              2048
+            ]
+          }
+        ],
+        "precision": "cuda-bf16",
+        "repository": "Qwen/Qwen3-VL-Embedding-2B",
+        "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+        "seconds": 1.78763247400002,
+        "status": "passed"
+      },
+      "sha256": "27719a5518dea9d30d1f3d027b408dfe71b6c818a9aac4182583937843b14d75"
+    }
+  ],
+  "checks": [
+    {
+      "category": "all",
+      "model_ids": [
+        "hf:google/embeddinggemma-2@914f7f89142e33e77833254d9c9b90c3cef7303b",
+        "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+        "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+        "hf:alphaedge-ai/metaclip-2-worldwide-b16-384-pol-32768@10800b373c918e68abe60e38cc90bea2aa3831f7",
+        "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+        "hf:alphaedge-ai/metaclip-2-worldwide-m16-384-pol-32768@c3410d687df164929aafdd02f6d323b5b4f168dd",
+        "hf:google/siglip2-large-patch16-512@49488218e80259885f3be61d7a9455faf833b7a8",
+        "hf:alphaedge-ai/metaclip-2-worldwide-s16-384-pol-32768@9565b93ba0049a67775c24f332e46fe12e0e1796",
+        "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+        "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+        "checkpoint:6437c7234d01a88c2895399e7a3b7e1577843f6507fe79cb8b04356ac2e1dbd9",
+        "checkpoint:094122a574d8f2322b1434bb0eb0a5d539b510c36b5cfc74c2eb140c0e1f7636",
+        "checkpoint:4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+        "checkpoint:0cd560a39263fc165e4e7cd4949a9f8deda77ec207ff10f1e34d6d9af03d0285",
+        "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+        "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+        "hf:laion/CLIP-ViT-H-14-laion2B-s32B-b79K@1c2b8495b28150b8a4922ee1c8edee224c284c0c",
+        "hf:jienengchen/ViTamin-S-LTT@53fdf22e7a2bc0b48b6f64bdc7c2182c5030a367",
+        "hf:laion/CLIP-ViT-g-14-laion2B-s12B-b42K@4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+        "hf:facebook/PE-Core-S16-384@aabf3b990573d8114ae6e501b4697106beac8f19",
+        "hf:wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M@94cbbea5c7949cfe7bdafde64bcea5e403f59852",
+        "hf:jienengchen/ViTamin-S@a33161305bb0c4154173fdb306de6a224440f616",
+        "hf:wkcn/TinyCLIP-ViT-40M-32-Text-19M-LAION400M@95ec8197b3f2fe7f747865c61ca556cf0768b2f7",
+        "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+        "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+        "hf:facebook/PE-Core-T16-384@8b4722741a516c18e7d311f158f13c600fea6c78",
+        "hf:wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M@07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+        "hf:wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M@a2a8c6eaa2549ad66eb7c31b85022bf58273a26c",
+        "hf:unum-cloud/uform3-image-text-english-small@a8d990ed0dc6340b9c25cb47f06f86b9ecb67fa6",
+        "hf:UCSC-VLAA/openvision-vit-small-patch8-224@1ec9256da492b2676b4b1432f2065185946a3394",
+        "hf:UCSC-VLAA/openvision-vit-tiny-patch8-384@13268359ab5bf487f38c6827beaedf631e484eb4",
+        "hf:UCSC-VLAA/openvision-vit-small-patch16-384@74f6c00184e7e51b8c1756fd70a3eec8df7a2107",
+        "hf:BAAI/BGE-VL-base@cc4c733ed997dbee4ac70ccffb911e70c9c24b93",
+        "hf:Marqo/marqo-fashionSigLIP@c56244cc94f92419e8369fa71efdaf403b124ce8",
+        "checkpoint:452a17b5aee45b6b04082a71088090f0e61bdd04e5fd31bf7b8e5069bc145b3d",
+        "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768@62436cd6cd74f072dda57463b6916c95324e5b85",
+        "hf:alphaedge-ai/metaclip-2-worldwide-l14-pol-32768@ca70ffb896e9e5c616d22827ab8659f31d25bc50",
+        "hf:alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384@bc15d9f5ddabe0497898578493a6e81288057c90",
+        "hf:alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384@006223472923ba925226b59b6acd1e3e266c2382",
+        "hf:google/siglip2-base-patch16-256@3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+        "hf:google/siglip2-base-patch16-384@f775b65a79762255128c981547af89addcfe0f88",
+        "hf:google/siglip2-base-patch16-512@a89f5c5093f902bf39d3cd4d81d2c09867f0724b",
+        "hf:google/siglip2-base-patch16-naflex@b53b807d3a2d5e2b3911292f2d69e5341cdc064c",
+        "hf:google/tipsv2-b14@ed1e4dc6b74bf3935ae099e9d5eb30fa96528454",
+        "hf:google/tipsv2-l14@52847a71eb02a3082c370fbcd98cd799687bd4d0",
+        "checkpoint:87e6bcba5ac56ee3824f5d7c13696b9929399567af6b9a56a4c46f168283249b",
+        "checkpoint:1de8a961fc059c47f9a85dd01b28841ffdd94d1b736519edd8e7b3e25c2efa22",
+        "checkpoint:d1d831478cdb88ba4b61b4d02a119ef2063922c8482ee510c7bc03e2bef4fb13",
+        "hf:timm/ViT-B-32-SigLIP2-256@cd1efb47643f2794413dd79ef24397c175032780"
+      ]
+    },
+    {
+      "category": "commercial",
+      "model_ids": [
+        "hf:google/embeddinggemma-2@914f7f89142e33e77833254d9c9b90c3cef7303b",
+        "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+        "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+        "hf:google/siglip2-large-patch16-512@49488218e80259885f3be61d7a9455faf833b7a8",
+        "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+        "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+        "checkpoint:6437c7234d01a88c2895399e7a3b7e1577843f6507fe79cb8b04356ac2e1dbd9",
+        "checkpoint:094122a574d8f2322b1434bb0eb0a5d539b510c36b5cfc74c2eb140c0e1f7636",
+        "checkpoint:4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+        "checkpoint:0cd560a39263fc165e4e7cd4949a9f8deda77ec207ff10f1e34d6d9af03d0285",
+        "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+        "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+        "hf:laion/CLIP-ViT-H-14-laion2B-s32B-b79K@1c2b8495b28150b8a4922ee1c8edee224c284c0c",
+        "hf:jienengchen/ViTamin-S-LTT@53fdf22e7a2bc0b48b6f64bdc7c2182c5030a367",
+        "hf:laion/CLIP-ViT-g-14-laion2B-s12B-b42K@4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+        "hf:facebook/PE-Core-S16-384@aabf3b990573d8114ae6e501b4697106beac8f19",
+        "hf:wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M@94cbbea5c7949cfe7bdafde64bcea5e403f59852",
+        "hf:jienengchen/ViTamin-S@a33161305bb0c4154173fdb306de6a224440f616",
+        "hf:wkcn/TinyCLIP-ViT-40M-32-Text-19M-LAION400M@95ec8197b3f2fe7f747865c61ca556cf0768b2f7",
+        "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+        "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+        "hf:facebook/PE-Core-T16-384@8b4722741a516c18e7d311f158f13c600fea6c78",
+        "hf:wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M@07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+        "hf:wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M@a2a8c6eaa2549ad66eb7c31b85022bf58273a26c",
+        "hf:unum-cloud/uform3-image-text-english-small@a8d990ed0dc6340b9c25cb47f06f86b9ecb67fa6",
+        "hf:UCSC-VLAA/openvision-vit-small-patch8-224@1ec9256da492b2676b4b1432f2065185946a3394",
+        "hf:UCSC-VLAA/openvision-vit-tiny-patch8-384@13268359ab5bf487f38c6827beaedf631e484eb4",
+        "hf:UCSC-VLAA/openvision-vit-small-patch16-384@74f6c00184e7e51b8c1756fd70a3eec8df7a2107",
+        "hf:BAAI/BGE-VL-base@cc4c733ed997dbee4ac70ccffb911e70c9c24b93",
+        "hf:Marqo/marqo-fashionSigLIP@c56244cc94f92419e8369fa71efdaf403b124ce8",
+        "checkpoint:452a17b5aee45b6b04082a71088090f0e61bdd04e5fd31bf7b8e5069bc145b3d",
+        "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768@62436cd6cd74f072dda57463b6916c95324e5b85",
+        "hf:google/siglip2-base-patch16-256@3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+        "hf:google/siglip2-base-patch16-384@f775b65a79762255128c981547af89addcfe0f88",
+        "hf:google/siglip2-base-patch16-512@a89f5c5093f902bf39d3cd4d81d2c09867f0724b",
+        "hf:google/siglip2-base-patch16-naflex@b53b807d3a2d5e2b3911292f2d69e5341cdc064c",
+        "hf:google/tipsv2-b14@ed1e4dc6b74bf3935ae099e9d5eb30fa96528454",
+        "hf:google/tipsv2-l14@52847a71eb02a3082c370fbcd98cd799687bd4d0",
+        "checkpoint:87e6bcba5ac56ee3824f5d7c13696b9929399567af6b9a56a4c46f168283249b",
+        "checkpoint:1de8a961fc059c47f9a85dd01b28841ffdd94d1b736519edd8e7b3e25c2efa22",
+        "checkpoint:d1d831478cdb88ba4b61b4d02a119ef2063922c8482ee510c7bc03e2bef4fb13",
+        "hf:timm/ViT-B-32-SigLIP2-256@cd1efb47643f2794413dd79ef24397c175032780"
+      ]
+    },
+    {
+      "category": "noncommercial",
+      "model_ids": [
+        "hf:alphaedge-ai/metaclip-2-worldwide-b16-384-pol-32768@10800b373c918e68abe60e38cc90bea2aa3831f7",
+        "hf:alphaedge-ai/metaclip-2-worldwide-m16-384-pol-32768@c3410d687df164929aafdd02f6d323b5b4f168dd",
+        "hf:alphaedge-ai/metaclip-2-worldwide-s16-384-pol-32768@9565b93ba0049a67775c24f332e46fe12e0e1796",
+        "hf:alphaedge-ai/metaclip-2-worldwide-l14-pol-32768@ca70ffb896e9e5c616d22827ab8659f31d25bc50",
+        "hf:alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384@bc15d9f5ddabe0497898578493a6e81288057c90",
+        "hf:alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384@006223472923ba925226b59b6acd1e3e266c2382"
+      ]
+    },
+    {
+      "category": "unknown",
+      "model_ids": [
+        "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78"
+      ]
+    }
+  ],
+  "code_sha256": {
+    "retrieval_benchmark/requested_2b_retry.py": "2e2e8e77bec1703c463d6b7eade73410f798d3cfb9bdf02a5de61a9d9bcf5970",
+    "retrieval_benchmark/requested_models.py": "183b86bae9a9d86532f3ae89c144f8bca51e72388714e5035a0691cab6e1094e",
+    "retrieval_benchmark/requested_queue.py": "75626272d1347ab2eeb7e9abca113f4e742d17c9ba47dbf68d88f4e235f4f8d4",
+    "retrieval_benchmark/space/app.py": "ed0c0d5db443915ea548fa414883a806dc7e09d23e3e98625ca941d53c086797",
+    "retrieval_benchmark/space/view.py": "e76ce736a9b5bfd48c3dbf1ba888ece51936d2199b53d3b9f6af017943890a52"
+  },
+  "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+  "results_sha256": "8fcb8fc8ce5f389bda0382d90077a9448f01a79fd01bc46d73df14b6b913559e",
+  "state": {
+    "index": 0,
+    "model": "Qwen3-VL-Embedding-2B",
+    "status": "running",
+    "supervisor_pid": 7519,
+    "time": "2026-11-01T22:33:43.225377+00:00",
+    "worker_pid": 8653
+  },
+  "ticket": {
+    "cleanup": "Only registered private weight blobs, after model process exits; shared cache untouched.",
+    "estimated_end": "Several hours; refine from first completed gallery, no measured ETA yet.",
+    "git_target": "origin/main",
+    "log": "training/runs/f_series/leaderboard-2b-repair-20261101/supervisor.log",
+    "models": [
+      "Qwen/Qwen3-VL-Embedding-2B",
+      "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct"
+    ],
+    "output": "C:/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs",
+    "pid": 7519,
+    "registration": "reports/f_series/S09-LEADERBOARD-2B-REPAIR/registration.json",
+    "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+    "resume_command": "~/.venvs/pl-mmb-benchmark/bin/python retrieval_benchmark/requested_2b_retry.py start",
+    "run_id": "leaderboard-2b-repair-20261101",
+    "simultaneous_models": 1,
+    "smoke_before_full_runs": true,
+    "start_command": "~/.venvs/pl-mmb-benchmark/bin/python retrieval_benchmark/requested_2b_retry.py start",
+    "started": "2026-11-01T22:30:50.979689+00:00",
+    "state": "training/runs/f_series/leaderboard-2b-repair-20261101/STATE.json"
+  }
+}

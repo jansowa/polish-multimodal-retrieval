@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "category": "commercial",
+      "graph_matches_table": true,
+      "visible_models": 42
+    },
+    {
+      "category": "noncommercial",
+      "graph_matches_table": true,
+      "visible_models": 6
+    },
+    {
+      "category": "unknown",
+      "graph_matches_table": true,
+      "visible_models": 1
+    }
+  ],
+  "status": "passed",
+  "url": "http://localhost:7865/"
+}

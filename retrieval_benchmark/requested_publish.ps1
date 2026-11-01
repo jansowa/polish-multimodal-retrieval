@@ -1,7 +1,9 @@
-param([Parameter(Mandatory=$true)][string]$RepoRoot)
+param([Parameter(Mandatory=$true)][string]$RepoRoot,
+      [string]$RunId='leaderboard-requested-20261101',
+      [string]$Stage='S04-LEADERBOARD')
 $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $RepoRoot
-$runDir = Join-Path $RepoRoot 'training/runs/f_series/leaderboard-requested-20261101'
+$runDir = Join-Path $RepoRoot ('training/runs/f_series/'+$RunId)
 $mutexFile = Join-Path $runDir 'windows-publisher.lock'
 $lockHandle = [System.IO.File]::Open($mutexFile, 'OpenOrCreate', 'ReadWrite', 'None')
 $published = ''
@@ -34,7 +36,7 @@ try {
                     Invoke-GitChecked -GitArguments @('add','--','retrieval_benchmark/space/results.json')
                     $staged = @(Invoke-GitChecked -GitArguments @('diff','--cached','--name-only'))
                     if ($staged.Count) {
-                        Invoke-GitChecked -GitArguments @('commit','-m','[S04-LEADERBOARD] Add completed reference leaderboard scores')
+                        Invoke-GitChecked -GitArguments @('commit','-m',('['+$Stage+'] Add completed reference leaderboard scores'))
                     }
                     Invoke-GitChecked -GitArguments @('push','origin','HEAD:main')
                     $published = $request.results_sha256

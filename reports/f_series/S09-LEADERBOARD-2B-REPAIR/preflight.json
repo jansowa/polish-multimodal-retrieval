@@ -1,0 +1,32 @@
+{
+  "models": [
+    {
+      "pooling": {
+        "embedding_dimension": 2048,
+        "include_prompt": true,
+        "pooling_mode": "lasttoken"
+      },
+      "pooling_sha256": "de764e01a063fc5f2e96100099bf745695edaaf904107fb3d24fbf4b106f488b",
+      "repository": "Qwen/Qwen3-VL-Embedding-2B",
+      "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "source": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B/resolve/9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda/1_Pooling/config.json"
+    },
+    {
+      "pooling": {
+        "include_prompt": true,
+        "pooling_mode_cls_token": false,
+        "pooling_mode_lasttoken": true,
+        "pooling_mode_max_tokens": false,
+        "pooling_mode_mean_sqrt_len_tokens": false,
+        "pooling_mode_mean_tokens": false,
+        "pooling_mode_weightedmean_tokens": false,
+        "word_embedding_dimension": 1536
+      },
+      "pooling_sha256": "f25c114f765f96fb30c843ec709c35ee6e92f24a782b8f37d95e29a32a7da5d6",
+      "repository": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+      "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "source": "https://huggingface.co/Alibaba-NLP/gme-Qwen2-VL-2B-Instruct/resolve/9cfa6413f704a7c1cf5064d240748e10c876b286/1_Pooling/config.json"
+    }
+  ],
+  "previous_registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707"
+}

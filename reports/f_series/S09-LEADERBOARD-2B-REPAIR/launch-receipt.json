@@ -1,0 +1,163 @@
+{
+  "adapter_smokes": [
+    {
+      "path": "training/runs/f_series/leaderboard-2b-repair-20261101/Alibaba-NLP--gme-Qwen2-VL-2B-Instruct/adapter-smoke.json",
+      "result": {
+        "all_parameters_cuda": true,
+        "checks": [
+          {
+            "finite": true,
+            "image_shape": [
+              2,
+              1536
+            ],
+            "mode": "v2_no_instructions",
+            "text_shape": [
+              2,
+              1536
+            ]
+          },
+          {
+            "finite": true,
+            "image_shape": [
+              2,
+              1536
+            ],
+            "mode": "author_recommended",
+            "text_shape": [
+              2,
+              1536
+            ]
+          }
+        ],
+        "precision": "cuda-bf16",
+        "repository": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+        "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+        "seconds": 1.1138390490000347,
+        "status": "passed"
+      },
+      "sha256": "4b49b0ff96f95268c9dda723801a63c6d65944ead9e897b5fe2139be13d1cd18"
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-2b-repair-20261101/Qwen--Qwen3-VL-Embedding-2B/adapter-smoke.json",
+      "result": {
+        "all_parameters_cuda": true,
+        "checks": [
+          {
+            "finite": true,
+            "image_shape": [
+              2,
+              2048
+            ],
+            "mode": "v2_no_instructions",
+            "text_shape": [
+              2,
+              2048
+            ]
+          },
+          {
+            "finite": true,
+            "image_shape": [
+              2,
+              2048
+            ],
+            "mode": "author_recommended",
+            "text_shape": [
+              2,
+              2048
+            ]
+          }
+        ],
+        "precision": "cuda-bf16",
+        "repository": "Qwen/Qwen3-VL-Embedding-2B",
+        "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+        "seconds": 1.78763247400002,
+        "status": "passed"
+      },
+      "sha256": "27719a5518dea9d30d1f3d027b408dfe71b6c818a9aac4182583937843b14d75"
+    }
+  ],
+  "completed_cells": [
+    {
+      "dataset": "VN_dev",
+      "mode": "v2_no_instructions",
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/2f45e14a132485d51b86d188f90f6ef477caba5b33a79e68799ea343c483df2d/result.json",
+      "repository": "Qwen/Qwen3-VL-Embedding-2B",
+      "sha256": "d9162a31af3382b93e779f431bb3f0db181e6f2bdc5bb3bad016c67f5314a677"
+    },
+    {
+      "dataset": "VN_dev",
+      "mode": "author_recommended",
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/c63f7e28f48987581d3b190b671ca400bbb7b134f014d682ae60f5fccf16bb17/result.json",
+      "repository": "Qwen/Qwen3-VL-Embedding-2B",
+      "sha256": "44fb9d088e39fd3302f0c1e2415722a59fddbf318b641561f19e3449688b6538"
+    },
+    {
+      "dataset": "flickr30k_pl_local_test",
+      "mode": "v2_no_instructions",
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/07a225269da9068c1cecf1dcd9f9a5504828be9b7fa554351bf48ebc72dc294e/result.json",
+      "repository": "Qwen/Qwen3-VL-Embedding-2B",
+      "sha256": "6475843efb699d645731dc265c1b76e1c4d045b734dca38bd2f67c577671c489"
+    },
+    {
+      "dataset": "flickr30k_pl_local_test",
+      "mode": "author_recommended",
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/3135ec97b5532bcc9db7e493bd878ac7bf41cb372031294c5856e8ad2f27e28b/result.json",
+      "repository": "Qwen/Qwen3-VL-Embedding-2B",
+      "sha256": "24c6412610a2c0afea0cb1f30815af5c5d62dbd7eae10fae7b1b18d2f7273b39"
+    },
+    {
+      "dataset": "vizwiz_pl_local_validation",
+      "mode": "v2_no_instructions",
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/9446331c2a389925ba133acbd744c25e949b4bceb6dfd486518d5ca75bf95259/result.json",
+      "repository": "Qwen/Qwen3-VL-Embedding-2B",
+      "sha256": "f2c8df8e042a98587f613314b14b00590fa3f319883e51c4ff7c253c840995b1"
+    },
+    {
+      "dataset": "vizwiz_pl_local_validation",
+      "mode": "author_recommended",
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/456d3ed1b1bb3e93437570283db0f34da8b00d6c6953de22ed24920191483aa8/result.json",
+      "repository": "Qwen/Qwen3-VL-Embedding-2B",
+      "sha256": "799eca11528c065c608a60f8c958fd14c14b654a8b50dde6973806000bc3a25b"
+    }
+  ],
+  "protected_sha256": {
+    "protocols/protocol-v3-f.json": "a734e9fb97ff7ee2d12e35fcae84a67d467c87197a627b9f930e634586c33fb3",
+    "retrieval_benchmark/catalog-current.json": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010",
+    "retrieval_benchmark/catalog.json": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8",
+    "src/pl_mmb_training/holdouts.py": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3"
+  },
+  "publisher": {
+    "status": "waiting_for_first_complete_model"
+  },
+  "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+  "state": {
+    "index": 0,
+    "model": "Qwen3-VL-Embedding-2B",
+    "status": "running",
+    "supervisor_pid": 7519,
+    "time": "2026-11-01T22:33:43.225377+00:00",
+    "worker_pid": 8653
+  },
+  "ticket": {
+    "cleanup": "Only registered private weight blobs, after model process exits; shared cache untouched.",
+    "estimated_end": "Several hours; refine from first completed gallery, no measured ETA yet.",
+    "git_target": "origin/main",
+    "log": "training/runs/f_series/leaderboard-2b-repair-20261101/supervisor.log",
+    "models": [
+      "Qwen/Qwen3-VL-Embedding-2B",
+      "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct"
+    ],
+    "output": "C:/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs",
+    "pid": 7519,
+    "registration": "reports/f_series/S09-LEADERBOARD-2B-REPAIR/registration.json",
+    "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+    "resume_command": "~/.venvs/pl-mmb-benchmark/bin/python retrieval_benchmark/requested_2b_retry.py start",
+    "run_id": "leaderboard-2b-repair-20261101",
+    "simultaneous_models": 1,
+    "smoke_before_full_runs": true,
+    "start_command": "~/.venvs/pl-mmb-benchmark/bin/python retrieval_benchmark/requested_2b_retry.py start",
+    "started": "2026-11-01T22:30:50.979689+00:00",
+    "state": "training/runs/f_series/leaderboard-2b-repair-20261101/STATE.json"
+  }
+}

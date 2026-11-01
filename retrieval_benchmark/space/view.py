@@ -94,9 +94,11 @@ def model_choices(document):
 
 def overview(document, metric='recall@1', mode='v2_no_instructions', profile='historical-native-v2',
              max_parameters=0, show_seeds=False, show_controls=False, visible_columns=None, average_tasks=None,
-             min_parameters=0, selected_organizations=None, selected_models=None):
+             min_parameters=0, selected_organizations=None, selected_models=None, license_filter='all'):
     if metric not in METRICS:
         raise ValueError('Unsupported metric')
+    if license_filter not in ('all','commercial','noncommercial','unknown'):
+        raise ValueError('Unsupported license filter')
     min_parameters, max_parameters = min_parameters or 0, max_parameters or 0
     if any(not isinstance(v, (int,float)) or not math.isfinite(v) or v < 0 for v in (min_parameters,max_parameters)):
         raise ValueError('Parameter bounds must be finite and nonnegative')
@@ -115,6 +117,8 @@ def overview(document, metric='recall@1', mode='v2_no_instructions', profile='hi
     entries = []
     for model_id, found in results.items():
         m = document['models'][model_id]
+        if license_filter!='all' and license_category(model_id,m)!=license_filter:
+            continue
         if selected_models is not None and model_id not in selected_models:
             continue
         if not show_seeds and not m.get('representative', True):
@@ -169,6 +173,19 @@ def commercial_use(model_id, model):
     }
 
 
+def license_category(model_id,model):
+    if commercial_use(model_id,model):
+        return 'commercial'
+    info=model.get('license') or {}
+    declared=(info.get('id') or info.get('spdx') or info.get('display') or '') if isinstance(info,dict) else info
+    if not isinstance(declared,str):
+        return 'unknown'
+    normalized=declared.casefold().replace(' ','-')
+    if normalized.startswith('cc-by-nc') or normalized in ('apple-amlr','apple-amlr-(research-only)'):
+        return 'noncommercial'
+    return 'unknown'
+
+
 def frontier(points):
     """Strict score records by increasing size; ties keep the smallest model."""
     best = -math.inf
@@ -184,11 +201,11 @@ def frontier(points):
 def pareto_data(document, metric='recall@1', mode='v2_no_instructions',
                 profile='historical-native-v2', max_parameters=0, average_tasks=None,
                 show_seeds=False, show_controls=False, min_parameters=0, selected_organizations=None,
-                filtered_view=None, selected_models=None):
+                filtered_view=None, selected_models=None, license_filter='all'):
     view = filtered_view if filtered_view is not None else overview(
         document, metric, mode, profile, max_parameters, show_seeds, show_controls,
         average_tasks=average_tasks, min_parameters=min_parameters, selected_organizations=selected_organizations,
-        selected_models=selected_models)
+        selected_models=selected_models,license_filter=license_filter)
     points = [dict(point) for point in view['model_data']]
     for point in points:
         point['commercial'] = commercial_use(point['id'], document['models'][point['id']])
@@ -251,10 +268,10 @@ def place_point_labels(rows, coordinates, bounds, forbidden=()):
 def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
                 profile='historical-native-v2', max_parameters=0, average_tasks=None, log_scale=False,
                 show_seeds=False, show_controls=False, min_parameters=0, selected_organizations=None,
-                filtered_view=None, show_labels=True, selected_models=None):
+                filtered_view=None, show_labels=True, selected_models=None, license_filter='all'):
     """Responsive SVG: no extra dependencies, external scripts or network calls."""
     data = pareto_data(document, metric, mode, profile, max_parameters, average_tasks,
-                       show_seeds, show_controls, min_parameters, selected_organizations, filtered_view, selected_models)
+                       show_seeds, show_controls, min_parameters, selected_organizations, filtered_view, selected_models,license_filter)
     points = data['points']
     if not points:
         return '<p>Brak modeli dla wybranych filtrów.</p>'

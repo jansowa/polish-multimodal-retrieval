@@ -2,7 +2,7 @@ import copy
 import unittest
 import xml.etree.ElementTree as ET
 
-from retrieval_benchmark.space.view import commercial_use, frontier, label_rows, model_choices, organizations, overview, pareto_data, pareto_html, place_point_labels
+from retrieval_benchmark.space.view import commercial_use, frontier, label_rows, license_category, model_choices, organizations, overview, pareto_data, pareto_html, place_point_labels
 from retrieval_benchmark.tests.test_suite import document
 
 
@@ -129,6 +129,22 @@ class ParetoTests(unittest.TestCase):
         self.assertEqual(overview(doc,selected_models=['b'],max_parameters=60)['rows'],[])
         self.assertEqual(overview(doc,selected_models=[])['rows'],[])
         self.assertEqual({mid for name,mid in model_choices(doc)},{'a','b'})
+
+    def test_license_filter_separates_commercial_restricted_unknown_and_own(self):
+        doc=document()
+        doc['models']['a']['license']={'id':'cc-by-nc-4.0'}
+        doc['models']['b']['license']={'id':'apache-2.0'}
+        doc['models']['checkpoint:own']=dict(doc['models']['a'],role='project',label='Own')
+        doc['models']['unknown']=dict(doc['models']['a'],license={},label='Unknown')
+        for mid in ('b','checkpoint:own','unknown'):
+            row=copy.deepcopy(doc['results'][0]); row['model_id']=mid; doc['results'].append(row)
+        expected={'commercial':{'b','checkpoint:own'},'noncommercial':{'a'},'unknown':{'unknown'}}
+        for category,ids in expected.items():
+            table=overview(doc,license_filter=category)
+            graph=pareto_data(doc,license_filter=category)
+            self.assertEqual({p['id'] for p in table['model_data']},ids)
+            self.assertEqual({p['id'] for p in graph['points']},ids)
+        self.assertEqual(license_category('checkpoint:own',doc['models']['checkpoint:own']),'commercial')
 
     def test_labels_are_on_by_default_and_hover_mode_omits_them(self):
         doc = document()

@@ -22,13 +22,13 @@ from retrieval_benchmark.core import HERE, identity, local_path, parameters, pub
 from retrieval_benchmark.ingest import configuration, sync
 from retrieval_benchmark.runner import DatasetEncoder, Originals, selected_datasets, tokenization
 
-REPORT = ROOT/'reports/leaderboard_requested_20261101'
-RUN = ROOT/'training/runs/f_series/leaderboard-requested-20261101'
+REPORT = Path(os.environ.get('PL_MMB_REQUESTED_REPORT',str(ROOT/'reports/leaderboard_requested_20261101')))
+RUN = Path(os.environ.get('PL_MMB_REQUESTED_RUN',str(ROOT/'training/runs/f_series/leaderboard-requested-20261101')))
 REG = REPORT/'registration.json'
-CACHE = Path.home()/'.cache/pl_mmb_requested_20261101/hub'
+CACHE = Path(os.environ.get('PL_MMB_REQUESTED_CACHE',str(Path.home()/'.cache/pl_mmb_requested_20261101/hub')))
 MODES = ['v2_no_instructions', 'author_recommended']
 PROFILE = 'historical-native-v2'
-STAGE = 'S04-LEADERBOARD'
+STAGE = os.environ.get('PL_MMB_REQUESTED_STAGE','S04-LEADERBOARD')
 
 
 def completed_cells(document, model_id):
@@ -161,7 +161,9 @@ def folder_for(job):
 
 def clean(job):
     """Delete only the registered blobs in a dedicated queue-owned cache."""
-    if CACHE.resolve() != (Path.home()/'.cache/pl_mmb_requested_20261101/hub').resolve():
+    allowed_caches={(Path.home()/'.cache'/name/'hub').resolve() for name in
+                    ('pl_mmb_requested_20261101','pl_mmb_requested_2b_20261101')}
+    if CACHE.resolve() not in allowed_caches:
         raise ValueError('Unexpected private cache root')
     removed = []
     for spec in job['components']:

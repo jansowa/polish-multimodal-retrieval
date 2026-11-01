@@ -17,12 +17,13 @@ def build_app():
     profiles = sorted({r['profile'] for r in document['results']})
     initial_organizations = organizations(document)
 
-    def calculate(metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, chosen_models):
+    def calculate(metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, chosen_models, license_filter):
         return overview(load(), metric, mode, profile, limit, seeds, controls, visible, average,
-                        min_parameters=minimum, selected_organizations=selected_orgs, selected_models=chosen_models or None)
+                        min_parameters=minimum, selected_organizations=selected_orgs, selected_models=chosen_models or None,
+                        license_filter=license_filter)
 
     def update(*args):
-        metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, chosen_models, log_scale, show_labels, known_orgs = args
+        metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, chosen_models, license_filter, log_scale, show_labels, known_orgs = args
         snapshot = load()
         current_orgs = organizations(snapshot)
         # Newly arriving models can introduce an organization while the UI is open.
@@ -31,7 +32,8 @@ def build_app():
         if set(selected_orgs) == set(known_orgs):
             selected_orgs = current_orgs
         view = overview(snapshot, metric, mode, profile, limit, seeds, controls, visible, average,
-                        min_parameters=minimum, selected_organizations=selected_orgs, selected_models=chosen_models or None)
+                        min_parameters=minimum, selected_organizations=selected_orgs, selected_models=chosen_models or None,
+                        license_filter=license_filter)
         chart = pareto_html(snapshot, log_scale=log_scale, filtered_view=view, show_labels=show_labels)
         return (gr.update(value=styled(view), datatype=['html'] + ['str'] * (len(view['headers']) - 1), column_widths=column_widths(view)),
                 f"Pełny średni wynik: **{view['complete']}/{view['total']} modeli** · {len(view['average_tasks'])} zadań. „—” oznacza brak kompletu wyników.",
@@ -61,6 +63,9 @@ def build_app():
                 limit = gr.Number(value=0, minimum=0, label='Maksimum V+T [M]; 0 = bez limitu')
             selected_orgs = gr.CheckboxGroup(choices=initial_organizations, value=initial_organizations,
                                             label='Organizacje')
+            license_filter = gr.Dropdown(choices=[('Wszystkie','all'),('Komercyjne (w tym własne)','commercial'),
+                                                  ('Niekomercyjne','noncommercial'),('Nieustalone','unknown')],
+                                         value='all',label='Licencje')
             known_orgs = gr.State(value=initial_organizations)
             with gr.Row():
                 seeds = gr.Checkbox(value=False, label='Pokaż wszystkie seedy')
@@ -81,7 +86,7 @@ def build_app():
                              interactive=False, wrap=True, elem_id='leaderboard',
                              column_widths=column_widths(initial), pinned_columns=1)
         coverage = gr.Markdown(f"Pełny średni wynik: **{initial['complete']}/{initial['total']} modeli** · {len(initial['average_tasks'])} zadań. „—” oznacza brak kompletu wyników.")
-        table_inputs = [metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, chosen_models]
+        table_inputs = [metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, chosen_models, license_filter]
         inputs = table_inputs + [log_scale, show_labels, known_orgs]
         outputs = [board, coverage, chart, selected_orgs, known_orgs, chosen_models]
         refresh = gr.Button('Odśwież wyniki')
