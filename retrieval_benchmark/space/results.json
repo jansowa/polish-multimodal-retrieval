@@ -6558,6 +6558,27 @@
       "revision": "49488218e80259885f3be61d7a9455faf833b7a8",
       "role": "reference"
     },
+    "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775": {
+      "efficiency": null,
+      "label": "siglip2-so400m-patch16-512",
+      "license": {
+        "display": "apache-2.0",
+        "spdx": "apache-2.0",
+        "status": "reported",
+        "url": "https://huggingface.co/google/siglip2-so400m-patch16-512/blob/ceea1cba8130d8271436da4828633198c176a775/README.md"
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 2,
+        "text": 707782896,
+        "total": 1136555696,
+        "vision": 428772800
+      },
+      "repository": "google/siglip2-so400m-patch16-512",
+      "representative": true,
+      "revision": "ceea1cba8130d8271436da4828633198c176a775",
+      "role": "reference"
+    },
     "hf:google/tipsv2-b14@ed1e4dc6b74bf3935ae099e9d5eb30fa96528454": {
       "efficiency": {
         "cpu_threads": 2,
@@ -35710,6 +35731,734 @@
       "tokenization": {
         "reason": "Native tokenizer does not expose untruncated lengths",
         "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7441351293370101,
+          "ndcg@10": 0.6682461975865406,
+          "recall@1": 0.6458159577425633,
+          "recall@10": 0.9188212399221574,
+          "recall@5": 0.8676675006950236
+        },
+        "t2i": {
+          "mrr": 0.6389805472690082,
+          "ndcg@10": 0.678725826160577,
+          "recall@1": 0.5388834200534384,
+          "recall@10": 0.8242160033750527,
+          "recall@5": 0.7595274926170721
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "4b42b6a2d39b285512a24412533201aa14706c2bc3fc80297bf9906e2d81b5cf",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 66,
+          "mean": 18.153846153846153,
+          "prefix": "",
+          "truncation_fraction": 0.0002812543945999156
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 66,
+          "mean": 18.153846153846153,
+          "prefix": "",
+          "truncation_fraction": 0.0002812543945999156
+        }
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7134574741036315,
+          "ndcg@10": 0.7423656687584348,
+          "recall@1": 0.6315,
+          "recall@10": 0.8495,
+          "recall@5": 0.8115
+        },
+        "t2i": {
+          "mrr": 0.675548342401685,
+          "ndcg@10": 0.7112167761289588,
+          "recall@1": 0.582626060908637,
+          "recall@10": 0.8377433849226161,
+          "recall@5": 0.7903145282076884
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "d65dd8cb445dfc7d5b7c08794dc9e2a68de4fc17d17e5c942a8de2a1cbc8ea78",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 152,
+          "mean": 46.97803295057414,
+          "prefix": "",
+          "truncation_fraction": 0.15376934598102845
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 152,
+          "mean": 46.97803295057414,
+          "prefix": "",
+          "truncation_fraction": 0.15376934598102845
+        }
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7885257019724133,
+          "ndcg@10": 0.8284272752181376,
+          "recall@1": 0.698,
+          "recall@10": 0.961,
+          "recall@5": 0.907
+        },
+        "t2i": {
+          "mrr": 0.7884393394656716,
+          "ndcg@10": 0.8268035214468143,
+          "recall@1": 0.701,
+          "recall@10": 0.955,
+          "recall@5": 0.901
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "d2839c4de30faf55e9e5dc1fb16a612410f62ec98e3504bd4b6d181ee9782d32",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 55,
+          "mean": 18.72,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 55,
+          "mean": 18.72,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6399529792450228,
+          "ndcg@10": 0.4408501276357272,
+          "recall@1": 0.546,
+          "recall@10": 0.817,
+          "recall@5": 0.749
+        },
+        "t2i": {
+          "mrr": 0.5434385197632873,
+          "ndcg@10": 0.5855780359967888,
+          "recall@1": 0.4387755102040816,
+          "recall@10": 0.7453617810760668,
+          "recall@5": 0.6683673469387755
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "63bd85e841fe577b8b8b23ab0492b0e44011563e04fb0391a617e90cb14bc636",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 245,
+          "mean": 18.95361781076067,
+          "prefix": "",
+          "truncation_fraction": 0.0020871985157699443
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 245,
+          "mean": 18.95361781076067,
+          "prefix": "",
+          "truncation_fraction": 0.0020871985157699443
+        }
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.9013040417316351,
+          "ndcg@10": 0.7386958210602329,
+          "recall@1": 0.8434873949579832,
+          "recall@10": 0.9936974789915967,
+          "recall@5": 0.9758403361344538
+        },
+        "t2i": {
+          "mrr": 0.7202815067411978,
+          "ndcg@10": 0.7592014123025564,
+          "recall@1": 0.6236831015592078,
+          "recall@10": 0.8942267172355668,
+          "recall@5": 0.8396544458491361
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "084002746c9683699f44318639ed7be1227cb401273933957c18dcdeb3222c15",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 63,
+          "mean": 20.222924568057312,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 63,
+          "mean": 20.222924568057312,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.2996949611635962,
+          "ndcg@10": 0.31930080403377165,
+          "recall@1": 0.23173803526448364,
+          "recall@10": 0.4256926952141058,
+          "recall@5": 0.36272040302267
+        },
+        "t2i": {
+          "mrr": 0.3165194870314418,
+          "ndcg@10": 0.3394596461148941,
+          "recall@1": 0.24169184290030213,
+          "recall@10": 0.48338368580060426,
+          "recall@5": 0.3806646525679758
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "5e5e68cc0789f84e699c8ee8d1f5deffc696dd434a5c911bdbae43e6b35cb271",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 222,
+          "mean": 20.13595166163142,
+          "prefix": "",
+          "truncation_fraction": 0.01812688821752266
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 222,
+          "mean": 20.13595166163142,
+          "prefix": "",
+          "truncation_fraction": 0.01812688821752266
+        }
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7992952853456091,
+          "ndcg@10": 0.8389337396044916,
+          "recall@1": 0.7101449275362319,
+          "recall@10": 0.9687848383500557,
+          "recall@5": 0.9175027870680045
+        },
+        "t2i": {
+          "mrr": 0.8015513908358024,
+          "ndcg@10": 0.8376973518615649,
+          "recall@1": 0.717948717948718,
+          "recall@10": 0.9587513935340022,
+          "recall@5": 0.9096989966555183
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "8fe58dbfc73f5d211ea94855fa9f4a3dc9490709fa949dc57db7504729283723",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 55,
+          "mean": 18.657748049052397,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 55,
+          "mean": 18.657748049052397,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7885257019724133,
+          "ndcg@10": 0.8284272752181376,
+          "recall@1": 0.698,
+          "recall@10": 0.961,
+          "recall@5": 0.907
+        },
+        "t2i": {
+          "mrr": 0.7884393394656716,
+          "ndcg@10": 0.8268035214468143,
+          "recall@1": 0.701,
+          "recall@10": 0.955,
+          "recall@5": 0.901
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "02773d485dc042d8886aca33c122921986203e224c3472df7ff9260d41c437cf",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 55,
+          "mean": 18.72,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 55,
+          "mean": 18.72,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7992952853456091,
+          "ndcg@10": 0.8389337396044916,
+          "recall@1": 0.7101449275362319,
+          "recall@10": 0.9687848383500557,
+          "recall@5": 0.9175027870680045
+        },
+        "t2i": {
+          "mrr": 0.8015513908358024,
+          "ndcg@10": 0.8376973518615649,
+          "recall@1": 0.717948717948718,
+          "recall@10": 0.9587513935340022,
+          "recall@5": 0.9096989966555183
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "eb573c6d56b3fdc99fabba8331630551b08310ececf6c40b1383130bd25a6808",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 55,
+          "mean": 18.657748049052397,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 55,
+          "mean": 18.657748049052397,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7441351293370101,
+          "ndcg@10": 0.6682461975865406,
+          "recall@1": 0.6458159577425633,
+          "recall@10": 0.9188212399221574,
+          "recall@5": 0.8676675006950236
+        },
+        "t2i": {
+          "mrr": 0.6389805472690082,
+          "ndcg@10": 0.678725826160577,
+          "recall@1": 0.5388834200534384,
+          "recall@10": 0.8242160033750527,
+          "recall@5": 0.7595274926170721
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "7bbc09649c4fbb68071f6c5fdd314edf22f68206c1403bf75b01245177eecfcc",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 66,
+          "mean": 18.153846153846153,
+          "prefix": "",
+          "truncation_fraction": 0.0002812543945999156
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 66,
+          "mean": 18.153846153846153,
+          "prefix": "",
+          "truncation_fraction": 0.0002812543945999156
+        }
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7134574741036315,
+          "ndcg@10": 0.7423656687584348,
+          "recall@1": 0.6315,
+          "recall@10": 0.8495,
+          "recall@5": 0.8115
+        },
+        "t2i": {
+          "mrr": 0.675548342401685,
+          "ndcg@10": 0.7112167761289588,
+          "recall@1": 0.582626060908637,
+          "recall@10": 0.8377433849226161,
+          "recall@5": 0.7903145282076884
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "a847aad8e0926b649fed529df7c77f92381c540bf6cad9c04d6ae98026111957",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 152,
+          "mean": 46.97803295057414,
+          "prefix": "",
+          "truncation_fraction": 0.15376934598102845
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 152,
+          "mean": 46.97803295057414,
+          "prefix": "",
+          "truncation_fraction": 0.15376934598102845
+        }
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.2996949611635962,
+          "ndcg@10": 0.31930080403377165,
+          "recall@1": 0.23173803526448364,
+          "recall@10": 0.4256926952141058,
+          "recall@5": 0.36272040302267
+        },
+        "t2i": {
+          "mrr": 0.3165194870314418,
+          "ndcg@10": 0.3394596461148941,
+          "recall@1": 0.24169184290030213,
+          "recall@10": 0.48338368580060426,
+          "recall@5": 0.3806646525679758
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "37ca360110e3ef6fe0738155b0ffef0f449652a33d698109873599cdb7a24900",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 222,
+          "mean": 20.13595166163142,
+          "prefix": "",
+          "truncation_fraction": 0.01812688821752266
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 222,
+          "mean": 20.13595166163142,
+          "prefix": "",
+          "truncation_fraction": 0.01812688821752266
+        }
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6399529792450228,
+          "ndcg@10": 0.4408501276357272,
+          "recall@1": 0.546,
+          "recall@10": 0.817,
+          "recall@5": 0.749
+        },
+        "t2i": {
+          "mrr": 0.5434385197632873,
+          "ndcg@10": 0.5855780359967888,
+          "recall@1": 0.4387755102040816,
+          "recall@10": 0.7453617810760668,
+          "recall@5": 0.6683673469387755
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "ec9315f3a4e38500a4e6ccbc573cb00decbfcdceb04057a7b6b823fa4bf80466",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 245,
+          "mean": 18.95361781076067,
+          "prefix": "",
+          "truncation_fraction": 0.0020871985157699443
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 245,
+          "mean": 18.95361781076067,
+          "prefix": "",
+          "truncation_fraction": 0.0020871985157699443
+        }
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.9013040417316351,
+          "ndcg@10": 0.7386958210602329,
+          "recall@1": 0.8434873949579832,
+          "recall@10": 0.9936974789915967,
+          "recall@5": 0.9758403361344538
+        },
+        "t2i": {
+          "mrr": 0.7202815067411978,
+          "ndcg@10": 0.7592014123025564,
+          "recall@1": 0.6236831015592078,
+          "recall@10": 0.8942267172355668,
+          "recall@5": 0.8396544458491361
+        }
+      },
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "56cd2b8df0eb0e54bb4c4502d0a849ab3ab4ad62f54e92ab4be0caabcf1835b8",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 63,
+          "mean": 20.222924568057312,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 63,
+          "mean": 20.222924568057312,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
       }
     }
   ],
