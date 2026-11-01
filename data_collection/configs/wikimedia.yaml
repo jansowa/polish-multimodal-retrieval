@@ -1,0 +1,58 @@
+output_dir: outputs/polish_culture
+source: wikimedia
+jsonl: false
+http:
+  user_agent: "pl-mmb-collection/1.0 (Polish culture dataset; configure project contact before larger runs)"
+  interval: 1.0
+  timeout: 45
+  retries: 3
+  backoff: 2
+  cache: true
+discovery:
+  seeds: [Q36, Q270, Q31487, Q619, Q7186, Q1268, Q444]
+  # Explicit collection/category seeds can cover traditions, food, folk costume,
+  # festivals, WWII, Solidarity, everyday life, landscapes, sport and modern art.
+  categories:
+    - Culture of Poland
+    - Polish cuisine
+    - Folk costumes of Poland
+    - Traditions of Poland
+    - World War II in Poland
+    - Solidarity (Polish trade union)
+    - Tatra Mountains
+    - Baltic Sea
+    - Sports in Poland
+    - Rail transport in Poland
+  # Optional country-scoped discovery by instance/subclass, independent of keywords:
+  # architectural structures, museums, castles, churches, paintings, sculptures,
+  # writers, musical compositions, scientists, politicians and historical events.
+  sparql_classes: [Q811979, Q33506, Q23413, Q16970, Q3305213, Q860861,
+                   Q49757, Q207628, Q901, Q82955, Q13418847]
+  country_qid: Q36
+  properties: [P150, P527, P800]
+  max_entities: 500
+  max_depth: 1
+  max_links_per_entity: 10
+wikimedia:
+  max_files_per_entity: 20
+  category_depth: 1
+  max_categories: 10
+  category_member_limit: 100
+  use_depicts_search: true
+filters:
+  min_width: 400
+  min_height: 400
+  min_area: 250000
+  allowed_mime_types: [image/jpeg, image/png, image/webp]
+  reject_svg: true
+  require_text: true
+  require_license: true
+  allowed_licenses: [CC0, CC BY 4.0, CC BY-SA 4.0, CC BY 3.0, CC BY-SA 3.0,
+                     CC BY 2.0, CC BY-SA 2.0, CC BY 2.5, CC BY-SA 2.5]
+  # Disabled by default; use only when such content is unwanted for a task.
+  # Example: ['Category:.*(?:maps|coats of arms|flags|diagrams|documents|scans)']
+  excluded_category_patterns: []
+download:
+  max_bytes: 50000000
+  phash: false
+  phash_distance: 6

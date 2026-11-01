@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Przeglądaj zebrane obrazy polskiej kultury, źródłowe opisy i licencje. Wyszukiwanie, filtry i wygodne stronicowanie.">
+  <meta name="theme-color" content="#214f40">
+  <title>Polska kultura — biblioteka obrazów</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#results">Przejdź do wyników</a>
+<header class="masthead">
+  <a class="brand" href="./" aria-label="Polska kultura — początek"><span class="monogram">pk<span>·</span></span><span>Polska kultura<small>BIBLIOTEKA OBRAZÓW</small></span></a>
+  <nav aria-label="Główna nawigacja"><span class="nav-active">Kolekcja</span><button class="plain" id="about">O zbiorze <span aria-hidden="true">↗</span></button></nav>
+  <span class="mode" id="mode">Łączenie ze zbiorem…</span>
+</header>
+<main>
+  <section class="intro" aria-labelledby="title"><div><p class="overline">OBRAZY · TEKSTY · KONTEKST</p><h1 id="title">Odkrywaj polską kulturę.<br><em>Obraz po obrazie.</em></h1><p class="intro-text">Przeglądaj źródłowe opisy, przyglądaj się szczegółom.<br>Każdy obraz zachowuje swoje pochodzenie i licencję.</p></div>
+  <div class="collection-note"><span class="note-mark" aria-hidden="true">◈</span><p>Od miejsc i architektury<br>po ludzi, sztukę i codzienność.</p><small>Wikimedia Commons × Wikidata</small></div></section>
+  <section class="metrics" aria-label="Statystyki wybranego zbioru">
+    <div><span class="metric-number" id="metric-total">—</span><span>obrazów w kolekcji</span></div>
+    <div><span class="metric-number" id="metric-direct">—</span><span>z tekstem jakości A lub B</span></div>
+    <div><span class="metric-number" id="metric-entities">—</span><span>tematów w przebiegu</span></div>
+    <div class="collection-progress"><span class="status-dot"></span><div><strong id="phase">Wczytywanie</strong><small id="updated">Sprawdzamy aktualność danych</small></div><button class="icon-button" id="refresh" title="Odśwież dane" aria-label="Odśwież dane">↻</button></div>
+  </section>
+  <div class="workspace">
+    <aside aria-label="Filtry kolekcji">
+      <div class="filter-heading"><h2>Zawęź kolekcję</h2><button class="plain reset" id="reset">Wyczyść</button></div>
+      <label for="dataset">Zbiór danych</label><select id="dataset"><option>Wczytywanie…</option></select>
+      <label for="language">Język opisu</label><select id="language"><option value="any">Wszystkie języki</option><option value="pl">Polski</option><option value="en">Angielski</option><option value="both">Polski i angielski</option></select>
+      <label for="quality">Jakość tekstu</label><select id="quality"><option value="">Każda jakość</option><option value="A">A · caption obrazu</option><option value="B">B · opis lub tytuł</option><option value="C">C · metadane strukturalne</option><option value="D">D · kontekst encji</option></select>
+      <label for="license">Licencja</label><select id="license"><option value="">Wszystkie licencje</option></select>
+      <div class="filter-note"><span aria-hidden="true">ⓘ</span><p>Ocena dotyczy tekstu, nie jakości zdjęcia. Przy kilku językach filtr szuka oceny w co najmniej jednym z nich.</p></div>
+      <details class="quality-legend"><summary>Jak czytać oceny?</summary><dl><dt><span class="grade a">A</span> Caption obrazu</dt><dd>Bezpośredni caption konkretnego pliku.</dd><dt><span class="grade b">B</span> Opis lub tytuł</dt><dd>Tekst pochodzący ze strony obrazu.</dd><dt><span class="grade c">C</span> Metadane strukturalne</dt><dd>Na przykład obiekty wskazane w depicts.</dd><dt><span class="grade d">D</span> Kontekst</dt><dd>Opis encji lub kategorii. Może nie opisywać zawartości zdjęcia.</dd></dl></details>
+      <p class="side-note">Nie generujemy opisów.<br>Czytasz teksty ze źródeł.</p>
+    </aside>
+    <section class="results" id="results" aria-label="Obrazy w kolekcji" tabindex="-1">
+      <form class="search" id="search-form" role="search"><span aria-hidden="true">⌕</span><label class="sr-only" for="q">Szukaj w zbiorze</label><input id="q" type="search" maxlength="200" placeholder="Szukaj miejsca, osoby, opisu lub QID…" autocomplete="off"><button type="submit">Szukaj <span aria-hidden="true">→</span></button></form>
+      <div class="result-toolbar"><p id="result-count" aria-live="polite">Wczytywanie kolekcji…</p><div><label class="sr-only" for="sort">Sortowanie</label><select id="sort"><option value="newest">Ostatnio zebrane</option><option value="oldest">Najwcześniej zebrane</option><option value="entity">Nazwa encji A–Z</option><option value="resolution">Największa rozdzielczość</option><option value="random">Losowa kolejność</option></select><button id="reroll" class="icon-button" title="Nowe losowanie" aria-label="Nowe losowanie" hidden>⤨</button></div></div>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <div class="gallery" id="gallery" aria-busy="true"></div>
+      <nav class="pagination" aria-label="Strony wyników"><div class="page-summary" id="page-summary"></div><div class="page-buttons" id="page-buttons"></div><div class="page-options"><label for="size">Na stronie</label><select id="size"><option>12</option><option>24</option><option>48</option><option>96</option></select><form id="jump-form"><label for="jump">Przejdź do</label><input id="jump" type="number" min="1" inputmode="numeric" aria-label="Numer strony"><button type="submit" class="icon-button" aria-label="Przejdź do strony">→</button></form></div></nav>
+    </section>
+  </div>
+</main>
+<footer><span class="footer-brand">Polska kultura <span>·</span> Biblioteka obrazów</span><span>Źródłowe dane. Widoczne pochodzenie.</span><a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Wikimedia Commons ↗</a></footer>
+<dialog id="detail" aria-labelledby="detail-title"><button class="close-dialog icon-button" id="close-detail" aria-label="Zamknij szczegóły">×</button><div id="detail-body"></div></dialog>
+<dialog id="about-dialog" aria-labelledby="about-title"><div class="about-content"><p class="overline">O KOLEKCJI</p><h2 id="about-title">Obraz ma znaczenie.<br>Źródło również.</h2><p>Ta przeglądarka pokazuje pary obraz–tekst pozyskane z Wikimedia Commons i Wikidata. Teksty pochodzą z istniejących captionów, opisów i metadanych. Nie są generowane przez model.</p><p>Jakość A–D opisuje pochodzenie tekstu. Szczególnie <strong>D jest tylko kontekstem encji lub kategorii</strong> i może nie opisywać zdjęcia. PL i EN mogą mieć różne oceny.</p><p>Każdy rekord ma licencję obrazu i odsyłacz do oryginalnej strony. Sprawdź jej warunki przy dalszym użyciu. Związek przez kategorię nie potwierdza automatycznie, co przedstawia zdjęcie.</p><p id="about-mode"></p><button class="primary" id="close-about">Wracam do kolekcji</button></div></dialog>
+<noscript><p class="notice">Włącz JavaScript, aby przeglądać i stronicować kolekcję.</p></noscript>
+</body></html>

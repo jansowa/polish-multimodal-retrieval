@@ -1,0 +1,84 @@
+# Identified, sequential Wikimedia client. A single shared budget covers projects.
+# Never run another collector with a separate budget for the same identity/IP.
+output_dir: outputs/polish_culture_expanded
+source: wikimedia
+jsonl: true
+http:
+  user_agent: "pl-mmb-collection/1.1 (Polish culture image-text dataset research)"
+  contact: jan.sowa@bielik.ai
+  requests_per_minute: 180
+  interval: 0.35
+  timeout: 30
+  retries: 2
+  backoff: 2
+  max_inline_wait: 5
+  state_path: outputs/wikimedia_http_state.json
+  cache: true
+  keep_alive: true
+  cache_dirs:
+    - outputs/polish_culture_pilot/raw
+    - outputs/polish_culture/raw
+discovery:
+  seeds: [Q36, Q270, Q31487, Q268, Q1792, Q1799, Q580, Q588, Q393, Q37333,
+          Q47554, Q619, Q7186, Q1268, Q444, Q989, Q79822, Q42552, Q41502, Q121180]
+  seed_checkpoints:
+    - outputs/polish_culture/checkpoint.sqlite3
+    - outputs/polish_culture_pilot/checkpoint.sqlite3
+  categories:
+    - Culture of Poland
+    - Polish cuisine
+    - Folk costumes of Poland
+    - Traditions of Poland
+    - World War II in Poland
+    - Solidarity (Polish trade union)
+    - Tatra Mountains
+    - Baltic Sea
+    - Sports in Poland
+    - Rail transport in Poland
+    - Art of Poland
+    - Museums in Poland
+    - Castles in Poland
+    - Churches in Poland
+    - Polish folk music
+    - Festivals in Poland
+    - History of Poland
+    - Daily life in Poland
+  # SPARQL can later add IDs. It is not a prerequisite for this run.
+  enable_sparql: false
+  sparql_classes: [Q811979, Q33506, Q23413, Q16970, Q3305213, Q860861, Q49757, Q901]
+  sparql_limit_per_class: 50
+  country_qid: Q36
+  properties: [P150, P527, P800]
+  max_entities: 20000
+  max_depth: 2
+  max_links_per_entity: 50
+wikimedia:
+  entity_batch_size: 50
+  metadata_batch_size: 10
+  structured_batch_size: 50
+  preflight_images: true
+  max_files_per_entity: 1000
+  category_depth: 2
+  max_categories: 100
+  category_member_limit: 2000
+  use_depicts_search: true
+pipeline:
+  discovery_batches_per_round: 1
+  collect_entities_per_round: 20
+  export_every_records: 100
+  export_interval: 60
+filters:
+  min_width: 400
+  min_height: 400
+  min_area: 250000
+  allowed_mime_types: [image/jpeg, image/png, image/webp]
+  reject_svg: true
+  require_text: true
+  require_license: true
+  allowed_licenses: [CC0, CC BY 4.0, CC BY-SA 4.0, CC BY 3.0, CC BY-SA 3.0,
+                     CC BY 2.0, CC BY-SA 2.0, CC BY 2.5, CC BY-SA 2.5]
+  excluded_category_patterns: []
+download:
+  max_bytes: 50000000
+  phash: false
+  phash_distance: 6

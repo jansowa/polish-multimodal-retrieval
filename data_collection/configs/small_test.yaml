@@ -1,0 +1,24 @@
+# Small metadata-only run. Set a real project/contact URL or email in User-Agent.
+output_dir: outputs/polish_culture_pilot
+source: wikimedia
+jsonl: true
+http:
+  user_agent: "pl-mmb-collection/1.0 (Polish culture dataset pilot; local research)"
+  interval: 2.0
+  timeout: 30
+  retries: 2
+discovery:
+  seeds: [Q36, Q270, Q31487, Q268, Q1792, Q1799, Q580, Q588, Q393, Q37333,
+          Q47554, Q619, Q7186, Q1268, Q444, Q989, Q79822, Q42552, Q41502, Q121180]
+  max_entities: 20
+  max_depth: 0
+wikimedia:
+  max_files_per_entity: 2
+  category_depth: 0
+  category_member_limit: 20
+  max_categories: 1
+  use_depicts_search: false
+filters:
+  min_width: 400
+  min_height: 400
+  min_area: 250000

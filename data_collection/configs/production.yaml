@@ -1,0 +1,53 @@
+# Bounded background run, separate from the completed pilot.
+output_dir: outputs/polish_culture
+source: wikimedia
+jsonl: true
+http:
+  user_agent: "pl-mmb-collection/1.0 (Polish culture image-text dataset; local research)"
+  interval: 6.0
+  timeout: 60
+  retries: 3
+  backoff: 5
+  cache: true
+discovery:
+  seeds: [Q36, Q270, Q31487, Q268, Q1792, Q1799, Q580, Q588, Q393, Q37333,
+          Q47554, Q619, Q7186, Q1268, Q444, Q989, Q79822, Q42552, Q41502, Q121180]
+  categories:
+    - Culture of Poland
+    - Polish cuisine
+    - Folk costumes of Poland
+    - Traditions of Poland
+    - World War II in Poland
+    - Solidarity (Polish trade union)
+    - Tatra Mountains
+    - Baltic Sea
+    - Sports in Poland
+    - Rail transport in Poland
+  sparql_classes: [Q811979, Q33506, Q23413, Q16970, Q3305213, Q860861,
+                   Q49757, Q207628, Q901, Q82955, Q13418847]
+  country_qid: Q36
+  properties: [P150, P527, P800]
+  max_entities: 500
+  max_depth: 1
+  max_links_per_entity: 10
+wikimedia:
+  max_files_per_entity: 20
+  category_depth: 1
+  max_categories: 10
+  category_member_limit: 100
+  use_depicts_search: true
+filters:
+  min_width: 400
+  min_height: 400
+  min_area: 250000
+  allowed_mime_types: [image/jpeg, image/png, image/webp]
+  reject_svg: true
+  require_text: true
+  require_license: true
+  allowed_licenses: [CC0, CC BY 4.0, CC BY-SA 4.0, CC BY 3.0, CC BY-SA 3.0,
+                     CC BY 2.0, CC BY-SA 2.0, CC BY 2.5, CC BY-SA 2.5]
+  excluded_category_patterns: []
+download:
+  max_bytes: 50000000
+  phash: false
+  phash_distance: 6

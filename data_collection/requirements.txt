@@ -1,0 +1,6 @@
+# CPU only; independent of translation and model environments.
+pyarrow>=14,<24
+PyYAML>=6,<7
+Pillow>=10.4.0,<13
+requests>=2.32,<3
+# Optional perceptual hashing: pip install 'ImageHash>=4.3,<5'

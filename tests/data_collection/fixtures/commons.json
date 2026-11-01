@@ -1,0 +1,35 @@
+{
+  "page": {
+    "pageid": 12345,
+    "title": "File:Wawel Castle test.jpg",
+    "categories": [{"title": "Category:Wawel Castle"}, {"title": "Category:Architecture of Poland"}],
+    "imageinfo": [{
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Fixture.jpg",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Fixture.jpg",
+      "width": 1800, "height": 1200, "mime": "image/jpeg", "sha1": "fixture-source-hash",
+      "extmetadata": {
+        "ImageDescription": {"value": {"pl": "<p>Zamek na Wawelu.</p>", "en": "<p>Wawel Castle.</p>", "_type": "lang"}},
+        "Artist": {"value": "<a href=\"https://example.org/artist\">Fixture Photographer</a>"},
+        "Attribution": {"value": "Fixture Photographer / Wikimedia Commons"},
+        "DateTimeOriginal": {"value": "2020-05-01"},
+        "LicenseShortName": {"value": "CC BY-SA 4.0"},
+        "LicenseUrl": {"value": "https://creativecommons.org/licenses/by-sa/4.0/"}
+      }
+    }]
+  },
+  "structured": {
+    "id": "M12345", "lastrevid": 98765,
+    "labels": {"pl": {"language": "pl", "value": "Widok zamku na Wawelu od strony Wisły."}, "en": {"language": "en", "value": "Wawel Castle seen from the Vistula."}},
+    "statements": {"P180": [{"mainsnak": {"snaktype": "value", "datavalue": {"value": {"id": "Q189698"}}}}]}
+  },
+  "entity": {
+    "id": "Q31487", "lastrevid": 123,
+    "labels": {"pl": {"value": "Kraków"}, "en": {"value": "Kraków"}},
+    "descriptions": {"pl": {"value": "miasto w Polsce"}, "en": {"value": "city in Poland"}},
+    "claims": {
+      "P18": [{"mainsnak": {"snaktype": "value", "datavalue": {"value": "Wawel Castle test.jpg"}}}],
+      "P373": [{"mainsnak": {"snaktype": "value", "datavalue": {"value": "Kraków"}}}],
+      "P150": [{"mainsnak": {"snaktype": "value", "datavalue": {"value": {"id": "Q36"}}}}]
+    }
+  }
+}
