@@ -15,3 +15,5 @@
 | S04-LEADERBOARD | 2026-11-01 | Zlecona kolejka referencji: deduplikacja, czyszczenie wag, automatyczny push | partial (job działa; odbiór osobno) | [handoff](handoffs/S04-LEADERBOARD.md) | commit zawierający wpis: `[S04-LEADERBOARD] Queue requested reference evaluation and publication` |
 
 | S05-LEADERBOARD-PARETO | 2026-11-01 | Wykres Pareto dla widocznych modeli; wspólne filtry min/max i organizacji, własne pod jansowa | done | [handoff](handoffs/S05-LEADERBOARD-PARETO.md) | commit zawierający wpis: `[S05-LEADERBOARD-PARETO] Add filtered Pareto chart and organization controls` |
+
+| S06-LEADERBOARD-UI-RELOAD | 2026-11-01 | Wdrożenie widoku Pareto na wskazanym localhost:7865 i weryfikacja live API | done | [handoff](handoffs/S06-LEADERBOARD-UI-RELOAD.md) | commit zawierający wpis: `[S06-LEADERBOARD-UI-RELOAD] Verify updated live leaderboard` |

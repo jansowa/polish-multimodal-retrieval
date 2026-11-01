@@ -1,0 +1,12 @@
+{
+  "url": "http://localhost:7865/",
+  "status": "passed",
+  "pareto": true,
+  "filters": [
+    "Minimum V+T [M]",
+    "Maksimum V+T [M]; 0 = bez limitu",
+    "Organizacje"
+  ],
+  "visible_own_models": 7,
+  "graph_matches_live_table": true
+}

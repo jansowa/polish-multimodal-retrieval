@@ -1,5 +1,11 @@
 # STATUS — seria F / M
 
+S06-LEADERBOARD-UI-RELOAD (2026-11-01) done: pod wskazanym przez właściciela
+http://localhost:7865/ działał stary proces UI. Przeładowano wyłącznie ten serwer;
+wykres Pareto i filtry sprawdzono przez jego rzeczywisty config/API.
+[Dowód](S06-LEADERBOARD-UI-RELOAD/live-validation.json).
+Następny etap: S07-LEADERBOARD-RECEIVE. Kolejka GPU i liczniki F bez zmian.
+
 S05-LEADERBOARD-PARETO (2026-11-01) done: na zlecenie właściciela dodano wykres
 Pareto i wspólne filtry min/max oraz organizacji (własne: jansowa).
 Wykres obejmuje dokładnie widoczne wiersze tabeli.
