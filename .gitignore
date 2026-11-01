@@ -64,3 +64,10 @@ training/runs/f_series/**
 /reports/series_2026-10-23/wiki_v2/candidates.jsonl
 /reports/series_2026-10-23/wiki_v2/pilot_pairs_disjoint_snapshot.jsonl
 /reports/series_2026-10-23/wiki_v2/pilot_wiki_train_disjoint.jsonl
+
+# Live coordination owned by concurrent sessions, not experiment evidence.
+/reports/data_ood_coordination_20261030/**/*_STATUS.json
+/reports/data_ood_coordination_20261030/**/DISK_RESERVATIONS.json
+/reports/data_study_20261030/**/STATUS.json
+/reports/data_study_20261030/**/TRAINING_STATUS.json
+/reports/ood_eval_20261030/resume_state.json
