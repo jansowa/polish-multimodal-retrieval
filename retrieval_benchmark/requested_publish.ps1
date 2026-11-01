@@ -7,8 +7,14 @@ $lockHandle = [System.IO.File]::Open($mutexFile, 'OpenOrCreate', 'ReadWrite', 'N
 $published = ''
 function Invoke-GitChecked {
     param([string[]]$GitArguments)
-    $output = & git @GitArguments 2>&1
-    if ($LASTEXITCODE -ne 0) { throw "git $($GitArguments -join ' ') failed: $output" }
+    # Windows PowerShell treats successful Git progress on stderr as ErrorRecord.
+    $savedPreference = $ErrorActionPreference
+    try {
+        $ErrorActionPreference = 'Continue'
+        $output = & git @GitArguments 2>&1
+        $gitExit = $LASTEXITCODE
+    } finally { $ErrorActionPreference = $savedPreference }
+    if ($gitExit -ne 0) { throw "git $($GitArguments -join ' ') failed: $output" }
     return $output
 }
 try {
