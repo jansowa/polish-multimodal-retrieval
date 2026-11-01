@@ -2,7 +2,7 @@ import copy
 import unittest
 import xml.etree.ElementTree as ET
 
-from retrieval_benchmark.space.view import commercial_use, frontier, organizations, overview, pareto_data, pareto_html
+from retrieval_benchmark.space.view import commercial_use, frontier, label_rows, organizations, overview, pareto_data, pareto_html, place_label_rows
 from retrieval_benchmark.tests.test_suite import document
 
 
@@ -94,6 +94,32 @@ class ParetoTests(unittest.TestCase):
             self.assertEqual(len(root.findall('s:polyline',ns)),2)
             self.assertIn('Brak pełnej średniej',markup)
         self.assertIn('Brak modeli',pareto_html(doc,max_parameters=1))
+
+    def test_dense_identical_targets_have_nonoverlapping_full_names(self):
+        points = [dict(id=str(i),size=50,name='organization/'+('long-model-name-'*5)+str(i)) for i in range(120)]
+        rows = label_rows(points)
+        height = max(sum(row['height']+8 for row in rows if row['side']==side) for side in ('left','right'))
+        positions = {p['id']:(500,400) for p in points}
+        placed = place_label_rows(rows,positions,35,35+height+12)
+        self.assertEqual(len(placed),len(points))
+        for side in ('left','right'):
+            column = sorted((row for row in placed.values() if row['side']==side),key=lambda row:row['y'])
+            self.assertGreaterEqual(column[0]['y'],35)
+            self.assertLessEqual(column[-1]['y']+column[-1]['height'],35+height+12)
+            for a,b in zip(column,column[1:]):
+                self.assertGreaterEqual(b['y'],a['y']+a['height']+8)
+        for point in points:
+            self.assertEqual(''.join(placed[point['id']]['lines']),point['name'])
+
+    def test_labels_are_on_by_default_and_hover_mode_omits_them(self):
+        doc = document()
+        markup = pareto_html(doc)
+        self.assertEqual(markup.count('class="model-label"'),len(overview(doc)['rows']))
+        self.assertIn('class="label-leader"',markup)
+        hover = pareto_html(doc,show_labels=False)
+        self.assertNotIn('class="model-label"',hover)
+        self.assertNotIn('class="label-leader"',hover)
+        self.assertIn('<title>',hover)
 
 
 if __name__ == '__main__':

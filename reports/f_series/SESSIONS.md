@@ -17,3 +17,5 @@
 | S05-LEADERBOARD-PARETO | 2026-11-01 | Wykres Pareto dla widocznych modeli; wspólne filtry min/max i organizacji, własne pod jansowa | done | [handoff](handoffs/S05-LEADERBOARD-PARETO.md) | commit zawierający wpis: `[S05-LEADERBOARD-PARETO] Add filtered Pareto chart and organization controls` |
 
 | S06-LEADERBOARD-UI-RELOAD | 2026-11-01 | Wdrożenie widoku Pareto na wskazanym localhost:7865 i weryfikacja live API | done | [handoff](handoffs/S06-LEADERBOARD-UI-RELOAD.md) | commit zawierający wpis: `[S06-LEADERBOARD-UI-RELOAD] Verify updated live leaderboard` |
+
+| S07-LEADERBOARD-LABELS | 2026-11-01 | Stałe pełne nazwy, przełącznik hover-only, rozłączne pola i wdrożenie live | done | [handoff](handoffs/S07-LEADERBOARD-LABELS.md) | commit zawierający wpis: `[S07-LEADERBOARD-LABELS] Show persistent nonoverlapping model labels` |

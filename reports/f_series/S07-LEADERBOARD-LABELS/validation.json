@@ -1,0 +1,34 @@
+{
+  "cases": [
+    {
+      "case": "all",
+      "labels": 49,
+      "overlapping_label_boxes": 0,
+      "visible_models": 49
+    },
+    {
+      "case": "under100",
+      "labels": 21,
+      "overlapping_label_boxes": 0,
+      "visible_models": 21
+    },
+    {
+      "case": "under100-log",
+      "labels": 21,
+      "overlapping_label_boxes": 0,
+      "visible_models": 21
+    }
+  ],
+  "code_sha256": {
+    "retrieval_benchmark/space/app.py": "456bd86a70476d1b199718db4fd40718ab57be074a99612ee1038ce36f6378de",
+    "retrieval_benchmark/space/view.py": "8455993c2d3bd0afc434f8f28f2ac10a7d6cec34fbbc2a2321836ddc472abbe0",
+    "retrieval_benchmark/tests/test_pareto.py": "ca85f9ff5d7f51d4c02a1be099429be3b2fdf7769b27676e5beca6de11f723ce"
+  },
+  "protected_sha256": {
+    "protocols/protocol-v3-f.json": "a734e9fb97ff7ee2d12e35fcae84a67d467c87197a627b9f930e634586c33fb3",
+    "retrieval_benchmark/catalog-current.json": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010",
+    "retrieval_benchmark/catalog.json": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8",
+    "src/pl_mmb_training/holdouts.py": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3"
+  },
+  "results_sha256": "8fcb8fc8ce5f389bda0382d90077a9448f01a79fd01bc46d73df14b6b913559e"
+}

@@ -1,0 +1,17 @@
+﻿[
+    {
+        "case":  "all",
+        "labels":  49,
+        "overflow":  0
+    },
+    {
+        "case":  "under100",
+        "labels":  21,
+        "overflow":  0
+    },
+    {
+        "case":  "under100-log",
+        "labels":  21,
+        "overflow":  0
+    }
+]

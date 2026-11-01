@@ -4,6 +4,7 @@ import html
 import io
 import json
 import math
+import textwrap
 from pathlib import Path
 from urllib.parse import quote
 
@@ -183,10 +184,43 @@ def pareto_data(document, metric='recall@1', mode='v2_no_instructions',
                 tasks=view['average_tasks'])
 
 
+def label_rows(points):
+    """Separate side rails give every full name its own nonoverlapping rectangle."""
+    ordered = sorted(points, key=lambda p:(p['size'],p['id']))
+    split = (len(ordered)+1)//2
+    rows = []
+    for i,point in enumerate(ordered):
+        lines = textwrap.wrap(point['name'],width=38,break_long_words=True,break_on_hyphens=False) or ['']
+        rows.append(dict(id=point['id'], side='left' if i < split else 'right', lines=lines,height=15*len(lines)+8))
+    return rows
+
+
+def place_label_rows(rows, coordinates, top, bottom):
+    """Pack toward target Y, then back from the bottom; capacity is set by renderer."""
+    result = {}
+    for side in ('left','right'):
+        column = sorted((dict(row) for row in rows if row['side']==side),
+                        key=lambda row:(coordinates[row['id']][1],coordinates[row['id']][0],row['id']))
+        cursor = top
+        for row in column:
+            target = coordinates[row['id']][1]
+            row['y'] = max(cursor,target-row['height']/2)
+            cursor = row['y']+row['height']+8
+        cursor = bottom
+        for row in reversed(column):
+            row['y'] = min(row['y'],cursor-row['height'])
+            cursor = row['y']-8
+        for row in column:
+            row['x'] = 12 if side=='left' else 1128
+            row['width'] = 308
+            result[row['id']] = row
+    return result
+
+
 def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
                 profile='historical-native-v2', max_parameters=0, average_tasks=None, log_scale=False,
                 show_seeds=False, show_controls=False, min_parameters=0, selected_organizations=None,
-                filtered_view=None):
+                filtered_view=None, show_labels=True):
     """Responsive SVG: no extra dependencies, external scripts or network calls."""
     data = pareto_data(document, metric, mode, profile, max_parameters, average_tasks,
                        show_seeds, show_controls, min_parameters, selected_organizations, filtered_view)
@@ -196,7 +230,13 @@ def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
     escape = lambda value: html.escape(str(value), quote=True)
     complete = [p for p in points if p['score'] is not None]
     missing = [p for p in points if p['score'] is None]
-    left, right, top, bottom = 85, 1000, 35, 355
+    rows = label_rows(points) if show_labels else []
+    rail_height = max((sum(row['height']+8 for row in rows if row['side']==side) for side in ('left','right')),default=0)
+    left, right, top = (390,1090,35) if show_labels else (85,1000,35)
+    bottom = max(355,top+rail_height+12)
+    canvas_width = 1460 if show_labels else 1040
+    canvas_height = bottom+135
+    middle = (left+right)/2
     positive = [p['size'] for p in points if p['size'] > 0]
     high = max(positive, default=1)*1.08
     low = min(positive, default=1)/1.15 if log_scale else 0
@@ -211,15 +251,19 @@ def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
         return left+(right-left)*fraction
     def y(score):
         return bottom-(bottom-top)*score/100
+    coordinates = {p['id']:(x(p['size']),y(p['score']) if p['score'] is not None else bottom+93) for p in points}
+    placed = place_label_rows(rows,coordinates,top,bottom+112 if missing else bottom) if show_labels else {}
     blue, orange = '#2563eb', '#d97706'
-    parts = ['<div class="pareto-chart">',
+    parts = ['<div class="pareto-chart" style="overflow-x:auto">',
              '<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:8px">',
              f'<span><b style="color:{blue}">━━</b> Pareto: wszystkie modele</span>',
              f'<span><b style="color:{orange}">┅┅</b> Pareto: komercyjne + własne</span></div>',
-             '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 490" '
+             f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {canvas_width} {canvas_height}" '
              'role="img" aria-label="Średni wynik modeli względem rozmiaru, dwie granice Pareto" '
-             'style="width:100%;height:auto;min-width:420px;color:var(--body-text-color,#334155)">',
-             '<style>.pareto-point:focus circle,.pareto-point:hover circle{stroke:currentColor;stroke-width:3}</style>']
+             f'style="width:100%;height:auto;min-width:{1460 if show_labels else 420}px;color:var(--body-text-color,#334155)">',
+             '<style>.pareto-point:focus circle,.pareto-point:hover circle{stroke:currentColor;stroke-width:3}'
+             '.pareto-point:hover .model-label,.pareto-point:focus .model-label{text-decoration:underline}'
+             '.pareto-point:hover .label-leader,.pareto-point:focus .label-leader{stroke-opacity:1;stroke-width:2}</style>']
     for tick in range(0, 101, 20):
         yy = y(tick)
         parts.append(f'<path d="M{left} {yy:.2f}H{right}" stroke="var(--border-color-primary,#d7dde5)"/>')
@@ -235,21 +279,21 @@ def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
         label = f'{tick:,.0f}'.replace(',', ' ') if tick >= 10 else f'{tick:g}'
         parts.append(f'<text x="{xx:.2f}" y="{bottom+22}" text-anchor="middle" fill="currentColor" font-size="12">{label}</text>')
     parts.append(f'<path d="M{left} {top}V{bottom}H{right}" fill="none" stroke="currentColor"/>')
-    parts.append('<text x="20" y="195" transform="rotate(-90 20 195)" text-anchor="middle" fill="currentColor" font-size="13">Średni wynik modelu [%]</text>')
+    ylabel_x, ylabel_y = left-55,(top+bottom)/2
+    parts.append(f'<text x="{ylabel_x}" y="{ylabel_y}" transform="rotate(-90 {ylabel_x} {ylabel_y})" text-anchor="middle" fill="currentColor" font-size="13">Średni wynik modelu [%]</text>')
     xlabel = 'Rozmiar enkoderów V+T [mln parametrów]'+(' · skala logarytmiczna' if log_scale else '')
-    parts.append(f'<text x="545" y="406" text-anchor="middle" fill="currentColor" font-size="13">{xlabel}</text>')
+    parts.append(f'<text x="{middle}" y="{bottom+51}" text-anchor="middle" fill="currentColor" font-size="13">{xlabel}</text>')
     for name, color, dashed in [('all_frontier',blue,False), ('commercial_frontier',orange,True)]:
         line = data[name]
-        coordinates = ' '.join(f'{x(p["size"]):.2f},{y(p["score"]):.2f}' for p in line)
+        line_coordinates = ' '.join(f'{x(p["size"]):.2f},{y(p["score"]):.2f}' for p in line)
         dash = ' stroke-dasharray="8 5"' if dashed else ''
-        parts.append(f'<polyline data-frontier="{name}" points="{coordinates}" fill="none" stroke="{color}" stroke-width="3"{dash}/>')
+        parts.append(f'<polyline data-frontier="{name}" points="{line_coordinates}" fill="none" stroke="{color}" stroke-width="3"{dash}/>')
     if missing:
-        parts.append('<rect x="85" y="430" width="915" height="35" rx="6" fill="var(--background-fill-secondary,#f1f5f9)"/>')
-        parts.append('<text x="85" y="483" fill="currentColor" font-size="12">Brak pełnej średniej — pozycja pozioma pokazuje rozmiar, bez wartości na osi Y.</text>')
+        parts.append(f'<rect x="{left}" y="{bottom+75}" width="{right-left}" height="35" rx="6" fill="var(--background-fill-secondary,#f1f5f9)"/>')
+        parts.append(f'<text x="{left}" y="{bottom+128}" fill="currentColor" font-size="11">Brak pełnej średniej — rozmiar bez wartości na osi Y.</text>')
     frontier_ids = {p['id'] for p in data['all_frontier']+data['commercial_frontier']}
     for point in sorted(points, key=lambda p:p['id']):
-        xx = x(point['size'])
-        yy = y(point['score']) if point['score'] is not None else 448
+        xx, yy = coordinates[point['id']]
         score = f'{point["score"]:.2f}%' if point['score'] is not None else 'brak pełnej średniej'
         eligibility = 'komercyjny / własny' if point['commercial'] else 'poza grupą komercyjną'
         tooltip = f'{point["name"]}\n{point["size"]:.2f} mln parametrów · {score}\n{point["license"]} · {eligibility}'
@@ -257,7 +301,22 @@ def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
         radius = 6.5 if point['id'] in frontier_ids else 4.5
         link = f' href="{escape(point["url"])}" target="_blank" rel="noopener noreferrer"' if point['url'] else ''
         parts.append(f'<a class="pareto-point" data-model-id="{escape(point["id"])}"{link} tabindex="0" aria-label="{escape(tooltip)}">'
-                     f'<title>{escape(tooltip)}</title><circle cx="{xx:.2f}" cy="{yy:.2f}" r="{radius}" '
+                     f'<title>{escape(tooltip)}</title>')
+        if show_labels:
+            row = placed[point['id']]
+            anchor_x = row['x']+row['width'] if row['side']=='left' else row['x']
+            anchor_y = row['y']+row['height']/2
+            elbow = left-20 if row['side']=='left' else right+20
+            parts.append(f'<path class="label-leader" d="M{xx:.2f} {yy:.2f}L{elbow} {anchor_y:.2f}H{anchor_x}" '
+                         f'fill="none" stroke="{color}" stroke-opacity="0.3" stroke-width="0.8"/>')
+            parts.append(f'<g class="model-label" data-label-for="{escape(point["id"])}">'
+                         f'<rect x="{row["x"]}" y="{row["y"]:.2f}" width="{row["width"]}" height="{row["height"]}" '
+                         'rx="3" fill="var(--body-background-fill,white)"/>'
+                         f'<text fill="currentColor" font-family="monospace" font-size="12">')
+            for i,line in enumerate(row['lines']):
+                parts.append(f'<tspan x="{row["x"]+2}" y="{row["y"]+15+i*15:.2f}">{escape(line)}</tspan>')
+            parts.append('</text></g>')
+        parts.append(f'<circle cx="{xx:.2f}" cy="{yy:.2f}" r="{radius}" '
                      f'fill="{color}" fill-opacity="0.8" stroke="var(--body-background-fill,white)" stroke-width="1.3"/></a>')
     parts.append('</svg>')
     parts.append(f'<p style="font-size:13px">{len(complete)}/{len(points)} modeli z pełną średnią. '

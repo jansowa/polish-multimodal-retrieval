@@ -38,7 +38,10 @@ Organizacje są wyznaczane z repozytoriów modeli, domyślnie wszystkie zaznaczo
 Własne checkpointy mają wspólną organizację jansowa; opcja istnieje tylko wtedy,
 gdy dane zawierają własny model. Odznaczenie wszystkich organizacji daje pusty widok.
 Niepełne średnie są w osobnym pasie bez wartości Y; nie zastępujemy ich zerem.
-Punkty mają opisy po najechaniu; dostępna jest logarytmiczna oś rozmiaru.
+Pełne nazwy modeli są domyślnie stale widoczne w osobnych wierszach po bokach
+wykresu, z liniami prowadzącymi do punktów. Wysokość rośnie wraz z liczbą nazw;
+przy wąskim oknie można przewijać wykres poziomo. Przełącznik pozwala pozostawić
+nazwy tylko po najechaniu. Dostępna jest logarytmiczna oś rozmiaru.
 Wykres SVG nie wymaga dodatkowych pakietów ani dostępu do sieci.
 Nie wyświetlamy kolumn czasu, precyzji, rewizji ani ekspozycji.
 Nie mieszamy wyników różnych profili precyzji w jednym rankingu.

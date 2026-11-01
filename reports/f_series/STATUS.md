@@ -1,5 +1,11 @@
 # STATUS — seria F / M
 
+S07-LEADERBOARD-LABELS (2026-11-01) done: pełne nazwy stale widoczne domyślnie,
+przełącznik hover-only, rozdzielone pola i linie do punktów; wdrożono na
+http://localhost:7865/ i zweryfikowano przez live API oraz pomiary przeglądarki.
+[Raport i SHA](S07-LEADERBOARD-LABELS/REPORT.md).
+Kolejka GPU i liczniki F bez zmian. Następny etap: S08-LEADERBOARD-RECEIVE.
+
 S06-LEADERBOARD-UI-RELOAD (2026-11-01) done: pod wskazanym przez właściciela
 http://localhost:7865/ działał stary proces UI. Przeładowano wyłącznie ten serwer;
 wykres Pareto i filtry sprawdzono przez jego rzeczywisty config/API.

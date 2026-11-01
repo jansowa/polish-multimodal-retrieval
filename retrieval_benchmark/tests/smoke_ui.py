@@ -18,7 +18,7 @@ def main():
         client = Client('http://127.0.0.1:7864', verbose=False)
         document = load()
         inputs = ['recall@1', 'v2_no_instructions', 'historical-native-v2', 100, False, False,
-                  default_columns(document), default_tasks(document), 0, organizations(document), False]
+                  default_columns(document), default_tasks(document), 0, organizations(document), False, True]
         result = client.predict(*inputs, api_name='/leaderboard')
         # Gradio versions return either a table value or a component update.
         table = lambda response: response[0].get('value', response[0])
@@ -30,6 +30,7 @@ def main():
         assert '<svg' in result[2] and 'data-frontier="commercial_frontier"' in result[2]
         assert 'data-model-id="checkpoint:' in result[2]
         assert result[2].count('data-model-id=') == len(rows)
+        assert result[2].count('class="model-label"') == len(rows)
         assert all(not any(word in header for word in ['Precyzja', 'Rewizja', 'GPU', 'ms/']) for header in table(result)['headers'])
         for row in table(result)['metadata']['styling']:
             assert all(not row[k] for k in (2, 3, 4)), row
@@ -44,6 +45,11 @@ def main():
         inputs[10] = True
         logarithmic = client.predict(*inputs, api_name='/leaderboard')
         assert 'skala logarytmiczna' in logarithmic[2]
+        inputs[11] = False
+        hover_only = client.predict(*inputs, api_name='/leaderboard')
+        assert 'class="model-label"' not in hover_only[2]
+        assert '<title>' in hover_only[2]
+        inputs[11] = True
         inputs[6] = default_columns(document)
         inputs[8] = 50
         inputs[9] = ['jansowa']
@@ -57,9 +63,9 @@ def main():
         assert table(empty)['data'] == []
         assert 'Brak modeli' in empty[2]
         inputs[9] = ['jansowa']
-        path = client.predict(*inputs[:-1], api_name='/export_csv')
+        path = client.predict(*inputs[:10], api_name='/export_csv')
         assert Path(path).read_text(encoding='utf-8-sig').startswith('Model;Średni wynik [%]')
-        print('HTTP_SMOKE_OK: table/Pareto identity, min/max, organizations, jansowa, empty selection, log scale, CSV')
+        print('HTTP_SMOKE_OK: table/Pareto identity, filters, persistent labels, hover-only toggle, CSV')
     finally:
         demo.close()
 

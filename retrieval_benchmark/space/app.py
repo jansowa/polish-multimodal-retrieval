@@ -22,7 +22,7 @@ def build_app():
                         min_parameters=minimum, selected_organizations=selected_orgs)
 
     def update(*args):
-        metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, log_scale, known_orgs = args
+        metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, log_scale, show_labels, known_orgs = args
         snapshot = load()
         current_orgs = organizations(snapshot)
         # Newly arriving models can introduce an organization while the UI is open.
@@ -32,7 +32,7 @@ def build_app():
             selected_orgs = current_orgs
         view = overview(snapshot, metric, mode, profile, limit, seeds, controls, visible, average,
                         min_parameters=minimum, selected_organizations=selected_orgs)
-        chart = pareto_html(snapshot, log_scale=log_scale, filtered_view=view)
+        chart = pareto_html(snapshot, log_scale=log_scale, filtered_view=view, show_labels=show_labels)
         return (gr.update(value=styled(view), datatype=['html'] + ['str'] * (len(view['headers']) - 1), column_widths=column_widths(view)),
                 f"Pełny średni wynik: **{view['complete']}/{view['total']} modeli** · {len(view['average_tasks'])} zadań. „—” oznacza brak kompletu wyników.",
                 chart, gr.update(choices=current_orgs, value=selected_orgs), current_orgs)
@@ -69,14 +69,16 @@ def build_app():
                 profile = gr.Dropdown(profiles, value='historical-native-v2', label='Profil pomiaru')
         initial = overview(document)
         gr.Markdown('## Jakość a rozmiar modelu\nLinie łączą modele ustanawiające najlepszy wynik przy rosnącym rozmiarze.')
-        log_scale = gr.Checkbox(value=False, label='Logarytmiczna oś rozmiaru')
+        with gr.Row():
+            log_scale = gr.Checkbox(value=False, label='Logarytmiczna oś rozmiaru')
+            show_labels = gr.Checkbox(value=True, label='Nazwy modeli zawsze widoczne')
         chart = gr.HTML(value=pareto_html(document, filtered_view=initial))
         board = gr.Dataframe(value=styled(initial), datatype=['html'] + ['str'] * (len(initial['headers']) - 1),
                              interactive=False, wrap=True, elem_id='leaderboard',
                              column_widths=column_widths(initial), pinned_columns=1)
         coverage = gr.Markdown(f"Pełny średni wynik: **{initial['complete']}/{initial['total']} modeli** · {len(initial['average_tasks'])} zadań. „—” oznacza brak kompletu wyników.")
         table_inputs = [metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs]
-        inputs = table_inputs + [log_scale, known_orgs]
+        inputs = table_inputs + [log_scale, show_labels, known_orgs]
         outputs = [board, coverage, chart, selected_orgs, known_orgs]
         refresh = gr.Button('Odśwież wyniki')
         refresh.click(update, inputs, outputs, api_name=False)
