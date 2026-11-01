@@ -1,0 +1,9 @@
+{
+  "stage": "E1",
+  "text": {"model": "OPI-PIB/PolDense-32M", "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25", "frozen": true, "prefix": "[query]: ", "max_length": 128},
+  "vision": {"model": "google/siglip2-base-patch16-256", "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab", "frozen": true},
+  "projector": "linear", "loss": "cosine_positive_pair_regression", "seeds": [42, 43, 44],
+  "data": {"sources": [{"dataset": "aro_visual_relation", "translations": "outputs/qwen3.8-27b-absence-v3b-single/aro_visual_relation/text_only/translations.jsonl", "shards": ["data/test-00000-of-00007.parquet", "data/test-00001-of-00007.parquet"]}], "include_ids": null, "exclude_ids": [], "max_pairs": 6000, "selection_seed": 2026, "validation_fraction": 0.1, "split_seed": 1701},
+  "optimization": {"epochs": 20, "batch_size": 256, "learning_rate": 0.001, "weight_decay": 0.01},
+  "encoding_batch_size": 32, "baseline_models": ["siglip2-base-256", "bge-vl-base"], "previous_run": null
+}

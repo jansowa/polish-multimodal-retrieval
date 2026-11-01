@@ -1,0 +1,12 @@
+{
+  "backbones": ["dinov2-small", "mobileclip2-s2", "convnext-tiny", "ibot-vits16"],
+  "scout_seed": 42,
+  "dinov2_repeat_seeds": [42, 43, 44],
+  "dinov2_repeat_threshold": 0.38,
+  "encoding_batch_size": 32,
+  "stop_after_four": true,
+  "loss": "siglip_sigmoid",
+  "projector": "linear",
+  "reference": "training/runs/p0-e2/E2b-seed-*",
+  "data_and_optimization": "exactly_full_E1_and_E2b"
+}

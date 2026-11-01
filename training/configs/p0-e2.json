@@ -1,0 +1,13 @@
+{
+  "baseline": "training/runs/e1-full",
+  "experiments": {"E2a": "symmetric_infonce", "E2b": "siglip_sigmoid"},
+  "optimization": {"epochs": 20, "batch_size": 256, "learning_rate": 0.001, "weight_decay": 0.01},
+  "scheduler": "none",
+  "temperature": 0.07,
+  "sigmoid_bias": -10.0,
+  "scout_seed": 42,
+  "repeat_seeds": [42, 43, 44],
+  "repeat_gain": 0.01,
+  "checkpoint_selection": "minimum_validation_loss",
+  "selection_dataset": "mbeir_mscoco"
+}
