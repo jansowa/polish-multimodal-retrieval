@@ -1,0 +1,253 @@
+{
+  "catalog": {
+    "path": "retrieval_benchmark/catalog-f-v3.json",
+    "sha256": "224fbed043f2691b0fbfbc1e2e589e3ce8b3b00cab7d03d8c0930d46ccf78397"
+  },
+  "efficiency": {
+    "CPU": {
+      "batch": 1,
+      "precision": "FP32",
+      "threads": 2
+    },
+    "GPU": {
+      "batch": 64,
+      "precision": "BF16"
+    },
+    "implementation": "src/pl_mmb_benchmark/efficiency.py",
+    "measurements": 100,
+    "parameters": "unique tensors in exported state_dict; all inference components included",
+    "same_machine": true,
+    "statistic": "median",
+    "warmups": 10
+  },
+  "frozen_date": "2026-11-01",
+  "future_roles": {
+    "new_holdout_dev_queries": "SEL-OOD after F10",
+    "new_holdout_dev_sentences": "SEL-OOD after F10",
+    "new_holdout_test": "TEST after F10/H4",
+    "wiki_f_dev": "SEL-ID after F05"
+  },
+  "holdout_registry": {
+    "path": "retrieval_benchmark/holdouts/registry-v4.json",
+    "scope": "Both VizWiz halves are subsets of the already protected complete parent; v4 unchanged",
+    "sha256": "18c895becac9af4c8405d77e1a7d79879da679df005c4b867443fc218ca002b5"
+  },
+  "identity": {
+    "batches": [
+      1,
+      32
+    ],
+    "failure_invalidates_run": true,
+    "model": "OPI-PIB/PolDense-32M",
+    "other_precision_or_batch_tolerance": 1e-05,
+    "phase": "F",
+    "precision": "FP32",
+    "probe_path": "protocols/poldense_identity_probe_v1.jsonl",
+    "probe_texts": 1000,
+    "reference_path": "protocols/poldense_identity_reference_v1.pt",
+    "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+    "same_precision_and_batch_max_abs_diff": 0,
+    "status": "probe/reference implementation in F01-b; not created by F01-a",
+    "tensor_sha_equal_required": true
+  },
+  "licensing": {
+    "H1_status": "pending",
+    "STRICT": "requires H1",
+    "default_tier": "WEIGHTS",
+    "new_NC_REF_evaluation_requires": "H1",
+    "new_training_release": false,
+    "publish_requires": "H6"
+  },
+  "normative_markdown": {
+    "path": "protocols/protocol-v3-f.md",
+    "sha256": "e176fb5c09ffaff6e98633f8dace933f53ab1aae3367585bda2d1c587839c5ce"
+  },
+  "normative_sections": {
+    "1. Zasady ogólne": "- Protokół MUSI być zamrożony przed pierwszym wynikiem serii F (pakiet F01): commit + SHA w `protocols/protocol-v3-f.md` i `protocols/protocol-v3-f.json`.\n- Zmiana protokołu = nowa wersja z datą i uzasadnieniem, wprowadzana tylko między seriami. Zmiana progów po zamrożeniu unieważnia status TEST.\n- Liczby z różnych protokołów (stare lokalne COCO/MMEB, pełne galerie v2, połówki VizWiz) raportuje się w osobnych tabelach.\n- Scorer: `src/pl_mmb_benchmark/full_gallery.py` — pełna galeria, qrels wielopozytywne, FP32, oba kierunki, R@1/5/10, MRR, nDCG@10. Tryb promptów `v2_no_instructions` jest trybem głównym (identyczny z `author_recommended` dla naszych modeli).",
+    "2. Role zbiorów": "| Rola | Zbiory (obrazy / teksty) | Do czego służy |\n|---|---|---|\n| **SEL‑ID** | Wiki native dev v2 (397 / 331); po F05 dodatkowo Wiki‑F dev (~1 000 obrazów, teksty `native-original` A/B) | wybór checkpointów, wariantów, α, alokacji |\n| **SEL‑OOD** | VizWiz‑PL‑A (połowa komponentów, seed podziału 20261101), COCO val (419 / 2 090), VN dev (2 000 / 2 003); po F10 dodatkowo część dev nowego holdoutu (krótkie zapytania i zdania — osobne kolumny) | jak wyżej |\n| **GUARD** | VizWiz‑PL‑B, Flickr30k‑PL (952 / 4 746), XM3600 PL (3 597 / 7 111), XTD897 (897 / 897), panel kompozycyjny (5 602 pary walidacyjne ARO/SugarCrepe), w Fazie 2 panel retencji tekstu | wyłącznie nieinferiority potwierdzonych kandydatów; limit odczytów |\n| **TEST** | część testowa nowego holdoutu (F10) | ocena końcowa; najwyżej 2 odczyty |\n| **REF** | wyniki historyczne bez nowych treningów: MetaCLIP‑2 S16/M16/B16/L14 PL 32768 (NC), EG2, mSigLIP, SigLIP2, modele natywne EN, R0/R1/R3; nowe oceny modeli NC tylko po H1 pkt 3 | kontekst i poprzeczki; nie są celem optymalizacji ani selekcji |\n\n- COCO val i VN dev są w serii F zbiorami, których **domena** była w treningu R1 (FULL zawiera M‑BEIR COCO; VN train i VN dev pochodzą z jednego pipeline’u). Pozostają SEL‑OOD względem nowych źródeł, ale ich wagę w SEL ogranicza wzór z §3. W wariancie STRICT (bez FULL/VN w manifeście) są prawdziwym OOD.\n- XM3600 był raz oceniony (31.10.2026) dla 7 modeli i modeli natywnych; ten odczyt liczy się jako GUARD #0. Pozostaje chroniony przed treningiem.\n- Panel kompozycyjny: odsetek par walidacyjnych z `score(obraz, pozytyw) > score(obraz, negatyw)`, osobno dla relacji, atrybutów i SugarCrepe, remisy liczone jako 0,5; ślepy baseline = 50%. Zbiór zawiera część treningową ARO/SugarCrepe, więc panel jest kontrolą, nie testem niezależnym.\n- Jeśli H1 wykluczy zbiór z użytku wewnętrznego, wypada on z protokołu w następnej wersji, nie w trakcie serii.",
+    "3. Wynik selekcyjny SEL": "```text\nSEL = ½ · średnia(t2i R@1 na zbiorach SEL‑ID) + ½ · średnia(t2i R@1 na zbiorach SEL‑OOD)\n```\n\n- Do SEL wchodzi wyłącznie **t2i**. Wartość i2t liczy się równolegle jako `SEL_i2t` i służy do rozstrzygania remisów oraz jako guardrail (§6).\n- Remis (|Δ SEL| < 0,3 p.p.) rozstrzyga kolejno: `SEL_i2t`, prostszy wariant, wcześniejszy checkpoint.\n- Dopóki nie istnieje Wiki‑F dev, różnice |Δ SEL‑ID| < 2 p.p. traktuje się jako remis (331 tekstów to za mało). Po dodaniu części dev holdoutu jej dwie kolumny (zapytania, zdania) wchodzą do średniej SEL‑OOD jako dwa osobne zbiory.\n- Wszystkie runy serii F MUSZĄ używać tej samej definicji SEL. Zmiana składu SEL (dodanie Wiki‑F dev lub holdout‑dev) następuje tylko między eksperymentami i jest zapisana w rekordzie decyzji; porównania między eksperymentami wykonuje się po przeliczeniu kontroli na nowy skład.",
+    "4. Metryki i statystyka": "- **Bootstrap:** 10 000 losowań całych komponentów, seed 20261023 (`paired_bootstrap` w `full_gallery.py`); CI różnicy jest warunkowe (nie obejmuje wyboru recepty).\n- **Seedy:** screening 42; potwierdzenie 42/43/44. Raport: mean ± SD seedów i bootstrap per seed. NIE WOLNO wybierać seeda.\n- **Hubność i2t:** skośność rozkładu N10 (ile razy tekst pojawia się w top‑10 sąsiadów obrazów) i odsetek tekstów‑hubów; liczone na zbiorach SEL.\n- **Latencja:** `src/pl_mmb_benchmark/efficiency.py`, ta sama maszyna: CPU FP32 batch 1, 2 wątki; GPU BF16 batch 64; 10 rozgrzewek, 100 pomiarów, mediany. Odniesienie: R0/R1 CPU obraz 77,1 ms, tekst 14,5 ms; CUDA 2,10 / 0,28 ms.\n- **Parametry:** z eksportu ([01 §3](01_CEL_ZASADY_LICENCJE.md)).\n- **Truncation:** odsetek tekstów przyciętych do 128 tokenów PolDense per zbiór, raportowany zawsze.",
+    "5. Dowód nienaruszenia PolDense (Faza 1)": "- Sonda: 1 000 tekstów `protocols/poldense_identity_probe_v1.jsonl` (różne długości, prefiks `[query]: `, także teksty bez prefiksu), zamrożona w F01 z SHA.\n- Referencja: osadzenia sondy oryginalnym `OPI-PIB/PolDense-32M` (rev `ca70494a…`) w FP32, batch 1 i batch 32, zapisane jako `protocols/poldense_identity_reference_v1.pt` + SHA256 tensora.\n- Test w każdym runie Fazy 1 i w eksporcie: wyjście trybu tekst↔tekst modelu MUSI mieć **identyczne tensory** (SHA256 równe; dodatkowo maks. |Δ| = 0 w FP32 przy tym samym batchu; przy innej precyzji/batchu dopuszczalne maks. |Δ| ≤ 1e‑5 z adnotacją).\n- Wynik w `result.json` → `poldense_identity: {probe_sha256, reference_sha256, max_abs_diff, passed}`. `passed=false` unieważnia run.\n- Dla większego wariantu PolDense (68M) tworzy się osobną referencję z własną rewizją.",
+    "6. Kryterium „najmocniejszy komercyjny < 100M” (ustalone z góry)": "**Warunki konieczne**\n1. < 100 000 000 parametrów eksportu.\n2. Składniki i manifest spełniają poziom licencyjny wybrany w H1 (WEIGHTS lub STRICT); test identyczności PolDense pozytywny (Faza 1).\n\n**Kryterium główne (TEST = nowy holdout; punkt odniesienia F‑base = R1, 3 seedy, ten sam protokół)**\n3. t2i R@1 ≥ F‑base + 3,0 p.p. z dolną granicą 95% CI (bootstrap po komponentach) powyżej 0; liczone osobno dla krótkich zapytań i dla zdań: obie różnice ≥ 0 i co najmniej jedna ≥ +3,0.\n4. i2t R@1 ≥ F‑base − 1,0 p.p.\n\n**Poprzeczki zewnętrzne (REF, modele NC; raportowane na GUARD XM3600 i na TEST, jeśli REF zostaną na TEST ocenione w tym samym odczycie)**\n- **Poziom A:** kandydat ≥ MetaCLIP‑2 S16 PL 32768 (56,0M) na XM3600 t2i (46,0) i na co najmniej 3 z 5 zadań Flickr/VizWiz/Wiki/VN/XTD897 (t2i).\n- **Poziom B:** kandydat ≥ MetaCLIP‑2 M16 PL 32768 (93,7M) na XM3600 t2i (50,3).\n- Poziomy A/B nie są warunkami zaliczenia; są publicznie deklarowanym celem i wchodzą do raportu końcowego z CI.\n\n**Guardraile (GUARD, nieinferiority względem F‑base)**\n5. XM3600 t2i i i2t: najwyżej −1,0 p.p.; Flickr30k‑PL i VizWiz‑PL‑B: najwyżej −1,5 p.p.; XTD897 i panel kompozycyjny: najwyżej −2,0 p.p.\n6. Retencja tekstu: Faza 1 — wyjście tekst↔tekst identyczne (§5). Faza 2 — panel retencji (podzbiór PIRB + odłożone części danych replay): średnie nDCG@10 najwyżej −0,5 p.p., żadne zadanie poniżej −1,0 p.p.\n\n**Koszt inferencji**\n7. CPU ms/obraz i ms/tekst ≤ budżet ustalony przez właściciela przed FE3; do tego czasu domyślnie ≤ 2× R1 (obraz ≤ 154 ms, tekst ≤ 29 ms). Uwaga: wieże 384 px (PE‑Core‑S16) mogą przekroczyć budżet obrazu — wtedy decyzja właściciela albo wariant 224 px (FE6).\n\n**Raportowane informacyjnie:** dystans do EG2 (73,8% średniej 5 zadań, XM 68,2/76,6), do mSigLIP (58,8%), do modeli `REF` komercyjnych > 100M (siglip2‑pl‑32768 45,2%).",
+    "7. Limity odczytów": "- **GUARD:** najwyżej 3 odczyty na serię F (plus GUARD #0 z 31.10). Odczyt obejmuje tylko kandydatów potwierdzonych na 3 seedach, zawsze razem z F‑base; każdy odczyt w logu ([07 §6](07_OPERACJE_ARTEFAKTY.md)).\n- **TEST:** najwyżej 2 odczyty łącznie (kamień milowy po FE3 lub FE6 i finał); każdy wymaga H4; lista modeli deklarowana przed odczytem: kandydat, F‑base, opcjonalnie EG2 i REF NC (po H1).\n- **Skażenie:** jeśli wynik TEST doprowadzi do zmiany recepty, TEST staje się dev, a nowy test wymaga nowej annotacji.\n- **Wybory tylko na SEL:** checkpoint, α, wariant głowicy, most, filtr, próg, alokacja parametrów.\n- Miary czysto tekstowe (FE0: sufity, hubność, prefiksy) wolno liczyć na zbiorach SEL bez limitu; na GUARD/TEST — nie.",
+    "8. Raportowanie": "- t2i i i2t zawsze osobno, per zbiór; „średnia wszystkiego” nie jest wynikiem głównym (średnia 5 zadań z leaderboardu może być podana jako kontekst z tą etykietą).\n- Każda tabela: parametry (V / T / głowice), latencja, poziom licencyjny, SHA manifestu, flaga `COMMERCIAL_CANDIDATE` / `COMMERCIAL_BASELINE` / `RESEARCH_ONLY` / `REF`, wynik testu identyczności PolDense.\n- Fakty, hipotezy i interpretacje wyraźnie oznaczone.",
+    "9. Wymagana wielkość TEST": "Błąd standardowy różnicy dwóch modeli ≈ √(d/n), gdzie d = odsetek zapytań z różnym wynikiem (zwykle ~0,2), n = liczba zapytań. Dla n = 1 000: ~1,4 p.p.; dla n = 2 400: ~0,9 p.p. Aby wykazać +3 p.p., część TEST POWINNA mieć ≥ 1 500 zapytań t2i; zalecane ~2 400 (ok. 600 obrazów testowych × 2 annotatorów × 2 typy tekstu — [06 §7](06_DANE_HOLDOUT_QA.md))."
+  },
+  "normative_source": {
+    "path": "docs/agent_spec_f/02_PROTOKOL_EWALUACJI.md",
+    "sha256": "0a6cac38ba3716fe3ea810f1a398bfeb0c0b313d324257f0855db0b1f1ef19da"
+  },
+  "read_limits": {
+    "GUARD_new_per_F_series": 3,
+    "GUARD_requires": "three confirmed seeds plus F-base",
+    "TEST_models_predeclared": true,
+    "TEST_requires": "H4 for each read",
+    "TEST_total": 2,
+    "historical_GUARD_0": {
+      "dataset": "xm3600_pl",
+      "date": "2026-10-31",
+      "new_read": false
+    },
+    "log": "reports/f_series/eval_reads_log.jsonl",
+    "test_informs_recipe": "TEST becomes dev; new independent annotated TEST required",
+    "text_only_diagnostics": "unlimited on SEL; forbidden on GUARD/TEST"
+  },
+  "reporting": {
+    "datasets_separate": true,
+    "directions_separate": true,
+    "facts_hypotheses_interpretations_separate": true,
+    "required_columns": [
+      "vision/text/head parameters",
+      "latency",
+      "license tier",
+      "manifest SHA256",
+      "COMMERCIAL_CANDIDATE/COMMERCIAL_BASELINE/RESEARCH_ONLY/REF",
+      "PolDense identity"
+    ],
+    "test_size": {
+      "min_recommended_queries": 1500,
+      "preferred_queries": 2400
+    }
+  },
+  "roles": {
+    "GUARD": [
+      "flickr30k_pl_local_test",
+      "xtd10_no_overlap",
+      "xm3600_pl",
+      "vizwiz_pl_b",
+      "compositional_validation"
+    ],
+    "REF": [
+      "vizwiz_pl_local_validation",
+      "xtd10_full_1k"
+    ],
+    "SEL-ID": [
+      "wiki_native_dev"
+    ],
+    "SEL-OOD": [
+      "VN_dev",
+      "vizwiz_pl_a",
+      "coco_val"
+    ]
+  },
+  "schema": 1,
+  "scoring": {
+    "candidates": "full gallery of each named subset",
+    "compositional": {
+      "blind_baseline_percent": 50,
+      "columns": [
+        "relation",
+        "attribution",
+        "SugarCrepe"
+      ],
+      "independent_test": false,
+      "ties": 0.5,
+      "validation_pairs_only": true
+    },
+    "directions": [
+      "t2i",
+      "i2t"
+    ],
+    "historical_protocols_separate": true,
+    "implementation": "src/pl_mmb_benchmark/full_gallery.py",
+    "metrics": [
+      "R@1",
+      "R@5",
+      "R@10",
+      "MRR",
+      "nDCG@10"
+    ],
+    "multi_positive_qrels": true,
+    "precision": "FP32",
+    "prompt_mode": "v2_no_instructions"
+  },
+  "selection": {
+    "SEL_ID_tie_until_Wiki_F_dev_abs_delta_lt_pp": 2.0,
+    "choices_on_SEL_only": [
+      "checkpoint",
+      "alpha",
+      "head",
+      "bridge",
+      "filter",
+      "threshold",
+      "parameter_allocation"
+    ],
+    "direction": "t2i",
+    "expansions": "Between experiments only, decision record, controls recomputed; holdout-dev queries/sentences are separate OOD columns",
+    "formula": "0.5 * mean(SEL-ID) + 0.5 * mean(SEL-OOD)",
+    "metric": "R@1",
+    "parallel_metric": "SEL_i2t",
+    "tie_abs_delta_lt_pp": 0.3,
+    "tie_break_order": [
+      "SEL_i2t",
+      "simpler_variant",
+      "earlier_checkpoint"
+    ],
+    "units": "percentage points"
+  },
+  "series": "F",
+  "sha256_binding": "Detached full-file SHA256 in protocols/protocol-v3-f.SHA256SUMS.json; pin MD and JSON plus catalog in every run config",
+  "statistics": {
+    "bootstrap": {
+      "conditional_on_recipe": true,
+      "confidence": 0.95,
+      "samples": 10000,
+      "seed": 20261023,
+      "unit": "whole_component"
+    },
+    "confirmation_seeds": [
+      42,
+      43,
+      44
+    ],
+    "hubness": [
+      "N10 skewness",
+      "fraction of text hubs"
+    ],
+    "report": "mean +/- SD across seeds and bootstrap per seed; no seed selection",
+    "screening_seed": 42,
+    "truncation_report": "every dataset",
+    "truncation_tokens": 128
+  },
+  "success": {
+    "export_parameters_lt": 100000000,
+    "external_REF_levels": {
+      "A": "MetaCLIP-2 S16 PL 32768 on XM t2i and >=3/5 Flickr/VizWiz/Wiki/VN/XTD897; historical full-gallery comparisons separate",
+      "B": "MetaCLIP-2 M16 PL 32768 on XM t2i",
+      "required_to_pass": false
+    },
+    "guardrails_pp": {
+      "compositional_validation": -2.0,
+      "flickr30k_pl_local_test": -1.5,
+      "vizwiz_pl_b": -1.5,
+      "xm3600_pl": {
+        "i2t": -1.0,
+        "t2i": -1.0
+      },
+      "xtd10_no_overlap": -2.0
+    },
+    "identity_pass_required": true,
+    "latency": {
+      "default_CPU_image_ms_le": 154,
+      "default_CPU_text_ms_le": 29,
+      "owner_budget_before": "FE3"
+    },
+    "licensing_H1_tier_required": true,
+    "phase_M_text_retention": {
+      "every_task_delta_ge_pp": -1.0,
+      "mean_ndcg10_delta_ge_pp": -0.5
+    },
+    "reference": "F-base R1, all three seeds, same protocol",
+    "test": {
+      "at_least_one_t2i_delta_ge_pp": 3.0,
+      "both_t2i_delta_ge_pp": 0,
+      "delta_CI_lower_gt": 0,
+      "i2t_delta_ge_pp": -1.0,
+      "types": [
+        "short_queries",
+        "sentences"
+      ]
+    }
+  },
+  "version": "v3-f"
+}

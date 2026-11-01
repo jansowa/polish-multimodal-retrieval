@@ -1,0 +1,6913 @@
+{
+  "algorithm": "sorted-component-SHA256; Python Random.shuffle; greedy image balance; ties A",
+  "components": [
+    {
+      "half": "B",
+      "id": "005f681e945ab81d7a788e47a33d567142e72758768a01580b6547caad24bdda",
+      "image_indices": [
+        727
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0079b11709b8a40ad978e22e8c2dd60c388739057c5a5c65c02deaee5dafd8ca",
+      "image_indices": [
+        707
+      ]
+    },
+    {
+      "half": "A",
+      "id": "00b2d5e877017a3aa2bffd207899df6446e46da0d195a67495a69a9fb10fe371",
+      "image_indices": [
+        135
+      ]
+    },
+    {
+      "half": "B",
+      "id": "00b33e0334a422606136ac29eb20aa3306aba9e24c519b241c6a86921fb523d0",
+      "image_indices": [
+        58
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0140c55411a7cb0ce5781bc6642745d467189ec3a09f3140df8102b66557b111",
+      "image_indices": [
+        186
+      ]
+    },
+    {
+      "half": "A",
+      "id": "01460e0fa8285b808c1b0b78551e6a71bd103ffe09cba868c3c0c17281e0a372",
+      "image_indices": [
+        455
+      ]
+    },
+    {
+      "half": "A",
+      "id": "015ac3190ff5db7decca06b579240e22f0be99570069e22f438f89ad65133edb",
+      "image_indices": [
+        426
+      ]
+    },
+    {
+      "half": "A",
+      "id": "019df639a3d96f6df14532bcdbd3bd4e0a323188823433f05d4156c05a50270c",
+      "image_indices": [
+        129
+      ]
+    },
+    {
+      "half": "B",
+      "id": "01ba72a8eef10ccc4d2a4594d9a722eab70a00a036ea339567397a1e56c2e3ed",
+      "image_indices": [
+        209
+      ]
+    },
+    {
+      "half": "A",
+      "id": "029964638589a86b557ffebbab702a97d670cec6096dbf68549a8dfef0ded260",
+      "image_indices": [
+        404
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0318a83f069234bb271f6508d4d63e35de1d4789b596d3b5f9f7b99033d71884",
+      "image_indices": [
+        887
+      ]
+    },
+    {
+      "half": "B",
+      "id": "035538456c9299157559629cc3649a91fae4418f6e0455ef1c36e5b353881649",
+      "image_indices": [
+        94
+      ]
+    },
+    {
+      "half": "B",
+      "id": "037c380f281faffc0ed06dd382a34690ccd07210639ceac710f74513732b9733",
+      "image_indices": [
+        442
+      ]
+    },
+    {
+      "half": "B",
+      "id": "03843fd92ad9b0dd6977b5392fe6ea929b365f6d3a02cc80cbf097129310d69e",
+      "image_indices": [
+        804
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0385ca8548210910eda280905911e461e6e7ee775e0f709389327ce0e5c80c9a",
+      "image_indices": [
+        83
+      ]
+    },
+    {
+      "half": "A",
+      "id": "03b71383465b612271e0f531911e8127b31942b11ba1889b5e0e3cdd1ec1d44a",
+      "image_indices": [
+        525
+      ]
+    },
+    {
+      "half": "A",
+      "id": "03d0d69a7758353579e5329dc5892715cfa9bd8cccd3d3f2e1632adcdf37d9fa",
+      "image_indices": [
+        420
+      ]
+    },
+    {
+      "half": "B",
+      "id": "03f8d67ce1ea787ed6962eb3e9d5be8b441bbbdbfd79edbac4440b659842e140",
+      "image_indices": [
+        895
+      ]
+    },
+    {
+      "half": "A",
+      "id": "04215289be215dd439341d2da26b5091573d12457a832936e580ea40e95df6a6",
+      "image_indices": [
+        132
+      ]
+    },
+    {
+      "half": "A",
+      "id": "046be655e0547070c86fa8085203789f7f6279005e1f01fb696c017e5fe238db",
+      "image_indices": [
+        592
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0471be810c2045a4e9e09b737b39fd200433b490430963b51f493b9230f8206c",
+      "image_indices": [
+        643
+      ]
+    },
+    {
+      "half": "B",
+      "id": "052971f7aced429620b1639ddd2042113e2eaaadd49c6289ac1af3e7160fc43b",
+      "image_indices": [
+        208
+      ]
+    },
+    {
+      "half": "A",
+      "id": "054e46bf128b30c776c5b168df786f0a2cc6dbc5536cabdc32316143f0f1fb43",
+      "image_indices": [
+        642
+      ]
+    },
+    {
+      "half": "B",
+      "id": "05ccf80c9253ff979cf546261636ea29bddae1af22cbfcb959bc5c27965f84bf",
+      "image_indices": [
+        985
+      ]
+    },
+    {
+      "half": "B",
+      "id": "069081096863006053944880ef312dc14ee383b93147325730264727f826bcad",
+      "image_indices": [
+        71
+      ]
+    },
+    {
+      "half": "A",
+      "id": "06dbb9bda945cd35ac708f79bb22777d041e4f542c81e36a3fff98add4718404",
+      "image_indices": [
+        818
+      ]
+    },
+    {
+      "half": "B",
+      "id": "06ef01dbe65bf0a01be1e3e710194628bb901ea52d23abbb2122c98c919574fc",
+      "image_indices": [
+        394
+      ]
+    },
+    {
+      "half": "A",
+      "id": "070d2925b60dbe76cc0b6badcbf4167e761be4279d954a62ac2aba0d8aedfe6b",
+      "image_indices": [
+        145
+      ]
+    },
+    {
+      "half": "B",
+      "id": "071d6dc646a72e97862315ef67b19886eb5d2e6c3b373f1707e936d8ccda6089",
+      "image_indices": [
+        199
+      ]
+    },
+    {
+      "half": "B",
+      "id": "07afdf54fdd9cb3dfd1873fd453eb035d22c574c3003d1a36113897921a365cf",
+      "image_indices": [
+        580
+      ]
+    },
+    {
+      "half": "A",
+      "id": "07ee54341841e0c5540b9b89792bc422fe418c75aef4e72e04cd57ba21b7b149",
+      "image_indices": [
+        59
+      ]
+    },
+    {
+      "half": "B",
+      "id": "080b2d8e34a4edcff1912aca2879fc3dcbd3b99ce4965d8fd2c25380adbc5a1a",
+      "image_indices": [
+        439
+      ]
+    },
+    {
+      "half": "A",
+      "id": "080ef82eef7736f9f51ac2d20f0f77fb19772f4faf91c00276ff47189cb8b286",
+      "image_indices": [
+        798
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0856d9859ec43407d1326aec3fde90e3ae64ab6f3d943fb393051c4d7c0652b2",
+      "image_indices": [
+        318
+      ]
+    },
+    {
+      "half": "B",
+      "id": "098d91c9e2442671495904b7fcb332142eff2e791b3c4046d378c3489b331e28",
+      "image_indices": [
+        603
+      ]
+    },
+    {
+      "half": "A",
+      "id": "099dd9be48632f1a5a3be0b628a1a85215a8faa39f46b9cac9ba9a5569c9439a",
+      "image_indices": [
+        949
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0a7823f3aab9253009ce3d3d643c2db9d38a0c002f99bd195ac2e4d0e089d487",
+      "image_indices": [
+        776
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0a7abf43446b0956affe466f8362fe80b86f0dea036254715f453bfc0b2d2d52",
+      "image_indices": [
+        163
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0ab90bbfa967852324dcfd4185b934d55df812877b4aa62a868a67d9adb90d7b",
+      "image_indices": [
+        291
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0abf3059363a4a995a6104605a4e1094b0cf892e462b97e8df0f976a488e57a1",
+      "image_indices": [
+        39
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0b0e6b09cb641715250e6b054048edb0714cf1bbb83b0940072625f9a1615685",
+      "image_indices": [
+        344
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0bd89d59db2c60958ad12bf873114feb8df79270a6130de5fe7b548d6b59b532",
+      "image_indices": [
+        441
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0cca39d49164c95a49599583f1e93d3ae588b8bf2a509e223aca391acaa91822",
+      "image_indices": [
+        277
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0cfdb180e481d31d530e4ca0672965a882cfe0d4bd2974e87939889b76403860",
+      "image_indices": [
+        917
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0d208e5c6c3f3b46e52ebc75bebf5127cdebb672a355f266cf807d93168ab341",
+      "image_indices": [
+        265
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0d3cf148dd642594025a6433ba89594672e66f134b5f78eea4aa40db01909b1a",
+      "image_indices": [
+        239
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0d437e4c3b569e5936978ca93cca844dcd2b76f8921cf29649ddc86919b7cf33",
+      "image_indices": [
+        91
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0d4f2e53fef5229d0fda131bac3fa160e91f6118ef08e2d1358472182dd345f0",
+      "image_indices": [
+        29
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0d7e01489dae43f552d12c54931dbeb3f46060ed8f53a354a131781b2ec69a6b",
+      "image_indices": [
+        220
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0d9c38819fcfce681da0d654d0eb28a370b08557e6ea35a8438478d371c91f50",
+      "image_indices": [
+        246
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0da33dbfc595bcd5d5b13a15847c4f7d59bdf0f0b83f977102d487d4e26c316a",
+      "image_indices": [
+        845
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0de0975f84ecf3a4629d61a9889dea8a006d087ba18cb243f10725c12536ef17",
+      "image_indices": [
+        619
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0e9bbdd6ee388a1b04c1702ccd713fc7401c6f870fcf0091b9cb86a7d4d59dde",
+      "image_indices": [
+        406
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0f1b8d27079d894dbb881ea123e7e581bad99ce31cf46f1166c80557bf2f33d8",
+      "image_indices": [
+        198
+      ]
+    },
+    {
+      "half": "A",
+      "id": "0f59dc0021b2053666bdc6e78da76bbfd19116b4808de1a107f2b762149ea112",
+      "image_indices": [
+        560
+      ]
+    },
+    {
+      "half": "B",
+      "id": "0fd7c15e60392aab75055d6050855805df94126e8f8dedc7afe56bbdf48154c7",
+      "image_indices": [
+        669
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1000eb30886cad8b8f7fd7ff54ce822a15e069d85547c6f435704edb18d6c680",
+      "image_indices": [
+        855
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1022bc0777216f32ac2d2fcca23915880bcc211692ffd587bb60a815a359b5e7",
+      "image_indices": [
+        14
+      ]
+    },
+    {
+      "half": "A",
+      "id": "103cb4deac8cf2b37ca10f7c66e6551f9cb575d8ce52905b68d09735b8613149",
+      "image_indices": [
+        657
+      ]
+    },
+    {
+      "half": "A",
+      "id": "108317b35784349a52b9dea781442dd56623e183880ef87ac02eb6e32f12cb30",
+      "image_indices": [
+        615
+      ]
+    },
+    {
+      "half": "B",
+      "id": "11106c7fcee961de13f451699f79534e5bf3add114df314b38cda9a3bbb59576",
+      "image_indices": [
+        712
+      ]
+    },
+    {
+      "half": "B",
+      "id": "114d9d53ead4dfcb3652ed0baac04236dc311a654b0f96ae673d6836e866fc09",
+      "image_indices": [
+        691
+      ]
+    },
+    {
+      "half": "A",
+      "id": "115abc4c31cca0c2b3d9ecfd6dd254159c2a7097ca6ef5ae520c657b24404bcb",
+      "image_indices": [
+        487
+      ]
+    },
+    {
+      "half": "A",
+      "id": "11af4e4ef6092d6844129275a6ca87034a519d21230a4ee16770920a259742cd",
+      "image_indices": [
+        11
+      ]
+    },
+    {
+      "half": "B",
+      "id": "11dcec77b6deb694c7356c7f5cb4ce7117da765fe5004662289a35b4ce256d9c",
+      "image_indices": [
+        932
+      ]
+    },
+    {
+      "half": "A",
+      "id": "11e83ba7f6442954bfd13a0ca84264abf515ca435ba33b465bef8feeeeae6f79",
+      "image_indices": [
+        365
+      ]
+    },
+    {
+      "half": "B",
+      "id": "123674eb2245c6916431dd754b58be683ce565eba61d9feafbcf29edc8baa163",
+      "image_indices": [
+        283
+      ]
+    },
+    {
+      "half": "B",
+      "id": "12cba84114f9c41f433e734b6ea8e12a1a2936a8b384a55f6c62a1c98679c591",
+      "image_indices": [
+        805
+      ]
+    },
+    {
+      "half": "B",
+      "id": "13218f08885dde928ff98ec74e21c3238820cefe081055d5312ab9aa1c1a855b",
+      "image_indices": [
+        120
+      ]
+    },
+    {
+      "half": "B",
+      "id": "134bb59a3a4c2473e6a880b5bfd438e56e2420883b5b40aebbc1ea7a2fa9ea28",
+      "image_indices": [
+        999
+      ]
+    },
+    {
+      "half": "A",
+      "id": "13c311d850b10696271d3cf78ac5147e5c52321b9fa27a89673d6496be6d8dac",
+      "image_indices": [
+        890
+      ]
+    },
+    {
+      "half": "A",
+      "id": "14d81412276f45098792c68432d89b1dcf1a6f9f64df2706695d5c16c5b9105d",
+      "image_indices": [
+        539
+      ]
+    },
+    {
+      "half": "A",
+      "id": "150c1a195440a6a2543919943366beead3fe8b09e41d79f5aeeb41d9629c6ea4",
+      "image_indices": [
+        604
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1514df8e2d0ec0f07a3b793290a0502eb26474d17159cc4863d747ba57134ae9",
+      "image_indices": [
+        335
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1519a5518da9bb548346d2cb5111d403cc116fc8dda562111cbc2e3ef755f5cb",
+      "image_indices": [
+        840
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1552cb804dd6a18a8a8542103a99e23c8e5e11a10b1603a2486d50d2efc6a72f",
+      "image_indices": [
+        635
+      ]
+    },
+    {
+      "half": "A",
+      "id": "15dad6294ba315684fb39dbf01404c5d14df66e6040c64de75846df784bf203e",
+      "image_indices": [
+        623
+      ]
+    },
+    {
+      "half": "A",
+      "id": "16271652d3889aab8eb99690874dcb89ec2209886cc2fc157d689a45f5c3bd05",
+      "image_indices": [
+        595
+      ]
+    },
+    {
+      "half": "B",
+      "id": "16891f38faf16bfb05578f7b28bac519cea8f064e53361a5a75555477fb0d676",
+      "image_indices": [
+        207
+      ]
+    },
+    {
+      "half": "B",
+      "id": "16b3bd0d765de9ea9e07781ba6fcc41ded01d4a2f1e05b3403271cbb79e2b82f",
+      "image_indices": [
+        715
+      ]
+    },
+    {
+      "half": "B",
+      "id": "16b42d737abacbed1ccc3fc947478b99765c53d621f3da42dd7b16d8ec74a4e7",
+      "image_indices": [
+        668
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1703f8faf2833f2c3f4e4c6358c4fc38651d3dcda2e822cef9f34ef441052368",
+      "image_indices": [
+        65
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1825cb6a5b3e20557a3e2a005304aed5eed1eae888f1760e82081500898c6a74",
+      "image_indices": [
+        386
+      ]
+    },
+    {
+      "half": "B",
+      "id": "182b97970eae6ae4792e002cf87840a165516dacb6ae78532a96e09934f58b20",
+      "image_indices": [
+        130
+      ]
+    },
+    {
+      "half": "A",
+      "id": "184ca964849ebdda1465668da809d87f90911c0b35f815e43bf3fd759c3728be",
+      "image_indices": [
+        30,
+        568
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1853022c397e61305f85ef5abeeb81871ef74a63605f72b34c76617e72cb2c67",
+      "image_indices": [
+        349
+      ]
+    },
+    {
+      "half": "A",
+      "id": "187425651f16cfd2e59d5b569848a01dc015835775cc4ba5337f5a9cb2b1d124",
+      "image_indices": [
+        99
+      ]
+    },
+    {
+      "half": "A",
+      "id": "19bb57fa3aebce791a0ee9973cc4d7b0e3355ca67f18d68f89daae7d8d1a54ab",
+      "image_indices": [
+        820
+      ]
+    },
+    {
+      "half": "B",
+      "id": "19bfa7da2f739a78ab023cd3c93357b831a6de8a37eab87b03ddbe05f2b245af",
+      "image_indices": [
+        960
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1a2515ff737d015285040238129d91010222b713e96228d22ff67a5c91d7cf11",
+      "image_indices": [
+        797
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1a2b526641324b24fd5f646f68dc5dcee4f3e51b6ca38f71b1c6b7912189fd75",
+      "image_indices": [
+        765
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1b49e643fbea95d9ccfc5a233005c9280850b811e9b7f2ae984a6735bf89e02d",
+      "image_indices": [
+        543
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1b884823fb97cf055209c8f2af9ecdc1382e9c6530e12738b8889c5b663b42ac",
+      "image_indices": [
+        376
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1ba84d47e89ad482d06bc8982b7bbc3c430ad790b7ab3c0ae742be1027866889",
+      "image_indices": [
+        369
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1bc96cab0b442e3c86229be27e20f7a17d412d3fc85be05475774b779172698c",
+      "image_indices": [
+        413
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1c14968b6f95be09261db4e5abe53ccdeaf6b6acb94a39ee01d15fb429281921",
+      "image_indices": [
+        306
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1c68380e8cfc6accf826cf8ec6f15f4be6b7e0ff070b36f1b04b058e61ea7227",
+      "image_indices": [
+        67
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1cbf81ee24776bbb40ddd630afec9890beee4a33916ec7427868c14f0ff8ac68",
+      "image_indices": [
+        794
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1ccb9a4fb235167d5641337fa5026f9d99af42bf8d82e22af3879a90c00dde19",
+      "image_indices": [
+        415
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1cf868d66cbbc8ff360dabae5d783e98bf700d717ae5265fb21e1f09601c7772",
+      "image_indices": [
+        927
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1d0331db8e2b0e4a548d1583fb47fb83a3e2a68c874f1633db77b1ba9117a8d7",
+      "image_indices": [
+        491
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1d60e1a46370e86b528f2d194caee64340de4e11603fb3dc43041cf62cfb6f2f",
+      "image_indices": [
+        151
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1d6db0d9f275afacc7386eddedbb77b0613f87b3772321880f5e31bf0b634892",
+      "image_indices": [
+        726
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1dc3185d9f543a5d609659713e12a0cfff6ffb28e399388c10a629b2b892914e",
+      "image_indices": [
+        468
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1e264672d957ae1aa4a300cb6ed1b96b7ad8961ee34327ee79add16a51a3df05",
+      "image_indices": [
+        435
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1e355ce29f21f00be4a76a246eb64dccd401d28993a179959ec68fcbbf6721fb",
+      "image_indices": [
+        826
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1e7038f878bcf40199daa75da8ecf920e624136b12173e0815623ceb9001266a",
+      "image_indices": [
+        262
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1e81db2d6cb0dae8283e23f4f8704b4110058773144bffc55377ef1ec80470ae",
+      "image_indices": [
+        612
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1ed8f9d8f13c7f6f9814beb199394771e346ae3cac0d4135d903a7e5f5a2b434",
+      "image_indices": [
+        705
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1eebbf2dda3db1a3e6d8574a944dba70ffea438a2a948d0dee112b6545720d74",
+      "image_indices": [
+        322
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1f1e37bf8a0d78cad604c5859912947b0d1a62aabb2641c27fc6cc110eb2bcdf",
+      "image_indices": [
+        19
+      ]
+    },
+    {
+      "half": "B",
+      "id": "1f6bed1026fb6f75e2eed3ac34f0f3c17df2de83b4f2d60facceccceb7a07522",
+      "image_indices": [
+        47
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1f96084c457a910df885a855a25236213ed5bb79712e37a443c29843bda0ecf6",
+      "image_indices": [
+        904
+      ]
+    },
+    {
+      "half": "A",
+      "id": "1fcf917512d4ee9c8336d652c4ae64c554b79c6079fceac982898f845b4cc345",
+      "image_indices": [
+        34
+      ]
+    },
+    {
+      "half": "B",
+      "id": "202bb59bddde2b152fb31bcdb44d6cd2c83d5c2b70520918f18359208e5fab70",
+      "image_indices": [
+        214
+      ]
+    },
+    {
+      "half": "B",
+      "id": "206471d31143f0a835d8a9ae23527cbc7b99bb209665c052bb3b9a6c84b94660",
+      "image_indices": [
+        247
+      ]
+    },
+    {
+      "half": "B",
+      "id": "207d23dff2f24140eaab66be138b2912ff6dd5039af23883330ac63bcf5eb79d",
+      "image_indices": [
+        935
+      ]
+    },
+    {
+      "half": "B",
+      "id": "20da478d3de147ef23b6ae79d9645ccf295292b076886a07584a072ab7b30528",
+      "image_indices": [
+        82
+      ]
+    },
+    {
+      "half": "B",
+      "id": "20e064f7e16a33fe1c501d52e143f97ccef4bac73f8da801c8c6af10bbf79fef",
+      "image_indices": [
+        990
+      ]
+    },
+    {
+      "half": "B",
+      "id": "21338133ff1d2368dc2d7e67611500476eb713b703aa9fe3bf1c9a3c95e492ed",
+      "image_indices": [
+        857
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2148875d1d6a0d9c50744cf967c36a7b1ea00f8299ae6b500e2d9c733a6aa197",
+      "image_indices": [
+        138
+      ]
+    },
+    {
+      "half": "A",
+      "id": "21490e03b6e6a5989a05d8e92302fc6cf84a59970c13cd3cd8ec6302e94b42fa",
+      "image_indices": [
+        896
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2149d527a4a6c2f1cdd00a0ade6d46cdd199dc706bff7af2b883771d162d93d6",
+      "image_indices": [
+        782
+      ]
+    },
+    {
+      "half": "B",
+      "id": "216416b81d275bfb12b802eca7088b0501c1c45295292122ccb5b0a436daa14d",
+      "image_indices": [
+        56
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2182868aefb5dc52957fd97802352c908e814993fc7f55824d89c2b4578e523c",
+      "image_indices": [
+        955
+      ]
+    },
+    {
+      "half": "B",
+      "id": "21a27a8400ddca61e5571881124bd010780f183bfcb72ae5adac350e5eeea366",
+      "image_indices": [
+        814
+      ]
+    },
+    {
+      "half": "B",
+      "id": "22a1e87e929704524174651aa7c3b871d9f7bd3de1abe9d53726dd06b674ee3f",
+      "image_indices": [
+        767
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2330a91c6360389696e4470401f4a8dceb0b3e1761317b7d0fdc2975304925d6",
+      "image_indices": [
+        449
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2353dba33c61693296c7281c279c7d67ea310a2ee074bf1cf1b1c34a59b32519",
+      "image_indices": [
+        940
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2398285768f8be007845b51fdcdc017b5cf03fe0cece54a7ae5854c8bc0c52ea",
+      "image_indices": [
+        205
+      ]
+    },
+    {
+      "half": "A",
+      "id": "23d7e68c9a0bf97bafa0bd740cee0d6694f1a4a0d73d8c0119ed40a5dc33aeac",
+      "image_indices": [
+        856
+      ]
+    },
+    {
+      "half": "B",
+      "id": "23f6d7c472b12a4cbe8bad3cbc0ff999e351fa85051a4835f145a42d7324cc93",
+      "image_indices": [
+        319
+      ]
+    },
+    {
+      "half": "B",
+      "id": "242f77e95fe37436f483643b13ab2c4540df665f8b1cbb59f9e02ed3320318e9",
+      "image_indices": [
+        821
+      ]
+    },
+    {
+      "half": "B",
+      "id": "247d580ef66f0aff995b84cc1da06781b5501571352bde5c25cd114b02c3ce2c",
+      "image_indices": [
+        305
+      ]
+    },
+    {
+      "half": "A",
+      "id": "24820636a60a10a3d96d852b4e8aeb0e65bf11b4e293eec9c86671d789103258",
+      "image_indices": [
+        834
+      ]
+    },
+    {
+      "half": "B",
+      "id": "24e5f799582bf1a3a18c80b474f0a6462b8dba6204fc3371e24889042499ae5e",
+      "image_indices": [
+        328
+      ]
+    },
+    {
+      "half": "A",
+      "id": "250ca2d3f4c7eea4007959127ae1b3fa9298997b29e4fc886bb15dcde36c9243",
+      "image_indices": [
+        576
+      ]
+    },
+    {
+      "half": "B",
+      "id": "25424a7b14bc19587f96dd197e40c7d090f1d95061a43ca2837cabe702a16ec8",
+      "image_indices": [
+        878
+      ]
+    },
+    {
+      "half": "B",
+      "id": "25c30d234e02c0abfff8b87d771e3349b6ba03118bf9495baccd9d02dab2d243",
+      "image_indices": [
+        679
+      ]
+    },
+    {
+      "half": "A",
+      "id": "26027f33319023504d9c9c385bb26a91017990a71408377d133b454a1c8471d1",
+      "image_indices": [
+        709
+      ]
+    },
+    {
+      "half": "A",
+      "id": "26104a3302542cfe9c530859948385b6c4b94631dc686f0eebebad3920d20273",
+      "image_indices": [
+        41
+      ]
+    },
+    {
+      "half": "B",
+      "id": "26163774bd1fcb567117c3ec78ce81322813bc35e416d9134d0236ad09c2c3c9",
+      "image_indices": [
+        655
+      ]
+    },
+    {
+      "half": "B",
+      "id": "268ff1093f4e48d3edf402181fcc96fdbe004c7368c7186f7be1cf235cec378b",
+      "image_indices": [
+        738
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2709576b1e64ee8377bc46d4a495fc533622d1efeb34b8ac3005531dbac1a680",
+      "image_indices": [
+        677
+      ]
+    },
+    {
+      "half": "A",
+      "id": "27131e694007315f41f3cefa54164a3db7ad63fa4bbe591eb47112e6338d41ff",
+      "image_indices": [
+        379
+      ]
+    },
+    {
+      "half": "A",
+      "id": "27552e0b65abb0041d1581c04c305169812360d07a47c34af9ae42a0690cdd4e",
+      "image_indices": [
+        694
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2763536c4ab1363429dcf8d8aa3e6ea3c98d1dbeb7074e93f10566dc43cebe1f",
+      "image_indices": [
+        883
+      ]
+    },
+    {
+      "half": "A",
+      "id": "285a329c3ea99a9c1aef557051febfadae0eb80e69d9d7ccb293ee6a41eec5bb",
+      "image_indices": [
+        907
+      ]
+    },
+    {
+      "half": "B",
+      "id": "28a8e91e5c73b8109cf49b4c310ad1068dc75df3aa1104e33e43fb3d94a223e3",
+      "image_indices": [
+        417
+      ]
+    },
+    {
+      "half": "B",
+      "id": "28ad0b34b75e3e1c85daff4e98814f08211ae6850f4b1055f7520c61256b2ae7",
+      "image_indices": [
+        732
+      ]
+    },
+    {
+      "half": "A",
+      "id": "28c7d0f02d315814881dff707855321c0a4ea637e26742662bb9900ab9095404",
+      "image_indices": [
+        779
+      ]
+    },
+    {
+      "half": "A",
+      "id": "28d0677f7e283dd8a1bef0e882d3411ab0d4d0a4838eac84053ec27f8a35bb37",
+      "image_indices": [
+        15
+      ]
+    },
+    {
+      "half": "B",
+      "id": "29adef2cfcea9c6e0f287ce2db181d41abf623470e048dfc233e3b33133fe664",
+      "image_indices": [
+        240
+      ]
+    },
+    {
+      "half": "B",
+      "id": "29c2dd55a8bf7b18d44ff05cf65f62f40dec7cc05d8c4df9b91d3dbc0531c967",
+      "image_indices": [
+        602
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2a04130e9960ea4b6d685fccd00dc6cc77b816a19f250685cb4e00aebdd8a1c4",
+      "image_indices": [
+        189
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2a165731b4c3baed0b91281302fb8aede5134ee5bd57c69119062c7c316db511",
+      "image_indices": [
+        314
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2a2de6f152f32d4be07b1bcb8728cef8a29e4ded1cc076a2f2c237302ad7434a",
+      "image_indices": [
+        229
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2a3cda0ffd6851627883ae821d626e3b65eb5c0aeaccb832e7e83be2eedf7fb3",
+      "image_indices": [
+        430
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2a4094da72b44794896d5e558141b59847eea03029b26832cf44441d425a2f3d",
+      "image_indices": [
+        346
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2ac7fca45e15f912c2ee84b098e0b6de35b7aa3bcab564ed77d2b897acb39698",
+      "image_indices": [
+        547
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2ae7cf56a1b2595d927048536fcba9a0a9920c0f3305fe37428206364157076c",
+      "image_indices": [
+        377
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2af1eaf7ef67d38e2fa6cbe275410b49bebefb3bffcd6b48f0905dd07e01e845",
+      "image_indices": [
+        664
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2afe82bc16940d2e6794fe771cb094650ed102199a815bf6da7d8aad84e441aa",
+      "image_indices": [
+        414
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2b21a38db05e1ff9303dab545e6582d02ddb5a0bace244d00293d10bec541f96",
+      "image_indices": [
+        579
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2b56653c66766ebf97c368d371db50ed90b85a24f07f89918d5fa72cc8e10704",
+      "image_indices": [
+        608
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2b99f768186c16c894dbb209432f751d470fe26cd63dcd10ab9c07233f8757aa",
+      "image_indices": [
+        465
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2b9f4ca7ba138a2a56c4462f7f67b92b9096fcf6b757b8e4859d6fa5a94fbd6a",
+      "image_indices": [
+        831
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2bf39a67640ffd19d4202c5d1be2cc734116772c4089d476eda4aae1b94c761f",
+      "image_indices": [
+        79
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2c075483e7c4a83405585f0dc26aa81fab9124b646b1371704f3bd226caec097",
+      "image_indices": [
+        574
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2c0cbb2b4763016b6075a2995ead7d9f04657648f1a06bcb9371ea0e9e7b67c0",
+      "image_indices": [
+        752
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2c463d2ed9efe8d60ef6b9649c359e09f3c55cbcb3c618200b71987253765db9",
+      "image_indices": [
+        1
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2c5e4df1f72c3d3d78b7f35f220db77075c799bbb47bcb714e466f62eca3e7b4",
+      "image_indices": [
+        978
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2c86cc550c14a80326355022cdc4124bb209a9c32d1ea15508cbca3a54bf15c6",
+      "image_indices": [
+        683
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2cbf609d8b528ff6a23ccd73c7880597566658f88d3b7be0c14fd5aa7e2534e7",
+      "image_indices": [
+        167
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2cdaae5efb143410b71395a57d7657b341e80434d6f0d66a78c2860f1aba792e",
+      "image_indices": [
+        781
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2d530bdb163efa3440479967a85cc49bf694736d37385b82b1dfed673ec7f6fa",
+      "image_indices": [
+        226
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2d534a68a9dd8b6ad024164da8b6c9720123fd4d5957e58615ffe2a626f007ac",
+      "image_indices": [
+        74
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2d91ead4ab635aea4fba52ae2d23ad697cd370f77b22b3d2b484c60870704dc4",
+      "image_indices": [
+        496
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2d99bd967ccf62931f1c2b0fe8a34811416107bb37ea7a6fc483601a4aba004f",
+      "image_indices": [
+        140
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2dbaaf35bf3efa84992c6f4396111e80c8c10096bbd07a9f136ea78011b82d98",
+      "image_indices": [
+        786
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2df18dc441515b2b4a413d718271fbfc383cde1c45d40b0ad3b5fbff13c76560",
+      "image_indices": [
+        162
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2dfaa9c78049c176e08cf6d102b9430286bd609908905a32639e2f4280529f15",
+      "image_indices": [
+        827
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2e033cf870bf005a438c7b65923c89159851e3bb91226435f8628971de073ec2",
+      "image_indices": [
+        937
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2e23fb869ef3c65537d2f39ee4f9917f51d7ace4f2d2e91b68486bf0e1c71fae",
+      "image_indices": [
+        773
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2e2d66245b2418fffc3a2696504eb5647ef132150342847453e75c7366bf06fa",
+      "image_indices": [
+        771
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2e80d9be5e9b2d150a900ddf7ca5c442f668d3f50c318d2eb22d3a7a42ee6c34",
+      "image_indices": [
+        871
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2eb3c4cb39043e79e932afc230050aae94f03354c81f0e7e32b27ee9c4e1581d",
+      "image_indices": [
+        12
+      ]
+    },
+    {
+      "half": "B",
+      "id": "2f8fba3d93d481649a7c980e1da549a78b7760d80de3177e7d44c1ec9452d907",
+      "image_indices": [
+        227
+      ]
+    },
+    {
+      "half": "A",
+      "id": "2fe36b58320a91bbe1afdb32a3012d937d043459c181d9e14993b8438f52be80",
+      "image_indices": [
+        749
+      ]
+    },
+    {
+      "half": "B",
+      "id": "306bf21e3094fc5d018568b3f46247b949f076a854bdfea23e0632a0b503fef6",
+      "image_indices": [
+        606
+      ]
+    },
+    {
+      "half": "A",
+      "id": "30d73d4bd10751aa1880dfbc51ac565eba6f41d7c97792fc5fc5c864e19fb9ae",
+      "image_indices": [
+        550
+      ]
+    },
+    {
+      "half": "A",
+      "id": "30d861dbe09c8c542aff2cb67eaaf680bdc47cda259918fd1144e595e9a6f2c5",
+      "image_indices": [
+        126
+      ]
+    },
+    {
+      "half": "A",
+      "id": "30dda632492d6a0f5a43699b78d7f80e83c4e57a0e0904da441ad8c3470500e2",
+      "image_indices": [
+        350
+      ]
+    },
+    {
+      "half": "A",
+      "id": "30e5565fd39742ad4e6e16f5cf68381014943226d6a390573c330b1a72156927",
+      "image_indices": [
+        879
+      ]
+    },
+    {
+      "half": "B",
+      "id": "31100f3f594025b123cd8183b688daf2fe2fdfbb73ca7835c9f3c40aa6e18de7",
+      "image_indices": [
+        23,
+        368,
+        835,
+        898
+      ]
+    },
+    {
+      "half": "A",
+      "id": "31d9ffba31f9640ffc567566775a7051aae3dbf16e01b7398f999b403958d74b",
+      "image_indices": [
+        400
+      ]
+    },
+    {
+      "half": "A",
+      "id": "323258d6a067354080eef74c7df1e6566190c584073099555e96125604ac48a1",
+      "image_indices": [
+        607
+      ]
+    },
+    {
+      "half": "B",
+      "id": "324eb3323759e7fdb16dcdc1410ce4bdb5890cb0d50046eb5692126a3d34098d",
+      "image_indices": [
+        300
+      ]
+    },
+    {
+      "half": "B",
+      "id": "32710d1bd5a5888d9cce73c340b2c9f1dd456a955906253d2e18e3d3bbba3e17",
+      "image_indices": [
+        864
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3291402f94067178d12818e3cc8acf0c00b74e3455e288c10ecb6eeaeea5534f",
+      "image_indices": [
+        695
+      ]
+    },
+    {
+      "half": "A",
+      "id": "32c8a7bcc6851ab16881b5d11a739217e5153e73915d2ed80439a65eb218f45e",
+      "image_indices": [
+        70
+      ]
+    },
+    {
+      "half": "A",
+      "id": "32e1931285d3c5f9f45d8c469608e2b2cb42647864c112c64ca6043a9eb8ed58",
+      "image_indices": [
+        3
+      ]
+    },
+    {
+      "half": "B",
+      "id": "32f28c3b55497e19c37f9bae64a5df88ac9d12d45bd7d4467f2eb24119858a1b",
+      "image_indices": [
+        968
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3340d2edfbfc5e4e1ee07b01d6b523f0c2055e58e1a4a33b70dd15ece76a6a0b",
+      "image_indices": [
+        7
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3351a881b2f104e08f5159c60051fb211f1eca955a7d417c9c51311059518efe",
+      "image_indices": [
+        10
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3385ddfef43ca62f15094c9bd1a9ad4e1e964e641eb8ec12d88300fd7bc026a2",
+      "image_indices": [
+        575
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3388acbb694f430ce3c03852d2446787088505ec88263e9bfe9e0629db8c7c35",
+      "image_indices": [
+        648
+      ]
+    },
+    {
+      "half": "A",
+      "id": "33c9a73c2d10cdbeef925ee0220b4a7c33085f4335b041eb419c037deddc8263",
+      "image_indices": [
+        158
+      ]
+    },
+    {
+      "half": "A",
+      "id": "34667f2532f9523d24a90c0b2e02e55efb6fed8218d80271222c39520a2e00b7",
+      "image_indices": [
+        204
+      ]
+    },
+    {
+      "half": "B",
+      "id": "346991a97273d702fb9702bbe86280f63f138b7c5c411f824a69dc893e01e150",
+      "image_indices": [
+        730
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3499c387865d1e50ddc2db65590011a8838afdc3ed130ebec2948963d2014f9e",
+      "image_indices": [
+        407
+      ]
+    },
+    {
+      "half": "B",
+      "id": "34a63cb07808edaf956426c36b8e59260f302be3da1fac94fcdbf4748b27c6eb",
+      "image_indices": [
+        721
+      ]
+    },
+    {
+      "half": "B",
+      "id": "34c350d40b68e7bf76679286ede8db58d1e1629312df3d1966c5c84985a87bb3",
+      "image_indices": [
+        600
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3585f90f626bb42e5b89c15ce3f49e9d2d347f4b96e2393e669a999d919de047",
+      "image_indices": [
+        488
+      ]
+    },
+    {
+      "half": "B",
+      "id": "358ff1f821e329377a3e242b2011d9a1e13908e8e3109bfb094493346e8b57a9",
+      "image_indices": [
+        803
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3651aac0b6aafde916b55fd5821cb86597dd63d660d9aff400c9f86ef7a21429",
+      "image_indices": [
+        320
+      ]
+    },
+    {
+      "half": "B",
+      "id": "367e3b3b3e94aaff6d4e6d9ca00301980aa04860d5c3b1290edf8b14063726a6",
+      "image_indices": [
+        144
+      ]
+    },
+    {
+      "half": "B",
+      "id": "36b50f92e7158f7ce3221c2eaef5a6ff502c704fd72bccfd67c56191d8d1c7f2",
+      "image_indices": [
+        992
+      ]
+    },
+    {
+      "half": "A",
+      "id": "36e7ed78465e1320768fccb82a67326be35b2c7413858c433f0109bfd6517d82",
+      "image_indices": [
+        888
+      ]
+    },
+    {
+      "half": "B",
+      "id": "36ee1c0559953567362abaa0ca0f9ce71a9241fc480c32a26fa11a755627136d",
+      "image_indices": [
+        962
+      ]
+    },
+    {
+      "half": "A",
+      "id": "370cd95eaf40f5e35f0d508666318e703c559a70519b0e72b4e16677befac541",
+      "image_indices": [
+        110,
+        180,
+        333,
+        446,
+        775,
+        816
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3717ba7c6d385256a9b67b6bf137231e97322384d579e00a02b1abc3488a09b7",
+      "image_indices": [
+        177
+      ]
+    },
+    {
+      "half": "A",
+      "id": "37550de7d8f315b1651ca02f633d0b0e6007762555312e987b7ef7d5ee731755",
+      "image_indices": [
+        382
+      ]
+    },
+    {
+      "half": "A",
+      "id": "37613164f815b86eee43cb69b65a3a8f8de31528bb5ec46ead63a7ff5fbd6592",
+      "image_indices": [
+        355
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3786ecfd714c32ad972eae71c5be56ce72f665f0470ee10d10d5cda874ac1ecb",
+      "image_indices": [
+        980
+      ]
+    },
+    {
+      "half": "B",
+      "id": "37c87272197c5576d6f1a6b687264aabcb78ae1d55f0b2fe636b722a6dd712e9",
+      "image_indices": [
+        892
+      ]
+    },
+    {
+      "half": "B",
+      "id": "37cddcbcb05387f12a9d9d37b8fa3d50b7bc5c5df7356cb9c79e1dce9a0056e3",
+      "image_indices": [
+        174
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3889ff2eb1e79b287c52b98a452efcf3b9472546a30039a53123e5d82eae2b96",
+      "image_indices": [
+        512
+      ]
+    },
+    {
+      "half": "A",
+      "id": "388cf6c76da37ce73a0ac1dc06b8e5a5920bfd155803fb174e3d2eed4e6fdd9b",
+      "image_indices": [
+        763
+      ]
+    },
+    {
+      "half": "A",
+      "id": "391d1fa530237aaf6741c3fb5409d55fa4202c3938804862ec14d387cf4663e7",
+      "image_indices": [
+        988
+      ]
+    },
+    {
+      "half": "B",
+      "id": "392bb59e7720959164ff57bac5ae9c185e50599937214a717d06e598fbf5b31b",
+      "image_indices": [
+        393
+      ]
+    },
+    {
+      "half": "B",
+      "id": "39791b045d145fc2a96feb1fd010631541a0fb17d487400799a6d3ce5a318e0c",
+      "image_indices": [
+        95
+      ]
+    },
+    {
+      "half": "B",
+      "id": "398b2b64726c7a5ac0c3ee6acd0b3d0b824c60326628719459c0ed1dbd4cf1a0",
+      "image_indices": [
+        777
+      ]
+    },
+    {
+      "half": "B",
+      "id": "39d52d0ff180398e6cb178c8ec9b9d562c6be95d4a8e9d2cfcdaa18f93150c0f",
+      "image_indices": [
+        762
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3a1d6f11369f05e1652552de06caed15e9b338dac2ff71635baf1d3122f06c2c",
+      "image_indices": [
+        429
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3a297e940807da67ce446260fe4073255fa23b4ef5b148aae612a01ae78d800e",
+      "image_indices": [
+        80
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3a3029de99efc3fca367a487df9ca3400e53b187ef5fda70262f37dacefc9735",
+      "image_indices": [
+        295
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3a8b606e946b24c422c1e17435b5ce99f428ea8e915f266f5aaa9fde71aa80ae",
+      "image_indices": [
+        665
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3ada8dadcec9d56f43cf4d7c54066b053a73a48b414378405dd58b08cea1fa89",
+      "image_indices": [
+        38
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3b0026c9581a54156842925597955b9dd5ebde78ac4dd841ade7d34316c1f107",
+      "image_indices": [
+        303
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3b06b1de38db15971d710a93ca4af24ec0ef0c8f24c8491b1b6d31cd62dac5a8",
+      "image_indices": [
+        686
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3b91cd6a356da8f94bba185b10e86a451de905f630d0852669bc7fe06ec57095",
+      "image_indices": [
+        235
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3b97bbbfe4e427e1a20b1d8d6240959812996439dff9f89230bb5b4df1eff134",
+      "image_indices": [
+        325
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3bbef5590c35a62f212886cba36d71f9bbaba22f372e5d3c40e94a63a436e38b",
+      "image_indices": [
+        326
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3bf6b7b9eac4ecc03891e39217cc43d30f4414acea818adf8d6d5a8a807ba479",
+      "image_indices": [
+        564
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3c56eb6aba2df22e9aee41ca063e09cc88026c523075e3e8d22618fcb481de7a",
+      "image_indices": [
+        395
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3d731fea9f74e66c16819889ada49333f209faa432a7568467eaa201c29e5a7e",
+      "image_indices": [
+        743
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3da4e19474a20f60da23c7c7697d169dd0b39777751a7e5d29028ba7a5398c3d",
+      "image_indices": [
+        593
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3dbd4a3cd638a9519fc42be5770dff0d6a44b84677f1dbeb93cb37f3f6faa984",
+      "image_indices": [
+        467
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3dc8ceb39f954c9b85d344e485f96453c0d09fb2d178f4e7c292491f43182313",
+      "image_indices": [
+        562
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3dcedcff451cb61763a837aebfd7411d1fcdb4981744a27bff8d44675c415dbc",
+      "image_indices": [
+        710
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3dfb82dd77e3ffc9f2b4b1158d9c7c95ebce2e950408e9933d92e7cacdfa0fe7",
+      "image_indices": [
+        4
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3e466dc833a8c84d077757324b1011bec518743cb4283ff4ca0fcdf2533dc3be",
+      "image_indices": [
+        969
+      ]
+    },
+    {
+      "half": "A",
+      "id": "3e7da99ba0431d6ffc46f1158890775826a149297cbd89cd12057eaf9cf1d8c0",
+      "image_indices": [
+        296
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3f1e1e72b5accba156807d70b70b6b07b3e10913f2b9cb50834803f6a7d24394",
+      "image_indices": [
+        310,
+        500
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3f2023c5418fa183116881205eabfd07e807116d5d572eec2e0bf3254841ed85",
+      "image_indices": [
+        930
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3f415f2b1ee98e6915ab368d69e2f436e3ace1b390d117c12dceac8dfa5d9be2",
+      "image_indices": [
+        223
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3f8153f92d7e9ab474b221a532ed95284bcbb0c4314e1b8e521c829283f31477",
+      "image_indices": [
+        723
+      ]
+    },
+    {
+      "half": "B",
+      "id": "3fe1076ad2953e29ee702041da0c348ab3d3e6b6fd4d887e41798f09ca27a5d0",
+      "image_indices": [
+        236
+      ]
+    },
+    {
+      "half": "B",
+      "id": "402e8f65c4155e97253fccf77b989d698945a8203110b5fd40d59a39b6699800",
+      "image_indices": [
+        185
+      ]
+    },
+    {
+      "half": "B",
+      "id": "40574679761c85ff8eecb6216085bb6dc2317b9273f211c963707c5d9dcb44e4",
+      "image_indices": [
+        577
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4110d1086b5402a63b5ff5ae574c9440b721d26c6b5768c4ceba105ada8c0291",
+      "image_indices": [
+        423
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4113aad15b6ed2a8c19ff0f2e0447f37390b66075450cf98cec619b41d8b61b1",
+      "image_indices": [
+        740
+      ]
+    },
+    {
+      "half": "A",
+      "id": "411550966eeb0def11314284a65354f5a4e76aaf86d6b0013e826ddab5b2d50d",
+      "image_indices": [
+        548
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4121c954e4dc01c069ac261ae98a374e8e737ad06f2bb7d80495f65c9e610868",
+      "image_indices": [
+        836
+      ]
+    },
+    {
+      "half": "A",
+      "id": "412f25f1d4a8455421379675d125718f1d108b7adb5d4754f10e70dff73896f3",
+      "image_indices": [
+        551
+      ]
+    },
+    {
+      "half": "B",
+      "id": "41d41f9bc17bee990c61e9a20b1dac231533cc2ea19ab74782ce355e337c610a",
+      "image_indices": [
+        965
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4212e7289c79204e35b4245241fe5a939077e8ac0b5d322787f2334ffb6a02ea",
+      "image_indices": [
+        565
+      ]
+    },
+    {
+      "half": "B",
+      "id": "422b7e286ec5c5fc60669393b7b06788219b93e8250f3f26811e182a8d7bb324",
+      "image_indices": [
+        787
+      ]
+    },
+    {
+      "half": "B",
+      "id": "42401c7df29804da0b04baad2bf1cfd51e2c61e311823153b63149e9e419fe77",
+      "image_indices": [
+        881
+      ]
+    },
+    {
+      "half": "B",
+      "id": "426d22c28202654bb2ed6fd3f113a8b55146c0bf03bfa42f7719cb04c1ebb879",
+      "image_indices": [
+        920
+      ]
+    },
+    {
+      "half": "A",
+      "id": "42890cfb59cabf6b56d0869a60d1a38be2ec345f1654e465f8602a898a7a3564",
+      "image_indices": [
+        381
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4303708429560f9688f1b22d349aee28df148ab793a15c4b9a510c795755a869",
+      "image_indices": [
+        783
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4322cca363ac286a83aa59958687b25c1e5c8dac0b113905f9997ac87c30bf92",
+      "image_indices": [
+        68
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4331902234fe5ecc93b0a2d1b708976ab380daccaa8f13f44ed176f84de2d56c",
+      "image_indices": [
+        828
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4376a8ad3e4d90af81dcfa6f13fa28a66e006b493ecc7ae4666e03bf1f9150b2",
+      "image_indices": [
+        891
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4378f56ca6b2c88b543de0ccde93fd19df76c17f2c2965d9a3578d680e8dba35",
+      "image_indices": [
+        918
+      ]
+    },
+    {
+      "half": "B",
+      "id": "43b6c4b5a0119c6b83156907fdcefd0aa1f8897487dfd19947c302d846be2c54",
+      "image_indices": [
+        378
+      ]
+    },
+    {
+      "half": "B",
+      "id": "43ba60c9d37eecdad550364bb482766057b20574ce8dbf2dae01fcfa0e7e3692",
+      "image_indices": [
+        768
+      ]
+    },
+    {
+      "half": "A",
+      "id": "43d9a17fd86996eff7a4e9fd397b2ecc24ccb3f73c21590738278b9f0f93247f",
+      "image_indices": [
+        722
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4458d00a5157cef302cb52aed36aa7fec7f8ab02e18a7326fbfcf817d8389ed7",
+      "image_indices": [
+        281
+      ]
+    },
+    {
+      "half": "B",
+      "id": "449b6e82052d230c372876ef565c2a57faacdcd5eb8ab07ee3d58190fe304d55",
+      "image_indices": [
+        321
+      ]
+    },
+    {
+      "half": "B",
+      "id": "44b0471a1195c7d2c8ac58640897ecd0a24e1e7309e05c0d0f723eb617a66e46",
+      "image_indices": [
+        571
+      ]
+    },
+    {
+      "half": "B",
+      "id": "44b8f6c48f87fd3bec8c2343831e21e6a9f28902f35aff355ea2ebc72d48e67f",
+      "image_indices": [
+        43
+      ]
+    },
+    {
+      "half": "A",
+      "id": "451e5cd376207b1143425109b824ac6e611089a4405c4501439f37b81bd16f1e",
+      "image_indices": [
+        914
+      ]
+    },
+    {
+      "half": "A",
+      "id": "45208de416fe2a2270a8a8956f2c9d74792b73515fcfa152ecd4f15bae9b32b3",
+      "image_indices": [
+        42
+      ]
+    },
+    {
+      "half": "A",
+      "id": "45857e4b00de48a2e15fd620072539f08270054c6e2ae0f1a692e9d0a6b13cc0",
+      "image_indices": [
+        51
+      ]
+    },
+    {
+      "half": "A",
+      "id": "45d65b5177bbe4477816fde743325b5c22153ff8a786d6f02d29de927eebfa1e",
+      "image_indices": [
+        744
+      ]
+    },
+    {
+      "half": "B",
+      "id": "46a5985c7abc606a52e703787d2f90a067ab9ac54942ee2a14bb543ee6f242b2",
+      "image_indices": [
+        459
+      ]
+    },
+    {
+      "half": "B",
+      "id": "46a93b1f5c279f018ce52a77ceeec4e67c6fd1d87808e7fc19af5f0940cebea3",
+      "image_indices": [
+        230
+      ]
+    },
+    {
+      "half": "B",
+      "id": "46b6322514fc25f3768cfc58d87f503545431d7cbacf4a02c1134c12d4fe9aaa",
+      "image_indices": [
+        22
+      ]
+    },
+    {
+      "half": "A",
+      "id": "47992dcfae05f65feb04bd411998e615c7a532de94f25e6fb9e277d4152034e1",
+      "image_indices": [
+        480
+      ]
+    },
+    {
+      "half": "A",
+      "id": "47c8b7b7b7eb2b6de115cbe551923bede9b679980400adfb689008bb8d8de15b",
+      "image_indices": [
+        75
+      ]
+    },
+    {
+      "half": "B",
+      "id": "480be36ca97ecfefcf2194d2e30dcd37b92457dc1643533e9a9f8537d3c1d152",
+      "image_indices": [
+        343
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4811c1cd50af4b2169cabbe238c9cfd7c027fab57284d0e7602c1446dd6fbe53",
+      "image_indices": [
+        170
+      ]
+    },
+    {
+      "half": "A",
+      "id": "483bdf1ee8e4d3ccd8b251b78a9f3cdaf8fd3d72fe382afb65c6be881e0613fb",
+      "image_indices": [
+        696
+      ]
+    },
+    {
+      "half": "A",
+      "id": "48d04b15c8226feeb9328c9c35300a355125829741df7912188afb6703dea960",
+      "image_indices": [
+        524
+      ]
+    },
+    {
+      "half": "B",
+      "id": "49d56c4e153e13d7237d352bf8a79f5513446d2c4a51683c0c0f868bcb76655d",
+      "image_indices": [
+        27
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4af0ec0fd6a6d83930df678db1e6206192122f231288de9aaef6358ed977f739",
+      "image_indices": [
+        951
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4b6736055d6e1dfd4023e6a2eda38dd4e6565771fc1669eb3b001c7e64814613",
+      "image_indices": [
+        916
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4b92e354635867ec36862425acf67b84230a0eb9d2051c6e490d25df33869d45",
+      "image_indices": [
+        478
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4ba9bc06604d4aadc8b1f3ba52406e25d6afbeac5ae97c410a7c0ed8f904f402",
+      "image_indices": [
+        54
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4bc80fc6b1bbbc3b8216933408129b223a437e7df9a6c2ac22133c585e48609f",
+      "image_indices": [
+        530
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4bf8e785cabb56c65c3a859a897c07dfa2d88bfe0b7dc97874dd05f7552cbe31",
+      "image_indices": [
+        956
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4cb1021d0677b1ed103e930e68747db8c66a341592008fdddcc0a8a1b34a748d",
+      "image_indices": [
+        812
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4cfe8b560b24f5194b588fa6073ff3699adaa52b4e80b2ecc5626b2a4a4da8c7",
+      "image_indices": [
+        870
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4d1a98fed039989c7a2d8b4c7b05e7905852f437e233ecfaaa6cbceafd481de8",
+      "image_indices": [
+        711
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4de1b6269dbbf25d3d7b2ea5a61eecd29efb272647ecf49fb0fa3ebc69120889",
+      "image_indices": [
+        912
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4e6b44072f943c9861cb4e2685e23b1c5e09070b65d3f8fbdd631652f9aad8ed",
+      "image_indices": [
+        731
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4e6d3275f0cbb4c981522d1334c64a4cdec7725d8820aca5c4bf13822a0cb68f",
+      "image_indices": [
+        880
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4e9accfa5045f1d13ff24564bee99973ded4246e5831e733076e9444758e136c",
+      "image_indices": [
+        796
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4ed12674c06e8a5ae7162307c3d2ff77e02a8bc179209f8e09b36e29d3d0d674",
+      "image_indices": [
+        789
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4ee6077870710f69b5a2f0e71c98ed5151ef4b09c8963f58fd61ced47b31fe9b",
+      "image_indices": [
+        139
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4efde4976ce09cdb48c5a4f235e2f2639ba52ba8a83abcbbb9d8fe1e43822ab7",
+      "image_indices": [
+        788
+      ]
+    },
+    {
+      "half": "A",
+      "id": "4eff12884c7af6b49bf44b863a9023b1c83730513443d6b52a5931cadce1aea5",
+      "image_indices": [
+        222
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4f75f2a5f387f3b029c303281f091b6a6926f74132f629f069f4893a7bd06333",
+      "image_indices": [
+        191
+      ]
+    },
+    {
+      "half": "B",
+      "id": "4f84f9c97bb08fea20e05759846f4f15b6391832b04fa5d054e38f833925b290",
+      "image_indices": [
+        169
+      ]
+    },
+    {
+      "half": "B",
+      "id": "50d162811c356aacdd10ca18738f03b70e7816d575d13d3f54728d083cce503c",
+      "image_indices": [
+        302
+      ]
+    },
+    {
+      "half": "A",
+      "id": "511c402de2044ed97af4b7a73c49cc5febe6a81b360d7e23d222c9ea97a22d59",
+      "image_indices": [
+        316
+      ]
+    },
+    {
+      "half": "B",
+      "id": "51507af838631090998716d24789a1b7299c325bd2eef9f5c52b05e59915063d",
+      "image_indices": [
+        886
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5173de4d790dd775a1c87757bf1c1393d767bc019717b7fcc8735f270b4646e6",
+      "image_indices": [
+        228
+      ]
+    },
+    {
+      "half": "B",
+      "id": "520bb4d7a234736c6ec5328fe9668142ddcf1687b498c6099b15d224cf09c54c",
+      "image_indices": [
+        363
+      ]
+    },
+    {
+      "half": "A",
+      "id": "521aba63a929160d264ba20c72f5e33e21a38b9e4ea01c7ddf8a970f6975a583",
+      "image_indices": [
+        908
+      ]
+    },
+    {
+      "half": "A",
+      "id": "522db99cc5d81ef76171f4a7c9521335bcce4d255bbe9b32eeff81d85749fe48",
+      "image_indices": [
+        646
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5278070b2a1a6be7ccb1b80879c18210d7c2117fc41672ae9d712e9475f9a736",
+      "image_indices": [
+        148
+      ]
+    },
+    {
+      "half": "A",
+      "id": "52f12c4df6998947ac1202d6d3ab3c7135cd5cf0f7fb70e792f49ca6ee9520b4",
+      "image_indices": [
+        718
+      ]
+    },
+    {
+      "half": "B",
+      "id": "535c91bfcd923f1140f7a93e512aae688cd6ca17c4abc4cee9f130ae135aceba",
+      "image_indices": [
+        737
+      ]
+    },
+    {
+      "half": "B",
+      "id": "53cd8bf2449806e898491526962d18a02e24259e72519560886b5f1c1ec15247",
+      "image_indices": [
+        115
+      ]
+    },
+    {
+      "half": "A",
+      "id": "53f5f593f53a57cb42e5d1432cf0889f211b1e27e6f9e97222be3616e2d20975",
+      "image_indices": [
+        287
+      ]
+    },
+    {
+      "half": "A",
+      "id": "53fdafcdb398e51e539cee31f7632a6fa1ca69e88b60714d85869ef35d8130ab",
+      "image_indices": [
+        339
+      ]
+    },
+    {
+      "half": "A",
+      "id": "5421102036132783f9599eddb60b8dc72e964f6673a98d2b46d38128fca1bf4b",
+      "image_indices": [
+        588
+      ]
+    },
+    {
+      "half": "A",
+      "id": "54a2e31509cb86e961ccd3e9df5cfdd74d94b2a71f0f56048e4740472dfd3e3b",
+      "image_indices": [
+        863
+      ]
+    },
+    {
+      "half": "A",
+      "id": "54a69f877319cb80de077f10b54ea1f292fc1be7d44f8592f788bae79f13846f",
+      "image_indices": [
+        149
+      ]
+    },
+    {
+      "half": "B",
+      "id": "551d8152f0977d47c7967b0e5601a66c5d0befd1e822dc50d64f6b211926aa2c",
+      "image_indices": [
+        125
+      ]
+    },
+    {
+      "half": "A",
+      "id": "5559d562f08c6437e0519e9a87738ce871cb939e1105a9fb6232913d5c77e9cc",
+      "image_indices": [
+        671
+      ]
+    },
+    {
+      "half": "B",
+      "id": "557e950d6ce5dd8a268fbf9c24a76f3143f8a7c3acc8d45abdcda95f8aef53fd",
+      "image_indices": [
+        490
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5613b3b07cc07244a7679c26719b58f64bbd43b1bd369661059092380992e207",
+      "image_indices": [
+        470
+      ]
+    },
+    {
+      "half": "A",
+      "id": "5668f8ac4c841a63740930faa7df694750117430b1a9b2b4d8ff5db0bb23007e",
+      "image_indices": [
+        952
+      ]
+    },
+    {
+      "half": "B",
+      "id": "56c339ed096fdd0ae6b170bb9b6f2916d93804fd0ae37cbb438218d49c26b234",
+      "image_indices": [
+        649
+      ]
+    },
+    {
+      "half": "A",
+      "id": "573b63ea63502a9036fbc5b4fe393ff3672b4f86dd4423c2a976a398cddee3aa",
+      "image_indices": [
+        848
+      ]
+    },
+    {
+      "half": "A",
+      "id": "576f6b55cd8a047a7be59f8d7d7c228db09bc18f1170506d51dacc8550f4292e",
+      "image_indices": [
+        311
+      ]
+    },
+    {
+      "half": "A",
+      "id": "57fc1225f725cc9cc162a211a63764d1a740564460f260f6ac30797507ed4327",
+      "image_indices": [
+        780
+      ]
+    },
+    {
+      "half": "A",
+      "id": "58a8cfe2b79004aef37e0937cef523a982c20610052261445fdb25c16e7e7ac4",
+      "image_indices": [
+        172
+      ]
+    },
+    {
+      "half": "A",
+      "id": "590cd71b4b2376d9174f3c3020b5d709c24e6422531d8077be4dcedce9ff7d11",
+      "image_indices": [
+        830
+      ]
+    },
+    {
+      "half": "A",
+      "id": "59424721f0a188ebc07b768ac9041672be1a698120a6e45cb3a4e85c8f7a707b",
+      "image_indices": [
+        471
+      ]
+    },
+    {
+      "half": "A",
+      "id": "596f070d8f7a139152c55600387a1d3c50af2bad92385189c89a48e230bb6641",
+      "image_indices": [
+        641
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5a5c80731c3b1f37f8bec46e85f8b5e886d5a4effb7403cf1681af3eab318a96",
+      "image_indices": [
+        361
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5a8f7e2d4b158caef3e14c0e9e50bb4b9ab63fe2122e0c895e94066e4623d4ea",
+      "image_indices": [
+        119
+      ]
+    },
+    {
+      "half": "A",
+      "id": "5b2189654123255c90fe45171cca009e21ba6cd070518201a10b509e1ad14539",
+      "image_indices": [
+        431
+      ]
+    },
+    {
+      "half": "A",
+      "id": "5b46eb3e5d3c5e8bd8bfb65b659fcb917501fc5bb3467372c1f8a5242a1f820a",
+      "image_indices": [
+        438
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5b484490e1e893167cf75370948edc0f91543eaf586b1f3b1984acd2fbd2d07f",
+      "image_indices": [
+        103
+      ]
+    },
+    {
+      "half": "A",
+      "id": "5b7c14d8337612221d75876d2cb0dcc05e1ce372d5a0e915863b4735a3444453",
+      "image_indices": [
+        37
+      ]
+    },
+    {
+      "half": "A",
+      "id": "5b88b8e422f794f6475e31ac96e46ed744256c7d7a13c3a1846cb78606bca0dc",
+      "image_indices": [
+        178
+      ]
+    },
+    {
+      "half": "A",
+      "id": "5bc5e657c8cd0aedfa460b256d7e59cf7862bf2d636ce174132ac82e63c8e8f7",
+      "image_indices": [
+        637
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5bd6151f2b1059d018ea8b9d8c85f744ad6a3870b80f97d4d02bde7b6d5ea96d",
+      "image_indices": [
+        629
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5be14a3d57a24255f6d5cba5bc040a375b5583f0dc2fc5ab46b1e4ea741083c8",
+      "image_indices": [
+        192
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5be2f9d75ca3ebe29d3fec17a74f5508f12295044f79096fe61ccd2b7340f68c",
+      "image_indices": [
+        389
+      ]
+    },
+    {
+      "half": "A",
+      "id": "5c6f0cdce4969a030b61e1403e51c847ac8999a0ee5c790d77a985754f087352",
+      "image_indices": [
+        676
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5ddfd59be16abed50f9ed7d095d45cb9ae9f5b898c8026f34e88589734d24809",
+      "image_indices": [
+        416
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5e91c0fe0b49f20e77c605041a25fb49ec9093c4ee969fcdbf5fc1d3dd395e4b",
+      "image_indices": [
+        652
+      ]
+    },
+    {
+      "half": "B",
+      "id": "5f5ad53e87870a8d7948777369402d474ed0d6cb2ea15a1f564a515e86290b8d",
+      "image_indices": [
+        385
+      ]
+    },
+    {
+      "half": "A",
+      "id": "5f7ed8c3038f2f1a37f26ef26b4a5fd58cfc43e9ae980a44f41954a3f3381584",
+      "image_indices": [
+        254
+      ]
+    },
+    {
+      "half": "A",
+      "id": "600c5bad826f29dfcc98d2bd5bfcfabf3078431449439a97cb63bd153d007585",
+      "image_indices": [
+        784
+      ]
+    },
+    {
+      "half": "B",
+      "id": "60628eda67cf3c663d9552e10399b52a8511c7cef6f65308e0f2b28efc71f475",
+      "image_indices": [
+        196
+      ]
+    },
+    {
+      "half": "B",
+      "id": "60b2f34cd8d4a282a1d14b4b2299c3de2df05d9ceebcf60cd81999e07a7b070c",
+      "image_indices": [
+        497
+      ]
+    },
+    {
+      "half": "B",
+      "id": "61048eff1f4faa19364d2f4a3b37f8eb1bf5616b1c8b978d4d9cb1f50de022ea",
+      "image_indices": [
+        872
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6128e72e1aecde2a4701f679d9c10982e770ecc2e9250a275f469d4bbdfa3f6e",
+      "image_indices": [
+        516
+      ]
+    },
+    {
+      "half": "B",
+      "id": "612bc8e3c1c50d8cea902455d735ad03458e1f13469a11a94b584ceb5073847a",
+      "image_indices": [
+        513
+      ]
+    },
+    {
+      "half": "B",
+      "id": "617650f566eee2e2ea4cc5ee8cea7fec292792127ddd2ff101b23d0ad37b4e8e",
+      "image_indices": [
+        581
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6186ad24d3d046bd4346b49bc430baf8347a5372ce7474bc512070af8dd3e049",
+      "image_indices": [
+        633
+      ]
+    },
+    {
+      "half": "A",
+      "id": "61edf2358e0f224ca3fc54f3d4156d6f5c45354525bc9c80a2a390b95ea33cbe",
+      "image_indices": [
+        428
+      ]
+    },
+    {
+      "half": "B",
+      "id": "623ea008f00551a5eb72f9cc87bdef9a79a3bc393858ee2dcc2a18e5a1e91492",
+      "image_indices": [
+        93
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6291c9a6b2aea5a446c32143efb29d6b5140cfd2bef6ea6bf41edf5694d15d18",
+      "image_indices": [
+        902
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6356e9101eeca8382b9c83c234c4d5efb9b7f90c903ff0a8a3e0da04496caf84",
+      "image_indices": [
+        964
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6358e66f4fd4755a210cdcc8679850c8e44160b0fcc02bc915efaf5217d044b2",
+      "image_indices": [
+        847
+      ]
+    },
+    {
+      "half": "A",
+      "id": "635d6c5a28536fa91e0728435b049697c867a3bebf079d83b77a24c5f41a1cc9",
+      "image_indices": [
+        638
+      ]
+    },
+    {
+      "half": "A",
+      "id": "64a95f719b30c9d090d0feb69711edd28fc373252337ecc3dade6b241fa667b1",
+      "image_indices": [
+        942
+      ]
+    },
+    {
+      "half": "A",
+      "id": "64bd0b3c0d8467f26ad9faf8f28d9a688b83075a45e42ed3d53f7f27ac3c40b2",
+      "image_indices": [
+        372
+      ]
+    },
+    {
+      "half": "A",
+      "id": "64dbbdf33756b9b123b9181b05686ddc8ce99cf87c1e87a53a0ecb24968e8069",
+      "image_indices": [
+        175
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6514e5953d0722074404a25a027a90bd9851b01cd30980603d944d832ff6c2fa",
+      "image_indices": [
+        312
+      ]
+    },
+    {
+      "half": "A",
+      "id": "65422a4172c2d897c59c446cddaff01ae54bf0e6fd15dba90c59fc8587c05d59",
+      "image_indices": [
+        616
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6551b83f04511082a3f1c7453ee3028cb27939dc3bd1c1acdd8afe21d649cbe0",
+      "image_indices": [
+        987
+      ]
+    },
+    {
+      "half": "A",
+      "id": "657fb2439f4b85f7f51a28f95cdf54223f5abcda934ff076c228cce2dbf7fc6b",
+      "image_indices": [
+        391
+      ]
+    },
+    {
+      "half": "B",
+      "id": "65f187b3774d04cee0607a41b2093fd0e5cba61d6f4ba611c27a7207f6ff9111",
+      "image_indices": [
+        688
+      ]
+    },
+    {
+      "half": "A",
+      "id": "662b1f8ba5d021d0a535d358ed053f961360b207595c971e3926fa6dc192d8c0",
+      "image_indices": [
+        801
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6650fa7d915cff4e600eeac1ffba0295b663cd13f8b7b9b45c20056f1638f832",
+      "image_indices": [
+        118
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6693fd656b0d82183df98d6d97fbf5db739507844c1205fc6981775b1f95dfe0",
+      "image_indices": [
+        538
+      ]
+    },
+    {
+      "half": "B",
+      "id": "66bbb3b54020d825efe6261d878ac6117b2e988d5dc163e08f9d85b43aefb014",
+      "image_indices": [
+        555
+      ]
+    },
+    {
+      "half": "B",
+      "id": "66f97e24f880d5951656ff831d478a1e77953da21d0ca307dde16f28d1cdb2e4",
+      "image_indices": [
+        508
+      ]
+    },
+    {
+      "half": "B",
+      "id": "67a781a7adec6055af02f8355949bc7bdaf76acd47f311f508bd396b9645f749",
+      "image_indices": [
+        424
+      ]
+    },
+    {
+      "half": "A",
+      "id": "67a7e9300f6e5dbb8c471e12185ec3954314f28f4c522eb33854102995960976",
+      "image_indices": [
+        345
+      ]
+    },
+    {
+      "half": "A",
+      "id": "67d7b4beb550ccb9bf915e6e13c1a256e3f52a52c3ff853dfc0fc50748ef5238",
+      "image_indices": [
+        373
+      ]
+    },
+    {
+      "half": "B",
+      "id": "69164bab2dd91efe121f1111682a8af0fa8c59d16071ba6a99393479f8dc25b9",
+      "image_indices": [
+        933
+      ]
+    },
+    {
+      "half": "A",
+      "id": "69d0c836b562b741379214b9f2e9e18f1e2950c74e11117f597855e6847187d3",
+      "image_indices": [
+        266
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6a0ff788e2c1cfbca436de6a91bbaf4b19d974744c078d3950bfc05284bcda7b",
+      "image_indices": [
+        647
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6a1b5b5680bb82bd55f9786a74b170572cfa224a7fae297180faee5494d8a49d",
+      "image_indices": [
+        88
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6ac5cff6190a8870b83944701193cfd4d9589233fc362a11c9ee3dfc376ecc59",
+      "image_indices": [
+        264
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6ac6d823590b6691a224b3f6e2adbf9738cec7478b23e2c1cdb966c6ccb93050",
+      "image_indices": [
+        811
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6aef17c8b1e6c2ec946aba0ce6a3748ba18e88f36b8c1bdc19f4ab0471130eac",
+      "image_indices": [
+        137
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6af9b830e41dddbcaed30f7f7a7cf794b4f7552baa8593342cf6d686b54b30f1",
+      "image_indices": [
+        494
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6b7b383d402268c9f7aa20b18d9cf21c434e37daa5ff7a32f95e9aef498007a6",
+      "image_indices": [
+        566
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6bd57340d1e656f6f8646895500221a13d7ed797a8f63c0d3fdbe45455e8b30c",
+      "image_indices": [
+        651
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6c08529340bbea63451842afe0aacf2f8e3011755542b071637061ab368e993c",
+      "image_indices": [
+        948
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6c1cf767f47996facb2352511c6016439908ca2e7c453257a5d9f6c6c8433a50",
+      "image_indices": [
+        248
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6c37446f81368be60d2bf39ab90a3fe3ff1ba31f3b24a0c39d6d6ab2226e7e8f",
+      "image_indices": [
+        57
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6c796e47f9b806c595f30ae4fcf9dc347f9d0d1a91d7f541dfb512c0cb3a20d0",
+      "image_indices": [
+        498
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6ca11ec8e88cee838c739a36ec5487b14e38e63b00daf37e76b6894a51e6b911",
+      "image_indices": [
+        102
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6cb70b9831f1762a101cfaf1a3735ac5f60080b4d4a8b4cbf9a4bceacad7ce41",
+      "image_indices": [
+        725
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6cb7f33e0bd6ef93804b9613351a5cba11887830d41213a0b9715727cbc30bd2",
+      "image_indices": [
+        761
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6d8c28dba719608a8489fe41d6f39ebcc8145b0ef3d13349cdeda8b2354a76db",
+      "image_indices": [
+        419
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6d966e04462b8c1cb7dc127dba66999e17300158d4ba56d41b619d04d00c86d1",
+      "image_indices": [
+        241
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6ddf058ab58cc97f99c621ee13eafbe3eb54b99d4f64a2af48fccf9fb21925c1",
+      "image_indices": [
+        701
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6de30f08f1f7c5a934d01f67269b071d3a6560e7e548e24fc0ae5e02fa34e3c9",
+      "image_indices": [
+        558
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6df22cf300ead71071eda3994e5032839ae6ab26bce8425f0f2efc932087d352",
+      "image_indices": [
+        33
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6e76b00b03434a823c1d449fa96ae69ad13b054629d355942ed06047ee1fb289",
+      "image_indices": [
+        893
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6eaa8cb3bb108d684c665f045a203c3bfc9a03bced7a9d2cc6a7635d77739282",
+      "image_indices": [
+        9
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6f1190cc04fc8e5ca3502ae03f1e8f789c2f18e1bb687d172cb243632f6d7a5b",
+      "image_indices": [
+        203
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6f7d96f001489faeda26f4d837ef4b653f75c1f2ece2b41bbb5c72678fa99574",
+      "image_indices": [
+        954
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6f850a3ec96f1ed38f14850fb8927096ea02b343a83486071f445d187a2837ae",
+      "image_indices": [
+        252
+      ]
+    },
+    {
+      "half": "A",
+      "id": "6f9d07b9319cdcb3c86452d11295b424d28e28cecc11fcbae0f11ff77a16e0e3",
+      "image_indices": [
+        939
+      ]
+    },
+    {
+      "half": "B",
+      "id": "6fac769f6a1cb127eb55e86fb12dfe82665ee043558bd56de9a1db103babb6e4",
+      "image_indices": [
+        663
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7060f3471998a6dfa841c2fbe4d45747b78e08d28fd50d3b065abeb33a2e8a16",
+      "image_indices": [
+        183
+      ]
+    },
+    {
+      "half": "B",
+      "id": "70af560983a8bc3f44e70dd089f054aa8b7c31721dfeccc72112e5b19066ea50",
+      "image_indices": [
+        242
+      ]
+    },
+    {
+      "half": "A",
+      "id": "715afce90798621158ceae5cd8f52b068e7e4de9e5a4629682610f0488b5ecaf",
+      "image_indices": [
+        658
+      ]
+    },
+    {
+      "half": "A",
+      "id": "718152c3d32ef788648a974fe533a4cf455bc812cae02d7781c4726d47a9520e",
+      "image_indices": [
+        900
+      ]
+    },
+    {
+      "half": "B",
+      "id": "720dccf3b7bc0f1fae573efefa4bdd5c65379c7120c6c8a1f31d07d431ccb7a7",
+      "image_indices": [
+        876
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7226a0603d9442a317a12440a59ac1a8c96c6b8a81b2af745fb2d5b6e76663ba",
+      "image_indices": [
+        991
+      ]
+    },
+    {
+      "half": "A",
+      "id": "72725749746bb5f1dadcee38dc55cb78a717f7ec75f4a4258a158457a69cf416",
+      "image_indices": [
+        656
+      ]
+    },
+    {
+      "half": "B",
+      "id": "728d686b306b3a9530ca0488d8db58c3e3caefe3148d66ecf043dd563a1dc355",
+      "image_indices": [
+        477
+      ]
+    },
+    {
+      "half": "A",
+      "id": "72a8ae28d1f86a1ef1aced8dd90dd033a25c6eb398565bb1b161e2147c039abc",
+      "image_indices": [
+        353
+      ]
+    },
+    {
+      "half": "B",
+      "id": "72bdb43ff5b73ca2a7c41676d5034e3197baa270f05c470f6a6aa48ed5d9a4e9",
+      "image_indices": [
+        412
+      ]
+    },
+    {
+      "half": "A",
+      "id": "73664c2d0737e714cd3e156520dc1280e890bfadbb0d51185cee40f8f7bfe95a",
+      "image_indices": [
+        795
+      ]
+    },
+    {
+      "half": "B",
+      "id": "73a9174262204d5133a07333f60469cc31965a45527342594d294bbc81969840",
+      "image_indices": [
+        910
+      ]
+    },
+    {
+      "half": "A",
+      "id": "73f1fe04641c741468e43042368263ebdee409032f9a3215926a8cd65550d563",
+      "image_indices": [
+        409
+      ]
+    },
+    {
+      "half": "A",
+      "id": "749dc1d4803d540b2d99277894e771580fde2d74190bb4fb1d8c1abd25cf24a9",
+      "image_indices": [
+        632
+      ]
+    },
+    {
+      "half": "A",
+      "id": "74a83392fcf29bbc052d506d40a9e2908801dc0068ee34c774ee65346108b55d",
+      "image_indices": [
+        461
+      ]
+    },
+    {
+      "half": "A",
+      "id": "74abcd139de3baf0c71bd7444c8a32f0432c417ad8e2f87b16c645d9f4616696",
+      "image_indices": [
+        906
+      ]
+    },
+    {
+      "half": "A",
+      "id": "74c78918a995ccb2a95702db8088fbbff9c5d64816ce4755d62bc2e6665789f4",
+      "image_indices": [
+        825
+      ]
+    },
+    {
+      "half": "B",
+      "id": "74ee1f5d6e2c9d956eacbf828be45d4db9141e988b952b6c6af394f797f4f41f",
+      "image_indices": [
+        176
+      ]
+    },
+    {
+      "half": "B",
+      "id": "750aae7a7bf259c13900e2c945ecfcda1ccc1595255aa25f784c684c824adcb7",
+      "image_indices": [
+        758
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7517d1212f67f07e80a40d84d301d68812a3fc1325ceaffb0c8bcc2af27f6960",
+      "image_indices": [
+        984
+      ]
+    },
+    {
+      "half": "A",
+      "id": "75592b6771e225a4b33163ec06eef81069a02898b8e5b46ab51a8fab9cc39f15",
+      "image_indices": [
+        150
+      ]
+    },
+    {
+      "half": "B",
+      "id": "757d5633ab8f55f48917bc15992a956efabc23e163d3c9a913d8b2b9970bb84d",
+      "image_indices": [
+        331
+      ]
+    },
+    {
+      "half": "B",
+      "id": "758e81eb247438793dad268917ff969f72a27413795e0ae455036dcfb4eaa9e2",
+      "image_indices": [
+        293
+      ]
+    },
+    {
+      "half": "A",
+      "id": "75b0a8c81eacf9c31f2446db0dcf852dd347305de4e381853ff7bc8e61ac5378",
+      "image_indices": [
+        86
+      ]
+    },
+    {
+      "half": "A",
+      "id": "75ed176031ab64d9cf46a1122298b55d5a7b006d16dfd64ec5d16741dedab0e1",
+      "image_indices": [
+        164
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7670b1ebad1684de87e17c6d7b39aa5c8c84d1f8d317ade48ad4578246922a5a",
+      "image_indices": [
+        330
+      ]
+    },
+    {
+      "half": "A",
+      "id": "76904b225e0e36aa405fea9bbd4e1ec566a6cb012d50c66b3d3d61fad8f816e3",
+      "image_indices": [
+        153
+      ]
+    },
+    {
+      "half": "A",
+      "id": "76cd3ed21c5fdefc1e9060cebf0a319813eb4d42bf09cda8eeb36a990ee07c83",
+      "image_indices": [
+        16
+      ]
+    },
+    {
+      "half": "B",
+      "id": "77098b74af32240c65e44e701adcca66220aa7ac69a27dd20a791ecc897ed2bb",
+      "image_indices": [
+        260
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7715efde39e7bc9ac5ee6788daa39a544617b119d2f5ab7cb8a2efdba3ea26b3",
+      "image_indices": [
+        90
+      ]
+    },
+    {
+      "half": "B",
+      "id": "77240db5fb84dbd451480df4517958c283a001423b9546b8c323a886b860b499",
+      "image_indices": [
+        206
+      ]
+    },
+    {
+      "half": "A",
+      "id": "775a23e106ae3380f03d4f7caca8f90299d8752fa80dfb534874ab376ddd3664",
+      "image_indices": [
+        201
+      ]
+    },
+    {
+      "half": "B",
+      "id": "777e6125cdde6ea4186f3aa64926b83fda1521eefc0616a1053e683bcd12d289",
+      "image_indices": [
+        943
+      ]
+    },
+    {
+      "half": "A",
+      "id": "7788e7c4e4d8573bd4827388a61833ad949829519788fcc6a5ba713e91d7bdc2",
+      "image_indices": [
+        802
+      ]
+    },
+    {
+      "half": "A",
+      "id": "77da26feb5e22cbba84a2bfe35e9c7fe701715f0ea7254a0e3e6f2600652c6bd",
+      "image_indices": [
+        375
+      ]
+    },
+    {
+      "half": "B",
+      "id": "782bff3efd7225cdd37b2c7f5e6a1045549cbd35fa4b58117fd2ef2f3593ab47",
+      "image_indices": [
+        520
+      ]
+    },
+    {
+      "half": "B",
+      "id": "78308dd1acac822b75c21f445ecfe615310d628659e86e6ac24b765e39bcb03c",
+      "image_indices": [
+        280
+      ]
+    },
+    {
+      "half": "A",
+      "id": "78656d1aa3768a9a6f6f1fc91b074a8e32837bf1be92ca3b14cf54343484384e",
+      "image_indices": [
+        285
+      ]
+    },
+    {
+      "half": "B",
+      "id": "78980b4b98426374ced61f1eb2ba99435aa6130f7bff0cc46f6251d75eaad567",
+      "image_indices": [
+        425
+      ]
+    },
+    {
+      "half": "A",
+      "id": "78b995b5d8d4ba17ede1c574e66688ed032cec5192afec08707c57ea120bf92c",
+      "image_indices": [
+        624
+      ]
+    },
+    {
+      "half": "A",
+      "id": "78ef70efad624d8a4b982acd06d418740bb6a89f2315a744597fffdba7db7ac2",
+      "image_indices": [
+        518
+      ]
+    },
+    {
+      "half": "B",
+      "id": "79106d931689b9cc4b7a0386dbfe2ea27d2d1f3cf8e7011156983eeb4120a176",
+      "image_indices": [
+        504
+      ]
+    },
+    {
+      "half": "B",
+      "id": "79338c14896494261efd37798dd1fb4be6517cef1526e44f43f10b3a6f620476",
+      "image_indices": [
+        913
+      ]
+    },
+    {
+      "half": "A",
+      "id": "79dfc5c3b24509ade51ccb8c7c4004ccb23d36c017764fc03cb73f0fe620c7c4",
+      "image_indices": [
+        397
+      ]
+    },
+    {
+      "half": "A",
+      "id": "7a4845acbfb9860aa999b85339dee732a94840208e482db7e7f8668962a6d30a",
+      "image_indices": [
+        486
+      ]
+    },
+    {
+      "half": "A",
+      "id": "7a5a96d451d202066112246af732a4bacbf1f2c52a29549491db2f02f9fdd45d",
+      "image_indices": [
+        622
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7a7f224e75cde174676a0807eb957431124e16ca077c67e3b22cd03923b687b6",
+      "image_indices": [
+        485
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7b598ff3b4773cca5c5ba05e969db30b677d490a002a6bdc951cfa0117e4304a",
+      "image_indices": [
+        161
+      ]
+    },
+    {
+      "half": "A",
+      "id": "7b6e8a30db5d14f962795bb5e8535c8a9e6b0e26831ea662fd4af02bb333c341",
+      "image_indices": [
+        315,
+        719
+      ]
+    },
+    {
+      "half": "A",
+      "id": "7bce7618c1f889cbab4b486eb26b574c17b585d46fa901d82e3fdda2b69b78f6",
+      "image_indices": [
+        975
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7c124a053e594f0912d9953cb9e9e3aca385d887bdd12b7c5055f7d6d00692fc",
+      "image_indices": [
+        127
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7c4344b2a7be3b53465e7242f849f2178a216eb7efc4d05a815c36507f8a20b8",
+      "image_indices": [
+        561
+      ]
+    },
+    {
+      "half": "A",
+      "id": "7ccb2108d539cfe03fff776c1911affebbdf1e7c94b0eabffa752fecaf2c32de",
+      "image_indices": [
+        458
+      ]
+    },
+    {
+      "half": "A",
+      "id": "7d244d9258a4211d1d0b09e616afade20dedc741141b5df288894b690de930ab",
+      "image_indices": [
+        44
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7da805012fa3fe64368912d856ebc972a7afcf378f629e3322550adc982e75ea",
+      "image_indices": [
+        84
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7e45afb268229d53fcdd8c7e7f5d74c89d9637fc10def60b4e8fbf59742c248a",
+      "image_indices": [
+        77
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7ecff1d40a36b97ea046ccc83b53f6835ce8f34561bfedc237f67e61c7d37d40",
+      "image_indices": [
+        945
+      ]
+    },
+    {
+      "half": "B",
+      "id": "7fc2b3a9543d1eaa21fa3fd914bb751b39311133d06a8ea4bf7148a9f0adb946",
+      "image_indices": [
+        567
+      ]
+    },
+    {
+      "half": "B",
+      "id": "80213f8e03c84d0872295b5ec738a33e4fdbaa55cfce17d9e7f8b5e10e3e6fa1",
+      "image_indices": [
+        813
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8021d7296ba3a7bfda14ad8e75f7d873d3b53ed88924e5c2885a29b9ee3626a7",
+      "image_indices": [
+        275
+      ]
+    },
+    {
+      "half": "B",
+      "id": "80376e05815664b1e708103df4ef2e6c6fb39c2c1aee0b1ca7071dadb4f9ba1a",
+      "image_indices": [
+        225
+      ]
+    },
+    {
+      "half": "A",
+      "id": "80378ec921128e788580f7499c69f1e011f2b67d3b72d88e550b754994708a31",
+      "image_indices": [
+        92
+      ]
+    },
+    {
+      "half": "B",
+      "id": "81b5d5b2e88849681731943e1dc7633a00a325ab026514857c971369db4e79e6",
+      "image_indices": [
+        484
+      ]
+    },
+    {
+      "half": "B",
+      "id": "81ee0d7fedc8166ec5b2e94feef220e4f733474767036e05a13c0d2ecddcdfec",
+      "image_indices": [
+        499
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8232d3648142c2f27fa3a391609766e48f5d93b5870ba72dff32fd8b22020a53",
+      "image_indices": [
+        289
+      ]
+    },
+    {
+      "half": "A",
+      "id": "826cb543bbda44392214aa8d45534dab441e1647ccfadd872f86dc457da3fedb",
+      "image_indices": [
+        610
+      ]
+    },
+    {
+      "half": "A",
+      "id": "827b98cd33e67b40f268934e12cf9ef2458aaa358a1006718890e6997ee0dcdf",
+      "image_indices": [
+        213
+      ]
+    },
+    {
+      "half": "A",
+      "id": "830ebd1ecfaa05b90d554c3eff4c31a6b5f7a66bb1839315af6f99656eea79a1",
+      "image_indices": [
+        181
+      ]
+    },
+    {
+      "half": "B",
+      "id": "83d955ce1c93100d0d07440bebd14c49a50c423c1e156b37d922af73b32cda49",
+      "image_indices": [
+        238
+      ]
+    },
+    {
+      "half": "B",
+      "id": "83f0d648a7fc1a37b3f22731d59aeb86891927063571c214a848b2a33a2a7e2e",
+      "image_indices": [
+        596
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8410247f8d87913e13dd70ae9daa379991c99d6a57d0ec4b87cf93ad54d2ba2c",
+      "image_indices": [
+        249
+      ]
+    },
+    {
+      "half": "B",
+      "id": "84163e57d3e1b7e341149951b5d307878a46c5343131d6efcc9334909403c403",
+      "image_indices": [
+        97
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8453411fe9f58c55ecb97d2f9bcfe157c1ea77c2475216b9aba942d8995b6176",
+      "image_indices": [
+        171,
+        926
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8467814f8b9c3b256f0235d55503bde85db3ee32a7a53211a25153a127beccd1",
+      "image_indices": [
+        979
+      ]
+    },
+    {
+      "half": "B",
+      "id": "84ac4d51c07d1711f995bcaca63bf6edebdb5809003a983f64823d070c2a5dbe",
+      "image_indices": [
+        997
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8529b3b312bcc24d12e0b212afcde9a5776b0823338efdb973e06f2f35bded5c",
+      "image_indices": [
+        5
+      ]
+    },
+    {
+      "half": "A",
+      "id": "85efb040a8bc9fb435db3b41ee4926eb2e9ee182bb0d0bf237c5783d3356cf5d",
+      "image_indices": [
+        645
+      ]
+    },
+    {
+      "half": "A",
+      "id": "860933ccef04d40b41db4926e582085a2b311cf145353c67ae23740e8d2d9e7d",
+      "image_indices": [
+        746
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8624140240233fc69355841fb994f4458fe0d7f5ed53fe3743c7d13cf125ac1e",
+      "image_indices": [
+        659
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8625e5a4df2d0a179b731986e24f6ed53cd4cf6c5a16c0523d818723e7925199",
+      "image_indices": [
+        755
+      ]
+    },
+    {
+      "half": "B",
+      "id": "864100446ea35c0b56baaf077a28aeebf9edcfd70c9c41a7769c08d4da562bcc",
+      "image_indices": [
+        507
+      ]
+    },
+    {
+      "half": "A",
+      "id": "864305bde7b4c889d509cb8a8f147aa81f1ecad8c6b34996ab6487b8ca5ed51f",
+      "image_indices": [
+        418
+      ]
+    },
+    {
+      "half": "A",
+      "id": "868270164bd3d0204b1863c5af5e8585f2392c68880ae57cdd4516e0a946e929",
+      "image_indices": [
+        966
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8696ebf78a835380579f2cd504923ca4439049f52b630563bbff9dbf891ce3e7",
+      "image_indices": [
+        179
+      ]
+    },
+    {
+      "half": "A",
+      "id": "86a67f0ebc9e679b522ed4730babb3d1a7509f1edc6de5df40614412845d9d5a",
+      "image_indices": [
+        466
+      ]
+    },
+    {
+      "half": "A",
+      "id": "86bd6b0b1f2fe72c35443d39c60f074f458e32445004ccc700ddc7e89c1be1b5",
+      "image_indices": [
+        553
+      ]
+    },
+    {
+      "half": "B",
+      "id": "88085a3af6295cb8472c7435ef27e35e664d107ec03c12ef158ed71cad9cc4d4",
+      "image_indices": [
+        578
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8813fb3222f022137655640388624012298bbd133d51212de6d1aac1c60e6d82",
+      "image_indices": [
+        460
+      ]
+    },
+    {
+      "half": "B",
+      "id": "882f30efed8760f3eb02946e86e9f83fec039cda56759ccc472c6f1d2e38fd39",
+      "image_indices": [
+        55
+      ]
+    },
+    {
+      "half": "A",
+      "id": "883c82126c2792491085d6897f1fa387e07a71622a19785a1a46b0ddab270121",
+      "image_indices": [
+        173
+      ]
+    },
+    {
+      "half": "A",
+      "id": "885fb71a9159a1526bda64ec417fd87b40451153f5e11f105ebcb5e5a9243fe1",
+      "image_indices": [
+        889
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8871ef92b8bb43d872ea7eae3a19159f271143cf32933c8221f7e843622adb33",
+      "image_indices": [
+        963
+      ]
+    },
+    {
+      "half": "B",
+      "id": "889eb047f9cc82125456fed0038a3fdd5bed4aed0c06629100e4265b9557eaa6",
+      "image_indices": [
+        253
+      ]
+    },
+    {
+      "half": "A",
+      "id": "889f5eb41d328ebfb6be1e79119a0c525aa879c55ea5a079abd9f270c630f0d5",
+      "image_indices": [
+        401
+      ]
+    },
+    {
+      "half": "A",
+      "id": "88c1d44bcba333dccc8a4fdb25c32417890c7968bcbccf6f53acd174c35a0ba9",
+      "image_indices": [
+        366,
+        469,
+        745,
+        882
+      ]
+    },
+    {
+      "half": "A",
+      "id": "896c6ed8f2ef114fade33e268f324fb7c84568d49dc5ce8aca5ae2937978fd19",
+      "image_indices": [
+        673
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8985465a850df53d66f83b7cbc08abecc18fa642ff63c5ca23ae874285960caa",
+      "image_indices": [
+        358
+      ]
+    },
+    {
+      "half": "A",
+      "id": "89bcb6f2d431a44eadea3d309a75937349bc2e4bc3492627d4a4ca5b1a4a412a",
+      "image_indices": [
+        911
+      ]
+    },
+    {
+      "half": "B",
+      "id": "89eae5c601391f66a9ed24aedf11438aaf7594265f44417605a9a2b6cb6df25a",
+      "image_indices": [
+        675
+      ]
+    },
+    {
+      "half": "B",
+      "id": "89fbd4665207f6426c6610b22755843adfdbaf70e87b3113b5a466ce528365f3",
+      "image_indices": [
+        100
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8a0e7b819ac286844dff08f8ceba90f032941a2498a94bbe56ea4b69301082ab",
+      "image_indices": [
+        833
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8a207bfffefff8ff700f1b5bba746f2d05db004938e11c0a89de4918cb87ce3c",
+      "image_indices": [
+        976
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8a8d6801014567888db647a959303cbfaf751bed93939824e4d924866cc424ad",
+      "image_indices": [
+        359
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8a9a91ea5bb02f4a9932f53acf7d67d310a8882c137b7b03f03c70dc29fbe682",
+      "image_indices": [
+        294
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8ac647241acea703995dbebf62a87e29753f342f58d3898def53b66b37a933ba",
+      "image_indices": [
+        237
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8b2f6863d31fa46ed84771cf8472aeb88e0b8a841a7909221ca15a32e3a6f4b8",
+      "image_indices": [
+        860
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8b98a8e1311077a35b45a667ba2629f3692c45c846058852614d67b614e9bfd2",
+      "image_indices": [
+        87
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8b9bff1b4e8ee13b8187faa29aa7c9f6a0a41787bd933ab4da742534d8f868c4",
+      "image_indices": [
+        854
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8bc97537a32e2dbea5506b8fe4410ec5b3be6fefc3029b0b4aeb121e01a7bbb0",
+      "image_indices": [
+        793
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8c081525d6be77f66746013eaae187b2bfb43eab5741f4af6ee07028bcb1f18a",
+      "image_indices": [
+        109
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8c64d783538dba9f8c098b28a41c35bd4660f8f4698b1aae9125594416544dc3",
+      "image_indices": [
+        559
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8c6705aca8929376ccfb988e1bcaf63e55dffad27de5fad4699266f72b3c5d7c",
+      "image_indices": [
+        66
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8cb59a1cefba83bc315ed59f6d772240a905f06279586593100fb6fa101fff4e",
+      "image_indices": [
+        270
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8d09ada7e46321ac56ca714c9bcea4bff1c8c5d90155421dbba1e9e0bda4c414",
+      "image_indices": [
+        521
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8d0ebf555a2afad20f9130a47111e2a1f8907ac2b39cd27e170e11ec5849bd54",
+      "image_indices": [
+        931
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8d47435eb84165d502458ac91a268b0ad4741360b3118066c1fecb34bf9542a1",
+      "image_indices": [
+        437
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8d4fcb54822ea32b874ce61dc6defa583669302f1f35a93164b294e58cb4c724",
+      "image_indices": [
+        569
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8d76a723f7b489146540c880a84174d465e338ca1655299520eaca92725fa428",
+      "image_indices": [
+        147
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8dbafdf39924ec329dcc79b88dd57a6421b03988c22875dbafbf7459bf740c12",
+      "image_indices": [
+        540
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8dd4c2705740830604841fa7513981255a55af46b82f97d5980066b8d8bd2c8b",
+      "image_indices": [
+        510
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8e9a68dfff12028084ab3128f464e935b9e1feebc17b5b9ed76f4ebfcc65ed5f",
+      "image_indices": [
+        232
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8ef9a405ce79111aaa414bb133d29a3a3fcf66f46533654db23eff9c6ee48058",
+      "image_indices": [
+        613
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8f0560e4b84a3f84e4ff4488501ad75f0cf89e3e55b8240259265b3e6a5855a1",
+      "image_indices": [
+        998
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8f0bb7ef63a8e49b662e3d456cbf982cb9503545d0bdad7b16755dd316fd0fed",
+      "image_indices": [
+        899
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8f3d5c53512cf31c9ca4745d668e6396fbfa4ccb6f7764b3d927a28a398ac3df",
+      "image_indices": [
+        698
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8f526249edb188f69c72417561f5842d64dea4e293cb2960a9b19a32a14b8b0c",
+      "image_indices": [
+        670
+      ]
+    },
+    {
+      "half": "B",
+      "id": "8f5b4fd9b7e9acdbed03838acaf9931f9f821c10bd588cd2683371c8c14593c9",
+      "image_indices": [
+        436
+      ]
+    },
+    {
+      "half": "A",
+      "id": "8f767586dc2db13cab9b81cf81891783d7ed1670065befe4e061eaef9b71d2c2",
+      "image_indices": [
+        259
+      ]
+    },
+    {
+      "half": "A",
+      "id": "90a3fc4fa8c78e0c7cf42f22ee762ae8ced144a2c5d1298984d5a3d6846bfdc2",
+      "image_indices": [
+        852
+      ]
+    },
+    {
+      "half": "A",
+      "id": "91336a1af1f315046426b0ba6f8189761cfde9fbca7d4613730c2562a5e65a73",
+      "image_indices": [
+        662
+      ]
+    },
+    {
+      "half": "B",
+      "id": "9150ea95f5a3cc720103a1b716997532f8ece5282db2f0d10d529df2b890f225",
+      "image_indices": [
+        212
+      ]
+    },
+    {
+      "half": "B",
+      "id": "916eea8e5bc031b0df89b270da43453ff3cfebf1020c65345e2bb41ceb6d8f9f",
+      "image_indices": [
+        792
+      ]
+    },
+    {
+      "half": "A",
+      "id": "91dcb10f098714583543912ffd5857232865f2f10681c5699338d6a73d9de1e3",
+      "image_indices": [
+        756
+      ]
+    },
+    {
+      "half": "A",
+      "id": "92102ef8f598df881aaabcd287147c5e893dacb6a5d39a40d0d9152be6b8645a",
+      "image_indices": [
+        537
+      ]
+    },
+    {
+      "half": "B",
+      "id": "924c3ab6e0fefadb5552a31b8bcce591beb198b9ce9a5d00ac8990e440c5fcc4",
+      "image_indices": [
+        136
+      ]
+    },
+    {
+      "half": "B",
+      "id": "9292a7a924ea666e774a5b4a21f7cef59b0cab55b626ad0afd9c5fde720bbc91",
+      "image_indices": [
+        528
+      ]
+    },
+    {
+      "half": "A",
+      "id": "92c94338a7d95ed6add7fa3bb0fd74c4030ef693849a33d879edd3f23c891d21",
+      "image_indices": [
+        194
+      ]
+    },
+    {
+      "half": "A",
+      "id": "92e680ee331cad5ff0072891a612075d0da861757764b32f27084b3838bd0a82",
+      "image_indices": [
+        299
+      ]
+    },
+    {
+      "half": "B",
+      "id": "92f710ebcaa7b7c0663fdb7a1b00537d73e8258fe00860ad09c462a06e065a04",
+      "image_indices": [
+        98
+      ]
+    },
+    {
+      "half": "A",
+      "id": "93337c206707a8e11f5f423da0500bbfd0cf9494c2f22cc2d2460d4decb67871",
+      "image_indices": [
+        152
+      ]
+    },
+    {
+      "half": "A",
+      "id": "933fc985c5a9c56588252730b80712d3e484280193311a90d68553a9600d3126",
+      "image_indices": [
+        983
+      ]
+    },
+    {
+      "half": "A",
+      "id": "937c9d982cbd0349322199dc0e0294ad164c5723654f8b4ebb5a45cc70d3a6cb",
+      "image_indices": [
+        433
+      ]
+    },
+    {
+      "half": "A",
+      "id": "93ed2702af8992edfafcfad3949f23a45257f5fd7cbd317449d1165a5dabf4db",
+      "image_indices": [
+        211
+      ]
+    },
+    {
+      "half": "B",
+      "id": "940562112ddfad38e6d59eb0a261f88111ca77fa15d04b804fa8282dd496fec9",
+      "image_indices": [
+        113
+      ]
+    },
+    {
+      "half": "B",
+      "id": "94188c28d39ca0a69600dab5fa83994019f3458410104d1765ea8b8a641093bf",
+      "image_indices": [
+        800
+      ]
+    },
+    {
+      "half": "B",
+      "id": "948c30e86b1c2dcb5e93d2cf4be69cd07aee4497d7a20e2216bc6de9f690d603",
+      "image_indices": [
+        276
+      ]
+    },
+    {
+      "half": "B",
+      "id": "94b156e84f6a17d1a37aad8fc4766769555e2490e712e8b2666a0308e17ac773",
+      "image_indices": [
+        304
+      ]
+    },
+    {
+      "half": "B",
+      "id": "94bd7a46e46d13137463d9adffb59ad7a1fc902a8ac4b2ea3a77f3fd275c7a29",
+      "image_indices": [
+        182
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9508154bb2f0abddc9621c97b83809b2958bc617aa685d10180f84ff51c734bc",
+      "image_indices": [
+        807
+      ]
+    },
+    {
+      "half": "A",
+      "id": "951ff0a193a3ebc885efed28a4e67459d608e5ced532848819708c73361882f3",
+      "image_indices": [
+        546
+      ]
+    },
+    {
+      "half": "A",
+      "id": "95d9a51171590fb4c36e1ea10917e824f9e29874af60bb859039498c7720d581",
+      "image_indices": [
+        123
+      ]
+    },
+    {
+      "half": "B",
+      "id": "95f27944d508e44c862791fc24a7a2bd3e86b4cea4d0172c5b1b3fa41419d032",
+      "image_indices": [
+        527
+      ]
+    },
+    {
+      "half": "A",
+      "id": "96adfb09f3f65a6b9db4c745a7ee9c2b1c09807c97f436df9cabe4724253b74f",
+      "image_indices": [
+        81
+      ]
+    },
+    {
+      "half": "A",
+      "id": "96e7e266e9feda159b871552bbfc5e433aa0e43579b9feb2883fa588ee4a2c17",
+      "image_indices": [
+        6
+      ]
+    },
+    {
+      "half": "B",
+      "id": "980f12a8cc4a6285e21fb8031a357882dc60b099faa363c71b872258706c887b",
+      "image_indices": [
+        994
+      ]
+    },
+    {
+      "half": "B",
+      "id": "9819ffef09a3ec8947bcd747fbc1c59de84408d46bee8eeaabfad74833270f4c",
+      "image_indices": [
+        971
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9822259de748829b3c4d0d1f70ebd84dd42b834f82cebca9c79074f2601d198d",
+      "image_indices": [
+        959
+      ]
+    },
+    {
+      "half": "A",
+      "id": "982deeb2d9a3a780a785404c30952f7063495d3dbef5a350a723b8753c16b290",
+      "image_indices": [
+        357
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9876fb7f63ecd5e3e5bcf4cee0f39990ae66b5106c14ccbf07dc4d115f6d3dc0",
+      "image_indices": [
+        919
+      ]
+    },
+    {
+      "half": "A",
+      "id": "98cf218303f3b6c49d9a25d9e4bfdcbcaae6476db5d9478253acab23d04049be",
+      "image_indices": [
+        774
+      ]
+    },
+    {
+      "half": "B",
+      "id": "99054629942adcb47da9c25f3882de1f5464d1b6345a5cf423c21d5331a639c6",
+      "image_indices": [
+        714
+      ]
+    },
+    {
+      "half": "B",
+      "id": "99220f7e2a426a790cb2093f1ecc8a79e70640a50b4c2c56c77bb0c715572420",
+      "image_indices": [
+        258
+      ]
+    },
+    {
+      "half": "B",
+      "id": "99494145378c3e0cd61a1fabafa00582c043cbeb3dcce2629288a2640e9dade0",
+      "image_indices": [
+        853
+      ]
+    },
+    {
+      "half": "B",
+      "id": "9a37bfe8f18bb1496d3acc040def8b803edad710398f53aa0810142564d3b8bf",
+      "image_indices": [
+        8
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9aea91c375cab774aa6f1757fcb5515ec5125098cfa4a2c6cc1c2c57710b137a",
+      "image_indices": [
+        585
+      ]
+    },
+    {
+      "half": "B",
+      "id": "9b53bb9c21f8c4f1bdfdd0f1e3fc174ecfb844acfe7474933758aaed7a0bddcb",
+      "image_indices": [
+        384
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9b8f221f37db7a033d0198b76724538db04332ad8a4f0bb068e97e5c0942657f",
+      "image_indices": [
+        625
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9c2a16268f55bc8e3c7c19d57b87062bf3527669a9befed3e5741e03dc3d5e01",
+      "image_indices": [
+        628
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9c2c61ae44bab36c753994e2153c6bb4262b1f251b4598c45e493186dee766c1",
+      "image_indices": [
+        165
+      ]
+    },
+    {
+      "half": "B",
+      "id": "9c4550ee7ee7977028c5bc3d3aae05bb4a70ad6b4c187266438ac79107f6e224",
+      "image_indices": [
+        634
+      ]
+    },
+    {
+      "half": "B",
+      "id": "9ca43f3654a119c3e5f2e6d9ccbb49357b44aac82133c579596136b8b08a7d10",
+      "image_indices": [
+        982
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9cffc7e8fe8b0482adf522331e673aaa65f1f4ee92dad55b1c223a48ed8197c3",
+      "image_indices": [
+        974
+      ]
+    },
+    {
+      "half": "B",
+      "id": "9d5b386da8341a72d13970cfb678050b953f5addf9d5db1ea9592bf0a3cf7344",
+      "image_indices": [
+        936
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9d8083d63e74105c613435815610c63e5f9dd92078a39ec961e4471a0050d8ed",
+      "image_indices": [
+        947
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9e0f60ac6837cb0281b557e38411864db6082fbbc7a5561cc8f58eefd1eb5208",
+      "image_indices": [
+        511
+      ]
+    },
+    {
+      "half": "B",
+      "id": "9e72a086eb7d48c60121c05bff8acc83a1e215c079290577afd9ce744f8445dd",
+      "image_indices": [
+        838
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9ee33a7d20226f05cd0c93b9180d6fd46c58ee0d60f6bb4e940097ff3e1a5532",
+      "image_indices": [
+        168
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9f1818be432a0e81d12689ebb18db187c14f7b8a6e74060843bb8e95d27f7aae",
+      "image_indices": [
+        492
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9f2b904a754523a220e5d8a4fe20a06c1be9d156525a6600deb3762f88e1583a",
+      "image_indices": [
+        799
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9f331ff6947e1b62f542625f6e1c1ee91a4d9ae7dc0d249d424253a45d5c3ddd",
+      "image_indices": [
+        922
+      ]
+    },
+    {
+      "half": "A",
+      "id": "9f6eef146a1a9a0f1b689fd73851e1cb4d67b792541123fa2226a941342592b4",
+      "image_indices": [
+        61
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a088fdd7a777d6c0ee3b66dc90fc228eed44b0eb6dba9d1e7b673915ab93605b",
+      "image_indices": [
+        210
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a090552d09ffa7a76fdec4615af85b22809e2da3fa4d3aaab834a32f01f258ce",
+      "image_indices": [
+        750
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a09120803893e3d9243a51dc2fcdd28364c2d5d51bd7163348bf510894681380",
+      "image_indices": [
+        666
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a09ce9b9c099d248175e2a84189aa08873f63d620211812846b0ee92eeb69c72",
+      "image_indices": [
+        122
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a0c9719cde1ed628c17f28e9bc760c8edd26bcf59c15f9a0881784bcbbc1b174",
+      "image_indices": [
+        454
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a0ef8334a77161c0e146446dbe16a512fa3e4358b50d45599bf8b4e1dea8cf6f",
+      "image_indices": [
+        757
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a165748172a3cb8615369328beb68b60ba173f0c425e19d57f440efebd2f92ad",
+      "image_indices": [
+        297
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a19cc0148280ee583a4cdb55a804ed53f176a787ab5c0eec780c35ede0b6f13c",
+      "image_indices": [
+        778
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a1d9d79043ec35b03048ac5f517d7294f10ff28ea28dddb97c52548b77138b65",
+      "image_indices": [
+        862
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a1e2b7158f19573da7e817ad914c9175cdbf7f4a975dce43b5c6ab786480ecc8",
+      "image_indices": [
+        271
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a1f8701485d19427838e1fabbcce7de4d267ca8f5516a898f5a7ddeaf7541148",
+      "image_indices": [
+        53
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a2269a7407620f5462f8cbf2fc5210f2c11f023187aec9f74e35a4106a72f707",
+      "image_indices": [
+        736
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a2316ccde635e8252599715a3488fe30a9776c12569314143ccedd804c75e73e",
+      "image_indices": [
+        597
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a2a561b51005fd63c33896c28a233932c5c4320c0c3f1637a15bf97c95703f78",
+      "image_indices": [
+        822
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a2c27982df36d305df426fd924b30cb1f6884feb7b165bc0b5119fbe06b36fd3",
+      "image_indices": [
+        753
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a2cc26c1b81bc88edfe6b9f733b91a539433b692ee3049b82241e11ebd10780e",
+      "image_indices": [
+        824
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a333a8949a3fe516c3a442ceab4bf40c26c2d35de0f8cc985351edff9f8636f4",
+      "image_indices": [
+        549
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a352721c49d32aa5e0095c902376a3c25140a2ef8b86ca32efbf5737278b383c",
+      "image_indices": [
+        509
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a35d07d583408f40528506cb1fcd4902ec2492458f74b04cd5948b35e1d113b1",
+      "image_indices": [
+        716
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a3f5712f3580f07a34283c9de3d13e36a16e6b944c991e262a93b0428c634e4d",
+      "image_indices": [
+        717
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a4100ce485707d17e379e93f41defb225a3db7700597d623b0699fbfbedaa90c",
+      "image_indices": [
+        284
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a43c8b9757ceb2957d086724d2a4969fc450022639a67271be50b99026dfebcd",
+      "image_indices": [
+        515
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a45c18452f1f6632fb74ba8539a3a5cab375a108b0146208b56eccb043fbbfbb",
+      "image_indices": [
+        396
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a49fd075b10d95d1b9bb64edcb6d3c3290040ea48a252f7d17d1442bfce4b62d",
+      "image_indices": [
+        678
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a4adb1b9d95a1eb51bc13075e717386558a319bd5981d1528fdc8d6395be0306",
+      "image_indices": [
+        631
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a53fef3fbf5da57f635ef12dbb3620f4b29996ee183ecc7aff4383dcfa77cc6c",
+      "image_indices": [
+        298
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a561351384c2c1d8339d8a0efe3ec547c7a530111ac3ff60fede66c05f106096",
+      "image_indices": [
+        759
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a5880fd96ae05a05300ea4795d12d8d2e02009dd5c00c0cee85194bb3911606e",
+      "image_indices": [
+        621
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a5ce9075dd526be76b9fea51cbe938bbab55e24d71a7ef4c9e6620a5b68b1fc6",
+      "image_indices": [
+        184
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a600e215889959ecc441a31a69329ab1453021906c66c098932d3a3b121c396d",
+      "image_indices": [
+        972
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a6281066595e4799fe28d5b4acd9dd18e6c4c52a08574c41db033c67bdf88124",
+      "image_indices": [
+        390
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a6494c22ab4d3a85b7b5abf2ebbf52b5ba2db3d6ce4e4a2fea3fd0af53253dbb",
+      "image_indices": [
+        217
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a67204683403c3c0e737930b6252863b4d704274a12756bba86b8d50d1f783df",
+      "image_indices": [
+        216
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a67ce9ae03975d0827dd3dc71f92816a025bcdcb16a964f9c29fb5ce96565bf1",
+      "image_indices": [
+        0
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a72e4ebea5a1772647e9b079f590a0c0d4f038577eec56ef6c855980b631629d",
+      "image_indices": [
+        447
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a758a777ea13c9d6f06b5498d0803cd7b3bad88cfd2a3ac8f54e749636095523",
+      "image_indices": [
+        823
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a75ade70900ebf1c2920d00c64e4c48579611171e6d4f99afe4cadc405473432",
+      "image_indices": [
+        398
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a76aedde0a6d842ab4a6eac21b2de814266092024bfd2fb46dd5fb463219de7e",
+      "image_indices": [
+        713
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a780cab98597ff679e9b8e35bb0ad03ffca0adf96112e55b541711a888a9b555",
+      "image_indices": [
+        40
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a798bd81fa3b9d498c68bbbdb5ae1f64aa5d357ca98b36e05d1ec05d9a3ea7f8",
+      "image_indices": [
+        282
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a7d4669502447a865a7a83d5720e791fbf14d8c11410e3e6a6b69c3fbd8aa637",
+      "image_indices": [
+        2
+      ]
+    },
+    {
+      "half": "B",
+      "id": "a86a3bc517174bb8aa550e91401ba00be5156f4408a73d8b35ebed03b0ef98bf",
+      "image_indices": [
+        586
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a872ba2ca5eb496429e178cf7e5b58c1c946decde7f5ef533c8151ce754a9d79",
+      "image_indices": [
+        329
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a8786a11d2a96b4568d399ea6f0f60ba06b873c10007d67c019379b04e53f3f3",
+      "image_indices": [
+        128
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a8cd746b602292ed62f4a328ef76f583e6350b507dfbb99e06ae9737eadbd321",
+      "image_indices": [
+        231
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a95c4dc7fc8e5edba762631af2034a86b81b14eaa5ba745d75d08d36b0f6ef93",
+      "image_indices": [
+        754
+      ]
+    },
+    {
+      "half": "A",
+      "id": "a964986eb365d17e0ca13ec6cf8c33681a618d5bc579cbcca0b43a6d9d3adf3d",
+      "image_indices": [
+        190
+      ]
+    },
+    {
+      "half": "A",
+      "id": "aa2af5b664e08af75f26dd2382cd3b57cd72313679ee1e206e2c82b244a98632",
+      "image_indices": [
+        598
+      ]
+    },
+    {
+      "half": "B",
+      "id": "aa2ba6bde7cd4c4bc524bde101789b9a1fc5e4f5e790cb4404911039bc2e121c",
+      "image_indices": [
+        667
+      ]
+    },
+    {
+      "half": "B",
+      "id": "aa8e2369b7f97ba242a3f2a34ff0dc848b98052b198d9048bb136909eba2a2d2",
+      "image_indices": [
+        307
+      ]
+    },
+    {
+      "half": "B",
+      "id": "aafb836ecf7111674027872f94f8990581e2770e67c0cf660cb20edbd360066f",
+      "image_indices": [
+        32
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ab5dc8e7d719a5338be960c5e283bca8c763e63c4ec80d333a1e459a2e4f2987",
+      "image_indices": [
+        89
+      ]
+    },
+    {
+      "half": "B",
+      "id": "abecef77dcb109a75819d3561d190fa0816bc9531ed5dd8eb226ebf3cad5bdd3",
+      "image_indices": [
+        993
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ac62b083f67f448d5a93d7ba62558d2e82ac3df0f998f4b87fe6ae124197e7be",
+      "image_indices": [
+        967
+      ]
+    },
+    {
+      "half": "B",
+      "id": "acf222a2fd7cdcb58926a86d2660ff0d986c8b7bb46eb8c758c5384f5d65b8b5",
+      "image_indices": [
+        869
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ad10dbde4346cbe2c72eee9ed7d8f296f4c6baa4fe460341e1e736c18ef5d0d1",
+      "image_indices": [
+        873
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ad209e8f62ec16930ccdff9a7f875e7557b25aeb63e48430f6923ffc193028aa",
+      "image_indices": [
+        142
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ad3d7a76cd84145716994736158e58a530adbb402d9725b37186a37be05335d3",
+      "image_indices": [
+        337
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ad7f2081045dfea646e5ce0e657ea2ff6ca40d04bf0ba6d25ec2bdb0d729aa59",
+      "image_indices": [
+        156
+      ]
+    },
+    {
+      "half": "A",
+      "id": "adb353596987cf68c093c0a81c1d91f8c532ac29415448026d9c3044ebb98367",
+      "image_indices": [
+        995
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ae0ec9e8ce5f274c31efd007f75d14d44590ed11fc8101fefd78d2712ae736c0",
+      "image_indices": [
+        448
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ae171bf04465ed6bb25b5eda406a02d7f6825e01a4f68654185182ef6faf7b0f",
+      "image_indices": [
+        981
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ae801f07a4d1cf743c5162423e6d5e5ac51a4a9f64700149dfb8e3f3ee31061d",
+      "image_indices": [
+        332
+      ]
+    },
+    {
+      "half": "B",
+      "id": "aeefabe409047318ee414d03531f0c9582c28f2cd657878ad886703646e38438",
+      "image_indices": [
+        680
+      ]
+    },
+    {
+      "half": "B",
+      "id": "af28d598cf60de4a0149e3cce526e117c1698e37f91a5ea8f2106f2c74b17328",
+      "image_indices": [
+        421
+      ]
+    },
+    {
+      "half": "B",
+      "id": "af588cb84ee6c25ef683982d0960bd24da97ab66fd70c53d9a501b05becfaed5",
+      "image_indices": [
+        934
+      ]
+    },
+    {
+      "half": "A",
+      "id": "afbd5e5af62453772d89d19ab60157fa2fe44060d811528e17d82dcf66c3df6e",
+      "image_indices": [
+        681
+      ]
+    },
+    {
+      "half": "A",
+      "id": "afeb891cc33bc1f0d23f8c00453b399836f39cbe32533f48e293ec56812a2950",
+      "image_indices": [
+        452
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b0b1ba4601180fc98a7c022db16c7f8bbe25e58a7182318e02950bc61ae24ef8",
+      "image_indices": [
+        706
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b0d8f018090078390f0a86c6ab7439460680258734d02e3f5e5277c414d24c76",
+      "image_indices": [
+        251
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b108db947dba144ff6dc164fc6b4bed700a960ceb77ca6eb88dfdc2c57cd2e4d",
+      "image_indices": [
+        924
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b1536ad8b1c7739637f2e190692bb98bd0867185b44d25c46aaa18cde9dddc26",
+      "image_indices": [
+        26
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b1b7f951205e84eebf3e20f7b6fdb1875860b8bef7a55b0952406fcb4da665c6",
+      "image_indices": [
+        166
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b1e0319227efd1f1a73f2b4ed6957ff472100ba2c7689a93e08cdf8510503272",
+      "image_indices": [
+        843
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b210fcf1f345c79a5f3783d803ca69f318d545294a7f0ed02f89ee88eb14545b",
+      "image_indices": [
+        557
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b25d17f0d4f4d1eceab6f1310971429b317773c0718ae040860f58902bd3e412",
+      "image_indices": [
+        356
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b289f0d3d939bae417351191a2d0f25a0d089ea1de7b84218e524e0e3b2d8f1c",
+      "image_indices": [
+        953
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b2903361aad5ad6985774711962e3894d09abfd52ad04ba5c1cd521e0471fd2e",
+      "image_indices": [
+        630
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b2c9bdbfff7510fff41445a2c4a361dc8bec78115a9e5de8f0e331799900e29c",
+      "image_indices": [
+        522
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b2f7e18a1f6ae86f47e0af6844e58b5c38060b20109b10e74481b2c8519fb432",
+      "image_indices": [
+        901
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b3cdd43515f97260ec98d1956ebad29c6abd9fcf0ba17679760b05a070f07af1",
+      "image_indices": [
+        200
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b3d5e09bf22a59f13003ff1a830a62dcf507ff80c487ae9bc8d0eec0d0c94a69",
+      "image_indices": [
+        877
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b3df7a91f35ff50732d5c8ae5f0849ee95e1c41a0eaa2ba7c4c323b69b1e15a9",
+      "image_indices": [
+        274
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b3e92dd212b48921218d9e58598fd7b698e3e14d7a2663859b3d5d71e3c0128b",
+      "image_indices": [
+        790
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b40ac12b1c14613555d70215f90b204852753cd3cef5981017c106acc9e2646f",
+      "image_indices": [
+        815
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b4381067e556ac260332e12fc19c8b5e036f835767d60a0f3bcbfdf854bb2788",
+      "image_indices": [
+        155
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b4535371ed18eef5178f8aa81f118b145c2542155902fecfe9d091e0d32d5153",
+      "image_indices": [
+        367
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b4ad2751eb69419e75a525c3a479a636f0de1ef9b63dad2d0c9e6588e6f04d2f",
+      "image_indices": [
+        197
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b4ce93bec1e4ddff90b4ca2e93b2b412981f78ecf1de6656d5a9b9e5bbcde350",
+      "image_indices": [
+        684
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b52dbde87ed9d773172e38a4ecccc1f581820ffe24e77e1761238fe9e9572b28",
+      "image_indices": [
+        842
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b550520ea1238b33c7c837d5fe1ead7a464054b05d412d3d0780dbc32269eb9e",
+      "image_indices": [
+        531
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b557c80e8d5764f347f335b3ed9c6ee00025219def540e4d4bd47218da7bdcce",
+      "image_indices": [
+        157,
+        523
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b6484fc3073f1d082bb244947b7daa1694a0aec5e7ef3972f78faf33c50ebcfc",
+      "image_indices": [
+        160
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b68139b9f3a860f0efd97d4f3e92933287125b23674e2a0907c78ddf8e7e90a8",
+      "image_indices": [
+        348
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b7447b385718b62a539dd79d7a12b012b35f0d9fce197f5721708eb546d6cc43",
+      "image_indices": [
+        193
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b746ac84f0ba658c395394ccd4444641cc8265c08096972c8a254dbe43741012",
+      "image_indices": [
+        50
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b7aeb2d4776551861f77aef6a4ae93781780b3250d66d7f9929e1960b42c2ee8",
+      "image_indices": [
+        472
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b7e04082fe0b951360eb1feb17b6cfd4f54eed3b2ac63c943a7594c02e7f210b",
+      "image_indices": [
+        489
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b7f953ff5cacd29a2f70f39ed4921031f6aff25a413d4350d09bad6afcfc68c3",
+      "image_indices": [
+        78
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b80ed56d1d0035e2038cf287a8cb13e27b905f548e75a43db4199a2478a74dbf",
+      "image_indices": [
+        493
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b817a7434d83ab804aac45a60852e8a98db100401766ba417370753630e16850",
+      "image_indices": [
+        839
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b8d5eccc167922a70faf53210eef5ce3a57a66415bd035c7307bda1ab1fe8f55",
+      "image_indices": [
+        703
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b8d7da3e27ec909dd0251e821f2874a570b962b57d60b74c8fae6fdc1f0903e4",
+      "image_indices": [
+        929
+      ]
+    },
+    {
+      "half": "B",
+      "id": "b92dcfb78e77281ac20c61a6a0352275b2aeeb72a3f18d0ea928a9df6bcef3a0",
+      "image_indices": [
+        475
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b9a086f9cca8ed1cd00e4ab4e072a23faee13f6e37420ae8f34be272eb8a19f3",
+      "image_indices": [
+        286
+      ]
+    },
+    {
+      "half": "A",
+      "id": "b9ff113c58504297c247e1bbef9626169573872c7d78480d15f4807a65a196fd",
+      "image_indices": [
+        234
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ba0fbab22e418529de4b9841411d7342671cb7fd2a714075048b9dec7b894f59",
+      "image_indices": [
+        544
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ba139831fe00b9e78726af35bac929b0827c7509ebfe3bee1ac2fd0fad382cfd",
+      "image_indices": [
+        215,
+        609
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ba76baf178d4d986e1f196462d95a5fb6286b62d8a13393ef8d9e570bc7c48c7",
+      "image_indices": [
+        48
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ba96462a01c8312d931cecc1b7204f660761763ebf08ed04f36a13af9d411b66",
+      "image_indices": [
+        255
+      ]
+    },
+    {
+      "half": "A",
+      "id": "bb445db97b2db37923480f56b377d3ee1e730d47f7975080cd753e7877651826",
+      "image_indices": [
+        526
+      ]
+    },
+    {
+      "half": "B",
+      "id": "bbd38ad79dee02dee210353d1c3c0baa65daa2168eff77dfc47c2e793ec52077",
+      "image_indices": [
+        159
+      ]
+    },
+    {
+      "half": "B",
+      "id": "bc190916b3b8dd62d9d19015767b38226490e0b1b764c87000d835b3f2d5e842",
+      "image_indices": [
+        117
+      ]
+    },
+    {
+      "half": "A",
+      "id": "bc60838d2b67aae8eba79024e8366ee3bc0ae715262f8a01d65c176d37b1cff3",
+      "image_indices": [
+        735
+      ]
+    },
+    {
+      "half": "B",
+      "id": "bca06c3a7599b6f2f5b6e4b660553d3dafc343ba5eba814751030294fb5d88a9",
+      "image_indices": [
+        552
+      ]
+    },
+    {
+      "half": "B",
+      "id": "bcdc5ad6d8cb76a8b23f1fa9bfb9dc41d992c3c489a28afd63e115c0becbdb80",
+      "image_indices": [
+        31
+      ]
+    },
+    {
+      "half": "B",
+      "id": "bd14b4704415f0629c06873945b7c4a1f649574cec5cac3af01dd52660a5be89",
+      "image_indices": [
+        739
+      ]
+    },
+    {
+      "half": "A",
+      "id": "bd387447403d0b33d3a5650a0928a351b739c7ae48f4efcc8fd3b8accafecfdb",
+      "image_indices": [
+        885
+      ]
+    },
+    {
+      "half": "B",
+      "id": "bd6ecdfda99fbb165a98a186f3c61c54f2901046e3e5434b0b576901d56012cb",
+      "image_indices": [
+        573
+      ]
+    },
+    {
+      "half": "B",
+      "id": "bd6f3e6a6b70f14c6fb28870f9f4c49cb8b0a0157247d2dd887ec37dd04540f5",
+      "image_indices": [
+        772
+      ]
+    },
+    {
+      "half": "A",
+      "id": "bd9f7b0669b65c1048e6f50febd8178e38088ad2009aaa89f56dd42dcecaa9c3",
+      "image_indices": [
+        342
+      ]
+    },
+    {
+      "half": "B",
+      "id": "bdb00eb2b39b3103505fc8ec691c0cb83236dd8e56da37e30e955e2f10334a76",
+      "image_indices": [
+        243
+      ]
+    },
+    {
+      "half": "A",
+      "id": "bdc71b21a84666041212d262a262915313ce3c37659de6734a267d905f41ca6c",
+      "image_indices": [
+        370
+      ]
+    },
+    {
+      "half": "A",
+      "id": "bdd453e14c1bef2e13a38faf5ee5045a42f06cfc1e22ed16b652cdf076c19244",
+      "image_indices": [
+        766
+      ]
+    },
+    {
+      "half": "B",
+      "id": "be55cfc6ee2a4d173c88bd0ffcaa20336a15fa0c18d65c42478be28004849f35",
+      "image_indices": [
+        141
+      ]
+    },
+    {
+      "half": "B",
+      "id": "be97ddf65f289ead175d08d2209015b8bf5a5e21d61953fc7b3e88c54be2c615",
+      "image_indices": [
+        532
+      ]
+    },
+    {
+      "half": "B",
+      "id": "beb94d75b93747641a161193eafee06a9f11fa9f0d76d88a7dc3952ae76fe8cd",
+      "image_indices": [
+        554
+      ]
+    },
+    {
+      "half": "A",
+      "id": "bf20e707bcc4c8ec3400d4cf6de35b812e1c39977f3b7fcf70cb446da7b6f843",
+      "image_indices": [
+        751
+      ]
+    },
+    {
+      "half": "B",
+      "id": "bf765be403cc48131b7fef1bc670d68653d1af0000c2721dab4b7a03fef0e8b7",
+      "image_indices": [
+        256
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c020a62fb538fe4adc1823ead89715ed993283f449a540e752723258cd7d2367",
+      "image_indices": [
+        202
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c05b5f6f6e5f9f39688b641eb840bbf22bd3e4c79901a713a2ac586f1c6895bf",
+      "image_indices": [
+        582
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c07ad5a76c4eab8886af7361f9fa39892644049d44895516a9926202c073a743",
+      "image_indices": [
+        587
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c0ec8c0a54447499521960f2ba459e2672276591b5c1db64a83d043ff556224b",
+      "image_indices": [
+        817
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c1061f3e667a75d8dd73606f5b77d8edce23670a475b3bb7a46ae46f7e54b287",
+      "image_indices": [
+        474
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c146f4cd61fb3e868db82f711a795b07ede2e6723cb2aebcbc87c41290feb5d2",
+      "image_indices": [
+        290
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c1a3c3379be30509095e46fbe81190973565ab4d2cc9227d86fe3af18e83502f",
+      "image_indices": [
+        708
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c1b5733bcad6017f6a3ba3f33e056577f6b3bebcaa1d2e781dd962da5373020b",
+      "image_indices": [
+        451
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c1cbf208404fd3f0f5466ac98637772bd62fc4ad425ae9724aebe3cf78eebe3d",
+      "image_indices": [
+        875
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c29b20c93bca05947b2dd41d071c494c1916c50ad036eba563c90949e695e56c",
+      "image_indices": [
+        699
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c33271726457a06048be91e3329ebfc9eb99ec590d3d4bfb8afadb490be35435",
+      "image_indices": [
+        583
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c37afd44083b548fdf9cc56da3ba51ac644868feaf033c5c51d3216f68326480",
+      "image_indices": [
+        654
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c3a84ff9f42d97825dd9e69f26d1482131d3d383b3c0071d66b07e44c082131a",
+      "image_indices": [
+        72
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c3d21b689dcf51b1032d4d7d6d7a47f5c6fe3d9e01caad9483d84688b946fae1",
+      "image_indices": [
+        685
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c3f55b7f1f0cc19f6ce0ecaa4da91407c22decc273916f533f21c01d6d4fbcff",
+      "image_indices": [
+        605
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c48a46aec5f83eb799f024b4af1fb4beb0941dc5a080fe47b27a305291f9ba29",
+      "image_indices": [
+        411
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c512f1ed9a0767911646e3ddef535bbb047a4cabacd16a7ddcd0cfc7cf9f5fc6",
+      "image_indices": [
+        556
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c51777395277ef814de17be99a2184d56df7217f0a53fcd362857a69fe64648e",
+      "image_indices": [
+        884
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c5229e5e24cadaa37d4a1df8e2af257642b00e9a45a31882c73210b8108bc5e9",
+      "image_indices": [
+        570
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c5a6894c068768a5e05527ce6407abe0c5d7dff09ded7259db8d856aef1ce04e",
+      "image_indices": [
+        336
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c5c4fb1bbef561eb567715e0e08fb61eb2e1109a246ac1c94a3e0fe0fdd22679",
+      "image_indices": [
+        405
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c6133db6f3d6257706cce5c570b8d5be00a86c40f90f43507aee499359009e4e",
+      "image_indices": [
+        859
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c62764b63fb1a02e1346bf2a158f247c3b5873c01aa58b186034968b99f5439c",
+      "image_indices": [
+        219
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c63365c21500139ce5913e0519e2dc51a5057ab17d188cd956a099d700671148",
+      "image_indices": [
+        590
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c642cf498ab228dec174bd08053ac89cff3226fa9dd7878d2862ecd266c52e45",
+      "image_indices": [
+        851
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c648b7867b79474c8eada45081a427789884a597cc8761ea0ff83380a13436b9",
+      "image_indices": [
+        601
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c665729d58e821f07990ef9a3d0fbbe7f01958444e6595229c89d8591cb970b0",
+      "image_indices": [
+        35
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c683425f7deaa886d2be3fb46d530e33d8223675d38643d878e3f2545c6584c3",
+      "image_indices": [
+        20
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c6cd39b16bb599fae846b4d5bb72a86f449673175a61c47bb74f23d32d7ecdc1",
+      "image_indices": [
+        785
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c6d5a8cd2e5b15cd39135b7ed932687210570282be08ea4bcfbe931d231f9882",
+      "image_indices": [
+        383
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c701732c1d12fc3ccebeedb33cc203f6acfd5ae5c48baa70e6e08e0fd5688463",
+      "image_indices": [
+        476
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c71bec7f78df3f150d9ed0a46e107f710e5e21f19930c717567aee7fbd008281",
+      "image_indices": [
+        661
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c79b45bd164c3fa3022409d8641a6e56bb391ab8d71fcd05aa71ed234bdca70c",
+      "image_indices": [
+        690
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c89dc8d54071f3ab0796d97d081c8a793b435b291a86d61695d9571a291fe33d",
+      "image_indices": [
+        187
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c90add211fdaf3e9d1cf4acb0666709eca5f42ea6af82de4aefc8c90a65ad84a",
+      "image_indices": [
+        923
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c91065c272c6694f938e829d2d24d09191a4925eb90e6905d7b70a6a203a59a3",
+      "image_indices": [
+        506
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c92532a603387e029db06618602bca55cd7dc13f86f4c4e5671d59efea782c93",
+      "image_indices": [
+        392
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c98b6928e04d73010516dbde4587f2848f838fbde8f145d407d65f443bd60a7e",
+      "image_indices": [
+        702
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c9b8575ab4c2cfb2f9c36d3be6147198ec893eba6ecd7b54a65e31e703f38fbc",
+      "image_indices": [
+        360
+      ]
+    },
+    {
+      "half": "A",
+      "id": "c9f9907dd0ea433d80ef1c0904efbecc610d57b7bcd7f925f2bec1a02b6f4398",
+      "image_indices": [
+        514
+      ]
+    },
+    {
+      "half": "B",
+      "id": "c9fe9b11c059081198a38e769c2d8d3818ea857e224f4c1e8ab2d4981e229b6e",
+      "image_indices": [
+        837
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ca3b1d282bc2223c497567a9ac38787976b6fde4f4cbcc8cfd80c507625ffdd3",
+      "image_indices": [
+        334
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ca415c5c082f2b8419901edb934eae1414ef8684edb78eeb5523312808a32d73",
+      "image_indices": [
+        374
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ca45268fb1e7fa2ddb9d6662edccee3c8841dccc2c6ae6f84c32ee75740af4a2",
+      "image_indices": [
+        957
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ca6c6bf876f66ac1988df9d2a2ee05a6c21677472550b0dd767a28746d864c1a",
+      "image_indices": [
+        443
+      ]
+    },
+    {
+      "half": "A",
+      "id": "cb0507be4233d3a40048d31a630a6cdc55ff9d396c665a2b7482d100c73217db",
+      "image_indices": [
+        849
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cb1f23dc67df03204fbe71758e02eda12e09d3458f45367dab10b45e6566955a",
+      "image_indices": [
+        808
+      ]
+    },
+    {
+      "half": "A",
+      "id": "cb45de7e10df73986a29f27eceeea261aa97c81cc0b9f639ae58e3e7d1fa3712",
+      "image_indices": [
+        693
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cbbb079cd892a5848f19c137dd83f360dca8075ff03b0e44f6cd3942894d3021",
+      "image_indices": [
+        292
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cc11f73668def08042bc1e152402db335ef2071d05be321cd970cf49f127f962",
+      "image_indices": [
+        769
+      ]
+    },
+    {
+      "half": "A",
+      "id": "cc27eb8d73c0e52497f8addb94efe1371d27b885c93535092e135e38581318b0",
+      "image_indices": [
+        121
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cc2f7398f8b542f4b695be3fd9e97e4caf10d0622d74aeabc3566da749bbff81",
+      "image_indices": [
+        195
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ccf237b25545c728270e858a7bdded607f5c51fe4c47944bfa62614b12d61453",
+      "image_indices": [
+        868
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cd1fc05f56ae8cfc9473afda149d9ed06fd1de6a308196be4bec3b98735835da",
+      "image_indices": [
+        894
+      ]
+    },
+    {
+      "half": "A",
+      "id": "cd3b547f6f9606d33e057f15211697cb7a9e073b404bd5f6d02fa29d7983c09c",
+      "image_indices": [
+        453
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cd94d2ca47edc52e9cd64e4c8af62fb16f309c6513b28fd2f348fc16383d8d51",
+      "image_indices": [
+        440
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cdd53609b2b679dd61f49c58484d604ab0d4ae861277c77c08cc0abaa5d0970b",
+      "image_indices": [
+        682
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cde8bc4cddb1ffd5c64cd0f82795a96578a056b8e16d8c95c9d8d85c56753a57",
+      "image_indices": [
+        108
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ce0944a3a7f1693d7c771a18323e29e82283b7adf8dd71cc0a0227a34da2f431",
+      "image_indices": [
+        24
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ce2c46bc0698b32332faf4541de8e504fc127450416addc4f380ab45fae1961e",
+      "image_indices": [
+        689
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ce8034d952f11ca268b2914d929bd4532328ebc7bc5e8caf2820a4b59bd12251",
+      "image_indices": [
+        340
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ceb6394cbcd94a50fc3cd05f99d7cb2d9417e23939007f2f3be174ec75bb234e",
+      "image_indices": [
+        18
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ceb842942044a3de0b96debe6cc0f36891b0b4f3c591c0b69671e7cca1ecc52f",
+      "image_indices": [
+        387
+      ]
+    },
+    {
+      "half": "A",
+      "id": "cee6af04ddcdb4fe22674961e33d37e4500da743b79dda2e6a92f58bc2688e23",
+      "image_indices": [
+        846
+      ]
+    },
+    {
+      "half": "A",
+      "id": "cf24459cf73a32e979a97216e8837da3178ad64371b0f9610b9256046d174b9e",
+      "image_indices": [
+        278
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cf500dba7c255b160b2fcbabb3929e73fda40c98f5c2b17691a9309dfd7fb67d",
+      "image_indices": [
+        594
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cfc8663700eb593eb3d3c0581698b57251bcde563e9cf19b1fc2084850e07597",
+      "image_indices": [
+        154
+      ]
+    },
+    {
+      "half": "B",
+      "id": "cfcb9bc2245e84d92234196815131389eddc2d873efdc3a873e9efa6faf03084",
+      "image_indices": [
+        482
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d0234c0050c3d8c9da2833b9e776b9b38e5b27406925adc51b035022fd31a4f2",
+      "image_indices": [
+        456
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d06b32d5fea519507084ea8e2a8745d5e51b3fe1ae9a53113b713c5c6e2b175e",
+      "image_indices": [
+        626
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d08209efe6adb234db974f5a213835f9cbede380405fb754fd782f55a042edfd",
+      "image_indices": [
+        850
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d087309db8832826e38a4aac269d695799542ab589203d1436307bf5d6ba9473",
+      "image_indices": [
+        309
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d08d1912e8a3ec1e1397ef0ac8dabfc542e0a050b3b356eac48dad9e3c399fd7",
+      "image_indices": [
+        410
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d0987f8af6bca6e98995064c09218740be647a74e365e191759fa0c0e08f77da",
+      "image_indices": [
+        49
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d14d291f5846bc192fcc758c55523b53fb091979f1f6ab4d26949931414d1294",
+      "image_indices": [
+        653
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d16842fe747baaa6ddafafcac4cae66331f02c5b672bca2dce16e793e07ac676",
+      "image_indices": [
+        60
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d17b8a9ac6b859ffe13d28a9547bd57738e11ecca20ddc7f7e55ee39dee26b80",
+      "image_indices": [
+        639
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d21100632e5f2e7470cf169faa6514cf8f0207aaa61f762a0d5bcba94249179e",
+      "image_indices": [
+        535
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d2146b36d2ac7180f94f4092008c4c4701d621e87c0e171272274b15ec98c26b",
+      "image_indices": [
+        728
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d2241c429217f32811c4597585a8b0d211468658783ce0a77dad44939882fd33",
+      "image_indices": [
+        364
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d24e5947f435e7fadfcefc59cb30713c545e3346767699337d9fd59efb9fe486",
+      "image_indices": [
+        473
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d258bef7867da42c9f8035cd03a18630c3f3636d97292f804e80ae1a2b59e43a",
+      "image_indices": [
+        463
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d26130b718c344cd77676cd8b761a245b1ca8587dc369853fb8d6a00489fa182",
+      "image_indices": [
+        25
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d2966e8b2d72bdd2e5e498a0aa421ac45ce732d8b70bea7058a8975323fd802b",
+      "image_indices": [
+        517
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d2a7196a605c200d0c3904c869e6c7c53e4eea53d6ad377cc30ce6bc30aff863",
+      "image_indices": [
+        104
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d2b5165967470069b693d61151db394ed87da86f820e12dede124ed8394c18ef",
+      "image_indices": [
+        865
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d2cc09ff8c7de2e6c5931c9922948e9113127d2cbf825fa58f2735d3e61d8da1",
+      "image_indices": [
+        245
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d33c540b2645626562ba607c4d68839de382903c5bd284c718610769f34c06ee",
+      "image_indices": [
+        308
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d3882663d963d2695238d2a1320c3eb40664a6713f55c8fa16f7aeb6322e0af7",
+      "image_indices": [
+        45
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d3a2b725779879f569f116356da8bfdca38b12462a47e6ac29cb0d6afc416f38",
+      "image_indices": [
+        21
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d3cd777ae483721b3ad3645bc3138a7956c0b829ded3817a15006a5099360bc5",
+      "image_indices": [
+        599
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d44ff325b098b8927b65bf3cd4824eadec5f8ab588297c55edd4695eb30c09db",
+      "image_indices": [
+        62
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d4638477c0875eb895add1c90eaf5f4f70342bff2a1cc3629c2e276286be3889",
+      "image_indices": [
+        114
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d46e81c3f0cb18ed053d7e681e4ef31c488399633be7c1d18e5fd4695b4a14c7",
+      "image_indices": [
+        563
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d50e147bf2d596fe291f819b72ffca43ec89e9651cf2c672174e0ee76e033ddb",
+      "image_indices": [
+        810
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d51d44331391ff76c9ab1bd4c3c73d8691f8be3808abf0511488cf33a5980830",
+      "image_indices": [
+        450
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d52d991113265d1f4e1bf94672012a4c344cf32f00264ae9853ffe52c61e0f9c",
+      "image_indices": [
+        73
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d5571c2563571846cc55afbae7840c567e024c717cdee3addcac1e58aa910c30",
+      "image_indices": [
+        700
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d582e5908c6f0db24aa44d9591ee0d37b44b83f5cc4e12d411246869874e8716",
+      "image_indices": [
+        464
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d5bc627f916d722a0c1f121562f7e176b516048af138a1d77228e8aeaecf30d2",
+      "image_indices": [
+        76
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d5caaa8323ae479df62b44797870e1776d025fec10698925d922a83303aee692",
+      "image_indices": [
+        541
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d5ce0b1a6c3218a7bf8b96258493dd341400a72cd21e35b7608d3baf7c3c87ed",
+      "image_indices": [
+        832
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d61f77efee33fa87767430e1f74367bf9fe34745dda8e6de908239f85a0fde5b",
+      "image_indices": [
+        17
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d691de782f439c078442787b41b9fabf846397df315e3cd903d577da73543acc",
+      "image_indices": [
+        584
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d74567963c37e9753439d3e1b459821eb20b55fbed4c96938aca55d2fd48a39e",
+      "image_indices": [
+        672
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d74a9e4f363fe1b0de69107efe717e4b55e170cf004bb6e464a794ae60469c42",
+      "image_indices": [
+        819
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d7610c8ceee2b47d46d89911acc670b984625efb8abc88735d41cbef9fa287f5",
+      "image_indices": [
+        341
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d77503b64af01225d3f9e4cbe61c9f33b3498a814e991cdae9cf8ef83491a2ef",
+      "image_indices": [
+        146
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d7f93c74689a58d4da5ced556d2b7d8a1774f518a81e2a5bfcde1f204febfcc9",
+      "image_indices": [
+        928
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d81d598e00ac8241dec7826b2f849c360f591e32011f0bcad5cec9be872cbb22",
+      "image_indices": [
+        347
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d821f332ca46df43edb571afa5d386a106f1433c8a6fe137c499380c81ba12d2",
+      "image_indices": [
+        479
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d83b888ce68127aabe15fd5b272b544ec5f1977a9ae78523f4ef121a0c2243df",
+      "image_indices": [
+        380
+      ]
+    },
+    {
+      "half": "A",
+      "id": "d875788aebb03ef19dc8e953498eb4e5bfd2b74bf4a43ade650e6efa13c9524f",
+      "image_indices": [
+        69
+      ]
+    },
+    {
+      "half": "B",
+      "id": "d8d30baba5fd405ab2db9ff6c48189800199e26a9ebf68c0b75912fcfd5372f0",
+      "image_indices": [
+        861
+      ]
+    },
+    {
+      "half": "A",
+      "id": "db3d039422a9279489c0ffc317bb8fba9801ae4f79bba4d66fa247e7628f10be",
+      "image_indices": [
+        915
+      ]
+    },
+    {
+      "half": "A",
+      "id": "db4ac71c9258527bcf4bb695669f96b6b15756825163d275b02831c094a39bc2",
+      "image_indices": [
+        105
+      ]
+    },
+    {
+      "half": "B",
+      "id": "db6a950b3f8bc8b63d88aa61d9680bc7d6285b64ab0a69c95607fd0dc3ba9efc",
+      "image_indices": [
+        764
+      ]
+    },
+    {
+      "half": "A",
+      "id": "dbbf0f85253566e6674d18fc361d859c1cc73d6b80f7a6869734a9ac54387a39",
+      "image_indices": [
+        760
+      ]
+    },
+    {
+      "half": "B",
+      "id": "dbd129be543b9e9bfd050ec99d77681e9fb308da26021aacbd3e930c2cf746eb",
+      "image_indices": [
+        741
+      ]
+    },
+    {
+      "half": "A",
+      "id": "dc23f5cd79dca57a0e0e21dae104c58d97e1a4d42af55ad3bb34cbf7dac1edf3",
+      "image_indices": [
+        674
+      ]
+    },
+    {
+      "half": "A",
+      "id": "dc62546e0f1464343fffeb4d8a6b8c2cce3d48894f70da478aa5791d68e95588",
+      "image_indices": [
+        427
+      ]
+    },
+    {
+      "half": "B",
+      "id": "dccbb1e6c7a61574fb1fc8f274e180c9acb71bd629ba0674298bb9c9c2244c7d",
+      "image_indices": [
+        809
+      ]
+    },
+    {
+      "half": "A",
+      "id": "dcf3cad41933033ae5648e162c4181692e1c7b3eace7c8713ef17824f90b2565",
+      "image_indices": [
+        903
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ddde2efdc6b55ea4752c1de4c5fcd0d36a805a484a743706f9b8e74e3c57226f",
+      "image_indices": [
+        545
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ddf11f95b9a3de17bf67f89ce545ed2a8d2a3bb1db89e991a4552f1fe688f214",
+      "image_indices": [
+        614
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ddfad3710b1b2c57bc99840ec14626381f8f024d1383a0a384a4a39eda11eafc",
+      "image_indices": [
+        502
+      ]
+    },
+    {
+      "half": "B",
+      "id": "de0f28159eadfb8b0634c51ebd8ac73ca5c9bef3628bb0c55032e289962d9c0c",
+      "image_indices": [
+        536
+      ]
+    },
+    {
+      "half": "B",
+      "id": "de3c9b98de6f59611daa6195b2bf784f4749738793c937e0bc2039fc95233ea0",
+      "image_indices": [
+        46
+      ]
+    },
+    {
+      "half": "B",
+      "id": "de62f6b0f107fa897c5964e1b20831fa7476e6aa36da8bbc010e6e3217f2e398",
+      "image_indices": [
+        272
+      ]
+    },
+    {
+      "half": "A",
+      "id": "dead8932f1c6bedb65caf24938947062d167189d82cad112f02884da6f206e55",
+      "image_indices": [
+        279
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ded840b745ece369168f8b2ee43e78b65f701b6d8e3ae19d45485325cb36e628",
+      "image_indices": [
+        96
+      ]
+    },
+    {
+      "half": "A",
+      "id": "df67867d21108332caa5497b53ffafb10f3ab5443a3b585b2235bceed2b919bc",
+      "image_indices": [
+        909
+      ]
+    },
+    {
+      "half": "A",
+      "id": "df87cc5493309886c96ed94491331b481ed4c38c38c1af4a4c0af470e287341f",
+      "image_indices": [
+        503
+      ]
+    },
+    {
+      "half": "A",
+      "id": "df925ab4447bf60e84c1242c0256970d669cd560952da5414329720a89b33ad2",
+      "image_indices": [
+        733
+      ]
+    },
+    {
+      "half": "A",
+      "id": "dfd1987449ced74e005982b8a4af4addc757cc41c9681fe7d2500078a3398510",
+      "image_indices": [
+        351
+      ]
+    },
+    {
+      "half": "B",
+      "id": "dff3b2ceef069e32c6236807d0486145c8c47ebf499653e4b996d3262832415d",
+      "image_indices": [
+        946
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e000cf43d7be7453929e9b66f4d22000848d184f002bafdc6ee3932fdc9cf4c0",
+      "image_indices": [
+        589
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e0200a291cf22104dff19d1f4b555c08c9b06cee6a570aa4452612830da9a6ea",
+      "image_indices": [
+        273
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e0adda4425a5c46be89a80ca53c07757a7b2b0751db58aff6331c1c70275ee4b",
+      "image_indices": [
+        106
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e0b32a7fc0a7f7be37697fae7e5cdd930336b0fbfdd3d8fc5455088ee094d115",
+      "image_indices": [
+        748
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e0da3b2c1e241008c427f4cab8c42536d69b9b0c8349a7b17315bb0253f7115f",
+      "image_indices": [
+        483
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e1353399fb45cb331d59ea12d8ceb5f61e32e625c3fb3ce2569c6a53710e50ca",
+      "image_indices": [
+        233
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e153bcfef061788e5860d1f2a345c34c34d5200642b8160092fa93d611d7d4d8",
+      "image_indices": [
+        734
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e1dc6e1c7f49c9f7a202017cc47231d136ab872b8ff5880fbf748adafe8640fb",
+      "image_indices": [
+        85
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e1e995b98aac6ae514409e650ef99e0a8d3280cf956c32d86ee9c4f2ad9b34ea",
+      "image_indices": [
+        829
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e1fd89960597d58379ed93c02579319f2f9bc49c390934ada3661b01a1492d83",
+      "image_indices": [
+        221
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e2067b9831989fe81a2661249cf4b6491866601df7ac8e0a56302ed5cbc4f39c",
+      "image_indices": [
+        317
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e280f80bffa6622fd77f94a592354ea3f231f974b37eef70457bdad26a2fd152",
+      "image_indices": [
+        338
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e2dce0e5717b5d0d0adb03c9fa3a11e15b7c741ee1438a34aeb36df1924c39bd",
+      "image_indices": [
+        938
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e2f3c4fd9db5fca4235950f792c3bb1af01e67ba9339740249c7553e7d832334",
+      "image_indices": [
+        897
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e38d56929608c16ed628a52669557cb72911620a31156b57cbcd176115c64ea4",
+      "image_indices": [
+        388
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e3bc426bbc9a1f066ad49011e501d9308020f024464d2d3d9a88fdaf5dd8833c",
+      "image_indices": [
+        116
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e3cfcfc9b8e3b7258fc4d8519e201d565c0a78d561f7066d51a258411abde7c8",
+      "image_indices": [
+        644
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e3ef549a77a5463a497b04da4d90717da1afda3c391e964189aba83458d11045",
+      "image_indices": [
+        267
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e41c68e5d7de8df7dc4723db9cde409a7e30f2e967c00a3bc206e2176c65a4b5",
+      "image_indices": [
+        432
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e438a55cddb82ed72d500b3f96ff6134a3ef66695a9b3999278c699a83035b3b",
+      "image_indices": [
+        64
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e44f42cee3f41d564a02313de22751162b8ff3ef371ba5912b87ff9661e3e787",
+      "image_indices": [
+        941
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e458a62c62055423433b064474f73c8d20b378d543f6ffcffa2612401ab58948",
+      "image_indices": [
+        134
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e49fefa0709e24f45a211a4e01b8b4c4776b257dba26429a225a97c30163125b",
+      "image_indices": [
+        36
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e4a4068b85618253f9eb56a5e6f4d7b83e832c6e79cfc533d8180236866c7ef6",
+      "image_indices": [
+        107
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e4e2fcabef91ecec1853b68fc4aa9bc9247750ceb2a5fd24d90f0bd18b0aa47d",
+      "image_indices": [
+        269
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e4f2a2fae19e844e290d67264683b431816f1130d3d99725974c6daab748bb9b",
+      "image_indices": [
+        52
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e584521298c1484816bcc7beb7c8be803f284fbc12e93ba61bbf4bb832d57199",
+      "image_indices": [
+        724
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e5c5ec5e6c0daaaeddd04c9cb4b0749fb2ab72bdbcbbd6e6bcc7746cc9de7ea1",
+      "image_indices": [
+        403
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e5da2baaaf1b88d572306348c9c845449fe205bb6ff02827f7cec7380867d2ca",
+      "image_indices": [
+        408
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e66d4d690552e7c649eba26a25b7fb07a93032b9bef6b97b421288515392202e",
+      "image_indices": [
+        131
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e706a68f9f93c73944ef38d77bed10c6716b44d7d59feb857f6ce03784c4caa2",
+      "image_indices": [
+        973
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e749ef978ac2be03a0bc95604fa67d4d1f6bad4aa3962de51c858618ab5ab35f",
+      "image_indices": [
+        697
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e76516257406e41114b489262515298090fcfc5645313516c8e0e95536b50169",
+      "image_indices": [
+        627
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e78e9162d39f225e7ba0bb3630a1fd08ad07c60a27ed67a5cf99928a3287131d",
+      "image_indices": [
+        519
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e803de49eb11f5eed4875e3013d866c4a6d95052e668c159f120a09edf285745",
+      "image_indices": [
+        611
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e82a2a4bab07e563b3f2c2f74124e6fc2d500473ac3324c37357db53a4d6f711",
+      "image_indices": [
+        63
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e8564bbc6cf692bd842338789e7301b3b1b79b78e4b329fb05ec8a9b2946ac62",
+      "image_indices": [
+        791
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e90aed7fdb6fedbc6f9770759d6b702b5cc48015f6eddc48d685605b05dc0d67",
+      "image_indices": [
+        133
+      ]
+    },
+    {
+      "half": "B",
+      "id": "e959ed194e2104a4ecab219ab21f3e85c49a702a3d51d661de7798b0303b03ee",
+      "image_indices": [
+        371
+      ]
+    },
+    {
+      "half": "A",
+      "id": "e9a1320eaaacbb84f360800fb557565cc327b213f5cb1718200157f4f80502d2",
+      "image_indices": [
+        640
+      ]
+    },
+    {
+      "half": "A",
+      "id": "eac5012f6d444f119e4610087c59b758d245ad2d08fc2bf31344658d531b2de1",
+      "image_indices": [
+        529
+      ]
+    },
+    {
+      "half": "B",
+      "id": "eb6ba52e1e023a8c99dc64c9af21b7235f08bb45f362b66505ae570e51706239",
+      "image_indices": [
+        542
+      ]
+    },
+    {
+      "half": "B",
+      "id": "eb80b51d0dfc79a9bee810a50872b17f2f7246922f06cb3c7e141be4373af8da",
+      "image_indices": [
+        111
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ec632528c13bbd08d13331dfaae68523e95c419d135b745c4ba1ac97734fd7ad",
+      "image_indices": [
+        288
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ec84fd7d67909907a5e0586446fb0f781c2133781b7c84658906c1b21dbe53c8",
+      "image_indices": [
+        402
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ecb98813d1efb43a70bdbbaba52886cd28c813a9d7f6fed258fc83d69e8319fc",
+      "image_indices": [
+        457
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ecfc7b1c39b0936374e5085a946f6ca9f3ecd1d80c25b3f4c86fb840773d53f9",
+      "image_indices": [
+        720
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ed107083050a625814737fb477574e7ee693aac0be959ca0c6c1eb4b3ad4df5c",
+      "image_indices": [
+        501
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ed41f2a96ba4c76b4aa9e6aa846940507a5d339124b1d7d986f497a22696fd44",
+      "image_indices": [
+        742
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ed48d18fefb15c834c32644312a026f76f3fb3ae31b178dac6f250c02f45c422",
+      "image_indices": [
+        495
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ed72f716ebde0860e291f7c2d65615b600a9e4ec25f3af0009fabe47c29ee221",
+      "image_indices": [
+        620
+      ]
+    },
+    {
+      "half": "A",
+      "id": "edbffc4cd406f2b0185ba0c34ddd839aea252297d09e71b4df766424290bf7fe",
+      "image_indices": [
+        534
+      ]
+    },
+    {
+      "half": "B",
+      "id": "edd0172d19b1fa141d2513a6835efc763df77364341a16b8b8731384d45bd2fd",
+      "image_indices": [
+        770
+      ]
+    },
+    {
+      "half": "B",
+      "id": "eeb3148d870aa2a88a87dc24f71814ad177393ea58e3481be57f60dd321389c9",
+      "image_indices": [
+        301
+      ]
+    },
+    {
+      "half": "B",
+      "id": "eef5f175c0b794420ba51bcb5bed7865ade681814781206703092da3e214bbf9",
+      "image_indices": [
+        986
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ef1572d2cc27b16e9c2be76ac0b94a11b1b741db16ec1c19227a97656dad93ff",
+      "image_indices": [
+        323
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ef39cbfeaaf1e725b449740daf348045579a781930ce4490b4258d9693ed5246",
+      "image_indices": [
+        806
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ef52bd2b5da9e2ce2b3c4eb0cf86bfc4a70c290b7848660e8952f288288e11ac",
+      "image_indices": [
+        636
+      ]
+    },
+    {
+      "half": "B",
+      "id": "efaced086358d4763156a029d9cefc795cd0bc27a1f6486da5bde4b130d078a8",
+      "image_indices": [
+        399
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f01cedae180e94305d9dfeadebb987c7e923ff2aadaa8f81caca292f1e1ec14b",
+      "image_indices": [
+        313
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f096d21f1b2403362fc368d37040767e3c6318519303fcc38351f09e907a3282",
+      "image_indices": [
+        124
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f0992734503c846adc51ef95712bff2a07c7e0fd42a37df88092d43c2ac56fa0",
+      "image_indices": [
+        591
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f1257335ee36680d7f403b140f4467db4d7622d5d242c34ef7afb59bed490abf",
+      "image_indices": [
+        268
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f12b8fe3669103df06fa3997e2009440d1636f52f8856d2aa8310885116534a8",
+      "image_indices": [
+        996
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f210bd4817023adbd119c4aab5e374d77a3284325c4e56909e89c09767ea7254",
+      "image_indices": [
+        729
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f242d50753cf96f8bc97f89ff20510adf8dafca2d03f91578219b3adff897e2f",
+      "image_indices": [
+        618
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f2b88d3e35bf84fa39da4da7702c358a4fbdb3fb7a2b5c35be7f9ea7e9d1ab21",
+      "image_indices": [
+        692
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f3bb05067fd4bd46c4ebf4dcc757da2c0ac455101292307bf2be1486dd5e8569",
+      "image_indices": [
+        101
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f42dda4386356c7a51df197e1e6fd8b91427b417edbe77ce000f1e6b751b8f65",
+      "image_indices": [
+        327
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f4a331146ff6871b056feb30194919550f42d3e996223419b25ed012dd116e15",
+      "image_indices": [
+        28
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f4bdfa1ddebc86bd3638fb96b05d67f46bbb2e4bfe12b5fd9df44f39f3c6635b",
+      "image_indices": [
+        422,
+        921
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f4d719a8a03df9dac965ef82fa4d049d409a1fb9fca6b969bf10cb29fd264e17",
+      "image_indices": [
+        354
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f510c7822c8715b8ee2117ce5d2a8e9b8a398515e71ee840af6db5218c077884",
+      "image_indices": [
+        866
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f524648eeb045264c8d10dc4307dce6102794ef96b02bbc1b0dfca6af0bc6d73",
+      "image_indices": [
+        188
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f52f2915b8497bc83b9f1b2771675183c8086ff09aa45e2cba8ff8c03d6d7dd6",
+      "image_indices": [
+        977
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f5349ec44af6add1512009a5a85c7ebd515c4c73568b65fc6f9c808f1a6b0755",
+      "image_indices": [
+        261
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f5595119140d1bb3bfabedbc930c74309a3737958d5934c89c6b52dbe0a6ca0f",
+      "image_indices": [
+        445
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f5bb32ad360c4e22a638afe9205bb7036a19439140175e2b44b002b1c90c585c",
+      "image_indices": [
+        944
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f5fb9b7eb38846c7d1b876adc9cd7ba3f8b346529dd7f6e15374e3a528fad8ec",
+      "image_indices": [
+        650
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f62de75dd4823795853b63063f4e800e74a68af33abf63d69ddd220c8f480c25",
+      "image_indices": [
+        950
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f64f76c98c4ec42edcdf363726e7e57309ec8791418d2a2afc00cb44f23c9a5a",
+      "image_indices": [
+        462
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f66c02e3efe1117cbc905acaa003591232b895cc01e3107db66cba5e90b91bf5",
+      "image_indices": [
+        925
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f67b22d22b3cd31ad094301e7238540ec606dab4523700f469e0efb94e76e5de",
+      "image_indices": [
+        958
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f686c1186e640113785454b4462c061ae6ac4f42e7f8afb55baf7949c4823dad",
+      "image_indices": [
+        218
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f6ba4cfc1d34a3a90da4c3b2e907e4072304a7103f4f5ddb5684a39d30596cce",
+      "image_indices": [
+        617
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f71639f55b877d8ad4a006bb28791410d3465e955022b5818af6e876d578f4ae",
+      "image_indices": [
+        352
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f71a29aad5e022dc0936fb1a91e7d5e01e6c59be7540afead802f56faaa76c00",
+      "image_indices": [
+        250
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f7d7e4c276030e17ac8dc8981d2c766a80920a7ab5cedc6f5d861f301b76e1e3",
+      "image_indices": [
+        687
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f7fe8b2c77ea9fe4b4db482577ddfd470c01b87c0e33ea2650af13da41aa74cf",
+      "image_indices": [
+        257
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f83b96c08e4284a50bd69b16f366bba7bc74ec6640b13974c7d82c51b7db2bd4",
+      "image_indices": [
+        362
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f8a4358741cb81f1793732e4ff89f0e58c9d87ec9c8d501152a3ca98e3d4c333",
+      "image_indices": [
+        224
+      ]
+    },
+    {
+      "half": "B",
+      "id": "f937e9a80320e4a28c35d8baeb9dea3dc26716419c8e47b4d529b4f657b86bbf",
+      "image_indices": [
+        444
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f940371571f1bc0ad765d88d2f03877f83b33ca2be1f5023e1ed3f5527968539",
+      "image_indices": [
+        747
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f97d6557da0bf1d82a2155318321a4d36c8de71ebc7fdfaabd083ef13bf2d3f5",
+      "image_indices": [
+        905
+      ]
+    },
+    {
+      "half": "A",
+      "id": "f9d7c9fa73b5b6aaf8d4e353fdc37af1e77b7d001c4ce576dc4b6c861939bfa2",
+      "image_indices": [
+        660
+      ]
+    },
+    {
+      "half": "B",
+      "id": "fa391f1a5285111b5ed36d6420feeb12809f636d78a4a44bac037827aa664984",
+      "image_indices": [
+        704
+      ]
+    },
+    {
+      "half": "A",
+      "id": "fa8699a7f0c3b44f419335e3ae5ef91049975549e12f7374800976d232e76457",
+      "image_indices": [
+        434
+      ]
+    },
+    {
+      "half": "B",
+      "id": "faee9b8dc187a21adcfda11c006b1c863aa98ae8a0b3ebe3797218b241b1dd11",
+      "image_indices": [
+        867
+      ]
+    },
+    {
+      "half": "A",
+      "id": "fb15234373ff51e212739dba9f0364a38d3972c4025b2c207d5fdcddd1546dff",
+      "image_indices": [
+        989
+      ]
+    },
+    {
+      "half": "A",
+      "id": "fb3d205a55512b6b65e044f297cc54adac49ea778a75c353013d3ef511cdbbac",
+      "image_indices": [
+        844
+      ]
+    },
+    {
+      "half": "B",
+      "id": "fb46a845b96d18b43628e7bcbcaf82b68f07f75b609bef458b2a91abb980e379",
+      "image_indices": [
+        841
+      ]
+    },
+    {
+      "half": "A",
+      "id": "fb7e7b66d003efed776a0f37a66d684b068a5845cdd8d6019f02938e10cc1854",
+      "image_indices": [
+        572
+      ]
+    },
+    {
+      "half": "A",
+      "id": "fb850982714e9fc2bb67711524ec65368f022d0380d2dce4fbad833f0f243f96",
+      "image_indices": [
+        13
+      ]
+    },
+    {
+      "half": "B",
+      "id": "fc0701e731062f402f4d46dd11ac1fdb7590d93e88e734a444b6a69a3b92984a",
+      "image_indices": [
+        481
+      ]
+    },
+    {
+      "half": "A",
+      "id": "fc98ada7b29a505b89261b40a1ae83f31c164eef60c25e78a343899c4aabcb84",
+      "image_indices": [
+        143
+      ]
+    },
+    {
+      "half": "A",
+      "id": "fca17d7c8eee8be688648e4e2904eddf50104ebf6b163e3f70e996655aa5df1b",
+      "image_indices": [
+        533
+      ]
+    },
+    {
+      "half": "B",
+      "id": "fd164118acc677ccdfee114f489b82ce682c5a9223fbaa4d18e5fc84676bac98",
+      "image_indices": [
+        505
+      ]
+    },
+    {
+      "half": "B",
+      "id": "fd5b212949bc52ee6f02cf2ba92276c2970a493d2ec98e908dc09b21999ac30b",
+      "image_indices": [
+        970
+      ]
+    },
+    {
+      "half": "B",
+      "id": "fde1e621fb24bc15ae9eda1fb9006fdb5cf05c3d5304e607da7fffc3c6401142",
+      "image_indices": [
+        961
+      ]
+    },
+    {
+      "half": "B",
+      "id": "fe12faaad9f0ce7f4d2d17e3d8ce8d8b53a55207245a2634f95c7dfec80431fe",
+      "image_indices": [
+        324
+      ]
+    },
+    {
+      "half": "B",
+      "id": "fe9a9d84681fd06d95c2bcaa567c4d9f04ee3764d1c69cf7f9123dd0cbd7162a",
+      "image_indices": [
+        858
+      ]
+    },
+    {
+      "half": "B",
+      "id": "fec971baa3497a4f2ee19b6d22a3b28c3e21b738dde6890099a1d3f1ac9aa9e4",
+      "image_indices": [
+        874
+      ]
+    },
+    {
+      "half": "A",
+      "id": "fee9f9d531174b396f1387f41e4079f719db79b45cf14ff22786cdd37d67f1a4",
+      "image_indices": [
+        263
+      ]
+    },
+    {
+      "half": "B",
+      "id": "ff3c439d05fe6960aff7691f6e9cd01cca50ba583de713e7814709781ae7737f",
+      "image_indices": [
+        244
+      ]
+    },
+    {
+      "half": "A",
+      "id": "ff9263c35cd8d29fcac82ce83fa9c583e029107ee3aedb6e31f4355b9b65806e",
+      "image_indices": [
+        112
+      ]
+    }
+  ],
+  "graph_scope": "all registry-v4 rows plus source protocol image/text components and qrels",
+  "registry_sha256": "18c895becac9af4c8405d77e1a7d79879da679df005c4b867443fc218ca002b5",
+  "schema": 1,
+  "seed": 20261101,
+  "source_manifest": {
+    "bytes": 4357193,
+    "format": "json_array",
+    "key": "vizwiz_pl_local_validation",
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/vizwiz_pl_local_validation/manifest.json",
+    "role": "test",
+    "sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa"
+  },
+  "source_protocol": {
+    "path": "C:\\Users\\jsowa\\benchmark-translations\\data-ood-20261030\\B\\frozen\\vizwiz_pl_local_validation\\retrieval_protocol.json",
+    "sha256": "63725b9983e19c0bea9fb6ec22775f577e06df7f00ce5fb83de601126397f70e"
+  }
+}

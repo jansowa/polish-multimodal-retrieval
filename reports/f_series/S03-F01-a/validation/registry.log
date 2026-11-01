@@ -1,0 +1,20 @@
+{
+  "status": "registry_verified",
+  "registry_sha256": "18c895becac9af4c8405d77e1a7d79879da679df005c4b867443fc218ca002b5",
+  "protected_rows": {
+    "holdout:VN_dev": 2003,
+    "holdout:flickr30k_pl_local_test": 4760,
+    "holdout:vizwiz_pl_local_validation": 4329,
+    "holdout:wiki_native_dev": 397,
+    "holdout:xm3600_pl": 7133,
+    "holdout:xtd10_full_1k": 1000,
+    "holdout:xtd10_no_overlap": 897,
+    "holdout:retention_validation": 7695,
+    "holdout:validation_negative_captions": 5602,
+    "holdout:VN_original_dev": 2003,
+    "holdout:Wiki_original_pilot_dev": 201,
+    "holdout:Wiki_entire_reserved_components": 7956,
+    "holdout:XM3600_test": 24964,
+    "holdout:historical_eval_reservation": 30721
+  }
+}

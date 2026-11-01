@@ -1,0 +1,40 @@
+{
+  "base_commit": "2f32e80ff21be21092f32ba9a3475047cbb42a75",
+  "branch": "master",
+  "commands": [
+    "PYTHONPATH=src ~/.venvs/pl-mmb-benchmark/bin/python experiments/f_series/f01_protocol.py --write",
+    "PYTHONPATH=src ~/.venvs/pl-mmb-benchmark/bin/python experiments/f_series/f01_protocol.py --check",
+    "PYTHONPATH=src ~/.venvs/pl-mmb-benchmark/bin/python tests/test_f01_protocol.py -v",
+    "PYTHONPATH=src ~/.venvs/pl-mmb-benchmark/bin/python -m pl_mmb_training.current_holdouts"
+  ],
+  "gpu_jobs": [],
+  "initial_checkout": "clean; observed by git status --short before first edit",
+  "new_reads": {
+    "GUARD": 0,
+    "TEST": 0
+  },
+  "session": "S03-F01-a",
+  "sha256": {
+    "experiments/f_series/f01_protocol.py": "f3f29556b809c66635a7d2fc1409de93e7f964464380e1ead52ada42f66d4111",
+    "experiments/f_series/inspect_f01_inputs.py": "0baa2898ac8a88e4dde6feceed5a20666a3abfc445eb185af1acece3b1fcc38c",
+    "experiments/f_series/record_f01_validation.py": "4b23b06be43d69e27e48ec657c26cd7161e64e6f2ffbed8a3525750d96459eeb",
+    "reports/f_series/S03-F01-a/PLAN.md": "464bfcca4c9e5e955fb52392e7071db43f4b5be42c4809ec7c9d52ef64e09ac1",
+    "reports/f_series/S03-F01-a/split-summary.json": "a64f9fc2a58db4d37ed780a5bd44ae242021a8709c86d55646e113bfb52412c1",
+    "reports/f_series/S03-F01-a/summary.json": "091fff81f885ae4333bbe44a4c26a9d27f700c85945f4235f7bd0bb6abad3976",
+    "reports/f_series/S03-F01-a/validation/build.log": "51b86ac34d873ba03ebaa15fab7d232e788888b5d67c4dbc4b9b566ce751e22e",
+    "reports/f_series/S03-F01-a/validation/freeze.log": "4567810f190bcc87fa2ca1c07095ea360c6c6e8f7ec05a0e9f63e3521e952dd1",
+    "reports/f_series/S03-F01-a/validation/registry.log": "2a6d69169fd42d4ae67b62a4accb296e1c6b6bfd99029f1f0aeea8c9eb9aec55",
+    "reports/f_series/S03-F01-a/validation/reproduce.log": "4567810f190bcc87fa2ca1c07095ea360c6c6e8f7ec05a0e9f63e3521e952dd1",
+    "reports/f_series/S03-F01-a/validation/tests.log": "80c2996a78c81f852b3d4a96401741bf41a42232d405944f29310eb8b0800973",
+    "reports/f_series/S03-F01-a/validation/unittest.log": "b9421ec9fade3e9be324b17edbf1da43f492b27aac981c6f4eb1c1e23ae96dc7",
+    "tests/test_f01_protocol.py": "977b595e59eef0016b97c8b3d41e5c79fa70407610870eebe0ad7fc4a996d630"
+  },
+  "status": "passed",
+  "tests": {
+    "failed": 0,
+    "passed": 8,
+    "pytest_attempt": "not installed in required WSL environment; no dependency installation",
+    "runner": "unittest"
+  },
+  "validation_environment": "WSL ~/.venvs/pl-mmb-benchmark/bin/python; CPU only"
+}

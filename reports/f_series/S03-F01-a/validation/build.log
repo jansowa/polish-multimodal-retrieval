@@ -1,0 +1,1 @@
+{"status": "passed", "halves": {"A": {"images": 500, "queries": 2160, "edges": 2172, "components": 488}, "B": {"images": 500, "queries": 2152, "edges": 2157, "components": 494}}, "summary_sha256": "a64f9fc2a58db4d37ed780a5bd44ae242021a8709c86d55646e113bfb52412c1"}

@@ -1,10 +1,10 @@
 # STATUS — seria F / M
 
-Aktualizacja: 2026-11-01; S02-REPO-HYGIENE zakończono: zastane zmiany zapisano tematycznie, dane robocze i kopie wyłączono z Git bez usuwania. H-OPS-S01 rozwiązano; F01 nadal nie rozpoczęto.
+Aktualizacja: 2026-11-01; S03-F01-a zakończono: protokół v3-F i podział VizWiz A/B zamrożone z SHA. F01 in_progress; następny etap S04-F01-b.
 
 | Pakiet | Stan | Blokery | Oczekujące bramki | Ostatnia aktualizacja | Linki (plan / raport / decyzja) |
 |---|---|---|---|---|---|
-| F01 | todo | Nie rozpoczęto. Blokadę checkoutu usunięto w S02-REPO-HYGIENE; ponowić kroki 1–2. | — | 2026-11-01 | — / [porządkowanie](S02-REPO-HYGIENE/REPORT.md) / [handoff](handoffs/S02-REPO-HYGIENE.md) |
+| F01 | in_progress | Kroki 1–2 gotowe; pozostałe kroki w kolejnych etapach. | — | 2026-11-01 | [plan](S03-F01-a/PLAN.md) / [raport](S03-F01-a/REPORT.md) / [handoff](handoffs/S03-F01-a.md) |
 | F02 | todo | Nie rozpoczęto; zależności sprawdzi kolejna sesja w 04. | H1 | 2026-11-01 | — / — / — |
 | F03 | todo | Nie rozpoczęto; zależności sprawdzi kolejna sesja w 04. | — | 2026-11-01 | — / — / — |
 | F04 | todo | Nie rozpoczęto; zależności sprawdzi kolejna sesja w 04. | — | 2026-11-01 | — / — / — |
@@ -34,7 +34,7 @@ Otwarte decyzje właściciela wg 00 (nie są bramką bootstrapu):
 - Faza M: wymóg wspólnej przestrzeni / dwóch trybów i dostarczenie danych replay.
 
 Audyt: [każdy wiersz 00](S00-BOOT-audit.md), [źródła i SHA](S00-BOOT-evidence.json).
-Następna sesja: **S03-F01-a**, wyłącznie protokół v3-F, VizWiz A/B i nowy katalog; czytać sekcję F01 w 04 oraz 02 zgodnie z 09 §6.
+Następna sesja: **S04-F01-b**, wyłącznie licznik parametrów eksportu i dowód tożsamości PolDense; zakres i czytanie w NEXT.
 
 ## Rozbieżności do wyjaśnienia
 
@@ -49,3 +49,10 @@ Domknięcie S00-BOOT (2026-11-01): artefakty scalono fast-forward do `master`; w
 Historycznie S01-F01-a: warunek czystego startu niespełniony; pełny stan i SHA w [dowodach](S01-F01-a-evidence.json). GUARD/TEST bez nowych odczytów; brak jobów tej sesji. Blokadę H-OPS-S01 rozwiązano w S02-REPO-HYGIENE; ponowienie F01 kroków 1–2 zapisano jako S03-F01-a. Nie przechodzono do F01-b.
 
 S02-REPO-HYGIENE (2026-11-01): etap organizacyjny na jawne zlecenie użytkownika, bez realizacji F01. [Raport i SHA dowodów](S02-REPO-HYGIENE/REPORT.md), [commity](S02-REPO-HYGIENE/commits-before-handoff.json), [handoff](handoffs/S02-REPO-HYGIENE.md). H-OPS-S01 rozwiązano przez uporządkowanie Git; wymóg czystego startu pozostaje. Liczniki GUARD/TEST bez zmian. Następna sesja: **S03-F01-a**, wyłącznie ponowienie F01 kroków 1–2. Zaobserwowany komunikat zatrzymania odrębnej kolejki Wiki zapisano w BACKLOG; brak nowych jobów tej sesji.
+
+S03-F01-a: czysty start; protokół MD/JSON, nowy `catalog-f-v3.json` i podział
+VizWiz A/B gotowe. Źródło liczebności i SHA: [summary](S03-F01-a/summary.json),
+SHA256 `091fff81f885ae4333bbe44a4c26a9d27f700c85945f4235f7bd0bb6abad3976`.
+Kontrola v4, powtarzalność i testy integralności przeszły; chronione SHA zachowane.
+GUARD/TEST bez nowych odczytów, brak jobów. [Dowody](S03-F01-a/validation-evidence.json),
+SHA256 `067d542470b5794a5c77ed2005c096c5a5a16a48d45687632165c666ff968121`.

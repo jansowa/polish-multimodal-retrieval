@@ -9,3 +9,5 @@
 | S01-F01-a | 2026-11-01 | F01 kroki 1–2: preflight checkoutu | blocked | [S01-F01-a](handoffs/S01-F01-a.md) | commit zawierający ten wpis: `[S01-F01-a] Zapisz blokade nieczystego checkoutu` |
 
 | S02-REPO-HYGIENE | 2026-11-01 | Porządkowanie zastanych zmian Git na zlecenie użytkownika; bez F01 | done | [S02-REPO-HYGIENE](handoffs/S02-REPO-HYGIENE.md) | [commity tematyczne](S02-REPO-HYGIENE/commits-before-handoff.json); commit domknięcia zawierający ten wpis: `[S02-REPO-HYGIENE] Close repository hygiene stage and hand off F01` |
+
+| S03-F01-a | 2026-11-01 | F01 kroki 1–2: protokół v3-F, podział VizWiz A/B, kontrola rejestru | done | [S03-F01-a](handoffs/S03-F01-a.md) | commit zawierający ten wpis: `[S03-F01-a] Freeze protocol and component-disjoint VizWiz halves` |

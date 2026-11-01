@@ -1,0 +1,56 @@
+{
+  "artifacts_sha256": {
+    "protocols/protocol-v3-f.SHA256SUMS.json": "62d1150cb65535083a3c9aeac044b4402c923a80fde6b8ca638ee052cb61a6f8",
+    "protocols/protocol-v3-f.json": "a734e9fb97ff7ee2d12e35fcae84a67d467c87197a627b9f930e634586c33fb3",
+    "protocols/protocol-v3-f.md": "e176fb5c09ffaff6e98633f8dace933f53ab1aae3367585bda2d1c587839c5ce",
+    "protocols/vizwiz-v3-f/a.json": "f566e236afaaf032849162d53db36d44250dcccf65786e27eb439c99537bfee4",
+    "protocols/vizwiz-v3-f/assignments.json": "3f2284ee071f6dff09bafff1763a67ace2b7a0fd84bec8da31beadb85d7347bf",
+    "protocols/vizwiz-v3-f/b.json": "163081aa8bd0ac7d7939006053c07f4350c845f3d979ef1bc4a362cdd321f372",
+    "retrieval_benchmark/catalog-f-v3.json": "224fbed043f2691b0fbfbc1e2e589e3ce8b3b00cab7d03d8c0930d46ccf78397"
+  },
+  "checks": [
+    "all registry inputs SHA and original-image pHash verified",
+    "full-registry transitive components; original protocol components retained",
+    "image/query pool and qrels multiset conserved exactly",
+    "component/image/query A-B intersections empty",
+    "deterministic regeneration byte-identical",
+    "protected inputs byte-identical to Git HEAD"
+  ],
+  "gpu_jobs": [],
+  "halves": {
+    "A": {
+      "components": 488,
+      "edges": 2172,
+      "images": 500,
+      "queries": 2160
+    },
+    "B": {
+      "components": 494,
+      "edges": 2157,
+      "images": 500,
+      "queries": 2152
+    }
+  },
+  "new_reads": {
+    "GUARD": 0,
+    "TEST": 0
+  },
+  "protected_sha256": {
+    "docs/agent_spec_f/02_PROTOKOL_EWALUACJI.md": "0a6cac38ba3716fe3ea810f1a398bfeb0c0b313d324257f0855db0b1f1ef19da",
+    "experiments/data_study_20261030/guard.py": "e56b17058df7ccf6f118aaa216cef46ded9bf1c9d01d7640a33212459c84f329",
+    "retrieval_benchmark/catalog-current.json": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010",
+    "retrieval_benchmark/catalog.json": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8",
+    "retrieval_benchmark/holdouts/registry-v2.json": "954934abb198f79c712d4f51ae68a948a413fd9fd3b56fbda0648abb01a478c5",
+    "retrieval_benchmark/holdouts/registry-v4.json": "18c895becac9af4c8405d77e1a7d79879da679df005c4b867443fc218ca002b5",
+    "src/pl_mmb_training/current_holdouts.py": "3c2c30159800e27dacdec8c0b9d103f30b2fd6a7b7cc415a9d1caf59bf18f8aa",
+    "src/pl_mmb_training/holdouts.py": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3"
+  },
+  "registry_sha256": "18c895becac9af4c8405d77e1a7d79879da679df005c4b867443fc218ca002b5",
+  "registry_status": "registry_verified",
+  "source_counts": {
+    "edges": 4329,
+    "images": 1000,
+    "queries": 4312
+  },
+  "status": "passed"
+}

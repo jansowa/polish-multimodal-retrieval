@@ -1,0 +1,13 @@
+test_catalog_halves_bound_to_protected_parent (__main__.TestF01Protocol.test_catalog_halves_bound_to_protected_parent) ... ok
+test_frozen_split_conserves_source (__main__.TestF01Protocol.test_frozen_split_conserves_source) ... ok
+test_protocol_sha_and_normative_source (__main__.TestF01Protocol.test_protocol_sha_and_normative_source) ... ok
+test_reject_alter_text (__main__.TestF01Protocol.test_reject_alter_text) ... ok
+test_reject_cross_component (__main__.TestF01Protocol.test_reject_cross_component) ... ok
+test_reject_drop_image (__main__.TestF01Protocol.test_reject_drop_image) ... ok
+test_reject_drop_qrel (__main__.TestF01Protocol.test_reject_drop_qrel) ... ok
+test_reject_duplicate_qrel (__main__.TestF01Protocol.test_reject_duplicate_qrel) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.324s
+
+OK

@@ -1,0 +1,137 @@
+{
+  "datasets": {
+    "VN_dev": {
+      "caption_origin": "generated_recycled_translated",
+      "f_role": "SEL-OOD",
+      "notes": "Dotychczasowy dev; ID i selekcyjny dla naszych modeli VN. Nie jest ludzkim polskim goldem.",
+      "role": "diagnostic",
+      "status": "ready",
+      "title": "VisualNews PL · dev"
+    },
+    "coco_val": {
+      "f_role": "SEL-OOD",
+      "notes": "Validation IDs only; setup/evaluation belongs to later F01 stages, not a new training release.",
+      "role": "selection",
+      "status": "pending_f01_panel",
+      "title": "COCO val"
+    },
+    "compositional_validation": {
+      "f_role": "GUARD",
+      "notes": "Validation IDs only; never the complete training corpora.",
+      "role": "control",
+      "status": "pending_f01_panel",
+      "title": "ARO/SugarCrepe validation"
+    },
+    "docci_pl": {
+      "caption_origin": "machine_translation",
+      "notes": "Adnotacje EN lokalne; obrazy, tłumaczenia PL i zamrożony protokół nie są jeszcze gotowe. Raportować ucinanie tekstów każdego modelu.",
+      "role": "long_description",
+      "source": "https://google.github.io/docci/",
+      "status": "planned",
+      "title": "DOCCI PL · planowane"
+    },
+    "flickr30k_pl_local_test": {
+      "caption_origin": "machine_translation",
+      "f_role": "GUARD",
+      "notes": "Lokalna oczyszczona galeria; nie jest niezmienionym oficjalnym Flickr30k1K. NLLB-200-1.3B; automatyczne QA nie potwierdza semantyki.",
+      "role": "core",
+      "source": "https://huggingface.co/datasets/aplominski/flickr30k-multilingual",
+      "status": "ready",
+      "title": "Flickr30k PL · lokalny test"
+    },
+    "vizwiz_pl_a": {
+      "assignments": "protocols/vizwiz-v3-f/assignments.json",
+      "assignments_sha256": "3f2284ee071f6dff09bafff1763a67ace2b7a0fd84bec8da31beadb85d7347bf",
+      "caption_origin": "machine_translation",
+      "counts": {
+        "components": 488,
+        "edges": 2172,
+        "images": 500,
+        "queries": 2160
+      },
+      "f_role": "SEL-OOD",
+      "parent": "vizwiz_pl_local_validation",
+      "protocol": "protocols/vizwiz-v3-f/a.json",
+      "protocol_sha256": "f566e236afaaf032849162d53db36d44250dcccf65786e27eb439c99537bfee4",
+      "role": "selection",
+      "status": "ready",
+      "title": "VizWiz PL A"
+    },
+    "vizwiz_pl_b": {
+      "assignments": "protocols/vizwiz-v3-f/assignments.json",
+      "assignments_sha256": "3f2284ee071f6dff09bafff1763a67ace2b7a0fd84bec8da31beadb85d7347bf",
+      "caption_origin": "machine_translation",
+      "counts": {
+        "components": 494,
+        "edges": 2157,
+        "images": 500,
+        "queries": 2152
+      },
+      "f_role": "GUARD",
+      "parent": "vizwiz_pl_local_validation",
+      "protocol": "protocols/vizwiz-v3-f/b.json",
+      "protocol_sha256": "163081aa8bd0ac7d7939006053c07f4350c845f3d979ef1bc4a362cdd321f372",
+      "role": "guard",
+      "status": "ready",
+      "title": "VizWiz PL B"
+    },
+    "vizwiz_pl_local_validation": {
+      "caption_origin": "machine_translation",
+      "f_notes": "Historical full gallery only; use A/B for F selection/guard. No new full-gallery scores for selection.",
+      "f_role": "REF",
+      "notes": "Ludzkie opisy EN przetłumaczone przez opus-mt-en-zlw; nowy profil fotografii. Lokalny protokół retrieval, nie oficjalna metryka captioningu.",
+      "role": "core",
+      "source": "https://vizwiz.org/tasks-and-datasets/image-captioning/",
+      "status": "ready",
+      "title": "VizWiz PL · lokalna walidacja"
+    },
+    "wiki_native_dev": {
+      "caption_origin": "native_human",
+      "f_role": "SEL-ID",
+      "notes": "Dotychczasowy zbiór deweloperski i selekcyjny. Ekspozycja zależy od modelu; nie jest nowym ślepym testem.",
+      "role": "diagnostic",
+      "status": "ready",
+      "title": "Wiki PL · native dev"
+    },
+    "xm3600_pl": {
+      "caption_origin": "native_human",
+      "f_role": "GUARD",
+      "notes": "Zwykły test leaderboardu na wyraźne polecenie użytkownika z 31.10.2026. Lokalna wersja: 3597 obrazów, 7133 natywne opisy PL; 3 wcześniejsze wykluczenia zachowane. Ekspozycja encoderów w pretrainingu nieustalona.",
+      "role": "core",
+      "source": "https://google.github.io/crossmodal-3600/",
+      "status": "ready",
+      "title": "XM3600 PL"
+    },
+    "xtd10_full_1k": {
+      "caption_origin": "human_translation",
+      "f_role": "REF",
+      "notes": "Kontrola tłumaczeń; znane nakładania z naszym treningiem i wcześniejszym eval. Nie liczyć drugi raz jako niezależnej domeny.",
+      "role": "control",
+      "source": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10",
+      "status": "ready",
+      "title": "XTD10 PL · pełne 1000"
+    },
+    "xtd10_no_overlap": {
+      "caption_origin": "human_translation",
+      "f_role": "GUARD",
+      "notes": "Obrazy COCO; źródło ID dla naszych modeli z FULL. Oczyszczenie nie zmienia domeny w OOD.",
+      "role": "control",
+      "source": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10",
+      "status": "ready",
+      "title": "XTD10 PL · 897 bez znanych nakładań"
+    }
+  },
+  "future_roles": {
+    "new_holdout_dev_queries": "SEL-OOD after F10",
+    "new_holdout_dev_sentences": "SEL-OOD after F10",
+    "new_holdout_test": "TEST after F10/H4",
+    "wiki_f_dev": "SEL-ID after F05"
+  },
+  "holdout_registry": {
+    "path": "retrieval_benchmark/holdouts/registry-v4.json",
+    "scope": "Both VizWiz halves are subsets of the already protected complete parent; v4 unchanged",
+    "sha256": "18c895becac9af4c8405d77e1a7d79879da679df005c4b867443fc218ca002b5"
+  },
+  "parent_catalog_sha256": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010",
+  "version": "retrieval-pl-v3-f"
+}

@@ -8,3 +8,8 @@
 /training/** -text
 /reports/** -text
 /docs/agent_spec_f/** -text
+
+# F01 protocol and validation code are bound by full-file SHA256.
+/protocols/** -text
+/experiments/f_series/** -text
+/tests/test_f01_protocol.py -text
