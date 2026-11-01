@@ -1,0 +1,10 @@
+# Frozen manifests bind exact file bytes; disable checkout newline conversion.
+/src/pl_mmb_training/** -text
+/src/pl_mmb_benchmark/** -text
+/experiments/data_study_20261030/** -text
+/experiments/data_ood_common_20261030/** -text
+/experiments/ood_eval_20261030/** -text
+/retrieval_benchmark/** -text
+/training/** -text
+/reports/** -text
+/docs/agent_spec_f/** -text
