@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "brief_sha256": "ee538b80d461f977dd0e67560bec8fab5f30a84d5a3d92f58ab886cfa5e2758f",
+  "snapshot_sha256": "d49a76765440b64cdb8e9d5c59c213cfb97d2307ad143198f22e07a60732ef37",
+  "immutable_inputs_verified": true,
+  "adaptation_rows_verified": 11,
+  "optimization_rows_verified": 10,
+  "pretrained_benchmark_rows_verified": 20,
+  "no_training_or_evaluation_performed": true
+}
