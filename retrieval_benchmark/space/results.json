@@ -32101,6 +32101,526 @@
           "truncation_fraction": 0.0
         }
       }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6794118701206782,
+          "ndcg@10": 0.6060471609894325,
+          "recall@1": 0.572977481234362,
+          "recall@10": 0.8798999165971643,
+          "recall@5": 0.8134556574923547
+        },
+        "t2i": {
+          "mrr": 0.5442767843725671,
+          "ndcg@10": 0.58615783437909,
+          "recall@1": 0.43847560118126844,
+          "recall@10": 0.7444803825059767,
+          "recall@5": 0.6669947967936999
+        }
+      },
+      "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+      "precision": "cuda-bf16-autocast",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "f099e842c7acdeab2f60c027a324fad7eff52c6c1f08a17b54e9530b39188137",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 67,
+          "mean": 18.426381662213473,
+          "prefix": "",
+          "truncation_fraction": 0.00042188159189987344
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 67,
+          "mean": 18.426381662213473,
+          "prefix": "",
+          "truncation_fraction": 0.00042188159189987344
+        }
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6794118701206782,
+          "ndcg@10": 0.6060471609894325,
+          "recall@1": 0.572977481234362,
+          "recall@10": 0.8798999165971643,
+          "recall@5": 0.8134556574923547
+        },
+        "t2i": {
+          "mrr": 0.5442767843725671,
+          "ndcg@10": 0.58615783437909,
+          "recall@1": 0.43847560118126844,
+          "recall@10": 0.7444803825059767,
+          "recall@5": 0.6669947967936999
+        }
+      },
+      "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+      "precision": "cuda-bf16-autocast",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "8df69f9b29639af2f40a0e99473118858a2047c1ead9449f7f32b99f2027f9c3",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 67,
+          "mean": 18.426381662213473,
+          "prefix": "",
+          "truncation_fraction": 0.00042188159189987344
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 67,
+          "mean": 18.426381662213473,
+          "prefix": "",
+          "truncation_fraction": 0.00042188159189987344
+        }
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6835614814677918,
+          "ndcg@10": 0.6115357899534283,
+          "recall@1": 0.5757575757575758,
+          "recall@10": 0.8849040867389492,
+          "recall@5": 0.8192938559911037
+        },
+        "t2i": {
+          "mrr": 0.5545373242933415,
+          "ndcg@10": 0.5962033917960962,
+          "recall@1": 0.4512726761355646,
+          "recall@10": 0.753199268738574,
+          "recall@5": 0.6736042750667979
+        }
+      },
+      "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+      "precision": "cuda-bf16-autocast",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "11301c9527b7e007d270b31f32e3e28fb92424ae74463bb7bcfb8deeff7a9d85",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 66,
+          "mean": 18.219237800590633,
+          "prefix": "",
+          "truncation_fraction": 0.0002812543945999156
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 66,
+          "mean": 18.219237800590633,
+          "prefix": "",
+          "truncation_fraction": 0.0002812543945999156
+        }
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6835614814677918,
+          "ndcg@10": 0.6115357899534283,
+          "recall@1": 0.5757575757575758,
+          "recall@10": 0.8849040867389492,
+          "recall@5": 0.8192938559911037
+        },
+        "t2i": {
+          "mrr": 0.5545373242933415,
+          "ndcg@10": 0.5962033917960962,
+          "recall@1": 0.4512726761355646,
+          "recall@10": 0.753199268738574,
+          "recall@5": 0.6736042750667979
+        }
+      },
+      "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+      "precision": "cuda-bf16-autocast",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "b19af1f308045335f7d1fb44c55cfd2e4bc2cb6304c47bab5ff3fd5e3c3ba905",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 64,
+          "maximum": 66,
+          "mean": 18.219237800590633,
+          "prefix": "",
+          "truncation_fraction": 0.0002812543945999156
+        },
+        "query": {
+          "context_limit": 64,
+          "maximum": 66,
+          "mean": 18.219237800590633,
+          "prefix": "",
+          "truncation_fraction": 0.0002812543945999156
+        }
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.3144703281804566,
+          "ndcg@10": 0.26500856331023265,
+          "recall@1": 0.21267723102585487,
+          "recall@10": 0.5251598554350848,
+          "recall@5": 0.41757019738671114
+        },
+        "t2i": {
+          "mrr": 0.20935961131066105,
+          "ndcg@10": 0.23707228538581315,
+          "recall@1": 0.12923639431866124,
+          "recall@10": 0.37153705526648856,
+          "recall@5": 0.28153564899451555
+        }
+      },
+      "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+      "precision": "cuda-fp16-autocast",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "26ac55214f9cdcae01bab547f2def10f00cd5ef6fb9923b9a1b255efb61f6efa",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 128,
+          "maximum": 75,
+          "mean": 21.289973280832513,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 128,
+          "maximum": 75,
+          "mean": 21.289973280832513,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.3144703281804566,
+          "ndcg@10": 0.26500856331023265,
+          "recall@1": 0.21267723102585487,
+          "recall@10": 0.5251598554350848,
+          "recall@5": 0.41757019738671114
+        },
+        "t2i": {
+          "mrr": 0.20935961131066105,
+          "ndcg@10": 0.23707228538581315,
+          "recall@1": 0.12923639431866124,
+          "recall@10": 0.37153705526648856,
+          "recall@5": 0.28153564899451555
+        }
+      },
+      "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+      "precision": "cuda-fp16-autocast",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "f78ed07e9dbd07e4a7050f7f88bd2110ca9156c6dc89636a3582c7447ebf4e77",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 128,
+          "maximum": 75,
+          "mean": 21.289973280832513,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 128,
+          "maximum": 75,
+          "mean": 21.289973280832513,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.2789517003608726,
+          "ndcg@10": 0.17671642314935776,
+          "recall@1": 0.18,
+          "recall@10": 0.475,
+          "recall@5": 0.376
+        },
+        "t2i": {
+          "mrr": 0.16318680071823932,
+          "ndcg@10": 0.18376579799653434,
+          "recall@1": 0.09577922077922078,
+          "recall@10": 0.29615027829313545,
+          "recall@5": 0.22170686456400743
+        }
+      },
+      "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+      "precision": "cuda-fp16-autocast",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "b01b2062436fa33265c084ce321d68c654904463ab12d8a2c78d4f14fd88d3e4",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "document": {
+          "context_limit": 128,
+          "maximum": 307,
+          "mean": 23.035018552875695,
+          "prefix": "",
+          "truncation_fraction": 0.0006957328385899814
+        },
+        "query": {
+          "context_limit": 128,
+          "maximum": 307,
+          "mean": 23.035018552875695,
+          "prefix": "",
+          "truncation_fraction": 0.0006957328385899814
+        }
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.2789517003608726,
+          "ndcg@10": 0.17671642314935776,
+          "recall@1": 0.18,
+          "recall@10": 0.475,
+          "recall@5": 0.376
+        },
+        "t2i": {
+          "mrr": 0.16318680071823932,
+          "ndcg@10": 0.18376579799653434,
+          "recall@1": 0.09577922077922078,
+          "recall@10": 0.29615027829313545,
+          "recall@5": 0.22170686456400743
+        }
+      },
+      "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+      "precision": "cuda-fp16-autocast",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "3cac8737d7bc1caec2d850310283c03c1d8c3d28c00ea135a3986199b9882c57",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "document": {
+          "context_limit": 128,
+          "maximum": 307,
+          "mean": 23.035018552875695,
+          "prefix": "",
+          "truncation_fraction": 0.0006957328385899814
+        },
+        "query": {
+          "context_limit": 128,
+          "maximum": 307,
+          "mean": 23.035018552875695,
+          "prefix": "",
+          "truncation_fraction": 0.0006957328385899814
+        }
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.51180349107531,
+          "ndcg@10": 0.3486800867416191,
+          "recall@1": 0.3792016806722689,
+          "recall@10": 0.773109243697479,
+          "recall@5": 0.6712184873949579
+        },
+        "t2i": {
+          "mrr": 0.32862929615402364,
+          "ndcg@10": 0.37068297402917083,
+          "recall@1": 0.21997471554993678,
+          "recall@10": 0.5497260851243152,
+          "recall@5": 0.44521702486304254
+        }
+      },
+      "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+      "precision": "cuda-fp16-autocast",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "87812a3153e6d8932ce6a0591df60dd3cbe64b063a45b0db540fc3a0b4e9b2e9",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "document": {
+          "context_limit": 128,
+          "maximum": 76,
+          "mean": 24.24968394437421,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 128,
+          "maximum": 76,
+          "mean": 24.24968394437421,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.51180349107531,
+          "ndcg@10": 0.3486800867416191,
+          "recall@1": 0.3792016806722689,
+          "recall@10": 0.773109243697479,
+          "recall@5": 0.6712184873949579
+        },
+        "t2i": {
+          "mrr": 0.32862929615402364,
+          "ndcg@10": 0.37068297402917083,
+          "recall@1": 0.21997471554993678,
+          "recall@10": 0.5497260851243152,
+          "recall@5": 0.44521702486304254
+        }
+      },
+      "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+      "precision": "cuda-fp16-autocast",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "52f867cdb8948944c54c87b69b911a551f84461408462f0e5bd790b6cb815d1f",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "document": {
+          "context_limit": 128,
+          "maximum": 76,
+          "mean": 24.24968394437421,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 128,
+          "maximum": 76,
+          "mean": 24.24968394437421,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
     }
   ],
   "schema_version": 1,

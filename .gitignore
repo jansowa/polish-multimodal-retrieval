@@ -77,3 +77,7 @@ training/runs/f_series/**
 
 # Live failure sentinel of the independent Wiki download queue.
 /reports/data_study_20261030/wiki_recovery_20261031/FAILED.md
+
+# Locally archived upstream cards/code; inventory and pinned revisions are tracked.
+/reports/leaderboard_requested_20261101/sources/
+/reports/leaderboard_requested_20261101/qwen3_author.py

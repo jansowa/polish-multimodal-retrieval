@@ -1,5 +1,12 @@
 # STATUS — seria F / M
 
+S04-LEADERBOARD (2026-11-01), jawne odrębne zlecenie właściciela: działa
+wznawialna kolejka zwykłych ocen referencji, F01-b odłożony.
+[Raport i SHA](../leaderboard_requested_20261101/REPORT.md).
+Job: training/runs/f_series/leaderboard-requested-20261101/JOB.json.
+Nie jest to trening ani selekcja F; liczniki F GUARD/TEST bez zmian.
+Następny etap: odbiór kolejki. F01 pozostaje in_progress.
+
 Aktualizacja: 2026-11-01; S03-F01-a zakończono: protokół v3-F i podział VizWiz A/B zamrożone z SHA. F01 in_progress; następny etap S04-F01-b.
 
 | Pakiet | Stan | Blokery | Oczekujące bramki | Ostatnia aktualizacja | Linki (plan / raport / decyzja) |

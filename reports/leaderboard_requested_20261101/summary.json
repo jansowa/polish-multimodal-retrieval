@@ -1,0 +1,16 @@
+{
+  "existing_cells": 52,
+  "failed_preflight_had_no_inference": true,
+  "missing_cells": 158,
+  "models": 15,
+  "protected": {
+    "protocols/protocol-v3-f.json": "a734e9fb97ff7ee2d12e35fcae84a67d467c87197a627b9f930e634586c33fb3",
+    "retrieval_benchmark/catalog-current.json": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010",
+    "retrieval_benchmark/catalog.json": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8",
+    "src/pl_mmb_training/holdouts.py": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3"
+  },
+  "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+  "same_cell_recomputation": false,
+  "source": "registration.json",
+  "tests": "python -m unittest retrieval_benchmark.tests.test_requested_queue -v"
+}

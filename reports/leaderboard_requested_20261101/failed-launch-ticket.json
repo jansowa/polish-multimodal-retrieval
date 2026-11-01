@@ -1,0 +1,16 @@
+{
+  "estimated_end": "Within 48 hours; 8B CPU offload may extend runtime; not a measured ETA.",
+  "git_target": "origin main",
+  "log": "training/runs/f_series/leaderboard-requested-20261101/supervisor.log",
+  "output": "C:/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs",
+  "pid": 549016,
+  "registration": "reports/leaderboard_requested_20261101/registration.json",
+  "registration_sha256": "92ae204d8e2328a1a2b80b17a41bc895a077e96aa752527d39ce044ca315b908",
+  "resume_command": "~/.venvs/pl-mmb-benchmark/bin/python retrieval_benchmark/requested_queue.py start",
+  "run_id": "leaderboard-requested-20261101",
+  "simultaneous_models": 1,
+  "start_command": "~/.venvs/pl-mmb-benchmark/bin/python retrieval_benchmark/requested_queue.py start",
+  "started": "2026-11-01T13:54:05.679558+00:00",
+  "state": "training/runs/f_series/leaderboard-requested-20261101/STATE.json",
+  "user_authorized_weights_cleanup": true
+}

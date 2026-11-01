@@ -1,0 +1,2615 @@
+{
+  "authorization": "Owner requested these references, corrected aclip to clip, authorized serial weight removal and GitHub push; never recompute completed cells.",
+  "baseline_results_sha256": "9a2cd82c4da9a19b8964af393708a028c3b247ccb0aba7e2db57f85a70878fe5",
+  "cleanup": "Only weight blobs in this queue private HF cache; never remove shared caches, datasets or result files.",
+  "config": {
+    "data_study_results": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/evaluation",
+    "datasets": {
+      "VN_dev": {
+        "image_manifest": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\vn_dev_protocol\\manifest.jsonl",
+        "protocol": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\vn_dev_protocol\\retrieval_protocol.json",
+        "protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74"
+      },
+      "flickr30k_pl_local_test": {
+        "image_manifest": "C:\\Users\\jsowa\\benchmark-translations\\data-ood-20261030\\B\\frozen\\flickr30k_pl_local_test\\manifest.json",
+        "protocol": "C:\\Users\\jsowa\\benchmark-translations\\data-ood-20261030\\B\\frozen\\flickr30k_pl_local_test\\retrieval_protocol.json",
+        "protocol_sha256": "2f590ee80e6f3b4d84baf0cdc51c285f10a73c862ee4600cd5221fef28e03a6e"
+      },
+      "vizwiz_pl_local_validation": {
+        "image_manifest": "C:\\Users\\jsowa\\benchmark-translations\\data-ood-20261030\\B\\frozen\\vizwiz_pl_local_validation\\manifest.json",
+        "protocol": "C:\\Users\\jsowa\\benchmark-translations\\data-ood-20261030\\B\\frozen\\vizwiz_pl_local_validation\\retrieval_protocol.json",
+        "protocol_sha256": "63725b9983e19c0bea9fb6ec22775f577e06df7f00ce5fb83de601126397f70e"
+      },
+      "wiki_native_dev": {
+        "image_manifest": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\wiki_v2\\wiki_dev.jsonl",
+        "protocol": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\wiki_v2\\retrieval_protocol.json",
+        "protocol_sha256": "7e823db150884c06b4477c09eb729d51f1a0e321e30ffa483109778cc0e9fb2f"
+      },
+      "xm3600_pl": {
+        "image_manifest": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/xm3600-20261031/manifest.jsonl",
+        "protocol": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/xm3600-20261031/retrieval_protocol.json",
+        "protocol_sha256": "76f7c71b339ee73737fa8d5daee1feb7ed6b6f858e050c75b237a78cf24fc883"
+      },
+      "xtd10_full_1k": {
+        "image_manifest": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\xtd10_v2\\full_1k.jsonl",
+        "protocol": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\xtd10_v2\\full_retrieval_protocol.json",
+        "protocol_sha256": "b11d7ffc02794cad1322269f87d70c531da0ab91e5da55ac03634dd13219e2a0"
+      },
+      "xtd10_no_overlap": {
+        "image_manifest": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\xtd10_v2\\no_overlap.jsonl",
+        "protocol": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\series_2026-10-23\\xtd10_v2\\clean_retrieval_protocol.json",
+        "protocol_sha256": "f824eb00d96cccfb165ed8f7e2a9a2b8159d3771a0c8b842686cdd61e87982a9"
+      }
+    },
+    "flickr_parquet": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/flickr30k/test.parquet",
+    "models": {
+      "R0_seed42": {
+        "checkpoint": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-source-ablation-v1/VN_FULL/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743",
+        "role": "project",
+        "seed": 42,
+        "trained_on_wiki": false
+      },
+      "R0_seed43": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-43/VN_FULL/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "626127451432301b1127478a3b47f2394139753c9e3f2bdb52570a44b8273776",
+        "role": "project",
+        "seed": 43,
+        "trained_on_wiki": false
+      },
+      "R0_seed44": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-44/VN_FULL/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": true,
+        "revision": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+        "role": "project",
+        "seed": 44,
+        "trained_on_wiki": false
+      },
+      "R1_seed42": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-42/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "d45ce719846c060bfa489c8fa89a9caef8ee8275ffbd2c1d75f059c85491d622",
+        "role": "project",
+        "seed": 42,
+        "trained_on_wiki": false
+      },
+      "R1_seed43": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-43/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "ab6e24c0887777da50baca820f5a10d66bf12dd398c10f83e37d656e3620ad02",
+        "role": "project",
+        "seed": 43,
+        "trained_on_wiki": false
+      },
+      "R1_seed44": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-44/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "development / source-OOD",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": true,
+        "revision": "6437c7234d01a88c2895399e7a3b7e1577843f6507fe79cb8b04356ac2e1dbd9",
+        "role": "project",
+        "seed": 44,
+        "trained_on_wiki": false
+      },
+      "R3_seed42": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R3/seed-42/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "ID / development",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "09e4a96224eb18e0a8ed25011258980b03865873126d8cc9d1ce565689a07a89",
+        "role": "diagnostic",
+        "seed": 42,
+        "trained_on_wiki": true
+      },
+      "R3_seed43": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R3/seed-43/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "ID / development",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": false,
+        "revision": "65e695e33c54d41a402e55583c2b616075ed16fcd52f39fea64d95aa4b4baeca",
+        "role": "diagnostic",
+        "seed": 43,
+        "trained_on_wiki": true
+      },
+      "R3_seed44": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R3/seed-44/best.pt",
+        "exposure": {
+          "VN_dev": "ID / development",
+          "flickr30k_pl_local_test": "source-OOD to projector",
+          "vizwiz_pl_local_validation": "source-OOD to projector",
+          "wiki_native_dev": "ID / development",
+          "xtd10_full_1k": "ID source COCO",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "representative": true,
+        "revision": "0cd560a39263fc165e4e7cd4949a9f8deda77ec207ff10f1e34d6d9af03d0285",
+        "role": "diagnostic",
+        "seed": 44,
+        "trained_on_wiki": true
+      },
+      "R3_wiki2_seed43": {
+        "checkpoint": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/runs/R3/seed-43/best.pt",
+        "exposure": {
+          "VN_dev": "ID / checkpoint selection",
+          "flickr30k_pl_local_test": "source-OOD to projector; pretrained encoder exposure unknown",
+          "vizwiz_pl_local_validation": "source-OOD to projector; pretrained encoder exposure unknown",
+          "wiki_native_dev": "ID / Wiki variant selection",
+          "xm3600_pl": "held-out Open Images; pretrained encoder exposure unknown",
+          "xtd10_full_1k": "ID source COCO; known historical overlap",
+          "xtd10_no_overlap": "ID source COCO"
+        },
+        "generation": 2,
+        "representative": true,
+        "revision": "094122a574d8f2322b1434bb0eb0a5d539b510c36b5cfc74c2eb140c0e1f7636",
+        "role": "project",
+        "seed": 43,
+        "trained_on_wiki": true
+      },
+      "bge-vl-base": {
+        "download_budget_bytes": 299289098,
+        "repository": "BAAI/BGE-VL-base",
+        "revision": "cc4c733ed997dbee4ac70ccffb911e70c9c24b93",
+        "role": "reference"
+      },
+      "clip-b32-pl": {
+        "download_budget_bytes": 828850679,
+        "repository": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384",
+        "revision": "f889319e4605da4342341fdb62ad39386396d6e1",
+        "role": "reference"
+      },
+      "clip-b32-pl-32768": {
+        "download_budget_bytes": 879182383,
+        "repository": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768",
+        "revision": "62436cd6cd74f072dda57463b6916c95324e5b85",
+        "role": "reference"
+      },
+      "embeddinggemma-2": {
+        "download_budget_bytes": 1488915288,
+        "repository": "google/embeddinggemma-2",
+        "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+        "role": "reference"
+      },
+      "fashion-siglip": {
+        "download_budget_bytes": 812658408,
+        "repository": "Marqo/marqo-fashionSigLIP",
+        "revision": "c56244cc94f92419e8369fa71efdaf403b124ce8",
+        "role": "reference"
+      },
+      "mclip-b16plus": {
+        "download_budget_bytes": 3075890977,
+        "repository": "M-CLIP/XLM-Roberta-Large-Vit-B-16Plus",
+        "revision": "15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+        "role": "reference"
+      },
+      "metaclip-b16-32768": {
+        "download_budget_bytes": 565618932,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-b16-384-pol-32768",
+        "revision": "10800b373c918e68abe60e38cc90bea2aa3831f7",
+        "role": "reference"
+      },
+      "metaclip-l14-32768": {
+        "download_budget_bytes": 1659419604,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-l14-pol-32768",
+        "revision": "ca70ffb896e9e5c616d22827ab8659f31d25bc50",
+        "role": "reference"
+      },
+      "metaclip-m16": {
+        "download_budget_bytes": 341254292,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384",
+        "revision": "bc15d9f5ddabe0497898578493a6e81288057c90",
+        "role": "reference"
+      },
+      "metaclip-m16-32768": {
+        "download_budget_bytes": 374808820,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-32768",
+        "revision": "c3410d687df164929aafdd02f6d323b5b4f168dd",
+        "role": "reference"
+      },
+      "metaclip-s16": {
+        "download_budget_bytes": 198936052,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384",
+        "revision": "006223472923ba925226b59b6acd1e3e266c2382",
+        "role": "reference"
+      },
+      "metaclip-s16-32768": {
+        "download_budget_bytes": 224101988,
+        "repository": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-32768",
+        "revision": "9565b93ba0049a67775c24f332e46fe12e0e1796",
+        "role": "reference"
+      },
+      "mobileclip2-s2": {
+        "download_budget_bytes": 398071149,
+        "repository": "apple/MobileCLIP2-S2",
+        "revision": "72424e7025436db18f15c3eff6ee8c7c15ad4481",
+        "role": "english_control"
+      },
+      "openvision-s16-384": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 222976922,
+        "native_language": "English",
+        "repository": "UCSC-VLAA/openvision-vit-small-patch16-384",
+        "representative": true,
+        "revision": "74f6c00184e7e51b8c1756fd70a3eec8df7a2107",
+        "role": "reference"
+      },
+      "openvision-s8-224": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 222411674,
+        "native_language": "English",
+        "repository": "UCSC-VLAA/openvision-vit-small-patch8-224",
+        "representative": true,
+        "revision": "1ec9256da492b2676b4b1432f2065185946a3394",
+        "role": "reference"
+      },
+      "openvision-t8-384": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 69660570,
+        "native_language": "English",
+        "repository": "UCSC-VLAA/openvision-vit-tiny-patch8-384",
+        "representative": true,
+        "revision": "13268359ab5bf487f38c6827beaedf631e484eb4",
+        "role": "reference"
+      },
+      "pe-core-b16": {
+        "download_budget_bytes": 1790786632,
+        "repository": "facebook/PE-Core-B16-224",
+        "revision": "a16450b46fef32363459920c2685a1b4ef13dcd9",
+        "role": "english_control"
+      },
+      "pe-core-s16": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 348852712,
+        "native_language": "English",
+        "repository": "facebook/PE-Core-S16-384",
+        "representative": true,
+        "revision": "aabf3b990573d8114ae6e501b4697106beac8f19",
+        "role": "reference"
+      },
+      "pe-core-t16": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 278284008,
+        "native_language": "English",
+        "repository": "facebook/PE-Core-T16-384",
+        "representative": true,
+        "revision": "8b4722741a516c18e7d311f158f13c600fea6c78",
+        "role": "reference"
+      },
+      "siglip-i18n-256": {
+        "download_budget_bytes": 1482539144,
+        "repository": "timm/ViT-B-16-SigLIP-i18n-256",
+        "revision": "ec35f9450b91a8ea263a50e31f55ae069069d1df",
+        "role": "reference"
+      },
+      "siglip2-b32-256": {
+        "download_budget_bytes": 1507459216,
+        "repository": "timm/ViT-B-32-SigLIP2-256",
+        "revision": "cd1efb47643f2794413dd79ef24397c175032780",
+        "role": "reference"
+      },
+      "siglip2-base": {
+        "download_budget_bytes": 1503344520,
+        "repository": "google/siglip2-base-patch16-512",
+        "revision": "a89f5c5093f902bf39d3cd4d81d2c09867f0724b",
+        "role": "reference"
+      },
+      "siglip2-base-256": {
+        "download_budget_bytes": 1500985224,
+        "repository": "google/siglip2-base-patch16-256",
+        "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+        "role": "reference"
+      },
+      "siglip2-base-384": {
+        "download_budget_bytes": 1501968264,
+        "repository": "google/siglip2-base-patch16-384",
+        "revision": "f775b65a79762255128c981547af89addcfe0f88",
+        "role": "reference"
+      },
+      "siglip2-naflex": {
+        "download_budget_bytes": 1500985224,
+        "repository": "google/siglip2-base-patch16-naflex",
+        "revision": "b53b807d3a2d5e2b3911292f2d69e5341cdc064c",
+        "role": "reference"
+      },
+      "siglip2-pl": {
+        "download_budget_bytes": 767243552,
+        "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-16384",
+        "revision": "002ad19c05defef76aae6bc20e048c5fe930995b",
+        "role": "reference"
+      },
+      "siglip2-pl-32768": {
+        "download_budget_bytes": 817575248,
+        "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-32768",
+        "revision": "1a0edc19692189ba5ee44da531995cfd4138dd57",
+        "role": "reference"
+      },
+      "tinyclip-39m-native": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 332443148,
+        "native_language": "English",
+        "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+        "representative": true,
+        "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+        "role": "reference"
+      },
+      "tinyclip-40m-native": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 336859508,
+        "native_language": "English",
+        "repository": "wkcn/TinyCLIP-ViT-40M-32-Text-19M-LAION400M",
+        "representative": true,
+        "revision": "95ec8197b3f2fe7f747865c61ca556cf0768b2f7",
+        "role": "reference"
+      },
+      "tinyclip-61m-native": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 461571500,
+        "native_language": "English",
+        "repository": "wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M",
+        "representative": true,
+        "revision": "94cbbea5c7949cfe7bdafde64bcea5e403f59852",
+        "role": "reference"
+      },
+      "tinyclip-8m-native": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 93812468,
+        "native_language": "English",
+        "repository": "wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M",
+        "representative": true,
+        "revision": "a2a8c6eaa2549ad66eb7c31b85022bf58273a26c",
+        "role": "reference"
+      },
+      "tipsv2-b14": {
+        "download_budget_bytes": 783830160,
+        "repository": "google/tipsv2-b14",
+        "revision": "ed1e4dc6b74bf3935ae099e9d5eb30fa96528454",
+        "role": "reference"
+      },
+      "tipsv2-l14": {
+        "download_budget_bytes": 1951820760,
+        "repository": "google/tipsv2-l14",
+        "revision": "52847a71eb02a3082c370fbcd98cd799687bd4d0",
+        "role": "reference"
+      },
+      "uform3-english-small": {
+        "commercial_use_license": "apache-2.0",
+        "download_budget_bytes": 157779880,
+        "native_language": "English",
+        "repository": "unum-cloud/uform3-image-text-english-small",
+        "representative": true,
+        "revision": "a8d990ed0dc6340b9c25cb47f06f86b9ecb67fa6",
+        "role": "reference"
+      },
+      "vitamin-s": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 250017253,
+        "native_language": "English",
+        "repository": "jienengchen/ViTamin-S",
+        "representative": true,
+        "revision": "a33161305bb0c4154173fdb306de6a224440f616",
+        "role": "reference"
+      },
+      "vitamin-s-ltt": {
+        "commercial_use_license": "mit",
+        "download_budget_bytes": 583432933,
+        "native_language": "English",
+        "repository": "jienengchen/ViTamin-S-LTT",
+        "representative": true,
+        "revision": "53fdf22e7a2bc0b48b6f64bdc7c2182c5030a367",
+        "role": "reference"
+      }
+    },
+    "ood_frozen": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen",
+    "ood_results": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results",
+    "output": "C:/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs",
+    "series_results": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/evaluation"
+  },
+  "created": "2026-11-01T13:45:23.022934+00:00",
+  "datasets": {
+    "VN_dev": {
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74"
+    },
+    "flickr30k_pl_local_test": {
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "protocol_sha256": "2f590ee80e6f3b4d84baf0cdc51c285f10a73c862ee4600cd5221fef28e03a6e"
+    },
+    "vizwiz_pl_local_validation": {
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "protocol_sha256": "63725b9983e19c0bea9fb6ec22775f577e06df7f00ce5fb83de601126397f70e"
+    },
+    "wiki_native_dev": {
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "protocol_sha256": "7e823db150884c06b4477c09eb729d51f1a0e321e30ffa483109778cc0e9fb2f"
+    },
+    "xm3600_pl": {
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "protocol_sha256": "76f7c71b339ee73737fa8d5daee1feb7ed6b6f858e050c75b237a78cf24fc883"
+    },
+    "xtd10_full_1k": {
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "protocol_sha256": "b11d7ffc02794cad1322269f87d70c531da0ab91e5da55ac03634dd13219e2a0"
+    },
+    "xtd10_no_overlap": {
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "protocol_sha256": "f824eb00d96cccfb165ed8f7e2a9a2b8159d3771a0c8b842686cdd61e87982a9"
+    }
+  },
+  "implementation": {
+    "retrieval_benchmark/requested_models.py": "fa8002e29eaf82c680d09f2057cb65b432322e6620a9b08f202707c2ac48f6c8",
+    "retrieval_benchmark/requested_queue.py": "d879c05cec7b832bb94a655e5454184e9d61a21d4e44608d63501a9cb0c04a95",
+    "src/pl_mmb_benchmark/full_gallery.py": "ca5410c0781af7fefb99db2069f24b269678542a53030da7dc0e851cf184ae2f",
+    "src/pl_mmb_benchmark/models.py": "5c0b75ed2d4ca10add71f55e069cb762eb429eb4f8bb0dea981c7bd931b34228"
+  },
+  "jobs": [
+    {
+      "alias": "siglip2-pl",
+      "backend": "existing",
+      "batch_size": 64,
+      "components": [
+        {
+          "download_files": [
+            "config.json",
+            "model.safetensors",
+            "preprocessor_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer.model",
+            "tokenizer_config.json"
+          ],
+          "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-16384",
+          "revision": "002ad19c05defef76aae6bc20e048c5fe930995b",
+          "weights": [
+            {
+              "bytes": 767243552,
+              "lfs": {
+                "pointerSize": 134,
+                "sha256": "9385fbcbaa32972080bf84eca393e9e23e74d9ad81b4cfc26b8f4c128d6c7475",
+                "size": 767243552
+              },
+              "name": "model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ]
+      ],
+      "existing_sources": [
+        {
+          "dataset_id": "VN_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl\\VN_dev\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "9b5bbd67c2b20b7747ab541f58a0be8546f9a6ebb0283a039bbf3487cbe871e0"
+        },
+        {
+          "dataset_id": "VN_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl\\VN_dev\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "9826e48725f116fb7beaec5b79634f46d877930ef8936f99894b3adb7946a53d"
+        },
+        {
+          "dataset_id": "wiki_native_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl\\wiki_native_dev\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "fbb5087d7f0bdd2dfabf38fec4c9a8aa9e56b42ab01afc2bae975a9839b0b282"
+        },
+        {
+          "dataset_id": "wiki_native_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl\\wiki_native_dev\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "f2f2ab908770d9a00cc9d552d0e23fba8931483beaef55a6ef5b17260932e590"
+        },
+        {
+          "dataset_id": "xtd10_full_1k",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl\\xtd10_full_1k\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "7c41d9f1e46aac14e820d6c8eaf9e89b227559387943842b83f703152bd64180"
+        },
+        {
+          "dataset_id": "xtd10_full_1k",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl\\xtd10_full_1k\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "67044eea9b126294563e68e41cb99d1075982f5d05793aacbe57a517657432cf"
+        },
+        {
+          "dataset_id": "xtd10_no_overlap",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl\\xtd10_no_overlap\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "e2fba8940612e68bbeddea6fbb54e8cde1089055e276dbcb959caf5b6d7e571a"
+        },
+        {
+          "dataset_id": "xtd10_no_overlap",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl\\xtd10_no_overlap\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "7f7a9bf377ca11c74255d0aa5cdb21e37d3231a4b1beda3827b777e9e1174118"
+        },
+        {
+          "dataset_id": "vizwiz_pl_local_validation",
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\1068084b0b6989ea5f2c40679d11d0149554904562cc83617f73aeab6f1e77fa\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "851a4c0e256c08dcf9430d92892b3f67af5d192a6814ae214ed61bc649ad62e0"
+        },
+        {
+          "dataset_id": "flickr30k_pl_local_test",
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\35e06b78c26ae00a7c2ccc2433466223ca1c98ba82dc5d454c8a86d3fe930609\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "fe14df4fb377c706e24726b8cbce74f658661b7cb5dced76dfc72eac2976a75a"
+        },
+        {
+          "dataset_id": "flickr30k_pl_local_test",
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\884967adf975e15df62947e79b6c6ead21a2bbbd4609a3f28ceffb26b064a702\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "f4d609db992ef334623734ed9ab47f45c095292b62b9d013f56f58cb4e3d7c20"
+        },
+        {
+          "dataset_id": "vizwiz_pl_local_validation",
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\a638c98eb06b3b528b0f17335ed1258512b061a836b5dd84040b8d63659a549b\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "17f1920f274d8037afe552de2b6423fc173704d5bb3767543519368a55b19b9f"
+        }
+      ],
+      "interpreter": "pl-mmb-legacy-cu130",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b",
+      "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-16384",
+      "revision": "002ad19c05defef76aae6bc20e048c5fe930995b",
+      "weight_bytes": 767243552
+    },
+    {
+      "alias": "siglip2-pl-32768",
+      "backend": "existing",
+      "batch_size": 64,
+      "components": [
+        {
+          "download_files": [
+            "config.json",
+            "model.safetensors",
+            "preprocessor_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer.model",
+            "tokenizer_config.json"
+          ],
+          "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-32768",
+          "revision": "1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "weights": [
+            {
+              "bytes": 817575248,
+              "lfs": {
+                "pointerSize": 134,
+                "sha256": "85f9041b4fa521727757c1bcca40052f2bae009c00bfbf2f55cf89463fba3f81",
+                "size": 817575248
+              },
+              "name": "model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ]
+      ],
+      "existing_sources": [
+        {
+          "dataset_id": "VN_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl-32768\\VN_dev\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "5372e746b44ba07a762a8198bb9d5fdd09b035ca383cc1dd368e78b4a5f25c1d"
+        },
+        {
+          "dataset_id": "VN_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl-32768\\VN_dev\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "450853e514e4deab8322921f2dc829efcedee0c15a61a0f5e0accff592781f9b"
+        },
+        {
+          "dataset_id": "wiki_native_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl-32768\\wiki_native_dev\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "4f92294661e1f236644a5641307c2dba067dc35feee3fd9c944a64164ee843bf"
+        },
+        {
+          "dataset_id": "wiki_native_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl-32768\\wiki_native_dev\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "63f999bafc6e9add6e18be074e17d46d80898463fdbaf0eb21e98c07708cd52d"
+        },
+        {
+          "dataset_id": "xtd10_full_1k",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl-32768\\xtd10_full_1k\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "63d36fa333f7a6f2d6aeba538fb31abdf125fcccc55a5e993e839669dc613d59"
+        },
+        {
+          "dataset_id": "xtd10_full_1k",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl-32768\\xtd10_full_1k\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "8ac1dc180c9c9ec021085f85f0cc47e0fd024f612a7ee03248d4f2c67b4b3c0f"
+        },
+        {
+          "dataset_id": "xtd10_no_overlap",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl-32768\\xtd10_no_overlap\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "578b2db3c2c088396d9858dbd20a4d5b7252b426e1d12952bbf39c8247173f14"
+        },
+        {
+          "dataset_id": "xtd10_no_overlap",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip2-pl-32768\\xtd10_no_overlap\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "0bf969f11917bc5e4e595d455224be39f390d253dd59798a166524b10930751f"
+        },
+        {
+          "dataset_id": "vizwiz_pl_local_validation",
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\1f983e900176c2afcb69a41acbaca0db4e8ed9a973ead30da9f5cb2640bcdba2\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "5470b8a92870fbcb18fa2f6886d0a58595c5c45ea2da6d42f443037273cc7f48"
+        },
+        {
+          "dataset_id": "flickr30k_pl_local_test",
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\7bc0acbdb65413db27740eee4101f70b4ebcd195dc347747731b305fcd154b38\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "de54f94655a7ba65753a2f706bbe494ec570911ea52865358eba25ee85ab3444"
+        },
+        {
+          "dataset_id": "vizwiz_pl_local_validation",
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\8916128a978226ac8143af589d579f51505b80fff21de47b179a0edc39d2c578\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "b5cb729ba9dfcd4cd7415e83058d567289b83c8a1cb0f206f680f60c2ef3c363"
+        },
+        {
+          "dataset_id": "flickr30k_pl_local_test",
+          "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\e570209a641755f8df6d7b55c6d9e9a2f748a47135b9fda6f957d6487598f500\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "e29a8920666a493c3d331e3730853016d4d6c667a971c4077f3e2462810679e8"
+        }
+      ],
+      "interpreter": "pl-mmb-legacy-cu130",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57",
+      "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-32768",
+      "revision": "1a0edc19692189ba5ee44da531995cfd4138dd57",
+      "weight_bytes": 817575248
+    },
+    {
+      "alias": "clip-b32-pl",
+      "backend": "existing",
+      "batch_size": 64,
+      "components": [
+        {
+          "download_files": [
+            "1_Pooling/config.json",
+            "2_Dense/config.json",
+            "config.json",
+            "model.safetensors",
+            "modules.json",
+            "sentence_bert_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json"
+          ],
+          "repository": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384",
+          "revision": "f889319e4605da4342341fdb62ad39386396d6e1",
+          "weights": [
+            {
+              "bytes": 222030624,
+              "lfs": {
+                "pointerSize": 134,
+                "sha256": "827fb95b5a199446ee4463dd2d0843564a56a4286035c4059e2e4aa63e9665b7",
+                "size": 222030624
+              },
+              "name": "model.safetensors"
+            }
+          ]
+        },
+        {
+          "download_files": [
+            "config.json",
+            "merges.txt",
+            "preprocessor_config.json",
+            "pytorch_model.bin",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ],
+          "repository": "openai/clip-vit-base-patch32",
+          "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+          "weights": [
+            {
+              "bytes": 605247071,
+              "lfs": {
+                "pointerSize": 134,
+                "sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+                "size": 605247071
+              },
+              "name": "pytorch_model.bin"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ]
+      ],
+      "existing_sources": [
+        {
+          "dataset_id": "VN_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\clip-b32-pl\\VN_dev\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "4fd7ff9a6bd7de9985bd37cbd51988f53d5973c2361ec8cc8311849f9a8041ca"
+        },
+        {
+          "dataset_id": "VN_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\clip-b32-pl\\VN_dev\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "630b9bb20257ce9995e4f456b4c68aaf80c75a1cf0a955eadae34171acc518bf"
+        },
+        {
+          "dataset_id": "wiki_native_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\clip-b32-pl\\wiki_native_dev\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "c2faea04b65ecdd2d5c0cf606f986fe8fc4da6c5d33c4f897c2e97f4678a2e28"
+        },
+        {
+          "dataset_id": "wiki_native_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\clip-b32-pl\\wiki_native_dev\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "6e68374dfcce1a8e3bdc0d3c2ece60d06bcfbf39d2b8368c840aa7604345f9cb"
+        },
+        {
+          "dataset_id": "xtd10_full_1k",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\clip-b32-pl\\xtd10_full_1k\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "e156606dd873edd775a412d499d86e7795815a51dec57181ab47787d65f562e7"
+        },
+        {
+          "dataset_id": "xtd10_full_1k",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\clip-b32-pl\\xtd10_full_1k\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "37ce55774ec961014308e1bc84b3ca6b7fb552ee83ecb119dd3994ae62d9c1be"
+        },
+        {
+          "dataset_id": "xtd10_no_overlap",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\clip-b32-pl\\xtd10_no_overlap\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "742e176c050a3b9c45d436a1c5fe5fd864ce3b52eaa3ce59f9e022df3533bdbe"
+        },
+        {
+          "dataset_id": "xtd10_no_overlap",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\clip-b32-pl\\xtd10_no_overlap\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "45b4d63d33ff7f1815c8b35ba77a212acbd6be5c135e11319dffdc21aed7a4fe"
+        }
+      ],
+      "interpreter": "pl-mmb-legacy-cu130",
+      "license": "mit",
+      "missing": [
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1",
+      "repository": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384",
+      "revision": "f889319e4605da4342341fdb62ad39386396d6e1",
+      "weight_bytes": 827277695
+    },
+    {
+      "alias": "BGE-VL-large",
+      "backend": "bge",
+      "batch_size": 16,
+      "components": [
+        {
+          "download_files": [
+            "bge_vl_clip_transformer.py",
+            "config.json",
+            "config_sentence_transformers.json",
+            "merges.txt",
+            "model.safetensors",
+            "modeling_MMRet_CLIP.py",
+            "modules.json",
+            "preprocessor_config.json",
+            "sentence_bert_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ],
+          "repository": "BAAI/BGE-VL-large",
+          "revision": "40fb48217f521df22a2a5bf15edd52ed1146ef05",
+          "weights": [
+            {
+              "bytes": 855304818,
+              "lfs": {
+                "pointerSize": 134,
+                "sha256": "6d6c5dcd259b71a49a51916e5fd1dc248563ce08b41a713eb00dd296dfd8f5f4",
+                "size": 855304818
+              },
+              "name": "model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-benchmark",
+      "license": "mit",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "repository": "BAAI/BGE-VL-large",
+      "revision": "40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "weight_bytes": 855304818
+    },
+    {
+      "alias": "nomic-embed-vision-v1.5",
+      "backend": "nomic",
+      "batch_size": 16,
+      "components": [
+        {
+          "download_files": [
+            "config.json",
+            "model.safetensors",
+            "preprocessor_config.json"
+          ],
+          "repository": "nomic-ai/nomic-embed-vision-v1.5",
+          "revision": "e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+          "weights": [
+            {
+              "bytes": 371806672,
+              "lfs": {
+                "pointerSize": 134,
+                "sha256": "4616912a7cc91c06115ce7ccb9807095516b3d63a560ebf88057f626fb3535d6",
+                "size": 371806672
+              },
+              "name": "model.safetensors"
+            }
+          ]
+        },
+        {
+          "download_files": [
+            "1_Pooling/config.json",
+            "config.json",
+            "config_sentence_transformers.json",
+            "model.safetensors",
+            "modules.json",
+            "sentence_bert_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.txt"
+          ],
+          "repository": "nomic-ai/nomic-embed-text-v1.5",
+          "revision": "e9b6763023c676ca8431644204f50c2b100d9aab",
+          "weights": [
+            {
+              "bytes": 546938168,
+              "lfs": {
+                "pointerSize": 134,
+                "sha256": "9e7d262b1fe5ea350782829496efa831901b77486bbde1cea54a4c822d010d5c",
+                "size": 546938168
+              },
+              "name": "model.safetensors"
+            }
+          ]
+        },
+        {
+          "download_files": [
+            "config.json",
+            "configuration_hf_nomic_bert.py",
+            "modeling_hf_nomic_bert.py",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.txt"
+          ],
+          "repository": "nomic-ai/nomic-bert-2048",
+          "revision": "7710840340a098cfb869c4f65e87cf2b1b70caca",
+          "weights": []
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-benchmark",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:nomic-ai/nomic-embed-vision-v1.5@e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "repository": "nomic-ai/nomic-embed-vision-v1.5",
+      "revision": "e3a725bce72db07ca4adb1d83da08903f3ee02f8",
+      "weight_bytes": 918744840
+    },
+    {
+      "alias": "siglip-i18n-256",
+      "backend": "existing",
+      "batch_size": 64,
+      "components": [
+        {
+          "download_files": [
+            "open_clip_config.json",
+            "open_clip_model.safetensors",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json"
+          ],
+          "repository": "timm/ViT-B-16-SigLIP-i18n-256",
+          "revision": "ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "weights": [
+            {
+              "bytes": 1482539144,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "0dca7e40ddcc0c89c39275226bd8609d96c60b1605bc1ae612a68f02170f14ce",
+                "size": 1482539144
+              },
+              "name": "open_clip_model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ]
+      ],
+      "existing_sources": [
+        {
+          "dataset_id": "VN_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip-i18n-256\\VN_dev\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "cd4398af19881976242293991a4e7691196aa211e0e582aa0b93a4dcde50308a"
+        },
+        {
+          "dataset_id": "VN_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip-i18n-256\\VN_dev\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "cc742920f318ff957b4d5760c6e5485528583d047d639c63d11b5bddb12bf4f4"
+        },
+        {
+          "dataset_id": "wiki_native_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip-i18n-256\\wiki_native_dev\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "cb22d169d71352add522705831742175e41dc8cb69dbae0ba89271892df83027"
+        },
+        {
+          "dataset_id": "wiki_native_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip-i18n-256\\wiki_native_dev\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "65e3b8e13188cd9903a0531cd59411410ccf14e2f9659230f2fd88d6bc016fdb"
+        },
+        {
+          "dataset_id": "xtd10_full_1k",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip-i18n-256\\xtd10_full_1k\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "2cb6c8f7cf9d8bbadb754645c3ebabf9996652066bb3c657b3ada70a8b6ba256"
+        },
+        {
+          "dataset_id": "xtd10_full_1k",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip-i18n-256\\xtd10_full_1k\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "9d184fe104cf95ba1d5fcb7fe1bc46292a50e7edde1ff5a77843ce268a5050d5"
+        },
+        {
+          "dataset_id": "xtd10_no_overlap",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip-i18n-256\\xtd10_no_overlap\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "89b88e7fe7ecad29d08885cbf73750ccefd0e2d95ff5455226e4065a20092635"
+        },
+        {
+          "dataset_id": "xtd10_no_overlap",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\siglip-i18n-256\\xtd10_no_overlap\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "409849a90e50d8b284aeae433452cb9c78cbca8fdc8ef4878cf9dcee47e4668c"
+        },
+        {
+          "dataset_id": "vizwiz_pl_local_validation",
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\b97d7759466d91972867b39d436614a6a126b3b3fad4827a262b48d898be9e9f\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "7fd6ed9a643d5c40581f2cdcc2b40f8f311a21efb53771751f30351aa1039d56"
+        },
+        {
+          "dataset_id": "flickr30k_pl_local_test",
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\c68bfe6241e36dc60c339b1f2922dbc39a313a8f05fd45733f8c11f73e68727b\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "24963dbc87a77d5ff0771acdc1e02deaa3131ebb72cc6d9f58c3adc2c0be41d4"
+        },
+        {
+          "dataset_id": "flickr30k_pl_local_test",
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\e78a8078a982a33b630d9a130d1c747d115bf96069eb741b435062629e4d3a14\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "6021bfff0fa3dc7c808c725e17c1fe3dd8510d7c49aa3ef84baaa31b73e95332"
+        },
+        {
+          "dataset_id": "vizwiz_pl_local_validation",
+          "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\retrieval-benchmark-v1\\runs\\e8050a334c2da00e98a7e211c992fb1dd5b8deb02e6f4c158e9733eddc813f6c\\result.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "78cc6a15bee302bf03a9fcd81d08e8836a2c4e7ca514cf75a7b1c232d0f72e9c"
+        }
+      ],
+      "interpreter": "pl-mmb-legacy-cu130",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df",
+      "repository": "timm/ViT-B-16-SigLIP-i18n-256",
+      "revision": "ec35f9450b91a8ea263a50e31f55ae069069d1df",
+      "weight_bytes": 1482539144
+    },
+    {
+      "alias": "mclip-b16plus",
+      "backend": "existing",
+      "batch_size": 64,
+      "components": [
+        {
+          "download_files": [
+            "config.json",
+            "pytorch_model.bin",
+            "sentencepiece.bpe.model",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json"
+          ],
+          "repository": "M-CLIP/XLM-Roberta-Large-Vit-B-16Plus",
+          "revision": "15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+          "weights": [
+            {
+              "bytes": 2242347565,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "a7124266439dd6bce544c23b57249a2ca764dbcd38e8eab16ce272c28c27b049",
+                "size": 2242347565
+              },
+              "name": "pytorch_model.bin"
+            }
+          ]
+        },
+        {
+          "download_files": [
+            "merges.txt",
+            "open_clip_config.json",
+            "open_clip_model.safetensors",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ],
+          "repository": "timm/vit_base_patch16_plus_clip_240.laion400m_e31",
+          "revision": "6dbe024bee4f13f90ad3676d92957e68868a616d",
+          "weights": [
+            {
+              "bytes": 833543412,
+              "lfs": {
+                "pointerSize": 134,
+                "sha256": "f65b63daa30d38e9c4afe87ebd40140cee700cf0a1091711248f512f48706840",
+                "size": 833543412
+              },
+              "name": "open_clip_model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ]
+      ],
+      "existing_sources": [
+        {
+          "dataset_id": "VN_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\mclip-b16plus\\VN_dev\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "726a9bb5526927093d8267fa0b99163ed6db7537f3b6db3b77c9c3b55304fab5"
+        },
+        {
+          "dataset_id": "VN_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\mclip-b16plus\\VN_dev\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "f3dbcfe12f40bb96c1ecf020e0273988101b72b33cb4143cf25f1696dec97075"
+        },
+        {
+          "dataset_id": "wiki_native_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\mclip-b16plus\\wiki_native_dev\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "a4c97d4d95a37a8da49a8ce0f22bb4184ac0e4e6df8ebd490d76ff58bac62cb5"
+        },
+        {
+          "dataset_id": "wiki_native_dev",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\mclip-b16plus\\wiki_native_dev\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "33f31daff38773766344c1259d2c867a6fdcbac7f1533dea535c56433b407987"
+        },
+        {
+          "dataset_id": "xtd10_full_1k",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\mclip-b16plus\\xtd10_full_1k\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "064720af83e503c445f5c36241b07ab3f83e01cb9d0d3ca3489ae2ce09f781f3"
+        },
+        {
+          "dataset_id": "xtd10_full_1k",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\mclip-b16plus\\xtd10_full_1k\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "c6a354c324c1b1a25259d8984d8cb37c745e7cfdfc7a5d14f07e588881d9120e"
+        },
+        {
+          "dataset_id": "xtd10_no_overlap",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\mclip-b16plus\\xtd10_no_overlap\\author_recommended.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "author_recommended",
+          "sha256": "2c65e28dbc7e109c5dcd0eaaaa5670df4cde26a5e278f9e8a642df486537d43a"
+        },
+        {
+          "dataset_id": "xtd10_no_overlap",
+          "equivalent_prompt_mode": null,
+          "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+          "path": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\evaluation\\references\\mclip-b16plus\\xtd10_no_overlap\\v2_no_instructions.json",
+          "profile": "historical-native-v2",
+          "prompt_mode": "v2_no_instructions",
+          "sha256": "b795efde48cd6b11a0338c0f8eae6f22006bdb266bb005ce9415a94a95d7652a"
+        }
+      ],
+      "interpreter": "pl-mmb-benchmark",
+      "license": null,
+      "missing": [
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "repository": "M-CLIP/XLM-Roberta-Large-Vit-B-16Plus",
+      "revision": "15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "weight_bytes": 3075890977
+    },
+    {
+      "alias": "siglip2-large-patch16-512",
+      "backend": "siglip",
+      "batch_size": 16,
+      "components": [
+        {
+          "download_files": [
+            "config.json",
+            "model.safetensors",
+            "preprocessor_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer.model",
+            "tokenizer_config.json"
+          ],
+          "repository": "google/siglip2-large-patch16-512",
+          "revision": "49488218e80259885f3be61d7a9455faf833b7a8",
+          "weights": [
+            {
+              "bytes": 3529350088,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "cf3bad327b12d07618bc35cdc86614112e33adef2b852aef5126d9b2ed8e2627",
+                "size": 3529350088
+              },
+              "name": "model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-legacy-cu130",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:google/siglip2-large-patch16-512@49488218e80259885f3be61d7a9455faf833b7a8",
+      "repository": "google/siglip2-large-patch16-512",
+      "revision": "49488218e80259885f3be61d7a9455faf833b7a8",
+      "weight_bytes": 3529350088
+    },
+    {
+      "alias": "CLIP-ViT-H-14-laion2B-s32B-b79K",
+      "backend": "openclip",
+      "batch_size": 16,
+      "components": [
+        {
+          "download_files": [
+            "config.json",
+            "merges.txt",
+            "open_clip_config.json",
+            "open_clip_model.safetensors",
+            "preprocessor_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ],
+          "repository": "laion/CLIP-ViT-H-14-laion2B-s32B-b79K",
+          "revision": "1c2b8495b28150b8a4922ee1c8edee224c284c0c",
+          "weights": [
+            {
+              "bytes": 3944517836,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "0084e75319a50ad85ef45377bad5bc38f2f58824459eb690048d51c9f8863be5",
+                "size": 3944517836
+              },
+              "name": "open_clip_model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-legacy-cu130",
+      "license": "mit",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:laion/CLIP-ViT-H-14-laion2B-s32B-b79K@1c2b8495b28150b8a4922ee1c8edee224c284c0c",
+      "repository": "laion/CLIP-ViT-H-14-laion2B-s32B-b79K",
+      "revision": "1c2b8495b28150b8a4922ee1c8edee224c284c0c",
+      "weight_bytes": 3944517836
+    },
+    {
+      "alias": "Qwen3-VL-Embedding-2B",
+      "backend": "qwen3",
+      "batch_size": 1,
+      "components": [
+        {
+          "download_files": [
+            "1_Pooling/config.json",
+            "added_tokens.json",
+            "chat_template.jinja",
+            "config.json",
+            "config_sentence_transformers.json",
+            "merges.txt",
+            "model.safetensors",
+            "modules.json",
+            "preprocessor_config.json",
+            "scripts/qwen3_vl_embedding.py",
+            "sentence_bert_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "video_preprocessor_config.json",
+            "vocab.json"
+          ],
+          "repository": "Qwen/Qwen3-VL-Embedding-2B",
+          "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+          "weights": [
+            {
+              "bytes": 4255140312,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "c73fa9caeddeb3ff831d46c085a7a5708343248ca777e90f2d486964464509c1",
+                "size": 4255140312
+              },
+              "name": "model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-modern",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "repository": "Qwen/Qwen3-VL-Embedding-2B",
+      "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "weight_bytes": 4255140312
+    },
+    {
+      "alias": "siglip2-so400m-patch16-512",
+      "backend": "siglip",
+      "batch_size": 16,
+      "components": [
+        {
+          "download_files": [
+            "config.json",
+            "model.safetensors",
+            "preprocessor_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer.model",
+            "tokenizer_config.json"
+          ],
+          "repository": "google/siglip2-so400m-patch16-512",
+          "revision": "ceea1cba8130d8271436da4828633198c176a775",
+          "weights": [
+            {
+              "bytes": 4546331880,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "a621bd212e1b3329b428595f9693217e19587afe826adf3e5c241a16392e8973",
+                "size": 4546331880
+              },
+              "name": "model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-legacy-cu130",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:google/siglip2-so400m-patch16-512@ceea1cba8130d8271436da4828633198c176a775",
+      "repository": "google/siglip2-so400m-patch16-512",
+      "revision": "ceea1cba8130d8271436da4828633198c176a775",
+      "weight_bytes": 4546331880
+    },
+    {
+      "alias": "CLIP-ViT-g-14-laion2B-s12B-b42K",
+      "backend": "openclip",
+      "batch_size": 16,
+      "components": [
+        {
+          "download_files": [
+            "config.json",
+            "merges.txt",
+            "open_clip_config.json",
+            "open_clip_pytorch_model.safetensors",
+            "preprocessor_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ],
+          "repository": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+          "revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+          "weights": [
+            {
+              "bytes": 5466804796,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+                "size": 5466804796
+              },
+              "name": "open_clip_pytorch_model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-legacy-cu130",
+      "license": "mit",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:laion/CLIP-ViT-g-14-laion2B-s12B-b42K@4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+      "repository": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+      "revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+      "weight_bytes": 5466804796
+    },
+    {
+      "alias": "gme-Qwen2-VL-2B-Instruct",
+      "backend": "gme",
+      "batch_size": 1,
+      "components": [
+        {
+          "download_files": [
+            "1_Pooling/config.json",
+            "added_tokens.json",
+            "chat_template.json",
+            "config.json",
+            "config_sentence_transformers.json",
+            "custom_st.py",
+            "generation_config.json",
+            "gme_inference.py",
+            "merges.txt",
+            "model-00001-of-00003.safetensors",
+            "model-00002-of-00003.safetensors",
+            "model-00003-of-00003.safetensors",
+            "model.safetensors.index.json",
+            "modeling_gme_qwen2vl.py",
+            "modules.json",
+            "preprocessor_config.json",
+            "results.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ],
+          "repository": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+          "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+          "weights": [
+            {
+              "bytes": 4046085544,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "ce525de1d47307ebf63285ce4f2f80ca8ffffd94235b2151585e5714307e4e99",
+                "size": 4046085544
+              },
+              "name": "model-00001-of-00003.safetensors"
+            },
+            {
+              "bytes": 4063188000,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "7b42b76064f5d14ee9d0390f9a1f3571fc66eae4f40764f818cb5e9aafc5d6f5",
+                "size": 4063188000
+              },
+              "name": "model-00002-of-00003.safetensors"
+            },
+            {
+              "bytes": 726747736,
+              "lfs": {
+                "pointerSize": 134,
+                "sha256": "e3f1342fe1dd7df1582be00ebd45557316015050ae2edb841e61150825f16adc",
+                "size": 726747736
+              },
+              "name": "model-00003-of-00003.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-benchmark",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "repository": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+      "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "weight_bytes": 8836021280
+    },
+    {
+      "alias": "CLIP-ViT-bigG-14-laion2B-39B-b160k",
+      "backend": "openclip",
+      "batch_size": 16,
+      "components": [
+        {
+          "download_files": [
+            "config.json",
+            "merges.txt",
+            "open_clip_config.json",
+            "open_clip_model.safetensors",
+            "preprocessor_config.json",
+            "pytorch_model.bin.index.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "vocab.json"
+          ],
+          "repository": "laion/CLIP-ViT-bigG-14-laion2B-39B-b160k",
+          "revision": "743c27bd53dfe508a0ade0f50698f99b39d03bec",
+          "weights": [
+            {
+              "bytes": 10158382892,
+              "lfs": {
+                "pointerSize": 136,
+                "sha256": "db71bd27925917762c506c1b8a08e191d236e5586b5cd99f77d11aced578ec34",
+                "size": 10158382892
+              },
+              "name": "open_clip_model.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-legacy-cu130",
+      "license": "mit",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "repository": "laion/CLIP-ViT-bigG-14-laion2B-39B-b160k",
+      "revision": "743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "weight_bytes": 10158382892
+    },
+    {
+      "alias": "Qwen3-VL-Embedding-8B",
+      "backend": "qwen3",
+      "batch_size": 1,
+      "components": [
+        {
+          "download_files": [
+            "1_Pooling/config.json",
+            "added_tokens.json",
+            "chat_template.jinja",
+            "config.json",
+            "config_sentence_transformers.json",
+            "merges.txt",
+            "model-00001-of-00004.safetensors",
+            "model-00002-of-00004.safetensors",
+            "model-00003-of-00004.safetensors",
+            "model-00004-of-00004.safetensors",
+            "model.safetensors.index.json",
+            "modules.json",
+            "preprocessor_config.json",
+            "scripts/qwen3_vl_embedding.py",
+            "sentence_bert_config.json",
+            "special_tokens_map.json",
+            "tokenizer.json",
+            "tokenizer_config.json",
+            "video_preprocessor_config.json",
+            "vocab.json"
+          ],
+          "repository": "Qwen/Qwen3-VL-Embedding-8B",
+          "revision": "2c4565515e0f265c6511776e7193b22c0968ddc7",
+          "weights": [
+            {
+              "bytes": 4998056552,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "79ef275ec5f751d5fb59357c00d473268f9fd74abf5e38aa30137d268e7733c4",
+                "size": 4998056552
+              },
+              "name": "model-00001-of-00004.safetensors"
+            },
+            {
+              "bytes": 4915962464,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "a4da61f512e84fc0f0b80bcb7bcc5137eb3bf25b658a7d55f84f4056078545f0",
+                "size": 4915962464
+              },
+              "name": "model-00002-of-00004.safetensors"
+            },
+            {
+              "bytes": 4915962496,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "7fb17cf8f06d6fe5aaacf114e85c4e6d8318799f24b517f50d1ec154a8d47007",
+                "size": 4915962496
+              },
+              "name": "model-00003-of-00004.safetensors"
+            },
+            {
+              "bytes": 1459698112,
+              "lfs": {
+                "pointerSize": 135,
+                "sha256": "000213b6d1d03ed9023fac23716da51ec4c5be221a04526c2f732d31d8fed1f5",
+                "size": 1459698112
+              },
+              "name": "model-00004-of-00004.safetensors"
+            }
+          ]
+        }
+      ],
+      "existing_cells": [],
+      "existing_sources": [],
+      "interpreter": "pl-mmb-modern",
+      "license": "apache-2.0",
+      "missing": [
+        [
+          "VN_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "VN_dev",
+          "author_recommended"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "v2_no_instructions"
+        ],
+        [
+          "flickr30k_pl_local_test",
+          "author_recommended"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "v2_no_instructions"
+        ],
+        [
+          "vizwiz_pl_local_validation",
+          "author_recommended"
+        ],
+        [
+          "wiki_native_dev",
+          "v2_no_instructions"
+        ],
+        [
+          "wiki_native_dev",
+          "author_recommended"
+        ],
+        [
+          "xm3600_pl",
+          "v2_no_instructions"
+        ],
+        [
+          "xm3600_pl",
+          "author_recommended"
+        ],
+        [
+          "xtd10_full_1k",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_full_1k",
+          "author_recommended"
+        ],
+        [
+          "xtd10_no_overlap",
+          "v2_no_instructions"
+        ],
+        [
+          "xtd10_no_overlap",
+          "author_recommended"
+        ]
+      ],
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-8B@2c4565515e0f265c6511776e7193b22c0968ddc7",
+      "repository": "Qwen/Qwen3-VL-Embedding-8B",
+      "revision": "2c4565515e0f265c6511776e7193b22c0968ddc7",
+      "weight_bytes": 16289679624
+    }
+  ],
+  "profile": "historical-native-v2",
+  "protected": {
+    "protocols/protocol-v3-f.json": "a734e9fb97ff7ee2d12e35fcae84a67d467c87197a627b9f930e634586c33fb3",
+    "retrieval_benchmark/catalog-current.json": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010",
+    "retrieval_benchmark/catalog.json": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8",
+    "src/pl_mmb_training/holdouts.py": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3"
+  },
+  "schema_version": 1,
+  "scope": "Ordinary leaderboard reference evaluation, no F-series training or selection; frozen F protocol untouched.",
+  "stage": "S04-LEADERBOARD"
+}

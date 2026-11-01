@@ -11,3 +11,5 @@
 | S02-REPO-HYGIENE | 2026-11-01 | Porządkowanie zastanych zmian Git na zlecenie użytkownika; bez F01 | done | [S02-REPO-HYGIENE](handoffs/S02-REPO-HYGIENE.md) | [commity tematyczne](S02-REPO-HYGIENE/commits-before-handoff.json); commit domknięcia zawierający ten wpis: `[S02-REPO-HYGIENE] Close repository hygiene stage and hand off F01` |
 
 | S03-F01-a | 2026-11-01 | F01 kroki 1–2: protokół v3-F, podział VizWiz A/B, kontrola rejestru | done | [S03-F01-a](handoffs/S03-F01-a.md) | commit zawierający ten wpis: `[S03-F01-a] Freeze protocol and component-disjoint VizWiz halves` |
+
+| S04-LEADERBOARD | 2026-11-01 | Zlecona kolejka referencji: deduplikacja, czyszczenie wag, automatyczny push | partial (job działa; odbiór osobno) | [handoff](handoffs/S04-LEADERBOARD.md) | commit zawierający wpis: `[S04-LEADERBOARD] Queue requested reference evaluation and publication` |

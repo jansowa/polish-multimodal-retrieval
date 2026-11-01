@@ -1,0 +1,1772 @@
+[
+  {
+    "files": [
+      {
+        "bytes": 1570,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 96,
+        "lfs": null,
+        "name": "1_Pooling/config.json"
+      },
+      {
+        "bytes": 24249,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 707,
+        "lfs": null,
+        "name": "added_tokens.json"
+      },
+      {
+        "bytes": 5519,
+        "lfs": null,
+        "name": "chat_template.jinja"
+      },
+      {
+        "bytes": 1570,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 238,
+        "lfs": null,
+        "name": "config_sentence_transformers.json"
+      },
+      {
+        "bytes": 1671853,
+        "lfs": null,
+        "name": "merges.txt"
+      },
+      {
+        "bytes": 4255140312,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "c73fa9caeddeb3ff831d46c085a7a5708343248ca777e90f2d486964464509c1",
+          "size": 4255140312
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 429,
+        "lfs": null,
+        "name": "modules.json"
+      },
+      {
+        "bytes": 783,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 13258,
+        "lfs": null,
+        "name": "scripts/qwen3_vl_embedding.py"
+      },
+      {
+        "bytes": 770,
+        "lfs": null,
+        "name": "sentence_bert_config.json"
+      },
+      {
+        "bytes": 613,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 11423705,
+        "lfs": {
+          "pointerSize": 133,
+          "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "size": 11423705
+        },
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 5404,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 817,
+        "lfs": null,
+        "name": "video_preprocessor_config.json"
+      },
+      {
+        "bytes": 2776833,
+        "lfs": null,
+        "name": "vocab.json"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "e34b0efd25273371a7f8f790fd1bd532be1e432c2028bb4cd7150d57d9d1c704",
+    "repository": "Qwen/Qwen3-VL-Embedding-2B",
+    "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1570,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 3176,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 891,
+        "lfs": null,
+        "name": "open_clip_config.json"
+      },
+      {
+        "bytes": 1482539144,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "0dca7e40ddcc0c89c39275226bd8609d96c60b1605bc1ae612a68f02170f14ce",
+          "size": 1482539144
+        },
+        "name": "open_clip_model.safetensors"
+      },
+      {
+        "bytes": 1482631262,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "38610b1d8724e2beafb86ee982518564fa50ef215f14e6edbde136dee203f43a",
+          "size": 1482631262
+        },
+        "name": "open_clip_pytorch_model.bin"
+      },
+      {
+        "bytes": 2200,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 16354568,
+        "lfs": {
+          "pointerSize": 133,
+          "sha256": "e08efb6895b327cd9943839c0d4ec23aedf9f9aac1cda9b9a14803c85be96f72",
+          "size": 16354568
+        },
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 20708,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "59a332e9cd08e5afdaa0250aa32460b9593fd44e0b11c6668a743156861a5b26",
+    "repository": "timm/ViT-B-16-SigLIP-i18n-256",
+    "revision": "ec35f9450b91a8ea263a50e31f55ae069069d1df"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1519,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 3843,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 412,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 817575248,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "85f9041b4fa521727757c1bcca40052f2bae009c00bfbf2f55cf89463fba3f81",
+          "size": 817575248
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 394,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 636,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 4689808,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 4241003,
+        "lfs": {
+          "pointerSize": 132,
+          "sha256": "61a7b147390c64585d6c3543dd6fc636906c9af3865a5548f27f31aee1d4c8e2",
+          "size": 4241003
+        },
+        "name": "tokenizer.model"
+      },
+      {
+        "bytes": 49150,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "aafd8e2d1621629870de323eec6775abc5434f8472fd2a61059d30f180c6a9c4",
+    "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-32768",
+    "revision": "1a0edc19692189ba5ee44da531995cfd4138dd57"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1570,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 3378,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 537,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 3529350088,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "cf3bad327b12d07618bc35cdc86614112e33adef2b852aef5126d9b2ed8e2627",
+          "size": 3529350088
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 394,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 636,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 34363039,
+        "lfs": {
+          "pointerSize": 133,
+          "sha256": "cb9140fae3ac5122c972d37adf83e1248471a38147ad76f8215c8872c6fd8322",
+          "size": 34363039
+        },
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 4241003,
+        "lfs": {
+          "pointerSize": 132,
+          "sha256": "61a7b147390c64585d6c3543dd6fc636906c9af3865a5548f27f31aee1d4c8e2",
+          "size": 4241003
+        },
+        "name": "tokenizer.model"
+      },
+      {
+        "bytes": 47164,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "264ce41dbc1e39986d73eef006b2ff3b3bd22b0be4c39a5e9cfc9fe239302a7a",
+    "repository": "google/siglip2-large-patch16-512",
+    "revision": "49488218e80259885f3be61d7a9455faf833b7a8"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1570,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 3381,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 537,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 4546331880,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "a621bd212e1b3329b428595f9693217e19587afe826adf3e5c241a16392e8973",
+          "size": 4546331880
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 394,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 636,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 34363039,
+        "lfs": {
+          "pointerSize": 133,
+          "sha256": "cb9140fae3ac5122c972d37adf83e1248471a38147ad76f8215c8872c6fd8322",
+          "size": 34363039
+        },
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 4241003,
+        "lfs": {
+          "pointerSize": 132,
+          "sha256": "61a7b147390c64585d6c3543dd6fc636906c9af3865a5548f27f31aee1d4c8e2",
+          "size": 4241003
+        },
+        "name": "tokenizer.model"
+      },
+      {
+        "bytes": 47164,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "b250bd6fd150e7e687cfdd5600daf207c0bf0185c624ebd2f4f7a29aea881044",
+    "repository": "google/siglip2-so400m-patch16-512",
+    "revision": "ceea1cba8130d8271436da4828633198c176a775"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1519,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 316,
+        "lfs": null,
+        "name": "1_Pooling/config.json"
+      },
+      {
+        "bytes": 101455,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 392,
+        "lfs": null,
+        "name": "added_tokens.json"
+      },
+      {
+        "bytes": 1050,
+        "lfs": null,
+        "name": "chat_template.json"
+      },
+      {
+        "bytes": 1251,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 161,
+        "lfs": null,
+        "name": "config_sentence_transformers.json"
+      },
+      {
+        "bytes": 8622,
+        "lfs": null,
+        "name": "custom_st.py"
+      },
+      {
+        "bytes": 249,
+        "lfs": null,
+        "name": "generation_config.json"
+      },
+      {
+        "bytes": 13192,
+        "lfs": null,
+        "name": "gme_inference.py"
+      },
+      {
+        "bytes": 525625,
+        "lfs": null,
+        "name": "images/gme_logo.png"
+      },
+      {
+        "bytes": 1671853,
+        "lfs": null,
+        "name": "merges.txt"
+      },
+      {
+        "bytes": 4046085544,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "ce525de1d47307ebf63285ce4f2f80ca8ffffd94235b2151585e5714307e4e99",
+          "size": 4046085544
+        },
+        "name": "model-00001-of-00003.safetensors"
+      },
+      {
+        "bytes": 4063188000,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "7b42b76064f5d14ee9d0390f9a1f3571fc66eae4f40764f818cb5e9aafc5d6f5",
+          "size": 4063188000
+        },
+        "name": "model-00002-of-00003.safetensors"
+      },
+      {
+        "bytes": 726747736,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "e3f1342fe1dd7df1582be00ebd45557316015050ae2edb841e61150825f16adc",
+          "size": 726747736
+        },
+        "name": "model-00003-of-00003.safetensors"
+      },
+      {
+        "bytes": 56411,
+        "lfs": null,
+        "name": "model.safetensors.index.json"
+      },
+      {
+        "bytes": 13261,
+        "lfs": null,
+        "name": "modeling_gme_qwen2vl.py"
+      },
+      {
+        "bytes": 341,
+        "lfs": null,
+        "name": "modules.json"
+      },
+      {
+        "bytes": 347,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 15851,
+        "lfs": null,
+        "name": "results.json"
+      },
+      {
+        "bytes": 613,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 7030148,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 4256,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 2776833,
+        "lfs": null,
+        "name": "vocab.json"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "eb0b7d8e004647d4a0cb76525385a8d6b6d43471d94599878aff3865a2a42c5b",
+    "repository": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+    "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1519,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 3843,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 412,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 767243552,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "9385fbcbaa32972080bf84eca393e9e23e74d9ad81b4cfc26b8f4c128d6c7475",
+          "size": 767243552
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 394,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 636,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 2288041,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 4241003,
+        "lfs": {
+          "pointerSize": 132,
+          "sha256": "61a7b147390c64585d6c3543dd6fc636906c9af3865a5548f27f31aee1d4c8e2",
+          "size": 4241003
+        },
+        "name": "tokenizer.model"
+      },
+      {
+        "bytes": 49150,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "8f2cd6f7effcb2d6cf72a94147fee8120e992e89216377551598cf59dc0640d0",
+    "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-16384",
+    "revision": "002ad19c05defef76aae6bc20e048c5fe930995b"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1870,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 1066,
+        "lfs": null,
+        "name": "LICENSE"
+      },
+      {
+        "bytes": 9425,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 51710,
+        "lfs": null,
+        "name": "assets/cir_candi_1.png"
+      },
+      {
+        "bytes": 900697,
+        "lfs": {
+          "pointerSize": 131,
+          "sha256": "e3c4b3debd66d4789545d52bdd4c18bdbabaa072b69110ad08ff54b7b4503557",
+          "size": 900697
+        },
+        "name": "assets/cir_candi_2.png"
+      },
+      {
+        "bytes": 152804,
+        "lfs": {
+          "pointerSize": 131,
+          "sha256": "42ad0e1200ba5c8767ea752f6358f6b51719674b064666b415b6ab0ea90ae62b",
+          "size": 152804
+        },
+        "name": "assets/cir_query.png"
+      },
+      {
+        "bytes": 116474,
+        "lfs": {
+          "pointerSize": 131,
+          "sha256": "07530b73c14564bc8f60bb825e868cd0ce4ed07913ab53e65ec6354912aa0249",
+          "size": 116474
+        },
+        "name": "assets/res-ft-mmeb.png"
+      },
+      {
+        "bytes": 136594,
+        "lfs": {
+          "pointerSize": 131,
+          "sha256": "b99d878d102a40bbcb30dce5b6bd54891ecda8f23e2e0d78aab8291183834f86",
+          "size": 136594
+        },
+        "name": "assets/res-scaling.png"
+      },
+      {
+        "bytes": 260503,
+        "lfs": {
+          "pointerSize": 131,
+          "sha256": "500c0a49e189f4ddca74023fdfa1e88439db6bd4b3b0f7ca8dd92ac3d8b018f8",
+          "size": 260503
+        },
+        "name": "assets/res-zs-cir.png"
+      },
+      {
+        "bytes": 136295,
+        "lfs": {
+          "pointerSize": 131,
+          "sha256": "7e3014812e4cd56b2147388a6a0b0a771007d41592e9accdf1d9b93e944c1925",
+          "size": 136295
+        },
+        "name": "assets/res-zs-mmeb.png"
+      },
+      {
+        "bytes": 1796,
+        "lfs": null,
+        "name": "bge_vl_clip_transformer.py"
+      },
+      {
+        "bytes": 4544,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 124,
+        "lfs": null,
+        "name": "config_sentence_transformers.json"
+      },
+      {
+        "bytes": 524619,
+        "lfs": null,
+        "name": "merges.txt"
+      },
+      {
+        "bytes": 855304818,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "6d6c5dcd259b71a49a51916e5fd1dc248563ce08b41a713eb00dd296dfd8f5f4",
+          "size": 855304818
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 73696,
+        "lfs": null,
+        "name": "modeling_MMRet_CLIP.py"
+      },
+      {
+        "bytes": 270,
+        "lfs": null,
+        "name": "modules.json"
+      },
+      {
+        "bytes": 316,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 502,
+        "lfs": null,
+        "name": "sentence_bert_config.json"
+      },
+      {
+        "bytes": 389,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 2224003,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 905,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 961143,
+        "lfs": null,
+        "name": "vocab.json"
+      }
+    ],
+    "license": "mit",
+    "metadata_sha256": "d3b26500a9bb14c0d7c182627693af5d5f8d623a88edc1f2825aba6144ef5a7c",
+    "repository": "BAAI/BGE-VL-large",
+    "revision": "40fb48217f521df22a2a5bf15edd52ed1146ef05"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1519,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 4817,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 2140,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 371806672,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "4616912a7cc91c06115ce7ccb9807095516b3d63a560ebf88057f626fb3535d6",
+          "size": 371806672
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 374487555,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "53b4287e459193019bed6e094014344d4f3c892bd22b7159bf398d71eb82d750",
+          "size": 374487555
+        },
+        "name": "onnx/model.onnx"
+      },
+      {
+        "bytes": 56177424,
+        "lfs": {
+          "pointerSize": 133,
+          "sha256": "a89db8df53e6365f844c778cc8b183e99d82d34dd55e5e0a64f72bb642e853e5",
+          "size": 56177424
+        },
+        "name": "onnx/model_bnb4.onnx"
+      },
+      {
+        "bytes": 187390167,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "6adad2d74c1da0452d1f90a1427679735bae0a1ee7e17b57a0bf70d8a795ca3d",
+          "size": 187390167
+        },
+        "name": "onnx/model_fp16.onnx"
+      },
+      {
+        "bytes": 96745606,
+        "lfs": {
+          "pointerSize": 133,
+          "sha256": "ba9107df6e412828dae8c675096209aa39f6536de8ec8d9a872665b54dc750c3",
+          "size": 96745606
+        },
+        "name": "onnx/model_int8.onnx"
+      },
+      {
+        "bytes": 61964551,
+        "lfs": {
+          "pointerSize": 133,
+          "sha256": "32b16e7949dfdb5c818a7c9dab44d4c773a9a2ec723bd129adb322e717c6cb9e",
+          "size": 61964551
+        },
+        "name": "onnx/model_q4.onnx"
+      },
+      {
+        "bytes": 96745606,
+        "lfs": {
+          "pointerSize": 133,
+          "sha256": "ba9107df6e412828dae8c675096209aa39f6536de8ec8d9a872665b54dc750c3",
+          "size": 96745606
+        },
+        "name": "onnx/model_quantized.onnx"
+      },
+      {
+        "bytes": 96745630,
+        "lfs": {
+          "pointerSize": 133,
+          "sha256": "524db1d9227fd7d0759a63d67d7428e905a3062fce2db080adb7d28acf300c8b",
+          "size": 96745630
+        },
+        "name": "onnx/model_uint8.onnx"
+      },
+      {
+        "bytes": 791,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "bed500fb5770acb274cf07f8104936ca97640af4d2b1f4d348f6dfcf73faceed",
+    "repository": "nomic-ai/nomic-embed-vision-v1.5",
+    "revision": "e3a725bce72db07ca4adb1d83da08903f3ee02f8"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1570,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 97,
+        "lfs": null,
+        "name": "1_Pooling/config.json"
+      },
+      {
+        "bytes": 24166,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 707,
+        "lfs": null,
+        "name": "added_tokens.json"
+      },
+      {
+        "bytes": 5519,
+        "lfs": null,
+        "name": "chat_template.jinja"
+      },
+      {
+        "bytes": 1539,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 238,
+        "lfs": null,
+        "name": "config_sentence_transformers.json"
+      },
+      {
+        "bytes": 1671853,
+        "lfs": null,
+        "name": "merges.txt"
+      },
+      {
+        "bytes": 4998056552,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "79ef275ec5f751d5fb59357c00d473268f9fd74abf5e38aa30137d268e7733c4",
+          "size": 4998056552
+        },
+        "name": "model-00001-of-00004.safetensors"
+      },
+      {
+        "bytes": 4915962464,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "a4da61f512e84fc0f0b80bcb7bcc5137eb3bf25b658a7d55f84f4056078545f0",
+          "size": 4915962464
+        },
+        "name": "model-00002-of-00004.safetensors"
+      },
+      {
+        "bytes": 4915962496,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "7fb17cf8f06d6fe5aaacf114e85c4e6d8318799f24b517f50d1ec154a8d47007",
+          "size": 4915962496
+        },
+        "name": "model-00003-of-00004.safetensors"
+      },
+      {
+        "bytes": 1459698112,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "000213b6d1d03ed9023fac23716da51ec4c5be221a04526c2f732d31d8fed1f5",
+          "size": 1459698112
+        },
+        "name": "model-00004-of-00004.safetensors"
+      },
+      {
+        "bytes": 67737,
+        "lfs": null,
+        "name": "model.safetensors.index.json"
+      },
+      {
+        "bytes": 430,
+        "lfs": null,
+        "name": "modules.json"
+      },
+      {
+        "bytes": 784,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 13258,
+        "lfs": null,
+        "name": "scripts/qwen3_vl_embedding.py"
+      },
+      {
+        "bytes": 771,
+        "lfs": null,
+        "name": "sentence_bert_config.json"
+      },
+      {
+        "bytes": 613,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 11423705,
+        "lfs": {
+          "pointerSize": 133,
+          "sha256": "def76fb086971c7867b829c23a26261e38d9d74e02139253b38aeb9df8b4b50a",
+          "size": 11423705
+        },
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 5404,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 817,
+        "lfs": null,
+        "name": "video_preprocessor_config.json"
+      },
+      {
+        "bytes": 2776833,
+        "lfs": null,
+        "name": "vocab.json"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "1781e4e2eb1eb1ff92c4504edf9db580f48aff880fda772350c84e6e64b76266",
+    "repository": "Qwen/Qwen3-VL-Embedding-8B",
+    "revision": "2c4565515e0f265c6511776e7193b22c0968ddc7"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1552,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 3924,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 221,
+        "lfs": {
+          "pointerSize": 128,
+          "sha256": "b625462a1abc30f25c77e9bed26663ab9bde5698c44740ed2bad18cdc135a022",
+          "size": 221
+        },
+        "name": "config.json"
+      },
+      {
+        "bytes": 2242347565,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "a7124266439dd6bce544c23b57249a2ca764dbcd38e8eab16ce272c28c27b049",
+          "size": 2242347565
+        },
+        "name": "pytorch_model.bin"
+      },
+      {
+        "bytes": 5069051,
+        "lfs": {
+          "pointerSize": 132,
+          "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+          "size": 5069051
+        },
+        "name": "sentencepiece.bpe.model"
+      },
+      {
+        "bytes": 239,
+        "lfs": {
+          "pointerSize": 128,
+          "sha256": "378eb3bf733eb16e65792d7e3fda5b8a4631387ca04d2015199c4d4f22ae554d",
+          "size": 239
+        },
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 2242695088,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "30603b458c555d20b78dcd42045b708f9094998cfd88f0ff1d472f5e03ce58c8",
+          "size": 2242695088
+        },
+        "name": "tf_model.h5"
+      },
+      {
+        "bytes": 9081351,
+        "lfs": {
+          "pointerSize": 132,
+          "sha256": "2a0d7366dd7780ea36cc42431dd74cd79289b783ab01acd33013fcc96865a8e9",
+          "size": 9081351
+        },
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 399,
+        "lfs": {
+          "pointerSize": 128,
+          "sha256": "dfbf28b57f58ceb96d5a2e384b00c8768a902742e5cacd90f769e350ada9afb1",
+          "size": 399
+        },
+        "name": "tokenizer_config.json"
+      }
+    ],
+    "license": null,
+    "metadata_sha256": "5ea6a9b36ef4bb4b5f6bfedac1d97c5d55b6e2474c7307dcac46896d2b0b571e",
+    "repository": "M-CLIP/XLM-Roberta-Large-Vit-B-16Plus",
+    "revision": "15c3aee9b9e96fd7de1c1d488810a604bab98e78"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1574,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 8209,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 4725,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 524618,
+        "lfs": null,
+        "name": "merges.txt"
+      },
+      {
+        "bytes": 3944552236,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "036e6e2bd49697511f4f8b8cb5ee465f93025f7a69a145eadeb9a881ace9b18d",
+          "size": 3944552236
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 637,
+        "lfs": null,
+        "name": "open_clip_config.json"
+      },
+      {
+        "bytes": 3944517836,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "0084e75319a50ad85ef45377bad5bc38f2f58824459eb690048d51c9f8863be5",
+          "size": 3944517836
+        },
+        "name": "open_clip_model.safetensors"
+      },
+      {
+        "bytes": 3944692325,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "9a78ef8e8c73fd0df621682e7a8e8eb36c6916cb3c16b291a082ecd52ab79cc4",
+          "size": 3944692325
+        },
+        "name": "open_clip_pytorch_model.bin"
+      },
+      {
+        "bytes": 316,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 3944736097,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "d6d1e3e93c27d6e430db9d20c151d1baa4dc98b503b136b7d85a63f4b02c9749",
+          "size": 3944736097
+        },
+        "name": "pytorch_model.bin"
+      },
+      {
+        "bytes": 389,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 2224041,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 904,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 862328,
+        "lfs": null,
+        "name": "vocab.json"
+      }
+    ],
+    "license": "mit",
+    "metadata_sha256": "91df74a7c1172f31e60adeae502d13de1c903169c5e3b0da505a873dd25ef9a7",
+    "repository": "laion/CLIP-ViT-H-14-laion2B-s32B-b79K",
+    "revision": "1c2b8495b28150b8a4922ee1c8edee224c284c0c"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1510,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 7415,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 4613,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 524619,
+        "lfs": null,
+        "name": "merges.txt"
+      },
+      {
+        "bytes": 5466843516,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "384d67c1233d709ed1901bfca2ca1ed014f7cb5740e84a7bc4b964b42c131b08",
+          "size": 5466843516
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 670,
+        "lfs": null,
+        "name": "open_clip_config.json"
+      },
+      {
+        "bytes": 5467006745,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "6aac683f899159946bc4ca15228bb7016f3cbb1a2c51f365cba0b23923f344da",
+          "size": 5467006745
+        },
+        "name": "open_clip_pytorch_model.bin"
+      },
+      {
+        "bytes": 5466804796,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+          "size": 5466804796
+        },
+        "name": "open_clip_pytorch_model.safetensors"
+      },
+      {
+        "bytes": 316,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 5467055745,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "b7fa95d602c219981467ab6d52bbb15c0d555ad2b5ddb5c93434f6f18dfe7bdb",
+          "size": 5467055745
+        },
+        "name": "pytorch_model.bin"
+      },
+      {
+        "bytes": 389,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 2224041,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 904,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 862328,
+        "lfs": null,
+        "name": "vocab.json"
+      }
+    ],
+    "license": "mit",
+    "metadata_sha256": "f9503ee5c97038ccad47d3b44a61db3dfbd663c68e672ba0ceba080288a250cc",
+    "repository": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+    "revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1679,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 8658,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 4877,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 524619,
+        "lfs": null,
+        "name": "merges.txt"
+      },
+      {
+        "bytes": 671,
+        "lfs": null,
+        "name": "open_clip_config.json"
+      },
+      {
+        "bytes": 10158382892,
+        "lfs": {
+          "pointerSize": 136,
+          "sha256": "db71bd27925917762c506c1b8a08e191d236e5586b5cd99f77d11aced578ec34",
+          "size": 10158382892
+        },
+        "name": "open_clip_model.safetensors"
+      },
+      {
+        "bytes": 10158638769,
+        "lfs": {
+          "pointerSize": 136,
+          "sha256": "0d5318839ad03607c48055c45897c655a14c0276a79f6b867934ddd073760e39",
+          "size": 10158638769
+        },
+        "name": "open_clip_pytorch_model.bin"
+      },
+      {
+        "bytes": 316,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 9990161549,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "79cfbc5cb39085ce8eedff70562d3c54795abdccd132d6dcb8e1462fbd71a1a0",
+          "size": 9990161549
+        },
+        "name": "pytorch_model-00001-of-00002.bin"
+      },
+      {
+        "bytes": 9989894780,
+        "lfs": {
+          "pointerSize": 135,
+          "sha256": "5b49b8f729a0fda62f11ddf8bf351c3e5ee6cc3a400a9459b44537b3ee10d41a",
+          "size": 9989894780
+        },
+        "name": "pytorch_model-00001-of-00002.safetensors"
+      },
+      {
+        "bytes": 168539369,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "31847ed3e29dade79ab29eafc0f8230200ec46233ce1d8f6e71b987a9fbacf47",
+          "size": 168539369
+        },
+        "name": "pytorch_model-00002-of-00002.bin"
+      },
+      {
+        "bytes": 168535880,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "36dc9b676755ac8048a09ec994a47ad359361eab01dfa6dc2cdf5decaae28e17",
+          "size": 168535880
+        },
+        "name": "pytorch_model-00002-of-00002.safetensors"
+      },
+      {
+        "bytes": 119982,
+        "lfs": null,
+        "name": "pytorch_model.bin.index.json"
+      },
+      {
+        "bytes": 389,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 2224041,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 904,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 862328,
+        "lfs": null,
+        "name": "vocab.json"
+      }
+    ],
+    "license": "mit",
+    "metadata_sha256": "98b27669f91bfa5e7d0614a148eef201253a2401ff2f9095a679d8a4428458d1",
+    "repository": "laion/CLIP-ViT-bigG-14-laion2B-39B-b160k",
+    "revision": "743c27bd53dfe508a0ade0f50698f99b39d03bec"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1519,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 286,
+        "lfs": null,
+        "name": "1_Pooling/config.json"
+      },
+      {
+        "bytes": 71843,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 2538,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 140,
+        "lfs": null,
+        "name": "config_sentence_transformers.json"
+      },
+      {
+        "bytes": 546938168,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "9e7d262b1fe5ea350782829496efa831901b77486bbde1cea54a4c822d010d5c",
+          "size": 546938168
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 255,
+        "lfs": null,
+        "name": "modules.json"
+      },
+      {
+        "bytes": 547310275,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "147d5aa88c2101237358e17796cf3a227cead1ec304ec34b465bb08e9d952965",
+          "size": 547310275
+        },
+        "name": "onnx/model.onnx"
+      },
+      {
+        "bytes": 158035801,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "eb81cef4642ae7a81cd135c08d9622d85cff3fa25d5adabb3561fba908a48b75",
+          "size": 158035801
+        },
+        "name": "onnx/model_bnb4.onnx"
+      },
+      {
+        "bytes": 273859028,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "cf5b5a86edb00f895561803cfc04729090a958340b8ca2ad76c143f565f6bb04",
+          "size": 273859028
+        },
+        "name": "onnx/model_fp16.onnx"
+      },
+      {
+        "bytes": 137296292,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "b4342336debaea79de872370664b0aaeb67dea4605513d00ee236ea871a81f27",
+          "size": 137296292
+        },
+        "name": "onnx/model_int8.onnx"
+      },
+      {
+        "bytes": 165113221,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "314976b7b9fba83283f9c8a29ee680a159fa485f52104e3fa39d3d5858337003",
+          "size": 165113221
+        },
+        "name": "onnx/model_q4.onnx"
+      },
+      {
+        "bytes": 111076526,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "3dbab6709d866709a8f9df237fe9a008bd9ccfc30e32e4b8f7f5e085cdb68bf1",
+          "size": 111076526
+        },
+        "name": "onnx/model_q4f16.onnx"
+      },
+      {
+        "bytes": 137296292,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "b4342336debaea79de872370664b0aaeb67dea4605513d00ee236ea871a81f27",
+          "size": 137296292
+        },
+        "name": "onnx/model_quantized.onnx"
+      },
+      {
+        "bytes": 137296322,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "f7ee635388c995ea16eeeb50bc82269533b740be291ab13dc86df8977b5c31df",
+          "size": 137296322
+        },
+        "name": "onnx/model_uint8.onnx"
+      },
+      {
+        "bytes": 58,
+        "lfs": null,
+        "name": "sentence_bert_config.json"
+      },
+      {
+        "bytes": 695,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 711396,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 1191,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 231508,
+        "lfs": null,
+        "name": "vocab.txt"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "8f2c0a789b2e171b4de9dd03ac183327a2dda42b0a3e6c8a2308720d59cbc14e",
+    "repository": "nomic-ai/nomic-embed-text-v1.5",
+    "revision": "e9b6763023c676ca8431644204f50c2b100d9aab"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1519,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 190,
+        "lfs": null,
+        "name": "1_Pooling/config.json"
+      },
+      {
+        "bytes": 115,
+        "lfs": null,
+        "name": "2_Dense/config.json"
+      },
+      {
+        "bytes": 1572984,
+        "lfs": {
+          "pointerSize": 132,
+          "sha256": "d12568dc7300970a4d3dbb49068ad16cd89b99840b74b026f8e48071e9414f74",
+          "size": 1572984
+        },
+        "name": "2_Dense/model.safetensors"
+      },
+      {
+        "bytes": 3236,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 593,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 222030624,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "827fb95b5a199446ee4463dd2d0843564a56a4286035c4059e2e4aa63e9665b7",
+          "size": 222030624
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 341,
+        "lfs": null,
+        "name": "modules.json"
+      },
+      {
+        "bytes": 53,
+        "lfs": null,
+        "name": "sentence_bert_config.json"
+      },
+      {
+        "bytes": 112,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 354314,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 413,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      }
+    ],
+    "license": "mit",
+    "metadata_sha256": "26688e7a53daf930495aaa7349aa9ae7e088630c4237000e0ba756b6ff8b8b7a",
+    "repository": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384",
+    "revision": "f889319e4605da4342341fdb62ad39386396d6e1"
+  },
+  {
+    "files": [
+      {
+        "bytes": 690,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 7942,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 4186,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 605123003,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "2a2994d89bebd77abba5a554789dd9152a7e25467b79d88f6bd237d2dec5051c",
+          "size": 605123003
+        },
+        "name": "flax_model.msgpack"
+      },
+      {
+        "bytes": 524657,
+        "lfs": null,
+        "name": "merges.txt"
+      },
+      {
+        "bytes": 316,
+        "lfs": null,
+        "name": "preprocessor_config.json"
+      },
+      {
+        "bytes": 605247071,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+          "size": 605247071
+        },
+        "name": "pytorch_model.bin"
+      },
+      {
+        "bytes": 389,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 605551040,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "0d7e64ea2c496306a4bc0a6a7ab21e4755fd8c7beb01e6d9f5dc8d6662f1bfd2",
+          "size": 605551040
+        },
+        "name": "tf_model.h5"
+      },
+      {
+        "bytes": 2224041,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 592,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 862328,
+        "lfs": null,
+        "name": "vocab.json"
+      }
+    ],
+    "license": null,
+    "metadata_sha256": "191fa69d75e2476ff9cb31aa3c7d1699fe14232718ba75f7c827705245251d20",
+    "repository": "openai/clip-vit-base-patch32",
+    "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1519,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 392,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 524619,
+        "lfs": null,
+        "name": "merges.txt"
+      },
+      {
+        "bytes": 533,
+        "lfs": null,
+        "name": "open_clip_config.json"
+      },
+      {
+        "bytes": 833543412,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "f65b63daa30d38e9c4afe87ebd40140cee700cf0a1091711248f512f48706840",
+          "size": 833543412
+        },
+        "name": "open_clip_model.safetensors"
+      },
+      {
+        "bytes": 833625910,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "fa8eec9aff58e9215b9b44a977038179712694d3fc3a73eba62546bcff13deb3",
+          "size": 833625910
+        },
+        "name": "open_clip_pytorch_model.bin"
+      },
+      {
+        "bytes": 588,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 3642035,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 706,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 862328,
+        "lfs": null,
+        "name": "vocab.json"
+      }
+    ],
+    "license": "mit",
+    "metadata_sha256": "ca7c5366040a24d814dd20b72e1f30359a59dec0475ef81d27e67389c5e20a01",
+    "repository": "timm/vit_base_patch16_plus_clip_240.laion400m_e31",
+    "revision": "6dbe024bee4f13f90ad3676d92957e68868a616d"
+  },
+  {
+    "files": [
+      {
+        "bytes": 1519,
+        "lfs": null,
+        "name": ".gitattributes"
+      },
+      {
+        "bytes": 3536,
+        "lfs": null,
+        "name": "README.md"
+      },
+      {
+        "bytes": 1883,
+        "lfs": null,
+        "name": "config.json"
+      },
+      {
+        "bytes": 1958,
+        "lfs": null,
+        "name": "configuration_hf_nomic_bert.py"
+      },
+      {
+        "bytes": 549304584,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "9acacdb7c24a8eac0fc7c11b00c4a2e7986a49aacbd40c9b30ae12b2763ead19",
+          "size": 549304584
+        },
+        "name": "model.safetensors"
+      },
+      {
+        "bytes": 103563,
+        "lfs": null,
+        "name": "modeling_hf_nomic_bert.py"
+      },
+      {
+        "bytes": 549328982,
+        "lfs": {
+          "pointerSize": 134,
+          "sha256": "e0b1c7db843aeae0c744716acf3c7b7da60d142e7ca31edd11853f5b163c8776",
+          "size": 549328982
+        },
+        "name": "pytorch_model.bin"
+      },
+      {
+        "bytes": 125,
+        "lfs": null,
+        "name": "special_tokens_map.json"
+      },
+      {
+        "bytes": 711396,
+        "lfs": null,
+        "name": "tokenizer.json"
+      },
+      {
+        "bytes": 1191,
+        "lfs": null,
+        "name": "tokenizer_config.json"
+      },
+      {
+        "bytes": 231508,
+        "lfs": null,
+        "name": "vocab.txt"
+      }
+    ],
+    "license": "apache-2.0",
+    "metadata_sha256": "8e46e6c873584dac129dca7d1e48798e9aa4f67d81ff02993758824648db7345",
+    "repository": "nomic-ai/nomic-bert-2048",
+    "revision": "7710840340a098cfb869c4f65e87cf2b1b70caca"
+  }
+]
