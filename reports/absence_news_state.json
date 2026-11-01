@@ -1,8 +1,0 @@
-{
-  "phase": "full",
-  "stage": "waiting_for_primary",
-  "pid": 492196,
-  "updated_at": "2026-10-18T18:12:24.953550+00:00",
-  "jobs": {},
-  "run_name": "qwen3.8-27b-visualnews-v3c"
-}
