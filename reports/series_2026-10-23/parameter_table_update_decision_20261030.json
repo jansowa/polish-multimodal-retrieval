@@ -1,0 +1,16 @@
+{
+  "gemma_audio_disabled": true,
+  "no_model_downloads": true,
+  "no_model_reruns": true,
+  "original_reports": {
+    "reports\\benchmark_twenty_models.md": "f6ce5f24a7e5d4fce1119cd73d310787b96d0bbcc255950959f76d26a74f1c97",
+    "reports\\series_2026-10-23\\OUR_NEW_GALLERIES_20261029.md": "d2aaaf3e96c5088fb2e1328bc00a4e1ef52ec73698c4cf958d20952b59451d23",
+    "reports\\series_2026-10-23\\REFERENCE_COMPARISON_20261029.md": "d3057892d993fb87d172407e3bc68d06408b3e223a418a8ecc273cccd1de9f97",
+    "reports\\series_2026-10-23\\REPORT.md": "069de629488f0a479716339e16bc5a88dda44e48d7e13ee183003c4ff70824eb"
+  },
+  "policy": "sum of vision and text only; exclude other encoders, separate projector and scalar scoring parameters",
+  "scoring_and_CI_unchanged": true,
+  "script_sha256": "fcc3a921c2375b494fee994c566d1ca568ae50c3de84b06df5a61a5ab8319ec3",
+  "source_comparison_sha256": "de3433602afa6834c45ca2783653d986073ed22e36e92b838cf0d1db8acad817",
+  "status": "registered_before_report_metadata_update"
+}

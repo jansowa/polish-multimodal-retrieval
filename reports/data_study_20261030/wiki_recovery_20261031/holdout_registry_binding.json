@@ -1,0 +1,9 @@
+{
+  "guard_sha256": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3",
+  "manifests": {
+    "Wiki_train.jsonl": "9445011bc5e6fbee4d279bf5e54251f9df19f8a16f5cbd5d7cfedefafc42c1a7",
+    "new_VN_train.jsonl": "0d74a296f337a794be8215f3d81afec57bad287712991f2f826fd080e520b8af"
+  },
+  "registry_sha256": "954934abb198f79c712d4f51ae68a948a413fd9fd3b56fbda0648abb01a478c5",
+  "status": "registry_bound_before_training"
+}

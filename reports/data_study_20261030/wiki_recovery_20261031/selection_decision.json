@@ -1,0 +1,25 @@
+{
+  "all_training_closed": true,
+  "chosen_Wiki": "R3",
+  "no_new_B_results_read": true,
+  "representatives": {
+    "R0": 44,
+    "R1": 44,
+    "R3": 43
+  },
+  "seed42_scores": {
+    "R2": 0.15709969788519637,
+    "R3": 0.18126888217522658
+  },
+  "selection_rule": "Wiki t2i R1; tie smaller Wiki share then earlier saved update",
+  "variant_mean_sd": {
+    "R1": {
+      "mean": 0.744716258944916,
+      "sd": 0.0048489939372053596
+    },
+    "R3": {
+      "mean": 0.7295723082043601,
+      "sd": 0.0032483310527447744
+    }
+  }
+}

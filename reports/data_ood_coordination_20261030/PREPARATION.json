@@ -1,0 +1,14 @@
+{
+  "datasets_downloaded": false,
+  "date": "2026-10-30",
+  "files_sha256": {
+    "COORDINATION.md": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+    "DATASET_CANDIDATES.md": "e6732480fb112982529232476a38fe9539a69918b9adf79e5620832c018c2a2e",
+    "HANDOFF_FORMAT.md": "cba4fc24a4e3ae429d4f4d968e1eab213112ace847b4162342e5ae1f96d16fdb",
+    "PROMPT_A_NEW_DATA.md": "644f3efa977607b88bab6cfbcdc6146f5f1a9b210812496a0e3f6d8a76fa5724",
+    "PROMPT_B_OOD_EVAL.md": "001180b285350eb17a0f8ed2b4fe7dd2c30bc6b5fa16bf946423ba85951d42ef"
+  },
+  "new_evaluation_started": false,
+  "status": "prompts_prepared_not_executed",
+  "training_started": false
+}

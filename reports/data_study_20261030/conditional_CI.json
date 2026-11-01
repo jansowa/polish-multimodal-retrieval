@@ -1,0 +1,748 @@
+{
+  "conditional_on": "closed representative checkpoints, fixed galleries, observed qrels/components; distinct from seed mean/SD",
+  "replicates": 10000,
+  "results": {
+    "R1_minus_R0": {
+      "VN_dev": {
+        "i2t": {
+          "components": 1980,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "i2t",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -0.09283229393150337,
+                1.300924400569047
+              ],
+              "delta_pp": 0.6013671879634638
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                0.08214366777001396,
+                1.205322556911142
+              ],
+              "delta_pp": 0.64069767171032
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -0.798801797304044,
+                1.6065239532393094
+              ],
+              "delta_pp": 0.4
+            },
+            "recall@10": {
+              "ci95_pp": [
+                0.15030060120240482,
+                1.3527054108216432
+              ],
+              "delta_pp": 0.75
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -0.29985007496251875,
+                1.3006503251625814
+              ],
+              "delta_pp": 0.5
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        },
+        "t2i": {
+          "components": 1980,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "t2i",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -0.3936747927097263,
+                1.4312441564399037
+              ],
+              "delta_pp": 0.5103500957926442
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -0.20690147159673078,
+                1.2499955387006192
+              ],
+              "delta_pp": 0.5212674649045077
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -0.8000100050025013,
+                2.1478789825866285
+              ],
+              "delta_pp": 0.6490264603095357
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -0.09920758005435425,
+                1.2
+              ],
+              "delta_pp": 0.5491762356465303
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -0.4995004995004995,
+                1.2475049900199602
+              ],
+              "delta_pp": 0.3494757863205192
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        }
+      },
+      "wiki_native_dev": {
+        "i2t": {
+          "components": 130,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "i2t",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -1.786248210606993,
+                0.9672566397791682
+              ],
+              "delta_pp": -0.3328102348742973
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -1.7858903561339605,
+                1.0356388674470531
+              ],
+              "delta_pp": -0.3337098408672158
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -3.076923076923077,
+                0.7481296758104738
+              ],
+              "delta_pp": -1.0075566750629723
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -3.1941924747157304,
+                2.2293981444895747
+              ],
+              "delta_pp": -0.5037783375314862
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -1.0051520227399624,
+                5.042079146198538
+              ],
+              "delta_pp": 2.0151133501259446
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        },
+        "t2i": {
+          "components": 130,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "t2i",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -2.7593881862198253,
+                1.0398582496961395
+              ],
+              "delta_pp": -0.7428600324758231
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -2.3834017069502025,
+                1.1698773852558626
+              ],
+              "delta_pp": -0.511929024770875
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -3.1392782740722427,
+                2.381189527603867
+              ],
+              "delta_pp": -0.3021148036253776
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -2.9508196721311477,
+                4.62046204620462
+              ],
+              "delta_pp": 0.906344410876133
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -4.129854457690339,
+                3.012218686065012
+              ],
+              "delta_pp": -0.6042296072507553
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        }
+      },
+      "xtd10_full_1k": {
+        "i2t": {
+          "components": 1000,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "i2t",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                0.5171845083431762,
+                2.885804368561562
+              ],
+              "delta_pp": 1.6854321241270658
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                0.690430284149671,
+                2.6640217031733453
+              ],
+              "delta_pp": 1.678955485186476
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -0.2,
+                3.5999999999999996
+              ],
+              "delta_pp": 1.7000000000000002
+            },
+            "recall@10": {
+              "ci95_pp": [
+                0.1,
+                2.7
+              ],
+              "delta_pp": 1.4000000000000001
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -0.3,
+                2.7
+              ],
+              "delta_pp": 1.2
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        },
+        "t2i": {
+          "components": 1000,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "t2i",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -1.5130875679184395,
+                1.2113771541013216
+              ],
+              "delta_pp": -0.15472206133193145
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -0.9155564363833876,
+                1.4136884235839482
+              ],
+              "delta_pp": 0.23233558314390804
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -2.6,
+                1.7999999999999998
+              ],
+              "delta_pp": -0.4
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -0.2,
+                2.6
+              ],
+              "delta_pp": 1.2
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -1.7000000000000002,
+                2.1
+              ],
+              "delta_pp": 0.2
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        }
+      },
+      "xtd10_no_overlap": {
+        "i2t": {
+          "components": 897,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "i2t",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                0.14432893750421352,
+                2.5019314213667916
+              ],
+              "delta_pp": 1.342191419752414
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                0.18472705639040637,
+                2.1691800063675934
+              ],
+              "delta_pp": 1.1872560544885231
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -0.6688963210702341,
+                3.2329988851727984
+              ],
+              "delta_pp": 1.3377926421404682
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -0.7803790412486065,
+                1.89520624303233
+              ],
+              "delta_pp": 0.5574136008918618
+            },
+            "recall@5": {
+              "ci95_pp": [
+                0.2229654403567447,
+                3.3444816053511706
+              ],
+              "delta_pp": 1.7837235228539576
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        },
+        "t2i": {
+          "components": 897,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "t2i",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -1.6620057084202975,
+                1.222984020173557
+              ],
+              "delta_pp": -0.24045678067688278
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -1.0518619771298638,
+                1.4055022248374003
+              ],
+              "delta_pp": 0.16009579981343386
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -3.2329988851727984,
+                1.4492753623188406
+              ],
+              "delta_pp": -0.8918617614269788
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -0.33444816053511706,
+                2.564102564102564
+              ],
+              "delta_pp": 1.1148272017837235
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -1.560758082497213,
+                2.229654403567447
+              ],
+              "delta_pp": 0.33444816053511706
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        }
+      }
+    },
+    "R3_minus_R1": {
+      "VN_dev": {
+        "i2t": {
+          "components": 1980,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "i2t",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -2.0270072093520017,
+                -0.9816751748904216
+              ],
+              "delta_pp": -1.5053212810504135
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -1.725016033316016,
+                -0.9009934108069422
+              ],
+              "delta_pp": -1.3108242653907034
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -2.747287070750339,
+                -0.8525469893389443
+              ],
+              "delta_pp": -1.7999999999999998
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -1.1022044088176353,
+                -0.20020020020020018
+              ],
+              "delta_pp": -0.65
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -1.6923842707814833,
+                -0.45090180360721444
+              ],
+              "delta_pp": -1.05
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        },
+        "t2i": {
+          "components": 1980,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "t2i",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -2.4582522701888148,
+                -1.2013985522290695
+              ],
+              "delta_pp": -1.8297701982086554
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -2.064686802642953,
+                -1.0747170781669744
+              ],
+              "delta_pp": -1.5727143275428723
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -3.4465534465534464,
+                -1.2468672536007939
+              ],
+              "delta_pp": -2.3464802795806294
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -1.1482775836245633,
+                -0.1990049751243781
+              ],
+              "delta_pp": -0.6490264603095357
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -1.9451614227903296,
+                -0.598794928845551
+              ],
+              "delta_pp": -1.2481278082875686
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        }
+      },
+      "wiki_native_dev": {
+        "i2t": {
+          "components": 130,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "i2t",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                0.6673147252393745,
+                4.6579041869909945
+              ],
+              "delta_pp": 2.6507356664210935
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                1.0750029053974093,
+                5.116118747120758
+              ],
+              "delta_pp": 3.1070565409052406
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -0.8658949745906266,
+                3.980128630850431
+              ],
+              "delta_pp": 1.5113350125944585
+            },
+            "recall@10": {
+              "ci95_pp": [
+                0.569760101010101,
+                8.115202215646104
+              ],
+              "delta_pp": 4.282115869017632
+            },
+            "recall@5": {
+              "ci95_pp": [
+                0.6733441800555895,
+                7.183595103487293
+              ],
+              "delta_pp": 4.030226700251889
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        },
+        "t2i": {
+          "components": 130,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "t2i",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -0.814440727794087,
+                1.64436689248656
+              ],
+              "delta_pp": 0.3617496982509394
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -1.2600041262799526,
+                1.3727143688508439
+              ],
+              "delta_pp": 0.05565604939383258
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -0.26883531866794197,
+                3.515625
+              ],
+              "delta_pp": 1.5105740181268883
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -3.606557377049181,
+                2.3669340138534443
+              ],
+              "delta_pp": -0.6042296072507553
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -4.021717979763037,
+                1.8519592678525376
+              ],
+              "delta_pp": -0.906344410876133
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        }
+      },
+      "xtd10_full_1k": {
+        "i2t": {
+          "components": 1000,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "i2t",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -1.0984383791359429,
+                0.2022020241697385
+              ],
+              "delta_pp": -0.4408513282737875
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -0.9593350509091587,
+                0.1180117429325965
+              ],
+              "delta_pp": -0.4192912506808936
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -1.6,
+                0.8
+              ],
+              "delta_pp": -0.4
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -1.0999999999999999,
+                0.5
+              ],
+              "delta_pp": -0.3
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -0.4,
+                1.6
+              ],
+              "delta_pp": 0.6
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        },
+        "t2i": {
+          "components": 1000,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "t2i",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -1.0055700653107715,
+                0.585862393211004
+              ],
+              "delta_pp": -0.20555027275869858
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -1.0932604558132388,
+                0.24790170579417184
+              ],
+              "delta_pp": -0.419923654503447
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -1.2,
+                1.4000000000000001
+              ],
+              "delta_pp": 0.1
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -1.9,
+                0.1
+              ],
+              "delta_pp": -0.8999999999999999
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -1.7999999999999998,
+                0.8
+              ],
+              "delta_pp": -0.5
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        }
+      },
+      "xtd10_no_overlap": {
+        "i2t": {
+          "components": 897,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "i2t",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -1.310203553201592,
+                0.043674917707488645
+              ],
+              "delta_pp": -0.6291783073842433
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -1.1969688668487726,
+                -0.08162862927770785
+              ],
+              "delta_pp": -0.6332754372116514
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -2.0066889632107023,
+                0.33444816053511706
+              ],
+              "delta_pp": -0.7803790412486065
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -1.3377926421404682,
+                0.11148272017837235
+              ],
+              "delta_pp": -0.5574136008918618
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -1.1148272017837235,
+                0.8918617614269788
+              ],
+              "delta_pp": -0.11148272017837235
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        },
+        "t2i": {
+          "components": 897,
+          "conditional_on": "fixed gallery, observed qrels and leakage components",
+          "direction": "t2i",
+          "metrics": {
+            "mrr": {
+              "ci95_pp": [
+                -0.7629354944609981,
+                0.9206154994527112
+              ],
+              "delta_pp": 0.07628992424452168
+            },
+            "ndcg@10": {
+              "ci95_pp": [
+                -0.72372368764588,
+                0.6712242255863772
+              ],
+              "delta_pp": -0.025087061298217476
+            },
+            "recall@1": {
+              "ci95_pp": [
+                -0.7803790412486065,
+                2.118171683389075
+              ],
+              "delta_pp": 0.6688963210702341
+            },
+            "recall@10": {
+              "ci95_pp": [
+                -1.1148272017837235,
+                0.6688963210702341
+              ],
+              "delta_pp": -0.2229654403567447
+            },
+            "recall@5": {
+              "ci95_pp": [
+                -2.787068004459309,
+                -0.11148272017837235
+              ],
+              "delta_pp": -1.4492753623188406
+            }
+          },
+          "replicates": 10000,
+          "seed": 20261023,
+          "units": "percentage points, our minus reference"
+        }
+      }
+    }
+  },
+  "seed": 20261023,
+  "status": "complete"
+}

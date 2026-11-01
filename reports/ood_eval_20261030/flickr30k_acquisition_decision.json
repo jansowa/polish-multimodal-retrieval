@@ -1,0 +1,31 @@
+{
+  "expected_rows": 1000,
+  "file": {
+    "lfs": {
+      "oid": "54ce3e659c09ba0a18702ea3201dea964359cda22275da9c7a4f46aba1598c27",
+      "pointerSize": 134,
+      "size": 143616911
+    },
+    "oid": "eb078e5e61ea6ad89115e32084a62685e69aa980",
+    "path": "data/test-00000-of-00001.parquet",
+    "size": 143616911,
+    "type": "file",
+    "xetHash": "79ee3f54a5058df7f370ab018cbf79ab0d72c7426e64297f7a535c5d564870a0"
+  },
+  "limitations": [
+    "Verify embedded original image filenames and Karpathy split before dataset decision",
+    "No frozen gallery until complete A universe audit; not official Flickr30k1K"
+  ],
+  "original_license_evidence": "https://shannon.cs.illinois.edu/DenotationGraph/",
+  "photos": "Flickr copyright remains with owners; original distributor permits non-commercial research/education subject to Flickr terms; do not label all photographs CC-BY.",
+  "prerequisites": {
+    "COMMON_READY_sha256": "f4f6271c96ae82b34b9951bcebf0b35242728597390da5b8e329d77270edd05a"
+  },
+  "repack_license": "CC-BY-4.0 claim applies to repack; not independent proof of photo rights",
+  "revision": "7be0c742920b112fa4b3e41b7f2ca194f10a88aa",
+  "source": "aplominski/flickr30k-multilingual",
+  "split": "test",
+  "status": "candidate_acquisition_only_not_approved_benchmark",
+  "train_not_downloaded": true,
+  "validation_not_downloaded": true
+}

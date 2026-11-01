@@ -1,0 +1,344 @@
+{
+  "A_FINALISTS_FROZEN_sha256": "9bf786e10f2be160a33ba5807f26899423123149a50c3817ed2f3974fc30879f",
+  "A_GPU_DONE_sha256": "d354c1df5795b0dee12081e88808c6c79c227f2a271e4034726cdcd58f204b3d",
+  "B_EVAL_FROZEN_sha256": "c891396a965a20ec62a11c7216c628d6aa54acd183b6bf76c1c7d0b67d661fe8",
+  "artifacts": [
+    {
+      "bytes": 1435462,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed42/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:R0_seed42:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "26b7b84af070f6b4bc2b04de89b315a76e84e5e85fd3cec0c1a5df6a52d66f51"
+    },
+    {
+      "bytes": 1435462,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed42/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:R0_seed42:flickr30k_pl_local_test:author_recommended",
+      "sha256": "991572416445196f3296eb3ba5e8e9c35d477764ffbe386fe7e7049a4ebfc4c7"
+    },
+    {
+      "bytes": 1357934,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed42/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:R0_seed42:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "b35d1f1282a342a9cf84a163df3c0d8e6258e163a4f844f20d72df65ba202636"
+    },
+    {
+      "bytes": 1357934,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed42/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:R0_seed42:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "b5ee72a48691cde8d3536a2ff4b574241e5dd42d7926cc87a6d61880c0dfa11e"
+    },
+    {
+      "bytes": 1436296,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed43/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:R0_seed43:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "c97a0d9b59d69399b11f1b5950dd818ed32f6af49671ba92c499fc4e7d010a5e"
+    },
+    {
+      "bytes": 1436296,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed43/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:R0_seed43:flickr30k_pl_local_test:author_recommended",
+      "sha256": "59403cba26206301813a22345b9b8252809eae80dabeb865c6c3b3981df5a325"
+    },
+    {
+      "bytes": 1357301,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed43/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:R0_seed43:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "e35cec4298eb910a4fb0c96390c641f7d324d6ae167151711aba090d01cb37ec"
+    },
+    {
+      "bytes": 1357301,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed43/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:R0_seed43:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "a0b430b752e73e2e52001a9e659e4f355a8e17d3c2c01fde58d7a11c0287f752"
+    },
+    {
+      "bytes": 1435496,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed44/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:R0_seed44:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "1ea90084438580996c2fade14bd26dcfb2022a5d491ac78e784582885cddb6ec"
+    },
+    {
+      "bytes": 1435496,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed44/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:R0_seed44:flickr30k_pl_local_test:author_recommended",
+      "sha256": "b2a02ca132c9318b1165fe8b4131ece9b1b50022c57dd9aae059a4ccdf4a8efd"
+    },
+    {
+      "bytes": 1356598,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed44/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:R0_seed44:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "918d683fa6db25cec3aac499fbab0b975a3f76cf50d4477cbfef336215ca173f"
+    },
+    {
+      "bytes": 1356598,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R0_seed44/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:R0_seed44:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "521bc9c04ed2d0d650b9a017c4c4b73b1674a336cdaff7b3691b869e2ec00e0b"
+    },
+    {
+      "bytes": 1433584,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed42/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:R1_seed42:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "d5662a194bb6bc031df382deb9a9cc43184575d9dae299046950089e2b87ba9d"
+    },
+    {
+      "bytes": 1433584,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed42/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:R1_seed42:flickr30k_pl_local_test:author_recommended",
+      "sha256": "3b93aebcdd537be58069109877e1e1e4ac8d656668c04117335be031c298d417"
+    },
+    {
+      "bytes": 1357221,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed42/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:R1_seed42:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "ddcd3ac451e3f04e4c548077b3433f77898f65f255805fbcfc1a3a05dc078619"
+    },
+    {
+      "bytes": 1357221,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed42/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:R1_seed42:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "06ac7c1f3746a54296e2676e41779a3a31e3a716b667589bf0182a42f158344f"
+    },
+    {
+      "bytes": 1434684,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed43/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:R1_seed43:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "e087bc2a4087ff1949e5eda63328aae26fe37899aa76fb7106ce53374c31a8a5"
+    },
+    {
+      "bytes": 1434684,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed43/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:R1_seed43:flickr30k_pl_local_test:author_recommended",
+      "sha256": "92289838d71f73dce0f2ada2b8f3f6bfae92187114359fa2402dc5aa3ea19429"
+    },
+    {
+      "bytes": 1356809,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed43/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:R1_seed43:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "7f8303c92a97dc65ee72464b464d58d99bd0e0286cfa7bedb60a9586741b2584"
+    },
+    {
+      "bytes": 1356809,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed43/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:R1_seed43:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "fcbe445ba1fe073afe23d85f13eedf005d6ee821bc8b6ad3e5f687cfc84f4e48"
+    },
+    {
+      "bytes": 1434896,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed44/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:R1_seed44:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "3ce0538fb3bf1c8116a9523f1dcb1676940559c01959f2682d5300eada67408d"
+    },
+    {
+      "bytes": 1434896,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed44/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:R1_seed44:flickr30k_pl_local_test:author_recommended",
+      "sha256": "9a93e3fbf90b9d7fbf1ed19b3d33e6f3ae4b3b9653d98685c2d316b9f0213ad2"
+    },
+    {
+      "bytes": 1357090,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed44/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:R1_seed44:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "25246f5e883b42ae389baad1d2c0b8aa45d30e8c3bf0cd9e69310f43ca1d6931"
+    },
+    {
+      "bytes": 1357090,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R1_seed44/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:R1_seed44:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "8e43fdab9f0590dc27d10ba352b6dcd42f14600a2bd411825e4188ac2fcaadf3"
+    },
+    {
+      "bytes": 1434922,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed42/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:R3_seed42:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "f37b05c95a02cf24b628ed764b5ec09704a010b5f979a09f1b169540e22655ab"
+    },
+    {
+      "bytes": 1434922,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed42/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:R3_seed42:flickr30k_pl_local_test:author_recommended",
+      "sha256": "01257de0d6ab53bb6aa256d8e412854fd89b527b7625d90a2b04b27d57ce0d73"
+    },
+    {
+      "bytes": 1358201,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed42/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:R3_seed42:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "12bb7ce69efe14063bf2bd48e6af54f37e29c3c64ee8607b1201eae40504797b"
+    },
+    {
+      "bytes": 1358201,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed42/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:R3_seed42:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "9ab3562846008a1205c4e050135825a82106ceadd69dd80076ad04e21187ca73"
+    },
+    {
+      "bytes": 1435537,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed43/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:R3_seed43:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "fd7d8538b2b7ee3ce2b6be3e39f89c21581c133b23501544b331a37bedf42bbf"
+    },
+    {
+      "bytes": 1435537,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed43/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:R3_seed43:flickr30k_pl_local_test:author_recommended",
+      "sha256": "815180b68cac85bb70778113bd67f36d521c471c72fc753d188a28cf2890ea44"
+    },
+    {
+      "bytes": 1357683,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed43/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:R3_seed43:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "bab224b79def95a276921dce6aaeedcbf71f18b4129bc33e7bee612174637542"
+    },
+    {
+      "bytes": 1357683,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed43/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:R3_seed43:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "356f1388e12b2ffcb27644232505f191b1b64bd48fbc64994172ac7751495197"
+    },
+    {
+      "bytes": 1435832,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed44/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:R3_seed44:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "7435bd1cd70e1a0397b81966cb60ee01dcad0c24ed633520341324dca8961464"
+    },
+    {
+      "bytes": 1435832,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed44/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:R3_seed44:flickr30k_pl_local_test:author_recommended",
+      "sha256": "3b402e479995443a899c25ac7024b2887a784db1404d0b00218ba3e8c859e6cd"
+    },
+    {
+      "bytes": 1358031,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed44/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:R3_seed44:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "1917fdd3ecbf3f1d2677a9e15db68b82cecc33c5ba477732d12745eead6a1308"
+    },
+    {
+      "bytes": 1358031,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/R3_seed44/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:R3_seed44:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "b861de320116d606771ffd77849c40c02dcdcedf464ca83fc527917c26cf5307"
+    },
+    {
+      "bytes": 1442339,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-s16/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:metaclip-s16:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "18b1cfaa788384e09ac88584af2f3e357642fbed6659ea9a8f610c5ffb764f51"
+    },
+    {
+      "bytes": 1442339,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-s16/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:metaclip-s16:flickr30k_pl_local_test:author_recommended",
+      "sha256": "53b719672843fa9037a29d1779e56b2764bc3104ceb76efc9ba052db6bfb17c2"
+    },
+    {
+      "bytes": 1354625,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-s16/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:metaclip-s16:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "3d42677f34bdc1e1195fa45fb1bb4a7df09ac6d390eb530ea69856a7f28bb471"
+    },
+    {
+      "bytes": 1354625,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-s16/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:metaclip-s16:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "f50c08519aa316d81af55177647457087a21a87f8b3f9d2fcf371ad3b01369a8"
+    },
+    {
+      "bytes": 1436552,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-m16/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:metaclip-m16:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "dc7b649d3b2807281361f522f339999ad3949a3cd90afba6647a006e4f762c62"
+    },
+    {
+      "bytes": 1436552,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-m16/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:metaclip-m16:flickr30k_pl_local_test:author_recommended",
+      "sha256": "f0e33f8f119476a9310b9b5971006f5845f68a8522f2a7356cffebfcfc99e8df"
+    },
+    {
+      "bytes": 1351848,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-m16/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:metaclip-m16:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "59a260274dca64e3733fba5342e908845f9c17d99ca78956c920e3ff5d947577"
+    },
+    {
+      "bytes": 1351848,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-m16/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:metaclip-m16:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "e42a4a0062237741399c6185809b1300e78dd2cd30d4dc97a069d290219760c6"
+    },
+    {
+      "bytes": 1407243,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/embeddinggemma-2/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result:embeddinggemma-2:flickr30k_pl_local_test:v2_no_instructions",
+      "sha256": "7331363934bcae505432e1b6d40bde7219fa5081b485dc096dabdd80d05a7f6b"
+    },
+    {
+      "bytes": 1473392,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/embeddinggemma-2/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result:embeddinggemma-2:flickr30k_pl_local_test:author_recommended",
+      "sha256": "89d5c738089e0bf2cce02100cd8ba2ce67907b929d9c1741333de82b8930ef51"
+    },
+    {
+      "bytes": 1327114,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/embeddinggemma-2/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result:embeddinggemma-2:vizwiz_pl_local_validation:v2_no_instructions",
+      "sha256": "4badada6c298a756fb221d7a9395942685bbd2f7a5e1dce3620d4e72bcc65c0f"
+    },
+    {
+      "bytes": 1386575,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/embeddinggemma-2/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result:embeddinggemma-2:vizwiz_pl_local_validation:author_recommended",
+      "sha256": "ae3e875e1a978ac77e4addbb0b66ea497d098e193d554c10ea06e44ccca371eb"
+    },
+    {
+      "bytes": 5660,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/REPORT.md",
+      "role": "report",
+      "sha256": "5568797319f0e7a2095022b405ccb140940b43b70dcc8a1a213aeff33fe601e0"
+    },
+    {
+      "bytes": 4113951,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/summary.json",
+      "role": "summary",
+      "sha256": "f2563df591c60123393f3abae3e871f2cac40aebe98f2899d0896d9900eea110"
+    },
+    {
+      "bytes": 84305,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/metrics.csv",
+      "role": "metrics_csv",
+      "sha256": "2511679c9b09465f18b8cda5aa4bbb1817884c49a3bc642231434b5bd74e153d"
+    },
+    {
+      "bytes": 16831,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/seed_mean_SD.csv",
+      "role": "seed_mean_SD_csv",
+      "sha256": "6fccfebfffe8f795715a71c37813c8f2c568a771b407456c358dd889aae91763"
+    },
+    {
+      "bytes": 92888,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/paired_CI.csv",
+      "role": "paired_CI_csv",
+      "sha256": "d145ce0d1bb9738c8130ae0f1fd885e06e0031b41bf94c78b6f23da09ba9af25"
+    },
+    {
+      "bytes": 130257,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/paired_CI/conditional_CI.json",
+      "role": "paired_CI_json",
+      "sha256": "095b0209868f1f2b34245beb9dc2f7ef93f8c7562625d71cde1e7a1104350be0"
+    },
+    {
+      "bytes": 3219657,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/tokenization.json",
+      "role": "tokenization",
+      "sha256": "99ece8d820c47b411b5f85a6ebc91ff0d74b7d98b802f5d994a0f6d3c51fd55b"
+    }
+  ],
+  "contract_sha256": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+  "generation": 1,
+  "owner": "B",
+  "phase": "B_RESULTS_READY",
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "data-ood-20261030"
+}

@@ -1,0 +1,32 @@
+{
+  "XM3600_used_only_for_overlap_detection": true,
+  "acquired_originals": 556,
+  "asset_failures": [
+    "wikimedia:16282914",
+    "wikimedia:36572509",
+    "wikimedia:470691"
+  ],
+  "candidate_snapshot_sha256": "4aa8c7e3fc7c9616372897735d98b7eb55e71d52b09a24a19ba4f30e8a4eda84",
+  "direct_reasons": {
+    "unverified_candidate_original": 3
+  },
+  "eligible_classes": {
+    "A": 213,
+    "B": 130,
+    "D": 54
+  },
+  "eligible_native_images": 397,
+  "excluded_components": 2,
+  "extra_reference_phashes_computed": 0,
+  "near_examples": [],
+  "no_model_calls": true,
+  "old_pilot_rows": 1322,
+  "original_candidates": 559,
+  "protected_images": 69682,
+  "protected_phash_inputs": {
+    "training\\runs\\clean-v1\\perceptual_hashes.json": "f0fd5539d78091fc9cf8e54fe94128c5050871385c06124102f4a9a0e0e0f437",
+    "training\\runs\\tinyclip-wiki-pilot-v1\\data\\additional_protected_phashes.json": "04290c30ae2ee6518fc07964a0f39c617352821230ac87d5a1fdcb1cdedb38a2"
+  },
+  "status": "audited",
+  "total_components": 230
+}

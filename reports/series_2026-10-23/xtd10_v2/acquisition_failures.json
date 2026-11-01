@@ -1,0 +1,38 @@
+[
+  {
+    "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_ACCESS_DENIED] tlsv1 alert access denied (_ssl.c:1000)>",
+    "id": "xtd10:0990"
+  },
+  {
+    "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_ACCESS_DENIED] tlsv1 alert access denied (_ssl.c:1000)>",
+    "id": "xtd10:0992"
+  },
+  {
+    "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_ACCESS_DENIED] tlsv1 alert access denied (_ssl.c:1000)>",
+    "id": "xtd10:0994"
+  },
+  {
+    "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_ACCESS_DENIED] tlsv1 alert access denied (_ssl.c:1000)>",
+    "id": "xtd10:0996"
+  },
+  {
+    "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_ACCESS_DENIED] tlsv1 alert access denied (_ssl.c:1000)>",
+    "id": "xtd10:0995"
+  },
+  {
+    "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_ACCESS_DENIED] tlsv1 alert access denied (_ssl.c:1000)>",
+    "id": "xtd10:0997"
+  },
+  {
+    "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_ACCESS_DENIED] tlsv1 alert access denied (_ssl.c:1000)>",
+    "id": "xtd10:0999"
+  },
+  {
+    "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_ACCESS_DENIED] tlsv1 alert access denied (_ssl.c:1000)>",
+    "id": "xtd10:0998"
+  },
+  {
+    "error": "URLError: <urlopen error [SSL: TLSV1_ALERT_ACCESS_DENIED] tlsv1 alert access denied (_ssl.c:1000)>",
+    "id": "xtd10:0993"
+  }
+]

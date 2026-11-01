@@ -1,0 +1,94 @@
+{
+  "QA_thresholds_selected_without_retrieval_scores": true,
+  "automatic_QA_limitations": "Surface rules and language-ID do not establish semantic equivalence. No manual labels or image-conditioned repair.",
+  "caption_set_sha256": "17e2bb3148073e240e4949877630ace2faf2378140658d096898755745dda2e1",
+  "captions": 5421,
+  "cuda_allowed": false,
+  "deterministic_retry": false,
+  "failed_QA": "Mark whole image ineligible if any original accepted caption has unresolved translation QA; preserve all accepted captions for selected images.",
+  "input": "Only original caption text",
+  "language_detector": {
+    "languages": [
+      "pl",
+      "en",
+      "cs",
+      "sk",
+      "de",
+      "ru"
+    ],
+    "minimum_probability": 0.7,
+    "package": "langid",
+    "source": {
+      "comment_text": "",
+      "core-metadata": false,
+      "digests": {
+        "blake2b_256": "ea4c0fb7d900d3b0b9c8703be316fbddffecdab23c64e1b46c7a83561d78bd43",
+        "md5": "10b358148b9d5b7ba4576d89599ea396",
+        "sha256": "044bcae1912dab85c33d8e98f2811b8f4ff1213e5e9a9e9510137b84da2cb293"
+      },
+      "downloads": -1,
+      "filename": "langid-1.1.6.tar.gz",
+      "has_sig": false,
+      "md5_digest": "10b358148b9d5b7ba4576d89599ea396",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": null,
+      "size": 1925978,
+      "upload_time": "2016-04-05T22:34:15",
+      "upload_time_iso_8601": "2016-04-05T22:34:15.786424Z",
+      "url": "https://files.pythonhosted.org/packages/ea/4c/0fb7d900d3b0b9c8703be316fbddffecdab23c64e1b46c7a83561d78bd43/langid-1.1.6.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    "version": "1.1.6"
+  },
+  "metadata": [
+    {
+      "bytes": 1505,
+      "content_type": "application/json; charset=utf-8",
+      "resolved_url": "https://huggingface.co/api/models/Helsinki-NLP/opus-mt-en-zlw/tree/92ffd5aa936924688bd715b26d6bb75393082c03",
+      "retrieved_at": "2026-10-30T23:42:58.790774+00:00",
+      "sha256": "08090aeb19ffc6ecbba31b1c1d41cc703164d704e3091de3abd6b1f18524c163",
+      "status": "fetched",
+      "text": "[{\"type\":\"file\",\"oid\":\"dc08351d4dc0732d9c8af04070ced089b201ce2f\",\"size\":345,\"path\":\".gitattributes\"},{\"type\":\"file\",\"oid\":\"75708486d486154363213124a2c821bce0f69472\",\"size\":3138,\"path\":\"README.md\"},{\"type\":\"file\",\"oid\":\"d625a2703d35d02f638ebe60a191c091f152c021\",\"size\":1395,\"path\":\"config.json\"},{\"type\":\"file\",\"oid\":\"76470771323a2725730c91b28979c0c0976d2297\",\"size\":293,\"path\":\"generation_config.json\"},{\"type\":\"file\",\"oid\":\"f3f2206d2895b43a86efc4862e8981447be35656\",\"size\":1148,\"path\":\"metadata.json\"},{\"type\":\"file\",\"oid\":\"c1ce2d3ee5099624a1bef8fd8dd1a873486cf0b3\",\"size\":297827661,\"lfs\":{\"oid\":\"3352b4effbf57c85b620ac2b1c41a1e5232c0bfcb399191fcb91e081a5ca5a31\",\"size\":297827661,\"pointerSize\":134},\"xetHash\":\"9ed19df5bc52c51535d1a6922fa2b97a0ec5ee85484448efb775cea65185064d\",\"path\":\"pytorch_model.bin\"},{\"type\":\"file\",\"oid\":\"70c5075cba456fadee4d8db3bb7b825665a481e8\",\"size\":788226,\"path\":\"source.spm\"},{\"type\":\"file\",\"oid\":\"0ae442f7efa5a5eaa7692e332984fb36fc853194\",\"size\":815306,\"path\":\"target.spm\"},{\"type\":\"file\",\"oid\":\"af13af57c6a3838dad961058d54b798daf26171a\",\"size\":298293456,\"lfs\":{\"oid\":\"6b45a51f079551ca5e2b479ae97bd4c520415901009577e60c181154f9175276\",\"size\":298293456,\"pointerSize\":134},\"xetHash\":\"5d60598368df7d53411c2ebd2d22b07fbcd985613c7ba389ccb76f0eda10d970\",\"path\":\"tf_model.h5\"},{\"type\":\"file\",\"oid\":\"afb39f4a7d64b7b22fdec090ae96a3f7fe217bdd\",\"size\":44,\"path\":\"tokenizer_config.json\"},{\"type\":\"file\",\"oid\":\"107b3c0653cf1ccfe04d64ca9d2f796140b5a6f3\",\"size\":1372196,\"path\":\"vocab.json\"}]",
+      "url": "https://huggingface.co/api/models/Helsinki-NLP/opus-mt-en-zlw/tree/92ffd5aa936924688bd715b26d6bb75393082c03"
+    },
+    {
+      "bytes": 2152,
+      "content_type": "application/json",
+      "resolved_url": "https://pypi.org/pypi/langid/1.1.6/json",
+      "retrieved_at": "2026-10-30T23:42:59.025835+00:00",
+      "sha256": "3007381b7b15e32b2e62a9d40ff9dfc4843c7af4e280b7a9dbf174d2579dbdd7",
+      "status": "fetched",
+      "text": "{\"info\":{\"author\":\"Marco Lui\",\"author_email\":\"saffsd@gmail.com\",\"bugtrack_url\":null,\"classifiers\":[\"Development Status :: 5 - Production/Stable\",\"Intended Audience :: Developers\",\"Intended Audience :: Science/Research\",\"License :: OSI Approved :: BSD License\",\"Programming Language :: Python :: 2\",\"Programming Language :: Python :: 2.7\",\"Programming Language :: Python :: 3\",\"Topic :: Scientific/Engineering :: Artificial Intelligence\",\"Topic :: Text Processing :: Linguistic\"],\"description\":\"UNKNOWN\",\"description_content_type\":null,\"docs_url\":null,\"download_url\":\"UNKNOWN\",\"downloads\":{\"last_day\":-1,\"last_month\":-1,\"last_week\":-1},\"dynamic\":null,\"home_page\":\"https://github.com/saffsd/langid.py\",\"keywords\":\"language detection\",\"license\":\"BSD\",\"license_expression\":null,\"license_files\":null,\"maintainer\":null,\"maintainer_email\":null,\"name\":\"langid\",\"package_url\":\"https://pypi.org/project/langid/\",\"platform\":\"UNKNOWN\",\"project_url\":\"https://pypi.org/project/langid/\",\"project_urls\":{\"Download\":\"UNKNOWN\",\"Homepage\":\"https://github.com/saffsd/langid.py\"},\"provides_extra\":null,\"release_url\":\"https://pypi.org/project/langid/1.1.6/\",\"requires_dist\":null,\"requires_python\":null,\"summary\":\"langid.py is a standalone Language Identification (LangID) tool.\",\"version\":\"1.1.6\",\"yanked\":false,\"yanked_reason\":null},\"last_serial\":2048099,\"ownership\":{\"organization\":null,\"roles\":[{\"role\":\"Owner\",\"user\":\"saffsd\"}]},\"urls\":[{\"comment_text\":\"\",\"core-metadata\":false,\"digests\":{\"blake2b_256\":\"ea4c0fb7d900d3b0b9c8703be316fbddffecdab23c64e1b46c7a83561d78bd43\",\"md5\":\"10b358148b9d5b7ba4576d89599ea396\",\"sha256\":\"044bcae1912dab85c33d8e98f2811b8f4ff1213e5e9a9e9510137b84da2cb293\"},\"downloads\":-1,\"filename\":\"langid-1.1.6.tar.gz\",\"has_sig\":false,\"md5_digest\":\"10b358148b9d5b7ba4576d89599ea396\",\"packagetype\":\"sdist\",\"python_version\":\"source\",\"requires_python\":null,\"size\":1925978,\"upload_time\":\"2016-04-05T22:34:15\",\"upload_time_iso_8601\":\"2016-04-05T22:34:15.786424Z\",\"url\":\"https://files.pythonhosted.org/packages/ea/4c/0fb7d900d3b0b9c8703be316fbddffecdab23c64e1b46c7a83561d78bd43/langid-1.1.6.tar.gz\",\"yanked\":false,\"yanked_reason\":null}],\"vulnerabilities\":[]}\n",
+      "url": "https://pypi.org/pypi/langid/1.1.6/json"
+    }
+  ],
+  "model": "Helsinki-NLP/opus-mt-en-zlw",
+  "new_manual_annotations": 0,
+  "parameters": {
+    "batch_size": 4,
+    "device": "cpu",
+    "do_sample": false,
+    "dtype": "float32",
+    "input_truncation": false,
+    "interop_threads": 1,
+    "max_input_tokens": 512,
+    "max_new_tokens": 256,
+    "num_beams": 4,
+    "torch_threads": 1
+  },
+  "qa_rules": [
+    "nonempty",
+    "restricted language identification pl probability>=0.7",
+    "same digit-token multiset",
+    "negation-presence proxy agrees",
+    "no trigram repeated >=3 times",
+    "no control/error/translation-prefix output",
+    "no source truncation or generation token-limit exhaustion"
+  ],
+  "revision": "92ffd5aa936924688bd715b26d6bb75393082c03",
+  "status": "preregistered_before_translation_or_scores",
+  "text_prefix": ">>pol<< ",
+  "translator_license": "Apache-2.0"
+}

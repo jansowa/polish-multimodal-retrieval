@@ -1,0 +1,35 @@
+{
+  "parameter_metadata_sha256": "c74906f666c2fc8a96fc7d8b63b545ab57548eba4cddfb3ebccf819b4694ec0a",
+  "previous_reports": {
+    "reports\\benchmark_twenty_models.md": {
+      "path": "reports\\benchmark_twenty_models_before_encoder_columns_20261030.md",
+      "sha256": "f6ce5f24a7e5d4fce1119cd73d310787b96d0bbcc255950959f76d26a74f1c97"
+    },
+    "reports\\series_2026-10-23\\OUR_NEW_GALLERIES_20261029.md": {
+      "path": "reports\\series_2026-10-23\\OUR_NEW_GALLERIES_20261029_before_encoder_columns_20261030.md",
+      "sha256": "d2aaaf3e96c5088fb2e1328bc00a4e1ef52ec73698c4cf958d20952b59451d23"
+    },
+    "reports\\series_2026-10-23\\REFERENCE_COMPARISON_20261029.md": {
+      "path": "reports\\series_2026-10-23\\REFERENCE_COMPARISON_20261029_before_encoder_columns_20261030.md",
+      "sha256": "d3057892d993fb87d172407e3bc68d06408b3e223a418a8ecc273cccd1de9f97"
+    },
+    "reports\\series_2026-10-23\\REPORT.md": {
+      "path": "reports\\series_2026-10-23\\REPORT_before_encoder_columns_20261030.md",
+      "sha256": "069de629488f0a479716339e16bc5a88dda44e48d7e13ee183003c4ff70824eb"
+    },
+    "reports\\series_2026-10-23\\summary.json": {
+      "path": "reports\\series_2026-10-23\\summary_before_encoder_columns_20261030.json",
+      "sha256": "7a8ac745b346a99f7697326639c6ef08db36bc44c7f7b312a0782ce0d7bbef8c"
+    }
+  },
+  "quality_and_CI_cells_unchanged": true,
+  "scientific_comparison_unchanged_sha256": "de3433602afa6834c45ca2783653d986073ed22e36e92b838cf0d1db8acad817",
+  "status": "complete",
+  "updated_reports_sha256": {
+    "reports\\benchmark_twenty_models.md": "ddcc9c6ff0fa70be691f12f62ebcb2235bc80b25dcdcc5db965a500a07bc27e3",
+    "reports\\series_2026-10-23\\OUR_NEW_GALLERIES_20261029.md": "072a29121185d213ccd7bf263b14fc27b3afe4570d86dfd328a16fd110b61780",
+    "reports\\series_2026-10-23\\REFERENCE_COMPARISON_20261029.md": "c3795b9c28680a468b930ac3f94259a22fe05bfff3b187586a3f52dc613b39e5",
+    "reports\\series_2026-10-23\\REPORT.md": "34f258ed2d112640680dcdbf6cced0be9abb2c8f8fe32c23ec7656ec5d6962d3",
+    "reports\\series_2026-10-23\\summary.json": "d3d9b921d4411068fa6d9b70ec8ba87316467df39fe4613fd50c78a8d7acc991"
+  }
+}

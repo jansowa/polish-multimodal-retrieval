@@ -1,0 +1,12 @@
+{
+  "backoff_seconds": [
+    2,
+    5
+  ],
+  "max_attempts": 3,
+  "prior_decision_sha256": "e65f32c85c881b69b05f5b53251f69f11eb106fb8f17a54a1e14ee5b4b8706d2",
+  "scope": "Only missing originals; existing receipts and file SHA reverified; no model runs",
+  "script_sha256": "3b7990e9ccf47dac489203bc66f4774de69fe84785f285e001a3690d271b83fd",
+  "status": "registered_before_retry",
+  "workers": 1
+}

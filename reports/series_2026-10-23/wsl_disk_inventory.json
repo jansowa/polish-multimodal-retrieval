@@ -1,0 +1,9 @@
+{
+  "collection": "read-only df -B1 before report finalization",
+  "native_root": {"available": 810461679616, "used": 215647141888},
+  "physical_C": {"available": 29667590144, "used": 543003799552},
+  "physical_D": {"available": 3276988416, "used": 104096141312},
+  "reserve_bytes": 4294967296,
+  "D_reserve_satisfied": false,
+  "weights_or_image_cache_downloads_started": false
+}

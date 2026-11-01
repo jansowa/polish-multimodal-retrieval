@@ -1,0 +1,13 @@
+{
+  "Xet_untouched": true,
+  "datasets_and_features_saved": true,
+  "files": [
+    {
+      "bytes": 198936052,
+      "path": "/home/jsowa/.cache/huggingface/hub/models--alphaedge-ai--metaclip-2-worldwide-s16-384-pol-16384/blobs/d8a0f0516a61b50715f0cca6ab9149eb3ffab4799e208ce2ad894262dcd9e8cd",
+      "sha256": "d8a0f0516a61b50715f0cca6ab9149eb3ffab4799e208ce2ad894262dcd9e8cd",
+      "status": "removed_own_new_weight"
+    }
+  ],
+  "protected_primary_models_untouched": true
+}

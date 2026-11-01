@@ -1,0 +1,3870 @@
+{
+  "ambiguous": [],
+  "excluded_translations": [
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:5"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:0"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:7"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:3"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:2"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:1"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:6"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:4"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:10"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:12"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:9"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:14"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:8"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:15"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:11"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:13"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:17"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:16"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:18"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:20"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:21"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:22"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:23"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:24"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:26"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:19"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:25"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:27"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:31"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:28"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:30"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:29"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:32"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:33"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:36"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:34"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:37"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:35"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:38"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:40"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:43"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:39"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:41"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:42"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:44"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:45"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:47"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:49"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:48"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:46"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:54"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:50"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:51"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:52"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:53"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:55"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:57"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:59"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:60"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:58"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:62"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:56"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:61"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:63"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:64"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:65"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:69"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:66"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:67"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:72"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:70"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:71"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:73"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:75"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:76"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:74"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:68"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:79"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:82"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:83"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:78"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:77"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:80"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:85"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:81"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:84"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:89"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:86"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:87"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:88"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:90"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:91"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:94"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:93"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:92"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:96"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:97"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:95"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:98"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:101"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:100"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:102"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:103"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:104"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:99"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:106"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:107"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:105"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:110"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:112"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:108"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:111"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:109"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:115"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:116"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:119"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:113"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:117"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:114"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:118"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:120"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:122"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:123"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:124"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:125"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:126"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:121"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:127"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:129"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:128"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:131"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:133"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:134"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:130"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:137"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:132"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:135"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:138"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:136"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:139"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:144"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:140"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:145"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:142"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:146"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:143"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:141"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:148"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:147"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:153"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:152"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:149"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:151"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:150"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:156"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:154"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:160"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:157"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:158"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:161"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:155"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:162"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:159"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:163"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:165"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:167"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:168"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:171"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:166"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:170"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:164"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:174"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:172"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:178"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:169"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:177"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:176"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:175"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:179"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:173"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:184"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:185"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:180"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:186"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:187"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:188"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:182"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:181"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:183"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:192"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:189"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:191"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:193"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:190"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:195"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:196"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:197"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:194"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:202"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:201"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:198"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:199"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:203"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:200"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:206"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:208"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:204"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:207"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:209"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:210"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:212"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:211"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:213"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:214"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:205"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:215"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:216"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:217"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:219"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:218"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:220"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:222"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:226"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:223"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:227"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:229"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:225"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:230"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:231"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:221"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:224"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:232"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:236"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:235"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:237"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:228"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:234"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:238"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:233"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:239"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:241"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:240"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:242"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:243"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:244"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:247"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:245"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:249"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:250"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:251"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:246"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:248"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:254"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:253"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:252"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:258"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:255"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:257"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:259"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:261"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:256"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:260"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:262"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:264"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:269"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:266"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:263"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:265"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:268"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:267"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:271"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:272"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:275"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:276"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:274"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:277"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:270"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:279"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:281"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:278"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:282"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:280"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:283"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:287"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:285"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:286"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:288"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:284"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:273"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:289"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:292"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:291"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:290"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:296"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:293"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:298"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:295"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:297"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:294"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:300"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:303"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:299"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:301"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:302"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:309"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:307"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:306"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:310"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:308"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:305"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:304"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:311"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:316"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:318"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:312"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:317"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:315"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:314"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:321"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:313"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:319"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:320"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:322"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:325"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:324"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:323"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:329"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:328"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:327"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:326"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:332"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:330"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:334"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:333"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:338"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:337"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:339"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:340"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:341"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:331"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:343"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:342"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:344"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:346"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:347"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:345"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:348"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:349"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:351"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:352"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:353"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:354"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:350"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:355"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:357"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:356"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:358"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:360"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:362"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:361"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:336"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:363"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:364"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:359"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:367"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:368"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:365"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:369"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:370"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:366"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:375"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:371"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:374"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:372"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:376"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:377"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:373"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:335"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:378"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:379"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:383"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:381"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:384"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:382"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:387"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:380"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:385"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:386"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:388"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:389"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:392"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:391"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:395"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:390"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:397"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:396"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:394"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:399"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:400"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:401"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:398"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:402"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:403"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:393"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:405"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:406"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:408"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:411"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:407"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:410"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:409"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:404"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:412"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:413"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:414"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:416"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:417"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:421"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:419"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:424"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:420"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:425"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:423"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:422"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:415"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:428"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:418"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:426"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:431"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:429"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:427"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:435"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:430"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:437"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:432"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:436"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:438"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:441"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:442"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:439"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:443"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:440"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:444"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:445"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:433"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:447"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:449"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:446"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:448"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:451"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:452"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:454"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:453"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:434"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:450"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:455"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:456"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:458"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:457"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:459"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:461"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:460"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:462"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:463"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:469"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:464"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:468"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:465"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:471"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:470"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:467"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:474"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:476"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:475"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:478"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:466"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:473"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:472"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:477"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:481"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:480"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:482"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:479"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:483"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:486"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:484"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:485"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:489"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:490"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:488"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:487"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:491"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:492"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:493"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:495"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:494"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:499"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:498"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:500"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:501"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:497"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:502"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:503"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:496"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:505"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:508"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:507"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:506"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:504"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:509"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:511"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:510"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:515"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:512"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:516"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:513"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:514"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:517"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:520"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:521"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:522"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:518"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:519"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:525"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:523"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:527"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:528"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:524"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:531"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:529"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:530"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:526"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:534"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:533"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:535"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:538"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:536"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:532"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:537"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:540"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:546"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:544"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:542"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:539"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:543"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:548"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:541"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:552"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:551"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:547"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:554"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:549"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:555"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:553"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:556"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:559"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:558"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:557"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:561"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:560"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:562"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:563"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:564"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:550"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:565"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:566"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:570"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:567"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:568"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:571"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:569"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:574"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:572"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:575"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:573"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:577"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:578"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:576"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:582"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:580"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:579"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:581"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:583"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:584"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:585"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:591"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:586"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:587"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:590"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:589"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:588"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:592"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:594"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:596"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:595"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:597"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:593"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:545"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:598"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:599"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:600"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:602"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:603"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:601"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:605"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:604"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:608"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:607"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:609"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:606"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:612"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:613"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:614"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:611"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:615"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:610"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:618"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:617"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:621"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:620"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:622"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:619"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:616"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:623"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:626"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:625"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:630"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:631"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:624"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:627"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:632"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:634"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:633"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:628"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:636"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:635"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:638"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:629"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:639"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:642"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:640"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:646"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:645"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:644"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:641"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:637"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:643"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:647"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:649"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:648"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:654"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:652"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:657"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:651"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:655"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:658"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:656"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:653"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:659"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:661"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:660"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:666"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:650"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:662"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:667"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:665"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:668"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:664"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:663"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:670"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:671"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:669"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:673"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:672"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:676"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:674"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:679"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:680"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:677"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:675"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:681"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:678"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:683"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:682"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:686"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:685"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:688"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:687"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:689"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:694"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:684"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:690"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:692"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:693"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:691"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:696"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:695"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:700"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:698"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:699"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:701"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:704"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:697"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:702"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:706"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:705"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:709"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:707"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:703"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:708"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:713"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:710"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:715"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:711"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:712"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:716"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:714"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:717"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:720"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:718"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:723"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:722"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:721"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:725"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:726"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:719"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:730"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:728"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:729"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:724"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:727"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:732"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:734"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:733"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:731"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:736"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:738"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:735"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:737"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:740"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:739"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:743"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:742"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:744"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:745"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:741"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:752"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:749"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:747"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:750"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:748"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:746"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:753"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:751"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:756"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:757"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:754"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:755"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:759"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:760"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:758"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:762"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:761"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:765"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:763"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:764"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:767"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:766"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:768"
+    },
+    {
+      "export": "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl",
+      "reason": "unrecognized translated instruction; no guessed caption boundary",
+      "translation_id": "MSCOCO_t2i:769"
+    }
+  ],
+  "new_translations_generated": false,
+  "paired_images": 0,
+  "paired_manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "results_computed": false,
+  "rule": "Exact normalized EN after only the existing known MMEB instruction removal; conflicting cached PL variants excluded",
+  "status": "complete",
+  "translation_export_SHA256": {
+    "outputs/qwen3.8-27b-absence-v3b-single/aro_visual_attribution/text_only/translations.jsonl": "2eb451c2ab45dc13ad81d56ce32bbc852b42d9b6a0f15857b8c0e8ce8a03da66",
+    "outputs/qwen3.8-27b-absence-v3b-single/aro_visual_relation/text_only/translations.jsonl": "8970a4e961f98b6cbb52da2c57a0802f2a8f583f12022180bad267197b437065",
+    "outputs/qwen3.8-27b-absence-v3b-single/cirr/with_image/translations.jsonl": "86d4d9166fb8e20190ed61ef455b7e1ea0ab74c429bc10353a11f8919d0ca2a5",
+    "outputs/qwen3.8-27b-absence-v3b-single/fashioniq/with_image/translations.jsonl": "9e235b33eecc27181a612543c0c92449a44d27a188140a73fb7163536425efd4",
+    "outputs/qwen3.8-27b-absence-v3b-single/refcoco/with_image/translations.jsonl": "8866a0fb61db5f2d6bc2511fb027cfdd6f0762df24a34f1932ba83666d1cc0ad",
+    "outputs/qwen3.8-27b-full-v2-single/mscoco_t2i/with_image/translations.jsonl": "652c0d8d62371d7e6965a2e9ca5368db167428c4af6531fa9930271c7331167d",
+    "outputs/qwen3.8-27b/mscoco_t2i/with_image/translations.jsonl": "bb5ae91fa8c380805fbebd7ab3aaeab4d9f2afd172e8ad2c3bfd9ff03f7c2e04"
+  }
+}

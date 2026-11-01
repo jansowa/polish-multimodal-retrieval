@@ -1,0 +1,2122 @@
+{
+  "fix": "unique atomic temp file in this worker only; shared code and other pipeline allocations unchanged",
+  "preserved_cooldowns_and_pacing": {
+    "adaptive_interval": 1.327561480573,
+    "cooldowns": {
+      "media:upload.wikimedia.org": 1793438312.1353505,
+      "wikimedia-api": 1793166420.7374282
+    },
+    "next_request_at": 1793438344.294539
+  },
+  "previous_failures": [
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "000537bbc42449b5462da2046c3eb725c3b653ca",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:28:56.380632+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "0263af6c8c1c1aeae86a294b7b83321575c432ec",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:26:15.342993+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "02d3ca2344dc758bb984583ebf3507e41a179b72",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:31:22.734971+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "03141b649021a5694af70b9dc3c2a8fcaaa2f08d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:44:49.944501+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "06515a5248e6a8c2de7276ead7722d7ff0f166b0",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:31:28.768805+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "075fdb86ce6ef6c19bca13cb334f06ca61efb8a0",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:29:02.406136+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "08a610608537daaa4e81e92d600ebf42ddfda39f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:44:55.972109+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "09fd0f475323eb34f625eaaa529ac6ad94b18eab",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:36:21.560965+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "0a1e6a4537a99044905427e0caec00cc6357648d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:45:03.679464+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "0a89249b372217e9c2a36a2c82d6a837e7385633",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:41:56.868710+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "0bf37c6ddeecd7eb708f44493dfc624b7d128e43",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:38:16.922343+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "0d0079b2286d149b45b2c056d1a5da33f40ec177",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:45:09.705135+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "0f23b50b2c07a45f71546e27f080bb09f5366e67",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:36:48.712333+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "0f920909ab0fc9edfec84c86f05d697e20ee15e6",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:42:34.078500+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "0fc1d62bb21b01fadf8be6d698d6f16c09765143",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:36:29.107968+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "0fd12e60bec638d1b6985f2ba6da917524315181",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:42:20.422985+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "104b48ec97886b084d598a6c65e32fc428e7611a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:45:15.731925+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "106fccef04a3462f03bcdf6eea039f256fa5dc3a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:45:23.405957+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "119e1487c9fc6e8e92e544ade093f3f04a918977",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:45:29.437216+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "122b3576772136ae5089995f453ae1630a44fa4d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:45:35.462980+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "12d507051ce7fb83c0508e2e8a6d3ca7c4d0b748",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:45:43.115150+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "13fb4d745f08f88ce7b7ffca2e47d2e2dd6cff53",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:29:51.078674+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "14a9e09fc4719f952499ede2a9cf7626ae9152f2",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:26:22.751874+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "14cde940293421de6c8a41a554101124ff6bb194",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:42:40.110006+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "14e4b9a8825b2d1262caf2500631f98be2ff095c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:41:37.193227+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "1775f60d79beb4ec52d8e093e4c75d2712d47ba9",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:45:49.143111+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "198a6f5e9a1db8310d1cfaf61ab29c72c5a13134",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:31:39.860003+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "1ab55ac6d4cc18b18d9f59933a01685caa631e33",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:42:47.770540+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "1acd1bf74a6770f43c0d8c06558c864363e7ee5b",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:26:28.778797+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "1c3deb3f0e8bcb8d1b02269d909233a3624bdddb",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:45:55.170124+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "1cc83013e2c50345a7afe28a359a4bc8f0e6c667",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:31:45.886042+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "1db85374c5881bc188c1e029233829b262984af1",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:31:53.381476+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "1e8cce84523e4bc94b397805d3c60752396291b2",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:42:53.801677+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "20bae35723f6768fc0364ff47a87874129b5af79",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:31:59.411419+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "23c17b7fc1a30cd8d277cf6aace6b2c58d7cac68",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:38:22.958496+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2471be8c744f07626f385257d8ab38225288284c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:32:05.441803+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "253ad64ad95265f40fc50e156ec68c181cb301ca",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:32:12.935851+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2580c7ef1d78eea2f70944892f0ede77171d8446",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:46:02.912306+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "276fec20dfe19fd5451ce75df4ede3fe39d16095",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:36:54.741227+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "27bd5ee7ad08a49b1e760791875e7e4def73267f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:46:08.940608+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2875fe73d875219046ed321159fce93c859667ea",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:38:30.555340+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2951f04065efb913d3d84587b7c3673ebe035304",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:46:14.969290+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "29db3948370b6ab3331c21029e5022832aab8c7b",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:42:59.828060+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "29fa2b77f554a982d5f2516ca67693f09717344e",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:32:18.962156+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2b21a1d5185bd110d4701d071fbe1407edfc41a8",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:43:07.468750+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2b594857ad406bde013265c06be09adcb715bcf2",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:32:24.998074+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2ca989d7ca7a8301cfe8b7a4e9ffc467684e4cfd",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:28:23.350040+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2ccdfbb60fbb56b05063d56d2819d8d4a05de2fe",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:43:13.504433+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2cfd91cd55894f270f69487558dbb879b60642d1",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:28:29.376305+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2f8372b6051c9e9de32b6c5dc13bc37d8ee692af",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:37:00.768664+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "2f9169d15db330462b129ca3d38fffc936ac6d46",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:38:36.583056+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "32a231bcd99d53932e7dd14258bdaa6b1a7f69a7",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:28:03.821654+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "333f9113f4b09e9cb45985d372fc96ccd5376da4",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:32:32.525103+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "33885c80557f8063b4a536af395a48f03322ff3f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:32:38.554882+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "33eb486093c51f5a2efba99877ad5f1ad4e4eb51",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:46:22.627097+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "3404aa6f0da6afa6f4b3bcd7d63c58de5c1f1ad4",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:38:42.609800+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "34b12ddfb8264831a6e4c5b482e21bf9f27c78d8",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:32:44.581166+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "360f697b91ad5184d115d0d2780a92aa9e94a963",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:38:50.191045+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "368fe0d3a9e91f44aafe9b03e27aa2b5526d8b1f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:32:52.068194+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "379a8b60f4c68155413c1540e72f5cac8a07a87b",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:43:19.536974+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "37c6284e9e2a11cc9ce874d9c50c74f6e759ac61",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:32:58.095735+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "3f74f5fdc80345540e338fe6fb6b97d459f31390",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:42:04.499460+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "3f7db607552edf6b19f694ffc7a866f19b2b2c45",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:33:04.126364+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "405fef81e0fd45fdc1dcf499213286d96eed170a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:33:11.630699+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "40811d7341028a5021d9757bd023395e0c69f9d0",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:41:31.160231+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "41dbb4e964f53db3d10cb3b717010d107d07734c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:29:45.049549+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "446236ea8d139dc49774f95c815388afa3e36553",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:37:08.318942+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "4521b4444dfefed2c4049f15d422e35b86977666",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:44:43.917557+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "4555eececc316ccac10e13ffb949c2dc47bbb9b1",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:46:28.655562+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "47e0af21ad7d9917c2e7b0e5d82e420ee1cd52d3",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:37:14.345610+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "49ded8a453fd7d454e991f5accab83ba80c92057",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:29:58.559020+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "4c5d6fe45789da0541c5209eaf1d43a734149e1a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:33:17.656803+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "4ddf47b5664ecf8f9c81c11ff6b6e2e66b612ee0",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:42:28.049171+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "4ed582e754ce086121174f46f7e09cf798af5c46",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:33:23.683618+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "503909c3dc0ffe1a049e2a42d7d65d63d34d87b0",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:33:31.200604+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "527ba57b80737e054eb818d83ce9559c589d1148",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:31:09.207298+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "53672037b2469c2c71b7321b6a10c6f3dd1eb945",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:30:04.586495+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "58e639df13b885906cd380dc73396fdd5bea5dab",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:33:37.240187+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "59086ed779635a6ede0ed15981d1bd12822f6c2a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:38:56.220041+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "591f33e1af71a2f41e80ef83d93302c9354226dd",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:37:20.374208+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "5a2a975f5eac14f84d8145fb1705b6bdff60e79f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:46:38.536676+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "5a6530a3cb6d7dcc31f9bc98a903742ac5cc6891",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:46:46.199901+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "5ab8487bf56ae0210a6a44ed10f3d87d87450521",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:46:52.227031+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "5b018c8052a1c60844f7afaa331dd1da1f7e4b5a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:29:08.433577+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "5b212fdd6265e8dc5bbba8dc609015fb63848703",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:37:27.944828+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "5b7b3d77ee4afa3be6ad1732de7a0c4201d77c7f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:30:10.612265+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "5f7b89ba65a8b670e11ad15000e963d4e8c1a2f9",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:26:34.810571+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6028f3488ef94e7c292bca72938df8b9f929dd89",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:46:58.255588+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "607ea39200ffcadff20d7e30a54b64ac55ae0676",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:39:02.247708+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "60910b42b8c74b69bb32cce64a341471dbf64a88",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:47:06.015573+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "60baa4149dbe464c10a5dd59f1dbe430d547dd65",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:28:09.851505+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "60cd6c1ede79e16bae5028d7e00dd981e344b088",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:47:12.042319+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "60dca3951cf16a706c3e25616bdd49db089b26a4",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:25:55.851969+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "629d2b132b3e00fdf95fd512206846b8594dc1aa",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:31:03.182607+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "632ed1801eb9c79f7d4088fe9c9f1cf9edb3ad0d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:26:42.268694+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "63a6d842f355b28cd26ac74c8f309f274b810f15",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:30:18.100611+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "643d624378d7bd1d0572c7dcc6e7861a32ec90f3",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:37:33.973137+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "647c21475c2cc04f90c2d376763c3a6aebac988c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:33:46.977799+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "66fd2d146377f8a5937f13f64107de5386ea7269",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:39:09.828008+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "675e167281c73bf89758776606bbef408209e9e9",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:33:54.499205+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "686a3c6d3ad637faa2d4e5da52a5985530993a4c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:47:18.070812+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "68a00df40a2e05b035f538fbf7fad18ed64a5dfa",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:26:48.294588+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "696e96fbe214a56dc548314f393ff1cb95f2d16f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:39:15.853229+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6a1dfb8dade9bc777cd0019c068cddc9758c6c3e",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:43:27.185985+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6af3027d1fd93d3652e09e23d6cb25369f883942",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:47:25.804664+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6b8c04bb21bacb3cc60dfc70d60704ece1aabf01",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:47:31.835781+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6bf054169bc8c7ec016a92c9294de6feefed2f21",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:34:00.527573+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6bf56a468e6fb32222039b5128e9c9cd14618c20",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:30:24.127892+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6cba4e9b160e70f72f3c03ed1d8d82c89c458f52",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:47:37.861976+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6d9902f49774ed9d1ff935a5182c672a4521a8ed",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:39:21.883321+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6e215c280cef647e6386faec13a20b52f934688a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:39:29.523324+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6eb321afec274bbd5c7b484438bc413dd96573cb",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:43:33.214189+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "6ef561047e7435c90c8e86179849321a2dd9af61",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:39:35.550609+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "7056e40116212a36108183aa3309f1179360c34b",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:47:45.569333+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "716973bd2e5da3fccc8864ca2cb202f139ec009d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:47:51.597459+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "729064b68cb1eede9d31ce0963b5f2fa4bbc83b2",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:39:41.575527+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "735aeffc60015a82c63a4db309a2fb4aaa481c6a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:26:03.285000+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "73de941fe5089fa0debdc43bf75e8488353c865a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:36:09.499830+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "78ded6bd39e6b0e30a46cd54c688eb5bfa6c5448",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:47:57.626777+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "7a613effc9cb51b585e7242810c5a8893ae1c1d4",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:39:49.162077+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "7c0f7e6982b8f85df0e02862eb28c5fd723061c3",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:48:05.334213+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "7d2a1cfbdbbe0ee8544538a014fe01a07e331775",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:28:48.912553+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "7d8f99e57303775ea497c579dba555365213e0c0",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:43:39.242459+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "7eae8a425575bc3249619183da1eab472737c12c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:34:06.559380+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "81c8908fab3c90d98e8a477242537fa91f47df3c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:29:15.922967+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "81d6135833b09839fd67b03710269a56d74f0f1c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:43:46.905388+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "81f7508982582580021b42500ed46d384b840d2a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:43:52.932185+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8260c6f0b1e41b68b51dd9f0578acf49223ec240",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:48:11.361181+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8297277f389e953f37396cc8f697780e2583ceb3",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:30:30.153730+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "843de75cc8df663b83dc679d411787fa746fc6ff",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:28:42.877276+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8489407f5f0695b6ae01d4251630d87b44d57843",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:48:17.386904+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "84c28bb1c31966ad49c21c75b5ea724e15fef6d0",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:29:21.954107+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "86946ea5d0c7fe3480035306f84cf333ac2bcd8a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:26:54.321606+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "883e20dc807ea21f337e7bf552fe83e7cbf70a47",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:39:55.189966+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "884dc364bea738bee5a1cf2a97bc6a5f87d73d5f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:41:25.133805+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "88cf04a5b4c00e2203d01151f10f7c7f501fc49f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:44:36.254544+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "88d62b67fef6a609a1102dd8d48484873b4e0ae1",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:43:58.958616+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8931ca4ef6e9e9e107952f18c0bfd3a0ab9dd73e",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:44:06.613782+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "89b27890d722d6c5045a9ee69a38d10230408544",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:44:12.646157+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "89b2d9e51771893eff326d4f56ec20ac11d7a35d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:48:25.073580+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8a06efa6c9b01d430043a03c45252f1bdccdfa4e",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:40:01.218698+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8b39eef78a379b3cd7ebb624e0f1493ab77aea46",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:34:14.109753+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8b48b6d2a1e910b19205fea7e9ca0da7cf829544",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:27:01.771462+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8c326647e8afd36d8488f535bdf126e3e0d6fc8c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:36:41.163683+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8e4792abe17d6d0a89d060d40caaac3965293075",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:34:20.136488+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8ed8a97812860700192367fac56e555b5f4b9765",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:27:07.799009+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "8f33c1f73f6da468d0e461bd86a9b422777a0ea2",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:48:31.105980+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "90d854588638db8d763301e412c59936d854db21",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:34:26.164165+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "93d568b8102173212cb41b9ac7e972a8eaf22048",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:37:39.999793+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "97aa4faca2cb4b561bdf51c9b5fbb7e072db0274",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:37:47.570724+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "980b6fb8e2a22fa4200db04a48d9817a462cafb9",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:34:33.692955+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "9908f021533e3c0b03f7ce566917db72ecd6bce1",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:30:37.610356+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "994e147592ca1fe0e5194f60db20e5fa1bafcedf",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:42:10.534671+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "9ab23f5c70d7c615e46c0761ce8b24d8f76de5e9",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:34:39.720069+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "9b7bb8184d0b4c2118db6eae1a150ebed628bd85",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:40:12.545416+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "a3d5657e77cacb14588a6f522f51b597ef26cd35",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:40:18.570709+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "a5cf24a73161d8ff4c12cd32f85d07cd9a38a905",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:40:26.156975+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "a68657c6a27502067ae87fa49d9bd3ff780956b2",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:40:32.184555+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "aa282c00f04f94e81cf3b734d412532363bdd1e4",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:34:45.749266+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ae3090a233f31ad6ecf9657f387da53d8e11279b",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:34:53.292755+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "aeb0335e3421d845eccb25c8a961b9de99f8d626",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:44:18.684500+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "af52ff2335a0f01aaf24ca09bc08145e7e207336",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:34:59.319709+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "b10988fd8deb5f5ffc0c792d04229bef4766242d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:40:38.214894+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "b27dd989bc8ec9bd3dffa17116c3250830ba8e0d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:35:05.349983+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "b2d0d4eb1f49caa6cd931dc204d3b7ee105d4361",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:28:36.839287+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "b37e4875c6bdd30fbe575edd0edb07d752e49436",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:26:09.316201+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "b4530fcde57bb5cb9ffaacccf276bcc424ed695f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:27:13.827214+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "b6d8c8cc46444e9c86608e63df1920a7adf3d0c5",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:37:53.601003+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "b6f8404b4f9666752488a93a5354ad04f29dbcde",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:35:12.894796+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "baaf68b15799ce768fdce5b3dc23a49dacacc65a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:40:45.812268+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "bb05bd9f2ffcf0876b00a222a7d85770fd3ee787",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:30:43.637818+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "bc8ee00b12dd7f0d3c84a4eae7a00a22481f7e77",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:35:18.922721+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "bcd7b677705374208e14533e4499628811a0cdb5",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:41:44.814571+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "bdd0e2fad5ae6ae03c7f857a78c3b649e33fd391",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:27:24.843554+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "be6847400b6c983146dbb1c681fa78a594761bd9",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:38:03.326158+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "c9e9e723c27ecd84c69cd3c24d0d18f4b056cb35",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:41:50.842755+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "cc4e4b9b8736a158c771f32057e2b8f4916ac5a9",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:36:15.530603+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "cd1013a3ef014b8cf45f658183e679ede63bd8b6",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:35:24.949816+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ce0de56f5827e29394f0ab4ca999aff380526d20",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:40:51.837852+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ce457470b36b60298060d0a47fee040651a96976",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:27:30.871379+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "d1a1ee3029d65ae7e698ee4d4c1d4d6290b3a3d9",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:28:17.324287+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "d384beecc7ad61cd13c2366f2665b2d84a9032a6",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:36:35.134229+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "d5f40b40272ccf54266540b2333cc6e6d9f82b1d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:35:32.653750+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "d8ce57269f884397b63aff7089892d15fe8d930e",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:35:38.694276+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "da2005015e2e861c5a49f81f14b32a34d4df9128",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:25:49.824035+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "dc8d834c8d3364f78108e66b125e60f25bd82996",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:27:38.316394+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "de724f88106668d038f2a1e3d25031b7b2905502",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:27:44.347523+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "dfa8eacb215ed9e4461e021857d706b59b3d2182",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:40:57.865266+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e286d442331ed04c6ccca6b52162fc63a1a4138e",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:29:31.565349+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e366357126fd74d15c61c7ac781bafd42698c80f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:19:08.997705+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e382fc8c45797d2141af0f2c68a204e8a1abca53",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:19:16.352316+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e3893a274b2c26ab65c6639a22480a20e32937d6",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:19:22.378719+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e3b3e36b62ea5ff45d05ef5f25c8b114d1ab8f0d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:19:28.405890+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e4d87566d49388e6cf274e0f7654a2f9daacf240",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:19:35.871549+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e53254063fa4a7ad3cb57ace954d1aa2ea3c6b38",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:19:41.912065+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e5df5bb204d96bbd37246fec7cbd7786605ed3c3",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:19:47.943212+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e63477a191b9662837eec022647bf7aa85f85d5f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:27:57.794517+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e859aebb457c81dd8feac2dc882a815fe60239e1",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:41:05.488804+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e85f5245f9f365fa9e62407ead8d0bd751096771",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:19:55.274116+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e8efc173234e8d28d42ad569a072448193cef362",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:20:01.303116+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e9463f954bff44a70ce876df24a6d439a4fd137a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:20:07.331125+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e9733965a69c1fc23d4c1fa0604099d53cd2562d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:20:14.679136+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e982e53aedc1b7760d1aa88bfd3f0421ea6ac316",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:35:44.726977+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e9b1c8b59d90f1fd76deb11f47afd622b7e39dc1",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:20:20.704572+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e9d3cbb34e3082820e1a9c13a00b65e42faad50f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:20:26.729719+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "e9f95fb842640eac66ee8f12e54beca154aab53b",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:20:34.086746+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ea6b3722fab6aa54f2edac9b7b53970104d8e1e1",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:20:40.114413+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ea961ba04750f94b4e5f89c0c9d863b9adc9a87c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:20:46.155582+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "eacc169066b4ef4101565dbd4c01d523cab73221",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:20:53.531951+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "eb1e17b009c0df00d2a45601d79dae159619c801",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:21:03.049794+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "eb30a95c5bd96343d727affc6ae42f0bfa12de20",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:21:10.434927+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ec05ce1cd2225b95a746e7d7f5caa17f72f655a6",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:30:49.668037+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ecad6fb446e1d8f09c18f0a64f8433857b0ee61d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:21:16.468653+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ecd49ed51e54771ce03d52c48c89afaac2117e17",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:21:22.497892+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ecfa4d61d0b3f9e5085c16b0aaa971bff28a6db9",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:21:29.852117+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ed4e3701663ae39d4bc10d4c29d6afe0947338ce",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:21:35.880923+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ed9d6731cafe1a30ade9a973ff30bb20a9e060e8",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:21:41.909592+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ee702af9f8c14b6f6f89fc381700bb8b29bed0a4",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:21:49.312225+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "eee1054343cf1f8ff6708b31ccded76d26b6d079",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:21:55.341328+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f00455552cb2275d03b87c200b7ea096fdb9bc12",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:22:01.367933+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f03694441292624a2fb422e24587c1d2f91b1888",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:36:01.949604+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f052aaa618961cd85681a78085104f798f720ab9",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:41:11.516874+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f08fb146cad71568a3fbb9b86edc13706ae68d31",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:22:08.752951+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f0faecbfa14c48d03cfa38a9c3a8e87fb8dfcabc",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:22:14.781344+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f1b0506c5ce50d6c0f03411e9b3353e5cf3c2870",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:22:20.813642+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f1d500323fe5e09674b9e5d91bb0d3480c7bd398",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:41:17.544610+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f21b505aad9c1b031f128a51fe137875d40020b7",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:44:30.229311+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f25a8c8bde628fd27f2f953c35839622584c12ea",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:22:28.215691+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f261b037d8f84343366eb725d6a754cd52e62ecb",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:22:34.242263+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f363836f29184f7b820d91942c4434db029a5cb3",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:27:50.375515+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f375484b206740f0647acdd617b93d2982a2f018",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:22:40.269312+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f3ae59ca024ee169576d1a51dbccdaaab41b114e",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:22:47.676503+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f4dbe9b09918e52f7a4ec2532e651ff400de232f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:22:53.708599+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f4f0c14584668cc9dc50dce5972c163614a785e8",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:22:59.739035+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f52a2f15d21de96f51abce351685714aeefb4033",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:23:10.600830+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f5369e361217d8c3602c3de584a80a9f63baa802",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:23:16.629816+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f6338be7edac309456293239e420ee4cfb32df6b",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:23:24.028383+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f65f77c67247a094532f8c4f2ebd37ad50b42abf",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:23:30.060836+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f6df9176f9bc3f8dbabd682914aa97ad1d5865f4",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:23:36.088062+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f7443523429b33b60fba81958694ddf5be741d7d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:35:55.922434+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f86cfbf51adaa6e3b541edd384791088f12fdad7",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:23:43.450509+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f90d59898636d604bdd24fde5d2d4b5ffc8aa260",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:23:49.480866+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f93c05c9bc6bde591c3c19b71aaf2e8dd214dde1",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:23:55.511314+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f968aede5969c3371c052a4d6e168ba0556dd201",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:24:02.927744+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "f9fbd2b80033f9e9e27df37be9ee4a0e1f354313",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:24:08.953302+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fafa92157381b2f3752002587e634ce0b911ac82",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:24:14.979686+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fbd15657b339fd76e4c2c859ac4e57e4f428516c",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:24:22.381214+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fc109c6de5b1187728e7995e7cbdb2d3c64f5264",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:29:39.020089+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fc249c3099eb95009181b7445595b98e3b6d7b79",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:24:28.409349+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fc3f72cc36389651b4439f16116d4da72d1a5fce",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:30:57.155085+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fc5985d5cb3bf6aef689a08185e6de2755826ed6",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:24:34.438359+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fcf69118f44bb19dd8e0a6db58f2874081f65323",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:31:16.704164+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fe1d25a935b776dbc771a45859f9acc029a68e8d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:24:41.824168+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fe2528888bf0b92d4fe349b4721721855a64d24f",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:24:47.849957+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fe358e9abd01a744b744b570541b0f858fc19ab5",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:24:53.879232+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fe5e542ce53943cd55c9c8e41f957a9d71d66b8e",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:25:01.294216+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "fe6ce33c5306e1cefb0bc9b2d62c44cc2c782b7d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:25:07.323423+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ff320374a4db842c85b359d08999afb8f2661532",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:25:16.869591+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ff3f8583266f8510d4a8f06005b3f6d79758a05a",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:25:24.297668+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ff69462dc069bf2d1e84b17b9a084bf25ac51b3d",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:25:30.332318+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ff7d5803f935f75719623d6abb7f4f016f962267",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:25:36.369078+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ffa82b1e497a2f03da21d902efac6a4fba7e6222",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:38:10.893512+00:00"
+    },
+    {
+      "attempt": 1,
+      "next_retry_at": 0,
+      "reason": "Shared HTTP state write collision repaired; retry actual acquisition",
+      "sha1": "ffe48b925d2f6e3b08b9c4d1efc0ddac84838039",
+      "status": "retry",
+      "updated_at": "2026-10-31T09:25:43.798040+00:00"
+    }
+  ],
+  "recovered_receipts": 263,
+  "status": "complete",
+  "stopped_own_acquisition_pids": [
+    699
+  ]
+}

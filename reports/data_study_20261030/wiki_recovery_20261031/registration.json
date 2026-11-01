@@ -1,0 +1,103 @@
+{
+  "authorization": "User: koniecznie je pobierz; priority; queue download originals then repeat training experiments overnight; C has 51GB.",
+  "created_at": "2026-10-30T23:58:28.571540+00:00",
+  "decode_workers": 1,
+  "download_workers": 1,
+  "export": {
+    "bytes": 150862754,
+    "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/wikimedia_final_pairs.jsonl",
+    "role": "Wiki_export",
+    "sha256": "415d2f7373ad41bd4654ac9ab62a2da8ed0619e978c5112a5d68addc07a81b08"
+  },
+  "generation": 2,
+  "generation_1_markers": {
+    "A_FINALISTS_FROZEN": "9bf786e10f2be160a33ba5807f26899423123149a50c3817ed2f3974fc30879f",
+    "A_GPU_DONE": "d354c1df5795b0dee12081e88808c6c79c227f2a271e4034726cdcd58f204b3d",
+    "A_UNIVERSE_FROZEN": "b1324298ab7e5a934a3f291aac1bf85f528d643724533995d30af47e3928899d"
+  },
+  "insufficient_data_policy": "Stop training if fewer than 1000 distinct verified Wiki images remain; publish failure report, never repeat 28-image study.",
+  "max_verified_Wiki_images": 5000,
+  "min_verified_Wiki_images": 1000,
+  "no_SQLite": true,
+  "no_deletion": true,
+  "originals_cap_bytes": 34359738368,
+  "partial_download_policy": "Keep every completed original and explicit failure receipt; capacity-limited deterministic prefix allowed only if minimum gate passes.",
+  "physical_free_floor_each_volume_bytes": 4294967296,
+  "schema_version": 1,
+  "scope": [
+    "download original Wiki assets for exact frozen 24125-record export",
+    "full source/raw/pixel/pHash/text audit",
+    "R0/R1 baseline reuse after exact verification; R2/R3 seed42 then chosen Wiki seed43/44; original training recipe and selection"
+  ],
+  "selection": "whole eligible components ordered by sha256(wiki-recovery-20261031: + sorted source SHA1 identities), before model results; no replacement images",
+  "shared_limiter": "outputs/wikimedia_http_state.json",
+  "status": "registered_before_download_and_new_training",
+  "supersedes": "Generation 1 remains immutable; new data require generation-2 universe and new B overlap audit before any new OOD evaluation.",
+  "total_new_bytes_cap": 38654705664,
+  "training_recipe": {
+    "VN_guardrail": "drop > 2 percentage points versus R1: fail recommendation, retain results",
+    "Wiki_variant_selection": "R2/R3 maximal Wiki dev t2i R1; tie smaller Wiki share then earlier saved update",
+    "XM3600_scoring": false,
+    "authorization": "User 2026-10-30: execute session A; Wiki pilot authorized only after data audit, guard and baseline gates.",
+    "batch_size": 256,
+    "checkpoint_selection": "VN dev t2i R1, then mean R1, then earliest; every 275 updates including 0",
+    "confirmation_seeds": [
+      43,
+      44
+    ],
+    "encoders_frozen": true,
+    "export_policy": "Reuse exact 2026-10-29 frozen 132875 VN / 24125 Wiki; no newer export.",
+    "final_batch": 145,
+    "generation": 1,
+    "human_annotations_required": false,
+    "new_legacy_test": false,
+    "old_VN_captions": "retain immutable original VN train; never overwrite captions by new export",
+    "optimizer": "AdamW lr0.001; head wd0.01; fresh SigLIP sigmoid loss wd0; no augmentation/scheduler",
+    "percentages": "pair presentations; FULL historical slots unchanged",
+    "pilot": {
+      "max_Wiki_images": 5000,
+      "max_new_VN_images": 20000,
+      "order": "sha256(data-ood-20261030:pilot: + canonical source identity), ascending; whole components only",
+      "reason": "Bound materialization/cache to 8 GiB A; physical D has only about 4.07 GiB free; use local originals only"
+    },
+    "precision": "Exact approved P1.A cache/head/loss FP32; BF16 encoder extraction only. Verify parity before reuse.",
+    "projector": "fresh Linear512to384",
+    "publication": false,
+    "read_B_results": false,
+    "representatives": "median VN dev t2i R1 over seeds; tie lower seed; R0 remains original seed44",
+    "seeds_first": [
+      42
+    ],
+    "status": "registered_before_any_new_model_result",
+    "steps": 5500,
+    "total_presentations": 1405780,
+    "variant_columns": [
+      "FULL",
+      "VN",
+      "Wiki"
+    ],
+    "variants": {
+      "R0": [
+        50,
+        50,
+        0
+      ],
+      "R1": [
+        50,
+        50,
+        0
+      ],
+      "R2": [
+        50,
+        47,
+        3
+      ],
+      "R3": [
+        50,
+        40,
+        10
+      ]
+    },
+    "window": 275
+  }
+}

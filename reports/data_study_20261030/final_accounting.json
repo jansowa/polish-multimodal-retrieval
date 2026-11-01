@@ -1,0 +1,58 @@
+{
+  "VN_drop_vs_R1_pp": 2.0302879014811093,
+  "Wiki_components": 16,
+  "data_counts": {
+    "Wiki": {
+      "routes": {
+        "ready_native_original": 27,
+        "ready_native_recycled": 1
+      },
+      "rows": 28,
+      "transitive_components": 16,
+      "unique_pixel_images": 28
+    },
+    "new_VN": {
+      "routes": {
+        "ready_original": 2432,
+        "ready_recycled": 17441,
+        "ready_reused_original": 6,
+        "ready_reused_recycled": 9
+      },
+      "rows": 19888,
+      "transitive_components": 19845,
+      "unique_pixel_images": 19876
+    }
+  },
+  "disk": {
+    "C": {
+      "free": 55977132032,
+      "total": 572671389696,
+      "used": 516694257664
+    },
+    "D": {
+      "free": 4367114240,
+      "total": 107373129728,
+      "used": 103006015488
+    }
+  },
+  "files_bytes": {
+    "C": 1024442297,
+    "D": 5104917
+  },
+  "final_OOD_model_ids": [
+    "R0_seed44",
+    "R1_seed44",
+    "R3_seed44"
+  ],
+  "final_VN_guardrail_pass": false,
+  "new_training_runs": 7,
+  "new_training_seconds": 115.13452027800008,
+  "preservation_all_SHA_passed": true,
+  "recommendation": "Do not recommend replacing R1: VN loss exceeds 2 pp",
+  "status": "complete",
+  "wall_times": {
+    "final_cached_feature_preparation_seconds": 9.761040872000024,
+    "image_audit_seconds": 369.872704559,
+    "study_elapsed_seconds_since_registration": 9342.690550327301
+  }
+}

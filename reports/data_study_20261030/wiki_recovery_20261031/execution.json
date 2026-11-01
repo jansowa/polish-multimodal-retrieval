@@ -1,0 +1,94 @@
+{
+  "GPU_lock": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-visualnews-v1/worker.lock",
+  "archive_policy": {
+    "bytes": 1793,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/wiki_recovery_20261031/archive_policy.json",
+    "role": "approved_policy",
+    "sha256": "089ba72f7ff233baeee83f6bf19d87409428aaed2b943883cdd79fe4a9c19857"
+  },
+  "created_at": "2026-10-31T00:15:57.956153+00:00",
+  "log_root": "/mnt/c/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/logs",
+  "scripts": [
+    {
+      "bytes": 7885,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/audit_generation.py",
+      "role": "queue_code",
+      "sha256": "4c0f3ddea19651e0a5e4dfa00a6aee78308fb043b6f3c96a2b933fd3d90f3fbf"
+    },
+    {
+      "bytes": 4706,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/config.py",
+      "role": "queue_code",
+      "sha256": "a4b8f7bb725ceec6ff29bf7f149dab241e3a4ffb28cb8e8486a2a867d071aaef"
+    },
+    {
+      "bytes": 8844,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/download.py",
+      "role": "queue_code",
+      "sha256": "53fd2c6c2f2879fa6acbce74b8a0a8e53456a78294dbd2b2772cc8fa33998d10"
+    },
+    {
+      "bytes": 6680,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/download_compact.py",
+      "role": "queue_code",
+      "sha256": "d25388a67fd0e49da49acf84b665d4dfe1e9c82bc77ff35226100a1f72c2c76f"
+    },
+    {
+      "bytes": 3924,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/finish.py",
+      "role": "queue_code",
+      "sha256": "66febaa21e4364879e136cbb9c1c52ff18c3f0071834c2119c3f2ee6e4fba3a7"
+    },
+    {
+      "bytes": 3538,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/image_assets.py",
+      "role": "queue_code",
+      "sha256": "ec16107924ce7082a76c1b0386ba75ce1491149248b37a0a301d048c48316fee"
+    },
+    {
+      "bytes": 2299,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/launch.py",
+      "role": "queue_code",
+      "sha256": "9b9c04d3bfc55b0430e7320e2069099e2ce9e823fbfc5042bfd167c8d19d3027"
+    },
+    {
+      "bytes": 1451,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/measure_storage.py",
+      "role": "queue_code",
+      "sha256": "5205b31bb0710603fbea36fa4d8e9f9238ddc89c03208e733aab8fe5c0684ee5"
+    },
+    {
+      "bytes": 2319,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/order_downloads.py",
+      "role": "queue_code",
+      "sha256": "5e68ee8ff7b22df7b65e9226c48f94856ba8b0b5eea469946b05ae9629503168"
+    },
+    {
+      "bytes": 1978,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/overnight_queue.py",
+      "role": "queue_code",
+      "sha256": "861e53018f7ae4bc31e372ea3d895b149065ab009a8c84ea126c7f7a32dc172b"
+    },
+    {
+      "bytes": 4367,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/prepare.py",
+      "role": "queue_code",
+      "sha256": "9988f1e6f55eb0c86c0682ec926081074e3ce411e89436451114d736168e34af"
+    },
+    {
+      "bytes": 2068,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/test_queue.py",
+      "role": "queue_code",
+      "sha256": "f5fa3c430d048c04efcf78577f76cc4d90a2e4a74bd5f87c23068e52b55c6693"
+    },
+    {
+      "bytes": 14128,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/wiki_recovery_20261031/train_generation.py",
+      "role": "queue_code",
+      "sha256": "35f5538a2efb22ddd166bdbcc6f7bf1ec839161c44840e563c3e938414f247cb"
+    }
+  ],
+  "status": "ready_for_background_launch",
+  "status_file": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/wiki_recovery_20261031/STATUS.json",
+  "systemd_unit": "codex-wiki-recovery-20261031.service"
+}

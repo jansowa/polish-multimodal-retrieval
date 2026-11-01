@@ -1,0 +1,12 @@
+{
+  "checkpoint_sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+  "cpu_fp32_threads": 2,
+  "gpu_batch_size": 64,
+  "model": "VN_FULL_seed44",
+  "no_embedding_cache": true,
+  "no_retrieval_scores": true,
+  "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+  "repetitions": 100,
+  "status": "registered_before_efficiency_measurement",
+  "warmup": 10
+}

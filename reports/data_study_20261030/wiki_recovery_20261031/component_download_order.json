@@ -1,0 +1,15 @@
+{
+  "catalog": {
+    "bytes": 17267226,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/download_catalog_components.jsonl",
+    "role": "component_ordered_catalog",
+    "sha256": "612c6e8fc26b0ed192590a0ed44c30b2d17fb9714549039e836c4834230fa570"
+  },
+  "metadata_components": 1137,
+  "no_model_results_used": true,
+  "reason": "Observed originals can exceed total 51GB free; prioritize complete unprotected metadata components so capacity cutoff does not fragment every component.",
+  "sample_originals_retained": true,
+  "status": "registered_before_bulk_download_and_model_results",
+  "unchanged_export_sha256": "415d2f7373ad41bd4654ac9ab62a2da8ed0619e978c5112a5d68addc07a81b08",
+  "unprotected_rows": 6418
+}

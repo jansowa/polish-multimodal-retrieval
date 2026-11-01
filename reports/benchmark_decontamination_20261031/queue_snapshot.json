@@ -1,0 +1,25 @@
+{
+  "status": "partial_observation_not_a_training_release",
+  "observed_at": "2026-10-31T17:52:31.404908+00:00",
+  "registry_sha256": "112b6665b3d0001d67faeb367cdc68e88ed2189680f1b245b3ce3c025f53dd55",
+  "export_sha256": "415d2f7373ad41bd4654ac9ab62a2da8ed0619e978c5112a5d68addc07a81b08",
+  "exported_candidate_rows": 24125,
+  "ready_candidate_rows": 9837,
+  "candidates_without_ready_original": 14288,
+  "metadata_or_verified_fingerprint_matches": {
+    "holdout:Wiki_entire_reserved_components": 17707,
+    "holdout:Wiki_original_pilot_dev": 16686,
+    "holdout:XM3600_FINAL_BLIND": 15566,
+    "holdout:wiki_native_dev": 17633,
+    "holdout:historical_eval_reservation": 18
+  },
+  "ready_candidate_matches": {
+    "holdout:Wiki_entire_reserved_components": 3548,
+    "holdout:Wiki_original_pilot_dev": 3849,
+    "holdout:XM3600_FINAL_BLIND": 3222,
+    "holdout:wiki_native_dev": 3548,
+    "holdout:historical_eval_reservation": 18
+  },
+  "receipt_snapshot_sha256": "267b5fea4e8f371ac62f39b7891d964bb8a16c9f529fda9d52ff0670895846aa",
+  "interpretation": "Raw candidates are expected to include protected rows; the final audit must reject them. Missing originals are not certified. Receipts observed without rereading image payloads; no admission approval is issued."
+}

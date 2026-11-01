@@ -1,0 +1,16 @@
+{
+  "cause": "library-dependent cache identity triggered an unused text-cache recomputation",
+  "expected_text_cache": {
+    "identity_sha256": "dbd7f7ecd97261148953d03823490adfa222c40e59b68a830dbca470deaed717",
+    "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-visualnews-v1/text_cache/embeddings/dbd7f7ecd97261148953d03823490adfa222c40e59b68a830dbca470deaed717.pt",
+    "sha256": "13d6677cde8b047e91355fff22c64b7d03cfa91eb51e10d46408a6faa39ffbda"
+  },
+  "mitigation": "Read exact historical tensor and its pinned input identity; never invoke encoder in P1.A",
+  "no_training_results_from_failed_attempt": true,
+  "status": "rejected_before_training",
+  "unused_recomputed_text_cache": {
+    "identity_sha256": "d88614a4d82ad83396067a00e02bc9af2a0cdfd66e93120886da159363975f71",
+    "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-visualnews-v1/text_cache/embeddings/d88614a4d82ad83396067a00e02bc9af2a0cdfd66e93120886da159363975f71.pt",
+    "sha256": "8d465d82d4f784698fd6bbe40f02b39524d826f8e2151bb6382ae6fc8ec8a52f"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "api_version": 1,
+  "artifacts": [
+    {
+      "bytes": 5648,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_ood_common_20261030/common.py",
+      "role": "common_helper",
+      "sha256": "2c9d9771100367d98cb9e9888a880d45c83a2aeef428d6282ccc8ce04ad25466"
+    },
+    {
+      "bytes": 1569,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_ood_common_20261030/USAGE.md",
+      "role": "helper_usage",
+      "sha256": "90d052d299a414bfedbc775570e59d6e2fe4beffa6dd50183ea317b77471d0dc"
+    },
+    {
+      "bytes": 419,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/common_verification.json",
+      "role": "helper_verification",
+      "sha256": "b1840338c6e5b422cf664073f281056a4e844fd550207aef18d1140e72780263"
+    },
+    {
+      "bytes": 3089,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_ood_common_20261030/verify.py",
+      "role": "helper_verification_code",
+      "sha256": "e36b40a316962e8870954b6acf49198bc694f586c909fc3ec4d7a8a173a011bf"
+    }
+  ],
+  "contract_sha256": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+  "generation": 1,
+  "owner": "A",
+  "phase": "COMMON_READY",
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "data-ood-20261030"
+}

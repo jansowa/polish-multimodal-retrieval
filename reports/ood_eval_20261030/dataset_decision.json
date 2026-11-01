@@ -1,0 +1,47 @@
+{
+  "Flickr_restricted_research_use": "Original provider noncommercial research/education conditions and Flickr terms; do not transfer repack CC BY to every photograph; no external redistribution.",
+  "QA_rejected_whole_images": {
+    "Flickr_images": 48,
+    "digits_changed": 27,
+    "images": 69,
+    "language_uncertain": 26,
+    "negation_changed": 27
+  },
+  "VizWiz_license": "CC BY 4.0, original VizWiz-Captions website",
+  "candidate_overlap_audit_sha256": "d54bf83bdb09e93c36d708241ecebdf100d09a187ca07217005af9d1a4f7f23f",
+  "counts": {
+    "flickr30k_pl_local_test": {
+      "components": 948,
+      "images": 952,
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "original_captions": 4760,
+      "positive_edges": 4750,
+      "protocol_sha256": "2f590ee80e6f3b4d84baf0cdc51c285f10a73c862ee4600cd5221fef28e03a6e",
+      "source_pool_images": 952,
+      "unique_queries": 4746
+    },
+    "vizwiz_pl_local_validation": {
+      "components": 982,
+      "images": 1000,
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "original_captions": 4329,
+      "positive_edges": 4329,
+      "protocol_sha256": "63725b9983e19c0bea9fb6ec22775f577e06df7f00ce5fb83de601126397f70e",
+      "source_pool_images": 1181,
+      "unique_queries": 4312
+    }
+  },
+  "final_translation_summary_sha256": "927ebf4f45c33a9ae202ba1ba546c960c6a12e61dc7ab65cc0adb3aae5a367c4",
+  "generation": 1,
+  "minimum_sources": 2,
+  "no_manual_annotations": true,
+  "no_official_Flickr30k1K_claim": true,
+  "no_scores_used": true,
+  "selected_sources": [
+    "flickr30k_pl_local_test",
+    "vizwiz_pl_local_validation"
+  ],
+  "source_OOD": "Relative to projector training universe; pretraining exposure unestablished",
+  "source_selection_rationale": "Flickr has aligned existing PL and original IDs; VizWiz has public original validation photos, accepted human captions, feasible CPU text-only MT and range acquisition inside budget. DOCCI archive exceeds B budget; AIDe original photos/rights unresolved without correspondence.",
+  "status": "closed_before_first_retrieval_score"
+}

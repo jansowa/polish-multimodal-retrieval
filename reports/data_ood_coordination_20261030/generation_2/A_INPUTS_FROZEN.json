@@ -1,0 +1,48 @@
+{
+  "artifacts": [
+    {
+      "bytes": 150862754,
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/wikimedia_final_pairs.jsonl",
+      "role": "Wiki_export",
+      "sha256": "415d2f7373ad41bd4654ac9ab62a2da8ed0619e978c5112a5d68addc07a81b08"
+    },
+    {
+      "bytes": 17267226,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/download_catalog_components.jsonl",
+      "role": "download_catalog",
+      "sha256": "612c6e8fc26b0ed192590a0ed44c30b2d17fb9714549039e836c4834230fa570"
+    },
+    {
+      "bytes": 350,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/wiki_recovery_20261031/frozen_download_summary.json",
+      "role": "download_summary",
+      "sha256": "16fa8b7e3de9d4dd2a87038f12123fe6bdb9d192e9c5954cab2d699165420ab6"
+    },
+    {
+      "bytes": 4366,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/wiki_recovery_20261031/registration.json",
+      "role": "registration",
+      "sha256": "3ce82831ab7d1ee31b0267d488d4395db4525dd62b4a334a5d6b8119a6d6d15d"
+    },
+    {
+      "bytes": 19196966,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/early_receipts_snapshot.jsonl",
+      "role": "available_receipts_snapshot",
+      "sha256": "d3066f65eeaed04ba7c5f8632670455330776a5e1332659958a83cc83882a308"
+    },
+    {
+      "bytes": 1168,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/wiki_recovery_20261031/early_start_decision.json",
+      "role": "early_start_amendment",
+      "sha256": "479bff6981bfd149318ec9a680fafd9c1e2f040188bc690a3868c0c44efffaa7"
+    }
+  ],
+  "authorization_sha256": "3ce82831ab7d1ee31b0267d488d4395db4525dd62b4a334a5d6b8119a6d6d15d",
+  "contract_sha256": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+  "generation": 2,
+  "owner": "A",
+  "phase": "A_INPUTS_FROZEN",
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "data-ood-20261031-wiki-recovery"
+}

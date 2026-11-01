@@ -1,0 +1,21 @@
+{
+  "archived_candidate_images": 10214,
+  "authorization": "User: Może warto już teraz zaczynać z pierwszymi treningami uwzględniającymi dane z wiki?",
+  "change": "Freeze currently available verified receipts; run existing audit/training stages now while acquisition continues independently.",
+  "created_at": "2026-10-31T18:28:20.900891+00:00",
+  "generation": 2,
+  "later_downloads": "Archive only; never enter this closed model comparison",
+  "maximum_Wiki_images": 5000,
+  "minimum_Wiki_images": 1000,
+  "no_adding_training_data_after_universe_freeze": true,
+  "no_new_B_results_read": true,
+  "original_experiments_unchanged": true,
+  "selection_rule_unchanged": "whole eligible components ordered by sha256(wiki-recovery-20261031: + sorted source SHA1 identities), before model results; no replacement images",
+  "snapshot": {
+    "bytes": 19196966,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/early_receipts_snapshot.jsonl",
+    "role": "available_receipts",
+    "sha256": "d3066f65eeaed04ba7c5f8632670455330776a5e1332659958a83cc83882a308"
+  },
+  "status": "registered_before_generation2_model_results"
+}

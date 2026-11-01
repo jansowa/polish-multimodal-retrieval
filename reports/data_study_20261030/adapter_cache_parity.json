@@ -1,0 +1,18 @@
+{
+  "checked_images": 64,
+  "components": {
+    "frozen": true,
+    "projector_sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+    "text": "OPI-PIB/PolDense-32M",
+    "text_prefix": "[query]: ",
+    "text_revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+    "vision": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+    "vision_revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+  },
+  "head_FP32": true,
+  "image_max_abs": 0.0,
+  "image_min_cosine": 0.9999997615814209,
+  "matched_extraction_batches": true,
+  "status": "passed",
+  "text_min_cosine": 0.9999998807907104
+}

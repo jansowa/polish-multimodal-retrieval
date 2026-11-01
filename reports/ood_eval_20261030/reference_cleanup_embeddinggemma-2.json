@@ -1,0 +1,13 @@
+{
+  "Xet_untouched": true,
+  "datasets_and_features_saved": true,
+  "files": [
+    {
+      "bytes": 1488915288,
+      "path": "/home/jsowa/.cache/huggingface/hub/models--google--embeddinggemma-2/blobs/197a32965d4b1105faf060417baa899e193fb73cd401f42ec9295234d5553d79",
+      "sha256": "197a32965d4b1105faf060417baa899e193fb73cd401f42ec9295234d5553d79",
+      "status": "removed_own_new_weight"
+    }
+  ],
+  "protected_primary_models_untouched": true
+}

@@ -1,0 +1,11 @@
+{
+  "dev_guard_sha256": "d78134be53009dda30936407a6dd758294713896f5c4e98432f57621a8221bbe",
+  "pairs_sha256": "8ff469bb0e18a3980b2d9266f4859a8c32c2151f84b6e8bcc8ec0aaf0e7c0cf6",
+  "prior_original_snapshot_rows": 1322,
+  "prior_original_snapshot_sha256": "7202345b7c73c58128ea0f686a5d5089ddc5e817838a89555f628d4f9b41f9cd",
+  "removed_prior_train_rows": 571,
+  "rows": 404,
+  "status": "frozen_disjoint_train_pool",
+  "train_manifest_sha256": "62f880e55b3ab6f14787d9bbe429583dc525fb28b6d47532e8b4a7adbc9f8f1c",
+  "training_allowed": false
+}

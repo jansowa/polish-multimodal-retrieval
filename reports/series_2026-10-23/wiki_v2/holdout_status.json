@@ -1,0 +1,25 @@
+{
+  "all_acquired_asset_bytes": 2754654250,
+  "caption_rows": 397,
+  "dev_components": 130,
+  "dev_images": 397,
+  "dev_manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+  "entire_heldout_component_rows": 1159,
+  "guard_integration_pending": true,
+  "guard_sha256": "09d46c9ede1ab309b6a4e5ee47038ee6985dd39e3c55c6f202e14abc1f9042f8",
+  "historical_1322_snapshot_unchanged": true,
+  "new_Wiki_training_allowed": false,
+  "new_disjoint_pilot_train_rows": 404,
+  "new_pilot_train_sha256": "62f880e55b3ab6f14787d9bbe429583dc525fb28b6d47532e8b4a7adbc9f8f1c",
+  "original_dev_asset_bytes": 2084948329,
+  "original_pilot_train_rows": 975,
+  "removed_pilot_train_rows": 571,
+  "source_class_quota": {
+    "A": 213,
+    "B": 130,
+    "D": 54
+  },
+  "source_export_sha256": "f9a29718379cd7784e8ad7bb27d29dcdf4ffa69b38aebe8ca8b0648b6040843a",
+  "status": "frozen_image_verified",
+  "zero_shot_baseline_pending": true
+}

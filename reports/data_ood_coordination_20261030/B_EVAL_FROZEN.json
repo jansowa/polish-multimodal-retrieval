@@ -1,0 +1,136 @@
+{
+  "A_FINALISTS_FROZEN_sha256": "9bf786e10f2be160a33ba5807f26899423123149a50c3817ed2f3974fc30879f",
+  "A_UNIVERSE_FROZEN_sha256": "b1324298ab7e5a934a3f291aac1bf85f528d643724533995d30af47e3928899d",
+  "artifacts": [
+    {
+      "bytes": 4507502,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/flickr30k_pl_local_test/manifest.json",
+      "role": "manifest:flickr30k_pl_local_test",
+      "sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807"
+    },
+    {
+      "bytes": 1690860,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/flickr30k_pl_local_test/retrieval_protocol.json",
+      "role": "protocol:flickr30k_pl_local_test",
+      "sha256": "2f590ee80e6f3b4d84baf0cdc51c285f10a73c862ee4600cd5221fef28e03a6e"
+    },
+    {
+      "bytes": 574909,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/flickr30k_pl_local_test/qrels.json",
+      "role": "qrels:flickr30k_pl_local_test",
+      "sha256": "a0785bf579f451996498ac36f6b2d30ad701c0beaf517fbc3a6dd0dacfb63fdd"
+    },
+    {
+      "bytes": 854800,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/flickr30k_pl_local_test/components.json",
+      "role": "components:flickr30k_pl_local_test",
+      "sha256": "2ad4bbe41e547d52d700020ec8be7fd4c8d51647fabe3233e9f59c53467270fd"
+    },
+    {
+      "bytes": 4357193,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/vizwiz_pl_local_validation/manifest.json",
+      "role": "manifest:vizwiz_pl_local_validation",
+      "sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa"
+    },
+    {
+      "bytes": 1552595,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/vizwiz_pl_local_validation/retrieval_protocol.json",
+      "role": "protocol:vizwiz_pl_local_validation",
+      "sha256": "63725b9983e19c0bea9fb6ec22775f577e06df7f00ce5fb83de601126397f70e"
+    },
+    {
+      "bytes": 532445,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/vizwiz_pl_local_validation/qrels.json",
+      "role": "qrels:vizwiz_pl_local_validation",
+      "sha256": "239798b9335b505d334e64bcd40e1d9b8d871e0e930af3914d0f8425edf82f3a"
+    },
+    {
+      "bytes": 796900,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/vizwiz_pl_local_validation/components.json",
+      "role": "components:vizwiz_pl_local_validation",
+      "sha256": "31b4f08e75ffcb479e32827efaea81fcfc0802c0e81119eb86f4607e43aa0bc8"
+    },
+    {
+      "bytes": 16859,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/execution_registration.json",
+      "role": "evaluation_registration",
+      "sha256": "af0b8e476b7ee167a77ebebea0ece7678d9b5a9c27a84c61b27ebf208d812730"
+    },
+    {
+      "bytes": 2152,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/dataset_decision.json",
+      "role": "dataset_decision",
+      "sha256": "70d6453236f8c6a3aa43c5dc74486663469d9e2756f926f2b9ff7bdb45411eef"
+    },
+    {
+      "bytes": 1497,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/candidate_overlap_audit.json",
+      "role": "overlap_audit",
+      "sha256": "d54bf83bdb09e93c36d708241ecebdf100d09a187ca07217005af9d1a4f7f23f"
+    },
+    {
+      "bytes": 3224416,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/translations/vizwiz_cpu.jsonl",
+      "role": "translations",
+      "sha256": "16ae163bb9a3c177145b463168d726e22199ec7585b22c841e11e44275acb360"
+    },
+    {
+      "bytes": 4028,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/translation_summary.json",
+      "role": "translation_summary",
+      "sha256": "927ebf4f45c33a9ae202ba1ba546c960c6a12e61dc7ab65cc0adb3aae5a367c4"
+    },
+    {
+      "bytes": 7509,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/translation_decision.json",
+      "role": "translation_decision",
+      "sha256": "12aa0b0eaaf97e36f08b8314eab3436f04834d87a6fd29a218635feb745f29ec"
+    },
+    {
+      "bytes": 1462098,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/flickr30k/translation_qa.json",
+      "role": "Flickr_translation_QA",
+      "sha256": "d7384d8f96737e21fa36697bdbb5f5f14e459f636fa562ea01f77fed6db904e0"
+    },
+    {
+      "bytes": 542,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/flickr_translation_QA_summary.json",
+      "role": "Flickr_translation_QA_summary",
+      "sha256": "fe6f3c63751578501cf33781d272a3c9b87ba3fa1e91e84ec695ddaa06ebf1ca"
+    },
+    {
+      "bytes": 222983,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/source_metadata.json",
+      "role": "source_metadata",
+      "sha256": "a0c591c95e25bfaecfa0d765b96a7ee7fa295d4b1a9f2df863646ece8d369a1c"
+    },
+    {
+      "bytes": 30547,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/deep_research_v2.json",
+      "role": "source_splits",
+      "sha256": "03da7529f5a8d3fd44d592eb38c6268a9a34d19ab7171c679f63c9756273f5c5"
+    },
+    {
+      "bytes": 143616911,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/flickr30k/test.parquet",
+      "role": "originals_Flickr30k",
+      "sha256": "54ce3e659c09ba0a18702ea3201dea964359cda22275da9c7a4f46aba1598c27"
+    },
+    {
+      "bytes": 2142413,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/vizwiz/candidate_images.json",
+      "role": "originals_VizWiz_index",
+      "sha256": "47fad0ce15c2ef79620f7c6d3eccc61ebe80403734c53bae2d38ddeaee6643d0"
+    }
+  ],
+  "contract_sha256": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+  "dependencies": {
+    "A_UNIVERSE_FROZEN": "b1324298ab7e5a934a3f291aac1bf85f528d643724533995d30af47e3928899d"
+  },
+  "generation": 1,
+  "owner": "B",
+  "phase": "B_EVAL_FROZEN",
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "data-ood-20261030"
+}

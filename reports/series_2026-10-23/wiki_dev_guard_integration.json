@@ -1,0 +1,43 @@
+{
+  "Wiki_dev_blocked": 397,
+  "applies_to": [
+    "general training builder/runner",
+    "future VN components",
+    "future Wiki components",
+    "captionless image training"
+  ],
+  "browser_visual_QA": false,
+  "disjoint_pilot_train_accepted": 404,
+  "guard_sha256": "d78134be53009dda30936407a6dd758294713896f5c4e98432f57621a8221bbe",
+  "http_smoke": {
+    "/asset/audit/0": [
+      224,
+      224
+    ],
+    "/asset/audit/100": [
+      224,
+      224
+    ],
+    "/asset/query/0": [
+      224,
+      224
+    ],
+    "/asset/query/150": [
+      960,
+      640
+    ],
+    "audit": 200,
+    "query": 300
+  },
+  "new_Wiki_training_still_blocked": true,
+  "production_annotations_created": 0,
+  "protected_snapshot_SHA_unchanged": true,
+  "source_sha256": {
+    "src/pl_mmb_training/leakage.py": "3d074bfe41ab9cbfead5c02c00d0580919c95aa692d0a3e536f82ffe25b3987e",
+    "src/pl_mmb_training/series_holdout.py": "5879a3760836dabfc60f6d78cbae23ebf3d0ca9feec6f33a07dedfcabbe6acc4",
+    "src/pl_mmb_training/visualnews_data.py": "e86de89f2d12995933f13517d1666b61dc98679eab680fe77da63a26b41517cd",
+    "src/pl_mmb_training/wiki_pilot_data.py": "c21edbb7cb96b8147a5ab541d1532a68c80970f3f44c29246c23edd58b973ed1"
+  },
+  "status": "passed",
+  "tests_passed": 15
+}

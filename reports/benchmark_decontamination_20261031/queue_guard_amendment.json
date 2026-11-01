@@ -1,0 +1,40 @@
+{
+  "status": "guard_integrated_and_verified_not_a_Wiki_data_release",
+  "created_at": "2026-10-31T18:16:56.466373+00:00",
+  "reason": "Protect fixed existing test/dev galleries BEFORE admitting new Wiki data, including late-created Flickr/VizWiz",
+  "registry_sha256": "954934abb198f79c712d4f51ae68a948a413fd9fd3b56fbda0648abb01a478c5",
+  "changes": [
+    {
+      "path": "experiments/data_study_20261030/wiki_recovery_20261031/audit_generation.py",
+      "before_sha256": "4c0f3ddea19651e0a5e4dfa00a6aee78308fb043b6f3c96a2b933fd3d90f3fbf",
+      "after_sha256": "deaa1c11a1a7d5efca1999135fcf3e9af41df04ece81f32fbb72183d8962c1ba",
+      "changed": true
+    },
+    {
+      "path": "experiments/data_study_20261030/wiki_recovery_20261031/train_generation.py",
+      "before_sha256": "35f5538a2efb22ddd166bdbcc6f7bf1ec839161c44840e563c3e938414f247cb",
+      "after_sha256": "e2a3e0556488c9ed555c5be3b23866fb71dc81a89f4caac9ac74a4782755bb6e",
+      "changed": true
+    },
+    {
+      "path": "experiments/data_study_20261030/wiki_recovery_20261031/finish.py",
+      "before_sha256": "66febaa21e4364879e136cbb9c1c52ff18c3f0071834c2119c3f2ee6e4fba3a7",
+      "after_sha256": "66febaa21e4364879e136cbb9c1c52ff18c3f0071834c2119c3f2ee6e4fba3a7",
+      "changed": false
+    }
+  ],
+  "tests": {
+    "new_holdout_tests": 15,
+    "historical_guard_tests": 5,
+    "WSL_queue_tests": 3,
+    "WSL_registry_and_imports": "passed"
+  },
+  "observed_queue_phase": "downloading_compact_archive",
+  "observed_queue_status_updated_at": "2026-10-31T18:16:22.642435+00:00",
+  "generation2_universe_already_frozen": false,
+  "downloader_modified": false,
+  "queue_restarted": false,
+  "scoring_performed": false,
+  "final_Wiki_release": "Pending completed download and final audit; fail closed before GPU on overlap or changed inputs",
+  "other_entrypoints": "Future training sessions must explicitly use the common registry; old runners were not all rewritten"
+}

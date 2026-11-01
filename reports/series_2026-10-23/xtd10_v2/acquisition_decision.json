@@ -1,0 +1,14 @@
+{
+  "URL": "https://s3.amazonaws.com/images.cocodataset.org/{split}/{literal_upstream_filename}",
+  "XM3600_used_only_for_overlap_detection": true,
+  "annotation_manifest_sha256": "bad57836e8d1bdb5ec9edecc5827f3b3ae27c5b23fefb0e5a74e239c61ac72ee",
+  "asset_root": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\xtd10\\images",
+  "max_image_bytes": 20000000,
+  "no_guessed_image_mapping": true,
+  "no_model_encoding_or_retrieval": true,
+  "reserve_bytes": 4294967296,
+  "script_sha256": "a3e10e048c7f5610ecff4decc9c445c66cf2fbf003e0bd372ffeb9eaaeba662d",
+  "source": "Reuse exact-name full images after SHA verification; otherwise literal upstream COCO name from official images.cocodataset.org S3 bucket",
+  "status": "registered_before_asset_acquisition",
+  "workers": 4
+}

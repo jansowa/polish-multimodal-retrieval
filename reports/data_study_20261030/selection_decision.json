@@ -1,0 +1,26 @@
+{
+  "VN_guardrail_seed42_pass": true,
+  "all_training_closed": true,
+  "chosen_Wiki": "R3",
+  "no_B_results_read": true,
+  "representatives": {
+    "R0": 44,
+    "R1": 44,
+    "R3": 44
+  },
+  "seed42_scores": {
+    "R2": 0.16314199395770393,
+    "R3": 0.1661631419939577
+  },
+  "selection_closed_before_seed_confirmation": true,
+  "variant_mean_sd": {
+    "R1": {
+      "mean": 0.744716258944916,
+      "sd": 0.0048489939372053596
+    },
+    "R3": {
+      "mean": 0.7244133799301049,
+      "sd": 0.004352370387958753
+    }
+  }
+}

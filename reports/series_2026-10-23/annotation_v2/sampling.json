@@ -1,0 +1,21 @@
+{
+  "Wiki_audit_components_disjoint_from_dev": true,
+  "audit": {
+    "VN": 100,
+    "Wiki": 100,
+    "manifest_sha256": "6c71275411a79ba85e10aac99fbf2056f803b6835faae2b2f059b240c7d60d7a"
+  },
+  "no_model_suggestions": true,
+  "original_VN_sampling_sha256": "220afe8942348f313bbdec901b639c956c3f2957e59322a63e41c02147d1fa42",
+  "production_annotations_created": 0,
+  "query": {
+    "VN": 150,
+    "Wiki": 150,
+    "manifest_sha256": "dcd845c5317ae5bd85a51fc39bf41165a4db4ff0efc0213be378538fe5c3c533"
+  },
+  "query_captions_hidden": true,
+  "server": "python experiments/series_annotation.py --port 8768",
+  "status": "VN_and_Wiki_ready",
+  "wiki_dev_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+  "wiki_guard_sha256": "d78134be53009dda30936407a6dd758294713896f5c4e98432f57621a8221bbe"
+}

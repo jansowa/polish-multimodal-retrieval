@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "pending": 24105,
+    "ready": 20
+  },
+  "mean_ready_original_bytes": 5879863.15,
+  "projected_all_bytes_from_observed_mean": 141851698493,
+  "status": "acquiring",
+  "updated_at": "2026-10-31T00:01:18.453482+00:00",
+  "verified_original_bytes_including_reuse": 117597263
+}

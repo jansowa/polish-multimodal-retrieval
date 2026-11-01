@@ -1,0 +1,30 @@
+﻿{
+    "status":  "complete",
+    "authorization":  "User requested continued work and use of free C space",
+    "source":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-generalization\\pixels",
+    "destination":  "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\relocated\\tinyclip-generalization-pixels",
+    "preserved_original_path":  "NTFS junction",
+    "files":  [
+                  {
+                      "name":  "complete.json",
+                      "bytes":  2318826,
+                      "sha256":  "a12c4f883c32e072b747810db54d0fb92731d8db3e12cebeda6262d549af51ff"
+                  },
+                  {
+                      "name":  "native_rgb.npy",
+                      "bytes":  1792035968,
+                      "sha256":  "d73c800421461119de7d9442d97084e0872a63db00b502e4588cfcd451dadfb8"
+                  }
+              ],
+    "logical_bytes":  1794354794,
+    "frozen_snapshots_moved":  false,
+    "pipeline_paths_touched":  false,
+    "reserve_bytes":  4294967296,
+    "free_C_before":  20788826112,
+    "free_D_before":  4163096576,
+    "verification":  "SHA each file before/copy/junction; WSL SHA of prefix.npy; remove checked backup only after verification",
+    "free_C_after":  18968686592,
+    "free_D_after":  5879840768,
+    "wsl_prefix_SHA_verified":  true,
+    "files_SHA_unchanged":  true
+}

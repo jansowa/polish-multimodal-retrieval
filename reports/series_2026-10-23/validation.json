@@ -1,0 +1,21 @@
+{
+  "browser_visual_QA": "not performed; no browser automation used",
+  "existing_VN_asset_sha256": "960afef1d0bf1bc642411bef7fab33a30c3456e08d747d6ef90e8c143247d266",
+  "http_smoke": "Eight real loopback GET endpoints passed; both image previews decoded as 224x224; no POST to real annotation storage.",
+  "http_statuses": {
+    "/": 200,
+    "/api/state": 200,
+    "/api/tasks?mode=audit": 200,
+    "/api/tasks?mode=query": 200,
+    "/app.js": 200,
+    "/asset/audit/0": 200,
+    "/asset/query/0": 200,
+    "/style.css": 200
+  },
+  "javascript_syntax": "passed (node --check)",
+  "production_annotations_created": 0,
+  "protected_snapshot_SHA_verified": true,
+  "scope": "Provenance, immutable writes, deterministic image sampling, Wiki training gate, multi-positive NDCG, paired identities, query privacy, append-only writes and explicit audit fields.",
+  "tests_passed": 10,
+  "tests_total": 10
+}

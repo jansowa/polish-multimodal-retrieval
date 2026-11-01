@@ -1,0 +1,35 @@
+﻿{
+    "status":  "complete",
+    "authorization":  "User requested continued work and use of free C space",
+    "source":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-adaptation\\cache",
+    "destination":  "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\relocated\\tinyclip-adaptation-cache",
+    "preserved_original_path":  "NTFS junction",
+    "files":  [
+                  {
+                      "name":  "complete.json",
+                      "bytes":  1439628,
+                      "sha256":  "560d735ec2cae32b35ab9273245756b4f3782c4bc3afba09159c3036da8638c5"
+                  },
+                  {
+                      "name":  "features.pt",
+                      "bytes":  48764781,
+                      "sha256":  "59a242da83e2edd50fdc37fb9021f3a7fb4d6427e7359ab49544b438d2eb688a"
+                  },
+                  {
+                      "name":  "prefix.npy",
+                      "bytes":  4803143808,
+                      "sha256":  "a91531570cea67b534c66b1d0dece192994e5c7c1c03a5c093b4c1715f6440ab"
+                  }
+              ],
+    "logical_bytes":  4853348217,
+    "frozen_snapshots_moved":  false,
+    "pipeline_paths_touched":  false,
+    "reserve_bytes":  4294967296,
+    "free_C_before":  29750173696,
+    "free_D_before":  3055026176,
+    "verification":  "SHA each file before/copy/junction; WSL SHA of prefix.npy; remove checked backup only after verification",
+    "free_C_after":  24857243648,
+    "free_D_after":  7903776768,
+    "wsl_prefix_SHA_verified":  true,
+    "files_SHA_unchanged":  true
+}

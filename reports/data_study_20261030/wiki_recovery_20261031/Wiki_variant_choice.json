@@ -1,0 +1,9 @@
+{
+  "chosen_Wiki": "R3",
+  "no_new_B_results_read": true,
+  "seed42_scores": {
+    "R2": 0.15709969788519637,
+    "R3": 0.18126888217522658
+  },
+  "selection_rule": "Wiki t2i R1; tie smaller Wiki share then earlier saved update"
+}

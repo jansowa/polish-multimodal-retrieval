@@ -1,0 +1,13 @@
+{
+  "algorithm": "phash-dct32-low8-median-including-dc-exif-v1",
+  "artifact": {
+    "bytes": 2142413,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/vizwiz/candidate_images.json",
+    "sha256": "47fad0ce15c2ef79620f7c6d3eccc61ebe80403734c53bae2d38ddeaee6643d0"
+  },
+  "bytes": 565374671,
+  "captions": 5442,
+  "images": 1250,
+  "no_thumbnails": true,
+  "status": "originals_prepared_pending_A_audit_and_MT"
+}

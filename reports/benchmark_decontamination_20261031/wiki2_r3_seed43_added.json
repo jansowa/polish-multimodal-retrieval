@@ -1,0 +1,19 @@
+{
+  "checkpoint_sha256": "094122a574d8f2322b1434bb0eb0a5d539b510c36b5cfc74c2eb140c0e1f7636",
+  "complete_sha256": "06560d930d7724a2c6748be57dd7942df79fb7582f2ef0a67fb81b847ae01096",
+  "datasets": 7,
+  "label": "R3_wiki2_seed43",
+  "live_UI_callback_verified": true,
+  "overlap_review_sha256": "c10c73c9a97ea270ac18ea430b0f7ca6821be1fa3e40bc54701c653b02c35f6e",
+  "parameters": {
+    "head": 196992,
+    "shared": 0,
+    "text": 31883136,
+    "total": 70470528,
+    "vision": 38587392
+  },
+  "parity": "Exact original Wiki metrics and per-query arrays",
+  "prompt_modes": 2,
+  "results": 14,
+  "status": "complete_and_visible_in_default_live_leaderboard"
+}

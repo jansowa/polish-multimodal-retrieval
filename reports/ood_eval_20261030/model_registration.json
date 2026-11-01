@@ -1,0 +1,369 @@
+{
+  "A_FINALISTS_FROZEN_sha256": "9bf786e10f2be160a33ba5807f26899423123149a50c3817ed2f3974fc30879f",
+  "A_GPU_DONE_sha256": "d354c1df5795b0dee12081e88808c6c79c227f2a271e4034726cdcd58f204b3d",
+  "A_UNIVERSE_FROZEN_sha256": "b1324298ab7e5a934a3f291aac1bf85f528d643724533995d30af47e3928899d",
+  "A_adapter_parity": {
+    "bytes": 608,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/adapter_cache_parity.json",
+    "role": "adapter_parity",
+    "sha256": "2bae83c0d16f778a971395ecafae047a47b25dcae089b866ed2145787efd1f94"
+  },
+  "adapter_sha256": "82ec46f210718a13d8ad0a122e21679bf3686db4579ae5f41d5e5b34bfb7416a",
+  "all_nine_scored_for_seed_mean_SD": true,
+  "generation": 1,
+  "guardrail_interpretation": "A reports VN guardrail failed; R3 diagnostic, not a replacement winner.",
+  "models": [
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R0_seed42",
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-source-ablation-v1/VN_FULL/best.pt",
+      "representative": false,
+      "seed": 42,
+      "sha256": "75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/manifests/R0_train.jsonl",
+      "training_manifest_sha256": "07bca202852f666046a24bd904568d201816a31dca0b75f08492b5c6c949eb15",
+      "variant": "R0"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R0_seed43",
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-43/VN_FULL/best.pt",
+      "representative": false,
+      "seed": 43,
+      "sha256": "626127451432301b1127478a3b47f2394139753c9e3f2bdb52570a44b8273776",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/manifests/R0_train.jsonl",
+      "training_manifest_sha256": "07bca202852f666046a24bd904568d201816a31dca0b75f08492b5c6c949eb15",
+      "variant": "R0"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R0_seed44",
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-44/VN_FULL/best.pt",
+      "representative": true,
+      "seed": 44,
+      "sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/manifests/R0_train.jsonl",
+      "training_manifest_sha256": "07bca202852f666046a24bd904568d201816a31dca0b75f08492b5c6c949eb15",
+      "variant": "R0"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R1_seed42",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-42/best.pt",
+      "representative": false,
+      "seed": 42,
+      "sha256": "d45ce719846c060bfa489c8fa89a9caef8ee8275ffbd2c1d75f059c85491d622",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/manifests/R1_train.jsonl",
+      "training_manifest_sha256": "f13605a853a6c6236a25c969601224a6100fa70274ad65f648cce174459545f5",
+      "variant": "R1"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R1_seed43",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-43/best.pt",
+      "representative": false,
+      "seed": 43,
+      "sha256": "ab6e24c0887777da50baca820f5a10d66bf12dd398c10f83e37d656e3620ad02",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/manifests/R1_train.jsonl",
+      "training_manifest_sha256": "f13605a853a6c6236a25c969601224a6100fa70274ad65f648cce174459545f5",
+      "variant": "R1"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R1_seed44",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-44/best.pt",
+      "representative": true,
+      "seed": 44,
+      "sha256": "6437c7234d01a88c2895399e7a3b7e1577843f6507fe79cb8b04356ac2e1dbd9",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/manifests/R1_train.jsonl",
+      "training_manifest_sha256": "f13605a853a6c6236a25c969601224a6100fa70274ad65f648cce174459545f5",
+      "variant": "R1"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R3_seed42",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R3/seed-42/best.pt",
+      "representative": false,
+      "seed": 42,
+      "sha256": "09e4a96224eb18e0a8ed25011258980b03865873126d8cc9d1ce565689a07a89",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": true,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/manifests/R3_train.jsonl",
+      "training_manifest_sha256": "64d4caa4d3daf8e83d2e41a7ca3b0395384e48340e9cd3fa74f883017381177f",
+      "variant": "R3"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R3_seed43",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R3/seed-43/best.pt",
+      "representative": false,
+      "seed": 43,
+      "sha256": "65e695e33c54d41a402e55583c2b616075ed16fcd52f39fea64d95aa4b4baeca",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": true,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/manifests/R3_train.jsonl",
+      "training_manifest_sha256": "64d4caa4d3daf8e83d2e41a7ca3b0395384e48340e9cd3fa74f883017381177f",
+      "variant": "R3"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R3_seed44",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R3/seed-44/best.pt",
+      "representative": true,
+      "seed": 44,
+      "sha256": "0cd560a39263fc165e4e7cd4949a9f8deda77ec207ff10f1e34d6d9af03d0285",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": true,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/manifests/R3_train.jsonl",
+      "training_manifest_sha256": "64d4caa4d3daf8e83d2e41a7ca3b0395384e48340e9cd3fa74f883017381177f",
+      "variant": "R3"
+    }
+  ],
+  "no_model_add_remove_after_scores": true,
+  "parameter_columns": {
+    "encoders": {
+      "text": 31883136,
+      "total": 70470528,
+      "vision": 38587392
+    },
+    "head_separate": 196992
+  },
+  "reference_models": [
+    {
+      "alias": "metaclip-s16",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "0f11ef85118199626fff5fe7a57705d9e5282f19a058a582dc3143e5bdafddca",
+        "source_url": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384/raw/006223472923ba925226b59b6acd1e3e266c2382/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\3c08aae1b26de399b84d\\result.json",
+          "sha256": "fdea1e3b61e4a9e380ef8f4131f64bee9f78b87c21acf28d5af7474ae25fe605"
+        },
+        {
+          "path": "benchmark\\results\\3fda784e8c09ec234306\\result.json",
+          "sha256": "a862e7bfe24d8cced565f413e921c796018af09b66616680658e9cd15800da08"
+        },
+        {
+          "path": "benchmark\\results\\9d0c9edcf39570392201\\result.json",
+          "sha256": "70691bfb27e727857121ad61a82198458270844fa415c27613cb76b90e3eac3f"
+        },
+        {
+          "path": "benchmark\\results\\a9abf5f67aee4a83bcf3\\result.json",
+          "sha256": "67e0ec036a0b0d3cb019a85b61dcaf8e6d6bf4c888669d8870208aa79f954fe4"
+        }
+      ],
+      "model": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384",
+      "polish_adapted": true,
+      "polish_retrieval_competitor": true,
+      "revision": "006223472923ba925226b59b6acd1e3e266c2382",
+      "same_size_class_le_100M": true,
+      "total_parameters": 49722241,
+      "weight_storage": {
+        "alias": "metaclip-s16",
+        "files": [
+          {
+            "bytes": 198936052,
+            "cached": false,
+            "name": "model.safetensors"
+          }
+        ],
+        "missing_weight_bytes": 198936052,
+        "repo": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384",
+        "revision": "006223472923ba925226b59b6acd1e3e266c2382",
+        "weight_bytes": 198936052
+      }
+    },
+    {
+      "alias": "metaclip-m16",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "9c06ec33a9cd01807c806a0b153b9f24a774c58acc59a07845d8f35967fe4c89",
+        "source_url": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384/raw/bc15d9f5ddabe0497898578493a6e81288057c90/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\00c474fc45efa29007e4\\result.json",
+          "sha256": "13a6d1f4fe32778af4727c6492eef792fa01568a11c79078b6c2bfc7e2023429"
+        },
+        {
+          "path": "benchmark\\results\\08ebf411e72d73432038\\result.json",
+          "sha256": "bfd9e34955faa45df562d4d04d52153a86b18bca41872eaa4d1f6b722ceec7e9"
+        },
+        {
+          "path": "benchmark\\results\\20c3fb7894534caa44db\\result.json",
+          "sha256": "bee8feb9fc669de3098f5ac88b63f01f249a03c28e4973a348c798fa6f6dbfda"
+        },
+        {
+          "path": "benchmark\\results\\d0cbacb6578469f4fd07\\result.json",
+          "sha256": "712334874464f14225cd9b65fe31c8079c6864ca0070b219e4d57a70f3ea933d"
+        }
+      ],
+      "model": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384",
+      "polish_adapted": true,
+      "polish_retrieval_competitor": true,
+      "revision": "bc15d9f5ddabe0497898578493a6e81288057c90",
+      "same_size_class_le_100M": true,
+      "total_parameters": 85301761,
+      "weight_storage": {
+        "alias": "metaclip-m16",
+        "files": [
+          {
+            "bytes": 341254292,
+            "cached": false,
+            "name": "model.safetensors"
+          }
+        ],
+        "missing_weight_bytes": 341254292,
+        "repo": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384",
+        "revision": "bc15d9f5ddabe0497898578493a6e81288057c90",
+        "weight_bytes": 341254292
+      }
+    },
+    {
+      "alias": "embeddinggemma-2",
+      "author_prompt": {
+        "document_prefix": "title: none | text: ",
+        "image_prefix": "",
+        "query_prefix": "task: search result | query: ",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "b677a0ee2818c36f091b65fd3d9b4baea9f04d53b02b49cae916c74bf9682037",
+        "source_url": "https://huggingface.co/google/embeddinggemma-2/raw/914f7f89142e33e77833254d9c9b90c3cef7303b/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\2bca618a44e52ec9a66a\\result.json",
+          "sha256": "f3592284c7c282c3a5a7a9a8645150fde1615dd21b014c33352bc53141f140e4"
+        },
+        {
+          "path": "benchmark\\results\\a278ce550949d506aeaf\\result.json",
+          "sha256": "bc9c1a6083360d6d20fba6273ee768ede437cf06748341e36d9fd27a20b6570c"
+        },
+        {
+          "path": "benchmark\\results\\b09f7ee8cfbbf7053c2e\\result.json",
+          "sha256": "009623bc92e2d28d3475c4537eb8f778556b76addcb37a3fc1c47a30b35fe6c4"
+        },
+        {
+          "path": "benchmark\\results\\d9f052dd90d3976dff9d\\result.json",
+          "sha256": "0b88ee2861d63ebe2754ef40f17ac2d81b0c4e152f4ce3b42fbcf35f24ae9623"
+        }
+      ],
+      "model": "google/embeddinggemma-2",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+      "same_size_class_le_100M": false,
+      "total_parameters": 438760448,
+      "weight_storage": {
+        "alias": "embeddinggemma-2",
+        "files": [
+          {
+            "bytes": 1488915288,
+            "cached": false,
+            "name": "model.safetensors"
+          }
+        ],
+        "missing_weight_bytes": 1488915288,
+        "repo": "google/embeddinggemma-2",
+        "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+        "weight_bytes": 1488915288
+      }
+    }
+  ],
+  "representative_model_ids": [
+    "R0_seed44",
+    "R1_seed44",
+    "R3_seed44"
+  ],
+  "representative_only_paired_CI": true,
+  "selected_Wiki_variant": "R3",
+  "selection_decision": {
+    "VN_guardrail_seed42_pass": true,
+    "all_training_closed": true,
+    "chosen_Wiki": "R3",
+    "no_B_results_read": true,
+    "representatives": {
+      "R0": 44,
+      "R1": 44,
+      "R3": 44
+    },
+    "seed42_scores": {
+      "R2": 0.16314199395770393,
+      "R3": 0.1661631419939577
+    },
+    "selection_closed_before_seed_confirmation": true,
+    "variant_mean_sd": {
+      "R1": {
+        "mean": 0.744716258944916,
+        "sd": 0.0048489939372053596
+      },
+      "R3": {
+        "mean": 0.7244133799301049,
+        "sd": 0.004352370387958753
+      }
+    }
+  },
+  "shared_scorer_sha256": "644cc9f575a45c4475c069e1da0deddd1ef2eda738cd380f4539c8641386d121",
+  "status": "models_verified_waiting_for_frozen_B_data"
+}

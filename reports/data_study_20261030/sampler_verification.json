@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "42": {
+      "FULL": 702880,
+      "FULL_slots_exact": true,
+      "Wiki": {
+        "3": 42173,
+        "10": 140578
+      },
+      "historical_R0_R1_exact": true,
+      "total": 1405780
+    },
+    "43": {
+      "FULL": 702880,
+      "FULL_slots_exact": true,
+      "Wiki": {
+        "3": 42173,
+        "10": 140578
+      },
+      "historical_R0_R1_exact": true,
+      "total": 1405780
+    },
+    "44": {
+      "FULL": 702880,
+      "FULL_slots_exact": true,
+      "Wiki": {
+        "3": 42173,
+        "10": 140578
+      },
+      "historical_R0_R1_exact": true,
+      "total": 1405780
+    }
+  },
+  "status": "passed"
+}

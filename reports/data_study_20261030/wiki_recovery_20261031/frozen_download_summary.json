@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "ready": 10214
+  },
+  "expected_unique_originals": 24125,
+  "full_frame_master_edge": 1536,
+  "native224_lossless": true,
+  "original_fingerprints_computed_before_resize": true,
+  "status": "available_input_snapshot_frozen_before_training",
+  "stored_asset_bytes": 7001424951,
+  "updated_at": "2026-10-31T18:28:20.885485+00:00"
+}

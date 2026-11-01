@@ -1,0 +1,40 @@
+{
+  "JPEG_quality": 92,
+  "JPEG_subsampling": 0,
+  "no_crop": true,
+  "no_upscale": true,
+  "preserve_aspect_ratio": true,
+  "profiles": {
+    "long1024_q92": {
+      "estimated_all_24125_GB": 6.705013,
+      "mean_bytes": 277928,
+      "median_bytes": 269930.0,
+      "sample_n": 20
+    },
+    "long1280_q92": {
+      "estimated_all_24125_GB": 10.1152771625,
+      "mean_bytes": 419286.1,
+      "median_bytes": 405436.5,
+      "sample_n": 20
+    },
+    "long1536_q92": {
+      "estimated_all_24125_GB": 14.089855231249999,
+      "mean_bytes": 584035.45,
+      "median_bytes": 565299.0,
+      "sample_n": 20
+    },
+    "long768_q92": {
+      "estimated_all_24125_GB": 3.94452555625,
+      "mean_bytes": 163503.65,
+      "median_bytes": 161886.5,
+      "sample_n": 20
+    },
+    "original": {
+      "estimated_all_24125_GB": 141.85169849375,
+      "mean_bytes": 5879863.15,
+      "median_bytes": 3258696.5,
+      "sample_n": 20
+    }
+  },
+  "status": "measured_on_20_deterministic_originals_not_full_census"
+}

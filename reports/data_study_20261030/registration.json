@@ -1,0 +1,66 @@
+{
+  "VN_guardrail": "drop > 2 percentage points versus R1: fail recommendation, retain results",
+  "Wiki_variant_selection": "R2/R3 maximal Wiki dev t2i R1; tie smaller Wiki share then earlier saved update",
+  "XM3600_scoring": false,
+  "authorization": "User 2026-10-30: execute session A; Wiki pilot authorized only after data audit, guard and baseline gates.",
+  "batch_size": 256,
+  "checkpoint_selection": "VN dev t2i R1, then mean R1, then earliest; every 275 updates including 0",
+  "confirmation_seeds": [
+    43,
+    44
+  ],
+  "encoders_frozen": true,
+  "export_policy": "Reuse exact 2026-10-29 frozen 132875 VN / 24125 Wiki; no newer export.",
+  "final_batch": 145,
+  "generation": 1,
+  "human_annotations_required": false,
+  "new_legacy_test": false,
+  "old_VN_captions": "retain immutable original VN train; never overwrite captions by new export",
+  "optimizer": "AdamW lr0.001; head wd0.01; fresh SigLIP sigmoid loss wd0; no augmentation/scheduler",
+  "percentages": "pair presentations; FULL historical slots unchanged",
+  "pilot": {
+    "max_Wiki_images": 5000,
+    "max_new_VN_images": 20000,
+    "order": "sha256(data-ood-20261030:pilot: + canonical source identity), ascending; whole components only",
+    "reason": "Bound materialization/cache to 8 GiB A; physical D has only about 4.07 GiB free; use local originals only"
+  },
+  "precision": "Exact approved P1.A cache/head/loss FP32; BF16 encoder extraction only. Verify parity before reuse.",
+  "projector": "fresh Linear512to384",
+  "publication": false,
+  "read_B_results": false,
+  "representatives": "median VN dev t2i R1 over seeds; tie lower seed; R0 remains original seed44",
+  "seeds_first": [
+    42
+  ],
+  "status": "registered_before_any_new_model_result",
+  "steps": 5500,
+  "total_presentations": 1405780,
+  "variant_columns": [
+    "FULL",
+    "VN",
+    "Wiki"
+  ],
+  "variants": {
+    "R0": [
+      50,
+      50,
+      0
+    ],
+    "R1": [
+      50,
+      50,
+      0
+    ],
+    "R2": [
+      50,
+      47,
+      3
+    ],
+    "R3": [
+      50,
+      40,
+      10
+    ]
+  },
+  "window": 275
+}

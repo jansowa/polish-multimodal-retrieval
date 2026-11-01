@@ -1,0 +1,10 @@
+{
+  "asset_root": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/vn-dev-originals",
+  "frozen_VN_dev_sha256": "69b8fd8583ef80874cd2c63ded18cf9151d8ae876ee96e1367a9f4391cf391ec",
+  "pillow": "12.3.0",
+  "reason": "Use the original Linux Pillow decoder for exact frozen pixel SHA; preserve 4 GiB on both volumes and budget new payload only on target C",
+  "script_sha256": "c6546080bcbdd68af02d7c5f77aaeb608d0d9037c406397d20ca3e045ade32b2",
+  "source": "Only frozen shard,row,did,path mapping in VN dev and SHA-pinned extraction metadata; no SQLite/WAL",
+  "status": "registered_before_original_asset_copy",
+  "supersedes": "asset_acquisition_decision.json"
+}

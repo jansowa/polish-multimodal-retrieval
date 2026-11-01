@@ -1,0 +1,51 @@
+{
+  "cpu_threads": 2,
+  "decision_sha256": "195edd9a8dba2de6a350e0ce2fa4432d0bb00373ba1eb10500739e3da0a00983",
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "dimension": 384,
+  "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+  "measured_batches": 100,
+  "measurements": {
+    "cpu_image": {
+      "batch_size": 1,
+      "median_batch_ms": 77.10517150000129,
+      "median_ms_per_item": 77.10517150000129,
+      "p95_batch_ms": 90.40515490000587,
+      "precision": "fp32",
+      "status": "measured"
+    },
+    "cpu_query": {
+      "batch_size": 1,
+      "median_batch_ms": 14.498312499998889,
+      "median_ms_per_item": 14.498312499998889,
+      "p95_batch_ms": 16.57729499999583,
+      "precision": "fp32",
+      "status": "measured"
+    },
+    "cuda_image": {
+      "batch_size": 64,
+      "median_batch_ms": 134.62163250000003,
+      "median_ms_per_item": 2.1034630078125005,
+      "p95_batch_ms": 156.60610690000388,
+      "precision": "fp32-weights-bf16-autocast",
+      "status": "measured"
+    },
+    "cuda_query": {
+      "batch_size": 64,
+      "median_batch_ms": 17.706890499999517,
+      "median_ms_per_item": 0.27667016406249245,
+      "p95_batch_ms": 25.517775099999263,
+      "precision": "fp32-weights-bf16-autocast",
+      "status": "measured"
+    }
+  },
+  "model": "VN_FULL_seed44",
+  "parameters": {
+    "head": 196992,
+    "shared": 0,
+    "text": 31883136,
+    "vision": 38587392
+  },
+  "registration_sha256": "037cb7e9931f0a7a0a4d490cb859ec180f07957203d5480b48f787d25d50c55e",
+  "warmup_batches": 10
+}

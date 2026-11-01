@@ -1,0 +1,151 @@
+{
+  "repository": "adobe-research/Cross-lingual-Test-Dataset-XTD10",
+  "revision": "d77ff16148468c84287f3efcbf602a015c5e4954",
+  "tree": [
+    {
+      "name": "test_1kcaptions_en.txt",
+      "path": "XTD10/test_1kcaptions_en.txt",
+      "sha": "b098c6e17ef4707559b25f2f4f23b2394a07bd0e",
+      "size": 65828,
+      "url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_en.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+      "html_url": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_en.txt",
+      "git_url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/b098c6e17ef4707559b25f2f4f23b2394a07bd0e",
+      "download_url": "https://raw.githubusercontent.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_en.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_en.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+        "git": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/b098c6e17ef4707559b25f2f4f23b2394a07bd0e",
+        "html": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_en.txt"
+      }
+    },
+    {
+      "name": "test_1kcaptions_es.txt",
+      "path": "XTD10/test_1kcaptions_es.txt",
+      "sha": "255813947351d96deb65973388da4d7c184ab647",
+      "size": 66315,
+      "url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_es.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+      "html_url": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_es.txt",
+      "git_url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/255813947351d96deb65973388da4d7c184ab647",
+      "download_url": "https://raw.githubusercontent.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_es.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_es.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+        "git": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/255813947351d96deb65973388da4d7c184ab647",
+        "html": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_es.txt"
+      }
+    },
+    {
+      "name": "test_1kcaptions_it.txt",
+      "path": "XTD10/test_1kcaptions_it.txt",
+      "sha": "2b1decc27269b8a34e1d5313e6a8b4f970d273e7",
+      "size": 65178,
+      "url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_it.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+      "html_url": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_it.txt",
+      "git_url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/2b1decc27269b8a34e1d5313e6a8b4f970d273e7",
+      "download_url": "https://raw.githubusercontent.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_it.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_it.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+        "git": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/2b1decc27269b8a34e1d5313e6a8b4f970d273e7",
+        "html": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_it.txt"
+      }
+    },
+    {
+      "name": "test_1kcaptions_ko.txt",
+      "path": "XTD10/test_1kcaptions_ko.txt",
+      "sha": "9dd551e0ecb8162ae3823531abb63a044d393a8a",
+      "size": 70124,
+      "url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_ko.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+      "html_url": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_ko.txt",
+      "git_url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/9dd551e0ecb8162ae3823531abb63a044d393a8a",
+      "download_url": "https://raw.githubusercontent.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_ko.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_ko.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+        "git": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/9dd551e0ecb8162ae3823531abb63a044d393a8a",
+        "html": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_ko.txt"
+      }
+    },
+    {
+      "name": "test_1kcaptions_pl.txt",
+      "path": "XTD10/test_1kcaptions_pl.txt",
+      "sha": "473c5d4a21b26439212583826cf33802173208d0",
+      "size": 66605,
+      "url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_pl.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+      "html_url": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_pl.txt",
+      "git_url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/473c5d4a21b26439212583826cf33802173208d0",
+      "download_url": "https://raw.githubusercontent.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_pl.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_pl.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+        "git": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/473c5d4a21b26439212583826cf33802173208d0",
+        "html": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_pl.txt"
+      }
+    },
+    {
+      "name": "test_1kcaptions_ru.txt",
+      "path": "XTD10/test_1kcaptions_ru.txt",
+      "sha": "453701c6baab50d1602b444c0c11718a52e65c65",
+      "size": 95035,
+      "url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_ru.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+      "html_url": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_ru.txt",
+      "git_url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/453701c6baab50d1602b444c0c11718a52e65c65",
+      "download_url": "https://raw.githubusercontent.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_ru.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_ru.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+        "git": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/453701c6baab50d1602b444c0c11718a52e65c65",
+        "html": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_ru.txt"
+      }
+    },
+    {
+      "name": "test_1kcaptions_tr.txt",
+      "path": "XTD10/test_1kcaptions_tr.txt",
+      "sha": "222490e4ba907b61cf53589bc4866f9914fdd29a",
+      "size": 71756,
+      "url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_tr.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+      "html_url": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_tr.txt",
+      "git_url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/222490e4ba907b61cf53589bc4866f9914fdd29a",
+      "download_url": "https://raw.githubusercontent.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_tr.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_tr.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+        "git": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/222490e4ba907b61cf53589bc4866f9914fdd29a",
+        "html": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_tr.txt"
+      }
+    },
+    {
+      "name": "test_1kcaptions_zh.txt",
+      "path": "XTD10/test_1kcaptions_zh.txt",
+      "sha": "2e9f3ed9ee5637ff95c22225c6388fcb26174cfd",
+      "size": 58660,
+      "url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_zh.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+      "html_url": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_zh.txt",
+      "git_url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/2e9f3ed9ee5637ff95c22225c6388fcb26174cfd",
+      "download_url": "https://raw.githubusercontent.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_zh.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_1kcaptions_zh.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+        "git": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/2e9f3ed9ee5637ff95c22225c6388fcb26174cfd",
+        "html": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_1kcaptions_zh.txt"
+      }
+    },
+    {
+      "name": "test_image_names.txt",
+      "path": "XTD10/test_image_names.txt",
+      "sha": "b4cf31e661e5c9bb6bc14bcbc8de9b4706e5aee3",
+      "size": 31600,
+      "url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_image_names.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+      "html_url": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_image_names.txt",
+      "git_url": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/b4cf31e661e5c9bb6bc14bcbc8de9b4706e5aee3",
+      "download_url": "https://raw.githubusercontent.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_image_names.txt",
+      "type": "file",
+      "_links": {
+        "self": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/contents/XTD10/test_image_names.txt?ref=d77ff16148468c84287f3efcbf602a015c5e4954",
+        "git": "https://api.github.com/repos/adobe-research/Cross-lingual-Test-Dataset-XTD10/git/blobs/b4cf31e661e5c9bb6bc14bcbc8de9b4706e5aee3",
+        "html": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10/blob/d77ff16148468c84287f3efcbf602a015c5e4954/XTD10/test_image_names.txt"
+      }
+    }
+  ],
+  "read_via": "connected GitHub read-only fetch; text files only; no image or weight downloads"
+}

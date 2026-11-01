@@ -1,0 +1,14 @@
+{
+  "B_EVAL_FROZEN_sha256": "c891396a965a20ec62a11c7216c628d6aa54acd183b6bf76c1c7d0b67d661fe8",
+  "CUDA_policy": "all operations inside shared common.gpu_lock; verified A finalists/done and B frozen",
+  "base_cache": "one FP32 native vision/text extraction shared by all 9 projectors; identical-batch adapter parity first",
+  "model_order": [
+    "ours",
+    "metaclip-s16",
+    "metaclip-m16",
+    "embeddinggemma-2"
+  ],
+  "registration_sha256": "af0b8e476b7ee167a77ebebea0ece7678d9b5a9c27a84c61b27ebf208d812730",
+  "runner_sha256": "2c5d27e2b242c9850d3b78ef4827a93192bf29c32899e23787375d2cf3ba4b04",
+  "status": "before_first_score"
+}

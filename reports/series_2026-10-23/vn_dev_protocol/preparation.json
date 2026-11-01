@@ -1,0 +1,8 @@
+{
+  "images": 2000,
+  "labels": "model-generated and translated; in-domain for VN-trained projectors",
+  "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+  "original_asset_bytes": 37331645,
+  "rows": 2003,
+  "status": "frozen_image_verified"
+}

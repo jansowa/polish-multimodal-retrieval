@@ -1,0 +1,10 @@
+{
+  "canonical_lock": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-visualnews-v1/worker.lock",
+  "checks": {
+    "immutable_marker_cannot_be_overwritten": true,
+    "over_budget_rejected": true,
+    "physical_volume_floor_rejected": true,
+    "real_two_process_gpu_exclusion_and_release": true
+  },
+  "status": "passed"
+}

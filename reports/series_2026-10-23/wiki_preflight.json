@@ -1,0 +1,26 @@
+{
+  "blockers": [
+    "D volume below required reserve; original assets not acquired",
+    "Canonical-pixel, pHash<=6 and transitive source/page/text component audit incomplete",
+    "Re-freeze disjoint Wiki train into a NEW manifest only after dev is frozen"
+  ],
+  "candidate_manifest_is_not_dev": true,
+  "candidate_manifest_sha256": "b05cf8377a90b9750aa059463d4fef088e52ac2cbc64ff653a2f55a223b2fad6",
+  "direct_native_rows": 490,
+  "export_rows": 3014,
+  "frozen_dev_created": false,
+  "historical_pilot_train_id_overlap": 150,
+  "local_identity_records": 221,
+  "native_provenance_rule": "route native_original; PL provenance; judge 3/4 no mismatch; no recycle/recheck/translate; exact source/accepted/final text equality",
+  "preflight_exact_text_conflicts": 0,
+  "ready_for_retrieval": false,
+  "source": "reports\\wikimedia_pipeline\\v1\\final_pairs.jsonl",
+  "source_class_definition": "quality of selected provenance candidate, A-D; no C available in native PL export",
+  "source_classes": {
+    "A": 255,
+    "B": 156,
+    "D": 79
+  },
+  "source_export_sha256": "530add5321a7e6de947cbf7c17ff4b1cff136e44792f4ca6b98871898eeee8f1",
+  "status": "pending_full_image_component_audit"
+}

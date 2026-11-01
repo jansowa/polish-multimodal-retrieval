@@ -1,0 +1,75 @@
+---
+pipeline_tag: sentence-similarity
+language: pl
+license: mit
+tags:
+  - trimmed
+library_name: sentence-transformers
+base_model: sentence-transformers/clip-ViT-B-32-multilingual-v1
+base_model_relation: quantized
+datasets:
+  - lbourdois/fineweb-2-trimming
+---
+
+# clip-ViT-B-32-multilingual-v1-pl-16384
+This model is a smaller version of [sentence-transformers/clip-ViT-B-32-multilingual-v1](https://huggingface.co/sentence-transformers/clip-ViT-B-32-multilingual-v1) optimized for **Polish** language via vocabulary size reduction using the [trimming](https://huggingface.co/blog/lbourdois/introduction-to-trimming) method.  
+This trimmed model should perform similarly to the original model with only 16,384 tokens and a much smaller memory footprint. However, it may not perform well for other languages as tokens not commonly used in the selected languages were removed from the vocabulary.
+
+## Model Statistics
+| Metric | Original | Trimmed | Reduction |
+|--------|----------|---------|-----------|
+| **Vocabulary size** | 119,547 tokens | 16,384 tokens | **72.59%** |
+| **Model size (with visual encoder)** | 222,976,512 params | 143,747,328 params | **35.53%** |
+| **Model size (without visual encoder)** | 135,127,296 params | 55,898,112 params | **58.63%** |
+
+**Model size (with visual encoder)**
+![image](https://raw.githubusercontent.com/lbourdois/blog/refs/heads/master/assets/images/Trimming/clip-vit-b-32-multilingual-v1-16384-full.png)
+
+**Model size (without visual encoder)**
+![image](https://raw.githubusercontent.com/lbourdois/blog/refs/heads/master/assets/images/Trimming/clip-vit-b-32-multilingual-v1-16384-text.png)
+
+
+## Mining Dataset Statistics
+- **Number of texts used for mining**: 200,000 texts  
+- **Dataset**: [lbourdois/fineweb-2-trimming](https://huggingface.co/datasets/lbourdois/fineweb-2-trimming)
+
+## Usage
+
+#### Sentence-transformers
+```python
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer("aphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768")
+clip = SentenceTransformer("sentence-transformers/clip-ViT-B-32")
+
+images = [
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/transformers/tasks/car.jpg",
+    "https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/bee.jpg",
+    "https://huggingface.co/datasets/huggingface/cats-image/resolve/main/cats_image.jpeg"
+]
+texts = ["Potential label 1 in Polish", "Potential label 2 in Polish", "Potential label 3 in Polish", "Potential label 4 in Polish"]
+
+image_embeddings = clip.encode(images)
+text_embeddings = model.encode(texts)
+print(image_embeddings.shape, text_embeddings.shape)
+
+similarities = model.similarity(image_embeddings, text_embeddings)
+print(similarities)
+```
+
+## Citations
+
+#### clip-vit-b-32-multilingual-v1
+```
+Hugging Face repo: https://huggingface.co/sentence-transformers/clip-ViT-B-32-multilingual-v1
+```
+
+#### Trimming blog post
+```
+@misc{hf_blogpost_trimming,
+      title={Introduction to Trimming}, 
+      author={Loïck BOURDOIS and Tom AARSEN and Bram VANROY and Christopher AKIKI and Woojun JUNG and Manuel ROMERO and Prithiv SAKTHI},
+      year={2026},
+      url={https://huggingface.co/blog/lbourdois/introduction-to-trimming}, 
+}
+```

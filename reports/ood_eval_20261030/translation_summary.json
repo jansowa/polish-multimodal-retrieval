@@ -1,0 +1,81 @@
+{
+  "accepted": 5341,
+  "artifact": {
+    "bytes": 3224416,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/translations/vizwiz_cpu.jsonl",
+    "role": "translations",
+    "sha256": "16ae163bb9a3c177145b463168d726e22199ec7585b22c841e11e44275acb360"
+  },
+  "downloaded": [
+    {
+      "bytes": 3138,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/translator/README.md",
+      "sha256": "ef7a0fcc3c47e59657b08e1fb99ed474c4a0f74166f6204b4777ed2c6d3f90a7",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-zlw/resolve/92ffd5aa936924688bd715b26d6bb75393082c03/README.md"
+    },
+    {
+      "bytes": 1395,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/translator/config.json",
+      "sha256": "7448446c1991a49bd8056650f14f3ec79e350260061ba364500364f6b4c99885",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-zlw/resolve/92ffd5aa936924688bd715b26d6bb75393082c03/config.json"
+    },
+    {
+      "bytes": 293,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/translator/generation_config.json",
+      "sha256": "b5957347f6a5e77d947af37d1b990f5299d4d33677d3d4f328dc2c934dcfc734",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-zlw/resolve/92ffd5aa936924688bd715b26d6bb75393082c03/generation_config.json"
+    },
+    {
+      "bytes": 297827661,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/translator/pytorch_model.bin",
+      "sha256": "3352b4effbf57c85b620ac2b1c41a1e5232c0bfcb399191fcb91e081a5ca5a31",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-zlw/resolve/92ffd5aa936924688bd715b26d6bb75393082c03/pytorch_model.bin"
+    },
+    {
+      "bytes": 788226,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/translator/source.spm",
+      "sha256": "3140fe2eddedc897ca27aa2b539b8064f667f82298eb95b2701ee490bde33388",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-zlw/resolve/92ffd5aa936924688bd715b26d6bb75393082c03/source.spm"
+    },
+    {
+      "bytes": 815306,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/translator/target.spm",
+      "sha256": "ef8d9b0da062c863241e0d61af5108a53e1fb335c9c7712eeeb4498b2dd55782",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-zlw/resolve/92ffd5aa936924688bd715b26d6bb75393082c03/target.spm"
+    },
+    {
+      "bytes": 44,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/translator/tokenizer_config.json",
+      "sha256": "96bafe9583c59395678603ea71fdc0de1f6d9e00bf20ff1ef5d197da6a420f59",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-zlw/resolve/92ffd5aa936924688bd715b26d6bb75393082c03/tokenizer_config.json"
+    },
+    {
+      "bytes": 1372196,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/translator/vocab.json",
+      "sha256": "2c10cc8737a03e84e1d4145c1e835ebacb930d8f62d81a5377fa6e3fac18b2b1",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-zlw/resolve/92ffd5aa936924688bd715b26d6bb75393082c03/vocab.json"
+    }
+  ],
+  "elapsed_seconds": 920.923024742,
+  "external_API_cost": 0,
+  "flags": {
+    "digits_changed": 27,
+    "language_uncertain": 26,
+    "negation_changed": 27
+  },
+  "language_detector_package": {
+    "bytes": 1925978,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/language_qa/langid-1.1.6.tar.gz",
+    "sha256": "044bcae1912dab85c33d8e98f2811b8f4ff1213e5e9a9e9510137b84da2cb293",
+    "url": "https://files.pythonhosted.org/packages/ea/4c/0fb7d900d3b0b9c8703be316fbddffecdab23c64e1b46c7a83561d78bd43/langid-1.1.6.tar.gz"
+  },
+  "local_compute_cost": "unpriced CPU time",
+  "model": "Helsinki-NLP/opus-mt-en-zlw",
+  "no_image_input": true,
+  "no_retrieval_scores": true,
+  "revision": "92ffd5aa936924688bd715b26d6bb75393082c03",
+  "rows": 5421,
+  "status": "complete_CPU",
+  "translation_decision_sha256": "12aa0b0eaaf97e36f08b8314eab3436f04834d87a6fd29a218635feb745f29ec",
+  "unique_source_captions": 5421
+}

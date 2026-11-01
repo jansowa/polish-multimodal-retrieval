@@ -1,0 +1,30 @@
+{
+  "registration_sha256": "af0b8e476b7ee167a77ebebea0ece7678d9b5a9c27a84c61b27ebf208d812730",
+  "results": [
+    {
+      "bytes": 1442339,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-s16/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result",
+      "sha256": "18b1cfaa788384e09ac88584af2f3e357642fbed6659ea9a8f610c5ffb764f51"
+    },
+    {
+      "bytes": 1442339,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-s16/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result",
+      "sha256": "53b719672843fa9037a29d1779e56b2764bc3104ceb76efc9ba052db6bfb17c2"
+    },
+    {
+      "bytes": 1354625,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-s16/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result",
+      "sha256": "3d42677f34bdc1e1195fa45fb1bb4a7df09ac6d390eb530ea69856a7f28bb471"
+    },
+    {
+      "bytes": 1354625,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/metaclip-s16/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result",
+      "sha256": "f50c08519aa316d81af55177647457087a21a87f8b3f9d2fcf371ad3b01369a8"
+    }
+  ],
+  "status": "complete"
+}

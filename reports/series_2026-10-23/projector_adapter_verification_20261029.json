@@ -1,0 +1,22 @@
+{
+  "comparisons": {
+    "images": {
+      "max_absolute": 0.0,
+      "max_relative_l2": 0.0,
+      "min_cosine": 0.9999998807907104
+    },
+    "texts": {
+      "max_absolute": 0.0,
+      "max_relative_l2": 0.0,
+      "min_cosine": 0.9999997615814209
+    }
+  },
+  "decision_sha256": "9d006d4fa3a7bfff97c87fe22ee764a1c89c517469cb117c0a0f80a94fbf637c",
+  "examples": 16,
+  "no_retrieval_scores": true,
+  "notes": "Original VN bytes are decoded by the pinned Linux Pillow version; historical native RGB quantization may introduce tiny rounding differences",
+  "parameter_count": 70667520,
+  "precision": "fp32-weights-bf16-autocast-cache-fp32",
+  "status": "passed",
+  "torch": "2.11.0+cu128"
+}

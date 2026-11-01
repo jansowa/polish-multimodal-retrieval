@@ -1,0 +1,76 @@
+﻿{
+    "status":  "complete",
+    "authorization":  "User requested continued work and use of free C space",
+    "source":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\data",
+    "destination":  "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\relocated\\visualnews-frozen-data",
+    "preserved_original_path":  "NTFS junction",
+    "files":  [
+                  {
+                      "name":  "audit.json",
+                      "bytes":  4472,
+                      "sha256":  "b19658014b2981464874ebb461202c4ffb4d8b1a48c1efab1a62f5d8fd0c1bf0"
+                  },
+                  {
+                      "name":  "candidates.jsonl",
+                      "bytes":  52062575,
+                      "sha256":  "73bc40a4a6d2bc151cdae8320ac6ea4181f6f539ffde0c2a25b5828b2ff8d5f1"
+                  },
+                  {
+                      "name":  "extraction.json",
+                      "bytes":  1830,
+                      "sha256":  "a2dc4738dfb6663e7bdd62cbe25051e682dfc9cf02ec6957bfd72a5d7617b164"
+                  },
+                  {
+                      "name":  "native_rgb.npy",
+                      "bytes":  5406664832,
+                      "sha256":  "960afef1d0bf1bc642411bef7fab33a30c3456e08d747d6ef90e8c143247d266"
+                  },
+                  {
+                      "name":  "pipeline_manifest.json",
+                      "bytes":  19763,
+                      "sha256":  "6fed84e07d67aa85494b0b080d5274bf72618537a539a4de5534f278582233dd"
+                  },
+                  {
+                      "name":  "pipeline_pairs_snapshot.jsonl",
+                      "bytes":  105149045,
+                      "sha256":  "e8e010ca5ff14182a9b8b0981f9d3ed4b65a44b875a256c6aa03ba010da9f59b"
+                  },
+                  {
+                      "name":  "rejections.json",
+                      "bytes":  1987,
+                      "sha256":  "f5fac779ba43f6683ad4e1ef300a343921d8f18f46541a53729b05a0f712cb8f"
+                  },
+                  {
+                      "name":  "snapshot.json",
+                      "bytes":  558,
+                      "sha256":  "a20d4528d4a20b53c9af27f85a4de30685a6a36533cc0ce90651afc5f6f1213f"
+                  },
+                  {
+                      "name":  "vn_10k.jsonl",
+                      "bytes":  15482773,
+                      "sha256":  "b4b1e9625b0873fcb1500444f591b4b8bccd06a5e1da3396d7b761f6ebea515e"
+                  },
+                  {
+                      "name":  "vn_dev.jsonl",
+                      "bytes":  3114586,
+                      "sha256":  "69b8fd8583ef80874cd2c63ded18cf9151d8ae876ee96e1367a9f4391cf391ec"
+                  },
+                  {
+                      "name":  "vn_train.jsonl",
+                      "bytes":  52493299,
+                      "sha256":  "46b01f863f2d04e6f672e45f104e7e485e1d48d968c83cbd199a53b7c175bbfe"
+                  }
+              ],
+    "logical_bytes":  5634995720,
+    "frozen_snapshots_moved":  true,
+    "pipeline_paths_touched":  false,
+    "reserve_bytes":  4294967296,
+    "free_C_before":  18165723136,
+    "free_D_before":  4808908800,
+    "verification":  "SHA each file before/copy/junction; WSL SHA of prefix.npy; remove checked backup only after verification",
+    "frozen_snapshot_bytes_and_original_paths_preserved":  true,
+    "free_C_after":  12474617856,
+    "free_D_after":  9729740800,
+    "wsl_prefix_SHA_verified":  true,
+    "files_SHA_unchanged":  true
+}

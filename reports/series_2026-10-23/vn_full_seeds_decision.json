@@ -1,0 +1,47 @@
+{
+  "COCO_validation": "post hoc after all checkpoints closed; mean and sample SD",
+  "GPU_order": [
+    "P1.A",
+    "P1.B0",
+    "P1.B extraction",
+    "P1.B",
+    "P1.C",
+    "P1.D"
+  ],
+  "checkpoint_selection": [
+    "VN dev t2i R@1",
+    "mean t2i/i2t R@1",
+    "earliest update"
+  ],
+  "frozen_encoders": true,
+  "legacy_test": "only median seed after decision materializes checkpoint SHA; no tests now",
+  "phase": "P1.A",
+  "prerequisites": [
+    "one GPU worker lock",
+    "C and D and native WSL volume >=4 GiB after planned write",
+    "checkpoint reload/metrics/SHA verification"
+  ],
+  "projector": "fresh Linear(512,384), bias",
+  "recipe": "tinyclip_source_ablation VN_FULL, exact original immutable 35918-pair snapshot",
+  "recipe_config_sha256": "a0cc9c86db6bf63e93b8f5540fc8b695fc98e9e96b79b41b9aa40cb7c2f680f4",
+  "reuse": [
+    42
+  ],
+  "seed42_checkpoint_sha256": "75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "series": "2026-10-23",
+  "status": "registered_not_executed",
+  "steps": 5500,
+  "test_seed_selection": {
+    "rule": "median of three selected VN dev t2i R@1 values",
+    "ties": "ascending seed"
+  },
+  "train": [
+    43,
+    44
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "bytes": 1488915288,
+      "preexisting": false,
+      "sha256": "197a32965d4b1105faf060417baa899e193fb73cd401f42ec9295234d5553d79",
+      "snapshot_path": "/home/jsowa/.cache/huggingface/hub/models--google--embeddinggemma-2/snapshots/914f7f89142e33e77833254d9c9b90c3cef7303b/model.safetensors"
+    }
+  ],
+  "model": "google/embeddinggemma-2",
+  "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b"
+}

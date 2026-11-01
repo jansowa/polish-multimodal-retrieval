@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "bge-vl-base": {
+      "all_ranks_identical": true,
+      "mismatch_examples": [],
+      "prior_result_sha256": "eeaba0e745476e6411591440cd4b0be5ee43e30526709384d258d7f5faab07d1",
+      "queries": 1000
+    },
+    "siglip2-base-256": {
+      "all_ranks_identical": true,
+      "mismatch_examples": [],
+      "prior_result_sha256": "6ed68a9f36e41f943d1e3c8ae1b67f6615b41d5eb0c8f8002448faeea1a12e24",
+      "queries": 1000
+    },
+    "tipsv2-b14": {
+      "all_ranks_identical": true,
+      "mismatch_examples": [],
+      "prior_result_sha256": "6c2f18320a4de9e4817350675ab8b8d19c3f32bdad07ee0e8e009bfd8928eb0d",
+      "queries": 1000
+    }
+  },
+  "decision_sha256": "206216d969f179a816bcf5663754ece1b45a7ed79a1488820937db5dac200929",
+  "encoder_runs": 0,
+  "status": "passed",
+  "weights_loaded": false
+}

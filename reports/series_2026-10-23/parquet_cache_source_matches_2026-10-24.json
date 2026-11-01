@@ -1,0 +1,681 @@
+{
+  "mode": "read only; no deletions",
+  "project_caches": [
+    {
+      "cache": "/home/jsowa/.cache/huggingface/datasets/parquet/default-150f3fa686223f16/0.0.0/ec3958b52035e87929642b609b5a781870321434b151a14fbe8fd5a26ff494bb",
+      "bytes": 71180288,
+      "rows": 1000,
+      "columns": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "text_probe": [
+        {
+          "qry_text": "<|image_1|>\nFind an image to match the fashion image and style note: Is shiny and silver with shorter sleeves and fit and flare.\n",
+          "qry_img_path": "FashionIQ/B005X4PL1G.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nFind an image to match the fashion image and style note: Is grey with black design and is a light printed short dress.\n",
+          "qry_img_path": "FashionIQ/B008XODTD0.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nFind an image to match the fashion image and style note: Is a solid red color and shorter and tighter with more blue and white.\n",
+          "qry_img_path": "FashionIQ/B00BPYP69K.jpg"
+        }
+      ],
+      "matching_local_sources": [
+        "/home/jsowa/.cache/huggingface/hub/datasets--TIGER-Lab--MMEB-eval/snapshots/eb3a8af230a66be5c9308cd2be5779b9d6de4cb3/FashionIQ/test-00000-of-00001.parquet"
+      ],
+      "verification": "same row count, first three text/path records, and expected columns; not a full-table hash comparison"
+    },
+    {
+      "cache": "/home/jsowa/.cache/huggingface/datasets/parquet/default-29208fb3fa54cf44/0.0.0/ec3958b52035e87929642b609b5a781870321434b151a14fbe8fd5a26ff494bb",
+      "bytes": 96505856,
+      "rows": 1000,
+      "columns": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "text_probe": [
+        {
+          "qry_text": "<|image_1|>\nSelect the portion of the image that follows the language expressions. \"bowl behind the others can only see part\"\n",
+          "qry_img_path": "RefCOCO/image_1537681.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nSelect the portion of the image that follows the language expressions. \"front bowl w/carrots in it\"\n",
+          "qry_img_path": "RefCOCO/image_710706.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nSelect the portion of the image that follows the language expressions. \"little girl\"\n",
+          "qry_img_path": "RefCOCO/image_480908.jpg"
+        }
+      ],
+      "matching_local_sources": [
+        "/home/jsowa/.cache/huggingface/hub/datasets--TIGER-Lab--MMEB-eval/snapshots/eb3a8af230a66be5c9308cd2be5779b9d6de4cb3/RefCOCO/test-00000-of-00001.parquet"
+      ],
+      "verification": "same row count, first three text/path records, and expected columns; not a full-table hash comparison"
+    },
+    {
+      "cache": "/home/jsowa/.cache/huggingface/datasets/parquet/default-396a72d4c16801e1/0.0.0/ec3958b52035e87929642b609b5a781870321434b151a14fbe8fd5a26ff494bb",
+      "bytes": 960245760,
+      "rows": 6840,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "relation_name",
+        "bbox"
+      ],
+      "text_probe": [
+        {
+          "true_caption": "the door is to the left of the shirt",
+          "false_caption": "the shirt is to the left of the door",
+          "relation_name": "to the left of"
+        },
+        {
+          "true_caption": "the door is to the left of the man",
+          "false_caption": "the man is to the left of the door",
+          "relation_name": "to the left of"
+        },
+        {
+          "true_caption": "the man is wearing the shirt",
+          "false_caption": "the shirt is wearing the man",
+          "relation_name": "wearing"
+        }
+      ],
+      "matching_local_sources": [],
+      "verification": "same row count, first three text/path records, and expected columns; not a full-table hash comparison"
+    },
+    {
+      "cache": "/home/jsowa/.cache/huggingface/datasets/parquet/default-60bf5d7cc28c2fb2/0.0.0/ec3958b52035e87929642b609b5a781870321434b151a14fbe8fd5a26ff494bb",
+      "bytes": 70172672,
+      "rows": 1000,
+      "columns": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "text_probe": [
+        {
+          "qry_text": "<|image_1|>\nGiven an image, find a similar everyday image with the described changes: Show three bottles of soft drink.\n",
+          "qry_img_path": "CIRR/dev-244-0-img0.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nGiven an image, find a similar everyday image with the described changes: Fewer paper towels per pack.\n",
+          "qry_img_path": "CIRR/dev-63-0-img1.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nGiven an image, find a similar everyday image with the described changes: Two animals that are of a different species from the first one, and no human appearing.\n",
+          "qry_img_path": "CIRR/dev-1042-0-img0.jpg"
+        }
+      ],
+      "matching_local_sources": [
+        "/home/jsowa/.cache/huggingface/hub/datasets--TIGER-Lab--MMEB-eval/snapshots/eb3a8af230a66be5c9308cd2be5779b9d6de4cb3/CIRR/test-00000-of-00001.parquet"
+      ],
+      "verification": "same row count, first three text/path records, and expected columns; not a full-table hash comparison"
+    },
+    {
+      "cache": "/home/jsowa/.cache/huggingface/datasets/parquet/default-7b107485bf79574b/0.0.0/ec3958b52035e87929642b609b5a781870321434b151a14fbe8fd5a26ff494bb",
+      "bytes": 87142400,
+      "rows": 1000,
+      "columns": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "text_probe": [
+        {
+          "qry_text": "Find me an everyday image that matches the given caption: A man with a red helmet on a small moped on a dirt road.\n",
+          "qry_img_path": ""
+        },
+        {
+          "qry_text": "Find me an everyday image that matches the given caption: Man riding a motor bike on a dirt road on the countryside.\n",
+          "qry_img_path": ""
+        },
+        {
+          "qry_text": "Find me an everyday image that matches the given caption: A man riding on the back of a motorcycle.\n",
+          "qry_img_path": ""
+        }
+      ],
+      "matching_local_sources": [
+        "/home/jsowa/.cache/huggingface/hub/datasets--TIGER-Lab--MMEB-eval/snapshots/eb3a8af230a66be5c9308cd2be5779b9d6de4cb3/MSCOCO_t2i/test-00000-of-00001.parquet"
+      ],
+      "verification": "same row count, first three text/path records, and expected columns; not a full-table hash comparison"
+    }
+  ],
+  "retained_source_parquets": [
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--TIGER-Lab--MMEB-eval/snapshots/eb3a8af230a66be5c9308cd2be5779b9d6de4cb3/CIRR/test-00000-of-00001.parquet",
+      "exists": true,
+      "rows": 1000,
+      "columns": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "probe": [
+        {
+          "qry_text": "<|image_1|>\nGiven an image, find a similar everyday image with the described changes: Show three bottles of soft drink.\n",
+          "qry_img_path": "CIRR/dev-244-0-img0.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nGiven an image, find a similar everyday image with the described changes: Fewer paper towels per pack.\n",
+          "qry_img_path": "CIRR/dev-63-0-img1.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nGiven an image, find a similar everyday image with the described changes: Two animals that are of a different species from the first one, and no human appearing.\n",
+          "qry_img_path": "CIRR/dev-1042-0-img0.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--TIGER-Lab--MMEB-eval/snapshots/eb3a8af230a66be5c9308cd2be5779b9d6de4cb3/FashionIQ/test-00000-of-00001.parquet",
+      "exists": true,
+      "rows": 1000,
+      "columns": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "probe": [
+        {
+          "qry_text": "<|image_1|>\nFind an image to match the fashion image and style note: Is shiny and silver with shorter sleeves and fit and flare.\n",
+          "qry_img_path": "FashionIQ/B005X4PL1G.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nFind an image to match the fashion image and style note: Is grey with black design and is a light printed short dress.\n",
+          "qry_img_path": "FashionIQ/B008XODTD0.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nFind an image to match the fashion image and style note: Is a solid red color and shorter and tighter with more blue and white.\n",
+          "qry_img_path": "FashionIQ/B00BPYP69K.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--TIGER-Lab--MMEB-eval/snapshots/eb3a8af230a66be5c9308cd2be5779b9d6de4cb3/MSCOCO_t2i/test-00000-of-00001.parquet",
+      "exists": true,
+      "rows": 1000,
+      "columns": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "probe": [
+        {
+          "qry_text": "Find me an everyday image that matches the given caption: A man with a red helmet on a small moped on a dirt road.\n",
+          "qry_img_path": ""
+        },
+        {
+          "qry_text": "Find me an everyday image that matches the given caption: Man riding a motor bike on a dirt road on the countryside.\n",
+          "qry_img_path": ""
+        },
+        {
+          "qry_text": "Find me an everyday image that matches the given caption: A man riding on the back of a motorcycle.\n",
+          "qry_img_path": ""
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--TIGER-Lab--MMEB-eval/snapshots/eb3a8af230a66be5c9308cd2be5779b9d6de4cb3/RefCOCO/test-00000-of-00001.parquet",
+      "exists": true,
+      "rows": 1000,
+      "columns": [
+        "qry_text",
+        "qry_img_path",
+        "tgt_text",
+        "tgt_img_path"
+      ],
+      "probe": [
+        {
+          "qry_text": "<|image_1|>\nSelect the portion of the image that follows the language expressions. \"bowl behind the others can only see part\"\n",
+          "qry_img_path": "RefCOCO/image_1537681.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nSelect the portion of the image that follows the language expressions. \"front bowl w/carrots in it\"\n",
+          "qry_img_path": "RefCOCO/image_710706.jpg"
+        },
+        {
+          "qry_text": "<|image_1|>\nSelect the portion of the image that follows the language expressions. \"little girl\"\n",
+          "qry_img_path": "RefCOCO/image_480908.jpg"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Relation/snapshots/53c1115ab5871ab33b09d5bb8856236d46bdaf2d/data/test-00000-of-00007.parquet",
+      "exists": true,
+      "rows": 3420,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "relation_name",
+        "bbox"
+      ],
+      "probe": [
+        {
+          "true_caption": "the door is to the left of the shirt",
+          "false_caption": "the shirt is to the left of the door",
+          "relation_name": "to the left of"
+        },
+        {
+          "true_caption": "the door is to the left of the man",
+          "false_caption": "the man is to the left of the door",
+          "relation_name": "to the left of"
+        },
+        {
+          "true_caption": "the man is wearing the shirt",
+          "false_caption": "the shirt is wearing the man",
+          "relation_name": "wearing"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Relation/snapshots/53c1115ab5871ab33b09d5bb8856236d46bdaf2d/data/test-00001-of-00007.parquet",
+      "exists": true,
+      "rows": 3420,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "relation_name",
+        "bbox"
+      ],
+      "probe": [
+        {
+          "true_caption": "the t-shirt is to the left of the people",
+          "false_caption": "the people is to the left of the t-shirt",
+          "relation_name": "to the left of"
+        },
+        {
+          "true_caption": "the t-shirt is to the left of the clouds",
+          "false_caption": "the clouds is to the left of the t-shirt",
+          "relation_name": "to the left of"
+        },
+        {
+          "true_caption": "the t-shirt is to the left of the horse",
+          "false_caption": "the horse is to the left of the t-shirt",
+          "relation_name": "to the left of"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Relation/snapshots/53c1115ab5871ab33b09d5bb8856236d46bdaf2d/data/test-00002-of-00007.parquet",
+      "exists": true,
+      "rows": 3420,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "relation_name",
+        "bbox"
+      ],
+      "probe": [
+        {
+          "true_caption": "the couch is to the right of the screen",
+          "false_caption": "the screen is to the right of the couch",
+          "relation_name": "to the right of"
+        },
+        {
+          "true_caption": "the couch is to the right of the laptop",
+          "false_caption": "the laptop is to the right of the couch",
+          "relation_name": "to the right of"
+        },
+        {
+          "true_caption": "the cat is lying on the laptop",
+          "false_caption": "the laptop is lying on the cat",
+          "relation_name": "lying on"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Relation/snapshots/53c1115ab5871ab33b09d5bb8856236d46bdaf2d/data/test-00003-of-00007.parquet",
+      "exists": true,
+      "rows": 3420,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "relation_name",
+        "bbox"
+      ],
+      "probe": [
+        {
+          "true_caption": "the mane is to the right of the horse",
+          "false_caption": "the horse is to the right of the mane",
+          "relation_name": "to the right of"
+        },
+        {
+          "true_caption": "the building is near the bus",
+          "false_caption": "the bus is near the building",
+          "relation_name": "near"
+        },
+        {
+          "true_caption": "the building is to the left of the sky",
+          "false_caption": "the sky is to the left of the building",
+          "relation_name": "to the left of"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Relation/snapshots/53c1115ab5871ab33b09d5bb8856236d46bdaf2d/data/test-00004-of-00007.parquet",
+      "exists": true,
+      "rows": 3419,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "relation_name",
+        "bbox"
+      ],
+      "probe": [
+        {
+          "true_caption": "the curtain is behind the man",
+          "false_caption": "the man is behind the curtain",
+          "relation_name": "behind"
+        },
+        {
+          "true_caption": "the man is wearing the shirt",
+          "false_caption": "the shirt is wearing the man",
+          "relation_name": "wearing"
+        },
+        {
+          "true_caption": "the man is in front of the curtain",
+          "false_caption": "the curtain is in front of the man",
+          "relation_name": "in front of"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Relation/snapshots/53c1115ab5871ab33b09d5bb8856236d46bdaf2d/data/test-00005-of-00007.parquet",
+      "exists": true,
+      "rows": 3419,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "relation_name",
+        "bbox"
+      ],
+      "probe": [
+        {
+          "true_caption": "the kite is to the right of the girl",
+          "false_caption": "the girl is to the right of the kite",
+          "relation_name": "to the right of"
+        },
+        {
+          "true_caption": "the kite is to the right of the skirt",
+          "false_caption": "the skirt is to the right of the kite",
+          "relation_name": "to the right of"
+        },
+        {
+          "true_caption": "the suit is to the left of the people",
+          "false_caption": "the people is to the left of the suit",
+          "relation_name": "to the left of"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Relation/snapshots/53c1115ab5871ab33b09d5bb8856236d46bdaf2d/data/test-00006-of-00007.parquet",
+      "exists": true,
+      "rows": 3419,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "relation_name",
+        "bbox"
+      ],
+      "probe": [
+        {
+          "true_caption": "the woman is behind the person",
+          "false_caption": "the person is behind the woman",
+          "relation_name": "behind"
+        },
+        {
+          "true_caption": "the hair is to the left of the person",
+          "false_caption": "the person is to the left of the hair",
+          "relation_name": "to the left of"
+        },
+        {
+          "true_caption": "the person is to the right of the hair",
+          "false_caption": "the hair is to the right of the person",
+          "relation_name": "to the right of"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Attribution/snapshots/25fe9b460426ff67cdb0608a737c94f8f49a901e/data/test-00000-of-00008.parquet",
+      "exists": true,
+      "rows": 3594,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "bbox",
+        "obj1",
+        "obj2",
+        "attributes"
+      ],
+      "probe": [
+        {
+          "true_caption": "the open door and the crouched man",
+          "false_caption": "the crouched door and the open man"
+        },
+        {
+          "true_caption": "the open door and the gray floor",
+          "false_caption": "the gray door and the open floor"
+        },
+        {
+          "true_caption": "the open door and the metal floor",
+          "false_caption": "the metal door and the open floor"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Attribution/snapshots/25fe9b460426ff67cdb0608a737c94f8f49a901e/data/test-00001-of-00008.parquet",
+      "exists": true,
+      "rows": 3594,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "bbox",
+        "obj1",
+        "obj2",
+        "attributes"
+      ],
+      "probe": [
+        {
+          "true_caption": "the knit scarf and the green grass",
+          "false_caption": "the green scarf and the knit grass"
+        },
+        {
+          "true_caption": "the colorful scarf and the green grass",
+          "false_caption": "the green scarf and the colorful grass"
+        },
+        {
+          "true_caption": "the knit scarf and the purple jacket",
+          "false_caption": "the purple scarf and the knit jacket"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Attribution/snapshots/25fe9b460426ff67cdb0608a737c94f8f49a901e/data/test-00002-of-00008.parquet",
+      "exists": true,
+      "rows": 3594,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "bbox",
+        "obj1",
+        "obj2",
+        "attributes"
+      ],
+      "probe": [
+        {
+          "true_caption": "the black fork and the brown table",
+          "false_caption": "the brown fork and the black table"
+        },
+        {
+          "true_caption": "the green wall and the brown ceiling",
+          "false_caption": "the brown wall and the green ceiling"
+        },
+        {
+          "true_caption": "the green wall and the wood ceiling",
+          "false_caption": "the wood wall and the green ceiling"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Attribution/snapshots/25fe9b460426ff67cdb0608a737c94f8f49a901e/data/test-00003-of-00008.parquet",
+      "exists": true,
+      "rows": 3594,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "bbox",
+        "obj1",
+        "obj2",
+        "attributes"
+      ],
+      "probe": [
+        {
+          "true_caption": "the brown ground and the tall plants",
+          "false_caption": "the tall ground and the brown plants"
+        },
+        {
+          "true_caption": "the brown ground and the green plants",
+          "false_caption": "the green ground and the brown plants"
+        },
+        {
+          "true_caption": "the brown ground and the large rocks",
+          "false_caption": "the large ground and the brown rocks"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Attribution/snapshots/25fe9b460426ff67cdb0608a737c94f8f49a901e/data/test-00004-of-00008.parquet",
+      "exists": true,
+      "rows": 3593,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "bbox",
+        "obj1",
+        "obj2",
+        "attributes"
+      ],
+      "probe": [
+        {
+          "true_caption": "the orange carrots and the wood table",
+          "false_caption": "the wood carrots and the orange table"
+        },
+        {
+          "true_caption": "the waiting carrots and the sharp knife",
+          "false_caption": "the sharp carrots and the waiting knife"
+        },
+        {
+          "true_caption": "the waiting carrots and the black knife",
+          "false_caption": "the black carrots and the waiting knife"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Attribution/snapshots/25fe9b460426ff67cdb0608a737c94f8f49a901e/data/test-00005-of-00008.parquet",
+      "exists": true,
+      "rows": 3593,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "bbox",
+        "obj1",
+        "obj2",
+        "attributes"
+      ],
+      "probe": [
+        {
+          "true_caption": "the large flag and the gray jacket",
+          "false_caption": "the gray flag and the large jacket"
+        },
+        {
+          "true_caption": "the large flag and the red scissors",
+          "false_caption": "the red flag and the large scissors"
+        },
+        {
+          "true_caption": "the black flag and the gray jacket",
+          "false_caption": "the gray flag and the black jacket"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Attribution/snapshots/25fe9b460426ff67cdb0608a737c94f8f49a901e/data/test-00006-of-00008.parquet",
+      "exists": true,
+      "rows": 3593,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "bbox",
+        "obj1",
+        "obj2",
+        "attributes"
+      ],
+      "probe": [
+        {
+          "true_caption": "the pink umbrella and the clear sky",
+          "false_caption": "the clear umbrella and the pink sky"
+        },
+        {
+          "true_caption": "the tall umbrella and the blue sky",
+          "false_caption": "the blue umbrella and the tall sky"
+        },
+        {
+          "true_caption": "the tall umbrella and the clear sky",
+          "false_caption": "the clear umbrella and the tall sky"
+        }
+      ]
+    },
+    {
+      "path": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Attribution/snapshots/25fe9b460426ff67cdb0608a737c94f8f49a901e/data/test-00007-of-00008.parquet",
+      "exists": true,
+      "rows": 3593,
+      "columns": [
+        "image",
+        "true_caption",
+        "false_caption",
+        "bbox",
+        "obj1",
+        "obj2",
+        "attributes"
+      ],
+      "probe": [
+        {
+          "true_caption": "the cloudy sky and the brick staircase",
+          "false_caption": "the brick sky and the cloudy staircase"
+        },
+        {
+          "true_caption": "the blue box and the brown ground",
+          "false_caption": "the brown box and the blue ground"
+        },
+        {
+          "true_caption": "the cardboard box and the brown ground",
+          "false_caption": "the brown box and the cardboard ground"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "eligibility": "Whole image ineligible if any original caption has unresolved QA flags; no hand editing or replacement.",
+  "inherited_surface_rules": [
+    "nonempty",
+    "restricted language identification pl probability>=0.7",
+    "same digit-token multiset",
+    "negation-presence proxy agrees",
+    "no trigram repeated >=3 times",
+    "no control/error/translation-prefix output",
+    "no source truncation or generation token-limit exhaustion"
+  ],
+  "language_detector": {
+    "languages": [
+      "pl",
+      "en",
+      "cs",
+      "sk",
+      "de",
+      "ru"
+    ],
+    "minimum_probability": 0.7,
+    "package": "langid",
+    "source": {
+      "comment_text": "",
+      "core-metadata": false,
+      "digests": {
+        "blake2b_256": "ea4c0fb7d900d3b0b9c8703be316fbddffecdab23c64e1b46c7a83561d78bd43",
+        "md5": "10b358148b9d5b7ba4576d89599ea396",
+        "sha256": "044bcae1912dab85c33d8e98f2811b8f4ff1213e5e9a9e9510137b84da2cb293"
+      },
+      "downloads": -1,
+      "filename": "langid-1.1.6.tar.gz",
+      "has_sig": false,
+      "md5_digest": "10b358148b9d5b7ba4576d89599ea396",
+      "packagetype": "sdist",
+      "python_version": "source",
+      "requires_python": null,
+      "size": 1925978,
+      "upload_time": "2016-04-05T22:34:15",
+      "upload_time_iso_8601": "2016-04-05T22:34:15.786424Z",
+      "url": "https://files.pythonhosted.org/packages/ea/4c/0fb7d900d3b0b9c8703be316fbddffecdab23c64e1b46c7a83561d78bd43/langid-1.1.6.tar.gz",
+      "yanked": false,
+      "yanked_reason": null
+    },
+    "version": "1.1.6"
+  },
+  "ready_MT": "NLLB-200-1.3B from repack; exact original translator revision unavailable",
+  "status": "before_retrieval_scores"
+}

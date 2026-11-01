@@ -1,0 +1,1162 @@
+[
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-2ded9c84f8019c1d/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 6659142792,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/metricx/../consistency-filtering/temp_metrics_work/passages_metricx_input.jsonl",
+        "exists": true,
+        "current_bytes": 705535891,
+        "recorded": {
+          "num_bytes": 705535891,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 678650666,
+        "num_examples": 517797,
+        "shard_lengths": [
+          384609,
+          133188
+        ],
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-1ba3b62e46108f27/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 3470328480,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/metricx/../consistency-filtering/msmarco/work/passages_metricx_input.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 372942038,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 352361885,
+        "num_examples": 467594,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-fde8eb9a96e7c827/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 352484408,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/metricx/../consistency-filtering/msmarco/work/queries_metricx_input.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 52415331,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 35328139,
+        "num_examples": 388327,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-085c7b885920e961/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 325179552,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fever/work/metricx_chunks_passages/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 33988409,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 33498172,
+        "num_examples": 12899,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-18c8fcf574a0cbad/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 307073672,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fiqa-pl/work/metricx_chunks_passages/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 32313063,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 31719830,
+        "num_examples": 14395,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-080d4ed75a5c3e7a/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 307073672,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fiqa-pl/work/metricx_chunks_passages/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 32313063,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 31719830,
+        "num_examples": 14395,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-03ff40a23fe4be0e/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 307073672,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fiqa-pl/work/metricx_chunks_passages/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 32313063,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 31719830,
+        "num_examples": 14395,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-ecf88ee9b86fb13f/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 295700272,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/squadv2/work/metricx_chunks_passages/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 30960553,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 30213243,
+        "num_examples": 19029,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-62c0df7e7e50a4f5/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 173512192,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_passages/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 18436098,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 17619484,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-d0611a6c11be48c5/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 173222920,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_passages/chunk_0001_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 18403676,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 17588265,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-8b53e1da2823eef6/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 171389952,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_passages/chunk_0002_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 18214917,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 17401412,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-c51849152868feb3/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 171010448,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_passages/chunk_0003_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 18176410,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 17363239,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-d243d2c29a65e0f2/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 170393672,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_passages/chunk_0004_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 18108931,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 17297682,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-a2f5061de17a92b4/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 162352640,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_passages/chunk_0006_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 17093559,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 16333414,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-fbce65402cae119f/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 152780256,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_passages/chunk_0005_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 16131379,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 15370998,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-7d7d2ad1f5416fc9/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 147923664,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_passages/chunk_0002_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 15649002,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 14888843,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-61551b8459d8f8ea/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 147903584,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_passages/chunk_0004_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 15636673,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 14876500,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-9ad9e1dff7cf46af/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 147788096,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_passages/chunk_0003_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 15664408,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 14904222,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-46747da1e2e8cb78/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 146859688,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_passages/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 15530353,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 14770208,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-22e81b27ce03da6b/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 146428344,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_passages/chunk_0001_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 15479433,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 14719296,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-7f80233241f125f8/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 117787704,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_passages/chunk_0007_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 12409859,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 11836303,
+        "num_examples": 15091,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-0c82e9fa944cf2a6/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 116501664,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/metricx/../consistency-filtering/temp_metrics_work/queries_metricx_input.jsonl",
+        "exists": true,
+        "current_bytes": 14329680,
+        "recorded": {
+          "num_bytes": 14329680,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 11647632,
+        "num_examples": 60297,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-a6ad0a394fbe569e/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 46791888,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_queries/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 5404443,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 4637760,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-6c4378712e7859e5/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 46776576,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_queries/chunk_0001_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 5402815,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 4636059,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-f6526fdbaafacb45/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 46693792,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_queries/chunk_0003_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 5395144,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 4628536,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-6f7d41cc2e8a9b9d/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 46667208,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_queries/chunk_0002_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 5393795,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 4627262,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-565c4ba11f0b9244/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 27734656,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/squadv2/work/metricx_chunks_queries/chunk_0005_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3457429,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2696759,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-473435abe3347ca3/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 27714120,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/squadv2/work/metricx_chunks_queries/chunk_0001_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3444130,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2683178,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-58f9382063c8df54/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 27647272,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/squadv2/work/metricx_chunks_queries/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3440366,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2679729,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-8ce4b324101dfdf0/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 27630328,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/squadv2/work/metricx_chunks_queries/chunk_0002_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3430511,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2669890,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-b38a7e3cc9bcd119/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 27433896,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/squadv2/work/metricx_chunks_queries/chunk_0003_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3413437,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2652850,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-26a3964a7902a15b/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 26748088,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/squadv2/work/metricx_chunks_queries/chunk_0004_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3342128,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2581507,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-9a46dcda950480c0/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 23572960,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fever/work/metricx_chunks_queries/chunk_0002_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3013057,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2252766,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-14613aaacbc529db/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 23557496,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fever/work/metricx_chunks_queries/chunk_0001_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3011563,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2251249,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-d14fcb6aebfc1cbb/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 23549104,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fever/work/metricx_chunks_queries/chunk_0003_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3010821,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2250517,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-2c12ef523cffc347/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 23540288,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fever/work/metricx_chunks_queries/chunk_0004_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3009466,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2249204,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-d57d0279d3c1ba59/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 23501784,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fever/work/metricx_chunks_queries/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 3005415,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2245119,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-85cac37395fa1cb0/0.0.0/2752a09ea3d59feeb3ad5ea2af11086f41ecd725fd528c98a89d75f546aba397",
+    "arrow_bytes": 23501656,
+    "source_files": [],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2245119,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-f4beb548cbfb7244/0.0.0/2752a09ea3d59feeb3ad5ea2af11086f41ecd725fd528c98a89d75f546aba397",
+    "arrow_bytes": 23501656,
+    "source_files": [],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2245119,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-5d9405acaf69c4a5/0.0.0/2752a09ea3d59feeb3ad5ea2af11086f41ecd725fd528c98a89d75f546aba397",
+    "arrow_bytes": 23501656,
+    "source_files": [],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2245119,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-638cf124b4d9772f/0.0.0/2752a09ea3d59feeb3ad5ea2af11086f41ecd725fd528c98a89d75f546aba397",
+    "arrow_bytes": 23501656,
+    "source_files": [],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 2245119,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-fdc46aa19506c9c1/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 19517472,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_queries/chunk_0002_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 2611681,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 1851679,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-960200996a48a372/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 19344160,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_queries/chunk_0003_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 2593927,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 1833926,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-f0748ae9d8a14d60/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 19017512,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_queries/chunk_0001_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 2558695,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 1798692,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-4f01e642ae87ced3/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 18983784,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_queries/chunk_0004_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 2558576,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 1798567,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-df4898169d6b8d7e/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 18289528,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_queries/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 2482331,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 1722325,
+        "num_examples": 20000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-bf9cf14230523511/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 14142496,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/squadv2/work/metricx_chunks_queries/chunk_0006_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 1757078,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 1368577,
+        "num_examples": 10217,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-20fc8284a7b220d1/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 13635584,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/msmarco-missing/work/metricx_chunks_queries/chunk_0005_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 1843083,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 1287826,
+        "num_examples": 14612,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-751eb4342845b9cc/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 12962688,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_passages/chunk_0005_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 1375991,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 1314674,
+        "num_examples": 1510,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-2da950225f4483bc/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 11766072,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/hotpotqa-pl/work/metricx_chunks_queries/chunk_0004_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 1358214,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 1166473,
+        "num_examples": 5000,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-90f67876f470b61d/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 11539736,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fever/work/metricx_chunks_queries/chunk_0005_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 1475490,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 1102586,
+        "num_examples": 9810,
+        "dataset_name": "json"
+      }
+    }
+  },
+  {
+    "path": "/home/jsowa/.cache/huggingface/datasets/json/default-0fdcc3c48016342e/0.0.0/f4e89e8750d5d5ffbef2c078bf0ddfedef29dc2faff52a6255cf513c05eb1092",
+    "arrow_bytes": 8510672,
+    "source_files": [
+      {
+        "path": "/home/jsowa/work/multilang-kd/fiqa-pl/work/metricx_chunks_queries/chunk_0000_in.jsonl",
+        "exists": false,
+        "current_bytes": null,
+        "recorded": {
+          "num_bytes": 1034558,
+          "checksum": null
+        }
+      }
+    ],
+    "splits": {
+      "test": {
+        "name": "test",
+        "num_bytes": 825558,
+        "num_examples": 5500,
+        "dataset_name": "json"
+      }
+    }
+  }
+]

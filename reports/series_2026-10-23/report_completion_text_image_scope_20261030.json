@@ -1,0 +1,18 @@
+{
+  "REPORT_sha256": "13d2284df2c37692d1e94d7c82806f6f703522e6232a7f2f0c54f80cf7c3f845",
+  "previous_reports": {
+    "REPORT.md": {
+      "path": "reports\\series_2026-10-23\\REPORT_before_text_image_scope_20261030.md",
+      "sha256": "34f258ed2d112640680dcdbf6cced0be9abb2c8f8fe32c23ec7656ec5d6962d3"
+    },
+    "summary.json": {
+      "path": "reports\\series_2026-10-23\\summary_before_text_image_scope_20261030.json",
+      "sha256": "d3d9b921d4411068fa6d9b70ec8ba87316467df39fe4613fd50c78a8d7acc991"
+    }
+  },
+  "scientific_results_unchanged": true,
+  "scope_amendment_sha256": "46c542759faf4b0d1144d9bf9ee1c1ef5836095d1df6a2fb2822ba7088454abd",
+  "small_model_table_sha256": "da4c8be93cc72a71b10c44eb33f8a7b276f9d18df9504425705a1105fe6abc9b",
+  "status": "complete",
+  "summary_sha256": "9784c98059710b546588d473974d17bfa713a793704698a9754cadf8d6f17f71"
+}

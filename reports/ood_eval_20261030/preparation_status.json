@@ -1,0 +1,46 @@
+{
+  "CUDA_operations": 0,
+  "contract_sha256": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+  "cpu_workers": 2,
+  "generation": 1,
+  "large_downloads_started": true,
+  "manual_annotations_requested": 0,
+  "markers": {
+    "A_FINALISTS_FROZEN": {
+      "sha256": "9bf786e10f2be160a33ba5807f26899423123149a50c3817ed2f3974fc30879f",
+      "status": "verified"
+    },
+    "A_GPU_DONE": {
+      "sha256": "d354c1df5795b0dee12081e88808c6c79c227f2a271e4034726cdcd58f204b3d",
+      "status": "verified"
+    },
+    "A_UNIVERSE_FROZEN": {
+      "sha256": "b1324298ab7e5a934a3f291aac1bf85f528d643724533995d30af47e3928899d",
+      "status": "verified"
+    },
+    "B_EVAL_FROZEN": {
+      "reason": "[Errno 2] No such file or directory: '/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_ood_coordination_20261030/B_EVAL_FROZEN.json'",
+      "status": "missing"
+    },
+    "COMMON_READY": {
+      "sha256": "f4f6271c96ae82b34b9951bcebf0b35242728597390da5b8e329d77270edd05a",
+      "status": "verified"
+    }
+  },
+  "models_evaluated": 0,
+  "owner": "B",
+  "phase": "CPU_PREPARATION",
+  "physical_free_bytes": {
+    "C:/": 57143640064,
+    "D:/": 4363288576
+  },
+  "report_path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/ood_eval_20261030/REPORT.md",
+  "schema_version": 1,
+  "status": "preparing_data",
+  "study_id": "data-ood-20261030",
+  "torch_threads_limit": 2,
+  "updated_at": "2026-10-31T00:27:50.366870+00:00",
+  "waiting_for": [
+    "B_EVAL_FROZEN"
+  ]
+}

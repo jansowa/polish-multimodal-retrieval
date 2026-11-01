@@ -1,0 +1,51 @@
+{
+  "Wiki_after_full_transitive_closure": 28,
+  "Wiki_component_rejection_labels": {
+    "Wiki_reserved": 134,
+    "XM_blacklist_only": 107
+  },
+  "all_export_metadata": {
+    "visualnews_metadata_rows": 132875,
+    "wikimedia_metadata_rows": 24125
+  },
+  "all_historical_VN_shards_verified": 5,
+  "current_raw_files_verified": 35490,
+  "elapsed_seconds": 238.861321182,
+  "evidence": {
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/perceptual_hashes.json": "f0fd5539d78091fc9cf8e54fe94128c5050871385c06124102f4a9a0e0e0f437",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-wiki-pilot-v1/data/additional_protected_phashes.json": "04290c30ae2ee6518fc07964a0f39c617352821230ac87d5a1fdcb1cdedb38a2",
+    "VN_original_metadata_sha256": "642a28a0065e3a14d6ba74c23ec2b516710086a4df8e6b204d44095ff94f5caf",
+    "VN_verified_shards": {
+      "/mnt/c/Users/jsowa/benchmark-translations/visualnews-image-cache/corpus-test-00000.parquet": "54da0d7e3c77bff30db8e63442fa447a19eaeb1935b428a5565f3debd4f0cca8",
+      "/mnt/c/Users/jsowa/benchmark-translations/visualnews-image-cache/corpus-test-00001.parquet": "6733a8a6af824763c51bcd60cdeab5285767a9b376ec74acd6f770cd1f8d2615",
+      "/mnt/c/Users/jsowa/benchmark-translations/visualnews-image-cache/corpus-test-00002.parquet": "2970e3cba67ceedbe677639166864104cb5eea8fa271af441ce9179effbce558",
+      "/mnt/c/Users/jsowa/benchmark-translations/visualnews-image-cache/corpus-test-00003.parquet": "10ea18cd4291ca82fb819a918c0a4d529a90eb8ac155f705c3e99d042e0a5ba9",
+      "/mnt/c/Users/jsowa/benchmark-translations/visualnews-image-cache/corpus-test-00004.parquet": "8e7c854affaa6c1445892743160d3171a024bffd6c87cbbbd63fd2f9d927dc7e"
+    },
+    "official_image_pool": {
+      "bytes": 70119281,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/.cache/visualnews-image-sources/mbeir_visualnews_task0_cand_pool.jsonl",
+      "role": "official_image_pool",
+      "sha256": "a8efd9225b1798911acc1a0d98ec6d7595439608cfa275002a6cd4baec8f7092"
+    },
+    "official_text_pool": {
+      "bytes": 95498394,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/.cache/visualnews-image-sources/mbeir_visualnews_task3_cand_pool.jsonl",
+      "role": "official_text_pool",
+      "sha256": "8eaa5e46a3f187816d8b96f9941a5decc286113df9fba0b129646c40c28075a1"
+    },
+    "reports/series_2026-10-23/xtd10_v2/full_1k.jsonl": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+    "training/runs/clean-v1/FULL_CLEAN.jsonl": "2834cb60a308be03685602e1fb4b6137d2c9968e249c81ce80892dae1b63908c",
+    "training/runs/clean-v1/validation.jsonl": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6",
+    "training/runs/e1-full/blacklist.json": "971ddaa1de16966e7f97fd52be1d6b69915bb7c5ea0e28ddd79b0fce0338d6e6",
+    "training/runs/tinyclip-visualnews-v1/data/vn_dev.jsonl": "69b8fd8583ef80874cd2c63ded18cf9151d8ae876ee96e1367a9f4391cf391ec",
+    "training/runs/tinyclip-visualnews-v1/data/vn_train.jsonl": "46b01f863f2d04e6f672e45f104e7e485e1d48d968c83cbd199a53b7c175bbfe",
+    "training/runs/xm3600-pl/blacklist.json": "8779589042cc6a4b344740a62060983c7c7b6ab6162c53608ab582f03da7634b"
+  },
+  "historical_train_rows": 104195,
+  "local_Wiki_not_directly_reserved": 162,
+  "protected_image_rows": 34442,
+  "status": "metadata_closure_and_local_Wiki_image_audit_complete",
+  "training_ready": false,
+  "universe_frozen": false
+}

@@ -1,0 +1,1034 @@
+{
+  "XM3600": "FINAL_BLIND; excluded from this execution registration",
+  "cache_and_storage": {
+    "automatic_deletion": false,
+    "our_new_embeddings": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/evaluation",
+    "reference_cache": "native WSL ~/.cache/huggingface",
+    "reference_worker_start_requires_fresh_capacity_check": true,
+    "reserve_GiB_each_physical_volume": 4,
+    "weights_retained_until_user_manually_deletes_them": true
+  },
+  "cache_precision": "FP32 weights + BF16 autocast, FP32 cache for our encoders; reference models reuse registered historical policies",
+  "changes_require": "new registration and rationale before execution",
+  "datasets": [
+    {
+      "images": 397,
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "name": "wiki_native_dev",
+      "protocol_path": "reports/series_2026-10-23/wiki_v2/retrieval_protocol.json",
+      "protocol_sha256": "7e823db150884c06b4477c09eb729d51f1a0e321e30ffa483109778cc0e9fb2f",
+      "role": "zero-shot for our registered never-Wiki-trained checkpoints",
+      "texts": 331
+    },
+    {
+      "images": 1000,
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "name": "xtd10_full_1k",
+      "protocol_path": "reports/series_2026-10-23/xtd10_v2/full_retrieval_protocol.json",
+      "protocol_sha256": "b11d7ffc02794cad1322269f87d70c531da0ab91e5da55ac03634dd13219e2a0",
+      "role": "translation-style control; known source overlap disclosed",
+      "texts": 1000
+    },
+    {
+      "images": 897,
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "name": "xtd10_no_overlap",
+      "protocol_path": "reports/series_2026-10-23/xtd10_v2/clean_retrieval_protocol.json",
+      "protocol_sha256": "f824eb00d96cccfb165ed8f7e2a9a2b8159d3771a0c8b842686cdd61e87982a9",
+      "role": "translation-style control; no known protected overlap",
+      "texts": 897
+    },
+    {
+      "images": 2000,
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "name": "VN_dev",
+      "protocol_path": "reports/series_2026-10-23/vn_dev_protocol/retrieval_protocol.json",
+      "protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+      "role": "in-domain; automatically generated/recycled/translated labels",
+      "texts": 2003
+    }
+  ],
+  "deferred_datasets": [
+    {
+      "name": "human_short_queries",
+      "reason": "no real human annotations yet"
+    },
+    {
+      "name": "XTD10_paired_styles",
+      "reason": "zero unambiguous existing exact-EN human/Qwen pairs; no synthetic replacement"
+    },
+    {
+      "name": "local_CIRR_FashionIQ_RefCOCO",
+      "scope": "selected finalist only; historical protocol kept separate from full galleries"
+    }
+  ],
+  "efficiency": {
+    "cpu": {
+      "batch_size": 1,
+      "dtype": "fp32",
+      "threads": 2
+    },
+    "gpu": {
+      "batch_size": 64,
+      "dtype": "bf16"
+    },
+    "historical_precision_deviations": "record per result; BF16 efficiency is separate from model-specific retrieval precision",
+    "measured_batches": 100,
+    "report": [
+      "text_parameters",
+      "vision_parameters",
+      "head_parameters",
+      "dimension",
+      "query_ms",
+      "image_ms"
+    ],
+    "same_machine": true,
+    "timings": "synchronize GPU around timed encode; median and p95; no download/cache time",
+    "warmup_batches": 10
+  },
+  "harness": "shared v2 native encoders; full-gallery evaluator; our adapter required, not training-script scores",
+  "implementation_sha256": {
+    "src/pl_mmb_benchmark/full_gallery.py": "644cc9f575a45c4475c069e1da0deddd1ef2eda738cd380f4539c8641386d121",
+    "src/pl_mmb_benchmark/models.py": "5c0b75ed2d4ca10add71f55e069cb762eb429eb4f8bb0dea981c7bd931b34228",
+    "src/pl_mmb_benchmark/projector_adapter.py": "82ec46f210718a13d8ad0a122e21679bf3686db4579ae5f41d5e5b34bfb7416a",
+    "src/pl_mmb_benchmark/special_models.py": "388e9afe5e13279d87de72fa52b429ebf1552e969a02c6dbeeea923b8f2fdf61"
+  },
+  "linked_CLIP_components": {
+    "image_encoder": "openai/clip-vit-base-patch32",
+    "image_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268"
+  },
+  "metrics": [
+    "t2i/recall@1",
+    "t2i/recall@5",
+    "t2i/recall@10",
+    "t2i/mrr",
+    "t2i/ndcg@10",
+    "i2t/recall@1",
+    "i2t/recall@5",
+    "i2t/recall@10",
+    "i2t/mrr",
+    "i2t/ndcg@10"
+  ],
+  "no_model_add_remove_rerun_after_scores": true,
+  "optional_models": [],
+  "our_checkpoints": {
+    "VN_FULL_seed42": {
+      "never_trained_on_Wiki": true,
+      "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-source-ablation-v1/VN_FULL/best.pt",
+      "sha256": "75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743"
+    },
+    "VN_FULL_seed43": {
+      "never_trained_on_Wiki": true,
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-43/VN_FULL/best.pt",
+      "sha256": "626127451432301b1127478a3b47f2394139753c9e3f2bdb52570a44b8273776"
+    },
+    "VN_FULL_seed44": {
+      "never_trained_on_Wiki": true,
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-44/VN_FULL/best.pt",
+      "sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844"
+    },
+    "VN_only": {
+      "never_trained_on_Wiki": true,
+      "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-source-ablation-v1/VN_only/best.pt",
+      "sha256": "452a17b5aee45b6b04082a71088090f0e61bdd04e5fd31bf7b8e5069bc145b3d"
+    },
+    "historical_A1": {
+      "never_trained_on_Wiki": true,
+      "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-adaptation/A1/best.pt",
+      "sha256": "87e6bcba5ac56ee3824f5d7c13696b9929399567af6b9a56a4c46f168283249b"
+    }
+  },
+  "our_inference_parameters": {
+    "head": 196992,
+    "text": 31883136,
+    "total": 70667520,
+    "vision": 38587392
+  },
+  "our_models": [
+    {
+      "name": "VN_FULL",
+      "report": "mean and sample SD across all three seeds; selected median-VN-dev seed for legacy test",
+      "seed42": "training/runs/tinyclip-source-ablation-v1/VN_FULL/best.pt",
+      "seeds": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "checkpoint": "training/runs/tinyclip-source-ablation-v1/VN_only/best.pt",
+      "name": "VN_only",
+      "role": "without COCO"
+    },
+    {
+      "name": "historical_A1",
+      "role": "historical reference; checkpoint identity must be verified before execution"
+    }
+  ],
+  "our_text_prefix": "[query]: ",
+  "paired_bootstrap": {
+    "ci": "percentile 2.5/97.5%",
+    "conditional": "CI conditional on fixed gallery, available qrels and sampled components; not pretraining uncertainty",
+    "delta": "our minus reference, percentage points",
+    "estimator": "query-weighted metric after component resampling, common resample indices",
+    "pairing": "identical dataset SHA, ordered query IDs, qrels SHA, component IDs and galleries; fail on mismatch",
+    "replicates": 10000,
+    "seed": 20261023,
+    "unit": "transitive leakage component"
+  },
+  "parity_gate": {
+    "models": [
+      "bge-vl-base",
+      "siglip2-base-256",
+      "tipsv2-b14"
+    ],
+    "proof": "reference_shared_harness_parity_20261029.json",
+    "proof_sha256": "aaa8a4486686976fcba55bfbf178ebe4dbe490533ea04c4dccbb84b63f5a550c",
+    "status": "passed"
+  },
+  "positives": "explicit multi-positive qrels; deduplicate normalized captions and canonical images; never inferred by model",
+  "projector_adapter_verification": {
+    "path": "projector_adapter_verification_20261029.json",
+    "sha256": "7a4a7056b459f0cd7bab948dd8fc2d1c9222ee55c658e09f0824a454eb95908c"
+  },
+  "prompt_modes": [
+    {
+      "name": "v2_no_instructions",
+      "primary": true
+    },
+    {
+      "name": "author_recommended",
+      "primary": false,
+      "stop_until": "all model-specific prompts and primary sources are pinned"
+    }
+  ],
+  "reference_models": [
+    {
+      "alias": "metaclip-s16",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "0f11ef85118199626fff5fe7a57705d9e5282f19a058a582dc3143e5bdafddca",
+        "source_url": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384/raw/006223472923ba925226b59b6acd1e3e266c2382/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\3c08aae1b26de399b84d\\result.json",
+          "sha256": "fdea1e3b61e4a9e380ef8f4131f64bee9f78b87c21acf28d5af7474ae25fe605"
+        },
+        {
+          "path": "benchmark\\results\\3fda784e8c09ec234306\\result.json",
+          "sha256": "a862e7bfe24d8cced565f413e921c796018af09b66616680658e9cd15800da08"
+        },
+        {
+          "path": "benchmark\\results\\9d0c9edcf39570392201\\result.json",
+          "sha256": "70691bfb27e727857121ad61a82198458270844fa415c27613cb76b90e3eac3f"
+        },
+        {
+          "path": "benchmark\\results\\a9abf5f67aee4a83bcf3\\result.json",
+          "sha256": "67e0ec036a0b0d3cb019a85b61dcaf8e6d6bf4c888669d8870208aa79f954fe4"
+        }
+      ],
+      "model": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384",
+      "polish_adapted": true,
+      "polish_retrieval_competitor": true,
+      "revision": "006223472923ba925226b59b6acd1e3e266c2382",
+      "same_size_class_le_100M": true,
+      "total_parameters": 49722241
+    },
+    {
+      "alias": "metaclip-m16",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "9c06ec33a9cd01807c806a0b153b9f24a774c58acc59a07845d8f35967fe4c89",
+        "source_url": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384/raw/bc15d9f5ddabe0497898578493a6e81288057c90/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\00c474fc45efa29007e4\\result.json",
+          "sha256": "13a6d1f4fe32778af4727c6492eef792fa01568a11c79078b6c2bfc7e2023429"
+        },
+        {
+          "path": "benchmark\\results\\08ebf411e72d73432038\\result.json",
+          "sha256": "bfd9e34955faa45df562d4d04d52153a86b18bca41872eaa4d1f6b722ceec7e9"
+        },
+        {
+          "path": "benchmark\\results\\20c3fb7894534caa44db\\result.json",
+          "sha256": "bee8feb9fc669de3098f5ac88b63f01f249a03c28e4973a348c798fa6f6dbfda"
+        },
+        {
+          "path": "benchmark\\results\\d0cbacb6578469f4fd07\\result.json",
+          "sha256": "712334874464f14225cd9b65fe31c8079c6864ca0070b219e4d57a70f3ea933d"
+        }
+      ],
+      "model": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384",
+      "polish_adapted": true,
+      "polish_retrieval_competitor": true,
+      "revision": "bc15d9f5ddabe0497898578493a6e81288057c90",
+      "same_size_class_le_100M": true,
+      "total_parameters": 85301761
+    },
+    {
+      "alias": "mobileclip2-s2",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "41e74ac02e21ef7020166f774366a07b7a84370057ac9bc17250953ef96583c4",
+        "source_url": "https://huggingface.co/apple/MobileCLIP2-S2/raw/72424e7025436db18f15c3eff6ee8c7c15ad4481/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": true,
+      "historical_precision_policies": [
+        "cuda-fp32"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\2c10e8b01988aaff8057\\result.json",
+          "sha256": "80599b2027982cd311a4731bc91fdc7b7084c32b56004e2289918fc058230afc"
+        },
+        {
+          "path": "benchmark\\results\\30e4bd41b4fd2ea741a1\\result.json",
+          "sha256": "0bbe3ffec35d98f3070c243ad19fe299ed364514ee3042188a7d4048dd16a282"
+        },
+        {
+          "path": "benchmark\\results\\6ba46e104de121169398\\result.json",
+          "sha256": "ed85ffd25dde61febefee0adfe826f544cab44aaae4d76a34a24e778014c6584"
+        },
+        {
+          "path": "benchmark\\results\\af01a4ee56584896d46a\\result.json",
+          "sha256": "6e2d89052d8598cae5c3e93437d0a37c2f8dfddbf66e58451ac6d850a25cbdc0"
+        }
+      ],
+      "model": "apple/MobileCLIP2-S2",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": false,
+      "revision": "72424e7025436db18f15c3eff6ee8c7c15ad4481",
+      "same_size_class_le_100M": true,
+      "total_parameters": 99243329
+    },
+    {
+      "alias": "clip-b32-pl",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "2e9e5693ef5ca21face83fe3cac782f2de4f14f15e734721b6048bb8d537865d",
+        "source_url": "https://huggingface.co/alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384/raw/f889319e4605da4342341fdb62ad39386396d6e1/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\56cb13e25bf6611b3556\\result.json",
+          "sha256": "a350347bc4d38113c729592999fcc34b575ddaf0ee769c9d2b1992b0ededc5b3"
+        },
+        {
+          "path": "benchmark\\results\\77b201a18c2dd700b686\\result.json",
+          "sha256": "ccd5c440fb6cd88675d1978df8de40741c8b4e657acfda9ce6af478dfe9a85b5"
+        },
+        {
+          "path": "benchmark\\results\\bc050f0359f8a9800ee1\\result.json",
+          "sha256": "c315b0ddc37b2cea5df12fb00a5de5ab566409ed6a9f430681a91218e9762bc1"
+        },
+        {
+          "path": "benchmark\\results\\cdc3441907813b34e03b\\result.json",
+          "sha256": "f6f9ed95978bbedae18d4497e5536d619bf47a62f68a8b3d4abaf73fb293c1cf"
+        }
+      ],
+      "model": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384",
+      "polish_adapted": true,
+      "polish_retrieval_competitor": true,
+      "revision": "f889319e4605da4342341fdb62ad39386396d6e1",
+      "same_size_class_le_100M": false,
+      "total_parameters": 143747328
+    },
+    {
+      "alias": "siglip2-pl",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "d86016f5c4b5536ffa7c024bbc658be5c54215e224e2723b9d0275b6c04e4791",
+        "source_url": "https://huggingface.co/alphaedge-ai/siglip2-base-patch16-512-pol-16384/raw/002ad19c05defef76aae6bc20e048c5fe930995b/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\22b641f7d29bb6e64189\\result.json",
+          "sha256": "5bdfdbdf2b76dd8e8194144fe60fba9ae5d4cc2ee39a213b6f569c9c7c1a3386"
+        },
+        {
+          "path": "benchmark\\results\\3998d390d810d4902e26\\result.json",
+          "sha256": "7ba004cca413ef52fac31b1f9692e589a6aa4bdd75e2152ae2a04c4129ce07c3"
+        },
+        {
+          "path": "benchmark\\results\\92dd98571a1449fc2614\\result.json",
+          "sha256": "76d234f7a90438e7908970f94ed5745bcd8c0a15dd4e7b00fd481088c54ce303"
+        },
+        {
+          "path": "benchmark\\results\\bcf09845f970f8aeac8d\\result.json",
+          "sha256": "9337c202b9dbb3a9b064ef5b54da2244afb992e8da6555353a8f25a3736990b3"
+        }
+      ],
+      "model": "alphaedge-ai/siglip2-base-patch16-512-pol-16384",
+      "polish_adapted": true,
+      "polish_retrieval_competitor": true,
+      "revision": "002ad19c05defef76aae6bc20e048c5fe930995b",
+      "same_size_class_le_100M": false,
+      "total_parameters": 191798786
+    },
+    {
+      "alias": "siglip2-base",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "c4baa8dc31bf7b64476f373f2c646c04b0122495de39e1d3a6144c936d5a3ebd",
+        "source_url": "https://huggingface.co/google/siglip2-base-patch16-512/raw/a89f5c5093f902bf39d3cd4d81d2c09867f0724b/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\324adfc4e9915ae1e712\\result.json",
+          "sha256": "e4006ac0f872cdfb75b0c2c3995e66db6eb92894bb043e845c3cf9696acb3ec8"
+        },
+        {
+          "path": "benchmark\\results\\412844ac0e893a681ecf\\result.json",
+          "sha256": "062a550f4f708ee6ec3b7415acc0d674cdd1ad9cfdf7aaebc2fe43c33d02e83d"
+        },
+        {
+          "path": "benchmark\\results\\5704b575b6f137c9c28f\\result.json",
+          "sha256": "7cc20e5e5b4fa9a704920bf03a7d3a26cd9db6c2adcd46589f7144af1f5cfdd2"
+        },
+        {
+          "path": "benchmark\\results\\64668f992be29374be29\\result.json",
+          "sha256": "eef9db5ae88a398a4a0575fd20bcfb200f568acc2c9a76187e37ea0204a2d9ac"
+        }
+      ],
+      "model": "google/siglip2-base-patch16-512",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "a89f5c5093f902bf39d3cd4d81d2c09867f0724b",
+      "same_size_class_le_100M": false,
+      "total_parameters": 375823874
+    },
+    {
+      "alias": "siglip2-pl-32768",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "24a2842a7fdd38e3e88c76412ac16a411ed3e2b26e11883900363b66ea903499",
+        "source_url": "https://huggingface.co/alphaedge-ai/siglip2-base-patch16-512-pol-32768/raw/1a0edc19692189ba5ee44da531995cfd4138dd57/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\ad7c6aef8ca56735d340\\result.json",
+          "sha256": "323c25c06470498a40d8804f29c3b1d6ec71f8d2ec4db9e0fa2ceed7476367cf"
+        },
+        {
+          "path": "benchmark\\results\\de8ade94a4f80ff682de\\result.json",
+          "sha256": "36d57db25cfc21d869574a0dc9cab210459025c0a1b349a6204fefd82cac21a6"
+        },
+        {
+          "path": "benchmark\\results\\ef0460f037acda926589\\result.json",
+          "sha256": "60dee7de8f934ae1c7c790a405bbb60bc5c9b3a0f4c0639a4bbd15a68e95d448"
+        },
+        {
+          "path": "benchmark\\results\\fe5d985a1be63593a2f1\\result.json",
+          "sha256": "bad6062765df2b64ddcec298c42d4b9aee30795e01a381b09e9f01296a9257be"
+        }
+      ],
+      "model": "alphaedge-ai/siglip2-base-patch16-512-pol-32768",
+      "polish_adapted": true,
+      "polish_retrieval_competitor": true,
+      "revision": "1a0edc19692189ba5ee44da531995cfd4138dd57",
+      "same_size_class_le_100M": false,
+      "total_parameters": 204381698
+    },
+    {
+      "alias": "embeddinggemma-2",
+      "author_prompt": {
+        "document_prefix": "title: none | text: ",
+        "image_prefix": "",
+        "query_prefix": "task: search result | query: ",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "b677a0ee2818c36f091b65fd3d9b4baea9f04d53b02b49cae916c74bf9682037",
+        "source_url": "https://huggingface.co/google/embeddinggemma-2/raw/914f7f89142e33e77833254d9c9b90c3cef7303b/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\2bca618a44e52ec9a66a\\result.json",
+          "sha256": "f3592284c7c282c3a5a7a9a8645150fde1615dd21b014c33352bc53141f140e4"
+        },
+        {
+          "path": "benchmark\\results\\a278ce550949d506aeaf\\result.json",
+          "sha256": "bc9c1a6083360d6d20fba6273ee768ede437cf06748341e36d9fd27a20b6570c"
+        },
+        {
+          "path": "benchmark\\results\\b09f7ee8cfbbf7053c2e\\result.json",
+          "sha256": "009623bc92e2d28d3475c4537eb8f778556b76addcb37a3fc1c47a30b35fe6c4"
+        },
+        {
+          "path": "benchmark\\results\\d9f052dd90d3976dff9d\\result.json",
+          "sha256": "0b88ee2861d63ebe2754ef40f17ac2d81b0c4e152f4ce3b42fbcf35f24ae9623"
+        }
+      ],
+      "model": "google/embeddinggemma-2",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+      "same_size_class_le_100M": false,
+      "total_parameters": 438760448
+    },
+    {
+      "alias": "siglip2-naflex",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "d4353009ea90b7de43575c4ba7e547e195e3239a62f7746afb16ae4ca7fa390a",
+        "source_url": "https://huggingface.co/google/siglip2-base-patch16-naflex/raw/b53b807d3a2d5e2b3911292f2d69e5341cdc064c/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\3c0233fda189e0ddc154\\result.json",
+          "sha256": "202688104e8f38e83b7ddef53c4519ad743fb30a907f3838fd124c8b2cf8fa0c"
+        },
+        {
+          "path": "benchmark\\results\\611d7adec9724465403c\\result.json",
+          "sha256": "1742700f228799cda2edc2c5695474d0e602cc0e269deef1391885ba2a47a806"
+        },
+        {
+          "path": "benchmark\\results\\b0b674896f80f182ffce\\result.json",
+          "sha256": "6a7dddcf853af72ce777a7b1439452b952662d1321be5566e1eb4d98581e2ad1"
+        },
+        {
+          "path": "benchmark\\results\\cf1b52ae1e1284e2e2ec\\result.json",
+          "sha256": "86e4f3599f121b1516d0c1e3550f336ce9ec93ca514bf9ca671d5d9efa834428"
+        }
+      ],
+      "model": "google/siglip2-base-patch16-naflex",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "b53b807d3a2d5e2b3911292f2d69e5341cdc064c",
+      "same_size_class_le_100M": false,
+      "total_parameters": 375234050
+    },
+    {
+      "alias": "clip-b32-pl-32768",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "d709eb27773172011d387eb518978a072673965e8a47c425a5e1b64bb5693388",
+        "source_url": "https://huggingface.co/alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768/raw/62436cd6cd74f072dda57463b6916c95324e5b85/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\56c31a108790cacc765c\\result.json",
+          "sha256": "cb27cc878258f0dfe26633ce2c5233e93108884a04dd813d8f142285d5978d73"
+        },
+        {
+          "path": "benchmark\\results\\97e6d684b02ec116331a\\result.json",
+          "sha256": "167bbbca7cac41a6c2ef31bf186d4ca3ee53cd797628b193624a0086ccd55889"
+        },
+        {
+          "path": "benchmark\\results\\c44ef4729d6d53ba11aa\\result.json",
+          "sha256": "63176b7668ae0f251e0e6602071b3e647a3722ec58427b117fc33af9a80376a1"
+        },
+        {
+          "path": "benchmark\\results\\ca8849508a9b8ace7c36\\result.json",
+          "sha256": "4cd3977d504a810232b0186ff1f0bfec32b39795ba3b01639029d79a40db54f1"
+        }
+      ],
+      "model": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768",
+      "polish_adapted": true,
+      "polish_retrieval_competitor": true,
+      "revision": "62436cd6cd74f072dda57463b6916c95324e5b85",
+      "same_size_class_le_100M": false,
+      "total_parameters": 156330240
+    },
+    {
+      "alias": "mclip-b16plus",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "a03620be2905c735c679f8cf15eb1ea7e410921c5ea0db2d28498705d0f4b773",
+        "source_url": "https://huggingface.co/M-CLIP/XLM-Roberta-Large-Vit-B-16Plus/raw/15c3aee9b9e96fd7de1c1d488810a604bab98e78/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\204e78f8b78a7419caf7\\result.json",
+          "sha256": "a211e0c817011c86177c67f1dc5b307cb5880e9584e003f531193e3e48d0b90d"
+        },
+        {
+          "path": "benchmark\\results\\3fe153506fb4226b6d38\\result.json",
+          "sha256": "01271dea725b7b0e67f68a6091d0275fb2a5926ef7cef0bcfc456e95546854be"
+        },
+        {
+          "path": "benchmark\\results\\409920166de67168ba1f\\result.json",
+          "sha256": "72d5650b84312d55254ba587775ed852e6d1381ad74cee8572f54e57848fc4a2"
+        },
+        {
+          "path": "benchmark\\results\\439299c3d2b5e4d30e3a\\result.json",
+          "sha256": "2f88d1cd1c5687fee62882cbbee68e2c4e7db59a14ec2b7ea262d258bcd6c9ee"
+        }
+      ],
+      "model": "M-CLIP/XLM-Roberta-Large-Vit-B-16Plus",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "same_size_class_le_100M": false,
+      "total_parameters": 677760256
+    },
+    {
+      "alias": "siglip2-base-384",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "3dab28ee04f108b1b1c8af6a9f0451cf1a6fff67dfba3dddfe16ca6dc1018214",
+        "source_url": "https://huggingface.co/google/siglip2-base-patch16-384/raw/f775b65a79762255128c981547af89addcfe0f88/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\6b2299386bcf2f9d54eb\\result.json",
+          "sha256": "a4a19a5b85aaa6224643e5911c526f0150bf1f6ed3bca3ee0419981deeada333"
+        },
+        {
+          "path": "benchmark\\results\\9bf5892bb9081a8865a1\\result.json",
+          "sha256": "2fe325204410ff6ac86a30c59d5e7c725ceb0d997d7e47419225379a3da1ad1f"
+        },
+        {
+          "path": "benchmark\\results\\bd32e21d9e5695b104d3\\result.json",
+          "sha256": "933d5221a392dcc5a2a6400d13d107884c84fc55416fc406196880f82fb92f53"
+        },
+        {
+          "path": "benchmark\\results\\d40e9ca7f03a50cde67c\\result.json",
+          "sha256": "996c00adac13644172595706056ff42853b988d705dbc97194cb8e3bbe1df6e3"
+        }
+      ],
+      "model": "google/siglip2-base-patch16-384",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "f775b65a79762255128c981547af89addcfe0f88",
+      "same_size_class_le_100M": false,
+      "total_parameters": 375479810
+    },
+    {
+      "alias": "siglip2-base-256",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "3f093559c3a18d94d9336249cf2e4e42ec8752413f07eb6634e2820e4ea120ad",
+        "source_url": "https://huggingface.co/google/siglip2-base-patch16-256/raw/3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\9d24d22f2918a31add26\\result.json",
+          "sha256": "cf84e261df1dde57e553c442de09984de5c81ec18fdf351ed0722c2822163ed7"
+        },
+        {
+          "path": "benchmark\\results\\d7e057cafc837f0bbc9c\\result.json",
+          "sha256": "d0cc1d71a42a0812d0bb5976c8f87f6bf5319a4297dced2cbb243473f88491bd"
+        },
+        {
+          "path": "benchmark\\results\\e65113a0d1a0e21df774\\result.json",
+          "sha256": "6ed68a9f36e41f943d1e3c8ae1b67f6615b41d5eb0c8f8002448faeea1a12e24"
+        },
+        {
+          "path": "benchmark\\results\\f03416cc5c03479b64de\\result.json",
+          "sha256": "bf940d5191252a09b91fe904e1c2209c0771700d31e9cefc5c9e38e026d723e2"
+        }
+      ],
+      "model": "google/siglip2-base-patch16-256",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+      "same_size_class_le_100M": false,
+      "total_parameters": 375234050
+    },
+    {
+      "alias": "siglip-i18n-256",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "cb92e00c6dfc1c382ec1e9781a721ae92523b317e3143c124055a42aef679525",
+        "source_url": "https://huggingface.co/timm/ViT-B-16-SigLIP-i18n-256/raw/ec35f9450b91a8ea263a50e31f55ae069069d1df/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\25aaa328194bf45f4c6f\\result.json",
+          "sha256": "c53b7e2ab9326feda2f96e933b633093841c0aff8b571b1fe69bdd57777173aa"
+        },
+        {
+          "path": "benchmark\\results\\94331a3a63ae2bb60a34\\result.json",
+          "sha256": "18130264c96928402b1f22022e6df88d34c8a1cd85373cc3443d737879c53fb2"
+        },
+        {
+          "path": "benchmark\\results\\c29fd942dd89f28a7876\\result.json",
+          "sha256": "8c2612692bee1ce9c01724c255b4fb2ba057e292cc69e39f03ca1e8866b7f78a"
+        },
+        {
+          "path": "benchmark\\results\\db66b8aad3b90511e473\\result.json",
+          "sha256": "9e1cbf0b2a82978ad398e2125e05c8f55c8d5c2cfd5e75b1233d704bde4d6014"
+        }
+      ],
+      "model": "timm/ViT-B-16-SigLIP-i18n-256",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "ec35f9450b91a8ea263a50e31f55ae069069d1df",
+      "same_size_class_le_100M": false,
+      "total_parameters": 370626050
+    },
+    {
+      "alias": "siglip2-b32-256",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "1ecff3f4af89ddcb8c15142f8d1c8f66af26b6655562605882da4f6123b98757",
+        "source_url": "https://huggingface.co/timm/ViT-B-32-SigLIP2-256/raw/cd1efb47643f2794413dd79ef24397c175032780/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\0e8d8dc7c8d7902294be\\result.json",
+          "sha256": "7417525b7eabc2e648a0a6bb72cb22418c897a0f0a8b3e35307db87fe0335fe9"
+        },
+        {
+          "path": "benchmark\\results\\3abb63ab9777ab42cbfd\\result.json",
+          "sha256": "03a89d43fba5b2c1648dac80de0f5f52c519b3d5bd6ed7a606093e44df23e9f7"
+        },
+        {
+          "path": "benchmark\\results\\b100e8212f46c8d50e4f\\result.json",
+          "sha256": "1558b907ed082e15b956a67a5deff208c1ac5042653f220f766836e4ca29db46"
+        },
+        {
+          "path": "benchmark\\results\\bcb4c16b8236eca45b79\\result.json",
+          "sha256": "09ef5114a133050be1469a3bb767a754ea60a82655afda38e6f5d4d18d264e4c"
+        }
+      ],
+      "model": "timm/ViT-B-32-SigLIP2-256",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "cd1efb47643f2794413dd79ef24397c175032780",
+      "same_size_class_le_100M": false,
+      "total_parameters": 376856066
+    },
+    {
+      "alias": "tipsv2-b14",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "1e57a1ed3198d26a0a5ef5ae5f7c32b7fcf844d56ac108ccb1e5116f4bd10895",
+        "source_url": "https://huggingface.co/google/tipsv2-b14/raw/ed1e4dc6b74bf3935ae099e9d5eb30fa96528454/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp32"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\358334b62856f4e3caa1\\result.json",
+          "sha256": "ce9bf26524649233162b753360632073f30ad1edadef5ad9f7c976e801955ecc"
+        },
+        {
+          "path": "benchmark\\results\\81842e3d52cac611dbc9\\result.json",
+          "sha256": "f08ab8f57185e0cddf05174c0520cb47d6555ca7a64bbce1e43ee8e510fd3635"
+        },
+        {
+          "path": "benchmark\\results\\e7dd4d7bd982fb5ac07a\\result.json",
+          "sha256": "cc8ce5132ad0d5330c8570a3af2971aa81e33e0b536f8c65f6543cb4fa507334"
+        },
+        {
+          "path": "benchmark\\results\\fd87e127edea34f13b94\\result.json",
+          "sha256": "6c2f18320a4de9e4817350675ab8b8d19c3f32bdad07ee0e8e009bfd8928eb0d"
+        }
+      ],
+      "model": "google/tipsv2-b14",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "ed1e4dc6b74bf3935ae099e9d5eb30fa96528454",
+      "same_size_class_le_100M": false,
+      "total_parameters": 195948288
+    },
+    {
+      "alias": "bge-vl-base",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Registered base CLIP encoder; MMEB task_instruction on the MLLM model-card section does not apply to this encoder",
+        "source_sha256": "6a2442e8ebdaf5f47155b14992dfdbc33d59cbe33b4aa7fc6e825b2976cd673d",
+        "source_url": "https://huggingface.co/BAAI/BGE-VL-base/raw/cc4c733ed997dbee4ac70ccffb911e70c9c24b93/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp32-weights-bf16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\10c20345bf7783bd78c6\\result.json",
+          "sha256": "588134cbe56129bf5130ac8d099537f951510904423cf5203576fefae3320bae"
+        },
+        {
+          "path": "benchmark\\results\\70f2aac92a4aab1915da\\result.json",
+          "sha256": "eeaba0e745476e6411591440cd4b0be5ee43e30526709384d258d7f5faab07d1"
+        },
+        {
+          "path": "benchmark\\results\\c62d201f8346600f2fc8\\result.json",
+          "sha256": "a23a080baa9f640d69b3867140d766adb5ecfe19782832eeeb7e9e99fe76613c"
+        },
+        {
+          "path": "benchmark\\results\\f2b43776789c1f940d38\\result.json",
+          "sha256": "11a8e8d756e8ff9d105833ad79a4ecf642ac280a5310482e45e08de2e1e071b5"
+        }
+      ],
+      "model": "BAAI/BGE-VL-base",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "cc4c733ed997dbee4ac70ccffb911e70c9c24b93",
+      "same_size_class_le_100M": false,
+      "total_parameters": 149620737
+    },
+    {
+      "alias": "tipsv2-l14",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "9a3d666916a03208fcb951cce6014112dda796faea2f2f6add797cd40bd493bd",
+        "source_url": "https://huggingface.co/google/tipsv2-l14/raw/52847a71eb02a3082c370fbcd98cd799687bd4d0/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp32"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\4c66ffb7202327b8fd0a\\result.json",
+          "sha256": "747bcdc33afd821941c2f516a537559ab2d0529f5fcc62c2fc426bdeed891043"
+        },
+        {
+          "path": "benchmark\\results\\788738091145bcff93a0\\result.json",
+          "sha256": "38b3af24943c9a665051f008b7042f53f22afb099c3f1680ce1958712461ddd7"
+        },
+        {
+          "path": "benchmark\\results\\ce9e6856dee6ca716ea3\\result.json",
+          "sha256": "68d83adff8d18c11821ec302c9f59e04e1875fc93294f0304982d8d1e8e31b45"
+        },
+        {
+          "path": "benchmark\\results\\d0b7294ad28ccfa5042d\\result.json",
+          "sha256": "4daa060135289f67ffd2ae1f46e1a40f6ecb222ee85fdb690f295806331bf430"
+        }
+      ],
+      "model": "google/tipsv2-l14",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "52847a71eb02a3082c370fbcd98cd799687bd4d0",
+      "same_size_class_le_100M": false,
+      "total_parameters": 487941120
+    },
+    {
+      "alias": "pe-core-b16",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "1514bde706bc04fd442dd948cdccaa4454745481c22cef65511432cfb895a6ef",
+        "source_url": "https://huggingface.co/facebook/PE-Core-B16-224/raw/a16450b46fef32363459920c2685a1b4ef13dcd9/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": true,
+      "historical_precision_policies": [
+        "cuda-bf16",
+        "cuda-fp32-weights-bf16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\1dd46b73690cac495309\\result.json",
+          "sha256": "488709982b32b0ed8a924ef35de434435ecf661dc7db2fb8ef5ad7b7302d36ea"
+        },
+        {
+          "path": "benchmark\\results\\253a48ca991ffe8a8003\\result.json",
+          "sha256": "0db360cb0dcb5509dd8294d94d7ff563840ad5134b664dcf08c56afcd1c7e61e"
+        },
+        {
+          "path": "benchmark\\results\\50f7cc7a18bf059b64af\\result.json",
+          "sha256": "13d8c0270513b7f567deaff86d2dd804be0ad720297e06fb54469a16bbcea180"
+        },
+        {
+          "path": "benchmark\\results\\973c2b30afa38c13c2cb\\result.json",
+          "sha256": "37f85b2c95a8d886664bc4191c186b1268d1aac8fa4469f244099ac67a71735c"
+        },
+        {
+          "path": "benchmark\\results\\fbbbeed6351d067b59fa\\result.json",
+          "sha256": "b1322d1cb6a8cd6ae30ff0d4d08c235e06a38f3fee8e1e2b6d80847ee200a214"
+        }
+      ],
+      "model": "facebook/PE-Core-B16-224",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": false,
+      "revision": "a16450b46fef32363459920c2685a1b4ef13dcd9",
+      "same_size_class_le_100M": false,
+      "total_parameters": 447659521
+    },
+    {
+      "alias": "fashion-siglip",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "34efcd14c3a139d0591a26843ff06692b87726071faca297a3ce154364398977",
+        "source_url": "https://huggingface.co/Marqo/marqo-fashionSigLIP/raw/c56244cc94f92419e8369fa71efdaf403b124ce8/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\44f23ae082528ea2d75b\\result.json",
+          "sha256": "4a4ad70e42f475b1ad66fb9eea1f004f4f8479a17bb50cb67b0e62122b285ec7"
+        },
+        {
+          "path": "benchmark\\results\\53d8b9fc05cb23d26b18\\result.json",
+          "sha256": "4d7be6744d8f80230ef3d056d962fd5c191316b2d7af05789af913bc7a49d868"
+        },
+        {
+          "path": "benchmark\\results\\8d13e2edb8b73f158f4c\\result.json",
+          "sha256": "bde58ccd3df089b77824c541a22f308e6c990507f811023a399972345ebf861f"
+        },
+        {
+          "path": "benchmark\\results\\c64fede96084afd77f4f\\result.json",
+          "sha256": "fad6b429b7c823e53cbe02aaf0cdb7bcd8217e683e7f3fd6019517299b2adb52"
+        }
+      ],
+      "model": "Marqo/marqo-fashionSigLIP",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "c56244cc94f92419e8369fa71efdaf403b124ce8",
+      "same_size_class_le_100M": false,
+      "total_parameters": 203155970
+    }
+  ],
+  "remaining_execution_blockers": [],
+  "reproducibility_note": "Our encoders use original Torch 2.11/cu128 and Transformers 4.57.6; the is_causal compatibility warning is retained rather than changing the trained embedding space. Adapter embeddings matched historical cache exactly on the registered verification sample.",
+  "schema": 2,
+  "selected_finalist": "VN_FULL_seed44",
+  "series": "2026-10-23",
+  "source_hashes": {
+    "reports/benchmark_twenty_models.md": "f6ce5f24a7e5d4fce1119cd73d310787b96d0bbcc255950959f76d26a74f1c97",
+    "src/pl_mmb_benchmark/models.py": "5c0b75ed2d4ca10add71f55e069cb762eb429eb4f8bb0dea981c7bd931b34228",
+    "src/pl_mmb_benchmark/special_models.py": "388e9afe5e13279d87de72fa52b429ebf1552e969a02c6dbeeea923b8f2fdf61"
+  },
+  "status": "closed_ready_for_execution",
+  "supersedes": {
+    "path": "reports/series_2026-10-23/reference_eval_registration.json",
+    "reason": "Complete frozen galleries, author sources, exact numerical projector parity and shared-scorer historical rank parity before first new-gallery scores",
+    "sha256": "6add6760801beb1810533eed70ef91983cece2d2c7f021e66404c26023fba67b"
+  },
+  "wiki_symmetry": {
+    "immutable_key": "wiki_dev_zero_shot_pre_wiki_training",
+    "later_results": "separate in-domain column; historical Wiki pilot must be disclosed",
+    "new_wiki_training_requires": "frozen disjoint dev guard, immutable baseline, user decision",
+    "overwrite": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "A_FINALISTS_FROZEN_sha256": "9bf786e10f2be160a33ba5807f26899423123149a50c3817ed2f3974fc30879f",
+  "artifacts": [],
+  "contract_sha256": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+  "further_A_cuda_planned": false,
+  "generation": 1,
+  "owner": "A",
+  "phase": "A_GPU_DONE",
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "data-ood-20261030"
+}

@@ -1,0 +1,37 @@
+{
+  "A_UNIVERSE_FROZEN_sha256": "b1324298ab7e5a934a3f291aac1bf85f528d643724533995d30af47e3928899d",
+  "GPU_operations": 0,
+  "accepted": {
+    "flickr30k_pl_local_test": 1000,
+    "vizwiz_pl_local_validation": 1250
+  },
+  "artifact": {
+    "bytes": 6105068,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/candidate_overlap_audit.json",
+    "role": "candidate_overlap_audit",
+    "sha256": "9a70993ddef84f0261001edfa168d27b9b742f53323bf803498ccf7f9b694968"
+  },
+  "candidates": {
+    "flickr30k_pl_local_test": 1000,
+    "vizwiz_pl_local_validation": 1250
+  },
+  "dataset_selection_not_final": true,
+  "elapsed_seconds": 33.61018105200037,
+  "final_translation_summary_sha256": "927ebf4f45c33a9ae202ba1ba546c960c6a12e61dc7ab65cc0adb3aae5a367c4",
+  "flickr_source_split": {
+    "exact_ID_set_match": true,
+    "official_flickr30k1k_claim": false,
+    "parquet_originals_not_copied": true,
+    "source_test_list_sha256": "871e8ecafc66fb13e044ecccf669d04a865b4c58553227df86b933f0337a1563"
+  },
+  "implementation_sha256": {
+    "audit_candidates.py": "cd7f6cfde8533249679205fe74f1f7a896eb49c12fbb8d0de0713896d0705679",
+    "leakage.py": "450f391da928dbeed465de83acee45523083fb523600f064c0a5a5a48ac90a09",
+    "vizwiz_assets.py": "394ebdc34d546e8df36e3cadbc4b98ae83e89843dc27992a885dec685b6e8a85"
+  },
+  "protected_index_rows": 325397,
+  "protected_unique_phashes": 91100,
+  "rejected": {},
+  "rejection_reasons": {},
+  "status": "CPU_originals_and_final_translations_audited"
+}

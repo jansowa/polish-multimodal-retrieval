@@ -1,0 +1,1372 @@
+{
+  "baseline_preserved": true,
+  "counts": {
+    "local_not_directly_protected_source_identity": 162,
+    "local_protected_source_identity": 401,
+    "local_verified_source_sha1": 563,
+    "missing_local_original": 23562,
+    "rows": 24125
+  },
+  "disk": {
+    "C": {
+      "free": 26114084864,
+      "total": 572671389696,
+      "used": 546557304832
+    },
+    "D": {
+      "free": 4373250048,
+      "total": 107373129728,
+      "used": 102999879680
+    }
+  },
+  "elapsed_seconds": 33.30081654899999,
+  "license_metadata_counts": {
+    "CC BY 2.0": 93,
+    "CC BY 2.5": 25,
+    "CC BY 3.0": 425,
+    "CC BY 4.0": 1093,
+    "CC BY-SA 2.0": 128,
+    "CC BY-SA 2.5": 41,
+    "CC BY-SA 3.0": 1539,
+    "CC BY-SA 4.0": 19398,
+    "CC0": 1383
+  },
+  "metadata_is_not_training_clearance": true,
+  "missing_examples": [
+    {
+      "id": "wikimedia:100028879",
+      "source_sha1": "38f3a60f1a93e2806cb18e6d66f806ed37cb26fc"
+    },
+    {
+      "id": "wikimedia:100033376",
+      "source_sha1": "7b09c0340c2fcb3d6ed1691c0bc0afb5396b1e06"
+    },
+    {
+      "id": "wikimedia:100034482",
+      "source_sha1": "c781c8d6bf105ef844006cd8c313f858be6bbc7c"
+    },
+    {
+      "id": "wikimedia:100035298",
+      "source_sha1": "e76807dec76ec244b9da1bff98c49b8a5fca3406"
+    },
+    {
+      "id": "wikimedia:100050027",
+      "source_sha1": "a87ef93fd914a043e870aa9a9343dfe00fb91598"
+    }
+  ],
+  "no_SQLite_access": true,
+  "no_images_downloaded": true,
+  "original_files": 568,
+  "originals_searched": [
+    "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-wiki-pilot-v1/data/parity_raw"
+  ],
+  "protected_inputs_verified": true,
+  "provenance_routes": {
+    "ready_native_original": 4834,
+    "ready_native_recycled": 13872,
+    "ready_original": 1330,
+    "ready_recycled": 3869,
+    "ready_reused_original": 220
+  },
+  "status": "original_availability_inventory_complete_not_full_image_audit",
+  "unique_original_sha1": 567,
+  "unprotected_local_candidates": [
+    {
+      "id": "wikimedia:100147339",
+      "paths": [
+        "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-wiki-pilot-v1/data/parity_raw/00000.bin"
+      ],
+      "route": "ready_native_recycled",
+      "sha1": "6b87535eb22150c6ca32b592dc111429cc068c4f"
+    },
+    {
+      "id": "wikimedia:100228045",
+      "paths": [
+        "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-wiki-pilot-v1/data/parity_raw/00001.bin"
+      ],
+      "route": "ready_native_recycled",
+      "sha1": "941a786fa2364897fad034f94c5e6d160d55708c"
+    },
+    {
+      "id": "wikimedia:101235791",
+      "paths": [
+        "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-wiki-pilot-v1/data/parity_raw/00006.bin"
+      ],
+      "route": "ready_native_recycled",
+      "sha1": "198b253d43ae01bf8e70e4f83e3907aace317244"
+    },
+    {
+      "id": "wikimedia:101537010",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/89fa1d0c992979950842c1b0f7dc1bd6aa4dd01f.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "89fa1d0c992979950842c1b0f7dc1bd6aa4dd01f"
+    },
+    {
+      "id": "wikimedia:101537012",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/cc14d0f74e986fe5967563b273d249b5f6ac159a.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "cc14d0f74e986fe5967563b273d249b5f6ac159a"
+    },
+    {
+      "id": "wikimedia:101537024",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/269f344fa5c438048a9ddd2167244aee82baab3b.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "269f344fa5c438048a9ddd2167244aee82baab3b"
+    },
+    {
+      "id": "wikimedia:101537025",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/a5e11713b6f8256c1d545cff166eaaeaab3bcece.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "a5e11713b6f8256c1d545cff166eaaeaab3bcece"
+    },
+    {
+      "id": "wikimedia:10251903",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/91bd8293358c10bc27f14f52f03099f47aeb98b7.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "91bd8293358c10bc27f14f52f03099f47aeb98b7"
+    },
+    {
+      "id": "wikimedia:10298954",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/1244943eb0915e71e79dd01c261dc85b4374e461.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "1244943eb0915e71e79dd01c261dc85b4374e461"
+    },
+    {
+      "id": "wikimedia:10623675",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/ff1e0de195afa25bca3dc26849f0745b7f1a9a1e.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "ff1e0de195afa25bca3dc26849f0745b7f1a9a1e"
+    },
+    {
+      "id": "wikimedia:106871724",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/45c1998c75ff50112f33ba20c32dc7365469c6d8.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "45c1998c75ff50112f33ba20c32dc7365469c6d8"
+    },
+    {
+      "id": "wikimedia:106871881",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/d139a2adc1119379876989f8705bea45caafa183.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "d139a2adc1119379876989f8705bea45caafa183"
+    },
+    {
+      "id": "wikimedia:106872067",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/3c3915d3ec8187a58eba3e904936ce1b77747721.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "3c3915d3ec8187a58eba3e904936ce1b77747721"
+    },
+    {
+      "id": "wikimedia:107188085",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/08ce468b3f8f5b6a78e605b9d9f5066b756cd00a.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "08ce468b3f8f5b6a78e605b9d9f5066b756cd00a"
+    },
+    {
+      "id": "wikimedia:1073893",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/49f0bb0b853b0cd3de2f6d5e08ff05122bc5e339.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "49f0bb0b853b0cd3de2f6d5e08ff05122bc5e339"
+    },
+    {
+      "id": "wikimedia:109564413",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/5909d7c116bbd66a2bf28c78f3fd29bd29e4c5aa.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "5909d7c116bbd66a2bf28c78f3fd29bd29e4c5aa"
+    },
+    {
+      "id": "wikimedia:11207899",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/a4ddd1131e962b0770bf2fa33b99790abbd4440d.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "a4ddd1131e962b0770bf2fa33b99790abbd4440d"
+    },
+    {
+      "id": "wikimedia:11207928",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/50192a43885b99fcd9060442b82a11175e874b5a.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "50192a43885b99fcd9060442b82a11175e874b5a"
+    },
+    {
+      "id": "wikimedia:11208052",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/98e82688188fba52a68f026fd97f2f9150e7b168.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "98e82688188fba52a68f026fd97f2f9150e7b168"
+    },
+    {
+      "id": "wikimedia:112093158",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/506b726ccebb8bdd7cdd7df42b78d93f36cbaa66.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "506b726ccebb8bdd7cdd7df42b78d93f36cbaa66"
+    },
+    {
+      "id": "wikimedia:115645860",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/543220eb666ff775a31d1fb8ae0789299ac32a2a.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "543220eb666ff775a31d1fb8ae0789299ac32a2a"
+    },
+    {
+      "id": "wikimedia:115713153",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/da575633875f139cbfe5560de0468b40fd283af0.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "da575633875f139cbfe5560de0468b40fd283af0"
+    },
+    {
+      "id": "wikimedia:115740402",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/fc367a3634a3992129679c372be55582ed243ef4.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "fc367a3634a3992129679c372be55582ed243ef4"
+    },
+    {
+      "id": "wikimedia:115740404",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/fe16616398d842a05c4fecb9bb0355af3abd0b7e.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "fe16616398d842a05c4fecb9bb0355af3abd0b7e"
+    },
+    {
+      "id": "wikimedia:115797460",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/ca83e33cd9713ef0f057b964ca583bcf73c7061c.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "ca83e33cd9713ef0f057b964ca583bcf73c7061c"
+    },
+    {
+      "id": "wikimedia:115844080",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/7f80aa2fbd33b6aa014580c54475098b9ae792df.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "7f80aa2fbd33b6aa014580c54475098b9ae792df"
+    },
+    {
+      "id": "wikimedia:115994568",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/ed46ea7274067e20fb22467cf4b222a12e7b6d1e.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "ed46ea7274067e20fb22467cf4b222a12e7b6d1e"
+    },
+    {
+      "id": "wikimedia:11612805",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/319ffa77a9070718514ed8615b60b6b4d7b60ac6.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "319ffa77a9070718514ed8615b60b6b4d7b60ac6"
+    },
+    {
+      "id": "wikimedia:11612841",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/c7976b9032e32bb401bc5cd62eb3ed8539223075.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "c7976b9032e32bb401bc5cd62eb3ed8539223075"
+    },
+    {
+      "id": "wikimedia:116446232",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/1d337fe01ddacea32fa29843d6c5b4bf7e941f6d.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "1d337fe01ddacea32fa29843d6c5b4bf7e941f6d"
+    },
+    {
+      "id": "wikimedia:116484076",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/33ed5282d78ee9502f46a0020ca044427312f25c.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "33ed5282d78ee9502f46a0020ca044427312f25c"
+    },
+    {
+      "id": "wikimedia:116554684",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/02ccbce0e7809ed73dcbecd0d12638eef2519cb5.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "02ccbce0e7809ed73dcbecd0d12638eef2519cb5"
+    },
+    {
+      "id": "wikimedia:11805471",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/29b8af430e0d4c5389b4279297607e9fbe8c8c22.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "29b8af430e0d4c5389b4279297607e9fbe8c8c22"
+    },
+    {
+      "id": "wikimedia:119960739",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/b6d21819afaf12c38e4b4816b79c5d408549b58e.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "b6d21819afaf12c38e4b4816b79c5d408549b58e"
+    },
+    {
+      "id": "wikimedia:120208246",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/91bacc9e8ea2dc344f63521e66e743ac0a6ceb7d.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "91bacc9e8ea2dc344f63521e66e743ac0a6ceb7d"
+    },
+    {
+      "id": "wikimedia:120208426",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/558e5e66c8be736acb06da1ea62eebaaa83695fe.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "558e5e66c8be736acb06da1ea62eebaaa83695fe"
+    },
+    {
+      "id": "wikimedia:120779964",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/edc5a9ea84bb987bb85a072b706b087a25df8131.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "edc5a9ea84bb987bb85a072b706b087a25df8131"
+    },
+    {
+      "id": "wikimedia:121032647",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/798e4dc989d92869a496275543c39f27e32f00ba.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "798e4dc989d92869a496275543c39f27e32f00ba"
+    },
+    {
+      "id": "wikimedia:125510685",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/2dbd4a53d9cf7035298c5183c3521a538b7a053c.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "2dbd4a53d9cf7035298c5183c3521a538b7a053c"
+    },
+    {
+      "id": "wikimedia:126218782",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/4759656dc241f06a27a879886d34f5db9636e560.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "4759656dc241f06a27a879886d34f5db9636e560"
+    },
+    {
+      "id": "wikimedia:126218788",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/6159d60e9909cd4fbeb4f4ff0846bf37a8462e83.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "6159d60e9909cd4fbeb4f4ff0846bf37a8462e83"
+    },
+    {
+      "id": "wikimedia:12688135",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/df5a49bd42fb7edd8472f355cd430ad8f15e17e4.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "df5a49bd42fb7edd8472f355cd430ad8f15e17e4"
+    },
+    {
+      "id": "wikimedia:127082222",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/ea90e94779a210e9644ce3f1e1b24558d797a2e8.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "ea90e94779a210e9644ce3f1e1b24558d797a2e8"
+    },
+    {
+      "id": "wikimedia:12738637",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/a124035b9c9eda0c20f74982d98b124a1666524e.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "a124035b9c9eda0c20f74982d98b124a1666524e"
+    },
+    {
+      "id": "wikimedia:128614663",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/0fa508d49939c16f3338c8bb49e7ef3f3dc114af.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "0fa508d49939c16f3338c8bb49e7ef3f3dc114af"
+    },
+    {
+      "id": "wikimedia:128614686",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/0b7d952d5fe685187276eaf1470ff72ae84ed19d.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "0b7d952d5fe685187276eaf1470ff72ae84ed19d"
+    },
+    {
+      "id": "wikimedia:129068486",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/1703dc44dc286c90a499a03aa34e0099c9ef5e0d.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "1703dc44dc286c90a499a03aa34e0099c9ef5e0d"
+    },
+    {
+      "id": "wikimedia:129528672",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/ff5212970ab0596858eed858383213b3d7d853ac.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "ff5212970ab0596858eed858383213b3d7d853ac"
+    },
+    {
+      "id": "wikimedia:129528673",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/ccbb26ab44e015dda90c768054c3e98d311073a8.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "ccbb26ab44e015dda90c768054c3e98d311073a8"
+    },
+    {
+      "id": "wikimedia:130213919",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/67bbbee8278774f108a4be2b0e5622649c1c743e.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "67bbbee8278774f108a4be2b0e5622649c1c743e"
+    },
+    {
+      "id": "wikimedia:131546910",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/089cb144a33acf843874cbf77566f6864beb2116.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "089cb144a33acf843874cbf77566f6864beb2116"
+    },
+    {
+      "id": "wikimedia:131684212",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/c7ce93fa1febe6d6cd3282acf3d4de30f91a08af.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "c7ce93fa1febe6d6cd3282acf3d4de30f91a08af"
+    },
+    {
+      "id": "wikimedia:132203008",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/89ec8a92686a9ad9192a32a0cfbaf627de55e6cc.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "89ec8a92686a9ad9192a32a0cfbaf627de55e6cc"
+    },
+    {
+      "id": "wikimedia:13308681",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/2a94395bcb5d23a5892ab04cadef1f7898b08dea.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "2a94395bcb5d23a5892ab04cadef1f7898b08dea"
+    },
+    {
+      "id": "wikimedia:133859741",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/7afab73efad45097db6a8e4faf5f9279f573b489.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "7afab73efad45097db6a8e4faf5f9279f573b489"
+    },
+    {
+      "id": "wikimedia:135603365",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/e60648cc71c2299a71ccc73627134e4eaef92c25.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "e60648cc71c2299a71ccc73627134e4eaef92c25"
+    },
+    {
+      "id": "wikimedia:135920547",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/8dfea3cc7a9ee3fd58ea73c2d88162d6a74e12d1.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "8dfea3cc7a9ee3fd58ea73c2d88162d6a74e12d1"
+    },
+    {
+      "id": "wikimedia:138110494",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/cac0211bcca9073b1108c72a94895bcf43b891ae.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "cac0211bcca9073b1108c72a94895bcf43b891ae"
+    },
+    {
+      "id": "wikimedia:138110586",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/380088eb1936b80c3a2760d3abc11536ee78a7e5.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "380088eb1936b80c3a2760d3abc11536ee78a7e5"
+    },
+    {
+      "id": "wikimedia:138110653",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/e033ab6c1a3a536a046a772424091212d4df0eb5.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "e033ab6c1a3a536a046a772424091212d4df0eb5"
+    },
+    {
+      "id": "wikimedia:138447682",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/6071f54a886c8b53dc155982ec0ba842ad9e4a2f.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "6071f54a886c8b53dc155982ec0ba842ad9e4a2f"
+    },
+    {
+      "id": "wikimedia:138447707",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/82e6b2ebba459639ed4b816dc46e95e92ca6f7fe.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "82e6b2ebba459639ed4b816dc46e95e92ca6f7fe"
+    },
+    {
+      "id": "wikimedia:144238397",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/5f2bddbde7a544cd1591ee19f2d334d368bf547e.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "5f2bddbde7a544cd1591ee19f2d334d368bf547e"
+    },
+    {
+      "id": "wikimedia:144251395",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/c7fe54d18548a343351129d294eef14160c1ccdf.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "c7fe54d18548a343351129d294eef14160c1ccdf"
+    },
+    {
+      "id": "wikimedia:144252173",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/40059d93c6231772c0cd1344446d61ad08563c56.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "40059d93c6231772c0cd1344446d61ad08563c56"
+    },
+    {
+      "id": "wikimedia:144252174",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/966648e0e58c097275ba3084479e5906b7dbb8cb.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "966648e0e58c097275ba3084479e5906b7dbb8cb"
+    },
+    {
+      "id": "wikimedia:146207628",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/29b314a357c0f30d3f999da8f41b24d5273ff857.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "29b314a357c0f30d3f999da8f41b24d5273ff857"
+    },
+    {
+      "id": "wikimedia:146207631",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/334afaa90638bb6d61cf1a57d1bc1f34d7960d1b.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "334afaa90638bb6d61cf1a57d1bc1f34d7960d1b"
+    },
+    {
+      "id": "wikimedia:146207632",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/8e6b46048f234b32f6e7b79babfb1807fb1a76bc.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "8e6b46048f234b32f6e7b79babfb1807fb1a76bc"
+    },
+    {
+      "id": "wikimedia:146444291",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/ef3d6c5abc5da350927bd7f338e3d23cd2023a57.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "ef3d6c5abc5da350927bd7f338e3d23cd2023a57"
+    },
+    {
+      "id": "wikimedia:14653938",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/1939c6fe61078134cea6b6980656f4a988a44691.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "1939c6fe61078134cea6b6980656f4a988a44691"
+    },
+    {
+      "id": "wikimedia:14692202",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/90d0ad4ae61d8c7e243b2e957cbe101ba5caaf69.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "90d0ad4ae61d8c7e243b2e957cbe101ba5caaf69"
+    },
+    {
+      "id": "wikimedia:14703619",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/2e52e73eea3563bb40d927f8cac9c93063bc1693.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "2e52e73eea3563bb40d927f8cac9c93063bc1693"
+    },
+    {
+      "id": "wikimedia:14888238",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/a7c9f98cfc43c8c9452cd40f0606aac1963a02ba.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "a7c9f98cfc43c8c9452cd40f0606aac1963a02ba"
+    },
+    {
+      "id": "wikimedia:15092523",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/e460860f5d71abd13d4f8bf3c1ada7bfcc25600a.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "e460860f5d71abd13d4f8bf3c1ada7bfcc25600a"
+    },
+    {
+      "id": "wikimedia:151478370",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/7cb05a165602df64dc00127113629896c6a2bd61.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "7cb05a165602df64dc00127113629896c6a2bd61"
+    },
+    {
+      "id": "wikimedia:151680174",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/4848174042913ab6610c09932350d99e1a6afc4e.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "4848174042913ab6610c09932350d99e1a6afc4e"
+    },
+    {
+      "id": "wikimedia:15173885",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/6a0b031c50bfc01b2af588246f930c58d4eda254.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "6a0b031c50bfc01b2af588246f930c58d4eda254"
+    },
+    {
+      "id": "wikimedia:152213204",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/11c82b63484c2b88e62aa583d69a0162f93ea4aa.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "11c82b63484c2b88e62aa583d69a0162f93ea4aa"
+    },
+    {
+      "id": "wikimedia:152478069",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/6ce23a81552b1f420e8409f6e91752604ba37d6d.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "6ce23a81552b1f420e8409f6e91752604ba37d6d"
+    },
+    {
+      "id": "wikimedia:15277891",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/942d736eb872ae4d244c1335c2ca8615cb41c5ce.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "942d736eb872ae4d244c1335c2ca8615cb41c5ce"
+    },
+    {
+      "id": "wikimedia:153312909",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/d34664072be5d6e09fbf530b01f1dc528677837b.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "d34664072be5d6e09fbf530b01f1dc528677837b"
+    },
+    {
+      "id": "wikimedia:153313127",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/6b3400e30b9a7281f302e66deb988f9e06df9e6c.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "6b3400e30b9a7281f302e66deb988f9e06df9e6c"
+    },
+    {
+      "id": "wikimedia:153313143",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/40ae98a22b047c94cd5bf6ee9b39623a1d818e63.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "40ae98a22b047c94cd5bf6ee9b39623a1d818e63"
+    },
+    {
+      "id": "wikimedia:155269492",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/7c76cac2bbf5a08fbf29a263c295804677e99af3.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "7c76cac2bbf5a08fbf29a263c295804677e99af3"
+    },
+    {
+      "id": "wikimedia:155269493",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/0254a859a103d72db35b141b9668b789abed64a7.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "0254a859a103d72db35b141b9668b789abed64a7"
+    },
+    {
+      "id": "wikimedia:15591789",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/d886cf87cbf3ba2800a14dbadb10c10d04105bf9.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "d886cf87cbf3ba2800a14dbadb10c10d04105bf9"
+    },
+    {
+      "id": "wikimedia:156862909",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/333f07c5755e99e6d726dba415845cd3cbd67809.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "333f07c5755e99e6d726dba415845cd3cbd67809"
+    },
+    {
+      "id": "wikimedia:15728788",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/61d3e7a36c7edee6019a57276ecf8e245cc64052.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "61d3e7a36c7edee6019a57276ecf8e245cc64052"
+    },
+    {
+      "id": "wikimedia:158304485",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/f080fe6756044f0cff4461902cf92f29db43fde7.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "f080fe6756044f0cff4461902cf92f29db43fde7"
+    },
+    {
+      "id": "wikimedia:16071986",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/1939e9ebbabbfbbee48bc3af78e1538172dfd513.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "1939e9ebbabbfbbee48bc3af78e1538172dfd513"
+    },
+    {
+      "id": "wikimedia:16118191",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/554aa640e61244492717c833bb1a210db7038a06.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "554aa640e61244492717c833bb1a210db7038a06"
+    },
+    {
+      "id": "wikimedia:16155610",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/1b8efcb07356aa61664494f3ca84cdc24dfe9934.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "1b8efcb07356aa61664494f3ca84cdc24dfe9934"
+    },
+    {
+      "id": "wikimedia:165803110",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/0ad71292fdf6c90966c8158f906cc63b45d17f27.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "0ad71292fdf6c90966c8158f906cc63b45d17f27"
+    },
+    {
+      "id": "wikimedia:169865020",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/768a697bc3294948944e151f6ed0f34c124f337b.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "768a697bc3294948944e151f6ed0f34c124f337b"
+    },
+    {
+      "id": "wikimedia:17400960",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/f0f52188d08e5fa0da0ba5d1eb0fa450f35a4d25.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "f0f52188d08e5fa0da0ba5d1eb0fa450f35a4d25"
+    },
+    {
+      "id": "wikimedia:17434224",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/314c325714a6c37e8781deb98173da60a4bf9a66.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "314c325714a6c37e8781deb98173da60a4bf9a66"
+    },
+    {
+      "id": "wikimedia:174443973",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/d9df6bc0e5f7a117bf82d583cfaf85332ae9d4db.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "d9df6bc0e5f7a117bf82d583cfaf85332ae9d4db"
+    },
+    {
+      "id": "wikimedia:17508064",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/ac4f720b7e8c242657bab79e9cdc12ba3b5fc22b.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "ac4f720b7e8c242657bab79e9cdc12ba3b5fc22b"
+    },
+    {
+      "id": "wikimedia:176084323",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/880d4e29f51a89668b39dbe285a2c10a56b43b60.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "880d4e29f51a89668b39dbe285a2c10a56b43b60"
+    },
+    {
+      "id": "wikimedia:177669078",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/3227757dee3b9aa561a10534fbb43cbe46625788.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "3227757dee3b9aa561a10534fbb43cbe46625788"
+    },
+    {
+      "id": "wikimedia:178061361",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/849bb1c32cd516cc46d1cf0a213fb082967cbc33.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "849bb1c32cd516cc46d1cf0a213fb082967cbc33"
+    },
+    {
+      "id": "wikimedia:178063575",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/37514bb46095d747d185daf1bd331e9376080a2f.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "37514bb46095d747d185daf1bd331e9376080a2f"
+    },
+    {
+      "id": "wikimedia:178498784",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/3bac56ad1df97e7d28b1bb372213cd5c8689fb05.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "3bac56ad1df97e7d28b1bb372213cd5c8689fb05"
+    },
+    {
+      "id": "wikimedia:178498786",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/f343a74b3325c0c70fa573de6f5e371f0760d4f2.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "f343a74b3325c0c70fa573de6f5e371f0760d4f2"
+    },
+    {
+      "id": "wikimedia:179655722",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/8d80951df69cbcf7f4ec679d2fb5967bc94e6e69.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "8d80951df69cbcf7f4ec679d2fb5967bc94e6e69"
+    },
+    {
+      "id": "wikimedia:183673162",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/7d76c6a6bbd0db8c6a1d9b09430c2156e8f31f78.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "7d76c6a6bbd0db8c6a1d9b09430c2156e8f31f78"
+    },
+    {
+      "id": "wikimedia:183674151",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/fa4c843e198b5d102e160ccb57ba71d8b50349bf.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "fa4c843e198b5d102e160ccb57ba71d8b50349bf"
+    },
+    {
+      "id": "wikimedia:183732936",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/646c00e3ab8593da3393b90232e0f874c2a35df9.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "646c00e3ab8593da3393b90232e0f874c2a35df9"
+    },
+    {
+      "id": "wikimedia:183739909",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/67e9deecacbcfa11b689c6f6587215e4abdd809f.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "67e9deecacbcfa11b689c6f6587215e4abdd809f"
+    },
+    {
+      "id": "wikimedia:184471576",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/0e94e7c4fb42ebf45f8d9d24543a079f4e4b9b81.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "0e94e7c4fb42ebf45f8d9d24543a079f4e4b9b81"
+    },
+    {
+      "id": "wikimedia:186574306",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/646a3fc8f3cbdb8b045e9bbf0d4e18ee4541c064.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "646a3fc8f3cbdb8b045e9bbf0d4e18ee4541c064"
+    },
+    {
+      "id": "wikimedia:18725866",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/9dcbec9328c1930816fb2b63654a469fa7dfbfe4.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "9dcbec9328c1930816fb2b63654a469fa7dfbfe4"
+    },
+    {
+      "id": "wikimedia:187498702",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/fae76832bb549ef9b00e753b82567a6dace82dc0.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "fae76832bb549ef9b00e753b82567a6dace82dc0"
+    },
+    {
+      "id": "wikimedia:187498703",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/3bb0da233425ea209516d2404031bf5e0f8140ab.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "3bb0da233425ea209516d2404031bf5e0f8140ab"
+    },
+    {
+      "id": "wikimedia:187568802",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/e5c5c00d98d55b9f6b78163a7440e34cc2742731.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "e5c5c00d98d55b9f6b78163a7440e34cc2742731"
+    },
+    {
+      "id": "wikimedia:187829608",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/1f10125d2dc064a3ac9fa70434d619a95d6898e8.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "1f10125d2dc064a3ac9fa70434d619a95d6898e8"
+    },
+    {
+      "id": "wikimedia:187829892",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/2a9d8b105d05edcff941f8c55c00c6b7ee022971.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "2a9d8b105d05edcff941f8c55c00c6b7ee022971"
+    },
+    {
+      "id": "wikimedia:187829987",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/10c6ddb52f937063c01a02316bb8076cfd52eb96.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "10c6ddb52f937063c01a02316bb8076cfd52eb96"
+    },
+    {
+      "id": "wikimedia:189754389",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/8ecd7095682d84adeaa29bddd2d9d58a504b16f2.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "8ecd7095682d84adeaa29bddd2d9d58a504b16f2"
+    },
+    {
+      "id": "wikimedia:1902052",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/0649b92b226b24112b0a8f31a8cbd5ccf6181b17.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "0649b92b226b24112b0a8f31a8cbd5ccf6181b17"
+    },
+    {
+      "id": "wikimedia:191785448",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/908ae30f5eb3c4aea3bd99198063e5aef8f8e7d2.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "908ae30f5eb3c4aea3bd99198063e5aef8f8e7d2"
+    },
+    {
+      "id": "wikimedia:191940043",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/02807fc6e3ac8a3f5a49a452aa3c3212a5cb7500.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "02807fc6e3ac8a3f5a49a452aa3c3212a5cb7500"
+    },
+    {
+      "id": "wikimedia:193808671",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/90de07de30b2dfb1588df87d591bc32f89c54ab8.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "90de07de30b2dfb1588df87d591bc32f89c54ab8"
+    },
+    {
+      "id": "wikimedia:196663817",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/b7b707fa441cd58a9ecb83661e027e1655205fe6.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "b7b707fa441cd58a9ecb83661e027e1655205fe6"
+    },
+    {
+      "id": "wikimedia:196663818",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/0cf686bb43e6ee5aa401f3d6ba4f01c18342cc64.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "0cf686bb43e6ee5aa401f3d6ba4f01c18342cc64"
+    },
+    {
+      "id": "wikimedia:196697352",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/19f5ed3b8f1b89bb420aac38bb1ad6b9e60008cb.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "19f5ed3b8f1b89bb420aac38bb1ad6b9e60008cb"
+    },
+    {
+      "id": "wikimedia:19728425",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/7065bc4f68a5fc3701ad0ac41e88ca1b1110ae86.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "7065bc4f68a5fc3701ad0ac41e88ca1b1110ae86"
+    },
+    {
+      "id": "wikimedia:19728428",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/f345a6d1a92be4043be832e9719d3ba9063f15e1.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "f345a6d1a92be4043be832e9719d3ba9063f15e1"
+    },
+    {
+      "id": "wikimedia:19728430",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/ff57c5ef9d6618f66764245b58f7d717b7d64a7a.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "ff57c5ef9d6618f66764245b58f7d717b7d64a7a"
+    },
+    {
+      "id": "wikimedia:197673795",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/d6f86cf9dbcabf3697f9f4b5a2077789249edb38.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "d6f86cf9dbcabf3697f9f4b5a2077789249edb38"
+    },
+    {
+      "id": "wikimedia:20654835",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/83cc23479428dcd54260d47557f3f9aee63bf777.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "83cc23479428dcd54260d47557f3f9aee63bf777"
+    },
+    {
+      "id": "wikimedia:24630744",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/3f66aa6499954ebf23b0f312a2d1fd582603d60e.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "3f66aa6499954ebf23b0f312a2d1fd582603d60e"
+    },
+    {
+      "id": "wikimedia:24867716",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/d3745c4440f7f63a1e0eafa9e0f832aed505f143.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "d3745c4440f7f63a1e0eafa9e0f832aed505f143"
+    },
+    {
+      "id": "wikimedia:25062479",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/e93de7e7505503bda9d62ce5cc5a7a203aa16d37.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "e93de7e7505503bda9d62ce5cc5a7a203aa16d37"
+    },
+    {
+      "id": "wikimedia:253446",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/660b3a397c5bc856565818ba81da09bd1526082f.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "660b3a397c5bc856565818ba81da09bd1526082f"
+    },
+    {
+      "id": "wikimedia:29698091",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/9a5600ae5f65f150fc0f4894b3f62508e432ea53.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "9a5600ae5f65f150fc0f4894b3f62508e432ea53"
+    },
+    {
+      "id": "wikimedia:31816697",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/4117cf87910e23f71f4603578001168df45e2df6.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "4117cf87910e23f71f4603578001168df45e2df6"
+    },
+    {
+      "id": "wikimedia:31816701",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/1e7ff69c476f30d61f1b6834585ab2dcfedca278.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "1e7ff69c476f30d61f1b6834585ab2dcfedca278"
+    },
+    {
+      "id": "wikimedia:31816702",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/af02e1ff56bc876110b045c101d4827113414d15.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "af02e1ff56bc876110b045c101d4827113414d15"
+    },
+    {
+      "id": "wikimedia:32584619",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/0f82acd56b7297197767178dd56b7126b302b8ab.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "0f82acd56b7297197767178dd56b7126b302b8ab"
+    },
+    {
+      "id": "wikimedia:43180671",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/7112d3c02c1731cd6b8756581e8966949a200dfe.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "7112d3c02c1731cd6b8756581e8966949a200dfe"
+    },
+    {
+      "id": "wikimedia:50447176",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/29af691ddc7be14651fac51273421fcfc6a18204.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "29af691ddc7be14651fac51273421fcfc6a18204"
+    },
+    {
+      "id": "wikimedia:52152817",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/4328723dbbda13d70080d7395397bb4abfad8e82.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "4328723dbbda13d70080d7395397bb4abfad8e82"
+    },
+    {
+      "id": "wikimedia:52158741",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/b8943def78912fb3480d2377241f8e72ff3d2e90.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "b8943def78912fb3480d2377241f8e72ff3d2e90"
+    },
+    {
+      "id": "wikimedia:53017915",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/ffdadfbf412eca3ced646990ac5b35cf5735a662.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "ffdadfbf412eca3ced646990ac5b35cf5735a662"
+    },
+    {
+      "id": "wikimedia:53553715",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/16a097d89293f9440fc253948c6ec23e5a5e5fc1.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "16a097d89293f9440fc253948c6ec23e5a5e5fc1"
+    },
+    {
+      "id": "wikimedia:53622151",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/c8695170aba3fbffadd066f279093eea050225d1.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "c8695170aba3fbffadd066f279093eea050225d1"
+    },
+    {
+      "id": "wikimedia:53945707",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/f1a04269fbf5a2ac5b8f5ce5638a8b97df1baf3a.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "f1a04269fbf5a2ac5b8f5ce5638a8b97df1baf3a"
+    },
+    {
+      "id": "wikimedia:57083585",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/adb04a92fa984db98d8c40f25641d03360dcb517.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "adb04a92fa984db98d8c40f25641d03360dcb517"
+    },
+    {
+      "id": "wikimedia:60649204",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/3524ee4d0bca8bb56a3f5f7a73c5a69fdfc2b879.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "3524ee4d0bca8bb56a3f5f7a73c5a69fdfc2b879"
+    },
+    {
+      "id": "wikimedia:64846952",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/7813cf5c89f010867fdb90b4e37b79b6b25e0785.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "7813cf5c89f010867fdb90b4e37b79b6b25e0785"
+    },
+    {
+      "id": "wikimedia:694532",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/9ec48dc3384f76cbb76d948679ba1af03637587c.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "9ec48dc3384f76cbb76d948679ba1af03637587c"
+    },
+    {
+      "id": "wikimedia:81586341",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/60ec8280f52aacce22a28fa07299b871ed763891.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "60ec8280f52aacce22a28fa07299b871ed763891"
+    },
+    {
+      "id": "wikimedia:841814",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/c90b8986dd5fc69af1a0d28646abe60cb7d87e6b.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "c90b8986dd5fc69af1a0d28646abe60cb7d87e6b"
+    },
+    {
+      "id": "wikimedia:84723478",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/dc32e98c76fa401d6af63e9d19574f812c8c7c9b.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "dc32e98c76fa401d6af63e9d19574f812c8c7c9b"
+    },
+    {
+      "id": "wikimedia:85309412",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/c548392b5809555cbf4c99b1409e4eca906cfe8d.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "c548392b5809555cbf4c99b1409e4eca906cfe8d"
+    },
+    {
+      "id": "wikimedia:89105388",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/f7a8e57c8c92650623eeb9bd343273138755520d.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "f7a8e57c8c92650623eeb9bd343273138755520d"
+    },
+    {
+      "id": "wikimedia:89105389",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/c06d696e4bc7535680f8780643d7d2ab431d9d21.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "c06d696e4bc7535680f8780643d7d2ab431d9d21"
+    },
+    {
+      "id": "wikimedia:91309949",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/313035e014923264b336daf14fb27c175f5fd66d.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "313035e014923264b336daf14fb27c175f5fd66d"
+    },
+    {
+      "id": "wikimedia:95421539",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/d1d680437d55b1ccd528a2beec3e6472c07e57ba.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "d1d680437d55b1ccd528a2beec3e6472c07e57ba"
+    },
+    {
+      "id": "wikimedia:99818488",
+      "paths": [
+        "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/wiki-native-dev/source-assets/7503fee510165b2e5f8906d449d0e57991062de1.bin"
+      ],
+      "route": "ready_native_original",
+      "sha1": "7503fee510165b2e5f8906d449d0e57991062de1"
+    }
+  ]
+}

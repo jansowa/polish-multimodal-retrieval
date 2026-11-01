@@ -1,0 +1,9 @@
+{
+  "VN_guardrail_seed42_pass": true,
+  "chosen_Wiki": "R3",
+  "seed42_scores": {
+    "R2": 0.16314199395770393,
+    "R3": 0.1661631419939577
+  },
+  "selection_closed_before_seed_confirmation": true
+}

@@ -1,0 +1,208 @@
+{
+  "bootstrap": {
+    "ci": "percentile 2.5/97.5",
+    "estimator": "query weighted, fixed gallery, shared resamples",
+    "replicates": 10000,
+    "seed": 20261023,
+    "separate_from": "mean and sample SD across three training seeds",
+    "unit": "transitive leakage component"
+  },
+  "directions": [
+    "t2i",
+    "i2t"
+  ],
+  "forbidden": [
+    "XM3600 scores or probes",
+    "new manual labels",
+    "image caption generation",
+    "retrieval training",
+    "CUDA before handoffs and common lock"
+  ],
+  "generation": 1,
+  "metrics": [
+    "recall@1",
+    "recall@5",
+    "recall@10",
+    "mrr",
+    "ndcg@10"
+  ],
+  "model_add_remove_after_scores": false,
+  "our_models": "All nine A-frozen checkpoints: three seeds each R0/R1/selected Wiki; three A-designated representatives, no OOD selection.",
+  "owner": "B",
+  "parameters": {
+    "encoders": {
+      "text": 31883136,
+      "total": 70470528,
+      "vision": 38587392
+    },
+    "head_separate": 196992
+  },
+  "prior_registration": {
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/reference_eval_registration_v3_20261029.json",
+    "sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1"
+  },
+  "prompt_modes": [
+    "v2_no_instructions",
+    "author_recommended"
+  ],
+  "qrels": "Original caption-image associations; canonical exact images; merge normalized identical EN/PL query positives; pHash never adds positives.",
+  "rationale": "Two Polish references in nearby size classes and one larger quality reference; fixed before scores, avoid rerunning all 20.",
+  "reference_models": [
+    {
+      "alias": "metaclip-s16",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "0f11ef85118199626fff5fe7a57705d9e5282f19a058a582dc3143e5bdafddca",
+        "source_url": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384/raw/006223472923ba925226b59b6acd1e3e266c2382/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\3c08aae1b26de399b84d\\result.json",
+          "sha256": "fdea1e3b61e4a9e380ef8f4131f64bee9f78b87c21acf28d5af7474ae25fe605"
+        },
+        {
+          "path": "benchmark\\results\\3fda784e8c09ec234306\\result.json",
+          "sha256": "a862e7bfe24d8cced565f413e921c796018af09b66616680658e9cd15800da08"
+        },
+        {
+          "path": "benchmark\\results\\9d0c9edcf39570392201\\result.json",
+          "sha256": "70691bfb27e727857121ad61a82198458270844fa415c27613cb76b90e3eac3f"
+        },
+        {
+          "path": "benchmark\\results\\a9abf5f67aee4a83bcf3\\result.json",
+          "sha256": "67e0ec036a0b0d3cb019a85b61dcaf8e6d6bf4c888669d8870208aa79f954fe4"
+        }
+      ],
+      "model": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384",
+      "polish_adapted": true,
+      "polish_retrieval_competitor": true,
+      "revision": "006223472923ba925226b59b6acd1e3e266c2382",
+      "same_size_class_le_100M": true,
+      "total_parameters": 49722241
+    },
+    {
+      "alias": "metaclip-m16",
+      "author_prompt": {
+        "document_prefix": "",
+        "image_prefix": "",
+        "query_prefix": "",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "9c06ec33a9cd01807c806a0b153b9f24a774c58acc59a07845d8f35967fe4c89",
+        "source_url": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384/raw/bc15d9f5ddabe0497898578493a6e81288057c90/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-fp16-autocast"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\00c474fc45efa29007e4\\result.json",
+          "sha256": "13a6d1f4fe32778af4727c6492eef792fa01568a11c79078b6c2bfc7e2023429"
+        },
+        {
+          "path": "benchmark\\results\\08ebf411e72d73432038\\result.json",
+          "sha256": "bfd9e34955faa45df562d4d04d52153a86b18bca41872eaa4d1f6b722ceec7e9"
+        },
+        {
+          "path": "benchmark\\results\\20c3fb7894534caa44db\\result.json",
+          "sha256": "bee8feb9fc669de3098f5ac88b63f01f249a03c28e4973a348c798fa6f6dbfda"
+        },
+        {
+          "path": "benchmark\\results\\d0cbacb6578469f4fd07\\result.json",
+          "sha256": "712334874464f14225cd9b65fe31c8079c6864ca0070b219e4d57a70f3ea933d"
+        }
+      ],
+      "model": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384",
+      "polish_adapted": true,
+      "polish_retrieval_competitor": true,
+      "revision": "bc15d9f5ddabe0497898578493a6e81288057c90",
+      "same_size_class_le_100M": true,
+      "total_parameters": 85301761
+    },
+    {
+      "alias": "embeddinggemma-2",
+      "author_prompt": {
+        "document_prefix": "title: none | text: ",
+        "image_prefix": "",
+        "query_prefix": "task: search result | query: ",
+        "rationale": "Gemma SearchQuery/Document asymmetric retrieval; otherwise raw caption, no universal prefix documented for the registered encoder",
+        "source_sha256": "b677a0ee2818c36f091b65fd3d9b4baea9f04d53b02b49cae916c74bf9682037",
+        "source_url": "https://huggingface.co/google/embeddinggemma-2/raw/914f7f89142e33e77833254d9c9b90c3cef7303b/README.md"
+      },
+      "author_prompt_status": "source_audited_before_first_new_gallery_score",
+      "english_text_only_control": false,
+      "historical_precision_policies": [
+        "cuda-bf16"
+      ],
+      "historical_results": [
+        {
+          "path": "benchmark\\results\\2bca618a44e52ec9a66a\\result.json",
+          "sha256": "f3592284c7c282c3a5a7a9a8645150fde1615dd21b014c33352bc53141f140e4"
+        },
+        {
+          "path": "benchmark\\results\\a278ce550949d506aeaf\\result.json",
+          "sha256": "bc9c1a6083360d6d20fba6273ee768ede437cf06748341e36d9fd27a20b6570c"
+        },
+        {
+          "path": "benchmark\\results\\b09f7ee8cfbbf7053c2e\\result.json",
+          "sha256": "009623bc92e2d28d3475c4537eb8f778556b76addcb37a3fc1c47a30b35fe6c4"
+        },
+        {
+          "path": "benchmark\\results\\d9f052dd90d3976dff9d\\result.json",
+          "sha256": "0b88ee2861d63ebe2754ef40f17ac2d81b0c4e152f4ce3b42fbcf35f24ae9623"
+        }
+      ],
+      "model": "google/embeddinggemma-2",
+      "polish_adapted": false,
+      "polish_retrieval_competitor": true,
+      "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+      "same_size_class_le_100M": false,
+      "total_parameters": 438760448
+    }
+  ],
+  "schema_version": 1,
+  "selection": {
+    "minimum_images": 500,
+    "never_select_by_model_scores": true,
+    "order": "sha256 of seed and canonical component identity; whole components, report actual N",
+    "seed": 20261023,
+    "target_images": 1000,
+    "use_all_existing_accepted_captions": true
+  },
+  "status": "preregistered_pending_data_and_A_not_executable",
+  "storage": {
+    "B_persistent_limit_bytes": 3221225472,
+    "delete_datasets": false,
+    "physical_reserve_each_bytes": 4294967296,
+    "reservations": "A common helper only after verified COMMON_READY",
+    "root": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/",
+    "shared_temporary_limit_bytes": 4294967296
+  },
+  "study_id": "data-ood-20261030",
+  "translation": {
+    "device": "cpu",
+    "image_or_target_identifiers_in_prompt": false,
+    "input": "caption text only",
+    "new_manual_annotations": 0,
+    "pending": "Pin available translator revision, parameters, QA thresholds and CPU feasibility before translating or freezing.",
+    "qa": [
+      "complete",
+      "language",
+      "repetitions",
+      "digits",
+      "negations",
+      "empty/error"
+    ],
+    "torch_threads": 2,
+    "workers": 2
+  }
+}

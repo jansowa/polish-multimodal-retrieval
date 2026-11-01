@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "bge-vl-base": {
+      "mismatches": [],
+      "queries": 1000,
+      "status": "passed"
+    },
+    "siglip2-base-256": {
+      "mismatches": [],
+      "queries": 1000,
+      "status": "passed"
+    },
+    "tipsv2-b14": {
+      "mismatches": [],
+      "queries": 1000,
+      "status": "passed"
+    }
+  },
+  "decision_sha256": "9bf3e87c4f00eddc2745b79cf5d264077aaee4576b1ea3c6335d6e3600edc62c",
+  "encoder_runs": 0,
+  "harness_sha256": "644cc9f575a45c4475c069e1da0deddd1ef2eda738cd380f4539c8641386d121",
+  "status": "passed"
+}

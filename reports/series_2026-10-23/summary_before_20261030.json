@@ -1,0 +1,197 @@
+{
+  "GPU_runs": [],
+  "GPU_seconds": 0,
+  "artifacts_sha256": {
+    ".gitattributes": "b0b0c2eb0119481492c77dada04696cc0a6993dc38edeb06dce21c8630524a01",
+    "annotation/asset_verification.json": "027cac5461c44ebdfc9bd5543bab17a2b06f29897bf8413ae2f7d1e6c0915d14",
+    "annotation/audit_tasks.jsonl": "ef8635c1ef6a6b9ea99a97916e7eb81e04afcb843f9ccedf6baf6263b6805545",
+    "annotation/query_tasks.jsonl": "3403ff21ff99b9af52777a322836d18b289ad428376f7c886d14b38d161b1b47",
+    "annotation/sampling.json": "220afe8942348f313bbdec901b639c956c3f2957e59322a63e41c02147d1fa42",
+    "preparation_state.json": "d5b094b58ec649e7c6719ef368d50e38abacfcd2310ce79e1fa7ca74f33f8e32",
+    "preservation_after.json": "e61a4990c7f21b7c4e0052959637d7a0b048f2735642eb2cb99430d8c62608e2",
+    "preservation_before.json": "e61a4990c7f21b7c4e0052959637d7a0b048f2735642eb2cb99430d8c62608e2",
+    "reference_eval_registration.json": "6add6760801beb1810533eed70ef91983cece2d2c7f021e66404c26023fba67b",
+    "validation.json": "03c79a586796ac7c57e1f32c737fbf05df05dacf3757b2c63a69f2b41dd2b210",
+    "vn_full_seeds_decision.json": "a1fa68a77662e4b6b5f457eebfedb89a310d11ba4708d952a83edd374ec2e8c1",
+    "wiki_native_candidates.jsonl": "b05cf8377a90b9750aa059463d4fef088e52ac2cbc64ff653a2f55a223b2fad6",
+    "wiki_preflight.json": "f858060f09add94749f7789b94a95b2c2b6756d125e18c908a86de0c6cb83f7c",
+    "wsl_disk_inventory.json": "b1eb8cead581d0d01133b545b8331796954c5bd3ef7e1c3139af403e2524e218",
+    "xm3600_gate_registration.json": "3b51f8ac7bc344e81af825935567d876238cfed577ecfb86aa06291262c12953",
+    "xtd10_annotation_manifest.jsonl": "bad57836e8d1bdb5ec9edecc5827f3b3ae27c5b23fefb0e5a74e239c61ac72ee",
+    "xtd10_preparation.json": "ae704bef7266d638e2d6ae0b2f46324920668c02102470150b1817ddd6c7d7e9",
+    "xtd10_source/LICENSE.md": "f9908a6ae7d75e49452013687f4db397b035d7bb69f3975961eb739e878a83bf",
+    "xtd10_source/README.md": "7632ce5d99130a684ea65270edb62de2200eb5f6b043837f8d15115b1ee34fe2",
+    "xtd10_source/test_1kcaptions_en.txt": "ac5531b6842c1d469fba80aa6f44e2af054e84a41da8f9eaf01d831e943039b9",
+    "xtd10_source/test_1kcaptions_pl.txt": "b6af6b7941f44e902b50736dcf9a7221af28e755a259511652c599cf6ae89c78",
+    "xtd10_source/test_image_names.txt": "504a472dfd40e44f2d0facd6320b9dc1c7d64c58aac9840f0b1da4807cb3a30a",
+    "xtd10_source/upstream.json": "8a68e4460aef5d9f39ce62814bd1dd5512cea76b5bda8864249fbefa8f01bd3c"
+  },
+  "code_sha256": {
+    "experiments/series_annotation.py": "02ac02c0066bccb0d1739ef8143b86db4eccf1da340530d77185d20816b5e6ae",
+    "experiments/series_annotation/app.js": "7f90cd72ef454d6ed5a653ace062971532aab0db16992f2f38b4d154d6bb53a8",
+    "experiments/series_annotation/index.html": "c61fb932404afeb50dca02c4f710f458979b14861c8c3476046ad5eefff2440a",
+    "experiments/series_annotation/style.css": "d6ac987fa9c920087dccdd7d725d8c50ff54dc0d7d85fdacf5ed7239d26188a1",
+    "src/pl_mmb_benchmark/full_gallery.py": "aab3b764baf675d87fb0a87a8c69d3d09e79fb8f7c79a3183bd6e3c1a530ec1d",
+    "src/pl_mmb_training/series_20261023.py": "60c235ef87ea3ba72d2150d98d110e873a5852f36a3cdae839c234fc1930ab5d",
+    "src/pl_mmb_training/series_holdout.py": "05d4c3015d6b47ffd7befe04b75b8160b40950e194708a0ed7934c9013706fc6",
+    "src/pl_mmb_training/wiki_pilot.py": "ba780a54ac6be52c1513b70cd7e18a0b9fef6de7dd56154cd296d94e79118f8b",
+    "tests/test_series_20261023.py": "5f10284635659e1d4f7955e26397345cfb7e5c5a1012450c1d7985cf0851ddce",
+    "training/prepare_series_20261023.py": "167138859372e8a8a2778fff9f0554d235466031126a7ed41cf3ad0ff84b2732",
+    "training/report_series_20261023.py": "e8e2ba755c6d571012417b7fd43e74988a5cdd5ab74bbc5cbecde96306afb7c3",
+    "training/validate_series_20261023.py": "49f538f4ac1ca3bc09421e0147a67c7a5c64e714f73422c30634f353fb01aa78"
+  },
+  "decisions": [
+    "reference_eval_registration.json",
+    "vn_full_seeds_decision.json",
+    "xm3600_gate_registration.json"
+  ],
+  "disk_after_preparation": {
+    "C:/": {
+      "free": 29698621440,
+      "total": 572671389696,
+      "used": 542972768256
+    },
+    "D:/": {
+      "free": 3473936384,
+      "total": 107373129728,
+      "used": 103899193344
+    }
+  },
+  "disk_before": {
+    "C:/": {
+      "free": 29698621440,
+      "total": 572671389696,
+      "used": 542972768256
+    },
+    "D:/": {
+      "free": 3475865600,
+      "total": 107373129728,
+      "used": 103897264128
+    }
+  },
+  "disk_final": {
+    "C:/": {
+      "free": 29692637184,
+      "total": 572671389696,
+      "used": 542978752512
+    },
+    "D:/": {
+      "free": 3253944320,
+      "total": 107373129728,
+      "used": 104119185408
+    }
+  },
+  "human_annotations_created": 0,
+  "live_pipeline_databases_read": false,
+  "missing_context": [
+    "reports/consultation_2026-10-21_external.md"
+  ],
+  "model_list_frozen": true,
+  "new_artifacts_bytes": 3594158,
+  "new_retrieval_results": [],
+  "pipeline_allocation_changed": false,
+  "protected_snapshots_unchanged": true,
+  "reference_execution_registration_closed": false,
+  "requires_user_decision": [
+    "XM3600 gate draft: prohibited until a separate later approved run",
+    "publication after licensing dossier and independent results",
+    "new Wiki pilot after frozen dev/guard/immutable baseline",
+    "distillation after teacher choice, leakage audit and explicit approval"
+  ],
+  "series": "2026-10-23",
+  "status": "partial_stopped_at_storage_prerequisite",
+  "tasks": {
+    "P0.1": {
+      "reason": "Zamrożono kandydatów provenance; brak rezerwy na oryginalne obrazy. Pełny audyt komponentów, dev i guard pozostają otwarte.",
+      "status": "częściowo"
+    },
+    "P0.2": {
+      "reason": "Źródłowe EN/PL/COCO names i licencja przypięte; policzony parent overlap. Brak zweryfikowanych pełnych obrazów; hash audit i pary z cache Qwen otwarte.",
+      "status": "częściowo"
+    },
+    "P0.3": {
+      "reason": "Gotowy lokalny formularz i 150 obrazów VN. Brak nowego Wiki dev: 150 Wiki nie wylosowano. Brak ludzkich odpowiedzi.",
+      "status": "częściowo"
+    },
+    "P0.4": {
+      "reason": "Gotowy formularz i 100 par VN: po 25 na wydawcę i split. Wiki poza dev wymaga najpierw zamknięcia dev. Brak ludzkich ocen.",
+      "status": "częściowo"
+    },
+    "P0.5.1": {
+      "reason": "Zamknięta lista 20 referencji z rewizjami i protokołem. Status model_list_frozen_execution_blocked: potrzebne prompt sources, adapter naszych modeli i cache parity.",
+      "status": "częściowo"
+    },
+    "P0.5.2": {
+      "reason": "Zdefiniowano niezmienny klucz baseline i zablokowano runner pilota Wiki. Baseline nie obliczono; historyczny pilot Wiki już istniał.",
+      "status": "częściowo"
+    },
+    "P0.5.3": {
+      "reason": "Tylko draft bramki XM3600 do decyzji użytkownika, zgodnie z zakresem dnia. Żadnej ewaluacji XM.",
+      "status": "zrobione"
+    },
+    "P1.A": {
+      "reason": "Reguła mediany VN dev i reuse seeda 42 zapisane przed nowym testem. Seedy 43/44 nie uruchomione: D poniżej 4 GiB.",
+      "status": "częściowo"
+    },
+    "P1.B": {
+      "reason": "Kolejność wymaga zamknięcia P1.A i P1.B0. Brak pobierania wag i cache.",
+      "status": "nie zaczęte"
+    },
+    "P1.B0": {
+      "reason": "Brak zamkniętej rejestracji wykonawczej i galerii ze zweryfikowanymi obrazami; rezerwa dyskowa niespełniona.",
+      "status": "nie zaczęte"
+    },
+    "P1.C": {
+      "reason": "Kolejność GPU i blokada rezerwy dysku.",
+      "status": "nie zaczęte"
+    },
+    "P1.D": {
+      "reason": "Kolejność GPU i blokada rezerwy dysku.",
+      "status": "nie zaczęte"
+    },
+    "P2.E": {
+      "reason": "Warunek dopiero po P0 niespełniony. Licencja XTD10 zachowana w P0.2; nie zastępuje dossier.",
+      "status": "nie zaczęte"
+    },
+    "P2.F": {
+      "reason": "P0 niezamknięte; brak kompletnego guarda tekstów dev. Nie rozpoczęto treningu ani diagnostyki.",
+      "status": "nie zaczęte"
+    },
+    "P2.G": {
+      "reason": "P0 niezamknięte; nauczyciel P1.B nie istnieje. Nie wykonano audytu ani treningu destylacji.",
+      "status": "nie zaczęte"
+    }
+  },
+  "validation": {
+    "browser_visual_QA": "not performed; no browser automation used",
+    "existing_VN_asset_sha256": "960afef1d0bf1bc642411bef7fab33a30c3456e08d747d6ef90e8c143247d266",
+    "http_smoke": "Eight real loopback GET endpoints passed; both image previews decoded as 224x224; no POST to real annotation storage.",
+    "http_statuses": {
+      "/": 200,
+      "/api/state": 200,
+      "/api/tasks?mode=audit": 200,
+      "/api/tasks?mode=query": 200,
+      "/app.js": 200,
+      "/asset/audit/0": 200,
+      "/asset/query/0": 200,
+      "/style.css": 200
+    },
+    "javascript_syntax": "passed (node --check)",
+    "production_annotations_created": 0,
+    "protected_snapshot_SHA_verified": true,
+    "scope": "Provenance, immutable writes, deterministic image sampling, Wiki training gate, multi-positive NDCG, paired identities, query privacy, append-only writes and explicit audit fields.",
+    "tests_passed": 10,
+    "tests_total": 10
+  },
+  "wiki_frozen_dev_images": 0,
+  "wiki_native_candidates": 490,
+  "xm3600_scored": false,
+  "xtd_parent_overlap": {
+    "FULL_CLEAN.jsonl": 47,
+    "legacy_eval": 51,
+    "validation.jsonl": 5,
+    "vn_dev.jsonl": 0,
+    "vn_train.jsonl": 0
+  },
+  "xtd_preliminary_no_parent_overlap": 897
+}

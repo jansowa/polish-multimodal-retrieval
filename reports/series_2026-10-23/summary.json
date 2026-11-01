@@ -1,0 +1,549 @@
+{
+  "GPU_active_seconds": null,
+  "P1A_reported_GPU_seconds_new_runs": {
+    "43": 18.335243794,
+    "44": 17.938047726999997
+  },
+  "XM3600_scored": false,
+  "artifact_index_sha256": "c7c01a31b87923606f6e3f3b69aab5c9e29bcb67286d5a7b38fad69233aa8f18",
+  "artifacts_sha256_index": "artifact_index_20261030.json",
+  "checkpoint_sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+  "conditional_paired_bootstrap": {
+    "caveat": "fixed gallery/qrels; not training uncertainty; no multiplicity correction",
+    "replicates": 10000,
+    "seed": 20261023,
+    "unit": "transitive component"
+  },
+  "date": "2026-10-30",
+  "decisions": [
+    "expanded_corpus_preparation_decision_20261029.json",
+    "our_efficiency_decision_20261029.json",
+    "our_full_gallery_execution_decision_20261029.json",
+    "projector_adapter_verification_decision_20261029.json",
+    "reference_cache_parity_decision.json",
+    "reference_eval_registration.json",
+    "reference_eval_registration_v2_20261029.json",
+    "reference_eval_registration_v3_20261029.json",
+    "reference_execution_recovery_decision_20261030.json",
+    "reference_execution_sequential_decision_20261029.json",
+    "reference_shared_harness_parity_decision_20261029.json",
+    "storage_relocation_decision.json",
+    "storage_relocation_generalization_decision.json",
+    "storage_relocation_visualnews_decision.json",
+    "vn_dev_protocol\\asset_acquisition_decision.json",
+    "vn_dev_protocol\\asset_acquisition_decision_v2_20261029.json",
+    "vn_full_finalist_decision.json",
+    "vn_full_posthoc_execution_decision.json",
+    "vn_full_seeds_decision.json",
+    "vn_full_seeds_execution_decision.json",
+    "vn_full_seeds_execution_decision_v2.json",
+    "wiki_v2\\acquisition_decision.json",
+    "xm3600_gate_registration.json",
+    "xm3600_gate_registration_v2_20261030.json",
+    "xtd10_v2\\acquisition_decision.json",
+    "xtd10_v2\\retry_acquisition_decision.json"
+  ],
+  "directions_per_result": 2,
+  "disk_after": {
+    "C:\\": {
+      "free": 26516811776,
+      "total": 572671389696,
+      "used": 546154577920
+    },
+    "D:\\": {
+      "free": 4374945792,
+      "total": 107373129728,
+      "used": 102998183936
+    }
+  },
+  "disk_before_reference": {
+    "efficiency_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+    "minimum_reserve_bytes": 4294967296,
+    "model_selection_unchanged": true,
+    "models": [
+      "metaclip-s16",
+      "metaclip-m16",
+      "mobileclip2-s2",
+      "clip-b32-pl",
+      "siglip2-pl",
+      "siglip2-base",
+      "siglip2-pl-32768",
+      "embeddinggemma-2",
+      "siglip2-naflex",
+      "clip-b32-pl-32768",
+      "mclip-b16plus",
+      "siglip2-base-384",
+      "siglip2-base-256",
+      "siglip-i18n-256",
+      "siglip2-b32-256",
+      "tipsv2-b14",
+      "bge-vl-base",
+      "tipsv2-l14",
+      "pe-core-b16",
+      "fashion-siglip"
+    ],
+    "per_model_cache_and_temporary_budget_bytes": 1073741824,
+    "physical_C_free_bytes": 29885988864,
+    "primary_TinyCLIP_and_PolDense_protected": true,
+    "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+    "simultaneous_reference_models": 1,
+    "status": "registered_before_reference_scores",
+    "storage_policy": "one reference model at a time; all registered datasets and timings, then remove checked weight files",
+    "weights_automatically_deleted": true,
+    "worker_sha256": "4648d4ee7526dc4c7abe2e696981c1db1f56c20de23e716934bdcab8f468eb77"
+  },
+  "encoder_parameter_reporting": {
+    "display_unit": "millions, two decimals",
+    "gemma_audio_disabled": true,
+    "models": {
+      "VN_FULL_seed42": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "VN_FULL_seed43": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "VN_FULL_seed44": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "VN_only": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "bge-vl-base": {
+        "text": 63428096,
+        "total": 149620736,
+        "vision": 86192640
+      },
+      "clip-b32-pl": {
+        "text": 55898112,
+        "total": 143747328,
+        "vision": 87849216
+      },
+      "clip-b32-pl-32768": {
+        "text": 68481024,
+        "total": 156330240,
+        "vision": 87849216
+      },
+      "embeddinggemma-2": {
+        "text": 271002624,
+        "total": 438760448,
+        "vision": 167757824
+      },
+      "fashion-siglip": {
+        "text": 110271744,
+        "total": 203155968,
+        "vision": 92884224
+      },
+      "historical_A1": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "mclip-b16plus": {
+        "text": 560546432,
+        "total": 677760256,
+        "vision": 117213824
+      },
+      "metaclip-m16": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metaclip-s16": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "mobileclip2-s2": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "our_finalist": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "pe-core-b16": {
+        "text": 353986560,
+        "total": 447659520,
+        "vision": 93672960
+      },
+      "siglip-i18n-256": {
+        "text": 277695744,
+        "total": 370626048,
+        "vision": 92930304
+      },
+      "siglip2-b32-256": {
+        "text": 282303744,
+        "total": 376856064,
+        "vision": 94552320
+      },
+      "siglip2-base": {
+        "text": 282303744,
+        "total": 375823872,
+        "vision": 93520128
+      },
+      "siglip2-base-256": {
+        "text": 282303744,
+        "total": 375234048,
+        "vision": 92930304
+      },
+      "siglip2-base-384": {
+        "text": 282303744,
+        "total": 375479808,
+        "vision": 93176064
+      },
+      "siglip2-naflex": {
+        "text": 282303744,
+        "total": 375234048,
+        "vision": 92930304
+      },
+      "siglip2-pl": {
+        "text": 98278656,
+        "total": 191798784,
+        "vision": 93520128
+      },
+      "siglip2-pl-32768": {
+        "text": 110861568,
+        "total": 204381696,
+        "vision": 93520128
+      },
+      "tipsv2-b14": {
+        "text": 109632000,
+        "total": 195948288,
+        "vision": 86316288
+      },
+      "tipsv2-l14": {
+        "text": 183924736,
+        "total": 487941120,
+        "vision": 304016384
+      }
+    },
+    "our_standalone_projector": 196992,
+    "source_comparison_sha256": "de3433602afa6834c45ca2783653d986073ed22e36e92b838cf0d1db8acad817",
+    "status": "complete",
+    "total_definition": "distinct vision plus text encoder parameters; other modalities and standalone projector excluded",
+    "unit": "parameters",
+    "validation": {
+      "reports\\benchmark_twenty_models.md": {
+        "nonparameter_cells_unchanged": true,
+        "rows": 20,
+        "tables": 1
+      },
+      "reports\\series_2026-10-23\\OUR_NEW_GALLERIES_20261029.md": {
+        "nonparameter_cells_unchanged": true,
+        "rows": 28,
+        "tables": 8
+      },
+      "reports\\series_2026-10-23\\REFERENCE_COMPARISON_20261029.md": {
+        "nonparameter_cells_unchanged": true,
+        "rows": 253,
+        "tables": 25
+      },
+      "reports\\series_2026-10-23\\REPORT.md": {
+        "nonparameter_cells_unchanged": true,
+        "rows": 32,
+        "tables": 5
+      }
+    }
+  },
+  "evaluation_result_index_sha256": "e70428780babe12bfdb35514d472c25b3434f914a1a050249919f673d98352aa",
+  "evaluation_scope_amendment": "evaluation_scope_amendment_20261030.json",
+  "expanded_corpus": {
+    "candidate_manifest": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/metadata_candidates.jsonl",
+    "candidate_manifest_sha256": "d6ef8a048ef15029ff083c4442bef40f2550270c3ef52059886e727d52a1c1a4",
+    "dataset_counts": {
+      "visualnews": {
+        "exact_metadata_link_to_existing_train_rows": 33929,
+        "existing_VN_snapshot_ID_rows": 35918,
+        "known_protected_component_rows": 2008,
+        "provisionally_new_nonprotected_rows": 96930,
+        "rows": 132875
+      },
+      "wikimedia": {
+        "exact_metadata_link_to_existing_train_rows": 0,
+        "existing_VN_snapshot_ID_rows": 0,
+        "known_protected_component_rows": 1545,
+        "provisionally_new_nonprotected_rows": 22580,
+        "rows": 24125
+      }
+    },
+    "decision_sha256": "144d410d46586739be644eb3dc5609a4c93d03d1f4acdda8cb2d0584c9d1116f",
+    "guard_sha256": "d78134be53009dda30936407a6dd758294713896f5c4e98432f57621a8221bbe",
+    "inputs": {
+      "visualnews": {
+        "bytes": 372666173,
+        "note": "single open descriptor of atomically published JSONL; no live database access",
+        "path": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/visualnews_final_pairs.jsonl",
+        "sha256": "5cbb3b399d77029f1758619232b186b6d1e5b7a304df51b1a4936bd50c7df6f5"
+      },
+      "wikimedia": {
+        "bytes": 150862754,
+        "note": "single open descriptor of atomically published JSONL; no live database access",
+        "path": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/wikimedia_final_pairs.jsonl",
+        "sha256": "415d2f7373ad41bd4654ac9ab62a2da8ed0619e978c5112a5d68addc07a81b08"
+      }
+    },
+    "methodology": "transitive components over exact IDs, source identities, claimed exact hashes and normalized texts; not a pHash/image verification pass",
+    "no_training_allowed_from_this_manifest": true,
+    "pending": [
+      "verified image mapping and local original assets",
+      "canonical pixel SHA and pHash<=6 grouping",
+      "complete source/parent lineage",
+      "license/attribution audit",
+      "new training decision; Wiki release gate"
+    ],
+    "provisional_components": 149067,
+    "routes": {
+      "visualnews": {
+        "ready_original": 12026,
+        "ready_recycled": 116548,
+        "ready_reused_original": 4241,
+        "ready_reused_recycled": 60
+      },
+      "wikimedia": {
+        "ready_native_original": 4834,
+        "ready_native_recycled": 13872,
+        "ready_original": 1330,
+        "ready_recycled": 3869,
+        "ready_reused_original": 220
+      }
+    },
+    "status": "metadata_audit_complete_image_audit_pending",
+    "training_ready_rows": 0
+  },
+  "latest_report_update": "report_completion_text_image_scope_20261030.json",
+  "original_data_preserved": true,
+  "previous_report_sha256": {
+    "REPORT.md": "1308ea1f85956ed94b6675ea592e689b847d7639ca847eacc3ce587e70c4c48d",
+    "summary.json": "66624368ac5920339abecce875030172d573fadfc9484823f11231627ea97e7a"
+  },
+  "reference_models": 20,
+  "reference_registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+  "reference_result_files": 160,
+  "reference_runs": [
+    {
+      "cleanup_sha256": "2ce0c43215443ffd08ea781812af89e4c5b15ee695ebdc6d635eaf31c8b0f711",
+      "complete_sha256": "d6d4509997bd36b9ca9fffe1302720ddbd6aa8f11080e22310781fc9681c6a4b",
+      "model": "metaclip-s16",
+      "removed_weight_bytes": 198936052,
+      "worker_wall_seconds": 199.325679599
+    },
+    {
+      "cleanup_sha256": "55af5c4ce834a3688c9431d0e9e103aa916e51761d5561b0a25280fd4a0c675a",
+      "complete_sha256": "b031802f20b319048083929b596b4160025be4f326d9422fd2721c1e7640cb61",
+      "model": "metaclip-m16",
+      "removed_weight_bytes": 341254292,
+      "worker_wall_seconds": 211.09607391199998
+    },
+    {
+      "cleanup_sha256": "96cbf80982f82b04c3b324f512e25a4fd98e56e97fb125a88f6f1459ac2eb534",
+      "complete_sha256": "e2281582246484cedbd66fcc333efdfba1e9ac6eb237dd359ba9b1297494c51d",
+      "model": "mobileclip2-s2",
+      "removed_weight_bytes": 398071149,
+      "worker_wall_seconds": 142.62712484299993
+    },
+    {
+      "cleanup_sha256": "ab8b5cd39be751237f8fce60dee74c9c0a2660838fdd8e450a4464b3b8e03cde",
+      "complete_sha256": "f112c085503c5cf01bfca8bc3406d4b5f7f484263afab713918bff488046e0c0",
+      "model": "clip-b32-pl",
+      "removed_weight_bytes": 828850679,
+      "worker_wall_seconds": 179.837739081
+    },
+    {
+      "cleanup_sha256": "56c12ffb7254a5828205abbb96cf5667cd5cc1f920db1621d709929a5d5ec94a",
+      "complete_sha256": "07b5dc7ee7abd330e6e9c45253d67dd2733d189fc745b01bf8f6f49046e3a5e5",
+      "model": "siglip2-pl",
+      "removed_weight_bytes": 767243552,
+      "worker_wall_seconds": 343.578995759
+    },
+    {
+      "cleanup_sha256": "006c148d45ceebceb4b59cc41e679edb0c6f05db62ad76a97fa71bae54af6242",
+      "complete_sha256": "9f086b9059e9efe46559af73b4282f0089baf40a6393bc8495cafed617c1968e",
+      "model": "siglip2-base",
+      "removed_weight_bytes": 1503344520,
+      "worker_wall_seconds": 239.40794179900013
+    },
+    {
+      "cleanup_sha256": "28f8a94c4a250ea916eb8eaa9034c0ae7efa7fcb6e7369150a2d69b3ec3274df",
+      "complete_sha256": "9fdcbf364266eff169be7eb04365a1e3d8af1b408fcbbde54f2f424329402bfc",
+      "model": "siglip2-pl-32768",
+      "removed_weight_bytes": 817575248,
+      "worker_wall_seconds": 244.32529893499986
+    },
+    {
+      "cleanup_sha256": "2585b4a833c8d3490514d9fe5b092c63e12b3bafcedc2407d0b8221e263ddfb3",
+      "complete_sha256": "fff6621069ddfd26623df45aaabda8def48f8aead51d5749c9cd5a151c66a744",
+      "model": "embeddinggemma-2",
+      "removed_weight_bytes": 1488915288,
+      "worker_wall_seconds": 1239.5211865719998
+    },
+    {
+      "cleanup_sha256": "27a58aa3651b463bd5ba4e3e7c369e83ceec56617b8d592f708dc3eb9532a915",
+      "complete_sha256": "91c7ed1880f1f82b84f552b0a3153c2407dd67cdd780e90eedc2a1f9c780121e",
+      "model": "siglip2-naflex",
+      "removed_weight_bytes": 1500985224,
+      "worker_wall_seconds": 179.323729192
+    },
+    {
+      "cleanup_sha256": "fece3d3bee8d83284da116aecbd05f965e7f5caebae659ffbdb3bda0e955c587",
+      "complete_sha256": "a8938b5bfb3373fa587ce36a4acb9b6d5c59321b14cd7709b5a4ad042dcc534f",
+      "model": "clip-b32-pl-32768",
+      "removed_weight_bytes": 879182383,
+      "worker_wall_seconds": 88.19173855999998
+    },
+    {
+      "cleanup_sha256": "ba4264a50438194da1d9c81d50a333e39a2d3e0e1a9515ceab1bb4420b5305a2",
+      "complete_sha256": "ed2dea6950f3135b000762898594c6a1937ea5d5de22acf5df8bd91e3ff9a6ed",
+      "model": "mclip-b16plus",
+      "removed_weight_bytes": 3075890977,
+      "worker_wall_seconds": 239.06279915499994
+    },
+    {
+      "cleanup_sha256": "c4bb5f026860fa766fe123f06026447d454a201cb807aa6b4ed2f5e1733a7fd1",
+      "complete_sha256": "8a1114621facc9bba798663b3012d8219254cf4067aec3d7d1965a037221e334",
+      "model": "siglip2-base-384",
+      "removed_weight_bytes": 1501968264,
+      "worker_wall_seconds": 251.49666968200006
+    },
+    {
+      "cleanup_sha256": "b172d307969291acdfa89d05f8cd03cce12ffcc3b9b251ed0dcbe08267969cf3",
+      "complete_sha256": "1263c0c5570cf9073678348194f72036e45a6ff6f45959fc1039804d027484c4",
+      "model": "siglip2-base-256",
+      "removed_weight_bytes": 1500985224,
+      "worker_wall_seconds": 196.06784217299992
+    },
+    {
+      "cleanup_sha256": "ca6d78df129358f33419885480def160f406a4bf505084b5c83ae626b6cef986",
+      "complete_sha256": "fb8c80aa90cb2a060055aeddb9444738d0e83663c91f5767691b905e3c47e96b",
+      "model": "siglip-i18n-256",
+      "removed_weight_bytes": 1482539144,
+      "worker_wall_seconds": 185.8950766239999
+    },
+    {
+      "cleanup_sha256": "d311dae9541a38fd4a1acff6e6f01672019ccca002a01e14ef0a1f1860481ea2",
+      "complete_sha256": "3f449d08fcd9c7b8ab959d8a5481b4187a865573e1c33c88fe796cb96c47b47d",
+      "model": "siglip2-b32-256",
+      "removed_weight_bytes": 1507459216,
+      "worker_wall_seconds": 163.77129038700014
+    },
+    {
+      "cleanup_sha256": "9139154fe14323c461aea000b7912c01dd0c28b8ed690ceffde02101636bd16c",
+      "complete_sha256": "4ba9391c863b92d6d2e937b789337ce048510c961eeb9cf99469dcc08765a68c",
+      "model": "tipsv2-b14",
+      "removed_weight_bytes": 783830160,
+      "worker_wall_seconds": 400.716231698
+    },
+    {
+      "cleanup_sha256": "ce57f50ea3f7446164c671192e44a40d6c773af6212526175aa1a14e92c302b0",
+      "complete_sha256": "4e867af14b986d7702a1f9b89dbc8caa1edec5c5f8df3100fca25e11c08c0b36",
+      "model": "bge-vl-base",
+      "removed_weight_bytes": 299289098,
+      "worker_wall_seconds": 185.60404413100014
+    },
+    {
+      "cleanup_sha256": "131d1dddacb2b433d014969af4c044d6b2722065c7e72005900ddf5a5df6e6b2",
+      "complete_sha256": "f5abfee3341be2061c51fd1c61eb05fe1a5a24d9bd24300332b05e5a5e7ced1f",
+      "model": "tipsv2-l14",
+      "removed_weight_bytes": 1951820760,
+      "worker_wall_seconds": 1687.642690796
+    },
+    {
+      "cleanup_sha256": "c15e1035002c202653cc54d94d5b7df71fad4693f712193b97c938292174772d",
+      "complete_sha256": "23cda76d88b92ce665850f6a4964e98e1317523f561b1ba64a804d5b0aec13c1",
+      "model": "pe-core-b16",
+      "removed_weight_bytes": 1790786632,
+      "worker_wall_seconds": 176.1607180379997
+    },
+    {
+      "cleanup_sha256": "fe3a4366c21c49409113ddbecb937c08ef125143975e4fdf77be08d167866ca6",
+      "complete_sha256": "5b79b4363de10ac4b67f6bdeed4b5f1f108fd390f8763b983d9a46db8505bd3b",
+      "model": "fashion-siglip",
+      "removed_weight_bytes": 812658408,
+      "worker_wall_seconds": 162.98462649999965
+    }
+  ],
+  "reference_worker_wall_seconds": 6716.637497435999,
+  "selected_finalist": "VN_FULL_seed44",
+  "source_reports": [
+    "OUR_NEW_GALLERIES_20261029.md",
+    "REFERENCE_COMPARISON_20261029.md",
+    "LICENSING_DOSSIER_20261030.md"
+  ],
+  "status": "P1.B0_complete_further_series_pending",
+  "tasks": {
+    "P0.1": {
+      "note": "Wiki397 / 331 tekstów, guard i immutable baseline seed44; brak nowego treningu Wiki.",
+      "status": "zrobione"
+    },
+    "P0.2": {
+      "note": "XTD10 1000 i clean897 gotowe i ocenione; brak istniejących dokładnych par EN do Qwen-vs-human style.",
+      "status": "częściowo"
+    },
+    "P0.3": {
+      "note": "300 zadań i narzędzie gotowe; rzeczywiste ludzkie query pozostają do zebrania.",
+      "status": "częściowo"
+    },
+    "P0.4": {
+      "note": "200 zadań audytu i narzędzie gotowe; rzeczywiste ludzkie oceny pozostają do zebrania.",
+      "status": "częściowo"
+    },
+    "P0.5": {
+      "note": "Rejestracja i ewaluacja tekst↔obraz gotowe; użytkownik wyłączył composed retrieval i grounding.",
+      "status": "zrobione"
+    },
+    "P0.5.2": {
+      "note": "wiki_dev_zero_shot_pre_wiki_training.json zachowany bez nadpisania.",
+      "status": "zrobione"
+    },
+    "P0.5.3": {
+      "note": "Draft XM istnieje; execution_allowed=false; zero wyników XM3600.",
+      "status": "zrobione"
+    },
+    "P1.A": {
+      "note": "Seedy42 reuse,43/44 fresh; mediana44; legacy i fixed-gallery test już wykonane.",
+      "status": "zrobione"
+    },
+    "P1.B": {
+      "note": "Po zamknięciu B0: ekstrakcja i 1-seed scout według pierwotnego planu.",
+      "status": "nie zaczęte"
+    },
+    "P1.B0": {
+      "note": "20 modeli, 4 galerie, 2 tryby, 2 kierunki; paired CI i efficiency; usunięto ukończone wagi.",
+      "status": "zrobione"
+    },
+    "P1.C": {
+      "note": "Po B: sampler i ARO0/10/20/50, 3 seedy.",
+      "status": "nie zaczęte"
+    },
+    "P1.D": {
+      "note": "Po C: Linear / LNLinear / residual MLP, 3 seedy.",
+      "status": "nie zaczęte"
+    },
+    "P2.E": {
+      "note": "Dossier z linkami i cytatami; USA Today niedostępne, kwalifikacje prawne nierozstrzygnięte.",
+      "status": "częściowo"
+    },
+    "P2.F": {
+      "note": "Text-only modality gap, licencjonowany OPUS i alignment pilot pozostają.",
+      "status": "nie zaczęte"
+    },
+    "P2.G": {
+      "note": "Plan i image audit po B; brak treningu destylacyjnego bez akceptacji.",
+      "status": "nie zaczęte"
+    },
+    "expanded_corpus": {
+      "note": "157000 zamrożonych rekordów, metadata audit; training_ready_rows=0, image/rights audit pending.",
+      "status": "częściowo"
+    }
+  },
+  "time_caveat": "worker wall time includes CPU efficiency, preprocessing and loading; not GPU kernel time"
+}

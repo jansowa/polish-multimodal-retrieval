@@ -1,0 +1,15 @@
+{
+  "checkpoint_sha256": {
+    "42": "75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743",
+    "43": "626127451432301b1127478a3b47f2394139753c9e3f2bdb52570a44b8273776",
+    "44": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844"
+  },
+  "no_new_legacy_test": true,
+  "reload_metrics_and_loss_exact": true,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "status": "passed"
+}

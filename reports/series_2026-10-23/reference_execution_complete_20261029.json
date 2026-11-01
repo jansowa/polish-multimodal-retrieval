@@ -1,0 +1,29 @@
+{
+  "completed_reference_weights_removed": true,
+  "models": [
+    "metaclip-s16",
+    "metaclip-m16",
+    "mobileclip2-s2",
+    "clip-b32-pl",
+    "siglip2-pl",
+    "siglip2-base",
+    "siglip2-pl-32768",
+    "embeddinggemma-2",
+    "siglip2-naflex",
+    "clip-b32-pl-32768",
+    "mclip-b16plus",
+    "siglip2-base-384",
+    "siglip2-base-256",
+    "siglip-i18n-256",
+    "siglip2-b32-256",
+    "tipsv2-b14",
+    "bge-vl-base",
+    "tipsv2-l14",
+    "pe-core-b16",
+    "fashion-siglip"
+  ],
+  "output": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/evaluation/references",
+  "primary_weights_untouched": true,
+  "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+  "status": "complete"
+}

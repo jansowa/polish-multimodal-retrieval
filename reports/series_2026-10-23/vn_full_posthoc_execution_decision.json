@@ -1,0 +1,15 @@
+{
+  "COCO_validation_seeds": [
+    42,
+    43,
+    44
+  ],
+  "finalist_decision_sha256": "47dc4728833f07764e7ac777f0d0e9d9b1d3e6403687fed55b123bed4054bcf7",
+  "legacy_test_seeds": [
+    44
+  ],
+  "protocol": "reuse existing legacy and fixed-gallery verifier; no configuration feedback; XM3600 prohibited",
+  "script_sha256": "ba4b9cb69898dcce89e9aa53b21bc570138af797bb6632b4e95ac0701d62d16f",
+  "selection_closed": true,
+  "status": "registered_before_posthoc"
+}

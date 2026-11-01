@@ -1,0 +1,13 @@
+{
+  "status": "XM3600_released_with_training_protection_retained",
+  "at": "2026-10-31T20:21:49.971699+00:00",
+  "user_authorization": "Use XM3600 PL as a normal leaderboard task; evaluate named seven models; prepare DOCCI with recycling model",
+  "registry_path": "retrieval_benchmark/holdouts/registry-v3.json",
+  "registry_sha256": "8bc44d9e96481ccb6d9c01783dc3eefe13c79a4ab3becb5ab9914315ca438fe5",
+  "previous_registry_v2_preserved": true,
+  "queue_phase": "downloading_compact_archive",
+  "generation2_universe_frozen": true,
+  "original_XM_pairs_unchanged": true,
+  "original_XM_exclusions_preserved": 3,
+  "scoring_does_not_change_training_selection": true
+}

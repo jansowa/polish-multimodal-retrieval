@@ -1,0 +1,23 @@
+{
+  "mode": "read-only; no cache changes or deletions",
+  "source_cache": "/home/jsowa/.cache/huggingface/hub/datasets--mteb--ARO-Visual-Relation",
+  "source_role": "original downloaded Parquet shards",
+  "frozen_rows": {
+    "FULL_CLEAN.jsonl": 20883,
+    "validation.jsonl": 2343
+  },
+  "unique_extracted_images": 5185,
+  "image_directories": {
+    "/home/jsowa/.cache/huggingface/pl_mmb_training/images": 5185
+  },
+  "all_frozen_image_SHAs_verified": true,
+  "missing_images": [],
+  "SHA_mismatches": [],
+  "frozen_image_paths_inside_source_cache": [],
+  "direct_frozen_audit_dependencies_on_source_cache": [],
+  "manifests_SHA256": {
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/FULL_CLEAN.jsonl": "2834cb60a308be03685602e1fb4b6137d2c9968e249c81ce80892dae1b63908c",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/validation.jsonl": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6"
+  },
+  "source_loader_rebuild_requires_redownload_if_removed": true
+}

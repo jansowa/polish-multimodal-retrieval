@@ -1,0 +1,50 @@
+{
+  "XM3600_scored": false,
+  "ambiguous_exact_EN_ids": [
+    "xtd10:0868"
+  ],
+  "clean_images": 897,
+  "clean_manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+  "full_images": 1000,
+  "full_manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+  "license_sha256": "f9908a6ae7d75e49452013687f4db397b035d7bb69f3975961eb739e878a83bf",
+  "no_retrieval_scores_computed": true,
+  "original_asset_bytes": 166202759,
+  "overlap_images": {
+    "FULL_CLEAN": {
+      "either": 47,
+      "hashes": 28,
+      "parent": 47
+    },
+    "VN_dev": {
+      "either": 0,
+      "hashes": 0,
+      "parent": 0
+    },
+    "VN_train": {
+      "either": 0,
+      "hashes": 0,
+      "parent": 0
+    },
+    "XM_blacklist": {
+      "either": 0,
+      "hashes": 0,
+      "parent": 0
+    },
+    "legacy_eval": {
+      "either": 51,
+      "hashes": 7,
+      "parent": 51
+    },
+    "validation": {
+      "either": 5,
+      "hashes": 3,
+      "parent": 5
+    }
+  },
+  "paired_exact_EN_images": 0,
+  "paired_manifest_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "role": "translation_style_control_not_holdout",
+  "source_revision": "d77ff16148468c84287f3efcbf602a015c5e4954",
+  "status": "frozen_image_verified"
+}

@@ -1,0 +1,63 @@
+{
+  "candidate_manifest": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/metadata_candidates.jsonl",
+  "candidate_manifest_sha256": "d6ef8a048ef15029ff083c4442bef40f2550270c3ef52059886e727d52a1c1a4",
+  "dataset_counts": {
+    "visualnews": {
+      "exact_metadata_link_to_existing_train_rows": 33929,
+      "existing_VN_snapshot_ID_rows": 35918,
+      "known_protected_component_rows": 2008,
+      "provisionally_new_nonprotected_rows": 96930,
+      "rows": 132875
+    },
+    "wikimedia": {
+      "exact_metadata_link_to_existing_train_rows": 0,
+      "existing_VN_snapshot_ID_rows": 0,
+      "known_protected_component_rows": 1545,
+      "provisionally_new_nonprotected_rows": 22580,
+      "rows": 24125
+    }
+  },
+  "decision_sha256": "144d410d46586739be644eb3dc5609a4c93d03d1f4acdda8cb2d0584c9d1116f",
+  "guard_sha256": "d78134be53009dda30936407a6dd758294713896f5c4e98432f57621a8221bbe",
+  "inputs": {
+    "visualnews": {
+      "bytes": 372666173,
+      "note": "single open descriptor of atomically published JSONL; no live database access",
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/visualnews_final_pairs.jsonl",
+      "sha256": "5cbb3b399d77029f1758619232b186b6d1e5b7a304df51b1a4936bd50c7df6f5"
+    },
+    "wikimedia": {
+      "bytes": 150862754,
+      "note": "single open descriptor of atomically published JSONL; no live database access",
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/wikimedia_final_pairs.jsonl",
+      "sha256": "415d2f7373ad41bd4654ac9ab62a2da8ed0619e978c5112a5d68addc07a81b08"
+    }
+  },
+  "methodology": "transitive components over exact IDs, source identities, claimed exact hashes and normalized texts; not a pHash/image verification pass",
+  "no_training_allowed_from_this_manifest": true,
+  "pending": [
+    "verified image mapping and local original assets",
+    "canonical pixel SHA and pHash<=6 grouping",
+    "complete source/parent lineage",
+    "license/attribution audit",
+    "new training decision; Wiki release gate"
+  ],
+  "provisional_components": 149067,
+  "routes": {
+    "visualnews": {
+      "ready_original": 12026,
+      "ready_recycled": 116548,
+      "ready_reused_original": 4241,
+      "ready_reused_recycled": 60
+    },
+    "wikimedia": {
+      "ready_native_original": 4834,
+      "ready_native_recycled": 13872,
+      "ready_original": 1330,
+      "ready_recycled": 3869,
+      "ready_reused_original": 220
+    }
+  },
+  "status": "metadata_audit_complete_image_audit_pending",
+  "training_ready_rows": 0
+}

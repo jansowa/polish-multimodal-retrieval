@@ -1,0 +1,13 @@
+{
+  "version": "retrieval-pl-v1",
+  "datasets": {
+    "flickr30k_pl_local_test": {"title": "Flickr30k PL · lokalny test", "role": "core", "caption_origin": "machine_translation", "status": "ready", "source": "https://huggingface.co/datasets/aplominski/flickr30k-multilingual", "notes": "Lokalna oczyszczona galeria; nie jest niezmienionym oficjalnym Flickr30k1K. NLLB-200-1.3B; automatyczne QA nie potwierdza semantyki."},
+    "vizwiz_pl_local_validation": {"title": "VizWiz PL · lokalna walidacja", "role": "core", "caption_origin": "machine_translation", "status": "ready", "source": "https://vizwiz.org/tasks-and-datasets/image-captioning/", "notes": "Ludzkie opisy EN przetłumaczone przez opus-mt-en-zlw; nowy profil fotografii. Lokalny protokół retrieval, nie oficjalna metryka captioningu."},
+    "wiki_native_dev": {"title": "Wiki PL · native dev", "role": "diagnostic", "caption_origin": "native_human", "status": "ready", "notes": "Dotychczasowy zbiór deweloperski i selekcyjny. Ekspozycja zależy od modelu; nie jest nowym ślepym testem."},
+    "VN_dev": {"title": "VisualNews PL · dev", "role": "diagnostic", "caption_origin": "generated_recycled_translated", "status": "ready", "notes": "Dotychczasowy dev; ID i selekcyjny dla naszych modeli VN. Nie jest ludzkim polskim goldem."},
+    "xtd10_no_overlap": {"title": "XTD10 PL · 897 bez znanych nakładań", "role": "control", "caption_origin": "human_translation", "status": "ready", "source": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10", "notes": "Obrazy COCO; źródło ID dla naszych modeli z FULL. Oczyszczenie nie zmienia domeny w OOD."},
+    "xtd10_full_1k": {"title": "XTD10 PL · pełne 1000", "role": "control", "caption_origin": "human_translation", "status": "ready", "source": "https://github.com/adobe-research/Cross-lingual-Test-Dataset-XTD10", "notes": "Kontrola tłumaczeń; znane nakładania z naszym treningiem i wcześniejszym eval. Nie liczyć drugi raz jako niezależnej domeny."},
+    "xm3600_pl": {"title": "XM3600 PL · FINAL BLIND", "role": "native_final", "caption_origin": "native_human", "status": "final_blind", "source": "https://google.github.io/crossmodal-3600/", "notes": "Dane lokalne. Brak wyników; wymaga osobnej zamkniętej rejestracji wspólnej oceny. Ten runner nie otwiera bramki."},
+    "docci_pl": {"title": "DOCCI PL · planowane", "role": "long_description", "caption_origin": "machine_translation", "status": "planned", "source": "https://google.github.io/docci/", "notes": "Adnotacje EN lokalne; obrazy, tłumaczenia PL i zamrożony protokół nie są jeszcze gotowe. Raportować ucinanie tekstów każdego modelu."}
+  }
+}

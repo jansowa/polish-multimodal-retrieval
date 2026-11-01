@@ -1,0 +1,9 @@
+{
+  "candidate_manifest_sha256": "701b97776107b0151c663734c2c7b7e121a163235039b2e47b9d0cb0ee9e0b8b",
+  "export_rows": 3487,
+  "native_candidates": 559,
+  "no_translated_or_recycled_candidates": true,
+  "previous_candidate_snapshot": "wiki_native_candidates.jsonl remains immutable",
+  "source": "read-only atomically published final_pairs.jsonl; no SQLite/WAL",
+  "source_export_sha256": "f9a29718379cd7784e8ad7bb27d29dcdf4ffa69b38aebe8ca8b0648b6040843a"
+}

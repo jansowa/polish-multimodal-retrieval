@@ -1,0 +1,106 @@
+{
+  "artifacts": [
+    {
+      "bytes": 372666173,
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/visualnews_final_pairs.jsonl",
+      "role": "VN_export",
+      "sha256": "5cbb3b399d77029f1758619232b186b6d1e5b7a304df51b1a4936bd50c7df6f5"
+    },
+    {
+      "bytes": 150862754,
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/wikimedia_final_pairs.jsonl",
+      "role": "Wiki_export",
+      "sha256": "415d2f7373ad41bd4654ac9ab62a2da8ed0619e978c5112a5d68addc07a81b08"
+    },
+    {
+      "bytes": 55756616,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/FULL_CLEAN.jsonl",
+      "role": "legacy_train_inputs",
+      "sha256": "2834cb60a308be03685602e1fb4b6137d2c9968e249c81ce80892dae1b63908c"
+    },
+    {
+      "bytes": 6148743,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/validation.jsonl",
+      "role": "legacy_train_inputs",
+      "sha256": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6"
+    },
+    {
+      "bytes": 105149045,
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/relocated/visualnews-frozen-data/pipeline_pairs_snapshot.jsonl",
+      "role": "legacy_train_inputs",
+      "sha256": "e8e010ca5ff14182a9b8b0981f9d3ed4b65a44b875a256c6aa03ba010da9f59b"
+    },
+    {
+      "bytes": 3114586,
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/relocated/visualnews-frozen-data/vn_dev.jsonl",
+      "role": "legacy_train_inputs",
+      "sha256": "69b8fd8583ef80874cd2c63ded18cf9151d8ae876ee96e1367a9f4391cf391ec"
+    },
+    {
+      "bytes": 52493299,
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/relocated/visualnews-frozen-data/vn_train.jsonl",
+      "role": "legacy_train_inputs",
+      "sha256": "46b01f863f2d04e6f672e45f104e7e485e1d48d968c83cbd199a53b7c175bbfe"
+    },
+    {
+      "bytes": 344473,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-wiki-pilot-v1/data/wiki_dev.jsonl",
+      "role": "legacy_train_inputs",
+      "sha256": "125a14d248c75ff440c991b5da6805407e8df8c74d035526e081c194740f3cf7"
+    },
+    {
+      "bytes": 8239512,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-wiki-pilot-v1/data/wiki_pairs_snapshot.jsonl",
+      "role": "legacy_train_inputs",
+      "sha256": "7202345b7c73c58128ea0f686a5d5089ddc5e817838a89555f628d4f9b41f9cd"
+    },
+    {
+      "bytes": 1688709,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-wiki-pilot-v1/data/wiki_train.jsonl",
+      "role": "legacy_train_inputs",
+      "sha256": "6485191ab23a211b484cab8696042a8cb55017933726f60dd6437d5967296b14"
+    },
+    {
+      "bytes": 995016,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/wiki_dev_guard_enforcement.json",
+      "role": "Wiki_guard",
+      "sha256": "d78134be53009dda30936407a6dd758294713896f5c4e98432f57621a8221bbe"
+    },
+    {
+      "bytes": 2513919,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/wiki_v2/wiki_dev.jsonl",
+      "role": "Wiki_dev",
+      "sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3"
+    },
+    {
+      "bytes": 189873,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/wiki_dev_zero_shot_pre_wiki_training.json",
+      "role": "pre_Wiki_baseline",
+      "sha256": "f1d48b3e2533938d0f071e71d8e721a1ad23103f8e2d432f44791471b713de3f"
+    },
+    {
+      "bytes": 790527,
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-44/VN_FULL/best.pt",
+      "role": "original_finalist",
+      "sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844"
+    },
+    {
+      "bytes": 74184975,
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029/metadata_candidates.jsonl",
+      "role": "metadata_candidate_index",
+      "sha256": "d6ef8a048ef15029ff083c4442bef40f2550270c3ef52059886e727d52a1c1a4"
+    }
+  ],
+  "contract_sha256": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+  "counts": {
+    "VN": 132875,
+    "Wiki": 24125
+  },
+  "export_policy": "Reuse exact 2026-10-29 frozen 132875 VN / 24125 Wiki; no newer export.",
+  "generation": 1,
+  "owner": "A",
+  "phase": "A_INPUTS_FROZEN",
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "data-ood-20261030"
+}

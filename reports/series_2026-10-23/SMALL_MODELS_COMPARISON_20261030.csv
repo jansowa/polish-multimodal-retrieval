@@ -1,0 +1,16 @@
+﻿Benchmark / parametr;Domena dla VN_FULL;VN_FULL seed44;MetaCLIP-S16 PL;MetaCLIP-M16 PL;MobileCLIP2-S2 (EN)
+Parametry enkoderów V+T [mln];—;70.47;49.72;85.30;99.13
+Enkoder wizyjny [mln];—;38.59;21.96;38.78;35.70
+Enkoder tekstowy [mln];—;31.88;27.76;46.52;63.43
+Wiki dev R@1 t→i / i→t [%];OOD — Wiki;15.41 / 14.86;29.31 / 30.98;33.84 / 32.75;18.73 / 24.69
+VN dev R@1 t→i / i→t [%];ID — VN;73.94 / 69.15;56.07 / 60.00;63.65 / 67.75;27.31 / 27.20
+XTD10 pełne 1000 R@1 t→i / i→t [%];"ID — obrazy COCO; inne podpisy; 47 powiązanych z train";49.30 / 43.60;38.00 / 39.50;42.90 / 43.50;28.90 / 30.80
+XTD10 bez znanego overlapu 897 R@1 t→i / i→t [%];"ID — obrazy COCO; bez znanego overlapu";51.39 / 45.37;39.69 / 41.47;44.15 / 44.70;30.66 / 31.77
+Lokalny test MSCOCO P@1 [%];ID — COCO, odłożony test;50.70;30.00;34.60;27.20
+COCO val R@1 t→i / i→t [%];ID — COCO, odłożona walidacja;63.30 / 71.36;—;—;—
+COCO test — fixed gallery R@1 t→i / i→t [%];ID — COCO, odłożony test;50.70 / 79.60;—;—;—
+Wymiar embeddingu;—;384;384;512;512
+CPU query [ms];—;14.498;18.898;29.589;33.960
+CPU obraz [ms];—;77.105;137.686;212.994;87.014
+GPU query [ms/element];—;0.277;0.211;0.243;0.233
+GPU obraz [ms/element];—;2.103;3.632;3.800;1.529

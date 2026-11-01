@@ -1,0 +1,10 @@
+{
+  "training/runs/clean-v1/FULL_CLEAN.jsonl": "2834cb60a308be03685602e1fb4b6137d2c9968e249c81ce80892dae1b63908c",
+  "training/runs/clean-v1/validation.jsonl": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6",
+  "training/runs/tinyclip-visualnews-v1/data/pipeline_pairs_snapshot.jsonl": "e8e010ca5ff14182a9b8b0981f9d3ed4b65a44b875a256c6aa03ba010da9f59b",
+  "training/runs/tinyclip-visualnews-v1/data/vn_dev.jsonl": "69b8fd8583ef80874cd2c63ded18cf9151d8ae876ee96e1367a9f4391cf391ec",
+  "training/runs/tinyclip-visualnews-v1/data/vn_train.jsonl": "46b01f863f2d04e6f672e45f104e7e485e1d48d968c83cbd199a53b7c175bbfe",
+  "training/runs/tinyclip-wiki-pilot-v1/data/wiki_dev.jsonl": "125a14d248c75ff440c991b5da6805407e8df8c74d035526e081c194740f3cf7",
+  "training/runs/tinyclip-wiki-pilot-v1/data/wiki_pairs_snapshot.jsonl": "7202345b7c73c58128ea0f686a5d5089ddc5e817838a89555f628d4f9b41f9cd",
+  "training/runs/tinyclip-wiki-pilot-v1/data/wiki_train.jsonl": "6485191ab23a211b484cab8696042a8cb55017933726f60dd6437d5967296b14"
+}

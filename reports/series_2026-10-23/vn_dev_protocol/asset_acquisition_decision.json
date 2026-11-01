@@ -1,0 +1,7 @@
+{
+  "asset_root": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\vn-dev-originals",
+  "frozen_VN_dev_sha256": "69b8fd8583ef80874cd2c63ded18cf9151d8ae876ee96e1367a9f4391cf391ec",
+  "script_sha256": "9b74306109e8a5dd3bf20da72f2d79b21d399ed98456be2dcc63e0f2554ffd5d",
+  "source": "Only frozen shard,row,did,path mapping in VN dev and SHA-pinned extraction metadata; no SQLite/WAL",
+  "status": "registered_before_original_asset_copy"
+}

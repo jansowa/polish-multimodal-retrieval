@@ -1,0 +1,72 @@
+{
+  "artifacts": [
+    {
+      "bytes": 214823133,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/training_universe.jsonl",
+      "role": "training_universe",
+      "sha256": "bef3b4de16700a913bf3a2ae3260e99263933ae0e35b65831471f83665d8f69f"
+    },
+    {
+      "bytes": 213177767,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/protected_index.jsonl",
+      "role": "protected_index",
+      "sha256": "2b382d3a6d1894df22ed0da88522d29821a7d7b4078756e63dd297ed4f626973"
+    },
+    {
+      "bytes": 12556,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/image_audit.json",
+      "role": "image_audit",
+      "sha256": "7150d52b91666f5202145abe20d1ec3babed55c9b5c45c33296e1926afd804bd"
+    },
+    {
+      "bytes": 2080,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/registration.json",
+      "role": "study_registration",
+      "sha256": "2a29ee479cdc8bf11b3c404fa434ccbf53e40c5c0a259bc738d70ec42a55d610"
+    },
+    {
+      "bytes": 43513853,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/new_VN_train.jsonl",
+      "role": "new_VN_train",
+      "sha256": "0d74a296f337a794be8215f3d81afec57bad287712991f2f826fd080e520b8af"
+    },
+    {
+      "bytes": 169888,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/Wiki_train.jsonl",
+      "role": "Wiki_train",
+      "sha256": "b7d872f9f525327b336fc9aa39e1b42ea6ab573665cee277562b301a1b22c015"
+    }
+  ],
+  "contract_sha256": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+  "counts": {
+    "Wiki": 28,
+    "new_VN": 19888,
+    "old_train": 104195
+  },
+  "generation": 1,
+  "normalized_text_guard_artifacts": [
+    {
+      "bytes": 995016,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/wiki_dev_guard_enforcement.json",
+      "role": "Wiki_guard",
+      "sha256": "d78134be53009dda30936407a6dd758294713896f5c4e98432f57621a8221bbe"
+    },
+    {
+      "bytes": 9145452,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/blacklist.json",
+      "role": "legacy_blacklist",
+      "sha256": "971ddaa1de16966e7f97fd52be1d6b69915bb7c5ea0e28ddd79b0fce0338d6e6"
+    },
+    {
+      "bytes": 2490615,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/xm3600-pl/blacklist.json",
+      "role": "XM_blacklist_only",
+      "sha256": "8779589042cc6a4b344740a62060983c7c7b6ab6162c53608ab582f03da7634b"
+    }
+  ],
+  "owner": "A",
+  "phase": "A_UNIVERSE_FROZEN",
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "data-ood-20261030"
+}

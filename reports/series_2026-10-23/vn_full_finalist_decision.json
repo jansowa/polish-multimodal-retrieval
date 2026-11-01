@@ -1,0 +1,93 @@
+{
+  "COCO_used_for_selection": false,
+  "XM3600_scored": false,
+  "checkpoint_path": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-44/VN_FULL/best.pt",
+  "checkpoint_sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+  "finalists": [
+    {
+      "checkpoint_path": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-44/VN_FULL/best.pt",
+      "seed": 44,
+      "sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844"
+    }
+  ],
+  "seed": 44,
+  "seed_checkpoints": {
+    "42": {
+      "VN_dev": {
+        "graph_sha256": "86b6538807123567cf95d0e8a251e5652d3c4beff3377e32814f51ad8e253065",
+        "i2t": {
+          "candidates": 2003,
+          "queries": 2000,
+          "recall@1": 0.704,
+          "recall@10": 0.9335,
+          "recall@5": 0.8975
+        },
+        "mean_r1": 0.7224443334997503,
+        "positive_pairs": 2003,
+        "protocol": "fixed-gallery-multi-positive-v1",
+        "t2i": {
+          "candidates": 2000,
+          "queries": 2003,
+          "recall@1": 0.7408886669995007,
+          "recall@10": 0.9410883674488267,
+          "recall@5": 0.9016475287069395
+        }
+      },
+      "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-source-ablation-v1/VN_FULL/best.pt",
+      "selected_update": 2475,
+      "sha256": "75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743"
+    },
+    "43": {
+      "VN_dev": {
+        "graph_sha256": "86b6538807123567cf95d0e8a251e5652d3c4beff3377e32814f51ad8e253065",
+        "i2t": {
+          "candidates": 2003,
+          "queries": 2000,
+          "recall@1": 0.7035,
+          "recall@10": 0.9395,
+          "recall@5": 0.897
+        },
+        "mean_r1": 0.7204469545681478,
+        "positive_pairs": 2003,
+        "protocol": "fixed-gallery-multi-positive-v1",
+        "t2i": {
+          "candidates": 2000,
+          "queries": 2003,
+          "recall@1": 0.7373939091362955,
+          "recall@10": 0.9480778831752371,
+          "recall@5": 0.91063404892661
+        }
+      },
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-43/VN_FULL/best.pt",
+      "selected_update": 2200,
+      "sha256": "626127451432301b1127478a3b47f2394139753c9e3f2bdb52570a44b8273776"
+    },
+    "44": {
+      "VN_dev": {
+        "graph_sha256": "86b6538807123567cf95d0e8a251e5652d3c4beff3377e32814f51ad8e253065",
+        "i2t": {
+          "candidates": 2003,
+          "queries": 2000,
+          "recall@1": 0.6915,
+          "recall@10": 0.928,
+          "recall@5": 0.8905
+        },
+        "mean_r1": 0.7154454568147779,
+        "positive_pairs": 2003,
+        "protocol": "fixed-gallery-multi-positive-v1",
+        "t2i": {
+          "candidates": 2000,
+          "queries": 2003,
+          "recall@1": 0.7393909136295557,
+          "recall@10": 0.9405891163255118,
+          "recall@5": 0.909136295556665
+        }
+      },
+      "path": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-44/VN_FULL/best.pt",
+      "selected_update": 1375,
+      "sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844"
+    }
+  },
+  "selection_rule": "median selected VN dev t2i R@1; ascending seed breaks ties",
+  "status": "all_training_closed_before_new_COCO_evaluation"
+}

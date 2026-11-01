@@ -1,0 +1,6 @@
+{
+  "bytes": 143616911,
+  "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/flickr30k/test.parquet",
+  "sha256": "54ce3e659c09ba0a18702ea3201dea964359cda22275da9c7a4f46aba1598c27",
+  "url": "https://huggingface.co/datasets/aplominski/flickr30k-multilingual/resolve/7be0c742920b112fa4b3e41b7f2ca194f10a88aa/data/test-00000-of-00001.parquet"
+}

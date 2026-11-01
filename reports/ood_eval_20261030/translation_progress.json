@@ -1,0 +1,15 @@
+{
+  "QA_flags": {
+    "digits_changed": 27,
+    "language_uncertain": 26,
+    "negation_changed": 27
+  },
+  "device": "cpu",
+  "done": 5404,
+  "elapsed_seconds": 903.1982928709999,
+  "pid": 805,
+  "status": "running_CPU",
+  "torch_threads_per_worker": 1,
+  "total": 5421,
+  "workers": 2
+}

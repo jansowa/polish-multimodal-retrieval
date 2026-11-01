@@ -1,0 +1,50 @@
+{
+  "sources": [
+    {
+      "reason": "HTTP Error 401: Unauthorized",
+      "status": "unavailable",
+      "url": "https://huggingface.co/api/models/Helsinki-NLP/opus-mt-en-pl"
+    },
+    {
+      "reason": "HTTP Error 401: Unauthorized",
+      "status": "unavailable",
+      "url": "https://huggingface.co/api/models/Helsinki-NLP/opus-mt-en-pl/tree/main"
+    },
+    {
+      "reason": "HTTP Error 401: Unauthorized",
+      "status": "unavailable",
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-pl/raw/main/README.md"
+    },
+    {
+      "bytes": 5734,
+      "content_type": "application/json; charset=utf-8",
+      "resolved_url": "https://api.github.com/repos/Delphboy/karpathy-splits/commits/main",
+      "retrieved_at": "2026-10-30T11:35:43.580920+00:00",
+      "sha256": "47efa25f21766fea599f879dd5dafaa15ecbf5fcfcde8090627ba9f10224455c",
+      "status": "fetched",
+      "text": "{\"sha\":\"a61e64b9bf6bdf3318be6ee63a70d143cdef5863\",\"node_id\":\"C_kwDOKVAfDtoAKGE2MWU2NGI5YmY2YmRmMzMxOGJlNmVlNjNhNzBkMTQzY2RlZjU4NjM\",\"commit\":{\"author\":{\"name\":\"Henry Senior\",\"email\":\"hps1945@live.co.uk\",\"date\":\"2024-04-04T08:27:13Z\"},\"committer\":{\"name\":\"GitHub\",\"email\":\"noreply@github.com\",\"date\":\"2024-04-04T08:27:13Z\"},\"message\":\"Update download instructions\",\"tree\":{\"sha\":\"06cd1492d41ede3db5159255519a842b12f34a0b\",\"url\":\"https://api.github.com/repos/Delphboy/karpathy-splits/git/trees/06cd1492d41ede3db5159255519a842b12f34a0b\"},\"url\":\"https://api.github.com/repos/Delphboy/karpathy-splits/git/commits/a61e64b9bf6bdf3318be6ee63a70d143cdef5863\",\"comment_count\":0,\"verification\":{\"verified\":true,\"reason\":\"valid\",\"signature\":\"-----BEGIN PGP SIGNATURE-----\\n\\nwsFcBAABCAAQBQJmDmRhCRC1aQ7uu5UhlAAApIYQAAJMi+wWc2hfNz020TE63ib4\\nOE4ZcCcJDjeTaxIFeUjV4vIB7yM8SwwhtbJQSLJ2V0Fn9e2IWu1FFdCpamz8FN7q\\nBZ6VdnIYbptMhXzkv/85Q3r9Jtct5q2GKB2tC/WOvhoISqO7y0Bc6h1eMTWQjVL4\\nbzCbUFVO2kK7474jwQLsXDhjjyqhNTWRJgtVHc3PhO15dtzL3icASPykzZYM0Pau\\nR3nXysAjeXdA69vmGx4P5RbTeHisplRFEWYPY2CYuleg4jSQ/oMIzKwOif/mR4fW\\nHDV66xIaOv5P0pMuT+Qnlsk2qxOEZwkBtiEGqETnsg70ldR5Bf0QmpN51xsEjJuB\\ntod5RipQedpNcZc+liqTLW89XYYW25T9AdIo/YFUYDixD0/TE3odAuQUe9C+jKpk\\nEfiJ+Os5v52uaTx5h4kTYuE/bpXgBlqnuG7Rt7ONtbb/hliQBTL59s5JRVd4Amxj\\nhbF3VjSJlz/0AFmZpxOhWB4tpEQ3OBXpIGL/sk+Fs+gAFKzUeWSheSPQ2cBlMRH+\\nsUBSfzT9D/2MDoY41RyUGaCdPR0UFgx/nwD+jIVxHKqlHqVIxNNZL3Pa6aF/CSM0\\nYtgWBZM0elnXhPuiU2/z7faA+Sd9NLTQSQLHpiCU3kMpfxxfo81RyCxvDEsf3Rv9\\nHgdABOSWQmgGt6rQVvyK\\n=1jsh\\n-----END PGP SIGNATURE-----\\n\",\"payload\":\"tree 06cd1492d41ede3db5159255519a842b12f34a0b\\nparent c6c92d266a0003efadb7b3b02e4ad6d00e3d1705\\nauthor Henry Senior <hps1945@live.co.uk> 1712219233 +0100\\ncommitter GitHub <noreply@github.com> 1712219233 +0100\\n\\nUpdate download instructions\",\"verified_at\":\"2025-02-09T20:18:59Z\"}},\"url\":\"https://api.github.com/repos/Delphboy/karpathy-splits/commits/a61e64b9bf6bdf3318be6ee63a70d143cdef5863\",\"html_url\":\"https://github.com/Delphboy/karpathy-splits/commit/a61e64b9bf6bdf3318be6ee63a70d143cdef5863\",\"comments_url\":\"https://api.github.com/repos/Delphboy/karpathy-splits/commits/a61e64b9bf6bdf3318be6ee63a70d143cdef5863/comments\",\"author\":{\"login\":\"Delphboy\",\"id\":3028359,\"node_id\":\"MDQ6VXNlcjMwMjgzNTk=\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/3028359?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/Delphboy\",\"html_url\":\"https://github.com/Delphboy\",\"followers_url\":\"https://api.github.com/users/Delphboy/followers\",\"following_url\":\"https://api.github.com/users/Delphboy/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/Delphboy/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/Delphboy/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/Delphboy/subscriptions\",\"organizations_url\":\"https://api.github.com/users/Delphboy/orgs\",\"repos_url\":\"https://api.github.com/users/Delphboy/repos\",\"events_url\":\"https://api.github.com/users/Delphboy/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/Delphboy/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"committer\":{\"login\":\"web-flow\",\"id\":19864447,\"node_id\":\"MDQ6VXNlcjE5ODY0NDQ3\",\"avatar_url\":\"https://avatars.githubusercontent.com/u/19864447?v=4\",\"gravatar_id\":\"\",\"url\":\"https://api.github.com/users/web-flow\",\"html_url\":\"https://github.com/web-flow\",\"followers_url\":\"https://api.github.com/users/web-flow/followers\",\"following_url\":\"https://api.github.com/users/web-flow/following{/other_user}\",\"gists_url\":\"https://api.github.com/users/web-flow/gists{/gist_id}\",\"starred_url\":\"https://api.github.com/users/web-flow/starred{/owner}{/repo}\",\"subscriptions_url\":\"https://api.github.com/users/web-flow/subscriptions\",\"organizations_url\":\"https://api.github.com/users/web-flow/orgs\",\"repos_url\":\"https://api.github.com/users/web-flow/repos\",\"events_url\":\"https://api.github.com/users/web-flow/events{/privacy}\",\"received_events_url\":\"https://api.github.com/users/web-flow/received_events\",\"type\":\"User\",\"user_view_type\":\"public\",\"site_admin\":false},\"parents\":[{\"sha\":\"c6c92d266a0003efadb7b3b02e4ad6d00e3d1705\",\"url\":\"https://api.github.com/repos/Delphboy/karpathy-splits/commits/c6c92d266a0003efadb7b3b02e4ad6d00e3d1705\",\"html_url\":\"https://github.com/Delphboy/karpathy-splits/commit/c6c92d266a0003efadb7b3b02e4ad6d00e3d1705\"}],\"stats\":{\"total\":9,\"additions\":9,\"deletions\":0},\"files\":[{\"sha\":\"6902d1ea927f53a565d0b79e92bb4e3a802d0a69\",\"filename\":\"README.md\",\"status\":\"modified\",\"additions\":9,\"deletions\":0,\"changes\":9,\"blob_url\":\"https://github.com/Delphboy/karpathy-splits/blob/a61e64b9bf6bdf3318be6ee63a70d143cdef5863/README.md\",\"raw_url\":\"https://github.com/Delphboy/karpathy-splits/raw/a61e64b9bf6bdf3318be6ee63a70d143cdef5863/README.md\",\"contents_url\":\"https://api.github.com/repos/Delphboy/karpathy-splits/contents/README.md?ref=a61e64b9bf6bdf3318be6ee63a70d143cdef5863\",\"patch\":\"@@ -2,3 +2,12 @@\\n \\n The original link for the Karpathy splits, commonly used in image captioning, seems to have gone offline. This repo contains the json files from the original link for others to use.\\n \\n+## Download\\n+\\n+I had to use git LFS to get the files on GitHub. Please don't clone the repo as my LFS bandwidth is very limited (I'm only a student!). Instead, download each file via wget:\\n+\\n+**COCO:** `wget -c https://github.com/Delphboy/karpathy-splits/raw/main/dataset_coco.json\\\\?download\\\\= -O dataset_coco.json`\\n+\\n+**Flickr32K:** `wget -c https://github.com/Delphboy/karpathy-splits/raw/main/dataset_flickr32k.json\\\\?download\\\\= -O dataset_flickr32k.json`\\n+\\n+**Flickr8K:** `wget -c https://github.com/Delphboy/karpathy-splits/raw/main/dataset_flickr8k.json\\\\?download\\\\= -O dataset_flickr8k.json`\"}]}",
+      "url": "https://api.github.com/repos/Delphboy/karpathy-splits/commits/main"
+    },
+    {
+      "bytes": 1100,
+      "content_type": "application/json; charset=utf-8",
+      "resolved_url": "https://api.github.com/repos/Delphboy/karpathy-splits/contents/dataset_flickr32k.json",
+      "retrieved_at": "2026-10-30T11:35:43.569964+00:00",
+      "sha256": "1171b20bb9738999adbf0f518d473aaa1df7778bcd8c88b9620f8dfc831fb7eb",
+      "status": "fetched",
+      "text": "{\"name\":\"dataset_flickr32k.json\",\"path\":\"dataset_flickr32k.json\",\"sha\":\"3f567dca772eecf6180366d859fbdca9f4302c1d\",\"size\":111042326,\"url\":\"https://api.github.com/repos/Delphboy/karpathy-splits/contents/dataset_flickr32k.json?ref=main\",\"html_url\":\"https://github.com/Delphboy/karpathy-splits/blob/main/dataset_flickr32k.json\",\"git_url\":\"https://api.github.com/repos/Delphboy/karpathy-splits/git/blobs/3f567dca772eecf6180366d859fbdca9f4302c1d\",\"download_url\":\"https://media.githubusercontent.com/media/Delphboy/karpathy-splits/main/dataset_flickr32k.json\",\"type\":\"file\",\"content\":\"dmVyc2lvbiBodHRwczovL2dpdC1sZnMuZ2l0aHViLmNvbS9zcGVjL3YxCm9p\\nZCBzaGEyNTY6NjRjODVhZjBlOWQxODcwOTFjYjg4ODkwZTU2YjNmNjQwYWM0\\nODM4NjE5NmE5MzBkM2ZmODQzM2Q3MzE2NTEzNQpzaXplIDExMTA0MjMyNgo=\\n\",\"encoding\":\"base64\",\"_links\":{\"self\":\"https://api.github.com/repos/Delphboy/karpathy-splits/contents/dataset_flickr32k.json?ref=main\",\"git\":\"https://api.github.com/repos/Delphboy/karpathy-splits/git/blobs/3f567dca772eecf6180366d859fbdca9f4302c1d\",\"html\":\"https://github.com/Delphboy/karpathy-splits/blob/main/dataset_flickr32k.json\"}}",
+      "url": "https://api.github.com/repos/Delphboy/karpathy-splits/contents/dataset_flickr32k.json"
+    },
+    {
+      "bytes": 134,
+      "content_type": "text/plain; charset=utf-8",
+      "resolved_url": "https://raw.githubusercontent.com/Delphboy/karpathy-splits/main/dataset_flickr32k.json",
+      "retrieved_at": "2026-10-30T11:35:43.927397+00:00",
+      "sha256": "3332912ce0c6680e1844ca1744092af113b3aa8d047da8090984f02a04f52e6c",
+      "status": "fetched",
+      "text": "version https://git-lfs.github.com/spec/v1\noid sha256:64c85af0e9d187091cb88890e56b3f640ac48386196a930d3ff8433d73165135\nsize 111042326\n",
+      "url": "https://raw.githubusercontent.com/Delphboy/karpathy-splits/main/dataset_flickr32k.json"
+    }
+  ],
+  "workers": 2
+}

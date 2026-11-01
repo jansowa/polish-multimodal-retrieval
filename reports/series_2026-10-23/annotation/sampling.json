@@ -1,0 +1,30 @@
+{
+  "asset": "training\\runs\\tinyclip-visualnews-v1\\data\\native_rgb.npy",
+  "audit": {
+    "VN": 100,
+    "Wiki": 0,
+    "manifest_sha256": "ef8635c1ef6a6b9ea99a97916e7eb81e04afcb843f9ccedf6baf6263b6805545",
+    "publisher_split_counts": {
+      "usa_today:train": 25,
+      "usa_today:vn_dev": 25,
+      "washington_post:train": 25,
+      "washington_post:vn_dev": 25
+    }
+  },
+  "audit_query_images_disjoint": true,
+  "human_annotations_created": 0,
+  "inputs": {
+    "snapshot.json": "a20d4528d4a20b53c9af27f85a4de30685a6a36533cc0ce90651afc5f6f1213f",
+    "vn_dev.jsonl": "69b8fd8583ef80874cd2c63ded18cf9151d8ae876ee96e1367a9f4391cf391ec",
+    "vn_train.jsonl": "46b01f863f2d04e6f672e45f104e7e485e1d48d968c83cbd199a53b7c175bbfe"
+  },
+  "query": {
+    "VN": 150,
+    "Wiki": 0,
+    "manifest_sha256": "3403ff21ff99b9af52777a322836d18b289ad428376f7c886d14b38d161b1b47"
+  },
+  "seed_rule": "SHA256(salt:canonical_pixels) ascending; minimum row ID per image",
+  "server": "python experiments/series_annotation.py --port 8768 (127.0.0.1 only)",
+  "status": "VN_ready_Wiki_pending",
+  "wiki_blocker": "Cannot sample new native Wiki dev or its complement before image/component audit and freeze"
+}

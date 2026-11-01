@@ -1,0 +1,274 @@
+[
+  {
+    "alias": "bge-vl-base",
+    "model": "BAAI/BGE-VL-base",
+    "prompt_mentions": [
+      {
+        "line": 162,
+        "text": "        task_instruction=\"Retrieve the target image that best meets the combined criteria by using both the provided image and the image retrieval instructions: \""
+      }
+    ],
+    "revision": "cc4c733ed997dbee4ac70ccffb911e70c9c24b93",
+    "sha256": "6a2442e8ebdaf5f47155b14992dfdbc33d59cbe33b4aa7fc6e825b2976cd673d",
+    "url": "https://huggingface.co/BAAI/BGE-VL-base/raw/cc4c733ed997dbee4ac70ccffb911e70c9c24b93/README.md"
+  },
+  {
+    "alias": "clip-b32-pl",
+    "model": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384",
+    "prompt_mentions": [],
+    "revision": "f889319e4605da4342341fdb62ad39386396d6e1",
+    "sha256": "2e9e5693ef5ca21face83fe3cac782f2de4f14f15e734721b6048bb8d537865d",
+    "url": "https://huggingface.co/alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384/raw/f889319e4605da4342341fdb62ad39386396d6e1/README.md"
+  },
+  {
+    "alias": "clip-b32-pl-32768",
+    "model": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768",
+    "prompt_mentions": [],
+    "revision": "62436cd6cd74f072dda57463b6916c95324e5b85",
+    "sha256": "d709eb27773172011d387eb518978a072673965e8a47c425a5e1b64bb5693388",
+    "url": "https://huggingface.co/alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768/raw/62436cd6cd74f072dda57463b6916c95324e5b85/README.md"
+  },
+  {
+    "alias": "embeddinggemma-2",
+    "model": "google/embeddinggemma-2",
+    "prompt_mentions": [
+      {
+        "line": 46,
+        "text": "* **Task-steered representations:** Uses lightweight text instruction prefixes to optimize embeddings for different tasks (search, classification, clustering, semantic similarity, etc.)."
+      },
+      {
+        "line": 118,
+        "text": "query_emb = model.encode(query, prompt_name=\"SearchQuery\")"
+      },
+      {
+        "line": 119,
+        "text": "doc_emb = model.encode(document, prompt_name=\"Document\")"
+      },
+      {
+        "line": 128,
+        "text": "### 1. Task Instruction Prefixes"
+      },
+      {
+        "line": 130,
+        "text": "EmbeddingGemma 2 is trained with short task instruction prefixes prepended to text inputs. Using the right prefix improves quality; omitting it still works but reduces precision. Prefixes apply to text only. Pass images, video, and audio without any prefix. "
+      },
+      {
+        "line": 134,
+        "text": "**Prefix Notation & Usage**"
+      },
+      {
+        "line": 136,
+        "text": "We offer two types of task prefixes, depending on how embeddings are used in the task. There are two types of tasks:"
+      },
+      {
+        "line": 138,
+        "text": "* **Asymmetric Tasks (e.g. retrieval):** Use a query prefix for queries and a document prefix for corpus items.  "
+      },
+      {
+        "line": 139,
+        "text": "* **Symmetric Tasks (e.g. classification, similarity)**: Apply the same task prefix to all inputs being compared."
+      },
+      {
+        "line": 141,
+        "text": "| Use Case | Task Type | Prompt Name | Query Task Instruction | Document Task Instruction *(use `none` if no title)* |"
+      },
+      {
+        "line": 143,
+        "text": "| Web / document search | Asymmetric | SearchQuery | `task: search result \\| query: {query}` | `title: {title} \\| text: {content}` |"
+      },
+      {
+        "line": 151,
+        "text": "**Please note:** `prompt_name=\"Document\"` applies `title: none`; titled documents must still be formatted manually, like `model.encode(f\"title: {title} | text: {document}\")`"
+      },
+      {
+        "line": 305,
+        "text": "* **Context and Task Complexity:** Models perform well on tasks that can be framed with clear prompts and instructions.&nbsp;  "
+      },
+      {
+        "line": 309,
+        "text": "* **Task Instruction Usage:** For text tasks, omitting the recommended task prefix may lead to sub-optimal embedding quality."
+      }
+    ],
+    "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+    "sha256": "b677a0ee2818c36f091b65fd3d9b4baea9f04d53b02b49cae916c74bf9682037",
+    "url": "https://huggingface.co/google/embeddinggemma-2/raw/914f7f89142e33e77833254d9c9b90c3cef7303b/README.md"
+  },
+  {
+    "alias": "fashion-siglip",
+    "model": "Marqo/marqo-fashionSigLIP",
+    "prompt_mentions": [],
+    "revision": "c56244cc94f92419e8369fa71efdaf403b124ce8",
+    "sha256": "34efcd14c3a139d0591a26843ff06692b87726071faca297a3ce154364398977",
+    "url": "https://huggingface.co/Marqo/marqo-fashionSigLIP/raw/c56244cc94f92419e8369fa71efdaf403b124ce8/README.md"
+  },
+  {
+    "alias": "mclip-b16plus",
+    "model": "M-CLIP/XLM-Roberta-Large-Vit-B-16Plus",
+    "prompt_mentions": [
+      {
+        "line": 55,
+        "text": "Multilingual-CLIP extends OpenAI's English text encoders to multiple other languages. This model *only* contains the multilingual text encoder. The corresponding image model `Vit-B-16Plus` can be retrieved via instructions found on `mlfoundations` [open_clip repository on Github](https://github.com/mlfoundations/open_clip). We provide a usage example below. "
+      }
+    ],
+    "revision": "15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+    "sha256": "a03620be2905c735c679f8cf15eb1ea7e410921c5ea0db2d28498705d0f4b773",
+    "url": "https://huggingface.co/M-CLIP/XLM-Roberta-Large-Vit-B-16Plus/raw/15c3aee9b9e96fd7de1c1d488810a604bab98e78/README.md"
+  },
+  {
+    "alias": "metaclip-m16",
+    "model": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384",
+    "prompt_mentions": [
+      {
+        "line": 79,
+        "text": "      archivePrefix={arXiv},"
+      }
+    ],
+    "revision": "bc15d9f5ddabe0497898578493a6e81288057c90",
+    "sha256": "9c06ec33a9cd01807c806a0b153b9f24a774c58acc59a07845d8f35967fe4c89",
+    "url": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384/raw/bc15d9f5ddabe0497898578493a6e81288057c90/README.md"
+  },
+  {
+    "alias": "metaclip-s16",
+    "model": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384",
+    "prompt_mentions": [
+      {
+        "line": 78,
+        "text": "      archivePrefix={arXiv},"
+      }
+    ],
+    "revision": "006223472923ba925226b59b6acd1e3e266c2382",
+    "sha256": "0f11ef85118199626fff5fe7a57705d9e5282f19a058a582dc3143e5bdafddca",
+    "url": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384/raw/006223472923ba925226b59b6acd1e3e266c2382/README.md"
+  },
+  {
+    "alias": "mobileclip2-s2",
+    "model": "apple/MobileCLIP2-S2",
+    "prompt_mentions": [
+      {
+        "line": 53,
+        "text": "Then, install [`ml-mobileclip`](https://github.com/apple/ml-mobileclip) by following the instructions in the repo. It uses an API similar to [`open_clip`'s](https://github.com/mlfoundations/open_clip)."
+      }
+    ],
+    "revision": "72424e7025436db18f15c3eff6ee8c7c15ad4481",
+    "sha256": "41e74ac02e21ef7020166f774366a07b7a84370057ac9bc17250953ef96583c4",
+    "url": "https://huggingface.co/apple/MobileCLIP2-S2/raw/72424e7025436db18f15c3eff6ee8c7c15ad4481/README.md"
+  },
+  {
+    "alias": "pe-core-b16",
+    "model": "facebook/PE-Core-B16-224",
+    "prompt_mentions": [],
+    "revision": "a16450b46fef32363459920c2685a1b4ef13dcd9",
+    "sha256": "1514bde706bc04fd442dd948cdccaa4454745481c22cef65511432cfb895a6ef",
+    "url": "https://huggingface.co/facebook/PE-Core-B16-224/raw/a16450b46fef32363459920c2685a1b4ef13dcd9/README.md"
+  },
+  {
+    "alias": "siglip-i18n-256",
+    "model": "timm/ViT-B-16-SigLIP-i18n-256",
+    "prompt_mentions": [],
+    "revision": "ec35f9450b91a8ea263a50e31f55ae069069d1df",
+    "sha256": "cb92e00c6dfc1c382ec1e9781a721ae92523b317e3143c124055a42aef679525",
+    "url": "https://huggingface.co/timm/ViT-B-16-SigLIP-i18n-256/raw/ec35f9450b91a8ea263a50e31f55ae069069d1df/README.md"
+  },
+  {
+    "alias": "siglip2-b32-256",
+    "model": "timm/ViT-B-32-SigLIP2-256",
+    "prompt_mentions": [],
+    "revision": "cd1efb47643f2794413dd79ef24397c175032780",
+    "sha256": "1ecff3f4af89ddcb8c15142f8d1c8f66af26b6655562605882da4f6123b98757",
+    "url": "https://huggingface.co/timm/ViT-B-32-SigLIP2-256/raw/cd1efb47643f2794413dd79ef24397c175032780/README.md"
+  },
+  {
+    "alias": "siglip2-base",
+    "model": "google/siglip2-base-patch16-512",
+    "prompt_mentions": [
+      {
+        "line": 98,
+        "text": "      archivePrefix={arXiv},"
+      }
+    ],
+    "revision": "a89f5c5093f902bf39d3cd4d81d2c09867f0724b",
+    "sha256": "c4baa8dc31bf7b64476f373f2c646c04b0122495de39e1d3a6144c936d5a3ebd",
+    "url": "https://huggingface.co/google/siglip2-base-patch16-512/raw/a89f5c5093f902bf39d3cd4d81d2c09867f0724b/README.md"
+  },
+  {
+    "alias": "siglip2-base-256",
+    "model": "google/siglip2-base-patch16-256",
+    "prompt_mentions": [
+      {
+        "line": 98,
+        "text": "      archivePrefix={arXiv},"
+      }
+    ],
+    "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+    "sha256": "3f093559c3a18d94d9336249cf2e4e42ec8752413f07eb6634e2820e4ea120ad",
+    "url": "https://huggingface.co/google/siglip2-base-patch16-256/raw/3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab/README.md"
+  },
+  {
+    "alias": "siglip2-base-384",
+    "model": "google/siglip2-base-patch16-384",
+    "prompt_mentions": [
+      {
+        "line": 98,
+        "text": "      archivePrefix={arXiv},"
+      }
+    ],
+    "revision": "f775b65a79762255128c981547af89addcfe0f88",
+    "sha256": "3dab28ee04f108b1b1c8af6a9f0451cf1a6fff67dfba3dddfe16ca6dc1018214",
+    "url": "https://huggingface.co/google/siglip2-base-patch16-384/raw/f775b65a79762255128c981547af89addcfe0f88/README.md"
+  },
+  {
+    "alias": "siglip2-naflex",
+    "model": "google/siglip2-base-patch16-naflex",
+    "prompt_mentions": [
+      {
+        "line": 98,
+        "text": "      archivePrefix={arXiv},"
+      }
+    ],
+    "revision": "b53b807d3a2d5e2b3911292f2d69e5341cdc064c",
+    "sha256": "d4353009ea90b7de43575c4ba7e547e195e3239a62f7746afb16ae4ca7fa390a",
+    "url": "https://huggingface.co/google/siglip2-base-patch16-naflex/raw/b53b807d3a2d5e2b3911292f2d69e5341cdc064c/README.md"
+  },
+  {
+    "alias": "siglip2-pl",
+    "model": "alphaedge-ai/siglip2-base-patch16-512-pol-16384",
+    "prompt_mentions": [
+      {
+        "line": 78,
+        "text": "      archivePrefix={arXiv},"
+      }
+    ],
+    "revision": "002ad19c05defef76aae6bc20e048c5fe930995b",
+    "sha256": "d86016f5c4b5536ffa7c024bbc658be5c54215e224e2723b9d0275b6c04e4791",
+    "url": "https://huggingface.co/alphaedge-ai/siglip2-base-patch16-512-pol-16384/raw/002ad19c05defef76aae6bc20e048c5fe930995b/README.md"
+  },
+  {
+    "alias": "siglip2-pl-32768",
+    "model": "alphaedge-ai/siglip2-base-patch16-512-pol-32768",
+    "prompt_mentions": [
+      {
+        "line": 78,
+        "text": "      archivePrefix={arXiv},"
+      }
+    ],
+    "revision": "1a0edc19692189ba5ee44da531995cfd4138dd57",
+    "sha256": "24a2842a7fdd38e3e88c76412ac16a411ed3e2b26e11883900363b66ea903499",
+    "url": "https://huggingface.co/alphaedge-ai/siglip2-base-patch16-512-pol-32768/raw/1a0edc19692189ba5ee44da531995cfd4138dd57/README.md"
+  },
+  {
+    "alias": "tipsv2-b14",
+    "model": "google/tipsv2-b14",
+    "prompt_mentions": [],
+    "revision": "ed1e4dc6b74bf3935ae099e9d5eb30fa96528454",
+    "sha256": "1e57a1ed3198d26a0a5ef5ae5f7c32b7fcf844d56ac108ccb1e5116f4bd10895",
+    "url": "https://huggingface.co/google/tipsv2-b14/raw/ed1e4dc6b74bf3935ae099e9d5eb30fa96528454/README.md"
+  },
+  {
+    "alias": "tipsv2-l14",
+    "model": "google/tipsv2-l14",
+    "prompt_mentions": [],
+    "revision": "52847a71eb02a3082c370fbcd98cd799687bd4d0",
+    "sha256": "9a3d666916a03208fcb951cce6014112dda796faea2f2f6add797cd40bd493bd",
+    "url": "https://huggingface.co/google/tipsv2-l14/raw/52847a71eb02a3082c370fbcd98cd799687bd4d0/README.md"
+  }
+]

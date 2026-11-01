@@ -1,0 +1,15 @@
+{
+  "asset_root": "C:\\Users\\jsowa\\benchmark-translations\\series-2026-10-23\\wiki-native-dev\\source-assets",
+  "captions": "native provenance accepted directly; no model generation",
+  "local_minimum_request_interval_seconds": 3,
+  "max_assets_bytes": 8589934592,
+  "max_file_bytes": 100000000,
+  "no_training_or_retrieval": true,
+  "pipeline_slots_unchanged": true,
+  "script_sha256": "cf00de820aacae41002dec87d5c62e59053b148f5e180d0f40d40c69c1978c7e",
+  "shared_HTTP_state": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\outputs\\wikimedia_http_state.json",
+  "shared_budget_unchanged": true,
+  "snapshot_sha256": "4aa8c7e3fc7c9616372897735d98b7eb55e71d52b09a24a19ba4f30e8a4eda84",
+  "source_identity": "original bytes must equal frozen Wikimedia SHA1; canonical RGB hash and DCT64 pHash",
+  "status": "registered_before_acquisition"
+}

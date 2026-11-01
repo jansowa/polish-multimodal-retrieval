@@ -1,0 +1,332 @@
+{
+  "additional_cache_and_metadata_reserve_bytes": 2147483648,
+  "entire_series_fits_without_deletion": false,
+  "errors": [],
+  "minimum_free_reserve_bytes": 4294967296,
+  "missing_weight_bytes": 22826339199,
+  "models": [
+    {
+      "alias": "bge-vl-base",
+      "files": [
+        {
+          "bytes": 299289098,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 299289098,
+      "repo": "BAAI/BGE-VL-base",
+      "revision": "cc4c733ed997dbee4ac70ccffb911e70c9c24b93",
+      "weight_bytes": 299289098
+    },
+    {
+      "alias": "clip-b32-pl",
+      "files": [
+        {
+          "bytes": 1572984,
+          "cached": false,
+          "name": "2_Dense/model.safetensors"
+        },
+        {
+          "bytes": 222030624,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 223603608,
+      "repo": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384",
+      "revision": "f889319e4605da4342341fdb62ad39386396d6e1",
+      "weight_bytes": 223603608
+    },
+    {
+      "alias": "clip-b32-pl-32768",
+      "files": [
+        {
+          "bytes": 1572984,
+          "cached": false,
+          "name": "2_Dense/model.safetensors"
+        },
+        {
+          "bytes": 272362328,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 273935312,
+      "repo": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768",
+      "revision": "62436cd6cd74f072dda57463b6916c95324e5b85",
+      "weight_bytes": 273935312
+    },
+    {
+      "alias": "embeddinggemma-2",
+      "files": [
+        {
+          "bytes": 1488915288,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 1488915288,
+      "repo": "google/embeddinggemma-2",
+      "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+      "weight_bytes": 1488915288
+    },
+    {
+      "alias": "fashion-siglip",
+      "files": [
+        {
+          "bytes": 812658408,
+          "cached": false,
+          "name": "open_clip_model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 812658408,
+      "repo": "Marqo/marqo-fashionSigLIP",
+      "revision": "c56244cc94f92419e8369fa71efdaf403b124ce8",
+      "weight_bytes": 812658408
+    },
+    {
+      "alias": "mclip-b16plus",
+      "files": [
+        {
+          "bytes": 2242347565,
+          "cached": false,
+          "name": "pytorch_model.bin"
+        }
+      ],
+      "missing_weight_bytes": 2242347565,
+      "repo": "M-CLIP/XLM-Roberta-Large-Vit-B-16Plus",
+      "revision": "15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "weight_bytes": 2242347565
+    },
+    {
+      "alias": "mclip-image-component",
+      "files": [
+        {
+          "bytes": 833543412,
+          "cached": false,
+          "name": "open_clip_model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 833543412,
+      "repo": "timm/vit_base_patch16_plus_clip_240.laion400m_e31",
+      "revision": "6dbe024bee4f13f90ad3676d92957e68868a616d",
+      "weight_bytes": 833543412
+    },
+    {
+      "alias": "metaclip-m16",
+      "files": [
+        {
+          "bytes": 341254292,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 341254292,
+      "repo": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384",
+      "revision": "bc15d9f5ddabe0497898578493a6e81288057c90",
+      "weight_bytes": 341254292
+    },
+    {
+      "alias": "metaclip-s16",
+      "files": [
+        {
+          "bytes": 198936052,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 198936052,
+      "repo": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384",
+      "revision": "006223472923ba925226b59b6acd1e3e266c2382",
+      "weight_bytes": 198936052
+    },
+    {
+      "alias": "mobileclip2-s2",
+      "files": [
+        {
+          "bytes": 398071149,
+          "cached": false,
+          "name": "mobileclip2_s2.pt"
+        }
+      ],
+      "missing_weight_bytes": 398071149,
+      "repo": "apple/MobileCLIP2-S2",
+      "revision": "72424e7025436db18f15c3eff6ee8c7c15ad4481",
+      "weight_bytes": 398071149
+    },
+    {
+      "alias": "pe-core-b16",
+      "files": [
+        {
+          "bytes": 1790786632,
+          "cached": false,
+          "name": "PE-Core-B16-224.pt"
+        }
+      ],
+      "missing_weight_bytes": 1790786632,
+      "repo": "facebook/PE-Core-B16-224",
+      "revision": "a16450b46fef32363459920c2685a1b4ef13dcd9",
+      "weight_bytes": 1790786632
+    },
+    {
+      "alias": "shared-clip-image",
+      "files": [
+        {
+          "bytes": 605247071,
+          "cached": false,
+          "name": "pytorch_model.bin"
+        }
+      ],
+      "missing_weight_bytes": 605247071,
+      "repo": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "weight_bytes": 605247071
+    },
+    {
+      "alias": "siglip-i18n-256",
+      "files": [
+        {
+          "bytes": 1482539144,
+          "cached": false,
+          "name": "open_clip_model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 1482539144,
+      "repo": "timm/ViT-B-16-SigLIP-i18n-256",
+      "revision": "ec35f9450b91a8ea263a50e31f55ae069069d1df",
+      "weight_bytes": 1482539144
+    },
+    {
+      "alias": "siglip2-b32-256",
+      "files": [
+        {
+          "bytes": 1507459216,
+          "cached": false,
+          "name": "open_clip_model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 1507459216,
+      "repo": "timm/ViT-B-32-SigLIP2-256",
+      "revision": "cd1efb47643f2794413dd79ef24397c175032780",
+      "weight_bytes": 1507459216
+    },
+    {
+      "alias": "siglip2-base",
+      "files": [
+        {
+          "bytes": 1503344520,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 1503344520,
+      "repo": "google/siglip2-base-patch16-512",
+      "revision": "a89f5c5093f902bf39d3cd4d81d2c09867f0724b",
+      "weight_bytes": 1503344520
+    },
+    {
+      "alias": "siglip2-base-256",
+      "files": [
+        {
+          "bytes": 1500985224,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 1500985224,
+      "repo": "google/siglip2-base-patch16-256",
+      "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+      "weight_bytes": 1500985224
+    },
+    {
+      "alias": "siglip2-base-384",
+      "files": [
+        {
+          "bytes": 1501968264,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 1501968264,
+      "repo": "google/siglip2-base-patch16-384",
+      "revision": "f775b65a79762255128c981547af89addcfe0f88",
+      "weight_bytes": 1501968264
+    },
+    {
+      "alias": "siglip2-naflex",
+      "files": [
+        {
+          "bytes": 1500985224,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 1500985224,
+      "repo": "google/siglip2-base-patch16-naflex",
+      "revision": "b53b807d3a2d5e2b3911292f2d69e5341cdc064c",
+      "weight_bytes": 1500985224
+    },
+    {
+      "alias": "siglip2-pl",
+      "files": [
+        {
+          "bytes": 767243552,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 767243552,
+      "repo": "alphaedge-ai/siglip2-base-patch16-512-pol-16384",
+      "revision": "002ad19c05defef76aae6bc20e048c5fe930995b",
+      "weight_bytes": 767243552
+    },
+    {
+      "alias": "siglip2-pl-32768",
+      "files": [
+        {
+          "bytes": 817575248,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 817575248,
+      "repo": "alphaedge-ai/siglip2-base-patch16-512-pol-32768",
+      "revision": "1a0edc19692189ba5ee44da531995cfd4138dd57",
+      "weight_bytes": 817575248
+    },
+    {
+      "alias": "tipsv2-b14",
+      "files": [
+        {
+          "bytes": 783830160,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 783830160,
+      "repo": "google/tipsv2-b14",
+      "revision": "ed1e4dc6b74bf3935ae099e9d5eb30fa96528454",
+      "weight_bytes": 783830160
+    },
+    {
+      "alias": "tipsv2-l14",
+      "files": [
+        {
+          "bytes": 1951820760,
+          "cached": false,
+          "name": "model.safetensors"
+        }
+      ],
+      "missing_weight_bytes": 1951820760,
+      "repo": "google/tipsv2-l14",
+      "revision": "52847a71eb02a3082c370fbcd98cd799687bd4d0",
+      "weight_bytes": 1951820760
+    }
+  ],
+  "no_weights_downloaded": true,
+  "physical_C_free_bytes": 27014021120,
+  "policy": "retain all downloaded weights; user performs every deletion manually",
+  "registration_sha256": "6add6760801beb1810533eed70ef91983cece2d2c7f021e66404c26023fba67b",
+  "status": "metadata_complete"
+}

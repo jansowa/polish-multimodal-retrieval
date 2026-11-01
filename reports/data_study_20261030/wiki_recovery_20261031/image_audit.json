@@ -1,0 +1,57 @@
+{
+  "decode_failures": [],
+  "download_ready_rows": 10214,
+  "eligible_complete_components": 935,
+  "eligible_unique_images": 3539,
+  "export_rows": 24125,
+  "generation": 2,
+  "global_holdout_registry_sha256": "954934abb198f79c712d4f51ae68a948a413fd9fd3b56fbda0648abb01a478c5",
+  "global_protected_rows": {
+    "holdout:VN_dev": 2003,
+    "holdout:VN_original_dev": 2003,
+    "holdout:Wiki_entire_reserved_components": 7956,
+    "holdout:Wiki_original_pilot_dev": 201,
+    "holdout:XM3600_FINAL_BLIND": 24964,
+    "holdout:flickr30k_pl_local_test": 4760,
+    "holdout:historical_eval_reservation": 30721,
+    "holdout:retention_validation": 7695,
+    "holdout:validation_negative_captions": 5602,
+    "holdout:vizwiz_pl_local_validation": 4329,
+    "holdout:wiki_native_dev": 397,
+    "holdout:xtd10_full_1k": 1000,
+    "holdout:xtd10_no_overlap": 897
+  },
+  "metadata_routes": {
+    "ready_native_original": 4834,
+    "ready_native_recycled": 13872,
+    "ready_original": 1330,
+    "ready_recycled": 3869,
+    "ready_reused_original": 220
+  },
+  "minimum_gate_images": 1000,
+  "minimum_gate_pass": true,
+  "missing_original_rows": 13911,
+  "previous_universe_sha256": "b1324298ab7e5a934a3f291aac1bf85f528d643724533995d30af47e3928899d",
+  "rejection_labels": {
+    "Wiki_reserved": 3925,
+    "fixed_new_VN_train": 3599,
+    "holdout:Wiki_entire_reserved_components": 3925,
+    "holdout:Wiki_original_pilot_dev": 4226,
+    "holdout:XM3600_FINAL_BLIND": 3599,
+    "holdout:historical_eval_reservation": 18,
+    "holdout:wiki_native_dev": 3925,
+    "protected_or_existing_train": 3943,
+    "protected_query_text": 3599
+  },
+  "selected_Wiki_components": 935,
+  "selected_Wiki_images": 3539,
+  "selected_Wiki_rows": 3539,
+  "selected_routes": {
+    "ready_native_original": 722,
+    "ready_native_recycled": 1978,
+    "ready_original": 226,
+    "ready_recycled": 571,
+    "ready_reused_original": 42
+  },
+  "status": "image_audit_complete"
+}

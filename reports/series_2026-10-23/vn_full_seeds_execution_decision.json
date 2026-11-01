@@ -1,0 +1,24 @@
+{
+  "cache_only": true,
+  "encoder_weights_loaded": false,
+  "historical_checkpoint_sha256": "75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743",
+  "historical_result_sha256": "249f3fd31856a00850e9322c958cafc89dab1849469bc8c1118badc4121d74d2",
+  "output": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds",
+  "parity_checks": {
+    "initialization_seed42_exact": true,
+    "sampler_seed42_exact": true,
+    "sampler_seed43_distinct": true
+  },
+  "precision": "FP32 cached features and FP32 head/loss; historical frozen cache convention retained",
+  "prior_decision_sha256": "a1fa68a77662e4b6b5f457eebfedb89a310d11ba4708d952a83edd374ec2e8c1",
+  "reserve_bytes": 4294967296,
+  "reuse_seed": 42,
+  "runner_sha256": "c1600510c5ccebdb1d5d724eee19bd10a357f25e27bafd08a9d93cfeff9adb8e",
+  "sampler": "Historical Sampler with explicit per-run seed (its Python default is bound to 42)",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "status": "registered_before_training"
+}

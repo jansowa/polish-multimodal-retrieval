@@ -1,0 +1,1363 @@
+{
+  "checkpoint_sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+  "details": [
+    {
+      "dataset": "Wiki dev",
+      "direction": "t2i",
+      "domain_note": "OOD — Wiki",
+      "domain_status": "OOD",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "mrr": 0.25560492346466956,
+        "ndcg@10": 0.27937891494924527,
+        "recall@1": 0.1540785498489426,
+        "recall@10": 0.4380664652567976,
+        "recall@5": 0.34441087613293053
+      },
+      "model": "our_finalist",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "Wiki dev",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": {
+        "mrr": 0.3934016824178488,
+        "ndcg@10": 0.4197458247673197,
+        "recall@1": 0.2930513595166163,
+        "recall@10": 0.6012084592145015,
+        "recall@5": 0.5015105740181269
+      },
+      "model": "metaclip-s16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          -19.869809595248615,
+          -8.578896974339337
+        ],
+        "delta_pp": -13.897280966767372
+      }
+    },
+    {
+      "dataset": "Wiki dev",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": {
+        "mrr": 0.4439746450893486,
+        "ndcg@10": 0.4784990373038182,
+        "recall@1": 0.338368580060423,
+        "recall@10": 0.6676737160120846,
+        "recall@5": 0.5649546827794562
+      },
+      "model": "metaclip-m16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          -24.333552631578947,
+          -12.986856893106893
+        ],
+        "delta_pp": -18.429003021148034
+      }
+    },
+    {
+      "dataset": "Wiki dev",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": {
+        "mrr": 0.2566396681757699,
+        "ndcg@10": 0.27613321722346823,
+        "recall@1": 0.18731117824773413,
+        "recall@10": 0.41389728096676737,
+        "recall@5": 0.31722054380664655
+      },
+      "model": "mobileclip2-s2",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          -8.158195734434125,
+          1.3841230011906946
+        ],
+        "delta_pp": -3.3232628398791544
+      }
+    },
+    {
+      "dataset": "Wiki dev",
+      "direction": "i2t",
+      "domain_note": "OOD — Wiki",
+      "domain_status": "OOD",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "mrr": 0.2366183263621627,
+        "ndcg@10": 0.2680141676409889,
+        "recall@1": 0.1486146095717884,
+        "recall@10": 0.4282115869017632,
+        "recall@5": 0.3047858942065491
+      },
+      "model": "our_finalist",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "Wiki dev",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": {
+        "mrr": 0.4167512444120896,
+        "ndcg@10": 0.45956411943590736,
+        "recall@1": 0.30982367758186397,
+        "recall@10": 0.6448362720403022,
+        "recall@5": 0.5289672544080605
+      },
+      "model": "metaclip-s16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          -21.03825136612022,
+          -11.384598214285715
+        ],
+        "delta_pp": -16.120906801007557
+      }
+    },
+    {
+      "dataset": "Wiki dev",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": {
+        "mrr": 0.45134168579331757,
+        "ndcg@10": 0.5048519031885103,
+        "recall@1": 0.327455919395466,
+        "recall@10": 0.7103274559193955,
+        "recall@5": 0.5969773299748111
+      },
+      "model": "metaclip-m16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          -23.848418062493877,
+          -11.662512931439856
+        ],
+        "delta_pp": -17.884130982367758
+      }
+    },
+    {
+      "dataset": "Wiki dev",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": {
+        "mrr": 0.3384724351888491,
+        "ndcg@10": 0.37449121813142183,
+        "recall@1": 0.24685138539042822,
+        "recall@10": 0.5390428211586902,
+        "recall@5": 0.4156171284634761
+      },
+      "model": "mobileclip2-s2",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          -15.384615384615385,
+          -4.672847590134334
+        ],
+        "delta_pp": -9.82367758186398
+      }
+    },
+    {
+      "dataset": "VN dev",
+      "direction": "t2i",
+      "domain_note": "ID — VN",
+      "domain_status": "ID",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "mrr": 0.814961396100177,
+        "ndcg@10": 0.8440662319178601,
+        "recall@1": 0.7393909136295557,
+        "recall@10": 0.9405891163255118,
+        "recall@5": 0.909136295556665
+      },
+      "model": "our_finalist",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "VN dev",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": {
+        "mrr": 0.6590595452717128,
+        "ndcg@10": 0.6977633994835892,
+        "recall@1": 0.5606590114827759,
+        "recall@10": 0.8372441337993011,
+        "recall@5": 0.7793310034947578
+      },
+      "model": "metaclip-s16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          15.384519661523147,
+          20.328052239626516
+        ],
+        "delta_pp": 17.873190214677983
+      }
+    },
+    {
+      "dataset": "VN dev",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": {
+        "mrr": 0.7210271450661515,
+        "ndcg@10": 0.7565183103908498,
+        "recall@1": 0.63654518222666,
+        "recall@10": 0.8806789815277084,
+        "recall@5": 0.8207688467299051
+      },
+      "model": "metaclip-m16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          7.89996646795827,
+          12.73092679276824
+        ],
+        "delta_pp": 10.284573140289567
+      }
+    },
+    {
+      "dataset": "VN dev",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": {
+        "mrr": 0.35966176301058417,
+        "ndcg@10": 0.3894209795915901,
+        "recall@1": 0.27309036445332,
+        "recall@10": 0.5202196704942587,
+        "recall@5": 0.44782825761357964
+      },
+      "model": "mobileclip2-s2",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          43.995864225833024,
+          49.30139720558882
+        ],
+        "delta_pp": 46.63005491762357
+      }
+    },
+    {
+      "dataset": "VN dev",
+      "direction": "i2t",
+      "domain_note": "ID — VN",
+      "domain_status": "ID",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "mrr": 0.7789228415880002,
+        "ndcg@10": 0.8132758179737616,
+        "recall@1": 0.6915,
+        "recall@10": 0.928,
+        "recall@5": 0.8905
+      },
+      "model": "our_finalist",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "VN dev",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": {
+        "mrr": 0.6944085724223021,
+        "ndcg@10": 0.7317061069601879,
+        "recall@1": 0.6,
+        "recall@10": 0.865,
+        "recall@5": 0.8065
+      },
+      "model": "metaclip-s16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          6.653326663331666,
+          11.655912036735856
+        ],
+        "delta_pp": 9.15
+      }
+    },
+    {
+      "dataset": "VN dev",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": {
+        "mrr": 0.7589178261064327,
+        "ndcg@10": 0.7927915350294334,
+        "recall@1": 0.6775,
+        "recall@10": 0.91,
+        "recall@5": 0.854
+      },
+      "model": "metaclip-m16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          -1.0526447764345668,
+          3.9039527760108625
+        ],
+        "delta_pp": 1.4000000000000001
+      }
+    },
+    {
+      "dataset": "VN dev",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": {
+        "mrr": 0.35778040823124957,
+        "ndcg@10": 0.3897565477463317,
+        "recall@1": 0.272,
+        "recall@10": 0.5275,
+        "recall@5": 0.4445
+      },
+      "model": "mobileclip2-s2",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          39.10866299449174,
+          44.700132367632364
+        ],
+        "delta_pp": 41.949999999999996
+      }
+    },
+    {
+      "dataset": "XTD10 pełne 1000",
+      "direction": "t2i",
+      "domain_note": "ID — obrazy COCO; inne podpisy; 47 powiązanych z train",
+      "domain_status": "ID-image-source",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "mrr": 0.6282971394150744,
+        "ndcg@10": 0.6875017985122542,
+        "recall@1": 0.493,
+        "recall@10": 0.893,
+        "recall@5": 0.803
+      },
+      "model": "our_finalist",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "XTD10 pełne 1000",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": {
+        "mrr": 0.5010815220717877,
+        "ndcg@10": 0.5543756580138673,
+        "recall@1": 0.38,
+        "recall@10": 0.756,
+        "recall@5": 0.649
+      },
+      "model": "metaclip-s16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          7.8,
+          14.899999999999999
+        ],
+        "delta_pp": 11.3
+      }
+    },
+    {
+      "dataset": "XTD10 pełne 1000",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": {
+        "mrr": 0.5513329765914194,
+        "ndcg@10": 0.6026264688062393,
+        "recall@1": 0.429,
+        "recall@10": 0.794,
+        "recall@5": 0.698
+      },
+      "model": "metaclip-m16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          2.9000000000000004,
+          9.9
+        ],
+        "delta_pp": 6.4
+      }
+    },
+    {
+      "dataset": "XTD10 pełne 1000",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": {
+        "mrr": 0.3951264144246315,
+        "ndcg@10": 0.4372268803640821,
+        "recall@1": 0.289,
+        "recall@10": 0.614,
+        "recall@5": 0.515
+      },
+      "model": "mobileclip2-s2",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          16.8,
+          23.9
+        ],
+        "delta_pp": 20.4
+      }
+    },
+    {
+      "dataset": "XTD10 pełne 1000",
+      "direction": "i2t",
+      "domain_note": "ID — obrazy COCO; inne podpisy; 47 powiązanych z train",
+      "domain_status": "ID-image-source",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "mrr": 0.5808805685739538,
+        "ndcg@10": 0.6484950418652793,
+        "recall@1": 0.436,
+        "recall@10": 0.884,
+        "recall@5": 0.759
+      },
+      "model": "our_finalist",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "XTD10 pełne 1000",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": {
+        "mrr": 0.5292351176339459,
+        "ndcg@10": 0.5866171594067432,
+        "recall@1": 0.395,
+        "recall@10": 0.801,
+        "recall@5": 0.683
+      },
+      "model": "metaclip-s16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          0.5,
+          7.7
+        ],
+        "delta_pp": 4.1000000000000005
+      }
+    },
+    {
+      "dataset": "XTD10 pełne 1000",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": {
+        "mrr": 0.5626266827850808,
+        "ndcg@10": 0.6187903078954922,
+        "recall@1": 0.435,
+        "recall@10": 0.825,
+        "recall@5": 0.711
+      },
+      "model": "metaclip-m16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          -3.4000000000000004,
+          3.5999999999999996
+        ],
+        "delta_pp": 0.1
+      }
+    },
+    {
+      "dataset": "XTD10 pełne 1000",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": {
+        "mrr": 0.4287915533016239,
+        "ndcg@10": 0.4778386437714146,
+        "recall@1": 0.308,
+        "recall@10": 0.674,
+        "recall@5": 0.553
+      },
+      "model": "mobileclip2-s2",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          9.2,
+          16.400000000000002
+        ],
+        "delta_pp": 12.8
+      }
+    },
+    {
+      "dataset": "XTD10 bez znanego overlapu 897",
+      "direction": "t2i",
+      "domain_note": "ID — obrazy COCO; bez znanego overlapu",
+      "domain_status": "ID-image-source",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "mrr": 0.6446812835150978,
+        "ndcg@10": 0.7034311009685473,
+        "recall@1": 0.5139353400222966,
+        "recall@10": 0.9052396878483835,
+        "recall@5": 0.8216276477146043
+      },
+      "model": "our_finalist",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "XTD10 bez znanego overlapu 897",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": {
+        "mrr": 0.5176514240304696,
+        "ndcg@10": 0.5709081897004644,
+        "recall@1": 0.39687848383500557,
+        "recall@10": 0.770345596432553,
+        "recall@5": 0.6722408026755853
+      },
+      "model": "metaclip-s16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          7.915273132664437,
+          15.496098104793758
+        ],
+        "delta_pp": 11.705685618729097
+      }
+    },
+    {
+      "dataset": "XTD10 bez znanego overlapu 897",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": {
+        "mrr": 0.5630366484040936,
+        "ndcg@10": 0.613991773707072,
+        "recall@1": 0.4414715719063545,
+        "recall@10": 0.8037904124860646,
+        "recall@5": 0.7157190635451505
+      },
+      "model": "metaclip-m16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          3.3444816053511706,
+          11.036789297658862
+        ],
+        "delta_pp": 7.246376811594203
+      }
+    },
+    {
+      "dataset": "XTD10 bez znanego overlapu 897",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": {
+        "mrr": 0.41294981751663934,
+        "ndcg@10": 0.4580245398758122,
+        "recall@1": 0.30657748049052397,
+        "recall@10": 0.6421404682274248,
+        "recall@5": 0.5239687848383501
+      },
+      "model": "mobileclip2-s2",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          16.833890746934223,
+          24.526198439241917
+        ],
+        "delta_pp": 20.735785953177256
+      }
+    },
+    {
+      "dataset": "XTD10 bez znanego overlapu 897",
+      "direction": "i2t",
+      "domain_note": "ID — obrazy COCO; bez znanego overlapu",
+      "domain_status": "ID-image-source",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "mrr": 0.5978074817964956,
+        "ndcg@10": 0.6655170944264719,
+        "recall@1": 0.4537346711259755,
+        "recall@10": 0.8985507246376812,
+        "recall@5": 0.7748049052396878
+      },
+      "model": "our_finalist",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "XTD10 bez znanego overlapu 897",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": {
+        "mrr": 0.5442761134119387,
+        "ndcg@10": 0.602201038355854,
+        "recall@1": 0.41471571906354515,
+        "recall@10": 0.8171683389074693,
+        "recall@5": 0.6967670011148273
+      },
+      "model": "metaclip-s16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          0.0,
+          7.6923076923076925
+        ],
+        "delta_pp": 3.901895206243032
+      }
+    },
+    {
+      "dataset": "XTD10 bez znanego overlapu 897",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": {
+        "mrr": 0.5755313357048029,
+        "ndcg@10": 0.630649913375266,
+        "recall@1": 0.44704570791527315,
+        "recall@10": 0.8327759197324415,
+        "recall@5": 0.7268673355629878
+      },
+      "model": "metaclip-m16",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          -3.0100334448160537,
+          4.3478260869565215
+        ],
+        "delta_pp": 0.6688963210702341
+      }
+    },
+    {
+      "dataset": "XTD10 bez znanego overlapu 897",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": {
+        "mrr": 0.4416988289645168,
+        "ndcg@10": 0.4938948141712381,
+        "recall@1": 0.3177257525083612,
+        "recall@10": 0.6978818283166109,
+        "recall@5": 0.5719063545150501
+      },
+      "model": "mobileclip2-s2",
+      "protocol": "v2 full gallery",
+      "selected_finalist_minus_model_R1": {
+        "ci95_pp": [
+          9.92196209587514,
+          17.391304347826086
+        ],
+        "delta_pp": 13.600891861761427
+      }
+    },
+    {
+      "dataset": "Lokalny test MSCOCO",
+      "direction": "task-specific",
+      "domain_note": "ID — COCO, odłożony test",
+      "domain_status": "ID",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "mrr": 0.6350343499198793,
+        "ndcg@10": 0.6898601380927633,
+        "precision@1": 0.507,
+        "recall@1": 0.507,
+        "recall@10": 0.883,
+        "recall@5": 0.79
+      },
+      "model": "our_finalist",
+      "protocol": "local MMEB candidate protocol v2",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "Lokalny test MSCOCO",
+      "direction": "task-specific",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": {
+        "mrr": 0.4250975815736346,
+        "ndcg@10": 0.4746443677131178,
+        "precision@1": 0.3,
+        "recall@1": 0.3,
+        "recall@10": 0.667,
+        "recall@5": 0.568
+      },
+      "model": "metaclip-s16",
+      "protocol": "local MMEB candidate protocol v2",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "Lokalny test MSCOCO",
+      "direction": "task-specific",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": {
+        "mrr": 0.46849297944425067,
+        "ndcg@10": 0.5206961037859325,
+        "precision@1": 0.346,
+        "recall@1": 0.346,
+        "recall@10": 0.72,
+        "recall@5": 0.601
+      },
+      "model": "metaclip-m16",
+      "protocol": "local MMEB candidate protocol v2",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "Lokalny test MSCOCO",
+      "direction": "task-specific",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": {
+        "mrr": 0.3876033325587687,
+        "ndcg@10": 0.4327824577154559,
+        "precision@1": 0.272,
+        "recall@1": 0.272,
+        "recall@10": 0.621,
+        "recall@5": 0.517
+      },
+      "model": "mobileclip2-s2",
+      "protocol": "local MMEB candidate protocol v2",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO val",
+      "direction": "t2i",
+      "domain_note": "ID — COCO, odłożona walidacja",
+      "domain_status": "ID",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "recall@1": 0.6330143540669857,
+        "recall@10": 0.9607655502392345,
+        "recall@5": 0.907177033492823
+      },
+      "model": "our_finalist",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO val",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": null,
+      "model": "metaclip-s16",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO val",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": null,
+      "model": "metaclip-m16",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO val",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": null,
+      "model": "mobileclip2-s2",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO val",
+      "direction": "i2t",
+      "domain_note": "ID — COCO, odłożona walidacja",
+      "domain_status": "ID",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "recall@1": 0.7136038186157518,
+        "recall@10": 0.9785202863961814,
+        "recall@5": 0.9498806682577565
+      },
+      "model": "our_finalist",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO val",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": null,
+      "model": "metaclip-s16",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO val",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": null,
+      "model": "metaclip-m16",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO val",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": null,
+      "model": "mobileclip2-s2",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO test — fixed gallery",
+      "direction": "t2i",
+      "domain_note": "ID — COCO, odłożony test",
+      "domain_status": "ID",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "recall@1": 0.507,
+        "recall@10": 0.883,
+        "recall@5": 0.79
+      },
+      "model": "our_finalist",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO test — fixed gallery",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": null,
+      "model": "metaclip-s16",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO test — fixed gallery",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": null,
+      "model": "metaclip-m16",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO test — fixed gallery",
+      "direction": "t2i",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": null,
+      "model": "mobileclip2-s2",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO test — fixed gallery",
+      "direction": "i2t",
+      "domain_note": "ID — COCO, odłożony test",
+      "domain_status": "ID",
+      "encoder_parameters": {
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      },
+      "metrics": {
+        "recall@1": 0.7960199004975125,
+        "recall@10": 0.9950248756218906,
+        "recall@5": 0.9751243781094527
+      },
+      "model": "our_finalist",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO test — fixed gallery",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      },
+      "metrics": null,
+      "model": "metaclip-s16",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO test — fixed gallery",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      },
+      "metrics": null,
+      "model": "metaclip-m16",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    },
+    {
+      "dataset": "COCO test — fixed gallery",
+      "direction": "i2t",
+      "domain_note": "Nie ustalono pełnej ekspozycji treningowej konkurenta",
+      "domain_status": "not_audited",
+      "encoder_parameters": {
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      },
+      "metrics": null,
+      "model": "mobileclip2-s2",
+      "protocol": "fixed-gallery-multi-positive-v1",
+      "selected_finalist_minus_model_R1": null
+    }
+  ],
+  "domain_by_dataset": {
+    "COCO test — fixed gallery": {
+      "note": "ID — COCO, odłożony test",
+      "status": "ID"
+    },
+    "COCO val": {
+      "note": "ID — COCO, odłożona walidacja",
+      "status": "ID"
+    },
+    "Lokalny test MSCOCO": {
+      "note": "ID — COCO, odłożony test",
+      "status": "ID"
+    },
+    "VN dev": {
+      "note": "ID — VN",
+      "status": "ID"
+    },
+    "Wiki dev": {
+      "note": "OOD — Wiki",
+      "status": "OOD"
+    },
+    "XTD10 bez znanego overlapu 897": {
+      "note": "ID — obrazy COCO; bez znanego overlapu",
+      "status": "ID-image-source"
+    },
+    "XTD10 pełne 1000": {
+      "note": "ID — obrazy COCO; inne podpisy; 47 powiązanych z train",
+      "status": "ID-image-source"
+    }
+  },
+  "domain_scope": "source exposure during our projector training; frozen-encoder pretraining and competitors not audited",
+  "encoder_parameters": {
+    "metaclip-m16": {
+      "text": 46519808,
+      "total": 85301760,
+      "vision": 38781952
+    },
+    "metaclip-s16": {
+      "text": 27762816,
+      "total": 49722240,
+      "vision": 21959424
+    },
+    "mobileclip2-s2": {
+      "text": 63428096,
+      "total": 99131088,
+      "vision": 35702992
+    },
+    "our_finalist": {
+      "text": 31883136,
+      "total": 70470528,
+      "vision": 38587392
+    }
+  },
+  "model_order": [
+    "our_finalist",
+    "metaclip-s16",
+    "metaclip-m16",
+    "mobileclip2-s2"
+  ],
+  "no_model_or_scoring_reruns": true,
+  "overview": [
+    [
+      "Parametry enkoderów V+T [mln]",
+      "—",
+      "70.47",
+      "49.72",
+      "85.30",
+      "99.13"
+    ],
+    [
+      "Enkoder wizyjny [mln]",
+      "—",
+      "38.59",
+      "21.96",
+      "38.78",
+      "35.70"
+    ],
+    [
+      "Enkoder tekstowy [mln]",
+      "—",
+      "31.88",
+      "27.76",
+      "46.52",
+      "63.43"
+    ],
+    [
+      "Wiki dev R@1 t→i / i→t [%]",
+      "OOD — Wiki",
+      "15.41 / 14.86",
+      "29.31 / 30.98",
+      "33.84 / 32.75",
+      "18.73 / 24.69"
+    ],
+    [
+      "VN dev R@1 t→i / i→t [%]",
+      "ID — VN",
+      "73.94 / 69.15",
+      "56.07 / 60.00",
+      "63.65 / 67.75",
+      "27.31 / 27.20"
+    ],
+    [
+      "XTD10 pełne 1000 R@1 t→i / i→t [%]",
+      "ID — obrazy COCO; inne podpisy; 47 powiązanych z train",
+      "49.30 / 43.60",
+      "38.00 / 39.50",
+      "42.90 / 43.50",
+      "28.90 / 30.80"
+    ],
+    [
+      "XTD10 bez znanego overlapu 897 R@1 t→i / i→t [%]",
+      "ID — obrazy COCO; bez znanego overlapu",
+      "51.39 / 45.37",
+      "39.69 / 41.47",
+      "44.15 / 44.70",
+      "30.66 / 31.77"
+    ],
+    [
+      "Lokalny test MSCOCO P@1 [%]",
+      "ID — COCO, odłożony test",
+      "50.70",
+      "30.00",
+      "34.60",
+      "27.20"
+    ],
+    [
+      "COCO val R@1 t→i / i→t [%]",
+      "ID — COCO, odłożona walidacja",
+      "63.30 / 71.36",
+      "—",
+      "—",
+      "—"
+    ],
+    [
+      "COCO test — fixed gallery R@1 t→i / i→t [%]",
+      "ID — COCO, odłożony test",
+      "50.70 / 79.60",
+      "—",
+      "—",
+      "—"
+    ],
+    [
+      "Wymiar embeddingu",
+      "—",
+      "384",
+      "384",
+      "512",
+      "512"
+    ],
+    [
+      "CPU query [ms]",
+      "—",
+      "14.498",
+      "18.898",
+      "29.589",
+      "33.960"
+    ],
+    [
+      "CPU obraz [ms]",
+      "—",
+      "77.105",
+      "137.686",
+      "212.994",
+      "87.014"
+    ],
+    [
+      "GPU query [ms/element]",
+      "—",
+      "0.277",
+      "0.211",
+      "0.243",
+      "0.233"
+    ],
+    [
+      "GPU obraz [ms/element]",
+      "—",
+      "2.103",
+      "3.632",
+      "3.800",
+      "1.529"
+    ]
+  ],
+  "scope": "text-image retrieval only; no composed image+text queries or grounding",
+  "script_sha256": "538fdc29209fd2c9bd4f5768352d0e31dbb33c2af8afd7611337a6b41d7c6276",
+  "selected_checkpoint": "VN_FULL_seed44",
+  "source_sha256": {
+    "benchmark\\results\\00c474fc45efa29007e4\\result.json": "13a6d1f4fe32778af4727c6492eef792fa01568a11c79078b6c2bfc7e2023429",
+    "benchmark\\results\\2c10e8b01988aaff8057\\result.json": "80599b2027982cd311a4731bc91fdc7b7084c32b56004e2289918fc058230afc",
+    "benchmark\\results\\9d0c9edcf39570392201\\result.json": "70691bfb27e727857121ad61a82198458270844fa415c27613cb76b90e3eac3f",
+    "reports\\series_2026-10-23\\our_new_gallery_comparisons_20261029.json": "2fbf2009027b5cdeb38021850f2676fc22b88f59101a445bc80e6da7ad18fc18",
+    "reports\\series_2026-10-23\\reference_eval_registration_v3_20261029.json": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+    "reports\\series_2026-10-23\\reference_new_gallery_comparisons_20261029.json": "de3433602afa6834c45ca2783653d986073ed22e36e92b838cf0d1db8acad817",
+    "reports\\series_2026-10-23\\vn_full_COCO_val_per_seed.json": "dededb1432801d833b3ea5fd3e2504075bb99638e303a1ccd57608cac230598e",
+    "reports\\series_2026-10-23\\vn_full_seeds_posthoc.json": "c2e87d5113ff966cbe840f940b3dd1043acf2f8078d98ca1679f37fdb7154d88",
+    "reports\\series_2026-10-23\\xtd10_source\\README.md": "7632ce5d99130a684ea65270edb62de2200eb5f6b043837f8d15115b1ee34fe2",
+    "reports\\series_2026-10-23\\xtd10_v2\\preparation.json": "775716fc7cc18480bba00f3db93681eecfd4afd9f9ac863740564eb49dd4d1f0"
+  },
+  "status": "complete"
+}

@@ -1,0 +1,43 @@
+{
+  "docci_input": {
+    "bytes": 11000214,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/docci/descriptions.jsonl",
+    "sha256": "c9df4819963883af35ddd2cf257949892fd8c6d88b33a012094352df60719800",
+    "url": "https://storage.googleapis.com/docci/data/docci_descriptions.jsonlines"
+  },
+  "docci_split_counts": {
+    "qual_dev": 100,
+    "qual_test": 100,
+    "test": 5000,
+    "train": 9647
+  },
+  "docci_test_word_counts": {
+    "max": 518,
+    "min": 28
+  },
+  "no_full_image_archive_downloaded": true,
+  "status": "candidate_metadata_prepared_not_audited",
+  "translations": {
+    "CPU_only_until_A_done": true,
+    "new_manual_annotations": 0,
+    "status": "not_started"
+  },
+  "vizwiz_accepted_captions": 33145,
+  "vizwiz_archive_members": [
+    "annotations/",
+    "annotations/test.json",
+    "annotations/val.json",
+    "annotations/train.json"
+  ],
+  "vizwiz_images_with_accepted_captions": 7542,
+  "vizwiz_input": {
+    "bytes": 4509069,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/vizwiz/annotations.zip",
+    "sha256": "8df5f0799457b530dde3a55c09d6781daf768876669473a0f227c8b4e5dcd24b",
+    "url": "https://vizwiz.cs.colorado.edu/VizWiz_final/caption/annotations.zip"
+  },
+  "vizwiz_precanned": 5167,
+  "vizwiz_rejected": 964,
+  "vizwiz_validation_captions": 38750,
+  "vizwiz_validation_images": 7750
+}

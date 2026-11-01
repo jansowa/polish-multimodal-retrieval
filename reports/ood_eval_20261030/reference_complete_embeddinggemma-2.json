@@ -1,0 +1,30 @@
+{
+  "registration_sha256": "af0b8e476b7ee167a77ebebea0ece7678d9b5a9c27a84c61b27ebf208d812730",
+  "results": [
+    {
+      "bytes": 1407243,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/embeddinggemma-2/flickr30k_pl_local_test/v2_no_instructions.json",
+      "role": "result",
+      "sha256": "7331363934bcae505432e1b6d40bde7219fa5081b485dc096dabdd80d05a7f6b"
+    },
+    {
+      "bytes": 1473392,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/embeddinggemma-2/flickr30k_pl_local_test/author_recommended.json",
+      "role": "result",
+      "sha256": "89d5c738089e0bf2cce02100cd8ba2ce67907b929d9c1741333de82b8930ef51"
+    },
+    {
+      "bytes": 1327114,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/embeddinggemma-2/vizwiz_pl_local_validation/v2_no_instructions.json",
+      "role": "result",
+      "sha256": "4badada6c298a756fb221d7a9395942685bbd2f7a5e1dce3620d4e72bcc65c0f"
+    },
+    {
+      "bytes": 1386575,
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/results/embeddinggemma-2/vizwiz_pl_local_validation/author_recommended.json",
+      "role": "result",
+      "sha256": "ae3e875e1a978ac77e4addbb0b66ea497d098e193d554c10ea06e44ccca371eb"
+    }
+  ],
+  "status": "complete"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "frozen_Wiki_guard_restored_exactly": true,
+  "frozen_Wiki_candidate_rows": 23427,
+  "frozen_Wiki_rejected_rows": 0,
+  "active_catalog": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\retrieval_benchmark\\catalog-current.json",
+  "active_registry": "registry-v4.json",
+  "legacy_registry": "registry-v2.json",
+  "docci_reasoning": false,
+  "docci_concurrency": 16,
+  "verified_new_no_reasoning_rows": 109,
+  "preserved_old_translation_rows": 8,
+  "leaderboard_XM_visible": true
+}

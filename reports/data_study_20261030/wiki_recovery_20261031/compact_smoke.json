@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "ready": 3
+  },
+  "elapsed_seconds": 8.815412169999945,
+  "expected_unique_originals": 24125,
+  "full_frame_master_edge": 1536,
+  "native224_lossless": true,
+  "original_fingerprints_computed_before_resize": true,
+  "source_bytes_downloaded_or_reused": 13254872,
+  "status": "smoke_complete",
+  "stored_asset_bytes": 2148181
+}

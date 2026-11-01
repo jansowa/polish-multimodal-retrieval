@@ -1,0 +1,33 @@
+{
+  "adapter_sha256": "82ec46f210718a13d8ad0a122e21679bf3686db4579ae5f41d5e5b34bfb7416a",
+  "checkpoint_sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+  "image_tolerance": {
+    "max_relative_l2": 0.02,
+    "min_cosine": 0.9999
+  },
+  "models_loaded": "our two frozen encoders only; local files only",
+  "no_retrieval_scores": true,
+  "selected_ids": [
+    "MBeirvisualnews:0:10029",
+    "MBeirvisualnews:0:10045",
+    "MBeirvisualnews:0:10172",
+    "MBeirvisualnews:0:10190",
+    "MBeirvisualnews:0:1029",
+    "MBeirvisualnews:0:10352",
+    "MBeirvisualnews:0:10374",
+    "MBeirvisualnews:0:10386",
+    "MBeirvisualnews:0:10432",
+    "MBeirvisualnews:0:10521",
+    "MBeirvisualnews:0:10569",
+    "MBeirvisualnews:0:10633",
+    "MBeirvisualnews:0:10673",
+    "MBeirvisualnews:0:1068",
+    "MBeirvisualnews:0:10697",
+    "MBeirvisualnews:0:10721"
+  ],
+  "status": "registered_before_numerical_adapter_verification",
+  "text_tolerance": {
+    "max_relative_l2": 0.02,
+    "min_cosine": 0.9999
+  }
+}

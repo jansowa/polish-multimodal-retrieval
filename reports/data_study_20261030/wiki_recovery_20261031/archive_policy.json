@@ -1,0 +1,31 @@
+{
+  "acquisition": "Download verified full original into RAM; compute original SHA1/rawSHA256/pixelSHA256/pHash before resize",
+  "archive": "Whole frame, aspect ratio preserved, no upscale, long edge<=1536, JPEG quality92/subsampling0",
+  "created_at": "2026-10-31T00:14:58.966545+00:00",
+  "current_training": "Separate lossless PNG224 created directly from original using pinned TinyCLIP processor; bit-exact normalized input parity required",
+  "expected_new_storage_GB": "20-25 based on 20-image sample; hard new-task cap remains36GiB",
+  "generation": 2,
+  "minimum_verified_Wiki_images": 1000,
+  "profiling_report": {
+    "bytes": 1009,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/wiki_recovery_20261031/storage_measurement.json",
+    "role": "size_measurement",
+    "sha256": "ee70cd5b9ea39a462d5966f40e26d8951610b917778e7ed11cee9a115bf6813f"
+  },
+  "retained_originals": "Keep all originals already on disk, including 20 smoke downloads; no new bulk raw archive",
+  "smoke_report": {
+    "bytes": 347,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/wiki_recovery_20261031/compact_smoke.json",
+    "role": "preprocessing_smoke",
+    "sha256": "4e8b1eec9917ccd7431afd5c70e9af059c821db0753b3a7a63522a3bda9bbe59"
+  },
+  "stages": [
+    "download_compact",
+    "audit_and_generation2_freeze",
+    "same_R0_R1_R2_R3_training_recipe",
+    "paired_bootstrap_and_report"
+  ],
+  "status": "approved_before_bulk_download",
+  "trained_architectures_unchanged": true,
+  "user_authorization": "No dobra, odpowiada mi Twoja propozycja. Zakolejkuj pracę, bo chcę iść spać."
+}

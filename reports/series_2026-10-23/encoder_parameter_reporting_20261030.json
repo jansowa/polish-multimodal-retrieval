@@ -1,0 +1,163 @@
+{
+  "display_unit": "millions, two decimals",
+  "gemma_audio_disabled": true,
+  "models": {
+    "VN_FULL_seed42": {
+      "text": 31883136,
+      "total": 70470528,
+      "vision": 38587392
+    },
+    "VN_FULL_seed43": {
+      "text": 31883136,
+      "total": 70470528,
+      "vision": 38587392
+    },
+    "VN_FULL_seed44": {
+      "text": 31883136,
+      "total": 70470528,
+      "vision": 38587392
+    },
+    "VN_only": {
+      "text": 31883136,
+      "total": 70470528,
+      "vision": 38587392
+    },
+    "bge-vl-base": {
+      "text": 63428096,
+      "total": 149620736,
+      "vision": 86192640
+    },
+    "clip-b32-pl": {
+      "text": 55898112,
+      "total": 143747328,
+      "vision": 87849216
+    },
+    "clip-b32-pl-32768": {
+      "text": 68481024,
+      "total": 156330240,
+      "vision": 87849216
+    },
+    "embeddinggemma-2": {
+      "text": 271002624,
+      "total": 438760448,
+      "vision": 167757824
+    },
+    "fashion-siglip": {
+      "text": 110271744,
+      "total": 203155968,
+      "vision": 92884224
+    },
+    "historical_A1": {
+      "text": 31883136,
+      "total": 70470528,
+      "vision": 38587392
+    },
+    "mclip-b16plus": {
+      "text": 560546432,
+      "total": 677760256,
+      "vision": 117213824
+    },
+    "metaclip-m16": {
+      "text": 46519808,
+      "total": 85301760,
+      "vision": 38781952
+    },
+    "metaclip-s16": {
+      "text": 27762816,
+      "total": 49722240,
+      "vision": 21959424
+    },
+    "mobileclip2-s2": {
+      "text": 63428096,
+      "total": 99131088,
+      "vision": 35702992
+    },
+    "our_finalist": {
+      "text": 31883136,
+      "total": 70470528,
+      "vision": 38587392
+    },
+    "pe-core-b16": {
+      "text": 353986560,
+      "total": 447659520,
+      "vision": 93672960
+    },
+    "siglip-i18n-256": {
+      "text": 277695744,
+      "total": 370626048,
+      "vision": 92930304
+    },
+    "siglip2-b32-256": {
+      "text": 282303744,
+      "total": 376856064,
+      "vision": 94552320
+    },
+    "siglip2-base": {
+      "text": 282303744,
+      "total": 375823872,
+      "vision": 93520128
+    },
+    "siglip2-base-256": {
+      "text": 282303744,
+      "total": 375234048,
+      "vision": 92930304
+    },
+    "siglip2-base-384": {
+      "text": 282303744,
+      "total": 375479808,
+      "vision": 93176064
+    },
+    "siglip2-naflex": {
+      "text": 282303744,
+      "total": 375234048,
+      "vision": 92930304
+    },
+    "siglip2-pl": {
+      "text": 98278656,
+      "total": 191798784,
+      "vision": 93520128
+    },
+    "siglip2-pl-32768": {
+      "text": 110861568,
+      "total": 204381696,
+      "vision": 93520128
+    },
+    "tipsv2-b14": {
+      "text": 109632000,
+      "total": 195948288,
+      "vision": 86316288
+    },
+    "tipsv2-l14": {
+      "text": 183924736,
+      "total": 487941120,
+      "vision": 304016384
+    }
+  },
+  "our_standalone_projector": 196992,
+  "source_comparison_sha256": "de3433602afa6834c45ca2783653d986073ed22e36e92b838cf0d1db8acad817",
+  "status": "complete",
+  "total_definition": "distinct vision plus text encoder parameters; other modalities and standalone projector excluded",
+  "unit": "parameters",
+  "validation": {
+    "reports\\benchmark_twenty_models.md": {
+      "nonparameter_cells_unchanged": true,
+      "rows": 20,
+      "tables": 1
+    },
+    "reports\\series_2026-10-23\\OUR_NEW_GALLERIES_20261029.md": {
+      "nonparameter_cells_unchanged": true,
+      "rows": 28,
+      "tables": 8
+    },
+    "reports\\series_2026-10-23\\REFERENCE_COMPARISON_20261029.md": {
+      "nonparameter_cells_unchanged": true,
+      "rows": 253,
+      "tables": 25
+    },
+    "reports\\series_2026-10-23\\REPORT.md": {
+      "nonparameter_cells_unchanged": true,
+      "rows": 32,
+      "tables": 5
+    }
+  }
+}

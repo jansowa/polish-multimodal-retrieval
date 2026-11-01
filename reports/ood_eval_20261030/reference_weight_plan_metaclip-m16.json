@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "bytes": 341254292,
+      "preexisting": false,
+      "sha256": "14717af8cae775c08bac84bb018d5cba11966d3a0b2a8e65d24d5baec210b31d",
+      "snapshot_path": "/home/jsowa/.cache/huggingface/hub/models--alphaedge-ai--metaclip-2-worldwide-m16-384-pol-16384/snapshots/bc15d9f5ddabe0497898578493a6e81288057c90/model.safetensors"
+    }
+  ],
+  "model": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384",
+  "revision": "bc15d9f5ddabe0497898578493a6e81288057c90"
+}

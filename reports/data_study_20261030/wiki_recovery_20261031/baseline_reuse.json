@@ -1,0 +1,16 @@
+{
+  "R0_seeds": [
+    42,
+    43,
+    44
+  ],
+  "R1_seeds": [
+    42,
+    43,
+    44
+  ],
+  "explanation": "Only Wiki pool changed; R0/R1 rows, captions, native/text features, precision and samplers unchanged.",
+  "fixed_VN_manifest_sha256": "0d74a296f337a794be8215f3d81afec57bad287712991f2f826fd080e520b8af",
+  "reload_metrics_and_loss_exact": true,
+  "status": "passed"
+}

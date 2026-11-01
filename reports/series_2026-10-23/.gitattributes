@@ -1,0 +1,2 @@
+# SHA256 manifests describe exact bytes, including upstream CRLF and absent EOF LF.
+** -text

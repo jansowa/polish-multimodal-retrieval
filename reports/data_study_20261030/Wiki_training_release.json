@@ -1,0 +1,43 @@
+{
+  "authorization": "User 2026-10-30: execute session A; Wiki pilot authorized only after data audit, guard and baseline gates.",
+  "dev": {
+    "bytes": 2513919,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/wiki_v2/wiki_dev.jsonl",
+    "role": "Wiki_dev",
+    "sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3"
+  },
+  "guard": {
+    "bytes": 995016,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/wiki_dev_guard_enforcement.json",
+    "role": "Wiki_guard",
+    "sha256": "d78134be53009dda30936407a6dd758294713896f5c4e98432f57621a8221bbe"
+  },
+  "historical_raise_unchanged": true,
+  "loader": {
+    "bytes": 25381,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/run.py",
+    "role": "new_verified_loader",
+    "sha256": "93468b5454797a824c29e9bab3b8d9558f55fd484a3d21737ab94e81523ed5df"
+  },
+  "pre_wiki_baseline": {
+    "bytes": 189873,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/wiki_dev_zero_shot_pre_wiki_training.json",
+    "role": "pre_Wiki_baseline",
+    "sha256": "f1d48b3e2533938d0f071e71d8e721a1ad23103f8e2d432f44791471b713de3f"
+  },
+  "status": "approved",
+  "tests": {
+    "bytes": 216,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/release_guard_tests.json",
+    "role": "release_tests",
+    "sha256": "537c1b1b25c49f83ea18abde73270d0cd3f7093cb29e740d689ed7c764f7522d"
+  },
+  "train": {
+    "bytes": 169888,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/Wiki_train.jsonl",
+    "role": "Wiki_train",
+    "sha256": "b7d872f9f525327b336fc9aa39e1b42ea6ab573665cee277562b301a1b22c015"
+  },
+  "universe_sha256": "b1324298ab7e5a934a3f291aac1bf85f528d643724533995d30af47e3928899d",
+  "user_approved": true
+}

@@ -1,0 +1,43 @@
+{
+  "authorization": "User: koniecznie je pobierz; priority; queue download originals then repeat training experiments overnight; C has 51GB.",
+  "dev": {
+    "bytes": 2513919,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/wiki_v2/wiki_dev.jsonl",
+    "role": "Wiki_dev",
+    "sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3"
+  },
+  "guard": {
+    "bytes": 995016,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/wiki_dev_guard_enforcement.json",
+    "role": "Wiki_guard",
+    "sha256": "d78134be53009dda30936407a6dd758294713896f5c4e98432f57621a8221bbe"
+  },
+  "historical_raise_unchanged": true,
+  "loader": {
+    "bytes": 29431,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/experiments/data_study_20261030/run.py",
+    "role": "new_verified_loader",
+    "sha256": "38bfd0a8a35c0baca04eab3de8f0453aa389f2d2fd09c34284fc43c0b3930b85"
+  },
+  "pre_wiki_baseline": {
+    "bytes": 189873,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/series_2026-10-23/wiki_dev_zero_shot_pre_wiki_training.json",
+    "role": "pre_Wiki_baseline",
+    "sha256": "f1d48b3e2533938d0f071e71d8e721a1ad23103f8e2d432f44791471b713de3f"
+  },
+  "status": "approved",
+  "tests": {
+    "bytes": 218,
+    "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/wiki_recovery_20261031/release_guard_tests_38bfd0a8a35c.json",
+    "role": "release_tests",
+    "sha256": "6899006f77ecab6cdca36b7adbf147f3cd4b26e3ca15ee01cec8993cdd917408"
+  },
+  "train": {
+    "bytes": 27873864,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/Wiki_train.jsonl",
+    "role": "Wiki_train",
+    "sha256": "9445011bc5e6fbee4d279bf5e54251f9df19f8a16f5cbd5d7cfedefafc42c1a7"
+  },
+  "universe_sha256": "8b33fe33082f3a99a1c88aa40f6a5d34f4b12a15b73adf72ea6a8db190e15457",
+  "user_approved": true
+}

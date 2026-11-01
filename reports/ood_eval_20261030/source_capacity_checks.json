@@ -1,0 +1,42 @@
+{
+  "sources": [
+    {
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Content-Length": "7592938768",
+        "Content-Type": "application/octet-stream",
+        "ETag": "\"57493de5075fe508d51e77500748f4da\"",
+        "Last-Modified": "Sat, 27 Apr 2024 20:24:16 GMT"
+      },
+      "status": 200,
+      "url": "https://storage.googleapis.com/docci/data/docci_images.tar.gz"
+    },
+    {
+      "error": "HTTP Error 404: Not Found",
+      "url": "https://storage.googleapis.com/docci/images/test_00000.jpg"
+    },
+    {
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Content-Length": "3488913457",
+        "Content-Type": "application/zip",
+        "ETag": "\"cff49831-59b08b3044b40\"",
+        "Last-Modified": "Tue, 31 Dec 2019 23:55:49 GMT"
+      },
+      "status": 200,
+      "url": "https://vizwiz.cs.colorado.edu/VizWiz_final/images/val.zip"
+    },
+    {
+      "headers": {
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4509069",
+        "Content-Type": "application/zip",
+        "ETag": "\"44cd8d-5a36a587cfb80\"",
+        "Last-Modified": "Thu, 16 Apr 2020 15:47:10 GMT"
+      },
+      "status": 200,
+      "url": "https://vizwiz.cs.colorado.edu/VizWiz_final/caption/annotations.zip"
+    }
+  ],
+  "workers": 2
+}

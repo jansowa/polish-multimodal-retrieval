@@ -1,0 +1,28 @@
+{
+  "GPU_workers": 1,
+  "author_mode_note": "Our [query]: prefix is intrinsic and identical in both modes; reuse identical features",
+  "automatic_deletion": false,
+  "datasets": [
+    "wiki_native_dev",
+    "xtd10_full_1k",
+    "xtd10_no_overlap",
+    "VN_dev"
+  ],
+  "models": [
+    "VN_FULL_seed42",
+    "VN_FULL_seed43",
+    "VN_FULL_seed44",
+    "VN_only",
+    "historical_A1"
+  ],
+  "modes": [
+    "v2_no_instructions",
+    "author_recommended"
+  ],
+  "no_XM3600": true,
+  "no_training": true,
+  "output": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/evaluation",
+  "registration_sha256": "037cb7e9931f0a7a0a4d490cb859ec180f07957203d5480b48f787d25d50c55e",
+  "runner_sha256": "5e154e8f861995eff590361b352fc6d2d63c833ceb1404e27c9460022123b132",
+  "status": "registered_before_first_new_gallery_score"
+}

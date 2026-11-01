@@ -1,0 +1,181 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1484493,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/wiki_recovery_20261031/training_report.json",
+      "role": "training_report",
+      "sha256": "6342f14642a8b103eea328e3d242a22d7f95b50b0eb5b03a07e25fc4f3a6ca06"
+    },
+    {
+      "bytes": 531,
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/data_study_20261030/wiki_recovery_20261031/selection_decision.json",
+      "role": "selection_decision",
+      "sha256": "5923515f59f274c7fa60d5dcdc4a202974a9a579728c38dc55971d5ae9ff70db"
+    }
+  ],
+  "authorization_sha256": "3ce82831ab7d1ee31b0267d488d4395db4525dd62b4a334a5d6b8119a6d6d15d",
+  "contract_sha256": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+  "final_OOD_model_ids": [
+    "R0_seed44",
+    "R1_seed44",
+    "R3_seed43"
+  ],
+  "generation": 2,
+  "models": [
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R0_seed42",
+      "path": "D:/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-source-ablation-v1/VN_FULL/best.pt",
+      "representative": false,
+      "seed": 42,
+      "sha256": "75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/manifests/R0_train.jsonl",
+      "training_manifest_sha256": "07bca202852f666046a24bd904568d201816a31dca0b75f08492b5c6c949eb15",
+      "variant": "R0"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R0_seed43",
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-43/VN_FULL/best.pt",
+      "representative": false,
+      "seed": 43,
+      "sha256": "626127451432301b1127478a3b47f2394139753c9e3f2bdb52570a44b8273776",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/manifests/R0_train.jsonl",
+      "training_manifest_sha256": "07bca202852f666046a24bd904568d201816a31dca0b75f08492b5c6c949eb15",
+      "variant": "R0"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R0_seed44",
+      "path": "C:/Users/jsowa/benchmark-translations/series-2026-10-23/runs/vn_full_seeds/seed-44/VN_FULL/best.pt",
+      "representative": true,
+      "seed": 44,
+      "sha256": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/manifests/R0_train.jsonl",
+      "training_manifest_sha256": "07bca202852f666046a24bd904568d201816a31dca0b75f08492b5c6c949eb15",
+      "variant": "R0"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R1_seed42",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-42/best.pt",
+      "representative": false,
+      "seed": 42,
+      "sha256": "d45ce719846c060bfa489c8fa89a9caef8ee8275ffbd2c1d75f059c85491d622",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/manifests/R1_train.jsonl",
+      "training_manifest_sha256": "f13605a853a6c6236a25c969601224a6100fa70274ad65f648cce174459545f5",
+      "variant": "R1"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R1_seed43",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-43/best.pt",
+      "representative": false,
+      "seed": 43,
+      "sha256": "ab6e24c0887777da50baca820f5a10d66bf12dd398c10f83e37d656e3620ad02",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/manifests/R1_train.jsonl",
+      "training_manifest_sha256": "f13605a853a6c6236a25c969601224a6100fa70274ad65f648cce174459545f5",
+      "variant": "R1"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R1_seed44",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/runs/R1/seed-44/best.pt",
+      "representative": true,
+      "seed": 44,
+      "sha256": "6437c7234d01a88c2895399e7a3b7e1577843f6507fe79cb8b04356ac2e1dbd9",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": false,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/manifests/R1_train.jsonl",
+      "training_manifest_sha256": "f13605a853a6c6236a25c969601224a6100fa70274ad65f648cce174459545f5",
+      "variant": "R1"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R3_seed42",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/runs/R3/seed-42/best.pt",
+      "representative": false,
+      "seed": 42,
+      "sha256": "2ece94f56c2d8c89a1aa144b95905af868d92533b5b04a42a2e0e9aa983f7b85",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": true,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/manifests/R3_train.jsonl",
+      "training_manifest_sha256": "b3a8f6eb728e1167e723b83e1c7f7874dbe6eb3f3bcda1d16dc1cd942a32a91b",
+      "variant": "R3"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R3_seed43",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/runs/R3/seed-43/best.pt",
+      "representative": true,
+      "seed": 43,
+      "sha256": "094122a574d8f2322b1434bb0eb0a5d539b510c36b5cfc74c2eb140c0e1f7636",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": true,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/manifests/R3_train.jsonl",
+      "training_manifest_sha256": "b3a8f6eb728e1167e723b83e1c7f7874dbe6eb3f3bcda1d16dc1cd942a32a91b",
+      "variant": "R3"
+    },
+    {
+      "encoder_revisions": {
+        "text": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+        "vision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444"
+      },
+      "id": "R3_seed44",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/runs/R3/seed-44/best.pt",
+      "representative": false,
+      "seed": 44,
+      "sha256": "311676e6c41b07c4eb32a516511b5e2728b7571a91e31b7119d6a79d98301769",
+      "text_prefix": "[query]: ",
+      "trained_on_Wiki": true,
+      "training_manifest_path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/manifests/R3_train.jsonl",
+      "training_manifest_sha256": "b3a8f6eb728e1167e723b83e1c7f7874dbe6eb3f3bcda1d16dc1cd942a32a91b",
+      "variant": "R3"
+    }
+  ],
+  "owner": "A",
+  "phase": "A_FINALISTS_FROZEN",
+  "representative_model_ids": [
+    "R0_seed44",
+    "R1_seed44",
+    "R3_seed43"
+  ],
+  "requires_generation_2_B_overlap_audit": true,
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "data-ood-20261031-wiki-recovery"
+}

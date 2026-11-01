@@ -1,0 +1,32 @@
+{
+  "candidate_rows": 23427,
+  "guard_sha256": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3",
+  "manifests": {
+    "Wiki_train.jsonl": "9445011bc5e6fbee4d279bf5e54251f9df19f8a16f5cbd5d7cfedefafc42c1a7",
+    "new_VN_train.jsonl": "0d74a296f337a794be8215f3d81afec57bad287712991f2f826fd080e520b8af"
+  },
+  "protected_rows": {
+    "holdout:VN_dev": 2003,
+    "holdout:VN_original_dev": 2003,
+    "holdout:Wiki_entire_reserved_components": 7956,
+    "holdout:Wiki_original_pilot_dev": 201,
+    "holdout:XM3600_FINAL_BLIND": 24964,
+    "holdout:flickr30k_pl_local_test": 4760,
+    "holdout:historical_eval_reservation": 30721,
+    "holdout:retention_validation": 7695,
+    "holdout:validation_negative_captions": 5602,
+    "holdout:vizwiz_pl_local_validation": 4329,
+    "holdout:wiki_native_dev": 397,
+    "holdout:xtd10_full_1k": 1000,
+    "holdout:xtd10_no_overlap": 897
+  },
+  "registry_sha256": "954934abb198f79c712d4f51ae68a948a413fd9fd3b56fbda0648abb01a478c5",
+  "rejected_ids": [],
+  "rejected_rows": 0,
+  "rejection_labels": {},
+  "schema": 1,
+  "scope": "New admissions only; historical base exposure is not retroactively repaired",
+  "status": "passed",
+  "unverified_ids": [],
+  "unverified_rows": 0
+}

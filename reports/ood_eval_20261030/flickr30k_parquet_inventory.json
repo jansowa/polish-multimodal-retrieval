@@ -1,0 +1,27 @@
+{
+  "aligned_caption_lengths": true,
+  "captions_en": 5000,
+  "captions_pl": 5000,
+  "columns": [
+    "image",
+    "captions_en",
+    "captions_pl",
+    "captions_de",
+    "captions_es",
+    "captions_fr"
+  ],
+  "embedded_image_bytes": 141687406,
+  "image_paths_sample": [
+    "1007129816.jpg",
+    "1009434119.jpg",
+    "101362133.jpg",
+    "102617084.jpg",
+    "10287332.jpg"
+  ],
+  "official_flickr30k1k_claim": false,
+  "original_image_paths_present": 1000,
+  "repack_split": "test",
+  "rows": 1000,
+  "schema": "<pyarrow._parquet.ParquetSchema object at 0x72f6e4086a00>\nrequired group field_id=-1 schema {\n  optional group field_id=-1 image {\n    optional binary field_id=-1 bytes;\n    optional binary field_id=-1 path (String);\n  }\n  optional group field_id=-1 captions_en (List) {\n    repeated group field_id=-1 list {\n      optional binary field_id=-1 element (String);\n    }\n  }\n  optional group field_id=-1 captions_pl (List) {\n    repeated group field_id=-1 list {\n      optional binary field_id=-1 element (String);\n    }\n  }\n  optional group field_id=-1 captions_de (List) {\n    repeated group field_id=-1 list {\n      optional binary field_id=-1 element (String);\n    }\n  }\n  optional group field_id=-1 captions_es (List) {\n    repeated group field_id=-1 list {\n      optional binary field_id=-1 element (String);\n    }\n  }\n  optional group field_id=-1 captions_fr (List) {\n    repeated group field_id=-1 list {\n      optional binary field_id=-1 element (String);\n    }\n  }\n}\n",
+  "status": "candidate_only"
+}

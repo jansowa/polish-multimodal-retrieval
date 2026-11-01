@@ -1,0 +1,47 @@
+{
+  "inputs": {
+    "bge-vl-base": {
+      "image_cache": "/home/jsowa/.cache/huggingface/pl_mmb_benchmark/embeddings/95c8f0d057c592258ee8fd3dd62d0d996088b414d4ef3c6d415f9f23470c8729.pt",
+      "image_cache_sha256": "c6412db6aeaedb53dc2543b2662424cca1c012a585310c96cd9842f720b11af5",
+      "predictions_path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/benchmark/results/70f2aac92a4aab1915da/predictions.jsonl",
+      "result_path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/benchmark/results/70f2aac92a4aab1915da/result.json",
+      "result_sha256": "eeaba0e745476e6411591440cd4b0be5ee43e30526709384d258d7f5faab07d1",
+      "text_cache": "/home/jsowa/.cache/huggingface/pl_mmb_benchmark/embeddings/0519d9bedbc79454d679c66be7c9261ff1347209b64fd3dedf4b97d11bedbf74.pt",
+      "text_cache_sha256": "6e362b65e8eb6ecc6ab08af9768e143d0f6f62eacb7c8d63a45303988a5764dd"
+    },
+    "siglip2-base-256": {
+      "image_cache": "/home/jsowa/.cache/huggingface/pl_mmb_benchmark/embeddings/9f0c088107c3cce36d8afa8317a2b3003dd77b55fa51e01cfa39869d5f3732b5.pt",
+      "image_cache_sha256": "633a21c6ab85e080d04ce006d3acc816e91f2a08136e1a32969368896c68f74a",
+      "predictions_path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/benchmark/results/e65113a0d1a0e21df774/predictions.jsonl",
+      "result_path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/benchmark/results/e65113a0d1a0e21df774/result.json",
+      "result_sha256": "6ed68a9f36e41f943d1e3c8ae1b67f6615b41d5eb0c8f8002448faeea1a12e24",
+      "text_cache": "/home/jsowa/.cache/huggingface/pl_mmb_benchmark/embeddings/aeed0acc358bf958e11388589884c6ca540ab89af9124e4da130b61863080bc9.pt",
+      "text_cache_sha256": "bfdd102805bb7f5b7975a05af2591db9fd720c3a18d3115832f6e67c280bd5e6"
+    },
+    "tipsv2-b14": {
+      "image_cache": "/home/jsowa/.cache/huggingface/pl_mmb_benchmark/embeddings/80d8c2476b0371c0a368e0ac71a05dc6016001f4dfb3bd89e1bf91366c281443.pt",
+      "image_cache_sha256": "1cdbef4d92fce2c37ceb5f3a002164bb31ef72fa83705927ea8384bad7d48281",
+      "predictions_path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/benchmark/results/fd87e127edea34f13b94/predictions.jsonl",
+      "result_path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/benchmark/results/fd87e127edea34f13b94/result.json",
+      "result_sha256": "6c2f18320a4de9e4817350675ab8b8d19c3f32bdad07ee0e8e009bfd8928eb0d",
+      "text_cache": "/home/jsowa/.cache/huggingface/pl_mmb_benchmark/embeddings/083d9750fab6e635b26907a8f7b0d2408a820291bb68ecfef2b79d1a7b391238.pt",
+      "text_cache_sha256": "08a098385f8dd2c2dfb3a15949ddba8c59517245f01df9744b251eb9597c688f"
+    }
+  },
+  "model_list_unchanged": true,
+  "models": [
+    "siglip2-base-256",
+    "tipsv2-b14",
+    "bge-vl-base"
+  ],
+  "on_rank_mismatch": "stop series",
+  "reason": "Initial historical MetaCLIP/CLIP runs predate raw embedding cache persistence. Select three available caches before any new-dataset model scores.",
+  "script_sha256": "5afea1874782d78e1cb738d7f253ca75f767dff6db36a5c61052ca28bb59b2f2",
+  "status": "registered_before_cache_rank_reproduction",
+  "supersedes_initial_parity_models": [
+    "siglip2-base-256",
+    "metaclip-s16",
+    "clip-b32-pl"
+  ],
+  "translations_sha256": "652c0d8d62371d7e6965a2e9ca5368db167428c4af6531fa9930271c7331167d"
+}

@@ -1,0 +1,18 @@
+{
+  "authorization": "User asked to resume work including preparation of the larger corpus on 2026-10-29",
+  "automatic_deletion": false,
+  "image_hash_phash_lineage_and_license_audits_still_required": true,
+  "no_live_SQLite": true,
+  "no_new_Wiki_training_release": true,
+  "no_training": true,
+  "old_FULL_CLEAN_unchanged": true,
+  "old_VN_snapshot_unchanged": true,
+  "output": "/mnt/c/Users/jsowa/benchmark-translations/series-2026-10-23/expanded-inputs-20261029",
+  "scope": "freeze exports and metadata-only component audit",
+  "script_sha256": "02a1f81e053b8ca4070f0e5b1e6fe4037c16fbd118c78c956da6903aeaaf0393",
+  "source_exports": {
+    "visualnews": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/visualnews_pipeline/v1/final_pairs.jsonl",
+    "wikimedia": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/wikimedia_pipeline/v1/final_pairs.jsonl"
+  },
+  "status": "registered_before_new_corpus_preparation"
+}

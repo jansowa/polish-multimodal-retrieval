@@ -1,0 +1,17 @@
+{
+  "accepted_images": 952,
+  "artifact": {
+    "bytes": 1462098,
+    "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/flickr30k/translation_qa.json",
+    "role": "Flickr_ready_MT_QA",
+    "sha256": "d7384d8f96737e21fa36697bdbb5f5f14e459f636fa562ea01f77fed6db904e0"
+  },
+  "caption_flags": {
+    "digits_changed": 20,
+    "language_uncertain": 6,
+    "negation_changed": 28
+  },
+  "decision_sha256": "790a2a03a013d43cb806d1eb63ae939cdbba5c1ab7af082e5c3cd6a2e64afc73",
+  "images": 1000,
+  "status": "automatic_QA_complete"
+}

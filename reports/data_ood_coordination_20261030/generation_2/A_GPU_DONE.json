@@ -1,0 +1,13 @@
+{
+  "A_FINALISTS_FROZEN_sha256": "de7bc10e000909fd536ab5424dc8edbd61b955780e2a66a8891e0889d844e05a",
+  "artifacts": [],
+  "authorization_sha256": "3ce82831ab7d1ee31b0267d488d4395db4525dd62b4a334a5d6b8119a6d6d15d",
+  "contract_sha256": "dbe2bbe4b75dc380ff5e4b540f2fa8df7b7386a1fe40b31e2d41360fdd73ea2a",
+  "further_A_cuda_planned": false,
+  "generation": 2,
+  "owner": "A",
+  "phase": "A_GPU_DONE",
+  "schema_version": 1,
+  "status": "complete",
+  "study_id": "data-ood-20261031-wiki-recovery"
+}
