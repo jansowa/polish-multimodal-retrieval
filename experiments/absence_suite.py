@@ -44,7 +44,16 @@ def save(path, obj):
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(".tmp")
     tmp.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    tmp.replace(path)
+    # Windows readers (including the monitor) can briefly block rename on /mnt/.
+    # Keep the previous complete snapshot until the replacement succeeds.
+    for attempt in range(8):
+        try:
+            tmp.replace(path)
+            return
+        except PermissionError:
+            if attempt == 7:
+                raise
+            time.sleep(min(0.05 * 2**attempt, 0.5))
 
 
 def digest(path):

@@ -18,6 +18,37 @@ spec.loader.exec_module(suite)
 
 
 class SuiteTests(unittest.TestCase):
+    def test_status_save_retries_temporary_windows_file_lock(self):
+        with TemporaryDirectory() as tmp:
+            target = Path(tmp) / "state.json"
+            target.write_text('{"stage":"old"}', encoding="utf-8")
+            original_replace = Path.replace
+            attempts = []
+
+            def replace_after_unlock(source, destination):
+                attempts.append(destination)
+                if len(attempts) < 3:
+                    self.assertEqual(json.loads(target.read_text())["stage"], "old")
+                    raise PermissionError("Windows reader holds the status file")
+                return original_replace(source, destination)
+
+            with patch.object(Path, "replace", new=replace_after_unlock), patch.object(suite.time, "sleep") as sleep:
+                suite.save(target, {"stage": "translating"})
+            self.assertEqual(len(attempts), 3)
+            self.assertEqual(sleep.call_count, 2)
+            self.assertEqual(json.loads(target.read_text())["stage"], "translating")
+
+    def test_status_save_does_not_hide_permanent_write_errors(self):
+        with TemporaryDirectory() as tmp:
+            target = Path(tmp) / "state.json"
+            target.write_text('{"stage":"old"}', encoding="utf-8")
+            with patch.object(Path, "replace", side_effect=PermissionError("denied")) as replace, \
+                    patch.object(suite.time, "sleep"):
+                with self.assertRaises(PermissionError):
+                    suite.save(target, {"stage": "translating"})
+            self.assertEqual(replace.call_count, 8)
+            self.assertEqual(json.loads(target.read_text())["stage"], "old")
+
     def make_job(self, root, key="example"):
         source = root / f"{key}.jsonl"
         source.write_text("".join(json.dumps({"id": uid, "texts": {"a": "dog", "b": "cat"},
