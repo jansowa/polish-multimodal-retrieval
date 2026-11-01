@@ -34069,6 +34069,318 @@
           "truncation_fraction": 0.001546899170299536
         }
       }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7727474368885029,
+          "ndcg@10": 0.7282001965444804,
+          "recall@1": 0.6755629691409508,
+          "recall@10": 0.9466221851542952,
+          "recall@5": 0.9007506255212677
+        },
+        "t2i": {
+          "mrr": 0.7039773692759386,
+          "ndcg@10": 0.7472571443813197,
+          "recall@1": 0.6001968780762199,
+          "recall@10": 0.8974827731683308,
+          "recall@5": 0.83335677119955
+        }
+      },
+      "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "0da1b5a3ade917f634f4e1fd097bcb6705d4e7f357d842e952301766578de65b",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 512,
+          "maximum": 68,
+          "mean": 18.76402756293067,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 512,
+          "maximum": 68,
+          "mean": 18.76402756293067,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6102308463797829,
+          "ndcg@10": 0.46485355660807254,
+          "recall@1": 0.513,
+          "recall@10": 0.813,
+          "recall@5": 0.723
+        },
+        "t2i": {
+          "mrr": 0.5349280904783846,
+          "ndcg@10": 0.58062498084701,
+          "recall@1": 0.4199907235621521,
+          "recall@10": 0.7527829313543599,
+          "recall@5": 0.6688311688311688
+        }
+      },
+      "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "498a9fd8aac1945aa0eb181dacc88a7041222904d3703a27f18f427aa82219d2",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "document": {
+          "context_limit": 512,
+          "maximum": 223,
+          "mean": 19.47101113172542,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 512,
+          "maximum": 223,
+          "mean": 19.47101113172542,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6102308463797829,
+          "ndcg@10": 0.46485355660807254,
+          "recall@1": 0.513,
+          "recall@10": 0.813,
+          "recall@5": 0.723
+        },
+        "t2i": {
+          "mrr": 0.5349280904783846,
+          "ndcg@10": 0.58062498084701,
+          "recall@1": 0.4199907235621521,
+          "recall@10": 0.7527829313543599,
+          "recall@5": 0.6688311688311688
+        }
+      },
+      "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "68c731dca2a681650f4efc64e00b689e75d75305f1fb162bf38978f0cfc328d8",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "document": {
+          "context_limit": 512,
+          "maximum": 223,
+          "mean": 19.47101113172542,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 512,
+          "maximum": 223,
+          "mean": 19.47101113172542,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.8929671597909068,
+          "ndcg@10": 0.7704074190054659,
+          "recall@1": 0.8382352941176471,
+          "recall@10": 0.9821428571428571,
+          "recall@5": 0.9653361344537815
+        },
+        "t2i": {
+          "mrr": 0.7616814619289157,
+          "ndcg@10": 0.8006623789365647,
+          "recall@1": 0.6635061104087653,
+          "recall@10": 0.9310998735777497,
+          "recall@5": 0.8847450484618626
+        }
+      },
+      "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "10890fb822b9b86bb26e4f57341b8e204cef063b32117aece3e1a91ea0d6d4cd",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "document": {
+          "context_limit": 512,
+          "maximum": 64,
+          "mean": 20.8141592920354,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 512,
+          "maximum": 64,
+          "mean": 20.8141592920354,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.8929671597909068,
+          "ndcg@10": 0.7704074190054659,
+          "recall@1": 0.8382352941176471,
+          "recall@10": 0.9821428571428571,
+          "recall@5": 0.9653361344537815
+        },
+        "t2i": {
+          "mrr": 0.7616814619289157,
+          "ndcg@10": 0.8006623789365647,
+          "recall@1": 0.6635061104087653,
+          "recall@10": 0.9310998735777497,
+          "recall@5": 0.8847450484618626
+        }
+      },
+      "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "e523ba1a9a567a898db140e72a81c1ac2b3cce6b000564d95d4c06ea56c76f40",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "document": {
+          "context_limit": 512,
+          "maximum": 64,
+          "mean": 20.8141592920354,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 512,
+          "maximum": 64,
+          "mean": 20.8141592920354,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7727474368885029,
+          "ndcg@10": 0.7282001965444804,
+          "recall@1": 0.6755629691409508,
+          "recall@10": 0.9466221851542952,
+          "recall@5": 0.9007506255212677
+        },
+        "t2i": {
+          "mrr": 0.7039773692759386,
+          "ndcg@10": 0.7472571443813197,
+          "recall@1": 0.6001968780762199,
+          "recall@10": 0.8974827731683308,
+          "recall@5": 0.83335677119955
+        }
+      },
+      "model_id": "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "d751cb72cbe903bdc6bb567af090a42803a78f1b8658eb16e44a7fb9aed13502",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 512,
+          "maximum": 68,
+          "mean": 18.76402756293067,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        },
+        "query": {
+          "context_limit": 512,
+          "maximum": 68,
+          "mean": 18.76402756293067,
+          "prefix": "",
+          "truncation_fraction": 0.0
+        }
+      }
     }
   ],
   "schema_version": 1,
