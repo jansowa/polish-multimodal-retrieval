@@ -1,0 +1,39 @@
+{
+  "protocol": "xm3600-pl-clean-subset-full-gallery-v1",
+  "role": "FINAL_BLIND",
+  "original_images": 3600,
+  "images": 3597,
+  "captions": 7133,
+  "unique_texts": 7111,
+  "assets": {
+    "captions": {
+      "url": "https://google.github.io/crossmodal-3600/web-data/captions.zip",
+      "path": "/home/jsowa/.cache/huggingface/pl_mmb_training/xm3600/captions.zip",
+      "sha256": "7964f969d39319a96769499b199042015754f8d5607b6aad2d1c2c2e55f5e562",
+      "bytes": 16778794
+    },
+    "images": {
+      "url": "https://open-images-dataset.s3.amazonaws.com/crossmodal-3600/images.tgz",
+      "path": "/home/jsowa/.cache/huggingface/pl_mmb_training/xm3600/images.tgz",
+      "sha256": "ba57c58d7f7a35d95315157b609ca280d55ba10a107026f67d2e98371e221188",
+      "bytes": 316290330
+    },
+    "attributions": {
+      "url": "https://google.github.io/crossmodal-3600/web-data/image_attributions.csv",
+      "path": "/home/jsowa/.cache/huggingface/pl_mmb_training/xm3600/image_attributions.csv",
+      "sha256": "288de413d25e9c70dadfd42ee59256aa1082673e615d0eda02c3875fe2b36ecd",
+      "bytes": 1301946
+    }
+  },
+  "pairs_sha256": "c8324dedda7bef4b673bb99aeca52e17a286bab2bc3ca16da406f6c342c8767c",
+  "blacklist_sha256": "8779589042cc6a4b344740a62060983c7c7b6ab6162c53608ab582f03da7634b",
+  "source": "https://google.github.io/crossmodal-3600/",
+  "annotations_license": "CC BY 4.0; individual image attribution/license is preserved separately",
+  "lineage": "Open Images / known Flickr source IDs; no COCO-specific source pool",
+  "excluded_known_overlap_or_coco_images": 3,
+  "known_overlap_count": 0,
+  "scores_computed": false,
+  "vg_mapping_sha256": "170fa6ddc50dd265049efe8bbc94523228297552a35437dc65ed0f1c89035267",
+  "exclusion_policy": "Entire images with exact hash/source matches to frozen train/val/legacy eval, or Flickr-to-COCO mapping, are excluded. This is a documented subset, not the unchanged official 3600-image gallery.",
+  "note": "Do not add this dataset to per-run evaluation or select hyperparameters on it. Future ingestion must merge its blacklist with the existing guard."
+}

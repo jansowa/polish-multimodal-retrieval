@@ -1,29 +1,32 @@
 # Porównanie 20 modeli na czterech datasetach
 
+Parametry podano w milionach: **Enkodery V+T = wizyjny + tekstowy**. Pozostałe enkodery oraz osobny projektor nie wchodzą do tej sumy. Nasz model: **70,47 mln = 38,59 mln wizja + 31,88 mln tekst**, projektor osobno **0,197 mln**. EmbeddingGemma2: **438,76 mln = 167,76 mln wizja + 271,00 mln tekst**; enkoder audio był wyłączony.
+
+
 Dodano TIPSv2 B/14 i L/14, BGE-VL-base, PE-Core-B16-224 oraz Marqo FashionSigLIP. Ukończono 20 nowych przebiegów; łącznie 80 pełnych przebiegów, po 1000 zapytań każdy. Zachowano bez zmian wszystkie 190 wcześniejszych plików wyników i predykcji.
 
-| Model | Parametry [M] | Licencja | Średnia P@1 | cirr | fashioniq | mscoco_t2i | refcoco | Średnia NDCG@10 |
-|---|---:|---|---:|---:|---:|---:|---:|---:|
-| google/embeddinggemma-2 | 438.76 | Apache-2.0 | 39.10 | 19.40 | 15.40 | 57.00 | 64.60 | 57.07 |
-| timm/ViT-B-16-SigLIP-i18n-256 | 370.63 | Apache-2.0 | 38.40 | 15.90 | 16.10 | 54.80 | 66.80 | 56.09 |
-| timm/ViT-B-32-SigLIP2-256 | 376.86 | Apache-2.0 | 38.15 | 17.40 | 16.70 | 53.10 | 65.40 | 56.92 |
-| alphaedge-ai/siglip2-base-patch16-512-pol-32768 | 204.38 | Apache-2.0 | 37.80 | 17.40 | 18.40 | 45.20 | 70.20 | 55.59 |
-| google/siglip2-base-patch16-512 | 375.82 | Apache-2.0 | 37.77 | 17.30 | 18.70 | 45.00 | 70.10 | 55.62 |
-| alphaedge-ai/siglip2-base-patch16-512-pol-16384 | 191.80 | Apache-2.0 | 37.70 | 17.30 | 18.10 | 45.10 | 70.30 | 55.29 |
-| google/siglip2-base-patch16-384 | 375.48 | Apache-2.0 | 36.52 | 15.70 | 17.80 | 44.20 | 68.40 | 55.00 |
-| google/siglip2-base-patch16-256 | 375.23 | Apache-2.0 | 36.23 | 16.30 | 16.90 | 43.70 | 68.00 | 53.98 |
-| M-CLIP/XLM-Roberta-Large-Vit-B-16Plus + timm/vit_base_patch16_plus_clip_240.laion400m_e31 | 677.76 | Nie podano (tekst); MIT (wizja) | 35.80 | 16.00 | 12.70 | 60.00 | 54.50 | 53.91 |
-| google/siglip2-base-patch16-naflex | 375.23 | Apache-2.0 | 35.30 | 15.90 | 18.90 | 42.00 | 64.40 | 53.97 |
-| alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384 | 85.30 | CC-BY-NC-4.0 | 28.73 | 10.90 | 10.70 | 34.60 | 58.70 | 45.33 |
-| Marqo/marqo-fashionSigLIP | 203.16 | Apache-2.0 | 28.23 | 12.10 | 12.20 | 24.30 | 64.30 | 44.89 |
-| alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384 | 49.72 | CC-BY-NC-4.0 | 27.10 | 11.50 | 9.70 | 30.00 | 57.20 | 43.51 |
-| google/tipsv2-l14 | 487.94 | Apache-2.0 | 21.93 | 8.00 | 7.90 | 3.20 | 68.60 | 33.85 |
-| alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768 | 156.33 | MIT | 21.85 | 8.50 | 4.20 | 24.90 | 49.80 | 36.25 |
-| google/tipsv2-b14 | 195.95 | Apache-2.0 | 21.48 | 9.30 | 6.60 | 3.40 | 66.60 | 32.94 |
-| alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384 | 143.75 | MIT | 21.32 | 8.40 | 4.00 | 23.30 | 49.60 | 35.67 |
-| facebook/PE-Core-B16-224 | 447.66 | Apache-2.0 | 20.88 | 9.50 | 8.80 | 6.90 | 58.30 | 34.01 |
-| apple/MobileCLIP2-S2 | 99.24 | Apple AMLR | 19.28 | 19.10 | 8.80 | 27.20 | 22.00 | 33.71 |
-| BAAI/BGE-VL-base | 149.62 | MIT | 6.62 | 7.40 | 0.70 | 1.40 | 17.00 | 15.71 |
+| Model | Enkodery V+T [M] | Wizyjny [M] | Tekstowy [M] | Licencja | Średnia P@1 | cirr | fashioniq | mscoco_t2i | refcoco | Średnia NDCG@10 |
+| --- | ---: | ---: | ---: | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| google/embeddinggemma-2 | 438.76 | 167.76 | 271.00 | Apache-2.0 | 39.10 | 19.40 | 15.40 | 57.00 | 64.60 | 57.07 |
+| timm/ViT-B-16-SigLIP-i18n-256 | 370.63 | 92.93 | 277.70 | Apache-2.0 | 38.40 | 15.90 | 16.10 | 54.80 | 66.80 | 56.09 |
+| timm/ViT-B-32-SigLIP2-256 | 376.86 | 94.55 | 282.30 | Apache-2.0 | 38.15 | 17.40 | 16.70 | 53.10 | 65.40 | 56.92 |
+| alphaedge-ai/siglip2-base-patch16-512-pol-32768 | 204.38 | 93.52 | 110.86 | Apache-2.0 | 37.80 | 17.40 | 18.40 | 45.20 | 70.20 | 55.59 |
+| google/siglip2-base-patch16-512 | 375.82 | 93.52 | 282.30 | Apache-2.0 | 37.77 | 17.30 | 18.70 | 45.00 | 70.10 | 55.62 |
+| alphaedge-ai/siglip2-base-patch16-512-pol-16384 | 191.80 | 93.52 | 98.28 | Apache-2.0 | 37.70 | 17.30 | 18.10 | 45.10 | 70.30 | 55.29 |
+| google/siglip2-base-patch16-384 | 375.48 | 93.18 | 282.30 | Apache-2.0 | 36.52 | 15.70 | 17.80 | 44.20 | 68.40 | 55.00 |
+| google/siglip2-base-patch16-256 | 375.23 | 92.93 | 282.30 | Apache-2.0 | 36.23 | 16.30 | 16.90 | 43.70 | 68.00 | 53.98 |
+| M-CLIP/XLM-Roberta-Large-Vit-B-16Plus + timm/vit_base_patch16_plus_clip_240.laion400m_e31 | 677.76 | 117.21 | 560.55 | Nie podano (tekst); MIT (wizja) | 35.80 | 16.00 | 12.70 | 60.00 | 54.50 | 53.91 |
+| google/siglip2-base-patch16-naflex | 375.23 | 92.93 | 282.30 | Apache-2.0 | 35.30 | 15.90 | 18.90 | 42.00 | 64.40 | 53.97 |
+| alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384 | 85.30 | 38.78 | 46.52 | CC-BY-NC-4.0 | 28.73 | 10.90 | 10.70 | 34.60 | 58.70 | 45.33 |
+| Marqo/marqo-fashionSigLIP | 203.16 | 92.88 | 110.27 | Apache-2.0 | 28.23 | 12.10 | 12.20 | 24.30 | 64.30 | 44.89 |
+| alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384 | 49.72 | 21.96 | 27.76 | CC-BY-NC-4.0 | 27.10 | 11.50 | 9.70 | 30.00 | 57.20 | 43.51 |
+| google/tipsv2-l14 | 487.94 | 304.02 | 183.92 | Apache-2.0 | 21.93 | 8.00 | 7.90 | 3.20 | 68.60 | 33.85 |
+| alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768 | 156.33 | 87.85 | 68.48 | MIT | 21.85 | 8.50 | 4.20 | 24.90 | 49.80 | 36.25 |
+| google/tipsv2-b14 | 195.95 | 86.32 | 109.63 | Apache-2.0 | 21.48 | 9.30 | 6.60 | 3.40 | 66.60 | 32.94 |
+| alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384 | 143.75 | 87.85 | 55.90 | MIT | 21.32 | 8.40 | 4.00 | 23.30 | 49.60 | 35.67 |
+| facebook/PE-Core-B16-224 | 447.66 | 93.67 | 353.99 | Apache-2.0 | 20.88 | 9.50 | 8.80 | 6.90 | 58.30 | 34.01 |
+| apple/MobileCLIP2-S2 | 99.13 | 35.70 | 63.43 | Apple AMLR | 19.28 | 19.10 | 8.80 | 27.20 | 22.00 | 33.71 |
+| BAAI/BGE-VL-base | 149.62 | 86.19 | 63.43 | MIT | 6.62 | 7.40 | 0.70 | 1.40 | 17.00 | 15.71 |
 
 Wyniki w procentach, średnia nieważona po datasetach. Główna metryka MMEB: Precision@1. NDCG@10 jest dodatkowym widokiem.
 

@@ -1,0 +1,61 @@
+[
+  {
+    "image_id": "28e40dc55ed0c759",
+    "parent_ids": [
+      "openimages:28e40dc55ed0c759",
+      "flickr:2349807454",
+      "coco:212842"
+    ],
+    "exact_hash_overlap": [],
+    "shared_parent_ids": [],
+    "known_coco_ids": [
+      "212842"
+    ],
+    "training_matches": [],
+    "action": "excluded_entire_image_from_independent_benchmark"
+  },
+  {
+    "image_id": "6c906fe112f15285",
+    "parent_ids": [
+      "openimages:6c906fe112f15285",
+      "flickr:4279797402",
+      "coco:120697"
+    ],
+    "exact_hash_overlap": [],
+    "shared_parent_ids": [
+      "coco:120697",
+      "flickr:4279797402"
+    ],
+    "known_coco_ids": [
+      "120697"
+    ],
+    "training_matches": [
+      {
+        "id": "AROVisualAttribution:19702",
+        "dataset": "aro_visual_attribution",
+        "split": "train"
+      },
+      {
+        "id": "AROVisualRelation:16314",
+        "dataset": "aro_visual_relation",
+        "split": "train"
+      }
+    ],
+    "action": "excluded_entire_image_from_independent_benchmark"
+  },
+  {
+    "image_id": "7cad20daa647f304",
+    "parent_ids": [
+      "openimages:7cad20daa647f304",
+      "flickr:9197316963",
+      "coco:476385"
+    ],
+    "exact_hash_overlap": [],
+    "shared_parent_ids": [],
+    "known_coco_ids": [
+      "476385"
+    ],
+    "training_matches": [],
+    "action": "excluded_entire_image_from_independent_benchmark"
+  }
+]
