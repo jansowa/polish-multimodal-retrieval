@@ -5169,6 +5169,27 @@
       "revision": "cc4c733ed997dbee4ac70ccffb911e70c9c24b93",
       "role": "reference"
     },
+    "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05": {
+      "efficiency": null,
+      "label": "BGE-VL-large",
+      "license": {
+        "display": "mit",
+        "spdx": "mit",
+        "status": "reported",
+        "url": "https://huggingface.co/BAAI/BGE-VL-large/blob/40fb48217f521df22a2a5bf15edd52ed1146ef05/README.md"
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 123650304,
+        "total": 427616512,
+        "vision": 303966208
+      },
+      "repository": "BAAI/BGE-VL-large",
+      "representative": true,
+      "revision": "40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "role": "reference"
+    },
     "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78": {
       "efficiency": {
         "cpu_threads": 2,
@@ -32619,6 +32640,734 @@
           "mean": 24.24968394437421,
           "prefix": "",
           "truncation_fraction": 0.0
+        }
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.10826528415476136,
+          "ndcg@10": 0.1256638507077606,
+          "recall@1": 0.057,
+          "recall@10": 0.22,
+          "recall@5": 0.142
+        },
+        "t2i": {
+          "mrr": 0.10866559880945276,
+          "ndcg@10": 0.12486648651892171,
+          "recall@1": 0.058,
+          "recall@10": 0.214,
+          "recall@5": 0.15
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "63eafeb3e1b76609fd4723f82ca55f3448840d6d60384a1e521ee37da2601b10",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 96,
+          "mean": 31.85,
+          "prefix": "",
+          "truncation_fraction": 0.001
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 96,
+          "mean": 31.85,
+          "prefix": "",
+          "truncation_fraction": 0.001
+        }
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.15325678800808856,
+          "ndcg@10": 0.1647987632479269,
+          "recall@1": 0.11,
+          "recall@10": 0.229,
+          "recall@5": 0.189
+        },
+        "t2i": {
+          "mrr": 0.15256340721415285,
+          "ndcg@10": 0.16413770839807468,
+          "recall@1": 0.1108337493759361,
+          "recall@10": 0.22865701447828257,
+          "recall@5": 0.18671992011982028
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "2305c1568e6cc9c687dabd605cb3acf1b90e40db667340f2345aba3991307bf5",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 283,
+          "mean": 76.554667998003,
+          "prefix": "",
+          "truncation_fraction": 0.42835746380429357
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 283,
+          "mean": 76.554667998003,
+          "prefix": "",
+          "truncation_fraction": 0.42835746380429357
+        }
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.11289124996639854,
+          "ndcg@10": 0.13002167785552615,
+          "recall@1": 0.06020066889632107,
+          "recall@10": 0.22408026755852842,
+          "recall@5": 0.1527313266443701
+        },
+        "t2i": {
+          "mrr": 0.11048005827431716,
+          "ndcg@10": 0.12822463095968842,
+          "recall@1": 0.059085841694537344,
+          "recall@10": 0.221850613154961,
+          "recall@5": 0.15496098104793757
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "f4814b0af9013e4174aa66f93e40e6766e910f03d7871ce0dc3c0728cebd688b",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 96,
+          "mean": 31.71014492753623,
+          "prefix": "",
+          "truncation_fraction": 0.0011148272017837235
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 96,
+          "mean": 31.71014492753623,
+          "prefix": "",
+          "truncation_fraction": 0.0011148272017837235
+        }
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.13156491180767743,
+          "ndcg@10": 0.1469051273703941,
+          "recall@1": 0.07304785894206549,
+          "recall@10": 0.24937027707808565,
+          "recall@5": 0.17380352644836272
+        },
+        "t2i": {
+          "mrr": 0.09800278257702821,
+          "ndcg@10": 0.10066552271401431,
+          "recall@1": 0.0513595166163142,
+          "recall@10": 0.17220543806646527,
+          "recall@5": 0.1299093655589124
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "e7eaa12d0a200fa9bf11b8c88e96d7da0ed65a2c89e0a5b54aefea247cab6bd5",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 324,
+          "mean": 28.24773413897281,
+          "prefix": "",
+          "truncation_fraction": 0.027190332326283987
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 324,
+          "mean": 28.24773413897281,
+          "prefix": "",
+          "truncation_fraction": 0.027190332326283987
+        }
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.196777843573227,
+          "ndcg@10": 0.1105971868485729,
+          "recall@1": 0.139,
+          "recall@10": 0.313,
+          "recall@5": 0.242
+        },
+        "t2i": {
+          "mrr": 0.10517230129078808,
+          "ndcg@10": 0.1138236966729289,
+          "recall@1": 0.06887755102040816,
+          "recall@10": 0.17045454545454544,
+          "recall@5": 0.1331168831168831
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "a072b22c1121f9fe07c224aac0558f1443fd891ac423ce37bb8daa14deb582eb",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 416,
+          "mean": 31.075139146567718,
+          "prefix": "",
+          "truncation_fraction": 0.007884972170686457
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 416,
+          "mean": 31.075139146567718,
+          "prefix": "",
+          "truncation_fraction": 0.007884972170686457
+        }
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.13156491180767743,
+          "ndcg@10": 0.1469051273703941,
+          "recall@1": 0.07304785894206549,
+          "recall@10": 0.24937027707808565,
+          "recall@5": 0.17380352644836272
+        },
+        "t2i": {
+          "mrr": 0.09800278257702821,
+          "ndcg@10": 0.10066552271401431,
+          "recall@1": 0.0513595166163142,
+          "recall@10": 0.17220543806646527,
+          "recall@5": 0.1299093655589124
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "ede766918b91143e0ba761b4f13fd7482deadb23791839f4cdd42d4dc5f7316c",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 324,
+          "mean": 28.24773413897281,
+          "prefix": "",
+          "truncation_fraction": 0.027190332326283987
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 324,
+          "mean": 28.24773413897281,
+          "prefix": "",
+          "truncation_fraction": 0.027190332326283987
+        }
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.15325678800808856,
+          "ndcg@10": 0.1647987632479269,
+          "recall@1": 0.11,
+          "recall@10": 0.229,
+          "recall@5": 0.189
+        },
+        "t2i": {
+          "mrr": 0.15256340721415285,
+          "ndcg@10": 0.16413770839807468,
+          "recall@1": 0.1108337493759361,
+          "recall@10": 0.22865701447828257,
+          "recall@5": 0.18671992011982028
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "72baaaddc69c36e1c946e034c5b5954d6cb3be3d40ebabc96193abf14d5f13da",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 283,
+          "mean": 76.554667998003,
+          "prefix": "",
+          "truncation_fraction": 0.42835746380429357
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 283,
+          "mean": 76.554667998003,
+          "prefix": "",
+          "truncation_fraction": 0.42835746380429357
+        }
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.09485844457601084,
+          "ndcg@10": 0.07655487466483692,
+          "recall@1": 0.058381984987489574,
+          "recall@10": 0.16541562413122046,
+          "recall@5": 0.12288017792604948
+        },
+        "t2i": {
+          "mrr": 0.061163951953922636,
+          "ndcg@10": 0.06865445102064131,
+          "recall@1": 0.034313036141189704,
+          "recall@10": 0.11025172268316692,
+          "recall@5": 0.08648572633947406
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "c773b6d81e9ee36746e66e9556fbbc25431b70a60d2ad8466afc8de56f6580af",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 127,
+          "mean": 29.874841794403036,
+          "prefix": "",
+          "truncation_fraction": 0.007593868654197722
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 127,
+          "mean": 29.874841794403036,
+          "prefix": "",
+          "truncation_fraction": 0.007593868654197722
+        }
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.13585634972041766,
+          "ndcg@10": 0.07353483890563295,
+          "recall@1": 0.08088235294117647,
+          "recall@10": 0.24474789915966386,
+          "recall@5": 0.18907563025210083
+        },
+        "t2i": {
+          "mrr": 0.08725490896928854,
+          "ndcg@10": 0.09855134104969628,
+          "recall@1": 0.045512010113780026,
+          "recall@10": 0.16434892541087232,
+          "recall@5": 0.12305099030762748
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "174d59faef69da31a25db9c17894335efa8299272cd9a4fcde57f6581ca443e1",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 116,
+          "mean": 34.7842393594606,
+          "prefix": "",
+          "truncation_fraction": 0.015592077538980193
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 116,
+          "mean": 34.7842393594606,
+          "prefix": "",
+          "truncation_fraction": 0.015592077538980193
+        }
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.10826528415476136,
+          "ndcg@10": 0.1256638507077606,
+          "recall@1": 0.057,
+          "recall@10": 0.22,
+          "recall@5": 0.142
+        },
+        "t2i": {
+          "mrr": 0.10866559880945276,
+          "ndcg@10": 0.12486648651892171,
+          "recall@1": 0.058,
+          "recall@10": 0.214,
+          "recall@5": 0.15
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "e035d50c0d589a680b15ba00d55409568b7856a2469949fdafbd26914b2b76a5",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 96,
+          "mean": 31.85,
+          "prefix": "",
+          "truncation_fraction": 0.001
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 96,
+          "mean": 31.85,
+          "prefix": "",
+          "truncation_fraction": 0.001
+        }
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.11289124996639854,
+          "ndcg@10": 0.13002167785552615,
+          "recall@1": 0.06020066889632107,
+          "recall@10": 0.22408026755852842,
+          "recall@5": 0.1527313266443701
+        },
+        "t2i": {
+          "mrr": 0.11048005827431716,
+          "ndcg@10": 0.12822463095968842,
+          "recall@1": 0.059085841694537344,
+          "recall@10": 0.221850613154961,
+          "recall@5": 0.15496098104793757
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "dbcd63e92bf1c620340528d5d70fa114d77a98ed88898eb1f43d915f62d24f70",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 96,
+          "mean": 31.71014492753623,
+          "prefix": "",
+          "truncation_fraction": 0.0011148272017837235
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 96,
+          "mean": 31.71014492753623,
+          "prefix": "",
+          "truncation_fraction": 0.0011148272017837235
+        }
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.09485844457601084,
+          "ndcg@10": 0.07655487466483692,
+          "recall@1": 0.058381984987489574,
+          "recall@10": 0.16541562413122046,
+          "recall@5": 0.12288017792604948
+        },
+        "t2i": {
+          "mrr": 0.061163951953922636,
+          "ndcg@10": 0.06865445102064131,
+          "recall@1": 0.034313036141189704,
+          "recall@10": 0.11025172268316692,
+          "recall@5": 0.08648572633947406
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "2d83b2a0ad7cb13db674d252d75e468d82f7c68bdd8d55851e8b712143b8c8b6",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 127,
+          "mean": 29.874841794403036,
+          "prefix": "",
+          "truncation_fraction": 0.007593868654197722
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 127,
+          "mean": 29.874841794403036,
+          "prefix": "",
+          "truncation_fraction": 0.007593868654197722
+        }
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.13585634972041766,
+          "ndcg@10": 0.07353483890563295,
+          "recall@1": 0.08088235294117647,
+          "recall@10": 0.24474789915966386,
+          "recall@5": 0.18907563025210083
+        },
+        "t2i": {
+          "mrr": 0.08725490896928854,
+          "ndcg@10": 0.09855134104969628,
+          "recall@1": 0.045512010113780026,
+          "recall@10": 0.16434892541087232,
+          "recall@5": 0.12305099030762748
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "3cd6f29a45c205fccfa1fc778367743cf3a097e7c488894381836f84a3555586",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 116,
+          "mean": 34.7842393594606,
+          "prefix": "",
+          "truncation_fraction": 0.015592077538980193
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 116,
+          "mean": 34.7842393594606,
+          "prefix": "",
+          "truncation_fraction": 0.015592077538980193
+        }
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.196777843573227,
+          "ndcg@10": 0.1105971868485729,
+          "recall@1": 0.139,
+          "recall@10": 0.313,
+          "recall@5": 0.242
+        },
+        "t2i": {
+          "mrr": 0.10517230129078808,
+          "ndcg@10": 0.1138236966729289,
+          "recall@1": 0.06887755102040816,
+          "recall@10": 0.17045454545454544,
+          "recall@5": 0.1331168831168831
+        }
+      },
+      "model_id": "hf:BAAI/BGE-VL-large@40fb48217f521df22a2a5bf15edd52ed1146ef05",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "3cc103d9657dcebc26085c3f3264fb80900177193bd31c762d70225493e7c9a4",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "document": {
+          "context_limit": 77,
+          "maximum": 416,
+          "mean": 31.075139146567718,
+          "prefix": "",
+          "truncation_fraction": 0.007884972170686457
+        },
+        "query": {
+          "context_limit": 77,
+          "maximum": 416,
+          "mean": 31.075139146567718,
+          "prefix": "",
+          "truncation_fraction": 0.007884972170686457
         }
       }
     }
