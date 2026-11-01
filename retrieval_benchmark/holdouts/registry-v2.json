@@ -1,0 +1,170 @@
+{
+  "guard_sha256": "e56b17058df7ccf6f118aaa216cef46ded9bf1c9d01d7640a33212459c84f329",
+  "historical_exposure": "Immutable historical base training is retained; known XTD-full exposure must remain labelled",
+  "inputs": [
+    {
+      "bytes": 3353184,
+      "format": "jsonl",
+      "key": "VN_dev",
+      "path": "reports/series_2026-10-23/vn_dev_protocol/manifest.jsonl",
+      "role": "selection_dev",
+      "sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb"
+    },
+    {
+      "bytes": 4507502,
+      "format": "json_array",
+      "key": "flickr30k_pl_local_test",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/flickr30k_pl_local_test/manifest.json",
+      "role": "test",
+      "sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807"
+    },
+    {
+      "bytes": 4357193,
+      "format": "json_array",
+      "key": "vizwiz_pl_local_validation",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/frozen/vizwiz_pl_local_validation/manifest.json",
+      "role": "test",
+      "sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa"
+    },
+    {
+      "bytes": 2513919,
+      "format": "jsonl",
+      "key": "wiki_native_dev",
+      "path": "reports/series_2026-10-23/wiki_v2/wiki_dev.jsonl",
+      "role": "selection_dev",
+      "sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3"
+    },
+    {
+      "bytes": 1511661,
+      "format": "jsonl",
+      "key": "xtd10_full_1k",
+      "path": "reports/series_2026-10-23/xtd10_v2/full_1k.jsonl",
+      "role": "test",
+      "sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705"
+    },
+    {
+      "bytes": 1355050,
+      "format": "jsonl",
+      "key": "xtd10_no_overlap",
+      "path": "reports/series_2026-10-23/xtd10_v2/no_overlap.jsonl",
+      "role": "test",
+      "sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022"
+    },
+    {
+      "bytes": 2667,
+      "format": "catalog",
+      "key": "benchmark_catalog",
+      "path": "retrieval_benchmark/catalog.json",
+      "role": "evidence_only",
+      "sha256": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8"
+    },
+    {
+      "bytes": 6148743,
+      "format": "jsonl",
+      "key": "retention_validation",
+      "path": "training/runs/clean-v1/validation.jsonl",
+      "role": "selection_dev",
+      "sha256": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6"
+    },
+    {
+      "bytes": 1562107,
+      "format": "jsonl",
+      "key": "validation_negative_captions",
+      "path": "retrieval_benchmark/local/holdout-validation-caption-pairs-v1.jsonl",
+      "role": "selection_dev",
+      "sha256": "df6b30d8fb3c458d2b170372e98d982dd25659606735681148abca405924622d"
+    },
+    {
+      "bytes": 28932656,
+      "format": "evidence",
+      "key": "caption_evidence_aro_visual_relation",
+      "path": "training/runs/e1-full/translation_snapshots/aro_visual_relation.jsonl",
+      "role": "evidence_only",
+      "sha256": "8970a4e961f98b6cbb52da2c57a0802f2a8f583f12022180bad267197b437065"
+    },
+    {
+      "bytes": 35223612,
+      "format": "evidence",
+      "key": "caption_evidence_aro_visual_attribution",
+      "path": "training/runs/e1-full/translation_snapshots/aro_visual_attribution.jsonl",
+      "role": "evidence_only",
+      "sha256": "2eb451c2ab45dc13ad81d56ce32bbc852b42d9b6a0f15857b8c0e8ce8a03da66"
+    },
+    {
+      "bytes": 9520500,
+      "format": "evidence",
+      "key": "caption_evidence_sugarcrepe",
+      "path": "training/runs/e1-full/translation_snapshots/sugarcrepe.jsonl",
+      "role": "evidence_only",
+      "sha256": "767451349aa782f2b34adb29f5e312476f6e8502d986a6c419f199c843743a51"
+    },
+    {
+      "bytes": 3114586,
+      "format": "jsonl",
+      "key": "VN_original_dev",
+      "path": "training/runs/tinyclip-visualnews-v1/data/vn_dev.jsonl",
+      "role": "selection_dev",
+      "sha256": "69b8fd8583ef80874cd2c63ded18cf9151d8ae876ee96e1367a9f4391cf391ec"
+    },
+    {
+      "bytes": 344473,
+      "format": "jsonl",
+      "key": "Wiki_original_pilot_dev",
+      "path": "training/runs/tinyclip-wiki-pilot-v1/data/wiki_dev.jsonl",
+      "role": "selection_dev",
+      "sha256": "125a14d248c75ff440c991b5da6805407e8df8c74d035526e081c194740f3cf7"
+    },
+    {
+      "bytes": 995016,
+      "format": "guard",
+      "key": "Wiki_entire_reserved_components",
+      "path": "reports/series_2026-10-23/wiki_dev_guard_enforcement.json",
+      "role": "selection_dev",
+      "sha256": "d78134be53009dda30936407a6dd758294713896f5c4e98432f57621a8221bbe"
+    },
+    {
+      "bytes": 2490615,
+      "format": "guard",
+      "key": "XM3600_FINAL_BLIND",
+      "path": "training/runs/xm3600-pl/blacklist.json",
+      "role": "final_blind",
+      "sha256": "8779589042cc6a4b344740a62060983c7c7b6ab6162c53608ab582f03da7634b"
+    },
+    {
+      "bytes": 9145452,
+      "format": "guard",
+      "key": "historical_eval_reservation",
+      "path": "training/runs/e1-full/blacklist.json",
+      "role": "historical_protection",
+      "sha256": "971ddaa1de16966e7f97fd52be1d6b69915bb7c5ea0e28ddd79b0fce0338d6e6"
+    },
+    {
+      "bytes": 213177767,
+      "format": "fingerprint_cache",
+      "key": "verified_original_fingerprints",
+      "path": "C:/Users/jsowa/benchmark-translations/data-ood-20261030/A/protected_index.jsonl",
+      "role": "evidence_only",
+      "sha256": "2b382d3a6d1894df22ed0da88522d29821a7d7b4078756e63dd297ed4f626973"
+    },
+    {
+      "bytes": 5819561,
+      "format": "phash_cache",
+      "key": "historical_phashes",
+      "path": "training/runs/clean-v1/perceptual_hashes.json",
+      "role": "evidence_only",
+      "sha256": "f0fd5539d78091fc9cf8e54fe94128c5050871385c06124102f4a9a0e0e0f437"
+    },
+    {
+      "bytes": 392176,
+      "format": "phash_cache",
+      "key": "XM_phashes",
+      "path": "training/runs/tinyclip-wiki-pilot-v1/data/additional_protected_phashes.json",
+      "role": "evidence_only",
+      "sha256": "04290c30ae2ee6518fc07964a0f39c617352821230ac87d5a1fdcb1cdedb38a2"
+    }
+  ],
+  "phash_radius": 6,
+  "schema": 1,
+  "scope": "Protect all listed dev/test images, image-only candidates, captions and reserved source components from NEW training admissions",
+  "version": "registry-v2-20261031"
+}
