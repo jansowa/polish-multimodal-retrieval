@@ -26,6 +26,20 @@ w średniej. W konfiguracji można włączyć kolumny T2I/I2T oraz organiczne,
 syntetyczne i MT (oddzielne grupy), a także wybrać zadania do średniej.
 Zmiana konfiguracji nie uruchamia nowych obliczeń. Braków nie zastępujemy zerami.
 Kolory czerwony–zielony porównują wyniki w obrębie kolumny; parametrów nie kolorujemy.
+
+Wykres jakości względem V+T pokazuje dokładnie modele widoczne w tabeli.
+Linie łączą kolejne rekordy wyniku przy rosnącym rozmiarze: wszystkie modele
+oraz modele z deklaracjami komercyjnymi i własne checkpointy, dopuszczone przez
+właściciela. Jawne NC i brak deklaracji pozostają poza linią komercyjną.
+Wszystkie filtry działają wspólnie na tabelę, wykres i obie granice Pareto:
+metryka, zadania, prompty, profil, seedy, kontrole EN, zakres rozmiaru i organizacje.
+Minimum i maksimum V+T są wliczane do zakresu; maksimum 0 wyłącza górny limit.
+Organizacje są wyznaczane z repozytoriów modeli, domyślnie wszystkie zaznaczone.
+Własne checkpointy mają wspólną organizację jansowa; opcja istnieje tylko wtedy,
+gdy dane zawierają własny model. Odznaczenie wszystkich organizacji daje pusty widok.
+Niepełne średnie są w osobnym pasie bez wartości Y; nie zastępujemy ich zerem.
+Punkty mają opisy po najechaniu; dostępna jest logarytmiczna oś rozmiaru.
+Wykres SVG nie wymaga dodatkowych pakietów ani dostępu do sieci.
 Nie wyświetlamy kolumn czasu, precyzji, rewizji ani ekspozycji.
 Nie mieszamy wyników różnych profili precyzji w jednym rankingu.
 

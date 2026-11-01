@@ -13,3 +13,5 @@
 | S03-F01-a | 2026-11-01 | F01 kroki 1–2: protokół v3-F, podział VizWiz A/B, kontrola rejestru | done | [S03-F01-a](handoffs/S03-F01-a.md) | commit zawierający ten wpis: `[S03-F01-a] Freeze protocol and component-disjoint VizWiz halves` |
 
 | S04-LEADERBOARD | 2026-11-01 | Zlecona kolejka referencji: deduplikacja, czyszczenie wag, automatyczny push | partial (job działa; odbiór osobno) | [handoff](handoffs/S04-LEADERBOARD.md) | commit zawierający wpis: `[S04-LEADERBOARD] Queue requested reference evaluation and publication` |
+
+| S05-LEADERBOARD-PARETO | 2026-11-01 | Wykres Pareto dla widocznych modeli; wspólne filtry min/max i organizacji, własne pod jansowa | done | [handoff](handoffs/S05-LEADERBOARD-PARETO.md) | commit zawierający wpis: `[S05-LEADERBOARD-PARETO] Add filtered Pareto chart and organization controls` |

@@ -81,8 +81,11 @@ class ViewTests(unittest.TestCase):
         self.assertEqual(v['rows'][0], ['A', None, '1/2', None])
         self.assertEqual(v['complete'], 0)
 
-    def test_parameter_threshold_is_strict(self):
-        self.assertEqual(overview(document(), max_parameters=50)['rows'], [])
+    def test_parameter_bounds_are_inclusive(self):
+        self.assertEqual(overview(document(), max_parameters=49)['rows'], [])
+        self.assertEqual(len(overview(document(), max_parameters=50)['rows']), 1)
+        self.assertEqual(len(overview(document(), min_parameters=50)['rows']), 1)
+        self.assertEqual(overview(document(), min_parameters=51)['rows'], [])
         self.assertEqual(len(overview(document(), max_parameters=100)['rows']), 1)
 
     def test_seed_and_english_control_filters(self):

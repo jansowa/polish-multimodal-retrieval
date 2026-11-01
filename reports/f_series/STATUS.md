@@ -1,5 +1,12 @@
 # STATUS — seria F / M
 
+S05-LEADERBOARD-PARETO (2026-11-01) done: na zlecenie właściciela dodano wykres
+Pareto i wspólne filtry min/max oraz organizacji (własne: jansowa).
+Wykres obejmuje dokładnie widoczne wiersze tabeli.
+[Raport i dowody SHA](S05-LEADERBOARD-PARETO/REPORT.md).
+Kolejka referencji nadal działa; F01 i liczniki F pozostają bez zmian.
+Następny etap: S06-LEADERBOARD-RECEIVE.
+
 S04-LEADERBOARD (2026-11-01), jawne odrębne zlecenie właściciela: działa
 wznawialna kolejka zwykłych ocen referencji, F01-b odłożony.
 [Raport i SHA](../leaderboard_requested_20261101/REPORT.md).

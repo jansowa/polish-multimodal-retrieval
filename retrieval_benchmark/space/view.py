@@ -63,10 +63,32 @@ def model_reference(model_id, model):
     return model['label'], None
 
 
+def own_model(model_id, model):
+    return (model_id.startswith('checkpoint:') or model.get('role') == 'project'
+            or (model.get('repository') or '').split('/')[0].casefold() == 'jansowa')
+
+
+def model_organization(model_id, model):
+    if own_model(model_id, model):
+        return 'jansowa'
+    repository = model.get('repository')
+    if not repository and model_id.startswith('hf:'):
+        repository = model_id[3:].rsplit('@', 1)[0]
+    return repository.split('/')[0] if repository and '/' in repository else 'Pozostałe'
+
+
+def organizations(document):
+    return sorted({model_organization(mid, model) for mid, model in document['models'].items()}, key=str.casefold)
+
+
 def overview(document, metric='recall@1', mode='v2_no_instructions', profile='historical-native-v2',
-             max_parameters=0, show_seeds=False, show_controls=False, visible_columns=None, average_tasks=None):
+             max_parameters=0, show_seeds=False, show_controls=False, visible_columns=None, average_tasks=None,
+             min_parameters=0, selected_organizations=None):
     if metric not in METRICS:
         raise ValueError('Unsupported metric')
+    min_parameters, max_parameters = min_parameters or 0, max_parameters or 0
+    if any(not isinstance(v, (int,float)) or not math.isfinite(v) or v < 0 for v in (min_parameters,max_parameters)):
+        raise ValueError('Parameter bounds must be finite and nonnegative')
     available = tasks(document)
     selected = default_tasks(document) if average_tasks is None else list(dict.fromkeys(average_tasks))
     if any(k not in available for k in selected):
@@ -87,7 +109,9 @@ def overview(document, metric='recall@1', mode='v2_no_instructions', profile='hi
         if not show_controls and m.get('role') == 'english_control':
             continue
         p = m['parameters']
-        if max_parameters and p['total'] >= max_parameters * 1e6:
+        if p['total'] < min_parameters*1e6 or (max_parameters and p['total'] > max_parameters*1e6):
+            continue
+        if selected_organizations is not None and model_organization(model_id,m) not in selected_organizations:
             continue
         def mean(names, direction=None):
             if not names or any(k not in found for k in names):
@@ -103,14 +127,150 @@ def overview(document, metric='recall@1', mode='v2_no_instructions', profile='hi
         for name in ('organic', 'synthetic', 'mt'):
             values[name] = mean([k for k in selected if group(document['datasets'][k].get('caption_origin')) == name])
         name, url = model_reference(model_id, m)
-        entries.append((name, values, url))
+        entries.append((name, values, url, model_id))
     # Rank only complete averages. A partial submission cannot win by omitting hard tasks.
     entries.sort(key=lambda e: (e[1]['average'] is None, -(e[1]['average'] or 0), e[0]))
     return dict(headers=['Model'] + [specs[k] for k in visible],
-                rows=[[label] + [v[k] for k in visible] for label, v, _ in entries],
-                model_urls=[url for _, _, url in entries],
+                rows=[[label] + [v[k] for k in visible] for label, v, _, _ in entries],
+                model_urls=[url for _, _, url, _ in entries],
+                model_data=[dict(id=mid, name=name, url=url, score=v['average'], size=v['total'],
+                                 license=v['license']) for name, v, url, mid in entries],
                 score_columns=[i + 1 for i, k in enumerate(visible) if k not in ('total', 'vision', 'text', 'head', 'coverage', 'license')],
-                complete=sum(v['average'] is not None for _, v, _ in entries), total=len(entries), average_tasks=selected)
+                complete=sum(v['average'] is not None for _, v, _, _ in entries), total=len(entries), average_tasks=selected)
+
+
+def commercial_use(model_id, model):
+    """Published declarations plus the owner's explicit local-checkpoint override."""
+    if own_model(model_id, model):
+        return True
+    info = model.get('license') or {}
+    if isinstance(info, dict):
+        declared = info.get('id') or info.get('spdx') or info.get('display')
+    else:
+        declared = info
+    if not isinstance(declared, str):
+        return False
+    return declared.strip().casefold() in {
+        'mit', 'apache-2.0', 'bsd-2-clause', 'bsd-3-clause',
+        'isc', 'cc-by-4.0', 'cc by 4.0', 'cc0-1.0', 'unlicense',
+    }
+
+
+def frontier(points):
+    """Strict score records by increasing size; ties keep the smallest model."""
+    best = -math.inf
+    result = []
+    for point in sorted((p for p in points if p['score'] is not None),
+                        key=lambda p: (p['size'], -p['score'], p['id'])):
+        if point['score'] > best:
+            result.append(point)
+            best = point['score']
+    return result
+
+
+def pareto_data(document, metric='recall@1', mode='v2_no_instructions',
+                profile='historical-native-v2', max_parameters=0, average_tasks=None,
+                show_seeds=False, show_controls=False, min_parameters=0, selected_organizations=None,
+                filtered_view=None):
+    view = filtered_view if filtered_view is not None else overview(
+        document, metric, mode, profile, max_parameters, show_seeds, show_controls,
+        average_tasks=average_tasks, min_parameters=min_parameters, selected_organizations=selected_organizations)
+    points = [dict(point) for point in view['model_data']]
+    for point in points:
+        point['commercial'] = commercial_use(point['id'], document['models'][point['id']])
+    return dict(points=points, all_frontier=frontier(points),
+                commercial_frontier=frontier([p for p in points if p['commercial']]),
+                tasks=view['average_tasks'])
+
+
+def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
+                profile='historical-native-v2', max_parameters=0, average_tasks=None, log_scale=False,
+                show_seeds=False, show_controls=False, min_parameters=0, selected_organizations=None,
+                filtered_view=None):
+    """Responsive SVG: no extra dependencies, external scripts or network calls."""
+    data = pareto_data(document, metric, mode, profile, max_parameters, average_tasks,
+                       show_seeds, show_controls, min_parameters, selected_organizations, filtered_view)
+    points = data['points']
+    if not points:
+        return '<p>Brak modeli dla wybranych filtrów.</p>'
+    escape = lambda value: html.escape(str(value), quote=True)
+    complete = [p for p in points if p['score'] is not None]
+    missing = [p for p in points if p['score'] is None]
+    left, right, top, bottom = 85, 1000, 35, 355
+    positive = [p['size'] for p in points if p['size'] > 0]
+    high = max(positive, default=1)*1.08
+    low = min(positive, default=1)/1.15 if log_scale else 0
+    if log_scale:
+        high = max(high, low*1.5)
+    def x(size):
+        if log_scale:
+            value = math.log10(max(size, low))
+            fraction = (value-math.log10(low))/(math.log10(high)-math.log10(low))
+        else:
+            fraction = size/high
+        return left+(right-left)*fraction
+    def y(score):
+        return bottom-(bottom-top)*score/100
+    blue, orange = '#2563eb', '#d97706'
+    parts = ['<div class="pareto-chart">',
+             '<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:8px">',
+             f'<span><b style="color:{blue}">━━</b> Pareto: wszystkie modele</span>',
+             f'<span><b style="color:{orange}">┅┅</b> Pareto: komercyjne + własne</span></div>',
+             '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 490" '
+             'role="img" aria-label="Średni wynik modeli względem rozmiaru, dwie granice Pareto" '
+             'style="width:100%;height:auto;min-width:420px;color:var(--body-text-color,#334155)">',
+             '<style>.pareto-point:focus circle,.pareto-point:hover circle{stroke:currentColor;stroke-width:3}</style>']
+    for tick in range(0, 101, 20):
+        yy = y(tick)
+        parts.append(f'<path d="M{left} {yy:.2f}H{right}" stroke="var(--border-color-primary,#d7dde5)"/>')
+        parts.append(f'<text x="{left-12}" y="{yy+4:.2f}" text-anchor="end" fill="currentColor" font-size="12">{tick}</text>')
+    if log_scale:
+        ticks = [base*10**power for power in range(math.floor(math.log10(low)), math.ceil(math.log10(high))+1)
+                 for base in (1,2,5) if low <= base*10**power <= high]
+    else:
+        ticks = [high*i/5 for i in range(6)]
+    for tick in ticks:
+        xx = x(tick)
+        parts.append(f'<path d="M{xx:.2f} {top}V{bottom}" stroke="var(--border-color-primary,#d7dde5)" stroke-dasharray="3 5"/>')
+        label = f'{tick:,.0f}'.replace(',', ' ') if tick >= 10 else f'{tick:g}'
+        parts.append(f'<text x="{xx:.2f}" y="{bottom+22}" text-anchor="middle" fill="currentColor" font-size="12">{label}</text>')
+    parts.append(f'<path d="M{left} {top}V{bottom}H{right}" fill="none" stroke="currentColor"/>')
+    parts.append('<text x="20" y="195" transform="rotate(-90 20 195)" text-anchor="middle" fill="currentColor" font-size="13">Średni wynik modelu [%]</text>')
+    xlabel = 'Rozmiar enkoderów V+T [mln parametrów]'+(' · skala logarytmiczna' if log_scale else '')
+    parts.append(f'<text x="545" y="406" text-anchor="middle" fill="currentColor" font-size="13">{xlabel}</text>')
+    for name, color, dashed in [('all_frontier',blue,False), ('commercial_frontier',orange,True)]:
+        line = data[name]
+        coordinates = ' '.join(f'{x(p["size"]):.2f},{y(p["score"]):.2f}' for p in line)
+        dash = ' stroke-dasharray="8 5"' if dashed else ''
+        parts.append(f'<polyline data-frontier="{name}" points="{coordinates}" fill="none" stroke="{color}" stroke-width="3"{dash}/>')
+    if missing:
+        parts.append('<rect x="85" y="430" width="915" height="35" rx="6" fill="var(--background-fill-secondary,#f1f5f9)"/>')
+        parts.append('<text x="85" y="483" fill="currentColor" font-size="12">Brak pełnej średniej — pozycja pozioma pokazuje rozmiar, bez wartości na osi Y.</text>')
+    frontier_ids = {p['id'] for p in data['all_frontier']+data['commercial_frontier']}
+    for point in sorted(points, key=lambda p:p['id']):
+        xx = x(point['size'])
+        yy = y(point['score']) if point['score'] is not None else 448
+        score = f'{point["score"]:.2f}%' if point['score'] is not None else 'brak pełnej średniej'
+        eligibility = 'komercyjny / własny' if point['commercial'] else 'poza grupą komercyjną'
+        tooltip = f'{point["name"]}\n{point["size"]:.2f} mln parametrów · {score}\n{point["license"]} · {eligibility}'
+        color = orange if point['commercial'] else '#64748b'
+        radius = 6.5 if point['id'] in frontier_ids else 4.5
+        link = f' href="{escape(point["url"])}" target="_blank" rel="noopener noreferrer"' if point['url'] else ''
+        parts.append(f'<a class="pareto-point" data-model-id="{escape(point["id"])}"{link} tabindex="0" aria-label="{escape(tooltip)}">'
+                     f'<title>{escape(tooltip)}</title><circle cx="{xx:.2f}" cy="{yy:.2f}" r="{radius}" '
+                     f'fill="{color}" fill-opacity="0.8" stroke="var(--body-background-fill,white)" stroke-width="1.3"/></a>')
+    parts.append('</svg>')
+    parts.append(f'<p style="font-size:13px">{len(complete)}/{len(points)} modeli z pełną średnią. '
+                 'Najedź na punkt, aby zobaczyć model, rozmiar i wynik. Wykres i obie granice Pareto '
+                 'obejmują dokładnie modele widoczne w tabeli i reagują na wszystkie jej filtry.</p>')
+    parts.append('<details><summary>Modele na granicach Pareto i kwalifikacja licencji</summary>')
+    for name,title in [('all_frontier','Wszystkie modele'),('commercial_frontier','Komercyjne + własne')]:
+        labels = [f'{escape(p["name"])} ({p["size"]:.1f}M; {p["score"]:.2f}%)' for p in data[name]]
+        parts.append(f'<p><b>{title}:</b> '+(' → '.join(labels) or 'brak modeli')+'</p>')
+    parts.append('<p>Grupa komercyjna: deklaracje MIT, Apache-2.0, BSD, ISC, CC BY 4.0, CC0, Unlicense '
+                 'oraz własne checkpointy zgodnie z deklaracją właściciela. Brak deklaracji i inne licencje '
+                 'nie kwalifikują automatycznie do tej linii. Deklaracje źródłowe w tabeli pozostają widoczne.</p></details></div>')
+    return ''.join(parts)
 
 
 def cell_styles(view):
