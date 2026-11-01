@@ -1,0 +1,172 @@
+{
+  "repository-cpu": {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "tests/data_collection/test_browser.py",
+      "tests/data_collection/test_collection.py",
+      "tests/data_collection/test_fast_collection.py",
+      "tests/test_absence_suite.py",
+      "tests/test_cleanroom.py",
+      "tests/test_cleanroom_controls.py",
+      "tests/test_holdout_registry.py",
+      "tests/test_reference_weight_cleanup.py",
+      "tests/test_series_20261023.py",
+      "tests/test_shared_inference_slots.py",
+      "tests/test_source_ablation.py",
+      "tests/test_tinyclip_adaptation.py",
+      "tests/test_tinyclip_diagnostics.py",
+      "tests/test_tinyclip_generalization.py",
+      "tests/test_tinyclip_optimization.py",
+      "tests/test_training.py",
+      "tests/test_training_ablation.py",
+      "tests/test_training_commercial_vision.py",
+      "tests/test_training_full.py",
+      "tests/test_training_vision.py",
+      "tests/test_visualnews_image_continuation.py",
+      "tests/test_visualnews_pipeline.py",
+      "tests/test_visualnews_training.py",
+      "tests/test_wiki_coco_evaluation.py",
+      "tests/test_wiki_compact_archive.py",
+      "tests/test_wiki_pilot.py",
+      "tests/test_wiki_pilot_http.py",
+      "tests/test_wiki_training_browser.py",
+      "tests/test_wikimedia_grounding_pipeline.py",
+      "retrieval_benchmark/tests"
+    ],
+    "exit_code": 2,
+    "elapsed_seconds": 1.89,
+    "log": "reports\\f_series\\S02-REPO-HYGIENE\\repository-cpu.log"
+  },
+  "data-study-guard": {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "experiments/data_study_20261030/test_guard.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.36,
+    "log": "reports\\f_series\\S02-REPO-HYGIENE\\data-study-guard.log"
+  },
+  "wiki-queue": {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "experiments/data_study_20261030/wiki_recovery_20261031/test_queue.py"
+    ],
+    "exit_code": 2,
+    "elapsed_seconds": 0.44,
+    "log": "reports\\f_series\\S02-REPO-HYGIENE\\wiki-queue.log"
+  },
+  "ood-cpu": {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "experiments/ood_eval_20261030/test_cpu.py"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.47,
+    "log": "reports\\f_series\\S02-REPO-HYGIENE\\ood-cpu.log"
+  },
+  "wsl-repository-cpu": {
+    "command": [
+      "/home/jsowa/.venvs/pl-mmb-benchmark/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "tests/data_collection/test_browser.py",
+      "tests/data_collection/test_collection.py",
+      "tests/data_collection/test_fast_collection.py",
+      "tests/test_absence_suite.py",
+      "tests/test_cleanroom.py",
+      "tests/test_cleanroom_controls.py",
+      "tests/test_holdout_registry.py",
+      "tests/test_reference_weight_cleanup.py",
+      "tests/test_series_20261023.py",
+      "tests/test_shared_inference_slots.py",
+      "tests/test_source_ablation.py",
+      "tests/test_tinyclip_adaptation.py",
+      "tests/test_tinyclip_diagnostics.py",
+      "tests/test_tinyclip_generalization.py",
+      "tests/test_tinyclip_optimization.py",
+      "tests/test_training.py",
+      "tests/test_training_ablation.py",
+      "tests/test_training_commercial_vision.py",
+      "tests/test_training_full.py",
+      "tests/test_training_vision.py",
+      "tests/test_visualnews_image_continuation.py",
+      "tests/test_visualnews_pipeline.py",
+      "tests/test_visualnews_training.py",
+      "tests/test_wiki_coco_evaluation.py",
+      "tests/test_wiki_compact_archive.py",
+      "tests/test_wiki_pilot.py",
+      "tests/test_wiki_pilot_http.py",
+      "tests/test_wiki_training_browser.py",
+      "tests/test_wikimedia_grounding_pipeline.py",
+      "retrieval_benchmark/tests"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 23.36,
+    "log": "reports/f_series/S02-REPO-HYGIENE/wsl-repository-cpu.log"
+  },
+  "wsl-data-study-guard": {
+    "command": [
+      "/home/jsowa/.venvs/pl-mmb-benchmark/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "experiments/data_study_20261030/test_guard.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.68,
+    "log": "reports/f_series/S02-REPO-HYGIENE/wsl-data-study-guard.log"
+  },
+  "wsl-wiki-queue": {
+    "command": [
+      "/home/jsowa/.venvs/pl-mmb-benchmark/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "experiments/data_study_20261030/wiki_recovery_20261031/test_queue.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 224.47,
+    "log": "reports/f_series/S02-REPO-HYGIENE/wsl-wiki-queue.log"
+  },
+  "wsl-ood-cpu": {
+    "command": [
+      "/home/jsowa/.venvs/pl-mmb-benchmark/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "experiments/ood_eval_20261030/test_cpu.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.93,
+    "log": "reports/f_series/S02-REPO-HYGIENE/wsl-ood-cpu.log"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "path": "reports/data_study_20261030/wiki_recovery_20261031/FAILED.md",
+  "sha256": "7c323761811dda9f572197820fd03ee8ddaf6b23939c83b6acd84ba8463fb43c",
+  "action": "No process or data modified; operational sentinel ignored; investigation deferred to BACKLOG.",
+  "text": "# Kolejka zatrzymana bez pomijania bramki\n\nEtap: download_compact.py; kod: 1.\nLog: /mnt/c/Users/jsowa/benchmark-translations/data-ood-20261030/A/wiki-recovery-20261031/logs/download_compact.py.log\nPobrane pliki zachowane. Wznowienie: uruchom ponownie queue.py po usunięciu przyczyny.\n"
+}

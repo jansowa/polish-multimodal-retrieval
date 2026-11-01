@@ -1,10 +1,10 @@
 # STATUS — seria F / M
 
-Aktualizacja: 2026-11-01; sesja S01-F01-a zakończona jako blocked przed implementacją: checkout nie spełnia warunku czystego startu (AGENTS.md, protokół sesji pkt 4; 09 §1 pkt 4).
+Aktualizacja: 2026-11-01; S02-REPO-HYGIENE zakończono: zastane zmiany zapisano tematycznie, dane robocze i kopie wyłączono z Git bez usuwania. H-OPS-S01 rozwiązano; F01 nadal nie rozpoczęto.
 
 | Pakiet | Stan | Blokery | Oczekujące bramki | Ostatnia aktualizacja | Linki (plan / raport / decyzja) |
 |---|---|---|---|---|---|
-| F01 | blocked | Nieczysty checkout na starcie; nie rozpoczęto kroków protokołu/katalogu. | H-OPS-S01 (organizacyjna, nie H1–H6) | 2026-11-01 | — / [dowody](S01-F01-a-evidence.json) / [eskalacja](handoffs/S01-F01-a.md) |
+| F01 | todo | Nie rozpoczęto. Blokadę checkoutu usunięto w S02-REPO-HYGIENE; ponowić kroki 1–2. | — | 2026-11-01 | — / [porządkowanie](S02-REPO-HYGIENE/REPORT.md) / [handoff](handoffs/S02-REPO-HYGIENE.md) |
 | F02 | todo | Nie rozpoczęto; zależności sprawdzi kolejna sesja w 04. | H1 | 2026-11-01 | — / — / — |
 | F03 | todo | Nie rozpoczęto; zależności sprawdzi kolejna sesja w 04. | — | 2026-11-01 | — / — / — |
 | F04 | todo | Nie rozpoczęto; zależności sprawdzi kolejna sesja w 04. | — | 2026-11-01 | — / — / — |
@@ -34,7 +34,7 @@ Otwarte decyzje właściciela wg 00 (nie są bramką bootstrapu):
 - Faza M: wymóg wspólnej przestrzeni / dwóch trybów i dostarczenie danych replay.
 
 Audyt: [każdy wiersz 00](S00-BOOT-audit.md), [źródła i SHA](S00-BOOT-evidence.json).
-Następna sesja: **S01-F01-a**, wyłącznie protokół v3-F, VizWiz A/B i nowy katalog; czytać sekcję F01 w 04 oraz 02 zgodnie z 09 §6.
+Następna sesja: **S03-F01-a**, wyłącznie protokół v3-F, VizWiz A/B i nowy katalog; czytać sekcję F01 w 04 oraz 02 zgodnie z 09 §6.
 
 ## Rozbieżności do wyjaśnienia
 
@@ -46,4 +46,6 @@ Następna sesja: **S01-F01-a**, wyłącznie protokół v3-F, VizWiz A/B i nowy k
 
 Domknięcie S00-BOOT (2026-11-01): artefakty scalono fast-forward do `master`; worktree i gałąź `f/boot` usunięto. Dalsza praca na bieżącej gałęzi głównego checkoutu, bez nowych gałęzi, worktree i PR. Wszystkie pakiety pozostają `todo`, GUARD=0, TEST=0; historyczny GUARD #0 pozostaje zapisany. Następny etap: [NEXT.md](NEXT.md).
 
-S01-F01-a: warunek czystego startu niespełniony; pełny stan i SHA w [dowodach](S01-F01-a-evidence.json). GUARD/TEST bez nowych odczytów; brak jobów tej sesji. Następny etap oczekuje na H-OPS-S01, następnie ponowienie zakresu F01 kroki 1–2; nie przechodzono do S02-F01-b.
+Historycznie S01-F01-a: warunek czystego startu niespełniony; pełny stan i SHA w [dowodach](S01-F01-a-evidence.json). GUARD/TEST bez nowych odczytów; brak jobów tej sesji. Blokadę H-OPS-S01 rozwiązano w S02-REPO-HYGIENE; ponowienie F01 kroków 1–2 zapisano jako S03-F01-a. Nie przechodzono do F01-b.
+
+S02-REPO-HYGIENE (2026-11-01): etap organizacyjny na jawne zlecenie użytkownika, bez realizacji F01. [Raport i SHA dowodów](S02-REPO-HYGIENE/REPORT.md), [commity](S02-REPO-HYGIENE/commits-before-handoff.json), [handoff](handoffs/S02-REPO-HYGIENE.md). H-OPS-S01 rozwiązano przez uporządkowanie Git; wymóg czystego startu pozostaje. Liczniki GUARD/TEST bez zmian. Następna sesja: **S03-F01-a**, wyłącznie ponowienie F01 kroków 1–2. Zaobserwowany komunikat zatrzymania odrębnej kolejki Wiki zapisano w BACKLOG; brak nowych jobów tej sesji.

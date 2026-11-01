@@ -1,0 +1,47 @@
+{
+  "interpretation": "Exact-byte storage includes CRLF; checks explicitly permit CR at end of line. Original raw check logs remain local .log files. Retained text logs contain the checks with cr-at-eol.",
+  "groups": {
+    "03-training-engine": {
+      "original_check_exit_code": 2,
+      "cr_at_eol_check_exit_code": 0,
+      "log": "reports/f_series/S02-REPO-HYGIENE/validation/03-training-engine-whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "04-training-studies": {
+      "original_check_exit_code": 2,
+      "cr_at_eol_check_exit_code": 2,
+      "log": "reports/f_series/S02-REPO-HYGIENE/validation/04-training-studies-whitespace.txt",
+      "sha256": "00d34751ff21fb0c177e66a7fe52ad8020ff8d34ff2e303be5dee3f4e4b2a772"
+    },
+    "06-retrieval-benchmark": {
+      "original_check_exit_code": 2,
+      "cr_at_eol_check_exit_code": 0,
+      "log": "reports/f_series/S02-REPO-HYGIENE/validation/06-retrieval-benchmark-whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "08-pipeline-evidence": {
+      "original_check_exit_code": 2,
+      "cr_at_eol_check_exit_code": 0,
+      "log": "reports/f_series/S02-REPO-HYGIENE/validation/08-pipeline-evidence-whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "08-training-evidence": {
+      "original_check_exit_code": 2,
+      "cr_at_eol_check_exit_code": 2,
+      "log": "reports/f_series/S02-REPO-HYGIENE/validation/08-training-evidence-whitespace.txt",
+      "sha256": "d81ccbf105ef9fbd6c4f36ec982a7b117421f88cec967df65ae8ee4a6c5bd138"
+    },
+    "09-historical-evidence": {
+      "original_check_exit_code": 2,
+      "cr_at_eol_check_exit_code": 2,
+      "log": "reports/f_series/S02-REPO-HYGIENE/validation/09-historical-evidence-whitespace.txt",
+      "sha256": "8ad59f7b938994132b97dd6d13263380bc23b0b31e5c3ed170c0314eab020295"
+    },
+    "10-benchmark-results": {
+      "original_check_exit_code": 2,
+      "cr_at_eol_check_exit_code": 0,
+      "log": "reports/f_series/S02-REPO-HYGIENE/validation/10-benchmark-results-whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

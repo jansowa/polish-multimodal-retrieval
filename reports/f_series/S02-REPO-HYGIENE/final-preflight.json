@@ -1,0 +1,25 @@
+{
+  "package_entrypoints_present": true,
+  "index_empty": true,
+  "protected_files": {
+    "src/pl_mmb_training/holdouts.py": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3",
+    "retrieval_benchmark/catalog.json": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8",
+    "retrieval_benchmark/catalog-current.json": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010",
+    "retrieval_benchmark/holdouts/registry-v2.json": "954934abb198f79c712d4f51ae68a948a413fd9fd3b56fbda0648abb01a478c5",
+    "experiments/data_study_20261030/wiki_recovery_20261031/config.py": "a4b8f7bb725ceec6ff29bf7f149dab241e3a4ffb28cb8e8486a2a867d071aaef",
+    "experiments/data_study_20261030/wiki_recovery_20261031/train_generation.py": "57c3f0c8a389f7469e3a7a57acb128542b7c3c944f23a32e2e5671448368af8c",
+    "reports/data_ood_coordination_20261030/A_UNIVERSE_FROZEN.json": "b1324298ab7e5a934a3f291aac1bf85f528d643724533995d30af47e3928899d"
+  },
+  "runtime_files": {
+    "reports/absence_extension_pilot_state.json": "02848a1c837ef0efbe1460cf99bcea172b2a939d10a68f59707ed45691d362a7",
+    "reports/absence_extension_state.json": "7502c3eb5a811f48a981130e8c27f903b23477ba13072cb72d276ed39a74952a",
+    "reports/absence_full_pending.json": "d0bcbbd02839a13a13cc1cbdccd910e588c072fb37a4fbf83c053764e10c9af0",
+    "reports/absence_news_pilot_state.json": "a5c4a915babda65947e2f09345063284aaf8fe26a5b2ffac82cfd2817fbbe19d",
+    "reports/absence_news_state.json": "5519d00f9319fe334c4e33f416f34f6c62110edbd5921483b356c83a2967339d",
+    "reports/absence_pilot_state.json": "852df8198a8c5b6b14536767c7f1410d5937ee0d2923a13425376a84fa2e67ab",
+    "reports/absence_suite_state.json": "7cf2d779947caace5c93cec63fc4b9974fbb385e84b7b5f55e352171dec7d1b0"
+  },
+  "nested_site_unchanged": true,
+  "unexpected_external_git_entries": [],
+  "whitespace_policy": "Allow CR at end of line for exact-byte CRLF artifacts; preserve and report genuine historical whitespace."
+}

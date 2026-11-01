@@ -1,0 +1,210 @@
+reports/series_2026-10-23/prompt_sources/bge-vl-base.md:126: trailing whitespace.
++        images = "./assets/cir_query.png", 
+reports/series_2026-10-23/prompt_sources/bge-vl-base.md:133: trailing whitespace.
++    
+reports/series_2026-10-23/prompt_sources/bge-vl-base.md:159: trailing whitespace.
++        text="Make the background dark, as if the camera has taken the photo at night", 
+reports/series_2026-10-23/prompt_sources/bge-vl-base.md:172: trailing whitespace.
++    
+reports/series_2026-10-23/prompt_sources/clip-b32-pl-32768.md:15: trailing whitespace.
++This model is a smaller version of [sentence-transformers/clip-ViT-B-32-multilingual-v1](https://huggingface.co/sentence-transformers/clip-ViT-B-32-multilingual-v1) optimized for **Polish** language via vocabulary size reduction using the [trimming](https://huggingface.co/blog/lbourdois/introduction-to-trimming) method.  
+reports/series_2026-10-23/prompt_sources/clip-b32-pl-32768.md:33: trailing whitespace.
++- **Number of texts used for mining**: 200,000 texts  
+reports/series_2026-10-23/prompt_sources/clip-b32-pl-32768.md:70: trailing whitespace.
++      title={Introduction to Trimming}, 
+reports/series_2026-10-23/prompt_sources/clip-b32-pl-32768.md:73: trailing whitespace.
++      url={https://huggingface.co/blog/lbourdois/introduction-to-trimming}, 
+reports/series_2026-10-23/prompt_sources/clip-b32-pl.md:15: trailing whitespace.
++This model is a smaller version of [sentence-transformers/clip-ViT-B-32-multilingual-v1](https://huggingface.co/sentence-transformers/clip-ViT-B-32-multilingual-v1) optimized for **Polish** language via vocabulary size reduction using the [trimming](https://huggingface.co/blog/lbourdois/introduction-to-trimming) method.  
+reports/series_2026-10-23/prompt_sources/clip-b32-pl.md:33: trailing whitespace.
++- **Number of texts used for mining**: 200,000 texts  
+reports/series_2026-10-23/prompt_sources/clip-b32-pl.md:70: trailing whitespace.
++      title={Introduction to Trimming}, 
+reports/series_2026-10-23/prompt_sources/clip-b32-pl.md:73: trailing whitespace.
++      url={https://huggingface.co/blog/lbourdois/introduction-to-trimming}, 
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:42: trailing whitespace.
++* **Multilinguality and code:** EmbeddingGemma 2 understands 100+ languages, and achieves a \~14% improvement on code tasks relative to its predecessor.&nbsp;  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:43: trailing whitespace.
++* **Flexible footprint:** Combines a 270M parameter text backbone (130M transformer \+ 140M embedder) with selectively loadable vision (170M) and audio (300M) encoders, allowing developers to load only the modalities required for their use case.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:44: trailing whitespace.
++* **Matryoshka Representation Learning (MRL):** Native support for truncated embeddings across 128d, 256d, 512d, and 768d, enabling up to a **6x reduction** in vector storage costs with minimal impact on quality.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:103: trailing whitespace.
++Install the `sentence-transformers` library: 
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:130: trailing whitespace.
++EmbeddingGemma 2 is trained with short task instruction prefixes prepended to text inputs. Using the right prefix improves quality; omitting it still works but reduces precision. Prefixes apply to text only. Pass images, video, and audio without any prefix. 
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:138: trailing whitespace.
++* **Asymmetric Tasks (e.g. retrieval):** Use a query prefix for queries and a document prefix for corpus items.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:172: trailing whitespace.
++* **Re-normalize after truncating:** slicing a unit-length vector does not preserve unit length. The shortened vector must be L2-normalized before it is used for cosine similarity. Skipping this step degrades ranking quality silently—it produces plausible-looking scores rather than an error.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:174: trailing whitespace.
++* 
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:211: trailing whitespace.
++* `<|image|>` marks the position of image input  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:212: trailing whitespace.
++* `<|video|>` marks the position of video input  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:252: trailing whitespace.
++* By default, video is processed as sampled frames through the vision encoder at **1 frame per second;** FPS sampling rate is configurable.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:259: trailing whitespace.
++* **Web Documents:** A diverse collection of web text ensures the model is exposed to a broad range of linguistic styles, topics, and vocabulary. The training dataset includes content in over 140 languages.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:260: trailing whitespace.
++* **Code:** Exposing the model to code helps it to learn the syntax and patterns of programming languages, which improves its ability to understand code-related semantics.&nbsp;  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:261: trailing whitespace.
++* **Images:** A wide range of images enables the model to perform image analysis and visual data extraction tasks  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:262: trailing whitespace.
++* **Video:** Video sequences and clips covering diverse visual scenes, human actions, and temporal dynamics.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:263: trailing whitespace.
++* **Audio:** Speech recordings across multiple languages, environmental sounds, and acoustic events.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:270: trailing whitespace.
++* **CSAM Filtering**: Rigorous CSAM (Child Sexual Abuse Material) filtering was applied at multiple stages in the data preparation process to ensure the exclusion of harmful and illegal content.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:271: trailing whitespace.
++* **Sensitive Data Filtering**: As part of making Gemma pre-trained models safe and reliable, automated techniques were used to filter out certain personal information and other sensitive data from training sets.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:294: trailing whitespace.
++* **Retrieval:** Embeddings for semantic search across text, code, images, video, and audio, such as document search, RAG over enterprise knowledge bases, code search from natural language queries, or spoken-query search over audio archives.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:295: trailing whitespace.
++* **Classification:** Embeddings to classify inputs according to preset labels, like sentiment analysis, content moderation, audio event detection, or image categorization.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:296: trailing whitespace.
++* **Clustering:** Embeddings to group inputs based on semantic similarity, like organizing document collections, clustering customer feedback by theme, or discovering near-duplicate content across modalities.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:297: trailing whitespace.
++* **Semantic Similarity:** Embeddings to measure pairwise similarity between inputs, such as recommendation systems, duplicate detection, paraphrase identification, or cross-lingual content alignment.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:302: trailing whitespace.
++* **Training Data:** The quality and diversity of the training data significantly influence the model's capabilities. Biases or gaps in the training data can lead to limitations in the model's responses.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:303: trailing whitespace.
++  * The scope of the training dataset determines the subject areas the model can handle effectively.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:304: trailing whitespace.
++  * For example, while EmbeddingGemma 2 supports 100+ languages, the model may not exhibit equal performance across languages.&nbsp;  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:305: trailing whitespace.
++* **Context and Task Complexity:** Models perform well on tasks that can be framed with clear prompts and instructions.&nbsp;  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:306: trailing whitespace.
++  * Open-ended or highly complex tasks might be challenging.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:307: trailing whitespace.
++  * A model's performance can be influenced by the amount of context provided (longer context generally leads to better outputs, up to a certain point).  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:308: trailing whitespace.
++* **Language Ambiguity and Nuance:** Natural language is inherently complex. Models might struggle to grasp subtle nuances, sarcasm, or figurative language.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:315: trailing whitespace.
++* **Bias and Fairness**  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:316: trailing whitespace.
++  * Models trained on large-scale, real-world text and image data can reflect socio-cultural biases embedded in the training material.&nbsp;  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:317: trailing whitespace.
++  * Training data used for EmbeddingGemma 2 underwent safety filtering to mitigate the risk of these biases.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:318: trailing whitespace.
++* **Misinformation and Misuse**  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:319: trailing whitespace.
++  * Embedding representations can be misused to retrieve, classify, or otherwise organize embedded content in false, misleading or harmful ways.&nbsp;  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:323: trailing whitespace.
++  * A responsibly developed open model offers the opportunity to share innovation by making Vision-Language Model (VLM) technology accessible to developers and researchers across the AI ecosystem. 
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:327: trailing whitespace.
++* **Misuse for malicious purposes:** Technical limitations and developer and end-user education can help mitigate against malicious applications of embedding models. Educational resources and reporting mechanisms for users to flag misuse are provided.  
+reports/series_2026-10-23/prompt_sources/embeddinggemma-2.md:328: trailing whitespace.
++* **Privacy violations:** Models were trained on data filtered for removal of certain personal information and other sensitive data. Developers are encouraged to adhere to privacy regulations with privacy-preserving techniques.  
+reports/series_2026-10-23/prompt_sources/fashion-siglip.md:26: trailing whitespace.
++Marqo-FashionSigLIP is a multimodal embedding model that provides up to [57% improvement in MRR and recall](https://www.marqo.ai/blog/search-model-for-fashion) over [fashion clip](https://huggingface.co/patrickjohncyh/fashion-clip). 
+reports/series_2026-10-23/prompt_sources/fashion-siglip.md:28: trailing whitespace.
++Marqo-FashionSigLIP leverages Generalised Contrastive Learning ([GCL](https://www.marqo.ai/blog/generalized-contrastive-learning-for-multi-modal-retrieval-and-ranking)) which allows the model to be trained on not just text descriptions but also categories, style, colors, materials, keywords and fine-details to provide highly relevant search results on fashion products. 
+reports/series_2026-10-23/prompt_sources/fashion-siglip.md:29: trailing whitespace.
++The model was fine-tuned from ViT-B-16-SigLIP (webli). 
+reports/series_2026-10-23/prompt_sources/fashion-siglip.md:130: trailing whitespace.
++const text_probs = softmax(normalized_text_embeds.map((text_embed) => 
+reports/series_2026-10-23/prompt_sources/fashion-siglip.md:138: trailing whitespace.
++Average evaluation results on 6 public multimodal fashion datasets ([Atlas](https://huggingface.co/datasets/Marqo/atlas), [DeepFashion (In-shop)](https://huggingface.co/datasets/Marqo/deepfashion-inshop), [DeepFashion (Multimodal)](https://huggingface.co/datasets/Marqo/deepfashion-multimodal), [Fashion200k](https://huggingface.co/datasets/Marqo/fashion200k), [KAGL](https://huggingface.co/datasets/Marqo/KAGL), and [Polyvore](https://huggingface.co/datasets/Marqo/polyvore)) are reported below: 
+reports/series_2026-10-23/prompt_sources/mclip-b16plus.md:2: trailing whitespace.
++language: 
+reports/series_2026-10-23/prompt_sources/mclip-b16plus.md:50: trailing whitespace.
++- xh 
+reports/series_2026-10-23/prompt_sources/mclip-b16plus.md:55: trailing whitespace.
++Multilingual-CLIP extends OpenAI's English text encoders to multiple other languages. This model *only* contains the multilingual text encoder. The corresponding image model `Vit-B-16Plus` can be retrieved via instructions found on `mlfoundations` [open_clip repository on Github](https://github.com/mlfoundations/open_clip). We provide a usage example below. 
+reports/series_2026-10-23/prompt_sources/mclip-b16plus.md:59: trailing whitespace.
++To use both the multilingual text encoder and corresponding image encoder, we need to install the packages [`multilingual-clip`](https://github.com/FreddeFrallan/Multilingual-CLIP) and [`open_clip_torch`](https://github.com/mlfoundations/open_clip). 
+reports/series_2026-10-23/prompt_sources/mclip-b16plus.md:109: trailing whitespace.
++print("Image features shape:", image_features.shape) 
+reports/series_2026-10-23/prompt_sources/metaclip-m16.md:15: trailing whitespace.
++This model is a **84.16% smaller** version of [facebook/metaclip-2-worldwide-m16-384](https://huggingface.co/facebook/metaclip-2-worldwide-m16-384) optimized for **Polish** language via vocabulary size reduction using the [trimming](https://huggingface.co/blog/lbourdois/introduction-to-trimming) method.  
+reports/series_2026-10-23/prompt_sources/metaclip-m16.md:27: trailing whitespace.
++- **Number of texts used for mining**: 200,000 texts  
+reports/series_2026-10-23/prompt_sources/metaclip-m16.md:75: trailing whitespace.
++      title={Meta CLIP 2: A Worldwide Scaling Recipe}, 
+reports/series_2026-10-23/prompt_sources/metaclip-m16.md:81: trailing whitespace.
++      url={https://arxiv.org/abs/2507.22062}, 
+reports/series_2026-10-23/prompt_sources/metaclip-m16.md:88: trailing whitespace.
++      title={Introduction to Trimming}, 
+reports/series_2026-10-23/prompt_sources/metaclip-m16.md:91: trailing whitespace.
++      url={https://huggingface.co/blog/lbourdois/introduction-to-trimming}, 
+reports/series_2026-10-23/prompt_sources/metaclip-s16.md:15: trailing whitespace.
++This model is a **87.24% smaller** version of [facebook/metaclip-2-worldwide-s16-384](https://huggingface.co/facebook/metaclip-2-worldwide-s16-384) optimized for **Polish** language via vocabulary size reduction using the [trimming](https://huggingface.co/blog/lbourdois/introduction-to-trimming) method.  
+reports/series_2026-10-23/prompt_sources/metaclip-s16.md:27: trailing whitespace.
++- **Number of texts used for mining**: 200,000 texts  
+reports/series_2026-10-23/prompt_sources/metaclip-s16.md:74: trailing whitespace.
++      title={Meta CLIP 2: A Worldwide Scaling Recipe}, 
+reports/series_2026-10-23/prompt_sources/metaclip-s16.md:80: trailing whitespace.
++      url={https://arxiv.org/abs/2507.22062}, 
+reports/series_2026-10-23/prompt_sources/metaclip-s16.md:87: trailing whitespace.
++      title={Introduction to Trimming}, 
+reports/series_2026-10-23/prompt_sources/metaclip-s16.md:90: trailing whitespace.
++      url={https://huggingface.co/blog/lbourdois/introduction-to-trimming}, 
+reports/series_2026-10-23/prompt_sources/mobileclip2-s2.md:51: trailing whitespace.
++``` 
+reports/series_2026-10-23/prompt_sources/pe-core-b16.md:98: trailing whitespace.
++    
+reports/series_2026-10-23/prompt_sources/siglip-i18n-256.md:78: trailing whitespace.
++```    
+reports/series_2026-10-23/prompt_sources/siglip2-b32-256.md:15: trailing whitespace.
++A SigLIP 2 Vision-Lanuage model trained on WebLI. 
+reports/series_2026-10-23/prompt_sources/siglip2-b32-256.md:63: trailing whitespace.
++}        
+reports/series_2026-10-23/prompt_sources/siglip2-base-256.md:61: trailing whitespace.
++    image_embeddings = model.get_image_features(**inputs)    
+reports/series_2026-10-23/prompt_sources/siglip2-base-256.md:74: trailing whitespace.
++3. Aspect ratio and resolution adaptibility 
+reports/series_2026-10-23/prompt_sources/siglip2-base-256.md:94: trailing whitespace.
++      title={SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features}, 
+reports/series_2026-10-23/prompt_sources/siglip2-base-256.md:100: trailing whitespace.
++      url={https://arxiv.org/abs/2502.14786}, 
+reports/series_2026-10-23/prompt_sources/siglip2-base-384.md:61: trailing whitespace.
++    image_embeddings = model.get_image_features(**inputs)    
+reports/series_2026-10-23/prompt_sources/siglip2-base-384.md:74: trailing whitespace.
++3. Aspect ratio and resolution adaptibility 
+reports/series_2026-10-23/prompt_sources/siglip2-base-384.md:94: trailing whitespace.
++      title={SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features}, 
+reports/series_2026-10-23/prompt_sources/siglip2-base-384.md:100: trailing whitespace.
++      url={https://arxiv.org/abs/2502.14786}, 
+reports/series_2026-10-23/prompt_sources/siglip2-base.md:61: trailing whitespace.
++    image_embeddings = model.get_image_features(**inputs)    
+reports/series_2026-10-23/prompt_sources/siglip2-base.md:74: trailing whitespace.
++3. Aspect ratio and resolution adaptibility 
+reports/series_2026-10-23/prompt_sources/siglip2-base.md:94: trailing whitespace.
++      title={SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features}, 
+reports/series_2026-10-23/prompt_sources/siglip2-base.md:100: trailing whitespace.
++      url={https://arxiv.org/abs/2502.14786}, 
+reports/series_2026-10-23/prompt_sources/siglip2-naflex.md:61: trailing whitespace.
++    image_embeddings = model.get_image_features(**inputs)    
+reports/series_2026-10-23/prompt_sources/siglip2-naflex.md:74: trailing whitespace.
++3. Aspect ratio and resolution adaptibility 
+reports/series_2026-10-23/prompt_sources/siglip2-naflex.md:94: trailing whitespace.
++      title={SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features}, 
+reports/series_2026-10-23/prompt_sources/siglip2-naflex.md:100: trailing whitespace.
++      url={https://arxiv.org/abs/2502.14786}, 
+reports/series_2026-10-23/prompt_sources/siglip2-pl-32768.md:15: trailing whitespace.
++This model is a **45.62%** smaller version of [google/siglip2-base-patch16-512](https://huggingface.co/google/siglip2-base-patch16-512) optimized for **Polish** language via vocabulary size reduction using the [trimming](https://huggingface.co/blog/lbourdois/introduction-to-trimming) method.  
+reports/series_2026-10-23/prompt_sources/siglip2-pl-32768.md:27: trailing whitespace.
++- **Number of texts used for mining**: 200,000 texts  
+reports/series_2026-10-23/prompt_sources/siglip2-pl-32768.md:74: trailing whitespace.
++      title={SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features}, 
+reports/series_2026-10-23/prompt_sources/siglip2-pl-32768.md:80: trailing whitespace.
++      url={https://arxiv.org/abs/2502.14786}, 
+reports/series_2026-10-23/prompt_sources/siglip2-pl-32768.md:87: trailing whitespace.
++      title={Introduction to Trimming}, 
+reports/series_2026-10-23/prompt_sources/siglip2-pl-32768.md:90: trailing whitespace.
++      url={https://huggingface.co/blog/lbourdois/introduction-to-trimming}, 
+reports/series_2026-10-23/prompt_sources/siglip2-pl.md:15: trailing whitespace.
++This model is a **48.97%** smaller version of [google/siglip2-base-patch16-512](https://huggingface.co/google/siglip2-base-patch16-512) optimized for **Polish** language via vocabulary size reduction using the [trimming](https://huggingface.co/blog/lbourdois/introduction-to-trimming) method.  
+reports/series_2026-10-23/prompt_sources/siglip2-pl.md:27: trailing whitespace.
++- **Number of texts used for mining**: 200,000 texts  
+reports/series_2026-10-23/prompt_sources/siglip2-pl.md:74: trailing whitespace.
++      title={SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features}, 
+reports/series_2026-10-23/prompt_sources/siglip2-pl.md:80: trailing whitespace.
++      url={https://arxiv.org/abs/2502.14786}, 
+reports/series_2026-10-23/prompt_sources/siglip2-pl.md:87: trailing whitespace.
++      title={Introduction to Trimming}, 
+reports/series_2026-10-23/prompt_sources/siglip2-pl.md:90: trailing whitespace.
++      url={https://huggingface.co/blog/lbourdois/introduction-to-trimming}, 
+reports/series_2026-10-23/xtd10_source/LICENSE.md:21: trailing whitespace.
++5.	TERM AND TERMINATION.  

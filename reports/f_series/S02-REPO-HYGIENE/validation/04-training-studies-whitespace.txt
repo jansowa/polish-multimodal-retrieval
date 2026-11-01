@@ -1,0 +1,7 @@
+src/pl_mmb_training/tinyclip_diagnostics.py:207: new blank line at EOF.
+src/pl_mmb_training/tinyclip_generalization.py:343: new blank line at EOF.
+src/pl_mmb_training/tinyclip_visualnews.py:444: new blank line at EOF.
+src/pl_mmb_training/visualnews_data.py:357: new blank line at EOF.
+training/prepare_tinyclip_visualnews.py:7: new blank line at EOF.
+training/tinyclip_diagnostics.py:9: new blank line at EOF.
+training/tinyclip_generalization.py:9: new blank line at EOF.

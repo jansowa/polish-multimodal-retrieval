@@ -1,0 +1,15 @@
+{
+  "interpreter": "/home/jsowa/.venvs/pl-mmb-benchmark/bin/python",
+  "isolated_dependencies": "/tmp/pl-mmb-hygiene-testdeps-ryx620tl",
+  "command": [
+    "/home/jsowa/.venvs/pl-mmb-benchmark/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--target",
+    "/tmp/pl-mmb-hygiene-testdeps-ryx620tl",
+    "pytest>=8,<10",
+    "openai>=2,<3"
+  ],
+  "exit_code": 0
+}

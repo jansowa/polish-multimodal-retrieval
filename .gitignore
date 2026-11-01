@@ -74,3 +74,6 @@ training/runs/f_series/**
 
 # Generated Sites snapshot has its own Git history; canonical browser sources are tracked.
 /data_collection/browser_site/
+
+# Live failure sentinel of the independent Wiki download queue.
+/reports/data_study_20261030/wiki_recovery_20261031/FAILED.md

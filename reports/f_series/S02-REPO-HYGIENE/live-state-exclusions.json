@@ -1,0 +1,44 @@
+[
+  {
+    "path": "reports/data_ood_coordination_20261030/A_STATUS.json",
+    "initial_sha256": "cfb8d16c04829a983b9b9cd4afece85519954c47828dc5ac9d6bc801315100db",
+    "observed_sha256": "dcb1fc2f4677a90eed9fb3501820077cc8dd476646a0ae6b144fabcb31b25d6a",
+    "action": "ignored; file not edited or committed"
+  },
+  {
+    "path": "reports/data_ood_coordination_20261030/B_STATUS.json",
+    "initial_sha256": "9e4c6aca118da2cded02df1e2435c1076911c3459d28ab5b42ee1fa898d6c3e4",
+    "observed_sha256": "9e4c6aca118da2cded02df1e2435c1076911c3459d28ab5b42ee1fa898d6c3e4",
+    "action": "ignored; file not edited or committed"
+  },
+  {
+    "path": "reports/data_ood_coordination_20261030/DISK_RESERVATIONS.json",
+    "initial_sha256": "823e346217e9c9d03cc9bafe09feef2ccd841d0bed8b39bcd9445564ebf3c5ca",
+    "observed_sha256": "fa6ed9ce45ed165e2a6a3bc9ac286469e528b47a7051e3d20fbdf951f66f7fcb",
+    "action": "ignored; file not edited or committed"
+  },
+  {
+    "path": "reports/data_ood_coordination_20261030/generation_2/A_STATUS.json",
+    "initial_sha256": "f5a9e62441b2a11b83dea0a47ff725d56d7934da646b897e012f58844ae958e0",
+    "observed_sha256": "cd2e1f9167672f44255f8bf63fe5394799b8b9dd15ffc9ea988db1d9012c4679",
+    "action": "ignored; file not edited or committed"
+  },
+  {
+    "path": "reports/data_study_20261030/wiki_recovery_20261031/STATUS.json",
+    "initial_sha256": "f5a9e62441b2a11b83dea0a47ff725d56d7934da646b897e012f58844ae958e0",
+    "observed_sha256": "cd2e1f9167672f44255f8bf63fe5394799b8b9dd15ffc9ea988db1d9012c4679",
+    "action": "ignored; file not edited or committed"
+  },
+  {
+    "path": "reports/data_study_20261030/wiki_recovery_20261031/TRAINING_STATUS.json",
+    "initial_sha256": "126fd4f4d41947cef3cc820a4401157f2208c58d3f09cd2b554f79b6cac154b0",
+    "observed_sha256": "126fd4f4d41947cef3cc820a4401157f2208c58d3f09cd2b554f79b6cac154b0",
+    "action": "ignored; file not edited or committed"
+  },
+  {
+    "path": "reports/ood_eval_20261030/resume_state.json",
+    "initial_sha256": "e8273c7511b82ed9a0686d2d2aff93285c77fd419d273f35773df3f9d1e995cd",
+    "observed_sha256": "e8273c7511b82ed9a0686d2d2aff93285c77fd419d273f35773df3f9d1e995cd",
+    "action": "ignored; file not edited or committed"
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "wsl-repository-cpu": {
+    "result": "260 passed, 1 skipped in 21.58s",
+    "log_sha256": "bce01223b77e657ac20a7c06f424eb58e8c51f8fa4d66c114a69046d0d61545d",
+    "command": [
+      "/home/jsowa/.venvs/pl-mmb-benchmark/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "tests/data_collection/test_browser.py",
+      "tests/data_collection/test_collection.py",
+      "tests/data_collection/test_fast_collection.py",
+      "tests/test_absence_suite.py",
+      "tests/test_cleanroom.py",
+      "tests/test_cleanroom_controls.py",
+      "tests/test_holdout_registry.py",
+      "tests/test_reference_weight_cleanup.py",
+      "tests/test_series_20261023.py",
+      "tests/test_shared_inference_slots.py",
+      "tests/test_source_ablation.py",
+      "tests/test_tinyclip_adaptation.py",
+      "tests/test_tinyclip_diagnostics.py",
+      "tests/test_tinyclip_generalization.py",
+      "tests/test_tinyclip_optimization.py",
+      "tests/test_training.py",
+      "tests/test_training_ablation.py",
+      "tests/test_training_commercial_vision.py",
+      "tests/test_training_full.py",
+      "tests/test_training_vision.py",
+      "tests/test_visualnews_image_continuation.py",
+      "tests/test_visualnews_pipeline.py",
+      "tests/test_visualnews_training.py",
+      "tests/test_wiki_coco_evaluation.py",
+      "tests/test_wiki_compact_archive.py",
+      "tests/test_wiki_pilot.py",
+      "tests/test_wiki_pilot_http.py",
+      "tests/test_wiki_training_browser.py",
+      "tests/test_wikimedia_grounding_pipeline.py",
+      "retrieval_benchmark/tests"
+    ],
+    "retained_log": "reports/f_series/S02-REPO-HYGIENE/validation/wsl-repository-cpu.txt"
+  },
+  "wsl-data-study-guard": {
+    "result": "5 passed in 0.26s",
+    "log_sha256": "3de0922879cc7b6509a3ad1ea40ed1f93b71bfe1a47df2a0588277d5be9a14dd",
+    "command": [
+      "/home/jsowa/.venvs/pl-mmb-benchmark/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "experiments/data_study_20261030/test_guard.py"
+    ],
+    "retained_log": "reports/f_series/S02-REPO-HYGIENE/validation/wsl-data-study-guard.txt"
+  },
+  "wsl-wiki-queue": {
+    "result": "4 passed in 223.80s (0:03:43)",
+    "log_sha256": "32c2c9769d7a9c9ed25eb00d4fe2b7fd0c6de7ed5e2902c3ba7b917cca16e113",
+    "command": [
+      "/home/jsowa/.venvs/pl-mmb-benchmark/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "experiments/data_study_20261030/wiki_recovery_20261031/test_queue.py"
+    ],
+    "retained_log": "reports/f_series/S02-REPO-HYGIENE/validation/wsl-wiki-queue.txt"
+  },
+  "wsl-ood-cpu": {
+    "result": "13 passed in 0.50s",
+    "log_sha256": "950020cf0ce20fe4288830dc12ad683c59dfeef69e7e63196e8c851aa1564915",
+    "command": [
+      "/home/jsowa/.venvs/pl-mmb-benchmark/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--disable-warnings",
+      "--tb=short",
+      "experiments/ood_eval_20261030/test_cpu.py"
+    ],
+    "retained_log": "reports/f_series/S02-REPO-HYGIENE/validation/wsl-ood-cpu.txt"
+  }
+}

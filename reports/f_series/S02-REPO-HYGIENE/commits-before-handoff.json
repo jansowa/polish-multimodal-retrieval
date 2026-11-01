@@ -1,0 +1,74 @@
+[
+  {
+    "sha": "b5887555833f400745d838e5ded35283804c126a",
+    "subject": "[S02-REPO-HYGIENE] Ignore runtime stores and untrack absence states"
+  },
+  {
+    "sha": "775428dace5752c4edee8de22a4d5c73bc1eac7b",
+    "subject": "[S02-REPO-HYGIENE] Preserve exact bytes of SHA-bound artifacts"
+  },
+  {
+    "sha": "92400c50907bbfc224a061fe1867dd7ab4f2a9df",
+    "subject": "[S02-REPO-HYGIENE] Retry atomic status replacement under Windows file locks"
+  },
+  {
+    "sha": "df23707402a9195ee213cd5bb63821e1b5455a01",
+    "subject": "[S02-REPO-HYGIENE] Version Wikimedia collection pipeline browser and tests"
+  },
+  {
+    "sha": "6e9379c650799469e67e6ba6ada514e578c563cc",
+    "subject": "[S02-REPO-HYGIENE] Version resumable training engine and holdout guards"
+  },
+  {
+    "sha": "dec5eb08a4cd1794dff2d0be2d0b114033add6c7",
+    "subject": "[S02-REPO-HYGIENE] Version training ablations and TinyCLIP vision studies"
+  },
+  {
+    "sha": "adb05d37334fbda8367a6a34a4de4b565b60d8d6",
+    "subject": "[S02-REPO-HYGIENE] Version VisualNews Wikimedia inference pipelines"
+  },
+  {
+    "sha": "4d5a65d3d8e3ee330344d34c01acc74ccd63ff21",
+    "subject": "[S02-REPO-HYGIENE] Version full-gallery retrieval runner and leaderboard"
+  },
+  {
+    "sha": "b7e692f6a994fe514e7e35d58b996ef670286f5b",
+    "subject": "[S02-REPO-HYGIENE] Version historical series and OOD experiment runners"
+  },
+  {
+    "sha": "aaec30fa42f0d60b5ed832bcbc84a559e96d5609",
+    "subject": "[S02-REPO-HYGIENE] Preserve pipeline protocols audits and QA evidence"
+  },
+  {
+    "sha": "3a53c4104a9d3a28e39242f8b659a43acc679ad8",
+    "subject": "[S02-REPO-HYGIENE] Preserve training metrics ablations and verification"
+  },
+  {
+    "sha": "ca47063114799fc1c3fc99729f58f8b042ba33ee",
+    "subject": "[S02-REPO-HYGIENE] Exclude live cross-session coordination states"
+  },
+  {
+    "sha": "3c23b3f04d0da5ca69e45fff3568ccfada086bd3",
+    "subject": "[S02-REPO-HYGIENE] Preserve historical series holdouts and audit trail"
+  },
+  {
+    "sha": "16509550168f85dddbccccc102e14c778e6c283f",
+    "subject": "[S02-REPO-HYGIENE] Preserve benchmark results and completion evidence"
+  },
+  {
+    "sha": "7c1371f763adcdae1934643cc7a572b3046f02a9",
+    "subject": "[S02-REPO-HYGIENE] Version consultation briefs and export tools"
+  },
+  {
+    "sha": "f1cdbb71349b8f2e132b08634e61e2adbd0cccb9",
+    "subject": "[S02-REPO-HYGIENE] Version F-series specifications without implementation"
+  },
+  {
+    "sha": "4ff528aec380759bb85f88d79dea020ef56feb2d",
+    "subject": "[S02-REPO-HYGIENE] Register collection training packages and navigation"
+  },
+  {
+    "sha": "3a461668890a9bf9849ffef0350db9ca7ac1f942",
+    "subject": "[S02-REPO-HYGIENE] Document browser tool and ignore generated Sites checkout"
+  }
+]

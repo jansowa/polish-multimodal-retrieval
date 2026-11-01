@@ -1,0 +1,12 @@
+{
+  "authorization": "User explicitly approved ignoring working data/copies, untracking absence runtime states while preserving files, and tracking benchmark/holdout manifests.",
+  "untrack_only": {
+    "reports/absence_extension_pilot_state.json": "02848a1c837ef0efbe1460cf99bcea172b2a939d10a68f59707ed45691d362a7",
+    "reports/absence_extension_state.json": "7502c3eb5a811f48a981130e8c27f903b23477ba13072cb72d276ed39a74952a",
+    "reports/absence_full_pending.json": "d0bcbbd02839a13a13cc1cbdccd910e588c072fb37a4fbf83c053764e10c9af0",
+    "reports/absence_news_pilot_state.json": "a5c4a915babda65947e2f09345063284aaf8fe26a5b2ffac82cfd2817fbbe19d",
+    "reports/absence_news_state.json": "5519d00f9319fe334c4e33f416f34f6c62110edbd5921483b356c83a2967339d",
+    "reports/absence_pilot_state.json": "852df8198a8c5b6b14536767c7f1410d5937ee0d2923a13425376a84fa2e67ab",
+    "reports/absence_suite_state.json": "7cf2d779947caace5c93cec63fc4b9974fbb385e84b7b5f55e352171dec7d1b0"
+  }
+}

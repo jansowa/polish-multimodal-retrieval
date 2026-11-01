@@ -1,0 +1,94 @@
+{
+  "path": "data_collection\\browser_site",
+  "file_count": 29,
+  "bytes": 241108,
+  "nested_head": "c6eb31ccfb83665d23260151a2be9fe54350106a",
+  "nested_clean": true,
+  "catalog": {
+    "mode": "snapshot",
+    "generated_at": "2026-10-21T05:50:38.581232+00:00",
+    "datasets": [
+      {
+        "id": "production",
+        "label": "Zbiór główny",
+        "count": 0,
+        "entities": 500,
+        "discovered": 10,
+        "collected": 0,
+        "rejected": 0,
+        "failures": 1,
+        "licenses": [],
+        "quality": {
+          "A": 0,
+          "B": 0,
+          "C": 0,
+          "D": 0
+        },
+        "direct_count": 0,
+        "latest": null,
+        "phase": "Odkrywanie tematów"
+      },
+      {
+        "id": "pilot",
+        "label": "Pilot · 20 encji",
+        "count": 20,
+        "entities": 20,
+        "discovered": 20,
+        "collected": 20,
+        "rejected": 17,
+        "failures": 0,
+        "licenses": [
+          "CC BY 2.0",
+          "CC BY 3.0",
+          "CC BY-SA 2.0",
+          "CC BY-SA 3.0",
+          "CC BY-SA 4.0",
+          "CC0"
+        ],
+        "quality": {
+          "A": 5,
+          "B": 11,
+          "C": 0,
+          "D": 17
+        },
+        "direct_count": 16,
+        "latest": "2026-10-20T20:17:15.277943+00:00",
+        "phase": "Zbiór gotowy"
+      }
+    ],
+    "default_dataset": "pilot"
+  },
+  "pilot_records": 20,
+  "production_records": 0,
+  "sha256": {
+    "README.md": "357c2ca73a9dde610cec38124a0139fde6a39eba46718356dad8526cea916fc4",
+    ".openai\\hosting.json": "e2252c8004087e4d4ce461ba7cd363ff89608222f99a18ffa77bfa7530a19540",
+    "dist\\app-config.json": "39ae1246c005437a78281deb8cd711a7018049c5e9b9e9fd1aebaf96cc4fa2e7",
+    "dist\\app.js": "5631a6f2c79bc6ccac65d031222bae792f93c5d3e43d01863e1df6b8de536f69",
+    "dist\\index.html": "6164a5e92621d80ee4e78909225e4b9043eec17ac3d637b40ddd95788343ca39",
+    "dist\\style.css": "69db47f10f396077161cc4fa4cf7decd046c18a264982b41bfbd31848e2b7e5a",
+    "dist\\site-data\\catalog.json": "46ea9047eef7c6391e3d2c54407457629337888c6335d7d3ed4fe16243375ab0",
+    "dist\\site-data\\pilot\\index.json": "0903e922d5b2d0afd585e7a340f3889f3ec5bd30a0301b6a3109029b33981a01",
+    "dist\\site-data\\production\\index.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "dist\\site-data\\pilot\\records\\0dd634d97e2fb62ecb04b646e64dce7276d65becdbb331ef7d077af6d205c652.json": "7c8d87833d5f2c532e51c23edea452e091b6398a6e0ba289cdb78b584b978ad0",
+    "dist\\site-data\\pilot\\records\\2f737771a1fe250f691ae99f1ef351df4737eb22f81a96dba51db50facff4a8c.json": "202f5e7d5772e96671d0d4d9c38d98ec27460222b94347c0516a78876ed53234",
+    "dist\\site-data\\pilot\\records\\2fcdd44cb3a5ab8d11d200e0b6fecb26022d963716790d1212efb8ce5d3ac3fe.json": "be74a7715e75d48edba90dd48cc89378be8ff135426672b0dd4f28c4f94a1f4d",
+    "dist\\site-data\\pilot\\records\\3bdfa3b89c04244288b8e51fb9aca79005125c055dfbf8ab00f2a5103a4032e6.json": "94a0d7773c3bcfed0f316a7d009d9d792c6ff7c1bf2b32eb3ca49175c1df36cc",
+    "dist\\site-data\\pilot\\records\\3d22355fbaca21eeab4a43f1deac4b673032bd2608494deb96ea8fbad2fad87b.json": "9206f127c0204e808aa9cde653f3808546617a0988f8ccd2400426a4ed177463",
+    "dist\\site-data\\pilot\\records\\500791df2cbf50d08591151b5f91a62b1f5594df9981bbf6ed5e0c30f4caf50a.json": "5aad6917d40a5229fd5cbec38dc0f47ed599520881d658a2c4442944e3ea9bf0",
+    "dist\\site-data\\pilot\\records\\6761ca26ef4429cae36c1522fc3b33839cd48ef04cfa150251c1e5baf9d13dff.json": "ce4a3e1019f96b832571b74d3a3985890b753bd7a357c85853251397e826161c",
+    "dist\\site-data\\pilot\\records\\711b6e89edf21aa687d5f034fa1c6288fdf3f4436d25ad133b35ca1af77db5fa.json": "fd5b1866defbcbdb314e3b6311c3afcb450fa540bfd0f74dab889e18d0a04153",
+    "dist\\site-data\\pilot\\records\\71d58fa7221d6f676dc94e31b5d2fbfcd2c5bbe7f9b56c30200dd64e47bb1891.json": "d98214d2e70ff5e059ca02270de58158df0d7c69ed250b212359a0f0e8bd718a",
+    "dist\\site-data\\pilot\\records\\7a655b8abd97c3610f481c9bf37a7c61481b7c71c0bf178544cb95023fec1287.json": "73c08d067b4e7a16242db6519535f13b002855d40f165127cd9a088cf96a7e47",
+    "dist\\site-data\\pilot\\records\\80627b6c5b4a9d576d64c0a6743bbb05c6b1d2e1f239acedfe91dcf1452ff6b4.json": "805db7ca3fd39fcce7d7bdaf6cbe16810d181b36550fa02cd1b707a949e84f19",
+    "dist\\site-data\\pilot\\records\\909d7588815304ad5466692be6ad84eaa3ffac9fba9f466ef83fa1a1ad2c8631.json": "de503428a109c272ed21f575b2e2a9d008bf375b5e6b99852ce09eaac499c626",
+    "dist\\site-data\\pilot\\records\\94a366cde04297b9235f9e7db17a9a2fde6011805c2ca8f08c4aa337fef00260.json": "507a22311d7a825be20be02f4d4db7897612919445ad76c8c9424041348c8675",
+    "dist\\site-data\\pilot\\records\\991ae385b580a5046555be9bb2cb698cc42a9dbe490ebd3ce6d0c7a0769119d3.json": "83f672b7823138697dc0da6fa0e169d98b9155f0819770fd540245e0f8936ede",
+    "dist\\site-data\\pilot\\records\\a4d741f8312ef288b55d699b728647ae84879eacea1e04f67586881308461d3b.json": "f786fbf7adde96063b42b9dec7d4af7d04dd565803b86c333621556b90d76c6b",
+    "dist\\site-data\\pilot\\records\\af158289328e6e7dfc7a090f8ce468f7c35aa309c975d32417ab2317778abfc1.json": "5341f63392d37b4d2ea1fe69acb28c27783263252b2c90af32597c345b1ac072",
+    "dist\\site-data\\pilot\\records\\bce42a947e328a350f4037ed37292c24eea4e06b7b7b73eaeda24db94db5571d.json": "db9921f5a6633b9ef28b5eca9a5d4b7f016b5b79079f303ba342fddaf22af716",
+    "dist\\site-data\\pilot\\records\\c4126af6de5afae00b211972175a22bd919d2ecd23f8db04ea10ba02181dd174.json": "d9f0ed1420ae749c78f581369dd848db77f7b54c56654891cbc526494c55dabc",
+    "dist\\site-data\\pilot\\records\\d8ab69715fe9317f0bbfe3fc20eab8ede24770082983987d0ef45f69c236c923.json": "7a920d6ae4521611fda86a145d35d6a0c30972ea37a8054770051b0c8508cde3",
+    "dist\\site-data\\pilot\\records\\e324ad457caaff6c2354bd5e328b25be8b5b0239a29ecc10d5cfedbc4ee29470.json": "0a99edd8afb78e84bc87abda83d0bc4ecc17d457aa253f8920c9ac83f3ecb6b1"
+  }
+}

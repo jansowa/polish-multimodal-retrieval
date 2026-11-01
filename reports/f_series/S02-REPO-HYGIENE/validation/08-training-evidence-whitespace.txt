@@ -1,0 +1,2 @@
+reports/tinyclip_generalization.md:3: trailing whitespace.
++FULL_CLEAN i walidacja bez zmian. PolDense frozen. Seed 42; wspólny start A1 epoka 9. 

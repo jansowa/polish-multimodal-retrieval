@@ -1,0 +1,11 @@
+{
+  "reports/visualnews_pipeline/v1/checkpoint.sqlite3": true,
+  "reports/visualnews_pipeline/v1/final_pairs.jsonl": true,
+  "reports/project_state_export_2026-10-21.zip": true,
+  "reports/absence_news_state.json": true,
+  "reports/series_2026-10-23/wiki_v2/wiki_dev.jsonl": false,
+  "reports/series_2026-10-23/vn_dev_protocol/manifest.jsonl": false,
+  "retrieval_benchmark/holdouts/registry-v4.json": false,
+  "training/runs/f_series/example/JOB.json": false,
+  "training/runs/f_series/example/checkpoint.pt": true
+}

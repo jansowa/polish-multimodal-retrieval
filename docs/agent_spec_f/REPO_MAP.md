@@ -1,6 +1,6 @@
 # Mapa repo — S00-BOOT
 
-Ścieżki źródłowe względem `D:\work\translate-vision-embedder-benchmark\pl-multimodal-benchmark-translator\pl-multimodal-benchmark-translator`; po domknięciu S00 wszystkie artefakty F są w głównym checkoutcie na bieżącej gałęzi; `.s00-boot-worktree` usunięto. Część źródeł pozostaje nieśledzona w Git. Dowody i SHA: reports/f_series/S00-BOOT-evidence.json. Jedna linia na pozycję.
+Ścieżki źródłowe względem `D:\work\translate-vision-embedder-benchmark\pl-multimodal-benchmark-translator\pl-multimodal-benchmark-translator`; po domknięciu S00 wszystkie artefakty F są w głównym checkoutcie na bieżącej gałęzi; `.s00-boot-worktree` usunięto. Kod, testy, specyfikacje oraz wybrane dowody zapisano w Git w S02-REPO-HYGIENE; dane robocze i kopie pozostają lokalne, ignorowane. Raport: reports/f_series/S02-REPO-HYGIENE/REPORT.md. Dowody i SHA: reports/f_series/S00-BOOT-evidence.json. Jedna linia na pozycję.
 
 - Scorer / bootstrap: src/pl_mmb_benchmark/full_gallery.py — per_query(), paired_bootstrap().
 - Loss: src/pl_mmb_training/losses.py.
