@@ -82,9 +82,19 @@ def organizations(document):
     return sorted({model_organization(mid, model) for mid, model in document['models'].items()}, key=str.casefold)
 
 
+def model_choices(document):
+    choices = []
+    for mid,model in document['models'].items():
+        name,_ = model_reference(mid,model)
+        if own_model(mid,model) and '/' not in name:
+            name = 'jansowa/'+name
+        choices.append((name,mid))
+    return sorted(choices,key=lambda item:(item[0].casefold(),item[1]))
+
+
 def overview(document, metric='recall@1', mode='v2_no_instructions', profile='historical-native-v2',
              max_parameters=0, show_seeds=False, show_controls=False, visible_columns=None, average_tasks=None,
-             min_parameters=0, selected_organizations=None):
+             min_parameters=0, selected_organizations=None, selected_models=None):
     if metric not in METRICS:
         raise ValueError('Unsupported metric')
     min_parameters, max_parameters = min_parameters or 0, max_parameters or 0
@@ -105,6 +115,8 @@ def overview(document, metric='recall@1', mode='v2_no_instructions', profile='hi
     entries = []
     for model_id, found in results.items():
         m = document['models'][model_id]
+        if selected_models is not None and model_id not in selected_models:
+            continue
         if not show_seeds and not m.get('representative', True):
             continue
         if not show_controls and m.get('role') == 'english_control':
@@ -172,10 +184,11 @@ def frontier(points):
 def pareto_data(document, metric='recall@1', mode='v2_no_instructions',
                 profile='historical-native-v2', max_parameters=0, average_tasks=None,
                 show_seeds=False, show_controls=False, min_parameters=0, selected_organizations=None,
-                filtered_view=None):
+                filtered_view=None, selected_models=None):
     view = filtered_view if filtered_view is not None else overview(
         document, metric, mode, profile, max_parameters, show_seeds, show_controls,
-        average_tasks=average_tasks, min_parameters=min_parameters, selected_organizations=selected_organizations)
+        average_tasks=average_tasks, min_parameters=min_parameters, selected_organizations=selected_organizations,
+        selected_models=selected_models)
     points = [dict(point) for point in view['model_data']]
     for point in points:
         point['commercial'] = commercial_use(point['id'], document['models'][point['id']])
@@ -185,45 +198,63 @@ def pareto_data(document, metric='recall@1', mode='v2_no_instructions',
 
 
 def label_rows(points):
-    """Separate side rails give every full name its own nonoverlapping rectangle."""
-    ordered = sorted(points, key=lambda p:(p['size'],p['id']))
-    split = (len(ordered)+1)//2
+    """Variable-width full names; short local model names need very little space."""
     rows = []
-    for i,point in enumerate(ordered):
-        lines = textwrap.wrap(point['name'],width=38,break_long_words=True,break_on_hyphens=False) or ['']
-        rows.append(dict(id=point['id'], side='left' if i < split else 'right', lines=lines,height=15*len(lines)+8))
+    for point in points:
+        lines = textwrap.wrap(point['name'],width=32,break_long_words=True,break_on_hyphens=False) or ['']
+        rows.append(dict(id=point['id'],lines=lines,height=16*len(lines)+8,
+                         width=max(36,max(map(len,lines))*8+10),
+                         priority=(point.get('score') is None,-(point.get('score') or 0))))
     return rows
 
 
-def place_label_rows(rows, coordinates, top, bottom):
-    """Pack toward target Y, then back from the bottom; capacity is set by renderer."""
+def place_point_labels(rows, coordinates, bounds, forbidden=()):
+    """Try the closest free position around each dot, expanding only in crowded areas."""
+    left,top,right,bottom = bounds
     result = {}
-    for side in ('left','right'):
-        column = sorted((dict(row) for row in rows if row['side']==side),
-                        key=lambda row:(coordinates[row['id']][1],coordinates[row['id']][0],row['id']))
-        cursor = top
-        for row in column:
-            target = coordinates[row['id']][1]
-            row['y'] = max(cursor,target-row['height']/2)
-            cursor = row['y']+row['height']+8
-        cursor = bottom
-        for row in reversed(column):
-            row['y'] = min(row['y'],cursor-row['height'])
-            cursor = row['y']-8
-        for row in column:
-            row['x'] = 12 if side=='left' else 1128
-            row['width'] = 308
-            result[row['id']] = row
+    def valid(row,xx,yy):
+        w,h = row['width'],row['height']
+        if xx<left or yy<top or xx+w>right or yy+h>bottom:
+            return False
+        if any(xx < rx+rw and xx+w > rx and yy < ry+rh and yy+h > ry for rx,ry,rw,rh in forbidden):
+            return False
+        if any(xx < a['x']+a['width']+5 and xx+w+5 > a['x'] and
+               yy < a['y']+a['height']+5 and yy+h+5 > a['y'] for a in result.values()):
+            return False
+        return not any(xx-7 < px < xx+w+7 and yy-7 < py < yy+h+7 for px,py in coordinates.values())
+    def distance(row,xx,yy,px,py):
+        return math.hypot(max(xx-px,0,px-xx-row['width']),max(yy-py,0,py-yy-row['height']))
+    # Complete, high-scoring points get local space before incomplete measurements.
+    ordered = sorted(rows,key=lambda row:(row['priority'],-row['width']*row['height'],coordinates[row['id']][1],row['id']))
+    for original in ordered:
+        row = dict(original)
+        px,py = coordinates[row['id']]
+        w,h = row['width'],row['height']
+        candidates = [(px+11,py-h-8),(px+11,py+8),(px-w-11,py-h-8),(px-w-11,py+8),
+                      (px-w/2,py-h-11),(px-w/2,py+11),(px+11,py-h/2),(px-w-11,py-h/2)]
+        available = [(xx,yy) for xx,yy in candidates if valid(row,xx,yy)]
+        if not available:
+            for radius in range(24,int(math.hypot(right-left,bottom-top))+48,24):
+                candidates = [(px+radius*math.cos(i*math.pi/12)-w/2,
+                               py+radius*math.sin(i*math.pi/12)-h/2) for i in range(24)]
+                available = [(xx,yy) for xx,yy in candidates if valid(row,xx,yy)]
+                if available:
+                    break
+        if not available:
+            return None
+        xx,yy = min(available,key=lambda p:(distance(row,*p,px,py),math.hypot(p[0]+w/2-px,p[1]+h/2-py)))
+        row.update(x=xx,y=yy)
+        result[row['id']] = row
     return result
 
 
 def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
                 profile='historical-native-v2', max_parameters=0, average_tasks=None, log_scale=False,
                 show_seeds=False, show_controls=False, min_parameters=0, selected_organizations=None,
-                filtered_view=None, show_labels=True):
+                filtered_view=None, show_labels=True, selected_models=None):
     """Responsive SVG: no extra dependencies, external scripts or network calls."""
     data = pareto_data(document, metric, mode, profile, max_parameters, average_tasks,
-                       show_seeds, show_controls, min_parameters, selected_organizations, filtered_view)
+                       show_seeds, show_controls, min_parameters, selected_organizations, filtered_view, selected_models)
     points = data['points']
     if not points:
         return '<p>Brak modeli dla wybranych filtrów.</p>'
@@ -231,11 +262,9 @@ def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
     complete = [p for p in points if p['score'] is not None]
     missing = [p for p in points if p['score'] is None]
     rows = label_rows(points) if show_labels else []
-    rail_height = max((sum(row['height']+8 for row in rows if row['side']==side) for side in ('left','right')),default=0)
-    left, right, top = (390,1090,35) if show_labels else (85,1000,35)
-    bottom = max(355,top+rail_height+12)
-    canvas_width = 1460 if show_labels else 1040
-    canvas_height = bottom+135
+    left,right,top = 85,1235,35
+    bottom = max(455,355+len(points)*8) if show_labels else 355
+    canvas_width = 1280
     middle = (left+right)/2
     positive = [p['size'] for p in points if p['size'] > 0]
     high = max(positive, default=1)*1.08
@@ -251,8 +280,16 @@ def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
         return left+(right-left)*fraction
     def y(score):
         return bottom-(bottom-top)*score/100
-    coordinates = {p['id']:(x(p['size']),y(p['score']) if p['score'] is not None else bottom+93) for p in points}
-    placed = place_label_rows(rows,coordinates,top,bottom+112 if missing else bottom) if show_labels else {}
+    for attempt in range(8):
+        coordinates = {p['id']:(x(p['size']),y(p['score']) if p['score'] is not None else bottom+93) for p in points}
+        placed = place_point_labels(rows,coordinates,(left+3,top+3,right-3,bottom+205 if missing else bottom-3),
+                                    forbidden=[(left,bottom+1,right-left,67)]) if show_labels else {}
+        if placed is not None:
+            break
+        bottom = int(bottom*1.35)
+    if placed is None:
+        raise ValueError('Cannot place labels; reduce the selected model set')
+    canvas_height = bottom+(235 if show_labels and missing else 135)
     blue, orange = '#2563eb', '#d97706'
     parts = ['<div class="pareto-chart" style="overflow-x:auto">',
              '<div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:8px">',
@@ -260,7 +297,7 @@ def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
              f'<span><b style="color:{orange}">┅┅</b> Pareto: komercyjne + własne</span></div>',
              f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {canvas_width} {canvas_height}" '
              'role="img" aria-label="Średni wynik modeli względem rozmiaru, dwie granice Pareto" '
-             f'style="width:100%;height:auto;min-width:{1460 if show_labels else 420}px;color:var(--body-text-color,#334155)">',
+             f'style="width:100%;height:auto;min-width:{1280 if show_labels else 420}px;color:var(--body-text-color,#334155)">',
              '<style>.pareto-point:focus circle,.pareto-point:hover circle{stroke:currentColor;stroke-width:3}'
              '.pareto-point:hover .model-label,.pareto-point:focus .model-label{text-decoration:underline}'
              '.pareto-point:hover .label-leader,.pareto-point:focus .label-leader{stroke-opacity:1;stroke-width:2}</style>']
@@ -290,7 +327,7 @@ def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
         parts.append(f'<polyline data-frontier="{name}" points="{line_coordinates}" fill="none" stroke="{color}" stroke-width="3"{dash}/>')
     if missing:
         parts.append(f'<rect x="{left}" y="{bottom+75}" width="{right-left}" height="35" rx="6" fill="var(--background-fill-secondary,#f1f5f9)"/>')
-        parts.append(f'<text x="{left}" y="{bottom+128}" fill="currentColor" font-size="11">Brak pełnej średniej — rozmiar bez wartości na osi Y.</text>')
+        parts.append(f'<text x="{left}" y="{canvas_height-7}" fill="currentColor" font-size="11">Brak pełnej średniej — rozmiar bez wartości na osi Y.</text>')
     frontier_ids = {p['id'] for p in data['all_frontier']+data['commercial_frontier']}
     for point in sorted(points, key=lambda p:p['id']):
         xx, yy = coordinates[point['id']]
@@ -304,17 +341,16 @@ def pareto_html(document, metric='recall@1', mode='v2_no_instructions',
                      f'<title>{escape(tooltip)}</title>')
         if show_labels:
             row = placed[point['id']]
-            anchor_x = row['x']+row['width'] if row['side']=='left' else row['x']
-            anchor_y = row['y']+row['height']/2
-            elbow = left-20 if row['side']=='left' else right+20
-            parts.append(f'<path class="label-leader" d="M{xx:.2f} {yy:.2f}L{elbow} {anchor_y:.2f}H{anchor_x}" '
+            anchor_x = max(row['x'],min(xx,row['x']+row['width']))
+            anchor_y = max(row['y'],min(yy,row['y']+row['height']))
+            parts.append(f'<path class="label-leader" d="M{xx:.2f} {yy:.2f}L{anchor_x:.2f} {anchor_y:.2f}" '
                          f'fill="none" stroke="{color}" stroke-opacity="0.3" stroke-width="0.8"/>')
             parts.append(f'<g class="model-label" data-label-for="{escape(point["id"])}">'
                          f'<rect x="{row["x"]}" y="{row["y"]:.2f}" width="{row["width"]}" height="{row["height"]}" '
                          'rx="3" fill="var(--body-background-fill,white)"/>'
                          f'<text fill="currentColor" font-family="monospace" font-size="12">')
             for i,line in enumerate(row['lines']):
-                parts.append(f'<tspan x="{row["x"]+2}" y="{row["y"]+15+i*15:.2f}">{escape(line)}</tspan>')
+                parts.append(f'<tspan x="{row["x"]+4}" y="{row["y"]+16+i*16:.2f}">{escape(line)}</tspan>')
             parts.append('</text></g>')
         parts.append(f'<circle cx="{xx:.2f}" cy="{yy:.2f}" r="{radius}" '
                      f'fill="{color}" fill-opacity="0.8" stroke="var(--body-background-fill,white)" stroke-width="1.3"/></a>')

@@ -1,0 +1,17 @@
+﻿[
+    {
+        "case":  "selected",
+        "labels":  5,
+        "overflow":  0
+    },
+    {
+        "case":  "cluster",
+        "labels":  4,
+        "overflow":  0
+    },
+    {
+        "case":  "under100",
+        "labels":  21,
+        "overflow":  0
+    }
+]

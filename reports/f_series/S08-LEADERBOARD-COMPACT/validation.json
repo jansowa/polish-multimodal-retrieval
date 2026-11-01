@@ -1,0 +1,46 @@
+{
+  "cases": [
+    {
+      "case": "all",
+      "maximum_leader_pixels": 976.8023308337953,
+      "models": 49,
+      "overlaps": 0
+    },
+    {
+      "case": "under100",
+      "maximum_leader_pixels": 388.0,
+      "models": 21,
+      "overlaps": 0
+    },
+    {
+      "case": "selected",
+      "maximum_leader_pixels": 11.0,
+      "models": 5,
+      "overlaps": 0
+    },
+    {
+      "case": "cluster",
+      "maximum_leader_pixels": 50.35000000000002,
+      "models": 4,
+      "overlaps": 0
+    },
+    {
+      "case": "selected-log",
+      "maximum_leader_pixels": 11.0,
+      "models": 5,
+      "overlaps": 0
+    }
+  ],
+  "code_sha256": {
+    "retrieval_benchmark/space/app.py": "f98b22870c7cb9ff432a997609aed54a18ee17120b3928f9080846cda96273ec",
+    "retrieval_benchmark/space/view.py": "40e7b6fc9d9b4e1573de70b2bb5c388fba9799f5cbb365e06c01c7d1883b42b9",
+    "retrieval_benchmark/tests/test_pareto.py": "74626be9540cb06fde52d042244e344ad3ef2f4f1cb0ce5527ef14ddf58cfeb2"
+  },
+  "protected_sha256": {
+    "protocols/protocol-v3-f.json": "a734e9fb97ff7ee2d12e35fcae84a67d467c87197a627b9f930e634586c33fb3",
+    "retrieval_benchmark/catalog-current.json": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010",
+    "retrieval_benchmark/catalog.json": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8",
+    "src/pl_mmb_training/holdouts.py": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3"
+  },
+  "results_sha256": "8fcb8fc8ce5f389bda0382d90077a9448f01a79fd01bc46d73df14b6b913559e"
+}

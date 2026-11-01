@@ -85,3 +85,5 @@ training/runs/f_series/**
 /reports/f_series/S05-LEADERBOARD-PARETO/browser.log
 /reports/f_series/S07-LEADERBOARD-LABELS/*.browser.log
 /reports/f_series/S07-LEADERBOARD-LABELS/*.dom.html
+/reports/f_series/S08-LEADERBOARD-COMPACT/*.browser.log
+/reports/f_series/S08-LEADERBOARD-COMPACT/*.dom.html

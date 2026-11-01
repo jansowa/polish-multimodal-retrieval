@@ -38,9 +38,12 @@ Organizacje są wyznaczane z repozytoriów modeli, domyślnie wszystkie zaznaczo
 Własne checkpointy mają wspólną organizację jansowa; opcja istnieje tylko wtedy,
 gdy dane zawierają własny model. Odznaczenie wszystkich organizacji daje pusty widok.
 Niepełne średnie są w osobnym pasie bez wartości Y; nie zastępujemy ich zerem.
-Pełne nazwy modeli są domyślnie stale widoczne w osobnych wierszach po bokach
-wykresu, z liniami prowadzącymi do punktów. Wysokość rośnie wraz z liczbą nazw;
-przy wąskim oknie można przewijać wykres poziomo. Przełącznik pozwala pozostawić
+Pełne nazwy modeli są domyślnie stale widoczne blisko punktów. Etykiety są
+rozmieszczane w najbliższych wolnych miejscach, z krótkimi liniami do punktów;
+nie nachodzą na siebie ani na kropki. Wyszukiwany wybór konkretnych modeli nad
+wykresem pozwala ograniczyć tabelę i obie linie Pareto do małego zestawu.
+Pusty wybór modeli oznacza wszystkie spełniające pozostałe filtry.
+Przy wąskim oknie można przewijać wykres poziomo. Przełącznik pozwala pozostawić
 nazwy tylko po najechaniu. Dostępna jest logarytmiczna oś rozmiaru.
 Wykres SVG nie wymaga dodatkowych pakietów ani dostępu do sieci.
 Nie wyświetlamy kolumn czasu, precyzji, rewizji ani ekspozycji.

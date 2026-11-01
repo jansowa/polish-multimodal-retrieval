@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 os.environ.setdefault('GRADIO_ANALYTICS_ENABLED', 'False')
 import gradio as gr
-from view import METRICS, columns, csv_bytes, default_columns, default_tasks, load, organizations, overview, pareto_html, styled, tasks
+from view import METRICS, columns, csv_bytes, default_columns, default_tasks, load, model_choices, organizations, overview, pareto_html, styled, tasks
 
 
 def column_widths(view):
@@ -17,12 +17,12 @@ def build_app():
     profiles = sorted({r['profile'] for r in document['results']})
     initial_organizations = organizations(document)
 
-    def calculate(metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs):
+    def calculate(metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, chosen_models):
         return overview(load(), metric, mode, profile, limit, seeds, controls, visible, average,
-                        min_parameters=minimum, selected_organizations=selected_orgs)
+                        min_parameters=minimum, selected_organizations=selected_orgs, selected_models=chosen_models or None)
 
     def update(*args):
-        metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, log_scale, show_labels, known_orgs = args
+        metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, chosen_models, log_scale, show_labels, known_orgs = args
         snapshot = load()
         current_orgs = organizations(snapshot)
         # Newly arriving models can introduce an organization while the UI is open.
@@ -31,11 +31,12 @@ def build_app():
         if set(selected_orgs) == set(known_orgs):
             selected_orgs = current_orgs
         view = overview(snapshot, metric, mode, profile, limit, seeds, controls, visible, average,
-                        min_parameters=minimum, selected_organizations=selected_orgs)
+                        min_parameters=minimum, selected_organizations=selected_orgs, selected_models=chosen_models or None)
         chart = pareto_html(snapshot, log_scale=log_scale, filtered_view=view, show_labels=show_labels)
         return (gr.update(value=styled(view), datatype=['html'] + ['str'] * (len(view['headers']) - 1), column_widths=column_widths(view)),
                 f"Pełny średni wynik: **{view['complete']}/{view['total']} modeli** · {len(view['average_tasks'])} zadań. „—” oznacza brak kompletu wyników.",
-                chart, gr.update(choices=current_orgs, value=selected_orgs), current_orgs)
+                chart, gr.update(choices=current_orgs, value=selected_orgs), current_orgs,
+                gr.update(choices=model_choices(snapshot),value=chosen_models))
 
     def download(*args):
         view = calculate(*args)
@@ -69,6 +70,9 @@ def build_app():
                 profile = gr.Dropdown(profiles, value='historical-native-v2', label='Profil pomiaru')
         initial = overview(document)
         gr.Markdown('## Jakość a rozmiar modelu\nLinie łączą modele ustanawiające najlepszy wynik przy rosnącym rozmiarze.')
+        chosen_models = gr.Dropdown(choices=model_choices(document),value=[],multiselect=True,filterable=True,
+                                    label='Modele',
+                                    info='Wybierz konkretne modele, aby zawęzić tabelę i wykres. Puste pole oznacza wszystkie.')
         with gr.Row():
             log_scale = gr.Checkbox(value=False, label='Logarytmiczna oś rozmiaru')
             show_labels = gr.Checkbox(value=True, label='Nazwy modeli zawsze widoczne')
@@ -77,16 +81,16 @@ def build_app():
                              interactive=False, wrap=True, elem_id='leaderboard',
                              column_widths=column_widths(initial), pinned_columns=1)
         coverage = gr.Markdown(f"Pełny średni wynik: **{initial['complete']}/{initial['total']} modeli** · {len(initial['average_tasks'])} zadań. „—” oznacza brak kompletu wyników.")
-        table_inputs = [metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs]
+        table_inputs = [metric, mode, profile, limit, seeds, controls, visible, average, minimum, selected_orgs, chosen_models]
         inputs = table_inputs + [log_scale, show_labels, known_orgs]
-        outputs = [board, coverage, chart, selected_orgs, known_orgs]
+        outputs = [board, coverage, chart, selected_orgs, known_orgs, chosen_models]
         refresh = gr.Button('Odśwież wyniki')
         refresh.click(update, inputs, outputs, api_name=False)
         demo.load(update, inputs, outputs, api_name=False)
         for index, control in enumerate(inputs):
             if control is known_orgs:
                 continue
-            event = control.input if control is selected_orgs else control.change
+            event = control.input if control in (selected_orgs,chosen_models) else control.change
             event(update, inputs, outputs, api_name='leaderboard' if index == 0 else False)
         with gr.Row():
             export = gr.Button('Eksportuj widok CSV')

@@ -1,0 +1,12 @@
+{
+  "empty_restores_all": true,
+  "exact_table_and_graph": true,
+  "searchable_model_picker": true,
+  "selected_model_ids": [
+    "checkpoint:6437c7234d01a88c2895399e7a3b7e1577843f6507fe79cb8b04356ac2e1dbd9",
+    "checkpoint:4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+    "checkpoint:0cd560a39263fc165e4e7cd4949a9f8deda77ec207ff10f1e34d6d9af03d0285"
+  ],
+  "status": "passed",
+  "url": "http://localhost:7865/"
+}

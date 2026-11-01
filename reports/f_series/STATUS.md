@@ -1,5 +1,11 @@
 # STATUS — seria F / M
 
+S08-LEADERBOARD-COMPACT (2026-11-01) done: nazwy rozmieszczane przy punktach
+zamiast w bocznych kolumnach; wyszukiwany wybór konkretnych modeli wspólny
+dla tabeli, wykresu i CSV. Wdrożono i sprawdzono live na localhost:7865.
+[Raport i SHA](S08-LEADERBOARD-COMPACT/REPORT.md).
+Bez zmian ML i liczników F. Następny etap: S09-LEADERBOARD-RECEIVE.
+
 S07-LEADERBOARD-LABELS (2026-11-01) done: pełne nazwy stale widoczne domyślnie,
 przełącznik hover-only, rozdzielone pola i linie do punktów; wdrożono na
 http://localhost:7865/ i zweryfikowano przez live API oraz pomiary przeglądarki.

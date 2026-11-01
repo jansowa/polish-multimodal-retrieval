@@ -2,7 +2,7 @@ import copy
 import unittest
 import xml.etree.ElementTree as ET
 
-from retrieval_benchmark.space.view import commercial_use, frontier, label_rows, organizations, overview, pareto_data, pareto_html, place_label_rows
+from retrieval_benchmark.space.view import commercial_use, frontier, label_rows, model_choices, organizations, overview, pareto_data, pareto_html, place_point_labels
 from retrieval_benchmark.tests.test_suite import document
 
 
@@ -96,20 +96,39 @@ class ParetoTests(unittest.TestCase):
         self.assertIn('Brak modeli',pareto_html(doc,max_parameters=1))
 
     def test_dense_identical_targets_have_nonoverlapping_full_names(self):
-        points = [dict(id=str(i),size=50,name='organization/'+('long-model-name-'*5)+str(i)) for i in range(120)]
+        points = [dict(id=str(i),size=50,name='organization/'+('long-model-name-'*5)+str(i)) for i in range(16)]
         rows = label_rows(points)
-        height = max(sum(row['height']+8 for row in rows if row['side']==side) for side in ('left','right'))
         positions = {p['id']:(500,400) for p in points}
-        placed = place_label_rows(rows,positions,35,35+height+12)
+        placed = place_point_labels(rows,positions,(85,35,1235,1100))
+        self.assertIsNotNone(placed)
         self.assertEqual(len(placed),len(points))
-        for side in ('left','right'):
-            column = sorted((row for row in placed.values() if row['side']==side),key=lambda row:row['y'])
-            self.assertGreaterEqual(column[0]['y'],35)
-            self.assertLessEqual(column[-1]['y']+column[-1]['height'],35+height+12)
-            for a,b in zip(column,column[1:]):
-                self.assertGreaterEqual(b['y'],a['y']+a['height']+8)
+        boxes = list(placed.values())
+        for i,a in enumerate(boxes):
+            for b in boxes[i+1:]:
+                self.assertFalse(a['x']<b['x']+b['width'] and a['x']+a['width']>b['x'] and
+                                 a['y']<b['y']+b['height'] and a['y']+a['height']>b['y'])
         for point in points:
             self.assertEqual(''.join(placed[point['id']]['lines']),point['name'])
+
+    def test_sparse_labels_stay_next_to_their_dots(self):
+        points = [dict(id='a',size=50,name='R1_seed44'),dict(id='b',size=100,name='other/model')]
+        positions = dict(a=(200,200),b=(700,400))
+        placed = place_point_labels(label_rows(points),positions,(85,35,1235,800))
+        for mid,row in placed.items():
+            px,py = positions[mid]
+            dx=max(row['x']-px,0,px-row['x']-row['width'])
+            dy=max(row['y']-py,0,py-row['y']-row['height'])
+            self.assertLessEqual((dx*dx+dy*dy)**.5,15)
+
+    def test_specific_model_selection_intersects_other_filters(self):
+        doc = document()
+        row = copy.deepcopy(doc['results'][0]); row['model_id']='b'; doc['results'].append(row)
+        selected = overview(doc,selected_models=['b'])
+        self.assertEqual([p['id'] for p in selected['model_data']],['b'])
+        self.assertEqual([p['id'] for p in pareto_data(doc,selected_models=['b'])['points']],['b'])
+        self.assertEqual(overview(doc,selected_models=['b'],max_parameters=60)['rows'],[])
+        self.assertEqual(overview(doc,selected_models=[])['rows'],[])
+        self.assertEqual({mid for name,mid in model_choices(doc)},{'a','b'})
 
     def test_labels_are_on_by_default_and_hover_mode_omits_them(self):
         doc = document()
