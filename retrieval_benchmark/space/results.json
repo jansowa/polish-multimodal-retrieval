@@ -5338,6 +5338,27 @@
       "revision": "c56244cc94f92419e8369fa71efdaf403b124ce8",
       "role": "reference"
     },
+    "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda": {
+      "efficiency": null,
+      "label": "Qwen3-VL-Embedding-2B",
+      "license": {
+        "display": "apache-2.0",
+        "spdx": "apache-2.0",
+        "status": "reported",
+        "url": "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B/blob/9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda/README.md"
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 0,
+        "text": 1720574976,
+        "total": 2127532032,
+        "vision": 406957056
+      },
+      "repository": "Qwen/Qwen3-VL-Embedding-2B",
+      "representative": true,
+      "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "role": "reference"
+    },
     "hf:UCSC-VLAA/openvision-vit-small-patch16-384@74f6c00184e7e51b8c1756fd70a3eec8df7a2107": {
       "components": {
         "image_preprocess": "pinned-author-config",
@@ -37620,6 +37641,580 @@
       "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
       "tokenization": {
         "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7267326159303802,
+          "ndcg@10": 0.7705900060687025,
+          "recall@1": 0.629,
+          "recall@10": 0.923,
+          "recall@5": 0.844
+        },
+        "t2i": {
+          "mrr": 0.7032336733097843,
+          "ndcg@10": 0.75017775023588,
+          "recall@1": 0.592,
+          "recall@10": 0.913,
+          "recall@5": 0.845
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "0414528b39fb5007ba23c8e3a9aa9dd6195d8551e7898a1bc81505c73fc3e15c",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.899239435768856,
+          "ndcg@10": 0.7383535299467147,
+          "recall@1": 0.8497899159663865,
+          "recall@10": 0.9863445378151261,
+          "recall@5": 0.9590336134453782
+        },
+        "t2i": {
+          "mrr": 0.734916424176505,
+          "ndcg@10": 0.7757005610040314,
+          "recall@1": 0.6333754740834386,
+          "recall@10": 0.9157184997892962,
+          "recall@5": 0.860724820901812
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "3f9b169985176c896607b4fdbf29a9e8782e99900b1b19d0507c51f8d02f057c",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.8219485674840412,
+          "ndcg@10": 0.8512468117527887,
+          "recall@1": 0.7495,
+          "recall@10": 0.9505,
+          "recall@5": 0.911
+        },
+        "t2i": {
+          "mrr": 0.8252760103079909,
+          "ndcg@10": 0.8517474838330023,
+          "recall@1": 0.7588617074388417,
+          "recall@10": 0.9405891163255118,
+          "recall@5": 0.91063404892661
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "ab8b230c4a0a5dd416e8154d080d86f23a81e4525f7574427a895518d2ab406c",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.9148427749596343,
+          "ndcg@10": 0.7821709503756589,
+          "recall@1": 0.8686974789915967,
+          "recall@10": 0.9926470588235294,
+          "recall@5": 0.9758403361344538
+        },
+        "t2i": {
+          "mrr": 0.7931592567846301,
+          "ndcg@10": 0.8290625952336479,
+          "recall@1": 0.7073324905183312,
+          "recall@10": 0.9487989886219975,
+          "recall@5": 0.9047619047619048
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "01d9be190989dc38f175a36efefd2835146c67f4749f0feefef0b99ae2c4b316",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7734558607270701,
+          "ndcg@10": 0.598622075916583,
+          "recall@1": 0.701,
+          "recall@10": 0.906,
+          "recall@5": 0.864
+        },
+        "t2i": {
+          "mrr": 0.6046941015889175,
+          "ndcg@10": 0.6425012898387621,
+          "recall@1": 0.5067254174397031,
+          "recall@10": 0.7850185528756958,
+          "recall@5": 0.7147495361781077
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "3074d17120266b4f134e032c2684fbc2ad5702953e52654b78a0d80c6e59ab1b",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7302984002476042,
+          "ndcg@10": 0.7740847662385445,
+          "recall@1": 0.6298773690078038,
+          "recall@10": 0.9253065774804905,
+          "recall@5": 0.850613154960981
+        },
+        "t2i": {
+          "mrr": 0.7090192367507518,
+          "ndcg@10": 0.7566369556301586,
+          "recall@1": 0.5997770345596433,
+          "recall@10": 0.9208472686733556,
+          "recall@5": 0.8528428093645485
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "daba71c81b5f84df6984fbd036a8a73c16530549919eae671aa86213f4316ab5",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7602111388785703,
+          "ndcg@10": 0.8025341336935894,
+          "recall@1": 0.6644370122630993,
+          "recall@10": 0.9453734671125975,
+          "recall@5": 0.8784838350055741
+        },
+        "t2i": {
+          "mrr": 0.7747086537980663,
+          "ndcg@10": 0.8167012078895183,
+          "recall@1": 0.6845039018952063,
+          "recall@10": 0.9565217391304348,
+          "recall@5": 0.8929765886287625
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "5e585e283863cf6c77bc0326cd3cb8517b3bde296c8204dc471542c138f84f41",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7863512343393112,
+          "ndcg@10": 0.7161092679149106,
+          "recall@1": 0.6986377536836252,
+          "recall@10": 0.9435640811787601,
+          "recall@5": 0.8999165971643036
+        },
+        "t2i": {
+          "mrr": 0.6807140744119172,
+          "ndcg@10": 0.7224889746535204,
+          "recall@1": 0.5768527633244269,
+          "recall@10": 0.8703417240894389,
+          "recall@5": 0.8064969765152581
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "52dfe56bd2d5ae849fccc61417ef487cf36db2639d45b7f0f069ea8bbdd86792",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6269208740159934,
+          "ndcg@10": 0.668418469498356,
+          "recall@1": 0.5239294710327456,
+          "recall@10": 0.818639798488665,
+          "recall@5": 0.7657430730478589
+        },
+        "t2i": {
+          "mrr": 0.578191223325066,
+          "ndcg@10": 0.6087360668832512,
+          "recall@1": 0.4743202416918429,
+          "recall@10": 0.7613293051359517,
+          "recall@5": 0.7039274924471299
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "8cd62247fde4a01fdaae5a77fbd81b4214ac3d349fefe633f468c4a39363c84c",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7295051013800399,
+          "ndcg@10": 0.5533807456331273,
+          "recall@1": 0.65,
+          "recall@10": 0.888,
+          "recall@5": 0.816
+        },
+        "t2i": {
+          "mrr": 0.4973672706460523,
+          "ndcg@10": 0.5338473156564497,
+          "recall@1": 0.3967996289424861,
+          "recall@10": 0.6808905380333952,
+          "recall@5": 0.609925788497217
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "33509ee8d19dc39ab8234ecb84c88872c03f2011f675cfabafcbb48e57ea936c",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.8196929957091281,
+          "ndcg@10": 0.7587771951185583,
+          "recall@1": 0.7411731998887963,
+          "recall@10": 0.9582985821517932,
+          "recall@5": 0.9210453155407284
+        },
+        "t2i": {
+          "mrr": 0.7329237488333886,
+          "ndcg@10": 0.7714844498491895,
+          "recall@1": 0.6369005765715089,
+          "recall@10": 0.9052172690198285,
+          "recall@5": 0.8498101532836451
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "4bac138e8ce0d2b0a0d5d1ee3551ab854317804f0f5a769967e571b0a3ed44d7",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.593681478977359,
+          "ndcg@10": 0.6372956154588187,
+          "recall@1": 0.4836272040302267,
+          "recall@10": 0.7984886649874056,
+          "recall@5": 0.7304785894206549
+        },
+        "t2i": {
+          "mrr": 0.5067442572234182,
+          "ndcg@10": 0.5391697993769589,
+          "recall@1": 0.40483383685800606,
+          "recall@10": 0.7009063444108762,
+          "recall@5": 0.6163141993957704
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "5dff3a2a4ea593736553363ac51157d6fb9df54268984ff84bceaa0e1ece312e",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7537024393522073,
+          "ndcg@10": 0.7949790168756731,
+          "recall@1": 0.655,
+          "recall@10": 0.936,
+          "recall@5": 0.873
+        },
+        "t2i": {
+          "mrr": 0.773039282302096,
+          "ndcg@10": 0.8145977026630455,
+          "recall@1": 0.684,
+          "recall@10": 0.954,
+          "recall@5": 0.884
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "00a1329c5bb116fd7dac0834a553b15c4aa2150e5fd3e013f26be0e2ae20025f",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.8518338960449705,
+          "ndcg@10": 0.8786015570139766,
+          "recall@1": 0.7815,
+          "recall@10": 0.9655,
+          "recall@5": 0.9395
+        },
+        "t2i": {
+          "mrr": 0.8841363773219847,
+          "ndcg@10": 0.902594776194147,
+          "recall@1": 0.8342486270594108,
+          "recall@10": 0.964053919121318,
+          "recall@5": 0.945082376435347
+        }
+      },
+      "model_id": "hf:Qwen/Qwen3-VL-Embedding-2B@9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "8694d17d9614cfa0094c9d051b19e13e06caa358712e79f531561cf347c3b7b6",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
         "status": "unavailable"
       }
     }
