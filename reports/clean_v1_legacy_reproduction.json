@@ -1,0 +1,10 @@
+{
+  "legacy_result_sha256": "6dc5b980242318513cb205d0033ff05d29f195da8102f1b2fc4be5fe5c393c14",
+  "clean_result_sha256": "c2459d35980b9b96eef54a252fb3f2053575b1c8875b87d9a2ac6d74f760a42b",
+  "history_identical": true,
+  "legacy_checkpoint_epoch": 6,
+  "new_checkpoint_epoch": 9,
+  "projector_tensors_identical": true,
+  "loss_tensors_identical": true,
+  "note": "FULL_CLEAN uses exactly the existing guarded training set. Selection rule differs; training trajectory at every epoch is checked against legacy seed 42."
+}

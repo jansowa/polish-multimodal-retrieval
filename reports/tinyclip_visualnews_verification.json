@@ -1,0 +1,702 @@
+{
+  "status": "passed",
+  "checks": {
+    "VN_0_frozen": {
+      "checkpoint_verified": true,
+      "primary_and_dev_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_budget_verified": true,
+      "source_verified": true
+    },
+    "VN_0_last2_anchor": {
+      "checkpoint_verified": true,
+      "primary_and_dev_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_budget_verified": true,
+      "source_verified": true
+    },
+    "VN_10k_frozen": {
+      "checkpoint_verified": true,
+      "primary_and_dev_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_budget_verified": true,
+      "source_verified": true
+    },
+    "VN_10k_last2_anchor": {
+      "checkpoint_verified": true,
+      "primary_and_dev_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_budget_verified": true,
+      "source_verified": true
+    },
+    "VN_all_frozen": {
+      "checkpoint_verified": true,
+      "primary_and_dev_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_budget_verified": true,
+      "source_verified": true
+    },
+    "VN_all_last2_anchor": {
+      "checkpoint_verified": true,
+      "primary_and_dev_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_budget_verified": true,
+      "source_verified": true
+    },
+    "VN_all_frozen_seed43": {
+      "checkpoint_verified": true,
+      "primary_and_dev_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_budget_verified": true,
+      "source_verified": true
+    },
+    "VN_all_last2_anchor_seed43": {
+      "checkpoint_verified": true,
+      "primary_and_dev_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_budget_verified": true,
+      "source_verified": true
+    },
+    "VN_all_frozen_seed44": {
+      "checkpoint_verified": true,
+      "primary_and_dev_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_budget_verified": true,
+      "source_verified": true
+    },
+    "VN_all_last2_anchor_seed44": {
+      "checkpoint_verified": true,
+      "primary_and_dev_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_budget_verified": true,
+      "source_verified": true
+    }
+  },
+  "comparisons": {
+    "VN_0_last2_anchor_minus_VN_0_frozen": {
+      "coco": {
+        "delta_percentage_points": -0.3827751196172249,
+        "interval_95_percentage_points": [
+          -1.0062290368950648,
+          0.23958121338275884
+        ],
+        "improved": 16,
+        "regressed": 24,
+        "bootstrap_components": 416,
+        "queries": 2090,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      },
+      "vn": {
+        "delta_percentage_points": -0.44932601098352476,
+        "interval_95_percentage_points": [
+          -0.9514271407110666,
+          0.04992511233150275
+        ],
+        "improved": 9,
+        "regressed": 18,
+        "bootstrap_components": 1980,
+        "queries": 2003,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      }
+    },
+    "VN_10k_last2_anchor_minus_VN_10k_frozen": {
+      "coco": {
+        "delta_percentage_points": 0.19138755980861244,
+        "interval_95_percentage_points": [
+          -0.7666506947771922,
+          1.1533055483680181
+        ],
+        "improved": 49,
+        "regressed": 45,
+        "bootstrap_components": 416,
+        "queries": 2090,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      },
+      "vn": {
+        "delta_percentage_points": 3.794308537194209,
+        "interval_95_percentage_points": [
+          2.7054108216432864,
+          4.882909815645242
+        ],
+        "improved": 101,
+        "regressed": 25,
+        "bootstrap_components": 1980,
+        "queries": 2003,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      }
+    },
+    "VN_all_last2_anchor_minus_VN_all_frozen": {
+      "coco": {
+        "delta_percentage_points": 0.6220095693779905,
+        "interval_95_percentage_points": [
+          -0.33638078494067203,
+          1.5880654475457172
+        ],
+        "improved": 55,
+        "regressed": 42,
+        "bootstrap_components": 416,
+        "queries": 2090,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      },
+      "vn": {
+        "delta_percentage_points": 4.243634548177734,
+        "interval_95_percentage_points": [
+          3.0875725951913737,
+          5.408112168252378
+        ],
+        "improved": 116,
+        "regressed": 31,
+        "bootstrap_components": 1980,
+        "queries": 2003,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      }
+    },
+    "VN_10k_frozen_minus_VN_0_frozen": {
+      "coco": {
+        "delta_percentage_points": 2.583732057416268,
+        "interval_95_percentage_points": [
+          0.9510110488547052,
+          4.190751445086705
+        ],
+        "improved": 134,
+        "regressed": 80,
+        "bootstrap_components": 416,
+        "queries": 2090,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      },
+      "vn": {
+        "delta_percentage_points": 23.614578132800798,
+        "interval_95_percentage_points": [
+          21.6,
+          25.624406874406873
+        ],
+        "improved": 501,
+        "regressed": 28,
+        "bootstrap_components": 1980,
+        "queries": 2003,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      }
+    },
+    "VN_all_frozen_minus_VN_10k_frozen": {
+      "coco": {
+        "delta_percentage_points": 0.19138755980861244,
+        "interval_95_percentage_points": [
+          -0.719778312322678,
+          1.1505273250239694
+        ],
+        "improved": 40,
+        "regressed": 36,
+        "bootstrap_components": 416,
+        "queries": 2090,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      },
+      "vn": {
+        "delta_percentage_points": 2.596105841238143,
+        "interval_95_percentage_points": [
+          1.5484515484515484,
+          3.5982458770614687
+        ],
+        "improved": 81,
+        "regressed": 29,
+        "bootstrap_components": 1980,
+        "queries": 2003,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      }
+    },
+    "VN_all_last2_anchor_minus_VN_0_last2_anchor": {
+      "coco": {
+        "delta_percentage_points": 3.7799043062200957,
+        "interval_95_percentage_points": [
+          2.10224558050645,
+          5.484075284229773
+        ],
+        "improved": 152,
+        "regressed": 73,
+        "bootstrap_components": 416,
+        "queries": 2090,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      },
+      "vn": {
+        "delta_percentage_points": 30.903644533200197,
+        "interval_95_percentage_points": [
+          28.74936171760309,
+          33.017468157296
+        ],
+        "improved": 640,
+        "regressed": 21,
+        "bootstrap_components": 1980,
+        "queries": 2003,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      }
+    },
+    "VN_all_last2_anchor_seed43_minus_VN_all_frozen_seed43": {
+      "coco": {
+        "delta_percentage_points": 0.8133971291866028,
+        "interval_95_percentage_points": [
+          -0.1443001443001443,
+          1.8164435946462716
+        ],
+        "improved": 54,
+        "regressed": 37,
+        "bootstrap_components": 416,
+        "queries": 2090,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      },
+      "vn": {
+        "delta_percentage_points": 2.6460309535696456,
+        "interval_95_percentage_points": [
+          1.5515515515515517,
+          3.75
+        ],
+        "improved": 90,
+        "regressed": 37,
+        "bootstrap_components": 1980,
+        "queries": 2003,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      }
+    },
+    "VN_all_last2_anchor_seed44_minus_VN_all_frozen_seed44": {
+      "coco": {
+        "delta_percentage_points": 0.5741626794258373,
+        "interval_95_percentage_points": [
+          -0.4285714285714286,
+          1.539960787820962
+        ],
+        "improved": 53,
+        "regressed": 41,
+        "bootstrap_components": 416,
+        "queries": 2090,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      },
+      "vn": {
+        "delta_percentage_points": 5.09236145781328,
+        "interval_95_percentage_points": [
+          3.9420666148998764,
+          6.246876561719141
+        ],
+        "improved": 125,
+        "regressed": 23,
+        "bootstrap_components": 1980,
+        "queries": 2003,
+        "repetitions": 10000,
+        "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+      }
+    }
+  },
+  "replication": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "initialization": "Same A1 epoch-9 head and native TinyCLIP for all fits",
+    "caveat": "Adaptation seeds only; not independent repetitions of the original linear-probe pretraining.",
+    "metrics": {
+      "frozen": {
+        "coco": {
+          "t2i": {
+            "recall@1": {
+              "mean": 62.20095693779905,
+              "sample_std": 0.12659097182127185,
+              "minimum": 62.057416267942585,
+              "maximum": 62.29665071770335,
+              "values": [
+                62.248803827751196,
+                62.057416267942585,
+                62.29665071770335
+              ]
+            },
+            "recall@5": {
+              "mean": 89.792663476874,
+              "sample_std": 0.12041203246046195,
+              "minimum": 89.66507177033492,
+              "maximum": 89.90430622009569,
+              "values": [
+                89.80861244019138,
+                89.66507177033492,
+                89.90430622009569
+              ]
+            },
+            "recall@10": {
+              "mean": 95.07177033492822,
+              "sample_std": 0.04784688995215447,
+              "minimum": 95.02392344497608,
+              "maximum": 95.11961722488039,
+              "values": [
+                95.11961722488039,
+                95.07177033492823,
+                95.02392344497608
+              ]
+            }
+          },
+          "i2t": {
+            "recall@1": {
+              "mean": 71.43993635640415,
+              "sample_std": 0.1377924270142331,
+              "minimum": 71.36038186157518,
+              "maximum": 71.59904534606206,
+              "values": [
+                71.59904534606206,
+                71.36038186157518,
+                71.36038186157518
+              ]
+            },
+            "recall@5": {
+              "mean": 95.22673031026251,
+              "sample_std": 0.23866348448687802,
+              "minimum": 94.98806682577565,
+              "maximum": 95.4653937947494,
+              "values": [
+                95.22673031026252,
+                94.98806682577565,
+                95.4653937947494
+              ]
+            },
+            "recall@10": {
+              "mean": 97.85202863961814,
+              "sample_std": 0.0,
+              "minimum": 97.85202863961814,
+              "maximum": 97.85202863961814,
+              "values": [
+                97.85202863961814,
+                97.85202863961814,
+                97.85202863961814
+              ]
+            }
+          }
+        },
+        "vn": {
+          "t2i": {
+            "recall@1": {
+              "mean": 59.044766184057245,
+              "sample_std": 0.35419864626048836,
+              "minimum": 58.662006989515724,
+              "maximum": 59.36095856215676,
+              "values": [
+                59.36095856215676,
+                58.662006989515724,
+                59.11133300049926
+              ]
+            },
+            "recall@5": {
+              "mean": 83.75769678815111,
+              "sample_std": 0.16048678250944612,
+              "minimum": 83.5746380429356,
+              "maximum": 83.8741887169246,
+              "values": [
+                83.8741887169246,
+                83.5746380429356,
+                83.82426360459311
+              ]
+            },
+            "recall@10": {
+              "mean": 88.9998335829589,
+              "sample_std": 0.028824277043918246,
+              "minimum": 88.96655017473789,
+              "maximum": 89.0164752870694,
+              "values": [
+                89.0164752870694,
+                89.0164752870694,
+                88.96655017473789
+              ]
+            }
+          },
+          "i2t": {
+            "recall@1": {
+              "mean": 54.93333333333334,
+              "sample_std": 0.0577350269189634,
+              "minimum": 54.900000000000006,
+              "maximum": 55.00000000000001,
+              "values": [
+                55.00000000000001,
+                54.900000000000006,
+                54.900000000000006
+              ]
+            },
+            "recall@5": {
+              "mean": 79.63333333333334,
+              "sample_std": 0.028867513459479646,
+              "minimum": 79.60000000000001,
+              "maximum": 79.65,
+              "values": [
+                79.65,
+                79.60000000000001,
+                79.65
+              ]
+            },
+            "recall@10": {
+              "mean": 86.33333333333333,
+              "sample_std": 0.0577350269189675,
+              "minimum": 86.3,
+              "maximum": 86.4,
+              "values": [
+                86.4,
+                86.3,
+                86.3
+              ]
+            }
+          }
+        },
+        "best_budget_epoch": {
+          "mean": 11.0,
+          "sample_std": 1.0,
+          "minimum": 10.0,
+          "maximum": 12.0,
+          "values": [
+            12.0,
+            10.0,
+            11.0
+          ]
+        },
+        "peak_vram_bytes": {
+          "mean": 8736132437.333334,
+          "sample_std": 75674.45448322264,
+          "minimum": 8736045056.0,
+          "maximum": 8736176128.0,
+          "values": [
+            8736045056.0,
+            8736176128.0,
+            8736176128.0
+          ]
+        }
+      },
+      "last2_anchor": {
+        "coco": {
+          "t2i": {
+            "recall@1": {
+              "mean": 62.87081339712919,
+              "sample_std": 0.0,
+              "minimum": 62.87081339712919,
+              "maximum": 62.87081339712919,
+              "values": [
+                62.87081339712919,
+                62.87081339712919,
+                62.87081339712919
+              ]
+            },
+            "recall@5": {
+              "mean": 90.14354066985646,
+              "sample_std": 0.1725144150939678,
+              "minimum": 90.0,
+              "maximum": 90.33492822966507,
+              "values": [
+                90.0,
+                90.33492822966507,
+                90.09569377990431
+              ]
+            },
+            "recall@10": {
+              "mean": 95.10366826156299,
+              "sample_std": 0.05524882958752557,
+              "minimum": 95.07177033492823,
+              "maximum": 95.16746411483254,
+              "values": [
+                95.16746411483254,
+                95.07177033492823,
+                95.07177033492823
+              ]
+            }
+          },
+          "i2t": {
+            "recall@1": {
+              "mean": 71.99681782020684,
+              "sample_std": 0.1377924270142249,
+              "minimum": 71.83770883054893,
+              "maximum": 72.0763723150358,
+              "values": [
+                71.83770883054893,
+                72.0763723150358,
+                72.0763723150358
+              ]
+            },
+            "recall@5": {
+              "mean": 95.14717581543357,
+              "sample_std": 0.5511697080569242,
+              "minimum": 94.5107398568019,
+              "maximum": 95.4653937947494,
+              "values": [
+                95.4653937947494,
+                94.5107398568019,
+                95.4653937947494
+              ]
+            },
+            "recall@10": {
+              "mean": 98.17024661893397,
+              "sample_std": 0.1377924270142249,
+              "minimum": 98.09069212410502,
+              "maximum": 98.32935560859188,
+              "values": [
+                98.09069212410502,
+                98.32935560859188,
+                98.09069212410502
+              ]
+            }
+          }
+        },
+        "vn": {
+          "t2i": {
+            "recall@1": {
+              "mean": 63.03877517057746,
+              "sample_std": 1.5285022470567537,
+              "minimum": 61.30803794308537,
+              "maximum": 64.20369445831253,
+              "values": [
+                63.6045931103345,
+                61.30803794308537,
+                64.20369445831253
+              ]
+            },
+            "recall@5": {
+              "mean": 86.12081877184225,
+              "sample_std": 0.8704740775917461,
+              "minimum": 85.12231652521218,
+              "maximum": 86.71992011982027,
+              "values": [
+                86.71992011982027,
+                85.12231652521218,
+                86.52021967049426
+              ]
+            },
+            "recall@10": {
+              "mean": 90.79713762689299,
+              "sample_std": 0.378026849445849,
+              "minimum": 90.36445332001996,
+              "maximum": 91.063404892661,
+              "values": [
+                90.963554667998,
+                90.36445332001996,
+                91.063404892661
+              ]
+            }
+          },
+          "i2t": {
+            "recall@1": {
+              "mean": 57.65,
+              "sample_std": 1.03319891598859,
+              "minimum": 56.55,
+              "maximum": 58.599999999999994,
+              "values": [
+                57.8,
+                56.55,
+                58.599999999999994
+              ]
+            },
+            "recall@5": {
+              "mean": 82.39999999999999,
+              "sample_std": 0.6144102863722309,
+              "minimum": 81.69999999999999,
+              "maximum": 82.85,
+              "values": [
+                82.65,
+                81.69999999999999,
+                82.85
+              ]
+            },
+            "recall@10": {
+              "mean": 88.13333333333333,
+              "sample_std": 0.56862407030773,
+              "minimum": 87.5,
+              "maximum": 88.6,
+              "values": [
+                88.3,
+                87.5,
+                88.6
+              ]
+            }
+          }
+        },
+        "best_budget_epoch": {
+          "mean": 6.666666666666667,
+          "sample_std": 1.5275252316519465,
+          "minimum": 5.0,
+          "maximum": 8.0,
+          "values": [
+            7.0,
+            5.0,
+            8.0
+          ]
+        },
+        "peak_vram_bytes": {
+          "mean": 10244284074.666666,
+          "sample_std": 75674.45448322264,
+          "minimum": 10244240384.0,
+          "maximum": 10244371456.0,
+          "values": [
+            10244371456.0,
+            10244240384.0,
+            10244240384.0
+          ]
+        }
+      }
+    },
+    "paired_effect": {
+      "coco": {
+        "per_seed_delta_percentage_points": {
+          "mean": 0.6698564593301426,
+          "sample_std": 0.12659097182127002,
+          "minimum": 0.5741626794258381,
+          "maximum": 0.8133971291865993,
+          "values": [
+            0.6220095693779903,
+            0.8133971291865993,
+            0.5741626794258381
+          ]
+        },
+        "mean_fixed_seed_component_bootstrap": {
+          "delta_percentage_points": 0.6698564593301436,
+          "interval_95_percentage_points": [
+            -0.15979546180888457,
+            1.504276820764171
+          ],
+          "bootstrap_components": 416,
+          "queries": 2090,
+          "repetitions": 10000,
+          "caveat": "Conditional on these three fitted adaptation seeds; no seed or checkpoint/configuration-selection uncertainty."
+        }
+      },
+      "vn": {
+        "per_seed_delta_percentage_points": {
+          "mean": 3.994008986520218,
+          "sample_std": 1.242122346942059,
+          "minimum": 2.6460309535696447,
+          "maximum": 5.092361457813277,
+          "values": [
+            4.243634548177733,
+            2.6460309535696447,
+            5.092361457813277
+          ]
+        },
+        "mean_fixed_seed_component_bootstrap": {
+          "delta_percentage_points": 3.99400898652022,
+          "interval_95_percentage_points": [
+            3.027225373131356,
+            4.958540630182421
+          ],
+          "bootstrap_components": 1980,
+          "queries": 2003,
+          "repetitions": 10000,
+          "caveat": "Conditional on these three fitted adaptation seeds; no seed or checkpoint/configuration-selection uncertainty."
+        }
+      }
+    }
+  },
+  "inputs_unchanged": true,
+  "test_used": false,
+  "xm3600_scores_computed": false,
+  "caveat": "Conditional paired bootstrap; excludes configuration/checkpoint-selection uncertainty and seed variance."
+}

@@ -1,0 +1,198 @@
+{
+  "status": "passed",
+  "inputs": {
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/FULL_CLEAN.jsonl": "2834cb60a308be03685602e1fb4b6137d2c9968e249c81ce80892dae1b63908c",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data.jsonl": "b3720c5fdf6a9a62a8a4adc8568083302617a386b140420388fda3eb32c6f2f9",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/blacklist.json": "971ddaa1de16966e7f97fd52be1d6b69915bb7c5ea0e28ddd79b0fce0338d6e6",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data_audit.json": "2f95df1274ee69e90b7b5dbc103ea5a368ac4220b69bd10a6443beb464c3192b",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/cache.json": "ef2815053efe8b5999915c345a40ab18a7055ce3d4386a5f6b9eae352c2c9011",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/validation.jsonl": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6"
+  },
+  "real_cuda_parity": {
+    "features_full_vs_cached": {
+      "cosine": 1.0,
+      "relative_l2": 0.0,
+      "max_absolute": 0.0
+    },
+    "gradients_full_vs_cached": {
+      "cosine": 1.0,
+      "relative_l2": 0.0,
+      "max_absolute": 0.0
+    },
+    "features_bf16_vs_fp32": {
+      "cosine": 0.9999890327453613,
+      "relative_l2": 0.004685216583311558,
+      "max_absolute": 0.016218185424804688
+    },
+    "gradients_bf16_vs_fp32": {
+      "cosine": 0.9999601244926453,
+      "relative_l2": 0.009026086889207363,
+      "max_absolute": 0.019719481468200684
+    },
+    "loss_full": 1.0179297924041748,
+    "loss_cached": 1.0179297924041748,
+    "loss_fp32": 1.0188796520233154
+  },
+  "sampling": {
+    "rows": 70289,
+    "images": 10645,
+    "maximum_rows_per_image": 135,
+    "image_frequency_quantiles": [
+      1.0,
+      5.0,
+      13.0,
+      40.0,
+      135.0
+    ],
+    "mean_unique_images_per_full_batch": 249.47080291970804,
+    "min_unique_images_per_full_batch": 241,
+    "mean_positive_pairs_per_full_batch": 284.3649635036496,
+    "mean_parent_families_with_different_crops_per_batch": 0.051094890510948905,
+    "sources": {
+      "mbeir_mscoco": 17869,
+      "aro_visual_attribution": 25434,
+      "aro_visual_relation": 20883,
+      "sugarcrepe": 6103
+    }
+  },
+  "calibration": [
+    {
+      "gold": 2.0079872608184814,
+      "anchor": 0.0005871178582310677,
+      "kd": 0.1611972600221634,
+      "gold_grad": 9.167447090148926,
+      "anchor_grad": 0.09946220368146896,
+      "kd_grad": 0.778745174407959,
+      "gold_anchor_grad_cosine": 0.0115469079464674,
+      "gold_kd_grad_cosine": 0.08574386686086655
+    },
+    {
+      "gold": 1.866531252861023,
+      "anchor": 0.0006031750235706568,
+      "kd": 0.1577109545469284,
+      "gold_grad": 8.222793579101562,
+      "anchor_grad": 0.10027869045734406,
+      "kd_grad": 0.7647307515144348,
+      "gold_anchor_grad_cosine": 0.021241895854473114,
+      "gold_kd_grad_cosine": 0.10579361766576767
+    },
+    {
+      "gold": 2.066664695739746,
+      "anchor": 0.000621649669483304,
+      "kd": 0.16218847036361694,
+      "gold_grad": 9.52558708190918,
+      "anchor_grad": 0.10158619284629822,
+      "kd_grad": 0.7782808542251587,
+      "gold_anchor_grad_cosine": -0.04077240079641342,
+      "gold_kd_grad_cosine": -0.216607466340065
+    },
+    {
+      "gold": 2.115952491760254,
+      "anchor": 0.0006016166880726814,
+      "kd": 0.1632080376148224,
+      "gold_grad": 9.977568626403809,
+      "anchor_grad": 0.10005378723144531,
+      "kd_grad": 0.8318215012550354,
+      "gold_anchor_grad_cosine": -0.014194929972290993,
+      "gold_kd_grad_cosine": 0.036801911890506744
+    },
+    {
+      "gold": 2.0450034141540527,
+      "anchor": 0.0005757194012403488,
+      "kd": 0.1669682413339615,
+      "gold_grad": 9.794858932495117,
+      "anchor_grad": 0.0986158698797226,
+      "kd_grad": 0.8302285671234131,
+      "gold_anchor_grad_cosine": -0.008754052221775055,
+      "gold_kd_grad_cosine": 0.021401863545179367
+    },
+    {
+      "gold": 2.183492422103882,
+      "anchor": 0.0006014604587107897,
+      "kd": 0.1623850166797638,
+      "gold_grad": 9.9979829788208,
+      "anchor_grad": 0.10014206916093826,
+      "kd_grad": 0.8178812861442566,
+      "gold_anchor_grad_cosine": -0.03675219789147377,
+      "gold_kd_grad_cosine": -0.0070559186860919
+    },
+    {
+      "gold": 2.0986104011535645,
+      "anchor": 0.0006227309349924326,
+      "kd": 0.16521909832954407,
+      "gold_grad": 9.974298477172852,
+      "anchor_grad": 0.10300704091787338,
+      "kd_grad": 0.8248055577278137,
+      "gold_anchor_grad_cosine": -0.06260347366333008,
+      "gold_kd_grad_cosine": -0.07385130971670151
+    },
+    {
+      "gold": 2.2255358695983887,
+      "anchor": 0.0005784400273114443,
+      "kd": 0.15776781737804413,
+      "gold_grad": 10.456541061401367,
+      "anchor_grad": 0.09446528553962708,
+      "kd_grad": 0.8449888825416565,
+      "gold_anchor_grad_cosine": -0.07423792779445648,
+      "gold_kd_grad_cosine": -0.12498418986797333
+    }
+  ],
+  "regularization_weights": {
+    "anchor_lambda": 49.03864596089377,
+    "kd_lambda": 6.021938071849096,
+    "rule": "median TRAIN vision-gradient norm ratio across 8 fixed batches at previous T4 best checkpoint; regularizer target=0.5*gold; no validation tuning"
+  },
+  "native_model": {
+    "key": "tinyclip-39m",
+    "model": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+    "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+    "checkpoint_files": {
+      "/home/jsowa/.cache/huggingface/hub/models--wkcn--TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/snapshots/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md": "6565f08e0bd79353937fd1b7c89b69d0383a5e8e511c260a7a091a2f95c359a9",
+      "/home/jsowa/.cache/huggingface/hub/models--wkcn--TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/snapshots/07a4b0bc751cb64fecd2b661c048c1dd98d69444/config.json": "de47e9e12875c7abb6e0ddd13b5b0f54851b96cefa5c2ed3aab881e3efd1647b",
+      "/home/jsowa/.cache/huggingface/hub/models--wkcn--TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/snapshots/07a4b0bc751cb64fecd2b661c048c1dd98d69444/preprocessor_config.json": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+      "/home/jsowa/.cache/huggingface/hub/models--wkcn--TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/snapshots/07a4b0bc751cb64fecd2b661c048c1dd98d69444/model.safetensors": "112bdfb07ebc8994e9afba7a2a314e278493a675033595cf48e54cf8a17ae587"
+    },
+    "license": {
+      "declared_weights_license": "mit",
+      "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md",
+      "commercial_screen": "permissive-model-card-declaration",
+      "scope": "Model-card declaration for weights; not a clearance of pretraining data or product rights"
+    },
+    "input_size": 224,
+    "representation": "standard unnormalized image embedding, including original image projection",
+    "feature_dim": 512,
+    "preprocessing": {
+      "_processor_class": null,
+      "do_resize": true,
+      "size": {
+        "shortest_edge": 224
+      },
+      "resample": 3,
+      "do_center_crop": true,
+      "crop_size": {
+        "height": 224,
+        "width": 224
+      },
+      "do_rescale": true,
+      "rescale_factor": 0.00392156862745098,
+      "do_normalize": true,
+      "image_mean": [
+        0.48145466,
+        0.4578275,
+        0.40821073
+      ],
+      "image_std": [
+        0.26862954,
+        0.26130258,
+        0.27577711
+      ],
+      "do_convert_rgb": true,
+      "image_processor_type": "CLIPImageProcessor"
+    },
+    "pretraining": "TinyCLIP image-text distillation, YFCC-15M",
+    "vision_parameters": 38587392,
+    "frozen": true
+  },
+  "test_used": false,
+  "xm3600_used": false
+}

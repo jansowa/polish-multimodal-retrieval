@@ -1,0 +1,18 @@
+﻿{
+    "status":  "complete",
+    "recorded_at":  "2026-10-21T18:20:54.5628384Z",
+    "obsolete_resume_files_removed":  24,
+    "duplicate_files_hardlinked":  4,
+    "compressed_caches":  3,
+    "recovered_bytes":  2503110254,
+    "recovered_GiB":  2.331,
+    "free_bytes_now":  4502220800,
+    "selected_checkpoints_retained":  true,
+    "snapshots_unchanged":  true,
+    "cache_sha_unchanged":  true,
+    "audits":  [
+                   "training_storage_cleanup.json",
+                   "training_storage_cleanup_visualnews.json",
+                   "training_cache_compression.json"
+               ]
+}

@@ -1,0 +1,513 @@
+{
+  "observed_at": "2026-10-20T10:11:38.351642+00:00",
+  "checkpoints": [
+    {
+      "path": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\outputs\\qwen3.8-27b-absence-v3b-single\\aro_visual_attribution\\text_only\\checkpoint.sqlite3",
+      "run": "qwen3.8-27b-absence-v3b-single",
+      "dataset": "aro_visual_attribution",
+      "variant": "text_only",
+      "completed": 28748,
+      "failures": 0,
+      "pilot": false,
+      "schema": [
+        "unit_id",
+        "source_json",
+        "translated_json",
+        "metadata_json",
+        "model",
+        "with_image",
+        "completed_at"
+      ],
+      "source_keys": [
+        "true_caption",
+        "false_caption"
+      ],
+      "sample_metadata": {
+        "dataset": "AROVisualAttribution",
+        "hf_path": "mteb/ARO-Visual-Attribution",
+        "hf_config": null,
+        "split": "test",
+        "source_revision": "25fe9b460426ff67cdb0608a737c94f8f49a901e",
+        "row_index": 2,
+        "sample_stratum": "[\"open\", \"metal\"]",
+        "translation_audit": {
+          "stages": {
+            "draft": {
+              "seconds": 2.543,
+              "attempts": 1,
+              "usage": {
+                "prompt_tokens": 633,
+                "completion_tokens": 333,
+                "total_tokens": 966
+              }
+            }
+          },
+          "source_compact": {
+            "true_caption": "the open door and the metal floor",
+            "false_caption": "the metal door and the open floor"
+          },
+          "draft_compact": {
+            "true_caption": "otwarte drzwi i metalowa podłoga",
+            "false_caption": "metalowe drzwi i otwarta podłoga"
+          },
+          "reviewed_compact": null,
+          "review_changed": null
+        },
+        "translation_quality": {
+          "reviewed": false,
+          "flags": [],
+          "flag_paths": "compact_source",
+          "templates_applied": false
+        }
+      }
+    },
+    {
+      "path": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\outputs\\qwen3.8-27b-absence-v3b-single\\aro_visual_relation\\text_only\\checkpoint.sqlite3",
+      "run": "qwen3.8-27b-absence-v3b-single",
+      "dataset": "aro_visual_relation",
+      "variant": "text_only",
+      "completed": 23937,
+      "failures": 0,
+      "pilot": false,
+      "schema": [
+        "unit_id",
+        "source_json",
+        "translated_json",
+        "metadata_json",
+        "model",
+        "with_image",
+        "completed_at"
+      ],
+      "source_keys": [
+        "true_caption",
+        "false_caption"
+      ],
+      "sample_metadata": {
+        "dataset": "AROVisualRelation",
+        "hf_path": "mteb/ARO-Visual-Relation",
+        "hf_config": null,
+        "split": "test",
+        "source_revision": "53c1115ab5871ab33b09d5bb8856236d46bdaf2d",
+        "row_index": 0,
+        "sample_stratum": "\"to the left of\"",
+        "translation_audit": {
+          "stages": {
+            "draft": {
+              "seconds": 7.347,
+              "attempts": 1,
+              "usage": {
+                "prompt_tokens": 636,
+                "completion_tokens": 371,
+                "total_tokens": 1007
+              }
+            }
+          },
+          "source_compact": {
+            "true_caption": "the door is to the left of the shirt",
+            "false_caption": "the shirt is to the left of the door"
+          },
+          "draft_compact": {
+            "true_caption": "drzwi są po lewej stronie koszuli",
+            "false_caption": "koszula jest po lewej stronie drzwi"
+          },
+          "reviewed_compact": null,
+          "review_changed": null
+        },
+        "translation_quality": {
+          "reviewed": false,
+          "flags": [],
+          "flag_paths": "compact_source",
+          "templates_applied": false
+        }
+      }
+    },
+    {
+      "path": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\outputs\\qwen3.8-27b-absence-v3b-single\\cirr\\with_image\\checkpoint.sqlite3",
+      "run": "qwen3.8-27b-absence-v3b-single",
+      "dataset": "cirr",
+      "variant": "with_image",
+      "completed": 1000,
+      "failures": 0,
+      "pilot": false,
+      "schema": [
+        "unit_id",
+        "source_json",
+        "translated_json",
+        "metadata_json",
+        "model",
+        "with_image",
+        "completed_at"
+      ],
+      "source_keys": [
+        "qry_text",
+        "tgt_text"
+      ],
+      "sample_metadata": {
+        "dataset": "CIRR",
+        "hf_path": "TIGER-Lab/MMEB-eval",
+        "hf_config": "CIRR",
+        "split": "test",
+        "row_index": 1,
+        "kind": "benchmark_example",
+        "source_revision": "eb3a8af230a66be5c9308cd2be5779b9d6de4cb3",
+        "translation_audit": {
+          "stages": {
+            "draft": {
+              "seconds": 1.668,
+              "attempts": 1,
+              "usage": {
+                "prompt_tokens": 841,
+                "completion_tokens": 119,
+                "total_tokens": 960
+              }
+            }
+          },
+          "source_compact": {
+            "qry_text": "Fewer paper towels per pack.\n"
+          },
+          "draft_compact": {
+            "qry_text": "Mniej ręczników papierowych w opakowaniu.\n"
+          },
+          "reviewed_compact": null,
+          "review_changed": null
+        },
+        "translation_quality": {
+          "reviewed": false,
+          "flags": [],
+          "flag_paths": "compact_source",
+          "templates_applied": true
+        }
+      }
+    },
+    {
+      "path": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\outputs\\qwen3.8-27b-absence-v3b-single\\fashioniq\\with_image\\checkpoint.sqlite3",
+      "run": "qwen3.8-27b-absence-v3b-single",
+      "dataset": "fashioniq",
+      "variant": "with_image",
+      "completed": 1000,
+      "failures": 0,
+      "pilot": false,
+      "schema": [
+        "unit_id",
+        "source_json",
+        "translated_json",
+        "metadata_json",
+        "model",
+        "with_image",
+        "completed_at"
+      ],
+      "source_keys": [
+        "qry_text",
+        "tgt_text"
+      ],
+      "sample_metadata": {
+        "dataset": "FashionIQ",
+        "hf_path": "TIGER-Lab/MMEB-eval",
+        "hf_config": "FashionIQ",
+        "split": "test",
+        "row_index": 3,
+        "kind": "benchmark_example",
+        "source_revision": "eb3a8af230a66be5c9308cd2be5779b9d6de4cb3",
+        "translation_audit": {
+          "stages": {
+            "draft": {
+              "seconds": 3.878,
+              "attempts": 1,
+              "usage": {
+                "prompt_tokens": 791,
+                "completion_tokens": 424,
+                "total_tokens": 1215
+              }
+            }
+          },
+          "source_compact": {
+            "qry_text": "Is a plain white feminine t shirt and is a tan shirt.\n"
+          },
+          "draft_compact": {
+            "qry_text": "Czy to gładki biały kobiecy t-shirt i czy to beżowa koszula.\n"
+          },
+          "reviewed_compact": null,
+          "review_changed": null
+        },
+        "translation_quality": {
+          "reviewed": false,
+          "flags": [],
+          "flag_paths": "compact_source",
+          "templates_applied": true
+        }
+      }
+    },
+    {
+      "path": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\outputs\\qwen3.8-27b-absence-v3b-single\\refcoco\\with_image\\checkpoint.sqlite3",
+      "run": "qwen3.8-27b-absence-v3b-single",
+      "dataset": "refcoco",
+      "variant": "with_image",
+      "completed": 1000,
+      "failures": 0,
+      "pilot": false,
+      "schema": [
+        "unit_id",
+        "source_json",
+        "translated_json",
+        "metadata_json",
+        "model",
+        "with_image",
+        "completed_at"
+      ],
+      "source_keys": [
+        "qry_text",
+        "tgt_text"
+      ],
+      "sample_metadata": {
+        "dataset": "RefCOCO",
+        "hf_path": "TIGER-Lab/MMEB-eval",
+        "hf_config": "RefCOCO",
+        "split": "test",
+        "row_index": 2,
+        "kind": "benchmark_example",
+        "source_revision": "eb3a8af230a66be5c9308cd2be5779b9d6de4cb3",
+        "translation_audit": {
+          "stages": {
+            "draft": {
+              "seconds": 2.095,
+              "attempts": 1,
+              "usage": {
+                "prompt_tokens": 987,
+                "completion_tokens": 218,
+                "total_tokens": 1205
+              }
+            }
+          },
+          "source_compact": {
+            "qry_text": "\"little girl\"\n"
+          },
+          "draft_compact": {
+            "qry_text": "\"mała dziewczynka\"\n"
+          },
+          "reviewed_compact": null,
+          "review_changed": null
+        },
+        "translation_quality": {
+          "reviewed": false,
+          "flags": [],
+          "flag_paths": "compact_source",
+          "templates_applied": true
+        }
+      }
+    },
+    {
+      "path": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\outputs\\qwen3.8-27b-full-v2-single\\mscoco_t2i\\with_image\\checkpoint.sqlite3",
+      "run": "qwen3.8-27b-full-v2-single",
+      "dataset": "mscoco_t2i",
+      "variant": "with_image",
+      "completed": 1000,
+      "failures": 0,
+      "pilot": false,
+      "schema": [
+        "unit_id",
+        "source_json",
+        "translated_json",
+        "metadata_json",
+        "model",
+        "with_image",
+        "completed_at"
+      ],
+      "source_keys": [
+        "qry_text",
+        "tgt_text"
+      ],
+      "sample_metadata": {
+        "dataset": "MSCOCO_t2i",
+        "hf_path": "TIGER-Lab/MMEB-eval",
+        "hf_config": "MSCOCO_t2i",
+        "split": "test",
+        "row_index": 2,
+        "kind": "benchmark_example",
+        "translation_quality": {
+          "reviewed": false,
+          "flags": [],
+          "flag_paths": "compact_source",
+          "templates_applied": true
+        }
+      }
+    },
+    {
+      "path": "C:\\Users\\jsowa\\benchmark-translations\\qwen3.8-27b-absence-extension-v3b\\mbeir_mscoco\\text_only\\checkpoint.sqlite3",
+      "run": "qwen3.8-27b-absence-extension-v3b",
+      "dataset": "mbeir_mscoco",
+      "variant": "text_only",
+      "completed": 24809,
+      "failures": 0,
+      "pilot": false,
+      "schema": [
+        "unit_id",
+        "source_json",
+        "translated_json",
+        "metadata_json",
+        "model",
+        "with_image",
+        "completed_at"
+      ],
+      "source_keys": [
+        "text"
+      ],
+      "sample_metadata": {
+        "dataset": "M-BEIR/mscoco",
+        "hf_path": "TIGER-Lab/M-BEIR",
+        "source_revision": "023f7cc5425e15e3c93f6146f7295c28eae767dc",
+        "corpus_id": "9:3",
+        "row_index": 1,
+        "source_file": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/.cache/huggingface/datasets--TIGER-Lab--M-BEIR/snapshots/023f7cc5425e15e3c93f6146f7295c28eae767dc/cand_pool/local/mbeir_mscoco_task3_test_cand_pool.jsonl",
+        "t2i_query_ids": [
+          "9:2"
+        ],
+        "translation_audit": {
+          "stages": {
+            "draft": {
+              "seconds": 3.574,
+              "attempts": 1,
+              "usage": {
+                "prompt_tokens": 561,
+                "completion_tokens": 417,
+                "total_tokens": 978
+              }
+            }
+          },
+          "source_compact": {
+            "text": "Man riding a motor bike on a dirt road on the countryside."
+          },
+          "draft_compact": {
+            "text": "Mężczyzna jadący motocyklem po drodze gruntowej na wsi."
+          },
+          "reviewed_compact": null,
+          "review_changed": null
+        },
+        "translation_quality": {
+          "reviewed": false,
+          "flags": [],
+          "flag_paths": "compact_source",
+          "templates_applied": false
+        }
+      }
+    },
+    {
+      "path": "C:\\Users\\jsowa\\benchmark-translations\\qwen3.8-27b-absence-extension-v3b\\sugarcrepe_continuation\\text_only\\checkpoint.sqlite3",
+      "run": "qwen3.8-27b-absence-extension-v3b",
+      "dataset": "sugarcrepe_continuation",
+      "variant": "text_only",
+      "completed": 7511,
+      "failures": 0,
+      "pilot": false,
+      "schema": [
+        "unit_id",
+        "source_json",
+        "translated_json",
+        "metadata_json",
+        "model",
+        "with_image",
+        "completed_at"
+      ],
+      "source_keys": [
+        "caption",
+        "negative_caption"
+      ],
+      "sample_metadata": {
+        "dataset": "SugarCrepe",
+        "hf_path": "mteb/SUGARCREPE_fmt",
+        "hf_config": null,
+        "split": "train",
+        "source_revision": "e9e0e3ce40c94023c819d3413edb5d090ec9f0d8",
+        "row_index": 0,
+        "sample_stratum": "\"add_att\"",
+        "translation_audit": {
+          "stages": {
+            "draft": {
+              "seconds": 10.608,
+              "attempts": 1,
+              "usage": {
+                "prompt_tokens": 644,
+                "completion_tokens": 740,
+                "total_tokens": 1384
+              }
+            }
+          },
+          "source_compact": {
+            "caption": "A drawing of a young woman with many facial piercings.",
+            "negative_caption": "A drawing of a tattooed young woman with many facial piercings."
+          },
+          "draft_compact": {
+            "caption": "Rysunek młodej kobiety z wieloma przekłuciami na twarzy.",
+            "negative_caption": "Rysunek młodej kobiety z tatuażami i wieloma przekłuciami na twarzy."
+          },
+          "reviewed_compact": null,
+          "review_changed": null
+        },
+        "translation_quality": {
+          "reviewed": false,
+          "flags": [],
+          "flag_paths": "compact_source",
+          "templates_applied": false
+        }
+      }
+    },
+    {
+      "path": "C:\\Users\\jsowa\\benchmark-translations\\qwen3.8-27b-visualnews-v3c\\mbeir_visualnews\\text_only\\checkpoint.sqlite3",
+      "run": "qwen3.8-27b-visualnews-v3c",
+      "dataset": "mbeir_visualnews",
+      "variant": "text_only",
+      "completed": 25641,
+      "failures": 1,
+      "pilot": false,
+      "schema": [
+        "unit_id",
+        "source_json",
+        "translated_json",
+        "metadata_json",
+        "model",
+        "with_image",
+        "completed_at"
+      ],
+      "source_keys": [
+        "text"
+      ],
+      "sample_metadata": {
+        "dataset": "M-BEIR/visualnews",
+        "hf_path": "TIGER-Lab/M-BEIR",
+        "source_revision": "023f7cc5425e15e3c93f6146f7295c28eae767dc",
+        "corpus_id": "0:5",
+        "row_index": 2,
+        "source_file": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/.cache/huggingface/datasets--TIGER-Lab--M-BEIR/snapshots/023f7cc5425e15e3c93f6146f7295c28eae767dc/cand_pool/local/mbeir_visualnews_task3_cand_pool.jsonl",
+        "t2i_query_ids": [],
+        "translation_audit": {
+          "stages": {
+            "draft": {
+              "seconds": 5.553,
+              "attempts": 1,
+              "usage": {
+                "prompt_tokens": 762,
+                "completion_tokens": 586,
+                "total_tokens": 1348
+              }
+            }
+          },
+          "source_compact": {
+            "text": "Swiss Guards stand below the balcony where the new pope will appear."
+          },
+          "draft_compact": {
+            "text": "Szwajcarzy stoją pod balkonem, na którym pojawi się nowy papież."
+          },
+          "reviewed_compact": null,
+          "review_changed": null
+        },
+        "translation_quality": {
+          "reviewed": false,
+          "flags": [],
+          "flag_paths": "compact_source",
+          "templates_applied": false
+        }
+      }
+    }
+  ],
+  "parquet_sources": [],
+  "image_files": {}
+}

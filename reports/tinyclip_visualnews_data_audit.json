@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "snapshot": {
+    "created_at": "2026-10-21T13:37:51.400332+00:00",
+    "source": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/reports/visualnews_pipeline/v1/final_pairs.jsonl",
+    "rows": 35918,
+    "pairs_sha256": "e8e010ca5ff14182a9b8b0981f9d3ed4b65a44b875a256c6aa03ba010da9f59b",
+    "manifest_sha256": "6fed84e07d67aa85494b0b080d5274bf72618537a539a4de5534f278582233dd",
+    "pipeline_fingerprint": "47cdc526d1a8a2f92dc6bfc3080f8492927c0098ac9bc7efb1b454ce184dac8b",
+    "live_database_modified": false
+  },
+  "base_inputs": {
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/FULL_CLEAN.jsonl": "2834cb60a308be03685602e1fb4b6137d2c9968e249c81ce80892dae1b63908c",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data.jsonl": "b3720c5fdf6a9a62a8a4adc8568083302617a386b140420388fda3eb32c6f2f9",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/blacklist.json": "971ddaa1de16966e7f97fd52be1d6b69915bb7c5ea0e28ddd79b0fce0338d6e6",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data_audit.json": "2f95df1274ee69e90b7b5dbc103ea5a368ac4220b69bd10a6443beb464c3192b",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/cache.json": "ef2815053efe8b5999915c345a40ab18a7055ce3d4386a5f6b9eae352c2c9011",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/validation.jsonl": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6"
+  },
+  "blacklists": {
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/blacklist.json": "971ddaa1de16966e7f97fd52be1d6b69915bb7c5ea0e28ddd79b0fce0338d6e6",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/xm3600-pl/blacklist.json": "8779589042cc6a4b344740a62060983c7c7b6ab6162c53608ab582f03da7634b"
+  },
+  "extraction_sha256": "a2dc4738dfb6663e7bdd62cbe25051e682dfc9cf02ec6957bfd72a5d7617b164",
+  "candidates": 35918,
+  "candidate_unique_pixels": 35860,
+  "rejected_direct": 6,
+  "rejected_component_rows": 9,
+  "largest_component_images": 5,
+  "train": {
+    "rows": 33906,
+    "images": 33851,
+    "sources": {
+      "washington_post": 25953,
+      "usa_today": 7953
+    },
+    "routes": {
+      "ready_recycled": 29907,
+      "ready_reused_original": 3982,
+      "ready_reused_recycled": 14,
+      "ready_original": 3
+    },
+    "components": 33627
+  },
+  "small": {
+    "rows": 10015,
+    "images": 10000,
+    "sources": {
+      "washington_post": 7665,
+      "usa_today": 2350
+    },
+    "routes": {
+      "ready_recycled": 8826,
+      "ready_reused_original": 1185,
+      "ready_reused_recycled": 4
+    },
+    "components": 9978
+  },
+  "dev": {
+    "rows": 2003,
+    "images": 2000,
+    "sources": {
+      "washington_post": 1548,
+      "usa_today": 455
+    },
+    "routes": {
+      "ready_recycled": 1772,
+      "ready_reused_original": 231
+    },
+    "components": 1980
+  },
+  "grouping": "canonical pixels, all original article paths, original and final captions, exhaustive pHash Hamming<=6 via guaranteed 7-band index",
+  "filtering": "entire connected component excluded on exact image, normalized text, or pHash<=6 match to protected/base images; conservative false exclusions possible",
+  "limitation": "Known article paths and pHash do not guarantee different news events or detect every crop/transformation; VN captions are model-generated/translated, not human gold.",
+  "xm3600_blacklist_used_only_for_overlap": true,
+  "xm3600_scores_computed": false,
+  "test_used": false,
+  "files": {
+    "vn_train.jsonl": "46b01f863f2d04e6f672e45f104e7e485e1d48d968c83cbd199a53b7c175bbfe",
+    "vn_10k.jsonl": "b4b1e9625b0873fcb1500444f591b4b8bccd06a5e1da3396d7b761f6ebea515e",
+    "vn_dev.jsonl": "69b8fd8583ef80874cd2c63ded18cf9151d8ae876ee96e1367a9f4391cf391ec"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "audit_inputs_unchanged": true,
+  "variant_manifests_and_checkpoint_hashes_verified": true,
+  "matched_max_steps": 5500,
+  "matched_max_examples": 1405780,
+  "legacy_full_training_reproduced_exactly": true,
+  "xm3600_clean_images": 3597,
+  "xm3600_polish_captions": 7133,
+  "real_final_blind_scores_computed": false,
+  "training_regression_tests_passed": 29,
+  "cleanroom_tests_passed": 6,
+  "syntax_files_checked": 7
+}

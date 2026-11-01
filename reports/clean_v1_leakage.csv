@@ -1,0 +1,17 @@
+train_source,benchmark,eval_id,eval_parent_image,eval_image_content,eval_text,unknown_parent_lineage,retained_train,retained_validation
+aro_visual_relation,cirr,0,0,0,0,0,20883,2343
+aro_visual_relation,fashioniq,0,0,0,0,0,20883,2343
+aro_visual_relation,mscoco_t2i,0,119,0,0,0,20883,2343
+aro_visual_relation,refcoco,0,592,0,0,0,20883,2343
+aro_visual_attribution,cirr,0,0,0,0,0,25434,2615
+aro_visual_attribution,fashioniq,0,0,0,0,0,25434,2615
+aro_visual_attribution,mscoco_t2i,0,139,0,0,0,25434,2615
+aro_visual_attribution,refcoco,0,560,0,0,0,25434,2615
+sugarcrepe,cirr,0,0,0,0,0,6103,644
+sugarcrepe,fashioniq,0,0,0,0,0,6103,644
+sugarcrepe,mscoco_t2i,0,762,0,143,0,6103,644
+sugarcrepe,refcoco,0,0,0,0,0,6103,644
+mbeir_mscoco,cirr,0,0,0,0,0,17869,2093
+mbeir_mscoco,fashioniq,0,0,0,0,0,17869,2093
+mbeir_mscoco,mscoco_t2i,0,5010,0,1024,0,17869,2093
+mbeir_mscoco,refcoco,0,0,0,0,0,17869,2093

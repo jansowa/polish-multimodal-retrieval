@@ -1,0 +1,185 @@
+{
+  "status": "passed",
+  "checks": {
+    "VN_only": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_nonCOCO_A": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_nonCOCO_R": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_nonCOCO_AR": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_A": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_R": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_S": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_C": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_FULL": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_FULL_drop_A": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_FULL_drop_R": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_FULL_drop_S": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "VN_FULL_drop_C": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    },
+    "FULL_only": {
+      "source_verified": true,
+      "fresh_initialization_verified": true,
+      "VN_selection_and_loss_reproduced": true,
+      "train_ancestry_verified": true,
+      "full_budget_verified": true
+    }
+  },
+  "immutable_inputs_unchanged": true,
+  "COCO_used_for_selection": false,
+  "wiki_used": false,
+  "xm3600_scored": false,
+  "registry_sha256": "8a361d2a2693756cd453713ef3089e16a31f0e563fd5cbd3ac92d109afeff25b",
+  "evaluation_marker": {
+    "identity": {
+      "registry_sha256": "8a361d2a2693756cd453713ef3089e16a31f0e563fd5cbd3ac92d109afeff25b",
+      "evaluator_sha256": "db554fe8e3bf27fd68e5410b930d52b69259c75876644ad2a3967644d8179d44",
+      "data": {
+        "data": {
+          "base": {
+            "inputs": {
+              "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/FULL_CLEAN.jsonl": "2834cb60a308be03685602e1fb4b6137d2c9968e249c81ce80892dae1b63908c",
+              "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data.jsonl": "b3720c5fdf6a9a62a8a4adc8568083302617a386b140420388fda3eb32c6f2f9",
+              "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/blacklist.json": "971ddaa1de16966e7f97fd52be1d6b69915bb7c5ea0e28ddd79b0fce0338d6e6",
+              "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data_audit.json": "2f95df1274ee69e90b7b5dbc103ea5a368ac4220b69bd10a6443beb464c3192b",
+              "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/cache.json": "ef2815053efe8b5999915c345a40ab18a7055ce3d4386a5f6b9eae352c2c9011",
+              "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/validation.jsonl": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6"
+            },
+            "model": {
+              "model": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+              "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+              "files": {
+                "/home/jsowa/.cache/huggingface/hub/models--wkcn--TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/snapshots/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md": "6565f08e0bd79353937fd1b7c89b69d0383a5e8e511c260a7a091a2f95c359a9",
+                "/home/jsowa/.cache/huggingface/hub/models--wkcn--TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/snapshots/07a4b0bc751cb64fecd2b661c048c1dd98d69444/config.json": "de47e9e12875c7abb6e0ddd13b5b0f54851b96cefa5c2ed3aab881e3efd1647b",
+                "/home/jsowa/.cache/huggingface/hub/models--wkcn--TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/snapshots/07a4b0bc751cb64fecd2b661c048c1dd98d69444/preprocessor_config.json": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+                "/home/jsowa/.cache/huggingface/hub/models--wkcn--TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/snapshots/07a4b0bc751cb64fecd2b661c048c1dd98d69444/model.safetensors": "112bdfb07ebc8994e9afba7a2a314e278493a675033595cf48e54cf8a17ae587"
+              },
+              "license": {
+                "declared_weights_license": "mit",
+                "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md",
+                "commercial_screen": "permissive-model-card-declaration",
+                "scope": "Model-card declaration for weights; not a clearance of pretraining data or product rights"
+              }
+            },
+            "text_features": {
+              "path": "/home/jsowa/.cache/huggingface/pl_mmb_training/embeddings/635313093185200b638b42ea70ee925b24a3977c43925a496adc873a971f039b.pt",
+              "sha256": "b240e411f3bd0e0d25c157f8a72e98ba93682a933361d8d204fda0850b6923a8",
+              "identity_sha256": "635313093185200b638b42ea70ee925b24a3977c43925a496adc873a971f039b"
+            },
+            "validation_graph": "474052b8757cbb38ff2cdcfce58781ed379de1392270e04d48dbf096f37af993",
+            "seed": 42,
+            "optimization": {
+              "epochs": 20,
+              "batch_size": 256,
+              "learning_rate": 0.001,
+              "weight_decay": 0.01
+            },
+            "precision": "fp32-weights-bf16-vision-autocast",
+            "selection": "validation_t2i_r1_then_mean_r1_then_earliest_epoch",
+            "test_used": false,
+            "xm3600_used": false
+          },
+          "audit_sha256": "b19658014b2981464874ebb461202c4ffb4d8b1a48c1efab1a62f5d8fd0c1bf0",
+          "extraction_sha256": "a2dc4738dfb6663e7bdd62cbe25051e682dfc9cf02ec6957bfd72a5d7617b164",
+          "text_features": {
+            "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-visualnews-v1/text_cache/embeddings/dbd7f7ecd97261148953d03823490adfa222c40e59b68a830dbca470deaed717.pt",
+            "sha256": "13d6677cde8b047e91355fff22c64b7d03cfa91eb51e10d46408a6faa39ffbda",
+            "identity_sha256": "dbd7f7ecd97261148953d03823490adfa222c40e59b68a830dbca470deaed717"
+          },
+          "vn_dev_graph": "86b6538807123567cf95d0e8a251e5652d3c4beff3377e32814f51ad8e253065",
+          "primary_selection": "unchanged_COCO_val_t2i_r1_then_mean_then_earliest",
+          "vn_dev_used_for_checkpoint_selection": false,
+          "test_used": false,
+          "xm3600_scored": false
+        },
+        "native_features_sha256": "1d1ea2780b8fd7777b8d736ccde9fd5db1d07e4af01118f24a5bd98afed04fb6",
+        "VG_metadata_sha256": "170fa6ddc50dd265049efe8bbc94523228297552a35437dc65ed0f1c89035267",
+        "strict_base_indices_sha256": "2c5d4186fbdafa9170a989dff23acae9a756d36866ee5a79ecf87b9f8f187294",
+        "selection": "VN_dev_t2i_r1_then_mean_r1_then_earliest",
+        "COCO_used_for_selection": false,
+        "wiki_used": false,
+        "encoders_frozen": true,
+        "projector": "Linear512to384",
+        "seed": 42
+      }
+    },
+    "created_at": "2026-10-21T19:02:33.265939+00:00",
+    "all_training_closed": true,
+    "COCO_used_for_selection": false
+  }
+}

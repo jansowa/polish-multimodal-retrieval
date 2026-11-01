@@ -1,0 +1,858 @@
+{
+  "visualnews": {
+    "snapshot_utc": "2026-10-27T06:19:20.414282+00:00",
+    "total": 283012,
+    "statuses": {
+      "completed": 134971,
+      "error": 137,
+      "pending": 147888,
+      "running": 16
+    },
+    "routes": {
+      "ready_original": 7644,
+      "ready_recycled": 86727,
+      "ready_reused_original": 4236,
+      "ready_reused_recycled": 37,
+      "rejected_grounding": 33678,
+      "rejected_no_visual_core": 25,
+      "review_mismatch": 2440,
+      "review_recycling_failed": 184
+    },
+    "ready_polish": 98644,
+    "ready_after_recycling": 86764,
+    "ready_without_recycling": 11880,
+    "ready_with_final_english": 98644,
+    "latest_request": [
+      "2026-10-24T12:47:07.942754+00:00",
+      406903
+    ],
+    "lengths": {
+      "words": {
+        "n": 98644,
+        "min": 1,
+        "mean": 22.29,
+        "median": 21.0,
+        "p10": 11.0,
+        "p90": 34.0,
+        "p95": 40.0,
+        "p99": 52.0,
+        "max": 154,
+        "total": 2198732
+      },
+      "characters_including_spaces": {
+        "n": 98644,
+        "min": 4,
+        "mean": 150.64,
+        "median": 145.0,
+        "p10": 78.0,
+        "p90": 227.0,
+        "p95": 264.0,
+        "p99": 343.0,
+        "max": 1055,
+        "total": 14859508
+      },
+      "word_histogram": {
+        "1–5": {
+          "n": 2872,
+          "percent": 2.91
+        },
+        "6–10": {
+          "n": 5871,
+          "percent": 5.95
+        },
+        "11–20": {
+          "n": 35687,
+          "percent": 36.18
+        },
+        "21–40": {
+          "n": 49754,
+          "percent": 50.44
+        },
+        "41–80": {
+          "n": 4422,
+          "percent": 4.48
+        },
+        "81–160": {
+          "n": 38,
+          "percent": 0.04
+        },
+        "161+": {
+          "n": 0,
+          "percent": 0.0
+        }
+      },
+      "exact_unique_polish_texts": 98596,
+      "longest": [
+        {
+          "id": "MBeirvisualnews:0:178816",
+          "words": 154,
+          "characters": 1055,
+          "preview": "Chociaż w całości składa się z zamarzniętej wody, lód nie jest jednorodny. 7 października wykonano to zdjęcie przedstawiające różnorodne typy lodu u wybrzeży Wschodniej Antarktydy. Jaskrawobiały lód w"
+        },
+        {
+          "id": "MBeirvisualnews:0:203952",
+          "words": 141,
+          "characters": 858,
+          "preview": "Morris the Mankiest Monster autorstwa Gilesa Andrei i Sarah McIntyre. Recenzja Nicki i Luke w wieku 4 lat. Morris ma bardzo złe nawyki, takie jak jedzenie owłosionych zielonych krost i liżenie swoich "
+        },
+        {
+          "id": "MBeirvisualnews:0:108695",
+          "words": 128,
+          "characters": 897,
+          "preview": "Hybrydowe zaćmienie Słońca 2 A Eugen Kamenew, WYGRANY Słońce i Księżyc razem toną za horyzontem sawanny w Kenii, uwięzione w zaćmieniu, w którym Księżyc jest zarysowany na tle jasnej tarczy Słońca. Te"
+        }
+      ]
+    },
+    "lengths_by_route": {
+      "original": {
+        "words": {
+          "n": 11880,
+          "min": 1,
+          "mean": 10.37,
+          "median": 9.0,
+          "p10": 4.0,
+          "p90": 18.0,
+          "p95": 23.0,
+          "p99": 44.0,
+          "max": 154,
+          "total": 123233
+        },
+        "characters_including_spaces": {
+          "n": 11880,
+          "min": 4,
+          "mean": 72.16,
+          "median": 60.0,
+          "p10": 25.0,
+          "p90": 125.0,
+          "p95": 160.0,
+          "p99": 307.0,
+          "max": 1055,
+          "total": 857251
+        },
+        "word_histogram": {
+          "1–5": {
+            "n": 2861,
+            "percent": 24.08
+          },
+          "6–10": {
+            "n": 4750,
+            "percent": 39.98
+          },
+          "11–20": {
+            "n": 3426,
+            "percent": 28.84
+          },
+          "21–40": {
+            "n": 696,
+            "percent": 5.86
+          },
+          "41–80": {
+            "n": 121,
+            "percent": 1.02
+          },
+          "81–160": {
+            "n": 26,
+            "percent": 0.22
+          },
+          "161+": {
+            "n": 0,
+            "percent": 0.0
+          }
+        },
+        "exact_unique_polish_texts": 11872,
+        "longest": [
+          {
+            "id": "MBeirvisualnews:0:178816",
+            "words": 154,
+            "characters": 1055,
+            "preview": "Chociaż w całości składa się z zamarzniętej wody, lód nie jest jednorodny. 7 października wykonano to zdjęcie przedstawiające różnorodne typy lodu u wybrzeży Wschodniej Antarktydy. Jaskrawobiały lód w"
+          },
+          {
+            "id": "MBeirvisualnews:0:203952",
+            "words": 141,
+            "characters": 858,
+            "preview": "Morris the Mankiest Monster autorstwa Gilesa Andrei i Sarah McIntyre. Recenzja Nicki i Luke w wieku 4 lat. Morris ma bardzo złe nawyki, takie jak jedzenie owłosionych zielonych krost i liżenie swoich "
+          },
+          {
+            "id": "MBeirvisualnews:0:108695",
+            "words": 128,
+            "characters": 897,
+            "preview": "Hybrydowe zaćmienie Słońca 2 A Eugen Kamenew, WYGRANY Słońce i Księżyc razem toną za horyzontem sawanny w Kenii, uwięzione w zaćmieniu, w którym Księżyc jest zarysowany na tle jasnej tarczy Słońca. Te"
+          }
+        ]
+      },
+      "recycled": {
+        "words": {
+          "n": 86764,
+          "min": 4,
+          "mean": 23.92,
+          "median": 22.0,
+          "p10": 15.0,
+          "p90": 35.0,
+          "p95": 40.0,
+          "p99": 52.0,
+          "max": 93,
+          "total": 2075499
+        },
+        "characters_including_spaces": {
+          "n": 86764,
+          "min": 22,
+          "mean": 161.38,
+          "median": 152.0,
+          "p10": 103.0,
+          "p90": 233.0,
+          "p95": 268.0,
+          "p99": 345.0,
+          "max": 598,
+          "total": 14002257
+        },
+        "word_histogram": {
+          "1–5": {
+            "n": 11,
+            "percent": 0.01
+          },
+          "6–10": {
+            "n": 1121,
+            "percent": 1.29
+          },
+          "11–20": {
+            "n": 32261,
+            "percent": 37.18
+          },
+          "21–40": {
+            "n": 49058,
+            "percent": 56.54
+          },
+          "41–80": {
+            "n": 4301,
+            "percent": 4.96
+          },
+          "81–160": {
+            "n": 12,
+            "percent": 0.01
+          },
+          "161+": {
+            "n": 0,
+            "percent": 0.0
+          }
+        },
+        "exact_unique_polish_texts": 86724,
+        "longest": [
+          {
+            "id": "MBeirvisualnews:0:159789",
+            "words": 93,
+            "characters": 598,
+            "preview": "Czteropanelowa ilustracja przedstawia pokój z oknem, stołem i krzesłem. W lewym górnym panelu mężczyzna w ciemnym garniturze stoi obok stołu, podczas gdy postać w czarnym garniturze z długim ogonem je"
+          },
+          {
+            "id": "MBeirvisualnews:0:63094",
+            "words": 92,
+            "characters": 594,
+            "preview": "Cztery osoby stoją razem w formalnych i tradycyjnych strojach. Po lewej stronie mężczyzna ma na sobie ciemny mundur w stylu wojskowym z odznaczeniami, żółtą szarfę i czapkę z daszkiem. Obok niego mężc"
+          },
+          {
+            "id": "MBeirvisualnews:0:21976",
+            "words": 89,
+            "characters": 591,
+            "preview": "Czterej mężczyźni pozują do grupowego zdjęcia w oficjalnym pomieszczeniu z dużym portretem w ramach na ścianie za nimi. Mężczyzna po skrajnej lewej stronie ma na sobie ciemny galowy mundur wojskowy z "
+          }
+        ]
+      }
+    },
+    "worker_state": {
+      "status": "running",
+      "pid": 109824,
+      "updated_at": "2026-10-24T12:46:58.605923+00:00",
+      "concurrency": 16,
+      "error": null
+    }
+  },
+  "wikimedia": {
+    "snapshot_utc": "2026-10-27T06:19:33.640566+00:00",
+    "total": 8235,
+    "statuses": {
+      "completed": 8226,
+      "error": 9
+    },
+    "routes": {
+      "ready_native_original": 876,
+      "ready_native_recycled": 3103,
+      "ready_original": 274,
+      "ready_recycled": 1246,
+      "ready_reused_original": 85,
+      "rejected_grounding": 2612,
+      "review_mismatch": 30
+    },
+    "ready_polish": 5584,
+    "ready_after_recycling": 4349,
+    "ready_without_recycling": 1235,
+    "ready_with_final_english": 1605,
+    "latest_request": [
+      "2026-10-23T17:57:35.043410+00:00",
+      28638
+    ],
+    "lengths": {
+      "words": {
+        "n": 5584,
+        "min": 1,
+        "mean": 21.57,
+        "median": 21.0,
+        "p10": 6.0,
+        "p90": 37.0,
+        "p95": 43.0,
+        "p99": 54.0,
+        "max": 97,
+        "total": 120445
+      },
+      "characters_including_spaces": {
+        "n": 5584,
+        "min": 3,
+        "mean": 153.96,
+        "median": 149.5,
+        "p10": 40.0,
+        "p90": 263.0,
+        "p95": 299.85,
+        "p99": 375.17,
+        "max": 703,
+        "total": 859736
+      },
+      "word_histogram": {
+        "1–5": {
+          "n": 538,
+          "percent": 9.63
+        },
+        "6–10": {
+          "n": 522,
+          "percent": 9.35
+        },
+        "11–20": {
+          "n": 1711,
+          "percent": 30.64
+        },
+        "21–40": {
+          "n": 2436,
+          "percent": 43.62
+        },
+        "41–80": {
+          "n": 374,
+          "percent": 6.7
+        },
+        "81–160": {
+          "n": 3,
+          "percent": 0.05
+        },
+        "161+": {
+          "n": 0,
+          "percent": 0.0
+        }
+      },
+      "exact_unique_polish_texts": 5357,
+      "longest": [
+        {
+          "id": "wikimedia:107271324",
+          "words": 97,
+          "characters": 703,
+          "preview": "Lokalny numer akcesji: 2012.AAP.382 Tytuł: Quo vadis, opowieść z czasów Nerona, autorstwa Henry'ego K. Sienkiewicza Twórca/współtwórca: Schweinfurth, Julius A. (Julius Adolph), 1858-1931 (artysta) Dat"
+        },
+        {
+          "id": "wikimedia:101642711",
+          "words": 87,
+          "characters": 679,
+          "preview": "Osiedla znajdujące się w dzielnicy Białołęka m. st. Warszawy . Zawarte zostały zarówno osiedla zawarte w Państwowym Rejestrze Nazw Geograficznych, jak i nazwy pozostałe (Kalenica, Lejanów, Lewandów, Ł"
+        },
+        {
+          "id": "wikimedia:149780018",
+          "words": 83,
+          "characters": 567,
+          "preview": "Uliczny widok z szarym słupem, na którym umieszczono niebieskie znaki parkingowe z białą literą 'P' (jeden z napisem 'Płatny', drugi z symbolem przekreślonego prostokąta), a pod nimi białe znaki z sym"
+        }
+      ]
+    },
+    "lengths_by_route": {
+      "original": {
+        "words": {
+          "n": 1235,
+          "min": 1,
+          "mean": 7.23,
+          "median": 6.0,
+          "p10": 3.0,
+          "p90": 12.0,
+          "p95": 16.0,
+          "p99": 25.66,
+          "max": 97,
+          "total": 8928
+        },
+        "characters_including_spaces": {
+          "n": 1235,
+          "min": 3,
+          "mean": 51.62,
+          "median": 43.0,
+          "p10": 16.0,
+          "p90": 89.0,
+          "p95": 113.0,
+          "p99": 183.66,
+          "max": 703,
+          "total": 63751
+        },
+        "word_histogram": {
+          "1–5": {
+            "n": 538,
+            "percent": 43.56
+          },
+          "6–10": {
+            "n": 487,
+            "percent": 39.43
+          },
+          "11–20": {
+            "n": 184,
+            "percent": 14.9
+          },
+          "21–40": {
+            "n": 21,
+            "percent": 1.7
+          },
+          "41–80": {
+            "n": 3,
+            "percent": 0.24
+          },
+          "81–160": {
+            "n": 2,
+            "percent": 0.16
+          },
+          "161+": {
+            "n": 0,
+            "percent": 0.0
+          }
+        },
+        "exact_unique_polish_texts": 1010,
+        "longest": [
+          {
+            "id": "wikimedia:107271324",
+            "words": 97,
+            "characters": 703,
+            "preview": "Lokalny numer akcesji: 2012.AAP.382 Tytuł: Quo vadis, opowieść z czasów Nerona, autorstwa Henry'ego K. Sienkiewicza Twórca/współtwórca: Schweinfurth, Julius A. (Julius Adolph), 1858-1931 (artysta) Dat"
+          },
+          {
+            "id": "wikimedia:101642711",
+            "words": 87,
+            "characters": 679,
+            "preview": "Osiedla znajdujące się w dzielnicy Białołęka m. st. Warszawy . Zawarte zostały zarówno osiedla zawarte w Państwowym Rejestrze Nazw Geograficznych, jak i nazwy pozostałe (Kalenica, Lejanów, Lewandów, Ł"
+          },
+          {
+            "id": "wikimedia:42394847",
+            "words": 46,
+            "characters": 300,
+            "preview": "Tekst w jęz. angielskim na tablicy pamiątkowej (z drobnymi błędami; stan z VIII 2015) tzw. \"kuźni Romów\" - miejsca pamięci po obozie cygańskim funkcjonującym na obszarze łódzkiego getta w okresie od X"
+          }
+        ]
+      },
+      "recycled": {
+        "words": {
+          "n": 4349,
+          "min": 7,
+          "mean": 25.64,
+          "median": 23.0,
+          "p10": 15.0,
+          "p90": 39.0,
+          "p95": 45.0,
+          "p99": 55.0,
+          "max": 83,
+          "total": 111517
+        },
+        "characters_including_spaces": {
+          "n": 4349,
+          "min": 51,
+          "mean": 183.03,
+          "median": 169.0,
+          "p10": 111.0,
+          "p90": 275.0,
+          "p95": 313.0,
+          "p99": 385.0,
+          "max": 567,
+          "total": 795985
+        },
+        "word_histogram": {
+          "1–5": {
+            "n": 0,
+            "percent": 0.0
+          },
+          "6–10": {
+            "n": 35,
+            "percent": 0.8
+          },
+          "11–20": {
+            "n": 1527,
+            "percent": 35.11
+          },
+          "21–40": {
+            "n": 2415,
+            "percent": 55.53
+          },
+          "41–80": {
+            "n": 371,
+            "percent": 8.53
+          },
+          "81–160": {
+            "n": 1,
+            "percent": 0.02
+          },
+          "161+": {
+            "n": 0,
+            "percent": 0.0
+          }
+        },
+        "exact_unique_polish_texts": 4347,
+        "longest": [
+          {
+            "id": "wikimedia:149780018",
+            "words": 83,
+            "characters": 567,
+            "preview": "Uliczny widok z szarym słupem, na którym umieszczono niebieskie znaki parkingowe z białą literą 'P' (jeden z napisem 'Płatny', drugi z symbolem przekreślonego prostokąta), a pod nimi białe znaki z sym"
+          },
+          {
+            "id": "wikimedia:60648928",
+            "words": 79,
+            "characters": 516,
+            "preview": "Wnętrze sali z dwoma szklanymi gablotami na ścianie, w których wyłożone są dyplomy i dokumenty. Nad gablotami znajduje się czerwony baner z napisem 'SZKOŁA PODSTAWOWA Nr 33 im. KPT. LEONIDA TELIGI w B"
+          },
+          {
+            "id": "wikimedia:22840302",
+            "words": 79,
+            "characters": 528,
+            "preview": "Na ceglanej ścianie budynku widoczny jest duży plakat uliczny. W centralnej części plakatu znajduje się duży napis „CZARKU GMYZIE! JESTEŚMY Z TOBĄ!” oraz mniejszy tekst „wszyscy zostaliśmy wyrżuceni z"
+          }
+        ]
+      }
+    },
+    "ready_by_selected_caption_grade": {
+      "A": 1260,
+      "B": 3029,
+      "D": 1295
+    },
+    "lengths_by_grade": {
+      "A": {
+        "words": {
+          "n": 1260,
+          "min": 1,
+          "mean": 20.02,
+          "median": 19.0,
+          "p10": 5.0,
+          "p90": 36.0,
+          "p95": 42.0,
+          "p99": 50.41,
+          "max": 83,
+          "total": 25231
+        },
+        "characters_including_spaces": {
+          "n": 1260,
+          "min": 4,
+          "mean": 142.28,
+          "median": 139.5,
+          "p10": 36.0,
+          "p90": 251.0,
+          "p95": 288.05,
+          "p99": 348.82,
+          "max": 567,
+          "total": 179273
+        },
+        "word_histogram": {
+          "1–5": {
+            "n": 151,
+            "percent": 11.98
+          },
+          "6–10": {
+            "n": 178,
+            "percent": 14.13
+          },
+          "11–20": {
+            "n": 362,
+            "percent": 28.73
+          },
+          "21–40": {
+            "n": 496,
+            "percent": 39.37
+          },
+          "41–80": {
+            "n": 72,
+            "percent": 5.71
+          },
+          "81–160": {
+            "n": 1,
+            "percent": 0.08
+          },
+          "161+": {
+            "n": 0,
+            "percent": 0.0
+          }
+        },
+        "exact_unique_polish_texts": 1202,
+        "longest": [
+          {
+            "id": "wikimedia:149780018",
+            "words": 83,
+            "characters": 567,
+            "preview": "Uliczny widok z szarym słupem, na którym umieszczono niebieskie znaki parkingowe z białą literą 'P' (jeden z napisem 'Płatny', drugi z symbolem przekreślonego prostokąta), a pod nimi białe znaki z sym"
+          },
+          {
+            "id": "wikimedia:77609192",
+            "words": 60,
+            "characters": 412,
+            "preview": "Grupa mężczyzn w historycznych, oliwkowo-zielonych mundurach wojskowych z pelerynami i czapkami stoi na zewnątrz na trawniku. Dwóch z nich trzyma duże wieńce z białych i czerwonych kwiatów, ozdobione "
+          },
+          {
+            "id": "wikimedia:198855248",
+            "words": 59,
+            "characters": 432,
+            "preview": "Kamienno-ceglany kościół o gotyckiej architekturze z czerwoną dachówką, z charakterystycznymi wąskimi oknami i wieżyczką z krzyżem. Przed budynkiem znajduje się nowoczesny, niski obiekt z ciemnymi, lu"
+          }
+        ]
+      },
+      "B": {
+        "words": {
+          "n": 3029,
+          "min": 1,
+          "mean": 21.79,
+          "median": 21.0,
+          "p10": 6.0,
+          "p90": 38.0,
+          "p95": 44.0,
+          "p99": 55.0,
+          "max": 97,
+          "total": 66012
+        },
+        "characters_including_spaces": {
+          "n": 3029,
+          "min": 5,
+          "mean": 155.12,
+          "median": 148.0,
+          "p10": 43.0,
+          "p90": 267.2,
+          "p95": 305.0,
+          "p99": 383.88,
+          "max": 703,
+          "total": 469845
+        },
+        "word_histogram": {
+          "1–5": {
+            "n": 251,
+            "percent": 8.29
+          },
+          "6–10": {
+            "n": 330,
+            "percent": 10.89
+          },
+          "11–20": {
+            "n": 924,
+            "percent": 30.51
+          },
+          "21–40": {
+            "n": 1298,
+            "percent": 42.85
+          },
+          "41–80": {
+            "n": 224,
+            "percent": 7.4
+          },
+          "81–160": {
+            "n": 2,
+            "percent": 0.07
+          },
+          "161+": {
+            "n": 0,
+            "percent": 0.0
+          }
+        },
+        "exact_unique_polish_texts": 2949,
+        "longest": [
+          {
+            "id": "wikimedia:107271324",
+            "words": 97,
+            "characters": 703,
+            "preview": "Lokalny numer akcesji: 2012.AAP.382 Tytuł: Quo vadis, opowieść z czasów Nerona, autorstwa Henry'ego K. Sienkiewicza Twórca/współtwórca: Schweinfurth, Julius A. (Julius Adolph), 1858-1931 (artysta) Dat"
+          },
+          {
+            "id": "wikimedia:101642711",
+            "words": 87,
+            "characters": 679,
+            "preview": "Osiedla znajdujące się w dzielnicy Białołęka m. st. Warszawy . Zawarte zostały zarówno osiedla zawarte w Państwowym Rejestrze Nazw Geograficznych, jak i nazwy pozostałe (Kalenica, Lejanów, Lewandów, Ł"
+          },
+          {
+            "id": "wikimedia:60648928",
+            "words": 79,
+            "characters": 516,
+            "preview": "Wnętrze sali z dwoma szklanymi gablotami na ścianie, w których wyłożone są dyplomy i dokumenty. Nad gablotami znajduje się czerwony baner z napisem 'SZKOŁA PODSTAWOWA Nr 33 im. KPT. LEONIDA TELIGI w B"
+          }
+        ]
+      },
+      "D": {
+        "words": {
+          "n": 1295,
+          "min": 1,
+          "mean": 22.55,
+          "median": 22.0,
+          "p10": 5.0,
+          "p90": 36.0,
+          "p95": 42.0,
+          "p99": 53.0,
+          "max": 67,
+          "total": 29202
+        },
+        "characters_including_spaces": {
+          "n": 1295,
+          "min": 3,
+          "mean": 162.64,
+          "median": 160.0,
+          "p10": 36.4,
+          "p90": 258.6,
+          "p95": 291.6,
+          "p99": 366.18,
+          "max": 470,
+          "total": 210618
+        },
+        "word_histogram": {
+          "1–5": {
+            "n": 136,
+            "percent": 10.5
+          },
+          "6–10": {
+            "n": 14,
+            "percent": 1.08
+          },
+          "11–20": {
+            "n": 425,
+            "percent": 32.82
+          },
+          "21–40": {
+            "n": 642,
+            "percent": 49.58
+          },
+          "41–80": {
+            "n": 78,
+            "percent": 6.02
+          },
+          "81–160": {
+            "n": 0,
+            "percent": 0.0
+          },
+          "161+": {
+            "n": 0,
+            "percent": 0.0
+          }
+        },
+        "exact_unique_polish_texts": 1215,
+        "longest": [
+          {
+            "id": "wikimedia:28447899",
+            "words": 67,
+            "characters": 470,
+            "preview": "Na białej ścianie wyciągniętej pod kątem widać wystawę złożoną z oprawionych grafik, plakatów i otwartej książki. W lewym górnym rogu znajduje się rysunek dwóch postaci w historycznych strojach, a obo"
+          },
+          {
+            "id": "wikimedia:186916195",
+            "words": 66,
+            "characters": 466,
+            "preview": "Witryna muzealna z drewnianą ramą, w której na szklanych półkach i drewnianej podstawie wyeksponowane są antyczne instrumenty naukowe. W lewym górnym rogu znajduje się masywny, mosiężny teleskop na st"
+          },
+          {
+            "id": "wikimedia:67791012",
+            "words": 63,
+            "characters": 409,
+            "preview": "Widok od tyłu na trzy osoby idące po wybrukowanym placu w kierunku wejścia do nowoczesnego budynku z dużą szklaną fasadą. Po lewej stronie mężczyzna w czerwono-czarnej kurtce i czapce, w środku osoba "
+          }
+        ]
+      }
+    },
+    "worker_state": {
+      "status": "blocked_errors",
+      "pid": 115268,
+      "updated_at": "2026-10-24T12:46:56.599015+00:00",
+      "concurrency": 16,
+      "error": null
+    }
+  },
+  "combined": {
+    "ready_polish": 104228,
+    "lengths": {
+      "words": {
+        "n": 104228,
+        "min": 1,
+        "mean": 22.25,
+        "median": 21.0,
+        "p10": 11.0,
+        "p90": 34.0,
+        "p95": 40.0,
+        "p99": 52.0,
+        "max": 154,
+        "total": 2319177
+      },
+      "characters_including_spaces": {
+        "n": 104228,
+        "min": 3,
+        "mean": 150.82,
+        "median": 145.0,
+        "p10": 76.0,
+        "p90": 229.0,
+        "p95": 266.0,
+        "p99": 346.0,
+        "max": 1055,
+        "total": 15719244
+      },
+      "word_histogram": {
+        "1–5": {
+          "n": 3410,
+          "percent": 3.27
+        },
+        "6–10": {
+          "n": 6393,
+          "percent": 6.13
+        },
+        "11–20": {
+          "n": 37398,
+          "percent": 35.88
+        },
+        "21–40": {
+          "n": 52190,
+          "percent": 50.07
+        },
+        "41–80": {
+          "n": 4796,
+          "percent": 4.6
+        },
+        "81–160": {
+          "n": 41,
+          "percent": 0.04
+        },
+        "161+": {
+          "n": 0,
+          "percent": 0.0
+        }
+      },
+      "exact_unique_polish_texts": 103953,
+      "longest": [
+        {
+          "id": "MBeirvisualnews:0:178816",
+          "words": 154,
+          "characters": 1055,
+          "preview": "Chociaż w całości składa się z zamarzniętej wody, lód nie jest jednorodny. 7 października wykonano to zdjęcie przedstawiające różnorodne typy lodu u wybrzeży Wschodniej Antarktydy. Jaskrawobiały lód w"
+        },
+        {
+          "id": "MBeirvisualnews:0:203952",
+          "words": 141,
+          "characters": 858,
+          "preview": "Morris the Mankiest Monster autorstwa Gilesa Andrei i Sarah McIntyre. Recenzja Nicki i Luke w wieku 4 lat. Morris ma bardzo złe nawyki, takie jak jedzenie owłosionych zielonych krost i liżenie swoich "
+        },
+        {
+          "id": "MBeirvisualnews:0:108695",
+          "words": 128,
+          "characters": 897,
+          "preview": "Hybrydowe zaćmienie Słońca 2 A Eugen Kamenew, WYGRANY Słońce i Księżyc razem toną za horyzontem sawanny w Kenii, uwięzione w zaćmieniu, w którym Księżyc jest zarysowany na tle jasnej tarczy Słońca. Te"
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "scope": "Completed ready pairs only; historical translations and rejected/incomplete items excluded from lengths.",
+    "words": "Unicode word/number sequences, keeping internal hyphens and apostrophes together.",
+    "characters": "Unicode characters including spaces and punctuation."
+  }
+}

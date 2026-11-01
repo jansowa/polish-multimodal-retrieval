@@ -1,0 +1,76 @@
+﻿{
+    "status":  "complete",
+    "created_at":  "2026-10-21T18:16:48.3257274Z",
+    "remove":  [
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_10k_frozen\\last.pt",
+                       "bytes":  3072909,
+                       "sha256":  "c98c9412956d0d409d99aa75d8bc409c49c963a8d0290f99597c7101ce0f1d3b",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_10k_frozen\\best.pt",
+                       "best_sha256":  "bec148ff89644b903d87b297fd1c78589b2428e02132e9aba2c574c548e599c2",
+                       "reason":  "Completed adaptation run; selected checkpoint, both dev metrics, loss and source hashes verified; optimizer/RNG resume state no longer needed"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_10k_last2_anchor\\last.pt",
+                       "bytes":  79817712,
+                       "sha256":  "b2239e5ab80caf793a46815e18204ac29f3f8490348518b7efd125e93bc20631",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_10k_last2_anchor\\best.pt",
+                       "best_sha256":  "6001c7fd53c058dfa106c38698011d15294b15ae86d6768a50a0ab4f2d2e8480",
+                       "reason":  "Completed adaptation run; selected checkpoint, both dev metrics, loss and source hashes verified; optimizer/RNG resume state no longer needed"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_frozen\\last.pt",
+                       "bytes":  3335373,
+                       "sha256":  "88168b66a869c2830c81402375c4f2cbed968770331903bd8aa1630dcc91045a",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_frozen\\best.pt",
+                       "best_sha256":  "f1d138eafc335a133cd4e6be9672e04925260e7f263767ce90e00c1c1e95680a",
+                       "reason":  "Completed adaptation run; selected checkpoint, both dev metrics, loss and source hashes verified; optimizer/RNG resume state no longer needed"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_last2_anchor\\last.pt",
+                       "bytes":  80080112,
+                       "sha256":  "3def1fa60894c48b20d75926e47052ec8f77a0cd736fd4bf6fd0ad20ca5f0011",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_last2_anchor\\best.pt",
+                       "best_sha256":  "79e36758561bbaca64187a652500558e69b323102e17fd34f2786542110e79d8",
+                       "reason":  "Completed adaptation run; selected checkpoint, both dev metrics, loss and source hashes verified; optimizer/RNG resume state no longer needed"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_frozen_seed43\\last.pt",
+                       "bytes":  3335501,
+                       "sha256":  "8d850dee54b5c13adfc6e74d744f5965e5d0a2eb84f38b0f5ec9bd41398db3e2",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_frozen_seed43\\best.pt",
+                       "best_sha256":  "02d3507a147404ba0d6a184ed7bf7696798152de0ffe315619bf139e5b24760f",
+                       "reason":  "Completed adaptation run; selected checkpoint, both dev metrics, loss and source hashes verified; optimizer/RNG resume state no longer needed"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_last2_anchor_seed43\\last.pt",
+                       "bytes":  80080304,
+                       "sha256":  "7f6e7483b04ba20969a758d566c04823d3993aa07d6d9719171847d8f2c3df08",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_last2_anchor_seed43\\best.pt",
+                       "best_sha256":  "385851056c020a3275caff2b45e6b03f0f8862e14fa69142b1ed60cf893802c2",
+                       "reason":  "Completed adaptation run; selected checkpoint, both dev metrics, loss and source hashes verified; optimizer/RNG resume state no longer needed"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_frozen_seed44\\last.pt",
+                       "bytes":  3335501,
+                       "sha256":  "4b943e16abd4014d3ea403a1d04654d397e8e8e63dc8fa844853ebdbb1e84c0f",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_frozen_seed44\\best.pt",
+                       "best_sha256":  "0e04a2f766e07356cca734d26ae3ab1246794007b2b7958867cbe4d8aa213bbb",
+                       "reason":  "Completed adaptation run; selected checkpoint, both dev metrics, loss and source hashes verified; optimizer/RNG resume state no longer needed"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_last2_anchor_seed44\\last.pt",
+                       "bytes":  80080304,
+                       "sha256":  "184ef00b7f45bb894f558e8886d762bcba84a2edb59ebed508c3a5bdeb3cf995",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\VN_all_last2_anchor_seed44\\best.pt",
+                       "best_sha256":  "f266d389b4ce38810249631dd6d5705cd0f30db47ecec392c7ffc35d6d7ee432",
+                       "reason":  "Completed adaptation run; selected checkpoint, both dev metrics, loss and source hashes verified; optimizer/RNG resume state no longer needed"
+                   }
+               ],
+    "recoverable_bytes":  333137716,
+    "best_checkpoints_retained":  true,
+    "immutable_inputs_untouched":  true,
+    "free_bytes_before":  3712376832,
+    "free_bytes_after":  4045529088,
+    "observed_free_increase_bytes":  333152256
+}

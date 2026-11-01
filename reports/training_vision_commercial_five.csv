@@ -1,0 +1,8 @@
+model,vision_parameters,projector_parameters,text_parameters,full_parameters,seeds,mscoco_r1,std,delta_siglip2,license,license_source
+siglip2,92930304,295296,31883136,125108736,"[42, 43, 44]",0.497,0.007000000000000006,0.0,Apache-2.0 (reference),https://huggingface.co/google/siglip2-base-patch16-256
+mobileclip2-s2,35815232,196992,31883136,67895360,[42],0.491,,-0.006000000000000005,Apple custom (reference),https://huggingface.co/apple/MobileCLIP2-S2
+tinyclip-39m,38587392,196992,31883136,70667520,"[42, 43, 44]",0.44666666666666666,0.0041633319989322695,-0.05033333333333334,mit,https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md
+tinyclip-40m,39691776,196992,31883136,71771904,[42],0.367,,-0.13,mit,https://huggingface.co/wkcn/TinyCLIP-ViT-40M-32-Text-19M-LAION400M/blob/95ec8197b3f2fe7f747865c61ca556cf0768b2f7/README.md
+chinese-clip-rn50,38316896,393600,31883136,70593632,[42],0.391,,-0.10599999999999998,apache-2.0,https://huggingface.co/OFA-Sys/chinese-clip-rn50/blob/717ba215769231e53b9b7c6b9d329b9cc5944418/README.md
+rn50-cc12m,38316896,393600,31883136,70593632,[42],0.277,,-0.21999999999999997,mit,https://huggingface.co/timm/resnet50_clip.cc12m/blob/d72a2fdb0278498f216ca970010d730b95249beb/README.md
+rn50-yfcc15m,38316896,393600,31883136,70593632,[42],0.319,,-0.178,mit,https://huggingface.co/timm/resnet50_clip.yfcc15m/blob/c94a9e3bde942b58c1cd13bb0a03d3c1ff4cb056/README.md

@@ -1,0 +1,219 @@
+{
+  "visualnews": {
+    "snapshot_utc": "2026-10-21T17:59:27.828630+00:00",
+    "queued_images": 283012,
+    "judged_images": 45511,
+    "first_caption": {
+      "judged": 45511,
+      "direct": 4303,
+      "recycle_routed": 32471,
+      "grounding_zero": 7937,
+      "mismatch": 800,
+      "recycle_completed": 32451,
+      "recycle_usable": 32446,
+      "recycle_unusable": 5,
+      "rechecked": 32444,
+      "recheck_pass": 32380,
+      "recheck_fail": 64,
+      "recycle_resolved": 32449,
+      "initial_percent": {
+        "direct": 9.4549,
+        "recycle_routed": 71.3476,
+        "grounding_zero": 17.4397,
+        "mismatch": 1.7578
+      },
+      "recheck_pass_percent": 99.8027,
+      "recycle_rescue_percent": 99.7874
+    },
+    "all_candidates": {
+      "judged": 45511,
+      "direct": 4303,
+      "recycle_routed": 32471,
+      "grounding_zero": 7937,
+      "mismatch": 800,
+      "recycle_completed": 32451,
+      "recycle_usable": 32446,
+      "recycle_unusable": 5,
+      "rechecked": 32444,
+      "recheck_pass": 32380,
+      "recheck_fail": 64,
+      "recycle_resolved": 32449,
+      "initial_percent": {
+        "direct": 9.4549,
+        "recycle_routed": 71.3476,
+        "grounding_zero": 17.4397,
+        "mismatch": 1.7578
+      },
+      "recheck_pass_percent": 99.8027,
+      "recycle_rescue_percent": 99.7874
+    },
+    "ready_polish": 36643,
+    "ready_routes": {
+      "ready_recycled": 32326,
+      "ready_reused_original": 4215,
+      "ready_reused_recycled": 14,
+      "ready_original": 88
+    },
+    "exclusions": {}
+  },
+  "wikimedia": {
+    "snapshot_utc": "2026-10-21T17:59:28.150596+00:00",
+    "queued_images": 8235,
+    "judged_images": 145,
+    "first_caption": {
+      "judged": 145,
+      "direct": 26,
+      "recycle_routed": 74,
+      "grounding_zero": 42,
+      "mismatch": 3,
+      "recycle_completed": 74,
+      "recycle_usable": 74,
+      "recycle_unusable": 0,
+      "rechecked": 71,
+      "recheck_pass": 71,
+      "recheck_fail": 0,
+      "recycle_resolved": 71,
+      "initial_percent": {
+        "direct": 17.931,
+        "recycle_routed": 51.0345,
+        "grounding_zero": 28.9655,
+        "mismatch": 2.069
+      },
+      "recheck_pass_percent": 100.0,
+      "recycle_rescue_percent": 100.0
+    },
+    "all_candidates": {
+      "judged": 251,
+      "direct": 29,
+      "recycle_routed": 87,
+      "grounding_zero": 128,
+      "mismatch": 7,
+      "recycle_completed": 87,
+      "recycle_usable": 87,
+      "recycle_unusable": 0,
+      "rechecked": 84,
+      "recheck_pass": 84,
+      "recheck_fail": 0,
+      "recycle_resolved": 84,
+      "initial_percent": {
+        "direct": 11.5538,
+        "recycle_routed": 34.6614,
+        "grounding_zero": 50.996,
+        "mismatch": 2.7888
+      },
+      "recheck_pass_percent": 100.0,
+      "recycle_rescue_percent": 100.0
+    },
+    "ready_polish": 111,
+    "ready_routes": {
+      "ready_native_original": 16,
+      "ready_recycled": 29,
+      "ready_native_recycled": 53,
+      "ready_reused_original": 3,
+      "ready_original": 10
+    },
+    "exclusions": {
+      "no_pl_en_caption": 62
+    },
+    "by_grade": {
+      "A": {
+        "judged": 38,
+        "direct": 8,
+        "recycle_routed": 17,
+        "grounding_zero": 13,
+        "mismatch": 0,
+        "recycle_completed": 17,
+        "recycle_usable": 17,
+        "recycle_unusable": 0,
+        "rechecked": 17,
+        "recheck_pass": 17,
+        "recheck_fail": 0,
+        "recycle_resolved": 17,
+        "initial_percent": {
+          "direct": 21.0526,
+          "recycle_routed": 44.7368,
+          "grounding_zero": 34.2105,
+          "mismatch": 0.0
+        },
+        "recheck_pass_percent": 100.0,
+        "recycle_rescue_percent": 100.0,
+        "queued_first_caption": 1976,
+        "ready_polish": 25
+      },
+      "B": {
+        "judged": 84,
+        "direct": 16,
+        "recycle_routed": 46,
+        "grounding_zero": 21,
+        "mismatch": 1,
+        "recycle_completed": 46,
+        "recycle_usable": 46,
+        "recycle_unusable": 0,
+        "rechecked": 45,
+        "recheck_pass": 45,
+        "recheck_fail": 0,
+        "recycle_resolved": 45,
+        "initial_percent": {
+          "direct": 19.0476,
+          "recycle_routed": 54.7619,
+          "grounding_zero": 25.0,
+          "mismatch": 1.1905
+        },
+        "recheck_pass_percent": 100.0,
+        "recycle_rescue_percent": 100.0,
+        "queued_first_caption": 4798,
+        "ready_polish": 61
+      },
+      "C": {
+        "judged": 0,
+        "direct": 0,
+        "recycle_routed": 0,
+        "grounding_zero": 0,
+        "mismatch": 0,
+        "recycle_completed": 0,
+        "recycle_usable": 0,
+        "recycle_unusable": 0,
+        "rechecked": 0,
+        "recheck_pass": 0,
+        "recheck_fail": 0,
+        "recycle_resolved": 0,
+        "initial_percent": {
+          "direct": null,
+          "recycle_routed": null,
+          "grounding_zero": null,
+          "mismatch": null
+        },
+        "recheck_pass_percent": null,
+        "recycle_rescue_percent": null,
+        "queued_first_caption": 0,
+        "ready_polish": 0
+      },
+      "D": {
+        "judged": 129,
+        "direct": 5,
+        "recycle_routed": 24,
+        "grounding_zero": 94,
+        "mismatch": 6,
+        "recycle_completed": 24,
+        "recycle_usable": 24,
+        "recycle_unusable": 0,
+        "rechecked": 22,
+        "recheck_pass": 22,
+        "recheck_fail": 0,
+        "recycle_resolved": 22,
+        "initial_percent": {
+          "direct": 3.876,
+          "recycle_routed": 18.6047,
+          "grounding_zero": 72.8682,
+          "mismatch": 4.6512
+        },
+        "recheck_pass_percent": 100.0,
+        "recycle_rescue_percent": 100.0,
+        "queued_first_caption": 1461,
+        "ready_polish": 25
+      }
+    },
+    "fallback_images_judged": 43,
+    "ready_after_fallback": 16
+  }
+}

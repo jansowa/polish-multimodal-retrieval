@@ -1,0 +1,146 @@
+[
+  {
+    "number": 1,
+    "split": "train",
+    "id": "MBeirvisualnews:0:25588",
+    "caption": "Mężczyzna w jasnoniebieskiej koszuli macha, stojąc obok kobiety w niebieskiej bluzce w wzór, która trzyma noworodka owiniętego w pieluszkę."
+  },
+  {
+    "number": 2,
+    "split": "train",
+    "id": "MBeirvisualnews:0:21838",
+    "caption": "Mężczyzna w ciemnym płaszczu i kobieta w niebieskim płaszczu idą czerwonym dywanem, po bokach otoczeni przez mundurowych strażników, w dużej sali z szachownicową podłogą."
+  },
+  {
+    "number": 3,
+    "split": "train",
+    "id": "MBeirvisualnews:0:2207",
+    "caption": "Dwuklatkowa sekwencja o niskiej rozdzielczości z ekranu telewizora przedstawia osobę w wodzie. W górnej klatce osoba jest częściowo zanurzona, z uniesioną ręką. W dolnej klatce brodaty mężczyzna znajduje się w wodzie, trzymając głowę innej osoby blisko powierzchni."
+  },
+  {
+    "number": 4,
+    "split": "train",
+    "id": "MBeirvisualnews:0:3374",
+    "caption": "Młody chłopiec w ciemnym swetrze z kapturem i w paskowanym krawacie siedzi na pierwszym planie, patrząc w kierunku aparatu. Za nim inne dzieci i dorośli siedzą w tym, co wygląda na kościół lub uroczyste zgromadzenie, przy czym niektórzy mają na sobie białe ubrania, a inni ciemniejsze."
+  },
+  {
+    "number": 5,
+    "split": "train",
+    "id": "MBeirvisualnews:0:13681",
+    "caption": "Kilka kobiet w identycznych żółtych sukienkach stoi za drutem kolczastym, unosząc ramiona i gestykulując rękami, na otwartym terenie, w tle widać budynek."
+  },
+  {
+    "number": 6,
+    "split": "train",
+    "id": "MBeirvisualnews:0:59351",
+    "caption": "Mężczyzna siedzi sam przy ladzie w małej, zabałaganionej restauracji, jedząc posiłek."
+  },
+  {
+    "number": 7,
+    "split": "train",
+    "id": "MBeirvisualnews:0:75045",
+    "caption": "Trzy osoby pracują na polanie w lesie z jesiennym ubarwieniem, otoczone drzewami i podszyciem."
+  },
+  {
+    "number": 8,
+    "split": "train",
+    "id": "MBeirvisualnews:0:83419",
+    "caption": "Kobieta w długiej czerwonej sukni stoi na czerwonym dywanie, a w tle widać tłum ludzi i fotografów."
+  },
+  {
+    "number": 9,
+    "split": "train",
+    "id": "MBeirvisualnews:0:85776",
+    "caption": "Na mokrym chodniku na pierwszym planie leży czarna torba, a na tle widać grupę ludzi stojących na schodach dużego budynku oraz zaparkowany po prawej stronie biały van."
+  },
+  {
+    "number": 10,
+    "split": "train",
+    "id": "MBeirvisualnews:0:80471",
+    "caption": "Grupa ludzi idzie z podniesionymi rękami w pobliżu policyjnych pojazdów z włączonymi kogutami, wychodząc z budynku."
+  },
+  {
+    "number": 11,
+    "split": "train",
+    "id": "MBeirvisualnews:0:80785",
+    "caption": "Kobieta o długich, ciemnych włosach idzie po wybiegu w białej, bez ramiączek, zdobionej sukni, a w tle widać jasne światła sceniczne."
+  },
+  {
+    "number": 12,
+    "split": "train",
+    "id": "MBeirvisualnews:0:80365",
+    "caption": "Dwóch piłkarzy rywalizuje o piłkę na zielonym boisku; jeden nosi czerwony strój z numerem 10, a drugi biały strój z numerem 2."
+  },
+  {
+    "number": 13,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:59630",
+    "caption": "Uliczna scena z białym budynkiem po lewej, czerwonym ceglanym budynkiem w centrum i dużym białym budynkiem po prawej. Niebieski SUV jedzie po drodze, osoba w żółtej kurtce jedzie na rowerze, a ciemny samochód jest zaparkowany po prawej stronie ulicy."
+  },
+  {
+    "number": 14,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:27037",
+    "caption": "Kobieta w czerwonej kurtce stoi przy drewnianej mównicy z mikrofonem, trzymając czerwoną teczkę, podczas gdy za nią stoi grupa ludzi i kamera; po jej prawej stronie umieszczone są amerykańska flaga i flaga stanu Maryland."
+  },
+  {
+    "number": 15,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:38188",
+    "caption": "Mężczyzna w kratkowanej koszuli gra na saksofonie na zewnątrz, na wybrukowanym placu, w pobliżu widać puzon i inne instrumenty dęte blaszane, a w tle kilka osób przechodzi."
+  },
+  {
+    "number": 16,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:64172",
+    "caption": "Tłum ludzi stoi w pobliżu fontanny przed dużym neoklasycystycznym budynkiem z kolumnowym portykiem, a po lewej stronie widać amerykańską flagę."
+  },
+  {
+    "number": 17,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:68496",
+    "caption": "Dwaj dżokeje na ubłoconych koniach wyścigowych jadą obok siebie; dżokej po lewej, w czerwono-białej kratowanej koszulce wyścigowej i czerwonej czapce, unosi rękę w rękawiczce w geście gratulacji w stronę dżokeja po prawej, który ma na sobie zieloną koszulkę wyścigową i zieloną czapkę."
+  },
+  {
+    "number": 18,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:65855",
+    "caption": "Mężczyzna w białej koszuli stoi przy mównicy z niebieską tablicą, trzymając długopis, przed dużą amerykańską flagą i zwisającą flagą z gwiazdami. W tle widać tłum ludzi siedzących na niebieskich krzesłach."
+  },
+  {
+    "number": 19,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:85861",
+    "caption": "Wewnątrz pomnika wojennego złożyli wieńce na Grobie Nieznanego Żołnierza."
+  },
+  {
+    "number": 20,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:71030",
+    "caption": "Mężczyzna o kręconych rudych włosach i krótkiej brodzie siedzi w pokoju z ciemną drewnianą boazerią, nosząc bordową koszulkę z dekoltem w serek na białej koszulce pod spodem."
+  },
+  {
+    "number": 21,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:71538",
+    "caption": "Półki w sklepie prezentują pamiątki o motywach królewskich, w tym stosy kubków, ozdobne talerze oraz flagę Union Jack z parą w strojach ślubnych."
+  },
+  {
+    "number": 22,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:75403",
+    "caption": "Golfista w białej koszuli, białych spodniach i białej czapce wykonuje pełny zamach kijem do golfa, podnosząc z ziemi małą chmurkę kurzu."
+  },
+  {
+    "number": 23,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:83910",
+    "caption": "Rolka sushi z żółtą ozdobą na wierzchu leży na drewnianej desce z nadrukiem słowa 'BOTIKA', wraz ze szklanką bursztynowego napoju z białą pianką i małą żółtą łyżeczką."
+  },
+  {
+    "number": 24,
+    "split": "dev",
+    "id": "MBeirvisualnews:0:75925",
+    "caption": "Golfista w białej koszuli i czapce wykonuje strzał pitch na trawiastym terenie, a w tle obserwują go widzowie."
+  }
+]

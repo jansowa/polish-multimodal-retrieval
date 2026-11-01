@@ -1,0 +1,6 @@
+model,label,vision_parameters,text_parameters,projector_parameters,full_embedder_parameters,trainable_parameters,pretraining,feature_dim,input_size,seeds,mscoco_t2i_r1,std,delta_vs_sigmoid_siglip2,delta_vs_full_e1
+siglip2-reference,SigLIP2 Base/16 256 (E2b),92930304,31883136,295296,125108736,295298,image-text pretrained SigLIP2,768,256,"[42, 43, 44]",0.497,0.007000000000000006,0.0,0.08000000000000002
+dinov2-small,DINOv2-Small,22056576,31883136,147840,54087552,147842,vision-only self-supervised DINOv2,384,224,[42],0.258,,-0.239,-0.15899999999999997
+mobileclip2-s2,MobileCLIP2-S2,35815232,31883136,196992,67895360,196994,image-text pretrained MobileCLIP2,512,256,[42],0.491,,-0.006000000000000005,0.07400000000000001
+convnext-tiny,ConvNeXt-Tiny,27820128,31883136,295296,59998560,295298,supervised ImageNet-1K,768,224,[42],0.202,,-0.295,-0.21499999999999997
+ibot-vits16,iBOT ViT-S/16,21665664,31883136,147840,53696640,147842,vision-only iBOT self-supervised ImageNet-1K teacher,384,224,[42],0.233,,-0.264,-0.18399999999999997

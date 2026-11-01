@@ -1,0 +1,39 @@
+﻿{
+    "status":  "complete",
+    "compression":  "Standard transparent NTFS compression, compact /C; no WOF/EXE mode",
+    "entries":  [
+                    {
+                        "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-adaptation\\cache\\prefix.npy",
+                        "logical_bytes":  4803143808,
+                        "physical_bytes_before":  4803143808,
+                        "physical_bytes_after":  4803143808,
+                        "recovered_bytes":  0,
+                        "sha256":  "a91531570cea67b534c66b1d0dece192994e5c7c1c03a5c093b4c1715f6440ab",
+                        "content_unchanged":  true
+                    },
+                    {
+                        "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-generalization\\pixels\\native_rgb.npy",
+                        "logical_bytes":  1792035968,
+                        "physical_bytes_before":  1792035968,
+                        "physical_bytes_after":  1734397952,
+                        "recovered_bytes":  57638016,
+                        "sha256":  "d73c800421461119de7d9442d97084e0872a63db00b502e4588cfcd451dadfb8",
+                        "content_unchanged":  true
+                    },
+                    {
+                        "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-visualnews-v1\\data\\native_rgb.npy",
+                        "logical_bytes":  5406664832,
+                        "physical_bytes_before":  5406664832,
+                        "physical_bytes_after":  5000663040,
+                        "recovered_bytes":  406001792,
+                        "sha256":  "960afef1d0bf1bc642411bef7fab33a30c3456e08d747d6ef90e8c143247d266",
+                        "content_unchanged":  true
+                    }
+                ],
+    "recovered_bytes":  463639808,
+    "all_paths_retained":  true,
+    "logical_file_content_unchanged":  true,
+    "reversible":  true,
+    "completed_at":  "2026-10-21T18:19:32.1972240Z",
+    "free_bytes_after":  4506173440
+}

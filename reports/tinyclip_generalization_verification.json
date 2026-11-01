@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "checks": {
+    "G0_frozen_native": {
+      "checkpoint_verified": true,
+      "source_verified": true,
+      "retrieved_scores_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_3300_updates_verified": true
+    },
+    "G1_frozen_aug": {
+      "checkpoint_verified": true,
+      "source_verified": true,
+      "retrieved_scores_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_3300_updates_verified": true
+    },
+    "G2_last2_aug": {
+      "checkpoint_verified": true,
+      "source_verified": true,
+      "retrieved_scores_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_3300_updates_verified": true
+    },
+    "G3_last2_aug_anchor": {
+      "checkpoint_verified": true,
+      "source_verified": true,
+      "retrieved_scores_reproduced": true,
+      "val_loss_reproduced": true,
+      "full_3300_updates_verified": true
+    }
+  },
+  "comparisons": {
+    "G1_frozen_aug_minus_G0_frozen_native": {
+      "delta_percentage_points": 0.14354066985645933,
+      "interval_95_percentage_points": [
+        -0.38424591738712777,
+        0.7142942217382425
+      ],
+      "improved": 19,
+      "regressed": 16,
+      "bootstrap_components": 416,
+      "queries": 2090,
+      "repetitions": 10000,
+      "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+    },
+    "G2_last2_aug_minus_G1_frozen_aug": {
+      "delta_percentage_points": -0.3827751196172249,
+      "interval_95_percentage_points": [
+        -1.053639846743295,
+        0.2870847753440784
+      ],
+      "improved": 21,
+      "regressed": 29,
+      "bootstrap_components": 416,
+      "queries": 2090,
+      "repetitions": 10000,
+      "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+    },
+    "G3_last2_aug_anchor_minus_G1_frozen_aug": {
+      "delta_percentage_points": -0.3827751196172249,
+      "interval_95_percentage_points": [
+        -1.0062290368950648,
+        0.23958121338275884
+      ],
+      "improved": 16,
+      "regressed": 24,
+      "bootstrap_components": 416,
+      "queries": 2090,
+      "repetitions": 10000,
+      "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+    },
+    "G3_last2_aug_anchor_minus_G2_last2_aug": {
+      "delta_percentage_points": 0.0,
+      "interval_95_percentage_points": [
+        -0.4796163069544364,
+        0.47801718738141147
+      ],
+      "improved": 13,
+      "regressed": 13,
+      "bootstrap_components": 416,
+      "queries": 2090,
+      "repetitions": 10000,
+      "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+    }
+  },
+  "inputs": {
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/FULL_CLEAN.jsonl": "2834cb60a308be03685602e1fb4b6137d2c9968e249c81ce80892dae1b63908c",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data.jsonl": "b3720c5fdf6a9a62a8a4adc8568083302617a386b140420388fda3eb32c6f2f9",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/blacklist.json": "971ddaa1de16966e7f97fd52be1d6b69915bb7c5ea0e28ddd79b0fce0338d6e6",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data_audit.json": "2f95df1274ee69e90b7b5dbc103ea5a368ac4220b69bd10a6443beb464c3192b",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/cache.json": "ef2815053efe8b5999915c345a40ab18a7055ce3d4386a5f6b9eae352c2c9011",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/validation.jsonl": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6"
+  },
+  "test_used": false,
+  "xm3600_used": false
+}

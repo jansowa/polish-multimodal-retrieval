@@ -1,0 +1,169 @@
+﻿{
+    "status":  "complete",
+    "created_at":  "2026-10-21T14:00:13.9502519Z",
+    "remove":  [
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\S0_frozen_schedule\\last.pt",
+                       "bytes":  2390943,
+                       "sha256":  "957870b768b9ae57abb0c1d3681c138aa33b654a30f6e015bdf931f7886f0af5",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\S0_frozen_schedule\\best.pt",
+                       "best_sha256":  "e0cad42a4d0c246f852f441262d0dfda75b4d301084b7a50b40253c235c5ffab"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\S1_last1_low_constant\\last.pt",
+                       "bytes":  53902255,
+                       "sha256":  "4a002a369b37555293ee08ed3a7bf0d9a862564bb12cf3d32252deab97984ab9",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\S1_last1_low_constant\\best.pt",
+                       "best_sha256":  "7be56fc6866baf405846a0b39f0e50b9821995d244d099df114ba31862d0643f"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\S2_last1_schedule\\last.pt",
+                       "bytes":  53902255,
+                       "sha256":  "b141165f360bad247ca16522bd714e9af2b57dd582b4d08e9c8d7798e247ae7c",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\S2_last1_schedule\\best.pt",
+                       "best_sha256":  "fd6c1164fd334b8ca8b22f231a714556f0fe278756abe4878ad24e3ef5790dda"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\S3_last1_low_schedule\\last.pt",
+                       "bytes":  53904815,
+                       "sha256":  "4491ed2919513217e8af7144283a0e4815a0f7287a2b1d38850bc039f2cf3817",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\S3_last1_low_schedule\\best.pt",
+                       "best_sha256":  "6b4d55957cd196dcbf5d65f98f79f4abf39eed173157e24f8e644bda1edb0f35"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\S4_last2_low_schedule\\last.pt",
+                       "bytes":  79132607,
+                       "sha256":  "3f108098a0055a09ee1d36cac3de02c0872b1dfad9ce033288b0fb24ded9df5f",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\S4_last2_low_schedule\\best.pt",
+                       "best_sha256":  "72a2cc3fb1e5c6c8c25eba569a42eca6835d8f0a741bae5424c6b96f502d1f2c"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\T0_frozen_aligned\\last.pt",
+                       "bytes":  2386591,
+                       "sha256":  "8b2d33da11de2587be04a4592182b39b147ed4d6872ca3e88dd5453019949ca7",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\T0_frozen_aligned\\best.pt",
+                       "best_sha256":  "de750977b9a9aaaf01843864fbdc7a1c22216951ea1c98fe7da9ed497b6779b9"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\T1_last1_aligned\\last.pt",
+                       "bytes":  53900527,
+                       "sha256":  "1ff4829956ea61a60841d00e739f394b4a0e1ecdd79c9a49ea774796292c833e",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\T1_last1_aligned\\best.pt",
+                       "best_sha256":  "bd2493a73f35040c66510167c6a4082be7d99a218caa71a9912745ae822c75e4"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\T2_last2_aligned\\last.pt",
+                       "bytes":  79132607,
+                       "sha256":  "92b9ae82d4cd2a96792dc14c3b6342abd89eb5cd9f33151251209860f80174f6",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\T2_last2_aligned\\best.pt",
+                       "best_sha256":  "72e5c8512fa98ec905279d37990a78cb14f185adcebf31ffb7a9df14b841db6e"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\T3_last1_aligned_mid\\last.pt",
+                       "bytes":  53900591,
+                       "sha256":  "0aec9324fd4e605b903ab455d0ceeb51b5a3b830c8b695b05c640a7d94acebf5",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\T3_last1_aligned_mid\\best.pt",
+                       "best_sha256":  "c62583b83b028a4af40c77f2957365203605d977f2552585ba9a5df279a83a15"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\T4_last2_aligned_mid\\last.pt",
+                       "bytes":  79130943,
+                       "sha256":  "23fc2eeda47638437e38d8a8200fedd509109d7ead07d71f8f4556444d19dec8",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-optimization\\T4_last2_aligned_mid\\best.pt",
+                       "best_sha256":  "f731e2f94063d4a25f6807669ae1c5eef70e577fa355a3e013b377db834d1104"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-generalization\\G0_frozen_native\\last.pt",
+                       "bytes":  2389605,
+                       "sha256":  "083a4693f238bd1b9a0a4e13c680945b471b6bb020102228fe4bdff7e6eb71de",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-generalization\\G0_frozen_native\\best.pt",
+                       "best_sha256":  "e9058a96ddd1ffb5e5bbf49db46318244a9e83ae90dfe49ca9a568e4e192c207"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-generalization\\G1_frozen_aug\\last.pt",
+                       "bytes":  2389669,
+                       "sha256":  "20986fe0851d7a81bc08cb11e1b2e5b5f6a30aa5010c5b28b23dc7fee4a0ca7f",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-generalization\\G1_frozen_aug\\best.pt",
+                       "best_sha256":  "79637dbc64065ce30555c26638b176a8e627a7b45c9c5efc69794c0041befb28"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-generalization\\G2_last2_aug\\last.pt",
+                       "bytes":  79134404,
+                       "sha256":  "1c4ce68577a22cae52a0b146e3f0673ce9fbd2c1e59d9b687f18b7cc52c81ba6",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-generalization\\G2_last2_aug\\best.pt",
+                       "best_sha256":  "26954f088a030e23a80fd1a144f38e0151b26ea77b892661c8a98b39991e704c"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-generalization\\G3_last2_aug_anchor\\last.pt",
+                       "bytes":  79134404,
+                       "sha256":  "ae34aaa5fb855be908a412a19218024d3e42b51ded11b2d06aade8cb4568ab7f",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-generalization\\G3_last2_aug_anchor\\best.pt",
+                       "best_sha256":  "28812f8ad6b374baa97c2b9e907b9ffa616c426d3b5366032b85adb77a40ffb1"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-frozen-replication\\frozen_seed_43\\last.pt",
+                       "bytes":  2394079,
+                       "sha256":  "a60ca9b0f4efba597e6e805a9d449f18b2dd191663934553fd1847534051b20f",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-frozen-replication\\frozen_seed_43\\best.pt",
+                       "best_sha256":  "f68ffb7db0b6165e184b739d3dc7dcbcb567ad47ef5272c6ca32ec5328d210c9"
+                   },
+                   {
+                       "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-frozen-replication\\frozen_seed_44\\last.pt",
+                       "bytes":  2394079,
+                       "sha256":  "f60d36e1cfd726e06ce7a274fe6aa44f60bcacef81159414a8e3ce402da48644",
+                       "reason":  "Optimizer/RNG resume state of a completed run; selected best checkpoint verified and retained",
+                       "best":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-frozen-replication\\frozen_seed_44\\best.pt",
+                       "best_sha256":  "4e7ab1747569da1ccd033eaee8b84d41d022953c61502caa3a5150a867754645"
+                   }
+               ],
+    "hardlink":  [
+                     {
+                         "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\vision-four\\reference\\artifacts\\evaluation_examples.json",
+                         "canonical":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\p0-e2\\evaluation_examples.json",
+                         "bytes":  831691738,
+                         "sha256":  "fc311cc9f87658671ce36f3026965144551849b943246c0df98f9049de05b264",
+                         "reason":  "Byte-identical immutable evaluation snapshot; keep both paths via NTFS hardlink"
+                     },
+                     {
+                         "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\clean-v1\\common\\evaluation_compact.json",
+                         "canonical":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\vision-four\\common\\evaluation_compact.json",
+                         "bytes":  65040206,
+                         "sha256":  "03d633440c23c2366b047b50f3a8bf3c8a21326eb3ad07ecc15897eae510f98e",
+                         "reason":  "Byte-identical immutable evaluation snapshot; keep both paths via NTFS hardlink"
+                     },
+                     {
+                         "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\vision-commercial-five\\common\\evaluation_compact.json",
+                         "canonical":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\vision-four\\common\\evaluation_compact.json",
+                         "bytes":  65040206,
+                         "sha256":  "03d633440c23c2366b047b50f3a8bf3c8a21326eb3ad07ecc15897eae510f98e",
+                         "reason":  "Byte-identical immutable evaluation snapshot; keep both paths via NTFS hardlink"
+                     },
+                     {
+                         "path":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\tinyclip-adaptation\\finalist_evaluation\\common\\evaluation_compact.json",
+                         "canonical":  "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\training\\runs\\vision-four\\common\\evaluation_compact.json",
+                         "bytes":  65040206,
+                         "sha256":  "03d633440c23c2366b047b50f3a8bf3c8a21326eb3ad07ecc15897eae510f98e",
+                         "reason":  "Byte-identical immutable evaluation snapshot; keep both paths via NTFS hardlink"
+                     }
+                 ],
+    "recoverable_bytes":  1706332730,
+    "active_visualnews_tree_untouched":  true,
+    "free_bytes_before":  3264512000,
+    "free_bytes_after":  4970872832,
+    "observed_free_increase_bytes":  1706360832
+}

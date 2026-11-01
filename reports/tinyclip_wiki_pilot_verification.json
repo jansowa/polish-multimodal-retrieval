@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "checks": {
+    "WIKI_00pct": {
+      "selected_and_final_retrieval_reproduced": true,
+      "selected_and_final_losses_reproduced": true,
+      "source_and_initialization_verified": true,
+      "exact_presentation_budget_verified": true,
+      "checkpoint_selection_VN_only": true
+    },
+    "WIKI_03pct": {
+      "selected_and_final_retrieval_reproduced": true,
+      "selected_and_final_losses_reproduced": true,
+      "source_and_initialization_verified": true,
+      "exact_presentation_budget_verified": true,
+      "checkpoint_selection_VN_only": true
+    },
+    "WIKI_10pct": {
+      "selected_and_final_retrieval_reproduced": true,
+      "selected_and_final_losses_reproduced": true,
+      "source_and_initialization_verified": true,
+      "exact_presentation_budget_verified": true,
+      "checkpoint_selection_VN_only": true
+    }
+  },
+  "previous_VN_only_reproduced": {
+    "previous_VN_R1": 0.780828756864703,
+    "current_VN_R1": 0.780828756864703,
+    "previous_best_updates": 1650,
+    "current_best_updates": 1650,
+    "same_R1_and_selected_step": true
+  },
+  "immutable_inputs_unchanged": true,
+  "text_cache_parity": {
+    "texts": 32,
+    "minimum_cosine": 0.9999997615814209,
+    "fresh_meta": {
+      "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/tinyclip-wiki-pilot-v1/parity_text_cache/embeddings/17a6a925a5baed55f4d75ce79be901cd30aa16db84ff4183ef22eb94e439ec09.pt",
+      "sha256": "edc1772efc1164ea41e6834676a66cda61c86d72d65eb555ceebb5643bc90d46",
+      "identity_sha256": "17a6a925a5baed55f4d75ce79be901cd30aa16db84ff4183ef22eb94e439ec09"
+    }
+  },
+  "COCO_scored": false,
+  "xm3600_scored": false
+}

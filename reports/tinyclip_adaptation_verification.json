@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "runs": {
+    "A1": {
+      "best_epoch": 9,
+      "checkpoint_verified": true,
+      "validation_selection_verified": true,
+      "logged_epochs": 20
+    },
+    "A2": {
+      "best_epoch": 2,
+      "checkpoint_verified": true,
+      "validation_selection_verified": true,
+      "logged_epochs": 20
+    },
+    "B2": {
+      "best_epoch": 3,
+      "checkpoint_verified": true,
+      "validation_selection_verified": true,
+      "logged_epochs": 20
+    },
+    "C1": {
+      "best_epoch": 4,
+      "checkpoint_verified": true,
+      "validation_selection_verified": true,
+      "logged_epochs": 9
+    },
+    "C2": {
+      "best_epoch": 2,
+      "checkpoint_verified": true,
+      "validation_selection_verified": true,
+      "logged_epochs": 7
+    },
+    "D_LoRA": {
+      "best_epoch": 9,
+      "checkpoint_verified": true,
+      "validation_selection_verified": true,
+      "logged_epochs": 14
+    },
+    "E_KD_0.1": {
+      "best_epoch": 9,
+      "checkpoint_verified": true,
+      "validation_selection_verified": true,
+      "logged_epochs": 20
+    },
+    "E_KD_0.3": {
+      "best_epoch": 9,
+      "checkpoint_verified": true,
+      "validation_selection_verified": true,
+      "logged_epochs": 20
+    },
+    "F_TinyCLIP61": {
+      "best_epoch": 10,
+      "checkpoint_verified": true,
+      "validation_selection_verified": true,
+      "logged_epochs": 20
+    }
+  },
+  "unchanged_inputs": {
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/FULL_CLEAN.jsonl": "2834cb60a308be03685602e1fb4b6137d2c9968e249c81ce80892dae1b63908c",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data.jsonl": "b3720c5fdf6a9a62a8a4adc8568083302617a386b140420388fda3eb32c6f2f9",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/blacklist.json": "971ddaa1de16966e7f97fd52be1d6b69915bb7c5ea0e28ddd79b0fce0338d6e6",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data_audit.json": "2f95df1274ee69e90b7b5dbc103ea5a368ac4220b69bd10a6443beb464c3192b",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/cache.json": "ef2815053efe8b5999915c345a40ab18a7055ce3d4386a5f6b9eae352c2c9011",
+    "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/validation.jsonl": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6"
+  },
+  "train_rows": 70289,
+  "validation_rows": 7695,
+  "validation_graph_sha256": "474052b8757cbb38ff2cdcfce58781ed379de1392270e04d48dbf096f37af993",
+  "finalist": "E_KD_0.3",
+  "xm3600_used": false
+}

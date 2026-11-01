@@ -1,0 +1,408 @@
+{
+  "protocol": "CLEAN-v1",
+  "status": "complete",
+  "audit": {
+    "protocol": "CLEAN-v1",
+    "status": "complete",
+    "sources": [
+      {
+        "source": "aro_visual_relation",
+        "rejected_records": 711,
+        "eval_id": 0,
+        "eval_parent_image": 711,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "other_reasons": {},
+        "retained": {
+          "records": 23226,
+          "unique_texts": 15684,
+          "unique_image_text_pairs": 22392,
+          "unique_images": 5185,
+          "sources": {
+            "aro_visual_relation": 23226
+          }
+        }
+      },
+      {
+        "source": "aro_visual_attribution",
+        "rejected_records": 699,
+        "eval_id": 0,
+        "eval_parent_image": 699,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "other_reasons": {},
+        "retained": {
+          "records": 28049,
+          "unique_texts": 25450,
+          "unique_image_text_pairs": 27271,
+          "unique_images": 4414,
+          "sources": {
+            "aro_visual_attribution": 28049
+          }
+        }
+      },
+      {
+        "source": "sugarcrepe",
+        "rejected_records": 764,
+        "eval_id": 0,
+        "eval_parent_image": 762,
+        "eval_image_content": 0,
+        "eval_text": 143,
+        "unknown_parent_lineage": 0,
+        "other_reasons": {},
+        "retained": {
+          "records": 6747,
+          "unique_texts": 5253,
+          "unique_image_text_pairs": 5261,
+          "unique_images": 1453,
+          "sources": {
+            "sugarcrepe": 6747
+          }
+        }
+      },
+      {
+        "source": "mbeir_mscoco",
+        "rejected_records": 5027,
+        "eval_id": 0,
+        "eval_parent_image": 5010,
+        "eval_image_content": 0,
+        "eval_text": 1024,
+        "unknown_parent_lineage": 0,
+        "other_reasons": {},
+        "retained": {
+          "records": 19962,
+          "unique_texts": 19784,
+          "unique_image_text_pairs": 19946,
+          "unique_images": 3998,
+          "sources": {
+            "mbeir_mscoco": 19962
+          }
+        }
+      }
+    ],
+    "by_source_benchmark": [
+      {
+        "train_source": "aro_visual_relation",
+        "benchmark": "cirr",
+        "eval_id": 0,
+        "eval_parent_image": 0,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 20883,
+        "retained_validation": 2343
+      },
+      {
+        "train_source": "aro_visual_relation",
+        "benchmark": "fashioniq",
+        "eval_id": 0,
+        "eval_parent_image": 0,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 20883,
+        "retained_validation": 2343
+      },
+      {
+        "train_source": "aro_visual_relation",
+        "benchmark": "mscoco_t2i",
+        "eval_id": 0,
+        "eval_parent_image": 119,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 20883,
+        "retained_validation": 2343
+      },
+      {
+        "train_source": "aro_visual_relation",
+        "benchmark": "refcoco",
+        "eval_id": 0,
+        "eval_parent_image": 592,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 20883,
+        "retained_validation": 2343
+      },
+      {
+        "train_source": "aro_visual_attribution",
+        "benchmark": "cirr",
+        "eval_id": 0,
+        "eval_parent_image": 0,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 25434,
+        "retained_validation": 2615
+      },
+      {
+        "train_source": "aro_visual_attribution",
+        "benchmark": "fashioniq",
+        "eval_id": 0,
+        "eval_parent_image": 0,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 25434,
+        "retained_validation": 2615
+      },
+      {
+        "train_source": "aro_visual_attribution",
+        "benchmark": "mscoco_t2i",
+        "eval_id": 0,
+        "eval_parent_image": 139,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 25434,
+        "retained_validation": 2615
+      },
+      {
+        "train_source": "aro_visual_attribution",
+        "benchmark": "refcoco",
+        "eval_id": 0,
+        "eval_parent_image": 560,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 25434,
+        "retained_validation": 2615
+      },
+      {
+        "train_source": "sugarcrepe",
+        "benchmark": "cirr",
+        "eval_id": 0,
+        "eval_parent_image": 0,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 6103,
+        "retained_validation": 644
+      },
+      {
+        "train_source": "sugarcrepe",
+        "benchmark": "fashioniq",
+        "eval_id": 0,
+        "eval_parent_image": 0,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 6103,
+        "retained_validation": 644
+      },
+      {
+        "train_source": "sugarcrepe",
+        "benchmark": "mscoco_t2i",
+        "eval_id": 0,
+        "eval_parent_image": 762,
+        "eval_image_content": 0,
+        "eval_text": 143,
+        "unknown_parent_lineage": 0,
+        "retained_train": 6103,
+        "retained_validation": 644
+      },
+      {
+        "train_source": "sugarcrepe",
+        "benchmark": "refcoco",
+        "eval_id": 0,
+        "eval_parent_image": 0,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 6103,
+        "retained_validation": 644
+      },
+      {
+        "train_source": "mbeir_mscoco",
+        "benchmark": "cirr",
+        "eval_id": 0,
+        "eval_parent_image": 0,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 17869,
+        "retained_validation": 2093
+      },
+      {
+        "train_source": "mbeir_mscoco",
+        "benchmark": "fashioniq",
+        "eval_id": 0,
+        "eval_parent_image": 0,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 17869,
+        "retained_validation": 2093
+      },
+      {
+        "train_source": "mbeir_mscoco",
+        "benchmark": "mscoco_t2i",
+        "eval_id": 0,
+        "eval_parent_image": 5010,
+        "eval_image_content": 0,
+        "eval_text": 1024,
+        "unknown_parent_lineage": 0,
+        "retained_train": 17869,
+        "retained_validation": 2093
+      },
+      {
+        "train_source": "mbeir_mscoco",
+        "benchmark": "refcoco",
+        "eval_id": 0,
+        "eval_parent_image": 0,
+        "eval_image_content": 0,
+        "eval_text": 0,
+        "unknown_parent_lineage": 0,
+        "retained_train": 17869,
+        "retained_validation": 2093
+      }
+    ],
+    "known_remaining_overlap_count": 0,
+    "historical_label": "LEGACY / pre-audit",
+    "historical_contamination_found": false,
+    "variants": {
+      "FULL_CLEAN": {
+        "records": 70289,
+        "unique_texts": 59955,
+        "unique_image_text_pairs": 67445,
+        "unique_images": 10645,
+        "sources": {
+          "mbeir_mscoco": 17869,
+          "aro_visual_attribution": 25434,
+          "aro_visual_relation": 20883,
+          "sugarcrepe": 6103
+        },
+        "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/FULL_CLEAN.jsonl",
+        "sha256": "2834cb60a308be03685602e1fb4b6137d2c9968e249c81ce80892dae1b63908c"
+      },
+      "NO_MBEIR_MSCOCO": {
+        "records": 52420,
+        "unique_texts": 42290,
+        "unique_image_text_pairs": 49601,
+        "unique_images": 7102,
+        "sources": {
+          "aro_visual_attribution": 25434,
+          "aro_visual_relation": 20883,
+          "sugarcrepe": 6103
+        },
+        "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/NO_MBEIR_MSCOCO.jsonl",
+        "sha256": "cb4b2dd0ee7d6193cb8d632633649f7adcbd664ed44106abf6029cab85715b02"
+      },
+      "NON_COCO_CLEANROOM": {
+        "records": 24473,
+        "unique_texts": 20677,
+        "unique_image_text_pairs": 23601,
+        "unique_images": 3037,
+        "sources": {
+          "aro_visual_attribution": 13295,
+          "aro_visual_relation": 11178
+        },
+        "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/clean-v1/NON_COCO_CLEANROOM.jsonl",
+        "sha256": "7527f44a67e13be0b6b6ba56eca781b6a488ba804339e718eed4998987a6fc3e"
+      }
+    },
+    "validation": {
+      "records": 7695,
+      "unique_texts": 7145,
+      "unique_image_text_pairs": 7415,
+      "unique_images": 1216,
+      "sources": {
+        "aro_visual_relation": 2343,
+        "mbeir_mscoco": 2093,
+        "aro_visual_attribution": 2615,
+        "sugarcrepe": 644
+      }
+    },
+    "inputs": {
+      "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data.jsonl": "b3720c5fdf6a9a62a8a4adc8568083302617a386b140420388fda3eb32c6f2f9",
+      "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/blacklist.json": "971ddaa1de16966e7f97fd52be1d6b69915bb7c5ea0e28ddd79b0fce0338d6e6",
+      "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/data_audit.json": "2f95df1274ee69e90b7b5dbc103ea5a368ac4220b69bd10a6443beb464c3192b",
+      "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/e1-full/cache.json": "ef2815053efe8b5999915c345a40ab18a7055ce3d4386a5f6b9eae352c2c9011"
+    },
+    "attribution_note": "Counts are non-exclusive across reasons and benchmarks. Retained counts repeat per benchmark. Unknown lineage cannot be assigned to a benchmark.",
+    "non_coco_note": "Excludes known COCO lineage and pixel aliases of known COCO images. Missing VG-to-COCO links are not a proof of absence of all possible COCO ancestry.",
+    "mbeir_source_split": "query/test + task3 test candidate pool in frozen original loader; internal train/validation split is separate",
+    "near_duplicate_filter_applied": false,
+    "historical_artifacts_modified": false
+  },
+  "near_duplicates": {
+    "protocol": "CLEAN-v1",
+    "status": "complete",
+    "train_image_paths": 10685,
+    "benchmark_image_paths": 18988,
+    "unique_train_pixels": 10645,
+    "pairs_exhaustively_compared": 202886780,
+    "threshold": 6,
+    "threshold_pairs": 0,
+    "reported_pairs": 200,
+    "minimum_distance": 8,
+    "automatic_filter_applied": false,
+    "confirmed_new_overlaps": null,
+    "limitation": "pHash can miss crops and significant transformations. TinyCLIP cosine annotates pHash candidates; no exhaustive embedding search is performed.",
+    "image_content_verified": true,
+    "features_sha256": "267de2c3513915935a7bc23ca298cbcce9bd8cff169f9ad0dd19d58bc739f57b"
+  },
+  "comparison": [
+    {
+      "variant": "FULL_CLEAN",
+      "records": 70289,
+      "unique_image_text_pairs": 67445,
+      "unique_images": 10645,
+      "mscoco_r1": 0.452,
+      "mscoco_r5": 0.791,
+      "mscoco_r10": 0.883,
+      "val_t2i_r1": 0.5822966507177033,
+      "val_i2t_r1": 0.6968973747016707,
+      "cirr": 0.094,
+      "fashioniq": 0.033,
+      "refcoco": 0.489,
+      "checkpoint_epoch": 9,
+      "steps": 5500,
+      "examples_seen": 1405780
+    },
+    {
+      "variant": "NO_MBEIR_MSCOCO",
+      "records": 52420,
+      "unique_image_text_pairs": 49601,
+      "unique_images": 7102,
+      "mscoco_r1": 0.352,
+      "mscoco_r5": 0.674,
+      "mscoco_r10": 0.807,
+      "val_t2i_r1": 0.4909090909090909,
+      "val_i2t_r1": 0.5608591885441527,
+      "cirr": 0.107,
+      "fashioniq": 0.049,
+      "refcoco": 0.468,
+      "checkpoint_epoch": 4,
+      "steps": 4100,
+      "examples_seen": 1048400
+    },
+    {
+      "variant": "NON_COCO_CLEANROOM",
+      "records": 24473,
+      "unique_image_text_pairs": 23601,
+      "unique_images": 3037,
+      "mscoco_r1": 0.223,
+      "mscoco_r5": 0.491,
+      "mscoco_r10": 0.66,
+      "val_t2i_r1": 0.35789473684210527,
+      "val_i2t_r1": 0.44630071599045346,
+      "cirr": 0.11,
+      "fashioniq": 0.039,
+      "refcoco": 0.453,
+      "checkpoint_epoch": 5,
+      "steps": 1920,
+      "examples_seen": 489460
+    }
+  ],
+  "recommendation": "Keep MSCOCO as IN-DOMAIN / LEGACY. Add independent XM3600-PL; do not treat composition/grounding as substitutes for independent t2i.",
+  "caveats": [
+    "Single seed, natural dataset sizes and unequal examples seen.",
+    "CLEAN-v1 uses validation t2i checkpoint selection; historical runs used minimum validation loss.",
+    "Near-duplicate candidates are not automatically filtered or confirmed.",
+    "Excludes known COCO lineage and pixel aliases of known COCO images. Missing VG-to-COCO links are not a proof of absence of all possible COCO ancestry."
+  ]
+}

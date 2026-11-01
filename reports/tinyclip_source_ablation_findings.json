@@ -1,0 +1,279 @@
+{
+  "status": "complete",
+  "report_sha256": "06d2e65c3c96d3f646cda206f7eab15d9d22b213668d72f65d4809651db95424",
+  "verification_sha256": "fc9603178d08a462c36242406b5e2f22ce31dcec18f09e176f24e4647a773f45",
+  "test_component_contrasts": {
+    "VN_nonCOCO_AR_minus_VN_only": {
+      "delta_percentage_points": -2.6,
+      "interval_95_percentage_points": [
+        -6.200155155155155,
+        1.0070747246857028
+      ],
+      "improved": 91,
+      "regressed": 117,
+      "bootstrap_components": 201,
+      "queries": 1000,
+      "repetitions": 10000,
+      "caveat": "Conditional paired interval on fixed benchmark queries; no training-seed or checkpoint/model-selection uncertainty."
+    },
+    "VN_FULL_minus_VN_only": {
+      "delta_percentage_points": 7.3,
+      "interval_95_percentage_points": [
+        3.8,
+        11.0
+      ],
+      "improved": 133,
+      "regressed": 60,
+      "bootstrap_components": 201,
+      "queries": 1000,
+      "repetitions": 10000,
+      "caveat": "Conditional paired interval on fixed benchmark queries; no training-seed or checkpoint/model-selection uncertainty."
+    }
+  },
+  "source_additions": {
+    "aro_visual_attribution": {
+      "rows": 25434,
+      "images": 3966,
+      "add_vs_VN": {
+        "VN_dev": {
+          "delta_percentage_points": -8.487269096355467,
+          "interval_95_percentage_points": [
+            -10.215322984476716,
+            -6.789815277084374
+          ],
+          "improved": 74,
+          "regressed": 244,
+          "bootstrap_components": 1980,
+          "queries": 2003,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        },
+        "COCO_val_posthoc": {
+          "delta_percentage_points": -6.937799043062201,
+          "interval_95_percentage_points": [
+            -9.594338499031146,
+            -4.295942720763723
+          ],
+          "improved": 151,
+          "regressed": 296,
+          "bootstrap_components": 416,
+          "queries": 2090,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        }
+      },
+      "keep_vs_replace_by_VN": {
+        "VN_dev": {
+          "delta_percentage_points": -1.99700449326011,
+          "interval_95_percentage_points": [
+            -3.49480150403765,
+            -0.5002501250625313
+          ],
+          "improved": 98,
+          "regressed": 138,
+          "bootstrap_components": 1980,
+          "queries": 2003,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        },
+        "COCO_val_posthoc": {
+          "delta_percentage_points": -0.5263157894736842,
+          "interval_95_percentage_points": [
+            -2.6341311705191965,
+            1.5384800384800383
+          ],
+          "improved": 155,
+          "regressed": 166,
+          "bootstrap_components": 416,
+          "queries": 2090,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        }
+      }
+    },
+    "aro_visual_relation": {
+      "rows": 20883,
+      "images": 4658,
+      "add_vs_VN": {
+        "VN_dev": {
+          "delta_percentage_points": -6.689965052421368,
+          "interval_95_percentage_points": [
+            -8.437449345462325,
+            -5.00243871935968
+          ],
+          "improved": 96,
+          "regressed": 230,
+          "bootstrap_components": 1980,
+          "queries": 2003,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        },
+        "COCO_val_posthoc": {
+          "delta_percentage_points": -5.4066985645933014,
+          "interval_95_percentage_points": [
+            -8.249499440754498,
+            -2.6755214278302386
+          ],
+          "improved": 186,
+          "regressed": 299,
+          "bootstrap_components": 416,
+          "queries": 2090,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        }
+      },
+      "keep_vs_replace_by_VN": {
+        "VN_dev": {
+          "delta_percentage_points": -1.797304043934099,
+          "interval_95_percentage_points": [
+            -3.1567305409033226,
+            -0.4
+          ],
+          "improved": 81,
+          "regressed": 117,
+          "bootstrap_components": 1980,
+          "queries": 2003,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        },
+        "COCO_val_posthoc": {
+          "delta_percentage_points": -0.7177033492822966,
+          "interval_95_percentage_points": [
+            -2.4472168905950094,
+            1.0481431423960768
+          ],
+          "improved": 101,
+          "regressed": 116,
+          "bootstrap_components": 416,
+          "queries": 2090,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        }
+      }
+    },
+    "sugarcrepe": {
+      "rows": 6103,
+      "images": 1310,
+      "add_vs_VN": {
+        "VN_dev": {
+          "delta_percentage_points": -5.042436345481778,
+          "interval_95_percentage_points": [
+            -6.609914872308463,
+            -3.5017508754377187
+          ],
+          "improved": 78,
+          "regressed": 179,
+          "bootstrap_components": 1980,
+          "queries": 2003,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        },
+        "COCO_val_posthoc": {
+          "delta_percentage_points": 1.7224880382775118,
+          "interval_95_percentage_points": [
+            -0.6701771182383915,
+            4.099288787366532
+          ],
+          "improved": 225,
+          "regressed": 189,
+          "bootstrap_components": 416,
+          "queries": 2090,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        }
+      },
+      "keep_vs_replace_by_VN": {
+        "VN_dev": {
+          "delta_percentage_points": -0.24962556165751376,
+          "interval_95_percentage_points": [
+            -1.642608262817322,
+            1.1465603190428715
+          ],
+          "improved": 102,
+          "regressed": 107,
+          "bootstrap_components": 1980,
+          "queries": 2003,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        },
+        "COCO_val_posthoc": {
+          "delta_percentage_points": 0.3827751196172249,
+          "interval_95_percentage_points": [
+            -1.5843106050814282,
+            2.35017631598034
+          ],
+          "improved": 139,
+          "regressed": 131,
+          "bootstrap_components": 416,
+          "queries": 2090,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        }
+      }
+    },
+    "mbeir_mscoco": {
+      "rows": 17869,
+      "images": 3579,
+      "add_vs_VN": {
+        "VN_dev": {
+          "delta_percentage_points": -3.2451323015476783,
+          "interval_95_percentage_points": [
+            -4.692960559161259,
+            -1.7955112219451372
+          ],
+          "improved": 80,
+          "regressed": 145,
+          "bootstrap_components": 1980,
+          "queries": 2003,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        },
+        "COCO_val_posthoc": {
+          "delta_percentage_points": 7.607655502392345,
+          "interval_95_percentage_points": [
+            5.167402332621694,
+            10.09627525252525
+          ],
+          "improved": 292,
+          "regressed": 133,
+          "bootstrap_components": 416,
+          "queries": 2090,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        }
+      },
+      "keep_vs_replace_by_VN": {
+        "VN_dev": {
+          "delta_percentage_points": -0.04992511233150275,
+          "interval_95_percentage_points": [
+            -1.446402083613322,
+            1.3426490291450774
+          ],
+          "improved": 101,
+          "regressed": 102,
+          "bootstrap_components": 1980,
+          "queries": 2003,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        },
+        "COCO_val_posthoc": {
+          "delta_percentage_points": 3.7799043062200957,
+          "interval_95_percentage_points": [
+            1.6361100555751253,
+            5.998224660327713
+          ],
+          "improved": 200,
+          "regressed": 121,
+          "bootstrap_components": 416,
+          "queries": 2090,
+          "repetitions": 10000,
+          "caveat": "Conditional paired interval on this development set. Does not include configuration/checkpoint selection or seed variance."
+        }
+      }
+    }
+  },
+  "training_after_test": false,
+  "COCO_used_for_selection": false,
+  "wiki_used": false,
+  "xm3600_used": false
+}

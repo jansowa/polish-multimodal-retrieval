@@ -1,0 +1,77 @@
+{
+  "winner": "T4_last2_aligned_mid",
+  "original_frozen_val": 0.5822966507177033,
+  "phases": {
+    "S": {
+      "best_adapted": "S2_last1_schedule",
+      "matched_control": "S0_frozen_schedule",
+      "adapted_t2i_r1": 0.5775119617224881,
+      "frozen_t2i_r1": 0.5813397129186603,
+      "gain_vs_matched_control_pp": -0.382775119617218,
+      "gain_vs_original_frozen_pp": -0.4784688995215225
+    },
+    "T": {
+      "best_adapted": "T4_last2_aligned_mid",
+      "matched_control": "T0_frozen_aligned",
+      "adapted_t2i_r1": 0.5870813397129186,
+      "frozen_t2i_r1": 0.5856459330143541,
+      "gain_vs_matched_control_pp": 0.14354066985645675,
+      "gain_vs_original_frozen_pp": 0.4784688995215336
+    }
+  },
+  "selection_uses_test": false,
+  "xm3600_used": false,
+  "seed": 42,
+  "selected_validation": {
+    "protocol": "fixed-gallery-multi-positive-v1",
+    "graph_sha256": "474052b8757cbb38ff2cdcfce58781ed379de1392270e04d48dbf096f37af993",
+    "positive_pairs": 2093,
+    "t2i": {
+      "recall@1": 0.5870813397129186,
+      "recall@5": 0.8688995215311005,
+      "recall@10": 0.9435406698564593,
+      "queries": 2090,
+      "candidates": 419
+    },
+    "i2t": {
+      "recall@1": 0.6992840095465394,
+      "recall@5": 0.9451073985680191,
+      "recall@10": 0.9785202863961814,
+      "queries": 419,
+      "candidates": 2090
+    },
+    "mean_r1": 0.643182674629729
+  },
+  "winner_best_epoch": 1,
+  "post_selection_validation_diagnostics": {
+    "winner": "T4_last2_aligned_mid",
+    "matched_control": "T0_frozen_aligned",
+    "vs_original_frozen": {
+      "delta_t2i_r1_pp": 0.4784688995215311,
+      "conditional_95_interval_pp": [
+        -0.9169094613570067,
+        1.9240019240019242
+      ],
+      "improved_queries": 82,
+      "regressed_queries": 72,
+      "clusters": 416,
+      "bootstrap_samples": 10000,
+      "caveat": "Paired bootstrap over positive-image components, fixed validation gallery. Does not account for configuration selection or between-seed variance."
+    },
+    "vs_matched_control": {
+      "delta_t2i_r1_pp": 0.14354066985645933,
+      "conditional_95_interval_pp": [
+        -0.430416068866571,
+        0.7218479307025986
+      ],
+      "improved_queries": 19,
+      "regressed_queries": 16,
+      "clusters": 416,
+      "bootstrap_samples": 10000,
+      "caveat": "Paired bootstrap over positive-image components, fixed validation gallery. Does not account for configuration selection or between-seed variance."
+    },
+    "selection_uses_test": false,
+    "xm3600_used": false,
+    "bootstrap_does_not_establish_robustness_across_seeds": true
+  }
+}

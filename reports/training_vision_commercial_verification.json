@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "backbone": "tinyclip-39m",
+      "seed": 42,
+      "run_id": "692ffba334e87c79c96d76cffdd2d9e62287d8c0709b9857ab1f80d3cefe7fc6",
+      "verified": true
+    },
+    {
+      "backbone": "tinyclip-39m",
+      "seed": 43,
+      "run_id": "b4d00ac48c606c6e545b5927e02b325b5ba478e162bfc74b688e662510f45f0f",
+      "verified": true
+    },
+    {
+      "backbone": "tinyclip-39m",
+      "seed": 44,
+      "run_id": "17a30ae5a4f07f910c42e19c88e59bcc9db48eda789291dec7246f48be2afd8b",
+      "verified": true
+    },
+    {
+      "backbone": "tinyclip-40m",
+      "seed": 42,
+      "run_id": "abaa173d35eaaa303b2c183f8dc8236018f5c98f1fa8dff5925c802af9bc2a34",
+      "verified": true
+    },
+    {
+      "backbone": "chinese-clip-rn50",
+      "seed": 42,
+      "run_id": "19fd1b68b718a9826d93898665a1fa807cb7467e7ca13e79f28370ef7452fb49",
+      "verified": true
+    },
+    {
+      "backbone": "rn50-cc12m",
+      "seed": 42,
+      "run_id": "a1daa8318dfff57f516cb8e509d7cbea5666a6d84a88883852d86054d95d9d4b",
+      "verified": true
+    },
+    {
+      "backbone": "rn50-yfcc15m",
+      "seed": 42,
+      "run_id": "e604b294a4faee414785a1ab8f0e284d29c774c3a688bc20764645886ed17429",
+      "verified": true
+    }
+  ],
+  "exactly_five_backbones": true,
+  "unchanged_training_recipe": true,
+  "minimum_validation_checkpoint": true,
+  "replication_decisions_verified": true,
+  "runtime_sources": {
+    "training/observe_commercial_study.py": "3749d949eedb778d959dde5b280d466db40392a47b5b8a3f5b92f2a8867157d0",
+    "training/cache_commercial_backbone.py": "cbc359eba442f29fd7bf10bd0c0e7ee94425e51b3e69dbd7c920e92cc9aaa3f9"
+  }
+}

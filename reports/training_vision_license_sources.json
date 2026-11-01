@@ -1,0 +1,46 @@
+{
+  "PolDense": {
+    "repo": "OPI-PIB/PolDense-32M",
+    "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+    "license": "gemma",
+    "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md",
+    "path": "/home/jsowa/.cache/huggingface/hub/models--OPI-PIB--PolDense-32M/snapshots/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md",
+    "sha256": "5551eb5a3b36536c138f9b60db222d430f52a95517e263a29125a71275c91aa4"
+  },
+  "SigLIP2": {
+    "repo": "google/siglip2-base-patch16-256",
+    "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+    "license": "apache-2.0",
+    "source": "https://huggingface.co/google/siglip2-base-patch16-256/blob/3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab/README.md",
+    "path": "/home/jsowa/.cache/huggingface/hub/models--google--siglip2-base-patch16-256/snapshots/3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab/README.md",
+    "sha256": "3f093559c3a18d94d9336249cf2e4e42ec8752413f07eb6634e2820e4ea120ad"
+  },
+  "MobileCLIP2": {
+    "repo": "apple/MobileCLIP2-S2",
+    "revision": "72424e7025436db18f15c3eff6ee8c7c15ad4481",
+    "license": "apple-amlr",
+    "source": "https://huggingface.co/apple/MobileCLIP2-S2/blob/72424e7025436db18f15c3eff6ee8c7c15ad4481/README.md",
+    "path": "/home/jsowa/.cache/huggingface/hub/models--apple--MobileCLIP2-S2/snapshots/72424e7025436db18f15c3eff6ee8c7c15ad4481/README.md",
+    "sha256": "41e74ac02e21ef7020166f774366a07b7a84370057ac9bc17250953ef96583c4"
+  },
+  "TinyCLIP-code": {
+    "repo": "microsoft/Cream",
+    "revision": "4a13c4091e78f9abd2160e7e01c02e48c1cf8fb9",
+    "source": "https://raw.githubusercontent.com/microsoft/Cream/4a13c4091e78f9abd2160e7e01c02e48c1cf8fb9/TinyCLIP/LICENSE",
+    "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/vision-commercial-five/licenses/TinyCLIP-code.txt",
+    "sha256": "583acc0d9c74def18ec24e56964421bf1fac1fa2d60451e75e6681d5ae58a3f6"
+  },
+  "MobileCLIP-models": {
+    "repo": "apple-aiml-research/ml-mobileclip",
+    "revision": "48faa0fea4b08d74188b3841771aca6ff2c92852",
+    "source": "https://raw.githubusercontent.com/apple-aiml-research/ml-mobileclip/48faa0fea4b08d74188b3841771aca6ff2c92852/LICENSE_MODELS",
+    "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/vision-commercial-five/licenses/MobileCLIP-models.txt",
+    "sha256": "30c59d255d2b4075ba11b81ce5aa0109c28d28138d66d52f7f5d8cbba814df8b"
+  },
+  "Gemma-terms": {
+    "source": "https://ai.google.dev/gemma/terms",
+    "path": "/mnt/d/work/translate-vision-embedder-benchmark/pl-multimodal-benchmark-translator/pl-multimodal-benchmark-translator/training/runs/vision-commercial-five/licenses/gemma-terms.html",
+    "sha256": "a9bd3ee810b50800204ea5c25492da381c1057825f577dc086b278d44967fa73",
+    "note": "Terms retrieved during study; PolDense declares Gemma license at pinned revision"
+  }
+}

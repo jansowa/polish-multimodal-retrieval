@@ -1,0 +1,31 @@
+{
+  "winner": "T4_last2_aligned_mid",
+  "matched_control": "T0_frozen_aligned",
+  "vs_original_frozen": {
+    "delta_t2i_r1_pp": 0.4784688995215311,
+    "conditional_95_interval_pp": [
+      -0.9169094613570067,
+      1.9240019240019242
+    ],
+    "improved_queries": 82,
+    "regressed_queries": 72,
+    "clusters": 416,
+    "bootstrap_samples": 10000,
+    "caveat": "Paired bootstrap over positive-image components, fixed validation gallery. Does not account for configuration selection or between-seed variance."
+  },
+  "vs_matched_control": {
+    "delta_t2i_r1_pp": 0.14354066985645933,
+    "conditional_95_interval_pp": [
+      -0.430416068866571,
+      0.7218479307025986
+    ],
+    "improved_queries": 19,
+    "regressed_queries": 16,
+    "clusters": 416,
+    "bootstrap_samples": 10000,
+    "caveat": "Paired bootstrap over positive-image components, fixed validation gallery. Does not account for configuration selection or between-seed variance."
+  },
+  "selection_uses_test": false,
+  "xm3600_used": false,
+  "bootstrap_does_not_establish_robustness_across_seeds": true
+}

@@ -1,0 +1,59 @@
+{
+  "protocol": "CLEAN-v1-matched-budget",
+  "comparison": [
+    {
+      "variant": "FULL_CLEAN",
+      "records": 70289,
+      "unique_images": 10645,
+      "steps": 5500,
+      "examples_seen": 1405780,
+      "selected_checkpoint_steps": 2475,
+      "selected_checkpoint_examples": 632601,
+      "mscoco_r1": 0.452,
+      "mscoco_r5": 0.791,
+      "mscoco_r10": 0.883,
+      "val_t2i_r1": 0.5822966507177033,
+      "val_i2t_r1": 0.6968973747016707,
+      "cirr": 0.094,
+      "fashioniq": 0.033,
+      "refcoco": 0.489
+    },
+    {
+      "variant": "NO_MBEIR_MSCOCO",
+      "records": 52420,
+      "unique_images": 7102,
+      "steps": 5500,
+      "examples_seen": 1405780,
+      "selected_checkpoint_steps": 825,
+      "selected_checkpoint_examples": 210867,
+      "mscoco_r1": 0.324,
+      "mscoco_r5": 0.666,
+      "mscoco_r10": 0.807,
+      "val_t2i_r1": 0.4751196172248804,
+      "val_i2t_r1": 0.5536992840095465,
+      "cirr": 0.109,
+      "fashioniq": 0.048,
+      "refcoco": 0.466
+    },
+    {
+      "variant": "NON_COCO_CLEANROOM",
+      "records": 24473,
+      "unique_images": 3037,
+      "steps": 5500,
+      "examples_seen": 1405780,
+      "selected_checkpoint_steps": 1100,
+      "selected_checkpoint_examples": 281156,
+      "mscoco_r1": 0.22,
+      "mscoco_r5": 0.479,
+      "mscoco_r10": 0.617,
+      "val_t2i_r1": 0.3411483253588517,
+      "val_i2t_r1": 0.4486873508353222,
+      "cirr": 0.101,
+      "fashioniq": 0.039,
+      "refcoco": 0.492
+    }
+  ],
+  "full_reference_reused": true,
+  "selection_uses_test": false,
+  "limitation": "Equal maximum budgets do not equalize distinct images, source diversity, or the steps consumed by validation-selected checkpoints; one seed."
+}
