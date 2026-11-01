@@ -6804,6 +6804,27 @@
       "revision": "1c2b8495b28150b8a4922ee1c8edee224c284c0c",
       "role": "reference"
     },
+    "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec": {
+      "efficiency": null,
+      "label": "CLIP-ViT-bigG-14-laion2B-39B-b160k",
+      "license": {
+        "display": "mit",
+        "spdx": "mit",
+        "status": "reported",
+        "url": "https://huggingface.co/laion/CLIP-ViT-bigG-14-laion2B-39B-b160k/blob/743c27bd53dfe508a0ade0f50698f99b39d03bec/README.md"
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 694659840,
+        "total": 2539567104,
+        "vision": 1844907264
+      },
+      "repository": "laion/CLIP-ViT-bigG-14-laion2B-39B-b160k",
+      "representative": true,
+      "revision": "743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "role": "reference"
+    },
     "hf:laion/CLIP-ViT-g-14-laion2B-s12B-b42K@4b0305adc6802b2632e11cbe6606a9bdd43d35c9": {
       "efficiency": null,
       "label": "CLIP-ViT-g-14-laion2B-s12B-b42K",
@@ -37037,6 +37058,566 @@
       "source": "requested-reference-20261101",
       "source_sha256": "9e29eeb4eef13b7f8344afbf3c03bfbd70c891959438c70d61a417bb7ddc7c20",
       "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.3493716310074871,
+          "ndcg@10": 0.3787409420704905,
+          "recall@1": 0.25692695214105793,
+          "recall@10": 0.5188916876574308,
+          "recall@5": 0.44836272040302266
+        },
+        "t2i": {
+          "mrr": 0.26883543094203033,
+          "ndcg@10": 0.28220514640938965,
+          "recall@1": 0.2084592145015106,
+          "recall@10": 0.40181268882175225,
+          "recall@5": 0.32326283987915405
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "779c8fa7d5801bdc18075498dc650b5445b8dbc24579e7158d147841fdbedecd",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.28211473440093515,
+          "ndcg@10": 0.2991646457069618,
+          "recall@1": 0.2255,
+          "recall@10": 0.384,
+          "recall@5": 0.3285
+        },
+        "t2i": {
+          "mrr": 0.25292111028541725,
+          "ndcg@10": 0.2701505518097069,
+          "recall@1": 0.1967049425861208,
+          "recall@10": 0.35496754867698455,
+          "recall@5": 0.30604093859211184
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "0a6792600f97fde989b3eccf6f4098245b37e7b970128465ca120c6c10af63f0",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.21413827279661315,
+          "ndcg@10": 0.17188068418374935,
+          "recall@1": 0.15373922713372254,
+          "recall@10": 0.3355574089519044,
+          "recall@5": 0.2741173199888796
+        },
+        "t2i": {
+          "mrr": 0.12357264476115254,
+          "ndcg@10": 0.1366639807022646,
+          "recall@1": 0.08128252003937561,
+          "recall@10": 0.20531570805793842,
+          "recall@5": 0.15989312333005204
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "571d9b9658d5a5b6d07b01ebbffd410358b7f72ba2a7db01cf9e351a6b160f25",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.4065656119227298,
+          "ndcg@10": 0.2551096857878023,
+          "recall@1": 0.324,
+          "recall@10": 0.572,
+          "recall@5": 0.491
+        },
+        "t2i": {
+          "mrr": 0.2475805972025815,
+          "ndcg@10": 0.27109680312953865,
+          "recall@1": 0.17648423005565864,
+          "recall@10": 0.3838126159554731,
+          "recall@5": 0.31563079777365494
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "4b7ef327a52d055fa10b2a9dda7239ef0015be855d7323a4636b1b485d20fe16",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.4065656119227298,
+          "ndcg@10": 0.2551096857878023,
+          "recall@1": 0.324,
+          "recall@10": 0.572,
+          "recall@5": 0.491
+        },
+        "t2i": {
+          "mrr": 0.2475805972025815,
+          "ndcg@10": 0.27109680312953865,
+          "recall@1": 0.17648423005565864,
+          "recall@10": 0.3838126159554731,
+          "recall@5": 0.31563079777365494
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "5abb5bf5e2d3e7574cb0377b424e63d8c80e390b589add784a11a433898abbf4",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.2822850934929729,
+          "ndcg@10": 0.16089096519595145,
+          "recall@1": 0.19852941176470587,
+          "recall@10": 0.45168067226890757,
+          "recall@5": 0.36764705882352944
+        },
+        "t2i": {
+          "mrr": 0.14353986314062833,
+          "ndcg@10": 0.159702922253891,
+          "recall@1": 0.08807416772018542,
+          "recall@10": 0.24757690686894226,
+          "recall@5": 0.19174041297935104
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "5ee91349aec3fc1f96ed02295a84bdd2e03f7ecc3cf2dacca3739dd457fb6ec2",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.23413415634638465,
+          "ndcg@10": 0.2665753978442982,
+          "recall@1": 0.14938684503901895,
+          "recall@10": 0.4136008918617614,
+          "recall@5": 0.3232998885172798
+        },
+        "t2i": {
+          "mrr": 0.1927460818131204,
+          "ndcg@10": 0.22459699687452983,
+          "recall@1": 0.11482720178372352,
+          "recall@10": 0.37235228539576365,
+          "recall@5": 0.25863991081382387
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "71db5b4698b789a006895d29e75a5b6780c462e5f631d8a4b886388d194fff34",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.21413827279661315,
+          "ndcg@10": 0.17188068418374935,
+          "recall@1": 0.15373922713372254,
+          "recall@10": 0.3355574089519044,
+          "recall@5": 0.2741173199888796
+        },
+        "t2i": {
+          "mrr": 0.12357264476115254,
+          "ndcg@10": 0.1366639807022646,
+          "recall@1": 0.08128252003937561,
+          "recall@10": 0.20531570805793842,
+          "recall@5": 0.15989312333005204
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "4be6d5070ecd76ae2e01151d0ae837f2cf3f3c25871b79697aa36599d096b280",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.2822850934929729,
+          "ndcg@10": 0.16089096519595145,
+          "recall@1": 0.19852941176470587,
+          "recall@10": 0.45168067226890757,
+          "recall@5": 0.36764705882352944
+        },
+        "t2i": {
+          "mrr": 0.14353986314062833,
+          "ndcg@10": 0.159702922253891,
+          "recall@1": 0.08807416772018542,
+          "recall@10": 0.24757690686894226,
+          "recall@5": 0.19174041297935104
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "3094430184aa62bf3596daafc22dab9b4e4f3c50be8a55e04a5c6746e2c5eac2",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.3493716310074871,
+          "ndcg@10": 0.3787409420704905,
+          "recall@1": 0.25692695214105793,
+          "recall@10": 0.5188916876574308,
+          "recall@5": 0.44836272040302266
+        },
+        "t2i": {
+          "mrr": 0.26883543094203033,
+          "ndcg@10": 0.28220514640938965,
+          "recall@1": 0.2084592145015106,
+          "recall@10": 0.40181268882175225,
+          "recall@5": 0.32326283987915405
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "022b31b218e580a3ccf3afe62611f85537b767b06ee77833c5585dd703cb20ee",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.228912632332902,
+          "ndcg@10": 0.2593280874234751,
+          "recall@1": 0.145,
+          "recall@10": 0.4,
+          "recall@5": 0.316
+        },
+        "t2i": {
+          "mrr": 0.18678456669083482,
+          "ndcg@10": 0.21504570189263178,
+          "recall@1": 0.111,
+          "recall@10": 0.352,
+          "recall@5": 0.249
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "5a079a04a3d0f223984c57e55dcbcde737e25f9ba602ad8be30340d8158d264b",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.28211473440093515,
+          "ndcg@10": 0.2991646457069618,
+          "recall@1": 0.2255,
+          "recall@10": 0.384,
+          "recall@5": 0.3285
+        },
+        "t2i": {
+          "mrr": 0.25292111028541725,
+          "ndcg@10": 0.2701505518097069,
+          "recall@1": 0.1967049425861208,
+          "recall@10": 0.35496754867698455,
+          "recall@5": 0.30604093859211184
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "67408a5aca5903c186dd4505f09110900cb5d47ee38ee4cd4b680ecb485d318e",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.23413415634638465,
+          "ndcg@10": 0.2665753978442982,
+          "recall@1": 0.14938684503901895,
+          "recall@10": 0.4136008918617614,
+          "recall@5": 0.3232998885172798
+        },
+        "t2i": {
+          "mrr": 0.1927460818131204,
+          "ndcg@10": 0.22459699687452983,
+          "recall@1": 0.11482720178372352,
+          "recall@10": 0.37235228539576365,
+          "recall@5": 0.25863991081382387
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "db3f1c7469abfa2d15b79838d7a137fd886443d79aa6c4dd33cc9dc66476c99c",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "reason": "Native tokenizer does not expose untruncated lengths",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.228912632332902,
+          "ndcg@10": 0.2593280874234751,
+          "recall@1": 0.145,
+          "recall@10": 0.4,
+          "recall@5": 0.316
+        },
+        "t2i": {
+          "mrr": 0.18678456669083482,
+          "ndcg@10": 0.21504570189263178,
+          "recall@1": 0.111,
+          "recall@10": 0.352,
+          "recall@5": 0.249
+        }
+      },
+      "model_id": "hf:laion/CLIP-ViT-bigG-14-laion2B-39B-b160k@743c27bd53dfe508a0ade0f50698f99b39d03bec",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+      "source": "requested-reference-20261101",
+      "source_sha256": "ebff530d17f6fa94372bef98e4aa618821ec5157b4acad6b9ba1826822b37159",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
       "tokenization": {
         "reason": "Native tokenizer does not expose untruncated lengths",
         "status": "unavailable"
