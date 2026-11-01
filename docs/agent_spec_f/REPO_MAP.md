@@ -27,3 +27,15 @@
 - Konfiguracja output: retrieval_benchmark/local/config.json → C:/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs.
 - Konfiguracja series_results: retrieval_benchmark/local/config.json → C:/Users/jsowa/benchmark-translations/series-2026-10-23/evaluation.
 - Konfiguracja flickr_parquet: retrieval_benchmark/local/config.json → C:/Users/jsowa/benchmark-translations/data-ood-20261030/B/flickr30k/test.parquet.
+
+## Środowiska wykonawcze
+
+- Kod ML uruchamia się wyłącznie w WSL. Interpretery:
+  - `~/.venvs/pl-mmb-benchmark/bin/python` — trening, benchmark oraz PyTorch/CUDA.
+  - `~/.venvs/pl-mmb-legacy-cu130/bin/python` — starsze adaptery oraz zadania CPU wymagające SciPy.
+  - `~/.venvs/pl-mmb-modern/bin/python` — EmbeddingGemma-2.
+- Repozytoryjny `.venv` służy tylko pipeline’owi tłumaczeń, bez GPU i bez SciPy. Nie używać go do treningu ani ewaluacji.
+- Nie instalować pakietów do istniejących środowisk. Nowe zależności dopuszcza się wyłącznie w nowym, wersjonowanym środowisku po zgodzie właściciela.
+- Polecenia GPU i skrypty treningowe wywoływać z katalogu repozytorium w WSL; jeżeli sesja działa pod Windows, używać `wsl.exe` z katalogiem roboczym ustawionym na repozytorium w WSL.
+
+Ścieżki i role interpreterów zweryfikowano w `benchmark/README.md`, `training/README.md` oraz `src/pl_mmb_benchmark/models.py` (`worker_python`).

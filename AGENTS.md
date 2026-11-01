@@ -32,3 +32,15 @@ przez `current_holdouts`. Generacja2 nadal używa prawidłowo swojego rejestru v
 6. **Bramka ludzka = koniec sesji.** Eskalacja wg `07 §8` zapisana w handoffie i w `NEXT.md` (etap „oczekuje na H…”). Nie obchodź bramki, nie zgaduj decyzji.
 7. **Koniec sesji (obowiązkowo, w tej kolejności):** `STATUS.md` → handoff `reports/f_series/handoffs/<SESSION_ID>.md` (≤ 1 strona, §3) → `NEXT.md` (następny etap, §3) → wiersz w `reports/f_series/SESSIONS.md` → commit → odpowiedź ≤ 10 linii.
 8. **Logi w czacie ≤ 50 linii;** pełne logi do plików. **Każda liczba w raporcie ma źródło** (ścieżka, SHA); nie przepisuj liczb z pamięci rozmowy.
+
+## Środowiska wykonawcze
+
+- Kod ML uruchamia się wyłącznie w WSL. Interpretery:
+  - `~/.venvs/pl-mmb-benchmark/bin/python` — trening, benchmark oraz PyTorch/CUDA.
+  - `~/.venvs/pl-mmb-legacy-cu130/bin/python` — starsze adaptery oraz zadania CPU wymagające SciPy.
+  - `~/.venvs/pl-mmb-modern/bin/python` — EmbeddingGemma-2.
+- Repozytoryjny `.venv` służy tylko pipeline’owi tłumaczeń, bez GPU i bez SciPy. Nie używać go do treningu ani ewaluacji.
+- Nie instalować pakietów do istniejących środowisk. Nowe zależności dopuszcza się wyłącznie w nowym, wersjonowanym środowisku po zgodzie właściciela.
+- Polecenia GPU i skrypty treningowe wywoływać z katalogu repozytorium w WSL; jeżeli sesja działa pod Windows, używać `wsl.exe` z katalogiem roboczym ustawionym na repozytorium w WSL.
+
+Ścieżki i role interpreterów zweryfikowano w `benchmark/README.md`, `training/README.md` oraz `src/pl_mmb_benchmark/models.py` (`worker_python`).
