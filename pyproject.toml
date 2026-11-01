@@ -19,6 +19,12 @@ dependencies = [
 [project.scripts]
 pl-mmb-translate = "pl_mmb_translate.cli:main"
 pl-mmb-benchmark = "pl_mmb_benchmark.cli:main"
+pl-mmb-train = "pl_mmb_training.cli:main"
+pl-mmb-collect = "pl_mmb_collection.cli:main"
+
+[project.optional-dependencies]
+collection = ["pyarrow>=14,<24", "PyYAML>=6,<7", "requests>=2.32,<3"]
+collection-phash = ["ImageHash>=4.3,<5"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/pl_mmb_translate", "src/pl_mmb_benchmark"]
+packages = ["src/pl_mmb_translate", "src/pl_mmb_benchmark", "src/pl_mmb_training", "src/pl_mmb_collection"]

@@ -1,5 +1,10 @@
 # Benchmarkowanie na GPU w WSL
 
+> Aktualny, wydzielony benchmark **retrieval PL tekst ↔ obraz** i samodzielny
+> leaderboard Gradio do Hugging Face Spaces: [retrieval_benchmark](../retrieval_benchmark/README.md).
+> Ten katalog dokumentuje historyczne zadania MMEB/ARO, w tym zadania złożone,
+> które nie wchodzą do aktualnego leaderboardu retrieval.
+
 **Bieżący protokół: [v2](protocol_v2.md)** — bez instrukcji, suma surowych
 embeddingów CLIP i cosine po połączeniu. Poprzednie wyniki pozostają w archiwum.
 EmbeddingGemma-2 używa natywnego wspólnego kodowania tekstu i obrazu, bez audio.

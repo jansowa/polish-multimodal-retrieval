@@ -1,9 +1,12 @@
 # Polish Multimodal Benchmark
 
-Projekt ma dwa niezależne obszary:
+Projekt obejmuje następujące obszary:
 
 - [Tłumaczenie danych](translation/README.md): zewnętrzny serwer API, checkpointy, kolejki i przeglądarka.
-- [Benchmarkowanie](benchmark/README.md): lokalne GPU w WSL, wybór datasetów/modeli/batch size, wyniki i graficzny leaderboard.
+- [Benchmark retrieval PL](retrieval_benchmark/README.md): wersjonowane galerie tekst ↔ obraz, runner modeli, jeden JSON wyników i samodzielny leaderboard Gradio do Hugging Face Spaces.
+- [Historyczne benchmarkowanie MMEB/ARO](benchmark/README.md): wcześniejszy runner GPU i archiwalny leaderboard.
+- [Trening](training/README.md): frozen PolDense + SigLIP2, offline cache, kontrola leakage, E0/E1 oraz P0/E2a/E2b; [aktualny plan P0–P11](training/PLAN.md).
+- [Pozyskiwanie danych](data_collection/README.md): Wikimedia Commons + Wikidata, pary obraz–tekst o polskiej kulturze, licencje, provenance i eksport Parquet.
 
 Pierwsze porównanie: `~/.venvs/pl-mmb-benchmark/bin/python benchmark.py --datasets mscoco_t2i --batch-size 64`.
 Poniższa dokumentacja dotyczy obszaru tłumaczeń. Jego instalacja nadal nie wymaga GPU.
