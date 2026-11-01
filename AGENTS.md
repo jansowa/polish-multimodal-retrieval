@@ -24,13 +24,11 @@ przez `current_holdouts`. Generacja2 nadal używa prawidłowo swojego rejestru v
 
 ## Protokół sesji
 
-1. Jedna sesja obejmuje tylko pakiet, krok lub ramię wskazane w prompcie; inne pomysły zapisuj po jednej linii w reports/f_series/BACKLOG.md.
-2. Nie zaczynaj kolejnego pakietu w tej samej sesji; zakończ handoffem.
-3. Czytaj minimalnie: STATUS.md, najnowszy handoff, właściwe sekcje 04/05 i dokumenty wymagane przez 00; duże pliki przeglądaj selektywnie lub agreguj.
-4. Przed przeszukiwaniem całego repo sprawdź docs/agent_spec_f/REPO_MAP.md.
-5. Zaczynaj od czystego git status, pracuj na f/<pakiet> i rób małe commity [ID]; nie zmieniaj holdouts.py, starego catalog.json ani zamrożonych generacji.
-6. Job GPU musi być wznawialny i mieć training/runs/f_series/<run_id>/JOB.json z poleceniami, PID, czasami i ścieżkami; po smoke teście czekaj najwyżej 15 minut, potem handoff i osobna sesja odbioru.
-7. Kończ kolejno: STATUS.md → handoffs/<SESSION_ID>.md (szablon 09 §3, najwyżej jedna strona) → SESSIONS.md → commit → odpowiedź najwyżej 10 linii.
-8. Bramka ludzka kończy sesję: przygotuj eskalację wg 07 §8, zapisz ją w handoffie; nie obchodź bramki ani nie zgaduj decyzji.
-9. Logi w czacie ogranicz do 50 linii; pełne logi zapisuj w plikach, podawaj ścieżkę i wniosek.
-10. Każda liczba raportowa musi mieć źródło: ścieżkę pliku i SHA; nie przepisuj liczb z pamięci rozmowy.
+1. **Jedna sesja = jeden etap** (pakiet, krok pakietu albo ramię eksperymentu). Zakres etapu wynika z `09 §4` (plan sesji) albo z `reports/f_series/NEXT.md` zapisanego przez poprzednią sesję. Nic spoza zakresu — pomysły i zauważone problemy trafiają do `reports/f_series/BACKLOG.md`.
+2. **Etap wykonuje się w całości**, do kryterium „gotowe” z `04`/`05`. Nie zaczynaj następnego etapu w tej samej sesji, nawet jeśli bieżący skończył się szybko.
+3. **Czytaj minimalnie:** na starcie `reports/f_series/STATUS.md`, `reports/f_series/NEXT.md`, najnowszy plik w `reports/f_series/handoffs/`, `docs/agent_spec_f/REPO_MAP.md`, sekcję pakietu w `04_PAKIETY_PRACY.md`, sekcję eksperymentu w `05_EKSPERYMENTY.md` (jeśli dotyczy) oraz pliki z tabeli „kolejność czytania” w `00` dla danego typu akcji. Nie czytaj całej specyfikacji ani dużych plików (`results.json`, manifesty, logi) w całości — używaj skryptów, `head`, `jq`; podsumowania zapisuj do plików.
+4. **Bez gałęzi, worktree i PR.** Praca na bieżącej gałęzi głównego checkoutu; `git status` czysty na starcie; na koniec sesji jeden commit (lub kilka) z prefiksem `[<etap>]`. Zamrożonych plików (`src/pl_mmb_training/holdouts.py`, stary `retrieval_benchmark/catalog.json`, zamrożone generacje) nie dotykaj.
+5. **Zadania GPU są uruchamiane, nie pilnowane.** Job musi być wznawialny i mieć ticket `training/runs/f_series/<run_id>/JOB.json` (polecenie startu i wznowienia, pid, start, szacowany koniec, ścieżki wyników). Po starcie i smoke teście sesja czeka najwyżej 15 minut, potem kończy się handoffem; odbiór wyników to osobny etap („odbiór”), który sam staje w `NEXT.md`.
+6. **Bramka ludzka = koniec sesji.** Eskalacja wg `07 §8` zapisana w handoffie i w `NEXT.md` (etap „oczekuje na H…”). Nie obchodź bramki, nie zgaduj decyzji.
+7. **Koniec sesji (obowiązkowo, w tej kolejności):** `STATUS.md` → handoff `reports/f_series/handoffs/<SESSION_ID>.md` (≤ 1 strona, §3) → `NEXT.md` (następny etap, §3) → wiersz w `reports/f_series/SESSIONS.md` → commit → odpowiedź ≤ 10 linii.
+8. **Logi w czacie ≤ 50 linii;** pełne logi do plików. **Każda liczba w raporcie ma źródło** (ścieżka, SHA); nie przepisuj liczb z pamięci rozmowy.

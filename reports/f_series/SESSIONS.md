@@ -2,4 +2,6 @@
 
 | SESSION_ID | Data | Pakiet/krok | Wynik | Handoff | Commit |
 |---|---|---|---|---|---|
-| S00-BOOT | 2026-11-01 | Bootstrap / audyt 00 / szkielet | done | [S00-BOOT](handoffs/S00-BOOT.md) | commit zawierający ten wpis na f/boot, wyszukiwany przez `git log --fixed-strings --grep="[S00]"`; bez samoodwołującego SHA |
+| S00-BOOT | 2026-11-01 | Bootstrap / audyt 00 / szkielet | done | [S00-BOOT](handoffs/S00-BOOT.md) | `1a7bc148db6ca542ce3cb1490d26d20cad13fd6f` (historycznie f/boot, scalony fast-forward do master) |
+
+| S00-BOOT | 2026-11-01 | Domknięcie: scalenie, usunięcie worktree/gałęzi, synchronizacja protokołu, NEXT | done | [Domknięcie](handoffs/S00-BOOT.md#domknięcie) | commit zawierający ten wpis: `[S00] Domknij S00-BOOT na biezacej galezi` |

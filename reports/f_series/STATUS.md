@@ -35,3 +35,13 @@ Otwarte decyzje właściciela wg 00 (nie są bramką bootstrapu):
 
 Audyt: [każdy wiersz 00](S00-BOOT-audit.md), [źródła i SHA](S00-BOOT-evidence.json).
 Następna sesja: **S01-F01-a**, wyłącznie protokół v3-F, VizWiz A/B i nowy katalog; czytać sekcję F01 w 04 oraz 02 zgodnie z 09 §6.
+
+## Rozbieżności do wyjaśnienia
+
+- R3 G2: w leaderboardzie jest tylko `R3_wiki2_seed43`; deklaracja trzech seedów pozostaje do wyjaśnienia.
+- PE-Core-B16 ma pomiar latencji; ogólna deklaracja braku pomiarów PE-Core wymaga doprecyzowania.
+- VN 53 794 par: liczba niepotwierdzona w audycie S00; wymaga wskazania dowodu.
+
+Źródło rozbieżności i zakres sprawdzenia: [audyt S00](S00-BOOT-audit.md), [agregaty i SHA źródeł](S00-BOOT-evidence.json). W domknięciu ich nie rozstrzygano.
+
+Domknięcie S00-BOOT (2026-11-01): artefakty scalono fast-forward do `master`; worktree i gałąź `f/boot` usunięto. Dalsza praca na bieżącej gałęzi głównego checkoutu, bez nowych gałęzi, worktree i PR. Wszystkie pakiety pozostają `todo`, GUARD=0, TEST=0; historyczny GUARD #0 pozostaje zapisany. Następny etap: [NEXT.md](NEXT.md).
