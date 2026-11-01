@@ -1,0 +1,2717 @@
+{
+  "session_id": "S00-BOOT",
+  "date": "2026-11-01",
+  "source_root": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator",
+  "source_head": "ba8901712837716d2f783e85596a0f0f3433acd9",
+  "source_state": "dirty; audit working files, not a clean Git snapshot",
+  "source_sha256": {
+    "docs/agent_spec_f/00_SPIS_TRESCI_I_STATUS.md": "643484348dc21b5fc7c499973666e2382f5f77310e6c905bb11ec4931918723e",
+    "docs/agent_spec_f/01_CEL_ZASADY_LICENCJE.md": "cd69825ae118a79cce702abd6d37da6319b40033f5e71c0add2286a415ad6d83",
+    "docs/agent_spec_f/07_OPERACJE_ARTEFAKTY.md": "bed2ec54d329f0fbe08307534b4211625712e252c392ac846b93f82fe5e86ea2",
+    "docs/agent_spec_f/09_PROTOKOL_SESJI_CODEX.md": "09dd48ca3eb4d8fbbf68441ba0a823b44017bf39d7788ec522b94f666bd59a65",
+    "AGENTS.md": "5acd6ef46480b8fc5444edd09b9c6eb4bc50cfbd575a4983a265965886b5e042",
+    "training/DATA_SPLITS.md": "8e6dafa986145eb9e50acfd458a958d1f2c4ec4385f600a09271fd6f0978a9d6",
+    "retrieval_benchmark/space/results.json": "9a2cd82c4da9a19b8964af393708a028c3b247ccb0aba7e2db57f85a70878fe5",
+    "retrieval_benchmark/catalog-current.json": "3c46f31bb3e5b7b1e751e5086e815897b2376e4a580c755b580db98e7f70a010",
+    "retrieval_benchmark/catalog.json": "6ede56be424b0714865b70e5e022c320b3f9cb6c32d1a742166dc8ec7b693be8",
+    "src/pl_mmb_training/holdouts.py": "c5355ecf080336a833913ea57921b032662789c72df77e056297b4290fd89ce3",
+    "src/pl_mmb_training/current_holdouts.py": "3c2c30159800e27dacdec8c0b9d103f30b2fd6a7b7cc415a9d1caf59bf18f8aa",
+    "retrieval_benchmark/holdouts/registry-v2.json": "954934abb198f79c712d4f51ae68a948a413fd9fd3b56fbda0648abb01a478c5",
+    "retrieval_benchmark/holdouts/registry-v4.json": "18c895becac9af4c8405d77e1a7d79879da679df005c4b867443fc218ca002b5",
+    "reports/visualnews_pipeline_state.json": "cd33f0d953b054bd008cebc7d880dd4ad0b99b1631b937ccffc39989c0cc6628",
+    "reports/wikimedia_pipeline_state.json": "dea0339121151f49cb05adcc07945bc64bb95014044d2203c1e41bc1eb00bb3f",
+    "reports/benchmark_decontamination_20261031/xm3600_completion.json": "b29b8387baa1810d424802ae471ccf2c8f8094f7f1e51224e2e475b99123f9a1",
+    "reports/series_2026-10-23/LICENSING_DOSSIER_20261030.md": "e1c9e8ad7a40b50cf3f5ab6728933cef9c16ce6ae116251c13ce41b1a3f0fad9",
+    "reports/KONTEKST_PROJEKTU_DLA_MODELU_2026-10-31.md": "3cea7d22d3365464e24850b7df821c485758bc24be3d2bf1917aaa06d486cf47",
+    "training/CLEAN_V1.md": "2750c9f56397b6ca32de3ffc3d458982efd08a6e8576f592a8dbfe890aa5ebed",
+    "training/runs/clean-v1/validation.jsonl": "257145fc0c2cded5e67bb1e3eb0036d65af357099a86e909103a078cc73bd3a6",
+    "retrieval_benchmark/local/config.json": "500076377b392406a25ce81660f1d34ff445c3e74b2535460461154c7ed2f538",
+    "experiments/data_study_20261030/wiki_recovery_20261031/config.py": "a4b8f7bb725ceec6ff29bf7f149dab241e3a4ffb28cb8e8486a2a867d071aaef",
+    "experiments/data_ood_common_20261030/common.py": "2c9d9771100367d98cb9e9888a880d45c83a2aeef428d6282ccc8ce04ad25466",
+    "reports/wikimedia_pipeline/runtime_config.json": "63cc1f5685be473d65790f9dc29ab1ffa3bd5752322bb541fba27e4bf5036038",
+    "src/pl_mmb_translate/config.py": "aa42605116f01f51e42830b3ba7fef4e26034ff0646db464c31bc57d81825721"
+  },
+  "model_count": 50,
+  "result_count": 584,
+  "catalog_statuses": {
+    "flickr30k_pl_local_test": "ready",
+    "vizwiz_pl_local_validation": "ready",
+    "wiki_native_dev": "ready",
+    "VN_dev": "ready",
+    "xtd10_no_overlap": "ready",
+    "xtd10_full_1k": "ready",
+    "xm3600_pl": "ready",
+    "docci_pl": "planned"
+  },
+  "models": {
+    "checkpoint:094122a574d8f2322b1434bb0eb0a5d539b510c36b5cfc74c2eb140c0e1f7636": {
+      "label": "R3_wiki2_seed43",
+      "repository": null,
+      "revision": "094122a574d8f2322b1434bb0eb0a5d539b510c36b5cfc74c2eb140c0e1f7636",
+      "generation": 2,
+      "seed": 43,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:09e4a96224eb18e0a8ed25011258980b03865873126d8cc9d1ce565689a07a89": {
+      "label": "R3_seed42",
+      "repository": null,
+      "revision": "09e4a96224eb18e0a8ed25011258980b03865873126d8cc9d1ce565689a07a89",
+      "generation": null,
+      "seed": 42,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:0cd560a39263fc165e4e7cd4949a9f8deda77ec207ff10f1e34d6d9af03d0285": {
+      "label": "R3_seed44",
+      "repository": null,
+      "revision": "0cd560a39263fc165e4e7cd4949a9f8deda77ec207ff10f1e34d6d9af03d0285",
+      "generation": null,
+      "seed": 44,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:1de8a961fc059c47f9a85dd01b28841ffdd94d1b736519edd8e7b3e25c2efa22": {
+      "label": "ours-mobileclip2-poldense32-seed42",
+      "repository": null,
+      "revision": "1de8a961fc059c47f9a85dd01b28841ffdd94d1b736519edd8e7b3e25c2efa22",
+      "generation": null,
+      "seed": 42,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "Apple AMLR (research only)",
+            "evidence_sha256": "93a958651d2d8de899f994ee50571d07e50066300fa78d94ce5d26ad89ef76b7",
+            "id": "apple-amlr",
+            "repository": "apple/MobileCLIP2-S2",
+            "revision": "72424e7025436db18f15c3eff6ee8c7c15ad4481",
+            "source": "https://huggingface.co/apple/MobileCLIP2-S2/blob/72424e7025436db18f15c3eff6ee8c7c15ad4481/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: Apple AMLR (research only); T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 67698368,
+        "vision": 35815232
+      }
+    },
+    "checkpoint:452a17b5aee45b6b04082a71088090f0e61bdd04e5fd31bf7b8e5069bc145b3d": {
+      "label": "VN_only",
+      "repository": null,
+      "revision": "452a17b5aee45b6b04082a71088090f0e61bdd04e5fd31bf7b8e5069bc145b3d",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844": {
+      "label": "R0_seed44",
+      "repository": null,
+      "revision": "4bf977049098ca6d8bcc7abc177183aace8c03c5f08e0ecaf011d82aad5b6844",
+      "generation": null,
+      "seed": 44,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "decision_sha256": "195edd9a8dba2de6a350e0ce2fa4432d0bb00373ba1eb10500739e3da0a00983",
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 384,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 77.10517150000129,
+            "median_ms_per_item": 77.10517150000129,
+            "p95_batch_ms": 90.40515490000587,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 14.498312499998889,
+            "median_ms_per_item": 14.498312499998889,
+            "p95_batch_ms": 16.57729499999583,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 134.62163250000003,
+            "median_ms_per_item": 2.1034630078125005,
+            "p95_batch_ms": 156.60610690000388,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 17.706890499999517,
+            "median_ms_per_item": 0.27667016406249245,
+            "p95_batch_ms": 25.517775099999263,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model": "VN_FULL_seed44",
+        "parameters": {
+          "head": 196992,
+          "shared": 0,
+          "text": 31883136,
+          "vision": 38587392
+        },
+        "registration_sha256": "037cb7e9931f0a7a0a4d490cb859ec180f07957203d5480b48f787d25d50c55e",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:626127451432301b1127478a3b47f2394139753c9e3f2bdb52570a44b8273776": {
+      "label": "R0_seed43",
+      "repository": null,
+      "revision": "626127451432301b1127478a3b47f2394139753c9e3f2bdb52570a44b8273776",
+      "generation": null,
+      "seed": 43,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:6437c7234d01a88c2895399e7a3b7e1577843f6507fe79cb8b04356ac2e1dbd9": {
+      "label": "R1_seed44",
+      "repository": null,
+      "revision": "6437c7234d01a88c2895399e7a3b7e1577843f6507fe79cb8b04356ac2e1dbd9",
+      "generation": null,
+      "seed": 44,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:65e695e33c54d41a402e55583c2b616075ed16fcd52f39fea64d95aa4b4baeca": {
+      "label": "R3_seed43",
+      "repository": null,
+      "revision": "65e695e33c54d41a402e55583c2b616075ed16fcd52f39fea64d95aa4b4baeca",
+      "generation": null,
+      "seed": 43,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743": {
+      "label": "R0_seed42",
+      "repository": null,
+      "revision": "75b2901ccbc5d3bb2ba6e90ee5d70113b3fd966a20ee4f528378a1108d34e743",
+      "generation": null,
+      "seed": 42,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:87e6bcba5ac56ee3824f5d7c13696b9929399567af6b9a56a4c46f168283249b": {
+      "label": "historical_A1",
+      "repository": null,
+      "revision": "87e6bcba5ac56ee3824f5d7c13696b9929399567af6b9a56a4c46f168283249b",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:ab6e24c0887777da50baca820f5a10d66bf12dd398c10f83e37d656e3620ad02": {
+      "label": "R1_seed43",
+      "repository": null,
+      "revision": "ab6e24c0887777da50baca820f5a10d66bf12dd398c10f83e37d656e3620ad02",
+      "generation": null,
+      "seed": 43,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "checkpoint:d1d831478cdb88ba4b61b4d02a119ef2063922c8482ee510c7bc03e2bef4fb13": {
+      "label": "ours-siglip2-poldense32-seed42",
+      "repository": null,
+      "revision": "d1d831478cdb88ba4b61b4d02a119ef2063922c8482ee510c7bc03e2bef4fb13",
+      "generation": null,
+      "seed": 42,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "Apache-2.0",
+            "evidence_sha256": "239d6dcaaa3ec782ef1e975b8eae2103c724f8fbe6715e915d6c59c5a7653aa9",
+            "id": "apache-2.0",
+            "repository": "google/siglip2-base-patch16-256",
+            "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+            "source": "https://huggingface.co/google/siglip2-base-patch16-256/blob/3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: Apache-2.0; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 295296,
+        "shared": 0,
+        "text": 31883136,
+        "total": 124813440,
+        "vision": 92930304
+      }
+    },
+    "checkpoint:d45ce719846c060bfa489c8fa89a9caef8ee8275ffbd2c1d75f059c85491d622": {
+      "label": "R1_seed42",
+      "repository": null,
+      "revision": "d45ce719846c060bfa489c8fa89a9caef8ee8275ffbd2c1d75f059c85491d622",
+      "generation": null,
+      "seed": 42,
+      "license": {
+        "components": {
+          "text": {
+            "declared": true,
+            "display": "Gemma",
+            "evidence_sha256": "d3898b1632eb6b9eb42a41de31aefdce1bc94c06e9246a334642febc563a1d4d",
+            "id": "gemma",
+            "repository": "OPI-PIB/PolDense-32M",
+            "revision": "ca70494a25dad90d980db7c735658dc7bf88ed25",
+            "source": "https://huggingface.co/OPI-PIB/PolDense-32M/blob/ca70494a25dad90d980db7c735658dc7bf88ed25/README.md"
+          },
+          "vision": {
+            "declared": true,
+            "display": "MIT",
+            "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+            "id": "mit",
+            "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+            "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+            "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+          }
+        },
+        "declared": false,
+        "display": "V: MIT; T: Gemma; head: brak deklaracji",
+        "id": null,
+        "kind": "local_checkpoint_components"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 196992,
+        "shared": 0,
+        "text": 31883136,
+        "total": 70470528,
+        "vision": 38587392
+      }
+    },
+    "hf:BAAI/BGE-VL-base@cc4c733ed997dbee4ac70ccffb911e70c9c24b93": {
+      "label": "bge-vl-base",
+      "repository": "BAAI/BGE-VL-base",
+      "revision": "cc4c733ed997dbee4ac70ccffb911e70c9c24b93",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "MIT",
+        "evidence_sha256": "95dca9f25180160328727cd8d173dc8e61832b8ea9d3401ddfdf84b59b481678",
+        "id": "mit",
+        "revision": "cc4c733ed997dbee4ac70ccffb911e70c9c24b93",
+        "source": "https://huggingface.co/BAAI/BGE-VL-base/blob/cc4c733ed997dbee4ac70ccffb911e70c9c24b93/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 512,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 156.51069500006543,
+            "median_ms_per_item": 156.51069500006543,
+            "p95_batch_ms": 188.3823181000139,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 35.50601899996764,
+            "median_ms_per_item": 35.50601899996764,
+            "p95_batch_ms": 37.18190004990447,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 151.5445105001163,
+            "median_ms_per_item": 2.3678829765643172,
+            "p95_batch_ms": 188.36009274999697,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 16.62117549994946,
+            "median_ms_per_item": 0.2597058671867103,
+            "p95_batch_ms": 27.070428199931484,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "bge-vl-base",
+        "parameters": {
+          "head": 0,
+          "shared": 1,
+          "text": 63428096,
+          "vision": 86192640
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 63428096,
+        "total": 149620736,
+        "vision": 86192640
+      }
+    },
+    "hf:M-CLIP/XLM-Roberta-Large-Vit-B-16Plus@15c3aee9b9e96fd7de1c1d488810a604bab98e78": {
+      "label": "mclip-b16plus",
+      "repository": "M-CLIP/XLM-Roberta-Large-Vit-B-16Plus",
+      "revision": "15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": false,
+        "display": "Brak deklaracji",
+        "evidence_sha256": "04d548a4a6471e112562a105711011bba1f880da4da5bd5e020426a8cb210280",
+        "id": null,
+        "revision": "15c3aee9b9e96fd7de1c1d488810a604bab98e78",
+        "source": "https://huggingface.co/M-CLIP/XLM-Roberta-Large-Vit-B-16Plus/blob/15c3aee9b9e96fd7de1c1d488810a604bab98e78/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 640,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 229.26649500001872,
+            "median_ms_per_item": 229.26649500001872,
+            "p95_batch_ms": 240.2399983500345,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 189.26952449999135,
+            "median_ms_per_item": 189.26952449999135,
+            "p95_batch_ms": 198.61432465002338,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 143.0097234999721,
+            "median_ms_per_item": 2.234526929687064,
+            "p95_batch_ms": 148.9044356999699,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 68.18082850000451,
+            "median_ms_per_item": 1.0653254453125705,
+            "p95_batch_ms": 69.42540234997807,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "mclip-b16plus",
+        "parameters": {
+          "head": 0,
+          "shared": 0,
+          "text": 560546432,
+          "vision": 117213824
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 0,
+        "text": 560546432,
+        "total": 677760256,
+        "vision": 117213824
+      }
+    },
+    "hf:Marqo/marqo-fashionSigLIP@c56244cc94f92419e8369fa71efdaf403b124ce8": {
+      "label": "fashion-siglip",
+      "repository": "Marqo/marqo-fashionSigLIP",
+      "revision": "c56244cc94f92419e8369fa71efdaf403b124ce8",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "1d1049f4539a231792e85554d2279b5fe9be683cfbed7df0910dc3d7cd384337",
+        "id": "apache-2.0",
+        "revision": "c56244cc94f92419e8369fa71efdaf403b124ce8",
+        "source": "https://huggingface.co/Marqo/marqo-fashionSigLIP/blob/c56244cc94f92419e8369fa71efdaf403b124ce8/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 161.72939050011337,
+            "median_ms_per_item": 161.72939050011337,
+            "p95_batch_ms": 170.9334130499883,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 63.53689249999661,
+            "median_ms_per_item": 63.53689249999661,
+            "p95_batch_ms": 83.57481205005107,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 109.89592199985054,
+            "median_ms_per_item": 1.7171237812476647,
+            "p95_batch_ms": 117.02100879988393,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 21.301623000226755,
+            "median_ms_per_item": 0.33283785937854304,
+            "p95_batch_ms": 22.654214100043646,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "fashion-siglip",
+        "parameters": {
+          "head": 0,
+          "shared": 2,
+          "text": 110271744,
+          "vision": 92884224
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 2,
+        "text": 110271744,
+        "total": 203155968,
+        "vision": 92884224
+      }
+    },
+    "hf:UCSC-VLAA/openvision-vit-small-patch16-384@74f6c00184e7e51b8c1756fd70a3eec8df7a2107": {
+      "label": "openvision-s16-384",
+      "repository": "UCSC-VLAA/openvision-vit-small-patch16-384",
+      "revision": "74f6c00184e7e51b8c1756fd70a3eec8df7a2107",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "f6cb9dc974a980fc2ea38a529e8d0a402ee8e1d179a4274cb3de16f1ee381b9d",
+        "id": "apache-2.0",
+        "revision": "74f6c00184e7e51b8c1756fd70a3eec8df7a2107",
+        "source": "https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch16-384/blob/74f6c00184e7e51b8c1756fd70a3eec8df7a2107/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 33760512,
+        "total": 55719168,
+        "vision": 21958656
+      }
+    },
+    "hf:UCSC-VLAA/openvision-vit-small-patch8-224@1ec9256da492b2676b4b1432f2065185946a3394": {
+      "label": "openvision-s8-224",
+      "repository": "UCSC-VLAA/openvision-vit-small-patch8-224",
+      "revision": "1ec9256da492b2676b4b1432f2065185946a3394",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "14867c280bea319d0edcc1d3f7bab0a4cd4d957ad6913a9dca35309d7c2c20fd",
+        "id": "apache-2.0",
+        "revision": "1ec9256da492b2676b4b1432f2065185946a3394",
+        "source": "https://huggingface.co/UCSC-VLAA/openvision-vit-small-patch8-224/blob/1ec9256da492b2676b4b1432f2065185946a3394/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 33760512,
+        "total": 55577856,
+        "vision": 21817344
+      }
+    },
+    "hf:UCSC-VLAA/openvision-vit-tiny-patch8-384@13268359ab5bf487f38c6827beaedf631e484eb4": {
+      "label": "openvision-t8-384",
+      "repository": "UCSC-VLAA/openvision-vit-tiny-patch8-384",
+      "revision": "13268359ab5bf487f38c6827beaedf631e484eb4",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "7328cb820dbe12303c1cdfd138a754b888d5283a96f9bc5ad37d0187cc748cca",
+        "id": "apache-2.0",
+        "revision": "13268359ab5bf487f38c6827beaedf631e484eb4",
+        "source": "https://huggingface.co/UCSC-VLAA/openvision-vit-tiny-patch8-384/blob/13268359ab5bf487f38c6827beaedf631e484eb4/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 11534976,
+        "total": 17390208,
+        "vision": 5855232
+      }
+    },
+    "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384@f889319e4605da4342341fdb62ad39386396d6e1": {
+      "label": "clip-b32-pl",
+      "repository": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384",
+      "revision": "f889319e4605da4342341fdb62ad39386396d6e1",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "MIT",
+        "evidence_sha256": "77e6425858a8cdbdfeab2c416f38f126195d8466dfd0a0643af200ba3bdbcfea",
+        "id": "mit",
+        "revision": "f889319e4605da4342341fdb62ad39386396d6e1",
+        "source": "https://huggingface.co/alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-16384/blob/f889319e4605da4342341fdb62ad39386396d6e1/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 512,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 57.176828000024216,
+            "median_ms_per_item": 57.176828000024216,
+            "p95_batch_ms": 61.21483784995689,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 29.061563500022203,
+            "median_ms_per_item": 29.061563500022203,
+            "p95_batch_ms": 30.73064840001507,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 116.01803250005105,
+            "median_ms_per_item": 1.8127817578132976,
+            "p95_batch_ms": 118.71415675000208,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 19.000941000001603,
+            "median_ms_per_item": 0.29688970312502505,
+            "p95_batch_ms": 19.96488780000618,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "clip-b32-pl",
+        "parameters": {
+          "head": 0,
+          "shared": 0,
+          "text": 55898112,
+          "vision": 87849216
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 0,
+        "text": 55898112,
+        "total": 143747328,
+        "vision": 87849216
+      }
+    },
+    "hf:alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768@62436cd6cd74f072dda57463b6916c95324e5b85": {
+      "label": "clip-b32-pl-32768",
+      "repository": "alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768",
+      "revision": "62436cd6cd74f072dda57463b6916c95324e5b85",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "MIT",
+        "evidence_sha256": "faac019fa37b8b4f9b63703405f1b6b62727d671ed0b2f67e6da6e18cfb6eca5",
+        "id": "mit",
+        "revision": "62436cd6cd74f072dda57463b6916c95324e5b85",
+        "source": "https://huggingface.co/alphaedge-ai/clip-ViT-B-32-multilingual-v1-pl-32768/blob/62436cd6cd74f072dda57463b6916c95324e5b85/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 512,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 57.70197200001803,
+            "median_ms_per_item": 57.70197200001803,
+            "p95_batch_ms": 62.959890250039045,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 28.18634199999792,
+            "median_ms_per_item": 28.18634199999792,
+            "p95_batch_ms": 48.61844304997476,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 117.79565449998586,
+            "median_ms_per_item": 1.840557101562279,
+            "p95_batch_ms": 121.55040329999451,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 19.853509500009636,
+            "median_ms_per_item": 0.31021108593765057,
+            "p95_batch_ms": 20.75123110001016,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "clip-b32-pl-32768",
+        "parameters": {
+          "head": 0,
+          "shared": 0,
+          "text": 68481024,
+          "vision": 87849216
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 0,
+        "text": 68481024,
+        "total": 156330240,
+        "vision": 87849216
+      }
+    },
+    "hf:alphaedge-ai/metaclip-2-worldwide-b16-384-pol-32768@10800b373c918e68abe60e38cc90bea2aa3831f7": {
+      "label": "metaclip-b16-32768",
+      "repository": "alphaedge-ai/metaclip-2-worldwide-b16-384-pol-32768",
+      "revision": "10800b373c918e68abe60e38cc90bea2aa3831f7",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "CC BY-NC 4.0",
+        "evidence_sha256": "10cb63030f331c713ec382e99081b75680ebace3554e47e3b53ed9f762ab9e29",
+        "id": "cc-by-nc-4.0",
+        "revision": "10800b373c918e68abe60e38cc90bea2aa3831f7",
+        "source": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-b16-384-pol-32768/blob/10800b373c918e68abe60e38cc90bea2aa3831f7/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 54908416,
+        "total": 141392896,
+        "vision": 86484480
+      }
+    },
+    "hf:alphaedge-ai/metaclip-2-worldwide-l14-pol-32768@ca70ffb896e9e5c616d22827ab8659f31d25bc50": {
+      "label": "metaclip-l14-32768",
+      "repository": "alphaedge-ai/metaclip-2-worldwide-l14-pol-32768",
+      "revision": "ca70ffb896e9e5c616d22827ab8659f31d25bc50",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "CC BY-NC 4.0",
+        "evidence_sha256": "b0ef793fc95ac858382daa3828eeba7544306a7c81ce978c9ec86b45aff10e94",
+        "id": "cc-by-nc-4.0",
+        "revision": "ca70ffb896e9e5c616d22827ab8659f31d25bc50",
+        "source": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-l14-pol-32768/blob/ca70ffb896e9e5c616d22827ab8659f31d25bc50/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 110870784,
+        "total": 414836992,
+        "vision": 303966208
+      }
+    },
+    "hf:alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384@bc15d9f5ddabe0497898578493a6e81288057c90": {
+      "label": "metaclip-m16",
+      "repository": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384",
+      "revision": "bc15d9f5ddabe0497898578493a6e81288057c90",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "CC BY-NC 4.0",
+        "evidence_sha256": "4fb184bd877910ee87a0fbcde8531ef8e554a4e8e1b0c791ddf73811993f0965",
+        "id": "cc-by-nc-4.0",
+        "revision": "bc15d9f5ddabe0497898578493a6e81288057c90",
+        "source": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-m16-384-pol-16384/blob/bc15d9f5ddabe0497898578493a6e81288057c90/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 512,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 212.99379300000965,
+            "median_ms_per_item": 212.99379300000965,
+            "p95_batch_ms": 220.2365372500111,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 29.58885100002817,
+            "median_ms_per_item": 29.58885100002817,
+            "p95_batch_ms": 31.749388300039527,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 243.17796549996729,
+            "median_ms_per_item": 3.799655710936989,
+            "p95_batch_ms": 310.55248959998494,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 15.581193500025847,
+            "median_ms_per_item": 0.24345614843790386,
+            "p95_batch_ms": 22.4477094500088,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "metaclip-m16",
+        "parameters": {
+          "head": 0,
+          "shared": 1,
+          "text": 46519808,
+          "vision": 38781952
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 46519808,
+        "total": 85301760,
+        "vision": 38781952
+      }
+    },
+    "hf:alphaedge-ai/metaclip-2-worldwide-m16-384-pol-32768@c3410d687df164929aafdd02f6d323b5b4f168dd": {
+      "label": "metaclip-m16-32768",
+      "repository": "alphaedge-ai/metaclip-2-worldwide-m16-384-pol-32768",
+      "revision": "c3410d687df164929aafdd02f6d323b5b4f168dd",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "CC BY-NC 4.0",
+        "evidence_sha256": "46b3778c7594ddd38460614dd9d4ca3a5dbde2150c5be761102e5cf6d9cdf3f6",
+        "id": "cc-by-nc-4.0",
+        "revision": "c3410d687df164929aafdd02f6d323b5b4f168dd",
+        "source": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-m16-384-pol-32768/blob/c3410d687df164929aafdd02f6d323b5b4f168dd/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 54908416,
+        "total": 93690368,
+        "vision": 38781952
+      }
+    },
+    "hf:alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384@006223472923ba925226b59b6acd1e3e266c2382": {
+      "label": "metaclip-s16",
+      "repository": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384",
+      "revision": "006223472923ba925226b59b6acd1e3e266c2382",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "CC BY-NC 4.0",
+        "evidence_sha256": "c8663330fbf3d294238ab86e453b45f605d5678a622be1781ed4ac6d0ad4572d",
+        "id": "cc-by-nc-4.0",
+        "revision": "006223472923ba925226b59b6acd1e3e266c2382",
+        "source": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-s16-384-pol-16384/blob/006223472923ba925226b59b6acd1e3e266c2382/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 384,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 137.6856144999863,
+            "median_ms_per_item": 137.6856144999863,
+            "p95_batch_ms": 151.04545485000216,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 18.898377999988725,
+            "median_ms_per_item": 18.898377999988725,
+            "p95_batch_ms": 20.723465849994227,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 232.41607350000493,
+            "median_ms_per_item": 3.631501148437577,
+            "p95_batch_ms": 255.66178869998453,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 13.508365000006961,
+            "median_ms_per_item": 0.21106820312510877,
+            "p95_batch_ms": 30.67385615001257,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "metaclip-s16",
+        "parameters": {
+          "head": 0,
+          "shared": 1,
+          "text": 27762816,
+          "vision": 21959424
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 27762816,
+        "total": 49722240,
+        "vision": 21959424
+      }
+    },
+    "hf:alphaedge-ai/metaclip-2-worldwide-s16-384-pol-32768@9565b93ba0049a67775c24f332e46fe12e0e1796": {
+      "label": "metaclip-s16-32768",
+      "repository": "alphaedge-ai/metaclip-2-worldwide-s16-384-pol-32768",
+      "revision": "9565b93ba0049a67775c24f332e46fe12e0e1796",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "CC BY-NC 4.0",
+        "evidence_sha256": "f175decc37f45f3e59a2364ea5309743189e58db4b987f06f3e4d7f95c9fd706",
+        "id": "cc-by-nc-4.0",
+        "revision": "9565b93ba0049a67775c24f332e46fe12e0e1796",
+        "source": "https://huggingface.co/alphaedge-ai/metaclip-2-worldwide-s16-384-pol-32768/blob/9565b93ba0049a67775c24f332e46fe12e0e1796/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 34054272,
+        "total": 56013696,
+        "vision": 21959424
+      }
+    },
+    "hf:alphaedge-ai/siglip2-base-patch16-512-pol-16384@002ad19c05defef76aae6bc20e048c5fe930995b": {
+      "label": "siglip2-pl",
+      "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-16384",
+      "revision": "002ad19c05defef76aae6bc20e048c5fe930995b",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "5bbaa3604218c2934f4881fa330db293b6bc112355e59545349b9157ae4454d1",
+        "id": "apache-2.0",
+        "revision": "002ad19c05defef76aae6bc20e048c5fe930995b",
+        "source": "https://huggingface.co/alphaedge-ai/siglip2-base-patch16-512-pol-16384/blob/002ad19c05defef76aae6bc20e048c5fe930995b/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 893.285085499997,
+            "median_ms_per_item": 893.285085499997,
+            "p95_batch_ms": 997.3454040999172,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 61.61207800005286,
+            "median_ms_per_item": 61.61207800005286,
+            "p95_batch_ms": 71.56892739996577,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 511.70777449999605,
+            "median_ms_per_item": 7.995433976562438,
+            "p95_batch_ms": 520.4695244000732,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 18.131331500001124,
+            "median_ms_per_item": 0.28330205468751757,
+            "p95_batch_ms": 19.059642750005423,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "siglip2-pl",
+        "parameters": {
+          "head": 0,
+          "shared": 2,
+          "text": 98278656,
+          "vision": 93520128
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 2,
+        "text": 98278656,
+        "total": 191798784,
+        "vision": 93520128
+      }
+    },
+    "hf:alphaedge-ai/siglip2-base-patch16-512-pol-32768@1a0edc19692189ba5ee44da531995cfd4138dd57": {
+      "label": "siglip2-pl-32768",
+      "repository": "alphaedge-ai/siglip2-base-patch16-512-pol-32768",
+      "revision": "1a0edc19692189ba5ee44da531995cfd4138dd57",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "e3b0187ee9d036b76b1b25e0aa564f4f53380e71b422ef194fa4a39a623b4352",
+        "id": "apache-2.0",
+        "revision": "1a0edc19692189ba5ee44da531995cfd4138dd57",
+        "source": "https://huggingface.co/alphaedge-ai/siglip2-base-patch16-512-pol-32768/blob/1a0edc19692189ba5ee44da531995cfd4138dd57/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 880.6313320000072,
+            "median_ms_per_item": 880.6313320000072,
+            "p95_batch_ms": 957.1095826000601,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 61.38984949996029,
+            "median_ms_per_item": 61.38984949996029,
+            "p95_batch_ms": 65.69033680000302,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 629.4874065000613,
+            "median_ms_per_item": 9.835740726563458,
+            "p95_batch_ms": 688.4345071498842,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 17.84475150009257,
+            "median_ms_per_item": 0.2788242421889464,
+            "p95_batch_ms": 20.99502345000701,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "siglip2-pl-32768",
+        "parameters": {
+          "head": 0,
+          "shared": 2,
+          "text": 110861568,
+          "vision": 93520128
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 2,
+        "text": 110861568,
+        "total": 204381696,
+        "vision": 93520128
+      }
+    },
+    "hf:apple/MobileCLIP2-S2@72424e7025436db18f15c3eff6ee8c7c15ad4481": {
+      "label": "mobileclip2-s2",
+      "repository": "apple/MobileCLIP2-S2",
+      "revision": "72424e7025436db18f15c3eff6ee8c7c15ad4481",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apple AMLR (research only)",
+        "evidence_sha256": "93a958651d2d8de899f994ee50571d07e50066300fa78d94ce5d26ad89ef76b7",
+        "id": "apple-amlr",
+        "revision": "72424e7025436db18f15c3eff6ee8c7c15ad4481",
+        "source": "https://huggingface.co/apple/MobileCLIP2-S2/blob/72424e7025436db18f15c3eff6ee8c7c15ad4481/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 512,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 87.01392949996034,
+            "median_ms_per_item": 87.01392949996034,
+            "p95_batch_ms": 99.40936024992763,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 33.96044099997653,
+            "median_ms_per_item": 33.96044099997653,
+            "p95_batch_ms": 37.60908594996977,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 97.88374600003635,
+            "median_ms_per_item": 1.529433531250568,
+            "p95_batch_ms": 99.34998129991754,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 14.893991999997525,
+            "median_ms_per_item": 0.23271862499996132,
+            "p95_batch_ms": 16.004881550003347,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "mobileclip2-s2",
+        "parameters": {
+          "head": 0,
+          "shared": 1,
+          "text": 63428096,
+          "vision": 35702992
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 63428096,
+        "total": 99131088,
+        "vision": 35702992
+      }
+    },
+    "hf:facebook/PE-Core-B16-224@a16450b46fef32363459920c2685a1b4ef13dcd9": {
+      "label": "pe-core-b16",
+      "repository": "facebook/PE-Core-B16-224",
+      "revision": "a16450b46fef32363459920c2685a1b4ef13dcd9",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "d681fa7f2878c71a6e21039e8b3e420dc4a31b4916b3f70d131b37bae6cef53e",
+        "id": "apache-2.0",
+        "revision": "a16450b46fef32363459920c2685a1b4ef13dcd9",
+        "source": "https://huggingface.co/facebook/PE-Core-B16-224/blob/a16450b46fef32363459920c2685a1b4ef13dcd9/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 1024,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 168.01549499996327,
+            "median_ms_per_item": 168.01549499996327,
+            "p95_batch_ms": 195.2478734999204,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 155.94166500000028,
+            "median_ms_per_item": 155.94166500000028,
+            "p95_batch_ms": 172.96058424990403,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 102.9729359997873,
+            "median_ms_per_item": 1.6089521249966765,
+            "p95_batch_ms": 108.45616820029134,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 28.94853749990034,
+            "median_ms_per_item": 0.4523208984359428,
+            "p95_batch_ms": 30.323991499676595,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "pe-core-b16",
+        "parameters": {
+          "head": 0,
+          "shared": 1,
+          "text": 353986560,
+          "vision": 93672960
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 353986560,
+        "total": 447659520,
+        "vision": 93672960
+      }
+    },
+    "hf:facebook/PE-Core-S16-384@aabf3b990573d8114ae6e501b4697106beac8f19": {
+      "label": "pe-core-s16",
+      "repository": "facebook/PE-Core-S16-384",
+      "revision": "aabf3b990573d8114ae6e501b4697106beac8f19",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "f29f97010c98fe6b280dbc6a3bdf8dbe10373625e749221c61597c12b431b2ad",
+        "id": "apache-2.0",
+        "revision": "aabf3b990573d8114ae6e501b4697106beac8f19",
+        "source": "https://huggingface.co/facebook/PE-Core-S16-384/blob/aabf3b990573d8114ae6e501b4697106beac8f19/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 63405056,
+        "total": 87187712,
+        "vision": 23782656
+      }
+    },
+    "hf:facebook/PE-Core-T16-384@8b4722741a516c18e7d311f158f13c600fea6c78": {
+      "label": "pe-core-t16",
+      "repository": "facebook/PE-Core-T16-384",
+      "revision": "8b4722741a516c18e7d311f158f13c600fea6c78",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "22980cf5e2cf9cab77ee89d40cddd18749956370cc34d5209b63d4e075c734e3",
+        "id": "apache-2.0",
+        "revision": "8b4722741a516c18e7d311f158f13c600fea6c78",
+        "source": "https://huggingface.co/facebook/PE-Core-T16-384/blob/8b4722741a516c18e7d311f158f13c600fea6c78/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 63405056,
+        "total": 69545600,
+        "vision": 6140544
+      }
+    },
+    "hf:google/embeddinggemma-2@914f7f89142e33e77833254d9c9b90c3cef7303b": {
+      "label": "embeddinggemma-2",
+      "repository": "google/embeddinggemma-2",
+      "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "fc5f2a2d5451782a590c564523f282c51ad6b8130653e10dd1755bd66d5d9f7c",
+        "id": "apache-2.0",
+        "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+        "source": "https://huggingface.co/google/embeddinggemma-2/blob/914f7f89142e33e77833254d9c9b90c3cef7303b/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 5369.046068999978,
+            "median_ms_per_item": 5369.046068999978,
+            "p95_batch_ms": 5499.351465699965,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 101.64046549971317,
+            "median_ms_per_item": 101.64046549971317,
+            "p95_batch_ms": 109.11155099997814,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 2671.6340359998867,
+            "median_ms_per_item": 41.74428181249823,
+            "p95_batch_ms": 2696.861848949902,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 92.97855700003765,
+            "median_ms_per_item": 1.4527899531255883,
+            "p95_batch_ms": 109.60383120003598,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "embeddinggemma-2",
+        "parameters": {
+          "head": 0,
+          "shared": 0,
+          "text": 271002624,
+          "vision": 167757824
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 0,
+        "text": 271002624,
+        "total": 438760448,
+        "vision": 167757824
+      }
+    },
+    "hf:google/siglip2-base-patch16-256@3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab": {
+      "label": "siglip2-base-256",
+      "repository": "google/siglip2-base-patch16-256",
+      "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "239d6dcaaa3ec782ef1e975b8eae2103c724f8fbe6715e915d6c59c5a7653aa9",
+        "id": "apache-2.0",
+        "revision": "3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab",
+        "source": "https://huggingface.co/google/siglip2-base-patch16-256/blob/3f9f96cb90da5dbc758b01813f2f6f1aee24c1ab/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 206.5179545000433,
+            "median_ms_per_item": 206.5179545000433,
+            "p95_batch_ms": 221.26289465002742,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 63.52943900003538,
+            "median_ms_per_item": 63.52943900003538,
+            "p95_batch_ms": 70.42752329999189,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 129.02814149998676,
+            "median_ms_per_item": 2.016064710937293,
+            "p95_batch_ms": 157.4658792000207,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 17.843448500002523,
+            "median_ms_per_item": 0.2788038828125394,
+            "p95_batch_ms": 21.97519064997664,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "siglip2-base-256",
+        "parameters": {
+          "head": 0,
+          "shared": 2,
+          "text": 282303744,
+          "vision": 92930304
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 2,
+        "text": 282303744,
+        "total": 375234048,
+        "vision": 92930304
+      }
+    },
+    "hf:google/siglip2-base-patch16-384@f775b65a79762255128c981547af89addcfe0f88": {
+      "label": "siglip2-base-384",
+      "repository": "google/siglip2-base-patch16-384",
+      "revision": "f775b65a79762255128c981547af89addcfe0f88",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "0f3f8b30bc39735672630e67cc6386049bcfb5518a705f5fbe0f005f747b055c",
+        "id": "apache-2.0",
+        "revision": "f775b65a79762255128c981547af89addcfe0f88",
+        "source": "https://huggingface.co/google/siglip2-base-patch16-384/blob/f775b65a79762255128c981547af89addcfe0f88/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 462.28562250001914,
+            "median_ms_per_item": 462.28562250001914,
+            "p95_batch_ms": 488.659505350023,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 62.02275550003833,
+            "median_ms_per_item": 62.02275550003833,
+            "p95_batch_ms": 66.43739409990417,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 291.66011000000935,
+            "median_ms_per_item": 4.557189218750146,
+            "p95_batch_ms": 299.865175299999,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 17.389880499990795,
+            "median_ms_per_item": 0.2717168828123562,
+            "p95_batch_ms": 18.6330418999205,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "siglip2-base-384",
+        "parameters": {
+          "head": 0,
+          "shared": 2,
+          "text": 282303744,
+          "vision": 93176064
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 2,
+        "text": 282303744,
+        "total": 375479808,
+        "vision": 93176064
+      }
+    },
+    "hf:google/siglip2-base-patch16-512@a89f5c5093f902bf39d3cd4d81d2c09867f0724b": {
+      "label": "siglip2-base",
+      "repository": "google/siglip2-base-patch16-512",
+      "revision": "a89f5c5093f902bf39d3cd4d81d2c09867f0724b",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "4cdfa98635bdcb823567102224c623a261b70e2c9099cf76e25af9df7b502712",
+        "id": "apache-2.0",
+        "revision": "a89f5c5093f902bf39d3cd4d81d2c09867f0724b",
+        "source": "https://huggingface.co/google/siglip2-base-patch16-512/blob/a89f5c5093f902bf39d3cd4d81d2c09867f0724b/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 910.206001499887,
+            "median_ms_per_item": 910.206001499887,
+            "p95_batch_ms": 969.5765257000061,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 60.892754000065,
+            "median_ms_per_item": 60.892754000065,
+            "p95_batch_ms": 64.91619514995364,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 627.7496559999918,
+            "median_ms_per_item": 9.808588374999871,
+            "p95_batch_ms": 691.7353035000701,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 18.068325500053106,
+            "median_ms_per_item": 0.2823175859383298,
+            "p95_batch_ms": 23.024367250150135,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "siglip2-base",
+        "parameters": {
+          "head": 0,
+          "shared": 2,
+          "text": 282303744,
+          "vision": 93520128
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 2,
+        "text": 282303744,
+        "total": 375823872,
+        "vision": 93520128
+      }
+    },
+    "hf:google/siglip2-base-patch16-naflex@b53b807d3a2d5e2b3911292f2d69e5341cdc064c": {
+      "label": "siglip2-naflex",
+      "repository": "google/siglip2-base-patch16-naflex",
+      "revision": "b53b807d3a2d5e2b3911292f2d69e5341cdc064c",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "cd709b949611f4a3fdfc79b237a25cb064ba325d69eb99c3226d6e8724bac26b",
+        "id": "apache-2.0",
+        "revision": "b53b807d3a2d5e2b3911292f2d69e5341cdc064c",
+        "source": "https://huggingface.co/google/siglip2-base-patch16-naflex/blob/b53b807d3a2d5e2b3911292f2d69e5341cdc064c/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 201.17912999999987,
+            "median_ms_per_item": 201.17912999999987,
+            "p95_batch_ms": 209.69074915000476,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 65.61080000000175,
+            "median_ms_per_item": 65.61080000000175,
+            "p95_batch_ms": 112.3957802000163,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 100.9189439999858,
+            "median_ms_per_item": 1.5768584999997781,
+            "p95_batch_ms": 110.55519519999848,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 17.60117000000605,
+            "median_ms_per_item": 0.27501828125009453,
+            "p95_batch_ms": 18.919021599997166,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "siglip2-naflex",
+        "parameters": {
+          "head": 0,
+          "shared": 2,
+          "text": 282303744,
+          "vision": 92930304
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 2,
+        "text": 282303744,
+        "total": 375234048,
+        "vision": 92930304
+      }
+    },
+    "hf:google/tipsv2-b14@ed1e4dc6b74bf3935ae099e9d5eb30fa96528454": {
+      "label": "tipsv2-b14",
+      "repository": "google/tipsv2-b14",
+      "revision": "ed1e4dc6b74bf3935ae099e9d5eb30fa96528454",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "0d27b84d5a11f19be113bbc4edec75cce636ee83a98af907c91ddfd624686895",
+        "id": "apache-2.0",
+        "revision": "ed1e4dc6b74bf3935ae099e9d5eb30fa96528454",
+        "source": "https://huggingface.co/google/tipsv2-b14/blob/ed1e4dc6b74bf3935ae099e9d5eb30fa96528454/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 1106.688097499955,
+            "median_ms_per_item": 1106.688097499955,
+            "p95_batch_ms": 1135.4157404000262,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 63.990134500045315,
+            "median_ms_per_item": 63.990134500045315,
+            "p95_batch_ms": 68.05937345005759,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 710.3338665000365,
+            "median_ms_per_item": 11.09896666406307,
+            "p95_batch_ms": 746.8806589499422,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 20.35490299999765,
+            "median_ms_per_item": 0.31804535937496325,
+            "p95_batch_ms": 21.989746049882797,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "tipsv2-b14",
+        "parameters": {
+          "head": 0,
+          "shared": 0,
+          "text": 109632000,
+          "vision": 86316288
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 0,
+        "text": 109632000,
+        "total": 195948288,
+        "vision": 86316288
+      }
+    },
+    "hf:google/tipsv2-l14@52847a71eb02a3082c370fbcd98cd799687bd4d0": {
+      "label": "tipsv2-l14",
+      "repository": "google/tipsv2-l14",
+      "revision": "52847a71eb02a3082c370fbcd98cd799687bd4d0",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "c0dc0c551c1359b31ba28b289887a281464ce545d1685515d37190e69a910ee9",
+        "id": "apache-2.0",
+        "revision": "52847a71eb02a3082c370fbcd98cd799687bd4d0",
+        "source": "https://huggingface.co/google/tipsv2-l14/blob/52847a71eb02a3082c370fbcd98cd799687bd4d0/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 1024,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 3598.765071500111,
+            "median_ms_per_item": 3598.765071500111,
+            "p95_batch_ms": 3809.088852799755,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 113.012407000042,
+            "median_ms_per_item": 113.012407000042,
+            "p95_batch_ms": 231.28337964997172,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 8629.58637949987,
+            "median_ms_per_item": 134.83728717968546,
+            "p95_batch_ms": 8719.594022199793,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 28.81094249983107,
+            "median_ms_per_item": 0.4501709765598605,
+            "p95_batch_ms": 29.81805664996955,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "tipsv2-l14",
+        "parameters": {
+          "head": 0,
+          "shared": 0,
+          "text": 183924736,
+          "vision": 304016384
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 0,
+        "text": 183924736,
+        "total": 487941120,
+        "vision": 304016384
+      }
+    },
+    "hf:jienengchen/ViTamin-S-LTT@53fdf22e7a2bc0b48b6f64bdc7c2182c5030a367": {
+      "label": "vitamin-s-ltt",
+      "repository": "jienengchen/ViTamin-S-LTT",
+      "revision": "53fdf22e7a2bc0b48b6f64bdc7c2182c5030a367",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "MIT",
+        "evidence_sha256": "48589290531494cad3e8f31e79e2c96926670aed18907e841d8f7086d446ca1c",
+        "id": "mit",
+        "revision": "53fdf22e7a2bc0b48b6f64bdc7c2182c5030a367",
+        "source": "https://huggingface.co/jienengchen/ViTamin-S-LTT/blob/53fdf22e7a2bc0b48b6f64bdc7c2182c5030a367/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 123650304,
+        "total": 145822912,
+        "vision": 22172608
+      }
+    },
+    "hf:jienengchen/ViTamin-S@a33161305bb0c4154173fdb306de6a224440f616": {
+      "label": "vitamin-s",
+      "repository": "jienengchen/ViTamin-S",
+      "revision": "a33161305bb0c4154173fdb306de6a224440f616",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "MIT",
+        "evidence_sha256": "1ab76c002c837f46fd0c7332a40a5b5b55311d2144eb8e31efe0321eeb2a8fe7",
+        "id": "mit",
+        "revision": "a33161305bb0c4154173fdb306de6a224440f616",
+        "source": "https://huggingface.co/jienengchen/ViTamin-S/blob/a33161305bb0c4154173fdb306de6a224440f616/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 40444032,
+        "total": 62469184,
+        "vision": 22025152
+      }
+    },
+    "hf:timm/ViT-B-16-SigLIP-i18n-256@ec35f9450b91a8ea263a50e31f55ae069069d1df": {
+      "label": "siglip-i18n-256",
+      "repository": "timm/ViT-B-16-SigLIP-i18n-256",
+      "revision": "ec35f9450b91a8ea263a50e31f55ae069069d1df",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "91fe399e981faf152035be1ad54218040342d7233e26188223670f42582f6ec4",
+        "id": "apache-2.0",
+        "revision": "ec35f9450b91a8ea263a50e31f55ae069069d1df",
+        "source": "https://huggingface.co/timm/ViT-B-16-SigLIP-i18n-256/blob/ec35f9450b91a8ea263a50e31f55ae069069d1df/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 199.56768899999133,
+            "median_ms_per_item": 199.56768899999133,
+            "p95_batch_ms": 234.46569625015172,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 66.86921450011596,
+            "median_ms_per_item": 66.86921450011596,
+            "p95_batch_ms": 75.38309089990207,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 103.2997054999214,
+            "median_ms_per_item": 1.614057898436272,
+            "p95_batch_ms": 121.58821799997668,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 21.533574499926544,
+            "median_ms_per_item": 0.33646210156135226,
+            "p95_batch_ms": 25.636470099925646,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "siglip-i18n-256",
+        "parameters": {
+          "head": 0,
+          "shared": 2,
+          "text": 277695744,
+          "vision": 92930304
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 2,
+        "text": 277695744,
+        "total": 370626048,
+        "vision": 92930304
+      }
+    },
+    "hf:timm/ViT-B-32-SigLIP2-256@cd1efb47643f2794413dd79ef24397c175032780": {
+      "label": "siglip2-b32-256",
+      "repository": "timm/ViT-B-32-SigLIP2-256",
+      "revision": "cd1efb47643f2794413dd79ef24397c175032780",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "611e7da4da7ee0953f727ddf88fed40ffddd41a5241ae37ab910906c935405b7",
+        "id": "apache-2.0",
+        "revision": "cd1efb47643f2794413dd79ef24397c175032780",
+        "source": "https://huggingface.co/timm/ViT-B-32-SigLIP2-256/blob/cd1efb47643f2794413dd79ef24397c175032780/README.md"
+      },
+      "efficiency": {
+        "cpu_threads": 2,
+        "device": "NVIDIA GeForce RTX 5070 Ti",
+        "dimension": 768,
+        "input_policy": "same frozen VN dev inputs; predecoded RGB; tokenization/preprocessing/host transfers included; no disk/cache/download time",
+        "measured_batches": 100,
+        "measurements": {
+          "cpu_image": {
+            "batch_size": 1,
+            "median_batch_ms": 69.06314599996222,
+            "median_ms_per_item": 69.06314599996222,
+            "p95_batch_ms": 75.67034875002037,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cpu_query": {
+            "batch_size": 1,
+            "median_batch_ms": 63.02465700002813,
+            "median_ms_per_item": 63.02465700002813,
+            "p95_batch_ms": 68.8921963499638,
+            "precision": "fp32",
+            "status": "measured"
+          },
+          "cuda_image": {
+            "batch_size": 64,
+            "median_batch_ms": 62.79291749990534,
+            "median_ms_per_item": 0.981139335936021,
+            "p95_batch_ms": 65.16472110001814,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          },
+          "cuda_query": {
+            "batch_size": 64,
+            "median_batch_ms": 20.440541500079235,
+            "median_ms_per_item": 0.31938346093873804,
+            "p95_batch_ms": 21.437694799908513,
+            "precision": "fp32-weights-bf16-autocast",
+            "status": "measured"
+          }
+        },
+        "model_alias": "siglip2-b32-256",
+        "parameters": {
+          "head": 0,
+          "shared": 2,
+          "text": 282303744,
+          "vision": 94552320
+        },
+        "probe_protocol_sha256": "67f04bb02ab8e97c46334f88a78ccae1430401130b3ce0aff3a4910acfbafe74",
+        "procedure_sha256": "7e0a2e71b0a11ca94e018403f011ba9b28d7987a2153e680aeff50fef5c19cb8",
+        "registration_sha256": "899e9c2941b4b9480069bd7c537febeb5a063bf1d325dbf23911b2bd7b49e3e1",
+        "warmup_batches": 10
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 2,
+        "text": 282303744,
+        "total": 376856064,
+        "vision": 94552320
+      }
+    },
+    "hf:unum-cloud/uform3-image-text-english-small@a8d990ed0dc6340b9c25cb47f06f86b9ecb67fa6": {
+      "label": "uform3-english-small",
+      "repository": "unum-cloud/uform3-image-text-english-small",
+      "revision": "a8d990ed0dc6340b9c25cb47f06f86b9ecb67fa6",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "Apache-2.0",
+        "evidence_sha256": "117e98a57cc4ac28fe82445b5db5e936b1eb5574b5e94012786454f2cad37758",
+        "id": "apache-2.0",
+        "revision": "a8d990ed0dc6340b9c25cb47f06f86b9ecb67fa6",
+        "source": "https://huggingface.co/unum-cloud/uform3-image-text-english-small/blob/a8d990ed0dc6340b9c25cb47f06f86b9ecb67fa6/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 0,
+        "text": 57063938,
+        "total": 78836738,
+        "vision": 21772800
+      }
+    },
+    "hf:wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M@07a4b0bc751cb64fecd2b661c048c1dd98d69444": {
+      "label": "tinyclip-39m-native",
+      "repository": "wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M",
+      "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "MIT",
+        "evidence_sha256": "2c75456df1f0b0d2f1ae56e7773890fa134ea0e163295e30f87af50f3c7f78bb",
+        "id": "mit",
+        "revision": "07a4b0bc751cb64fecd2b661c048c1dd98d69444",
+        "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-39M-16-Text-19M-YFCC15M/blob/07a4b0bc751cb64fecd2b661c048c1dd98d69444/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 44513792,
+        "total": 83101184,
+        "vision": 38587392
+      }
+    },
+    "hf:wkcn/TinyCLIP-ViT-40M-32-Text-19M-LAION400M@95ec8197b3f2fe7f747865c61ca556cf0768b2f7": {
+      "label": "tinyclip-40m-native",
+      "repository": "wkcn/TinyCLIP-ViT-40M-32-Text-19M-LAION400M",
+      "revision": "95ec8197b3f2fe7f747865c61ca556cf0768b2f7",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "MIT",
+        "evidence_sha256": "9c57c9670b24d7b53cd4bfa122c8fea9b503fc8b5810e6edc9dfffdbe2364002",
+        "id": "mit",
+        "revision": "95ec8197b3f2fe7f747865c61ca556cf0768b2f7",
+        "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-40M-32-Text-19M-LAION400M/blob/95ec8197b3f2fe7f747865c61ca556cf0768b2f7/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 44513792,
+        "total": 84205568,
+        "vision": 39691776
+      }
+    },
+    "hf:wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M@94cbbea5c7949cfe7bdafde64bcea5e403f59852": {
+      "label": "tinyclip-61m-native",
+      "repository": "wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M",
+      "revision": "94cbbea5c7949cfe7bdafde64bcea5e403f59852",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "MIT",
+        "evidence_sha256": "c74b8074a2d4c616600028851edd696d7b50314d3ca878bb9633bbbbaaa44571",
+        "id": "mit",
+        "revision": "94cbbea5c7949cfe7bdafde64bcea5e403f59852",
+        "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-61M-32-Text-29M-LAION400M/blob/94cbbea5c7949cfe7bdafde64bcea5e403f59852/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 53970944,
+        "total": 115382144,
+        "vision": 61411200
+      }
+    },
+    "hf:wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M@a2a8c6eaa2549ad66eb7c31b85022bf58273a26c": {
+      "label": "tinyclip-8m-native",
+      "repository": "wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M",
+      "revision": "a2a8c6eaa2549ad66eb7c31b85022bf58273a26c",
+      "generation": null,
+      "seed": null,
+      "license": {
+        "declared": true,
+        "display": "MIT",
+        "evidence_sha256": "02895c545cf6096f73bc5f3c9114b73f584512d63cb0a7e32e4c7d1fc6c41545",
+        "id": "mit",
+        "revision": "a2a8c6eaa2549ad66eb7c31b85022bf58273a26c",
+        "source": "https://huggingface.co/wkcn/TinyCLIP-ViT-8M-16-Text-3M-YFCC15M/blob/a2a8c6eaa2549ad66eb7c31b85022bf58273a26c/README.md"
+      },
+      "efficiency": null,
+      "parameters": {
+        "head": 0,
+        "shared": 1,
+        "text": 15169024,
+        "total": 23446016,
+        "vision": 8276992
+      }
+    }
+  },
+  "xm3600_labels": [
+    "R0_seed44",
+    "R1_seed44",
+    "R3_seed44",
+    "R3_wiki2_seed43",
+    "embeddinggemma-2",
+    "metaclip-b16-32768",
+    "metaclip-m16-32768",
+    "metaclip-s16-32768",
+    "openvision-s16-384",
+    "openvision-s8-224",
+    "openvision-t8-384",
+    "pe-core-s16",
+    "pe-core-t16",
+    "tinyclip-39m-native",
+    "tinyclip-40m-native",
+    "tinyclip-61m-native",
+    "tinyclip-8m-native",
+    "uform3-english-small",
+    "vitamin-s",
+    "vitamin-s-ltt"
+  ],
+  "validation_dataset_counts": {
+    "aro_visual_relation": 2343,
+    "mbeir_mscoco": 2093,
+    "aro_visual_attribution": 2615,
+    "sugarcrepe": 644
+  },
+  "panel_pairs": 5602,
+  "pipeline_states": {
+    "reports/visualnews_pipeline_state.json": {
+      "status": "stopped_by_request",
+      "pid": 107508,
+      "run_dir": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\visualnews_pipeline\\v1",
+      "checkpoint": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\visualnews_pipeline\\v1\\checkpoint.sqlite3",
+      "started_at": "2026-10-31T20:04:22.464123+00:00",
+      "concurrency": 10,
+      "fingerprint": "47cdc526d1a8a2f92dc6bfc3080f8492927c0098ac9bc7efb1b454ce184dac8b",
+      "total": 283012,
+      "shared_total_concurrency": 10,
+      "updated_at": "2026-10-31T20:04:30.131021+00:00",
+      "completed": 230975,
+      "routes": {
+        "ready_original": 16075,
+        "ready_recycled": 144898,
+        "ready_reused_original": 4252,
+        "ready_reused_recycled": 91,
+        "rejected_grounding": 61196,
+        "rejected_no_visual_core": 48,
+        "review_mismatch": 4129,
+        "review_recycling_failed": 286
+      },
+      "stages": [
+        {
+          "stage": "judge",
+          "status": "pending",
+          "n": 51819
+        },
+        {
+          "stage": "recheck",
+          "status": "pending",
+          "n": 9
+        },
+        {
+          "stage": "recycle",
+          "status": "error",
+          "n": 59
+        },
+        {
+          "stage": "recycle",
+          "status": "pending",
+          "n": 2
+        },
+        {
+          "stage": "terminal",
+          "status": "completed",
+          "n": 230975
+        },
+        {
+          "stage": "translate",
+          "status": "error",
+          "n": 140
+        },
+        {
+          "stage": "translate",
+          "status": "pending",
+          "n": 8
+        }
+      ],
+      "requests": 688040,
+      "ready": 165316,
+      "finalized_per_hour": 0.0
+    },
+    "reports/wikimedia_pipeline_state.json": {
+      "status": "stopped_by_request",
+      "pid": 107508,
+      "updated_at": "2026-10-31T20:15:57.671586+00:00",
+      "concurrency": 10,
+      "source": "C:\\Users\\jsowa\\datasets\\polish_culture",
+      "run_dir": "D:\\work\\translate-vision-embedder-benchmark\\pl-multimodal-benchmark-translator\\pl-multimodal-benchmark-translator\\reports\\wikimedia_pipeline\\v1",
+      "fingerprint": "690a2cd510d459a97eaf83d8a50bb93431017b860834307b21202622fb57aa87",
+      "total": 417353,
+      "routes": {
+        "ready_native_original": 9688,
+        "ready_native_recycled": 27798,
+        "ready_original": 2427,
+        "ready_recycled": 6461,
+        "ready_reused_original": 592,
+        "ready_reused_recycled": 2,
+        "rejected_grounding": 20533,
+        "review_mismatch": 83,
+        "review_recycling_failed": 6
+      },
+      "ready": 46968,
+      "requests": 237810,
+      "latest_request_at": "2026-10-31T20:15:35.132376+00:00",
+      "exclusions": {
+        "no_pl_en_caption": 3499
+      },
+      "stages": [
+        {
+          "stage": "judge",
+          "status": "error",
+          "n": 316
+        },
+        {
+          "stage": "judge",
+          "status": "pending",
+          "n": 349439
+        },
+        {
+          "stage": "recheck",
+          "status": "pending",
+          "n": 5
+        },
+        {
+          "stage": "terminal",
+          "status": "completed",
+          "n": 67590
+        },
+        {
+          "stage": "translate",
+          "status": "error",
+          "n": 3
+        }
+      ],
+      "queue_order": "A -> B -> C -> D",
+      "classes": [
+        {
+          "queue_class": "A",
+          "status": "completed",
+          "n": 61337
+        },
+        {
+          "queue_class": "A",
+          "status": "error",
+          "n": 313
+        },
+        {
+          "queue_class": "A",
+          "status": "pending",
+          "n": 40109
+        },
+        {
+          "queue_class": "B",
+          "status": "completed",
+          "n": 4797
+        },
+        {
+          "queue_class": "B",
+          "status": "error",
+          "n": 1
+        },
+        {
+          "queue_class": "B",
+          "status": "pending",
+          "n": 226673
+        },
+        {
+          "queue_class": "D",
+          "status": "completed",
+          "n": 1456
+        },
+        {
+          "queue_class": "D",
+          "status": "error",
+          "n": 5
+        },
+        {
+          "queue_class": "D",
+          "status": "pending",
+          "n": 82662
+        }
+      ],
+      "disk_free_bytes": 41651703808
+    }
+  }
+}
