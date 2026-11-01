@@ -10,6 +10,9 @@ w summary.json i REPORT.md w tym samym katalogu.
 ## Jak zweryfikowano
 Testy WSL deduplikacji i ograniczonego czyszczenia passed.
 Smoke: pełne wyniki XM3600 w podkatalogach joba, smoke/complete.json z SHA.
+Końcowy snapshot: reports/leaderboard_requested_20261101/launch-receipt.json,
+SHA256 14a08d5042b20c568dbfc7257b63a3cda2fda90be928546628d8fe3491f5ab20.
+Potwierdza ukończone modele, cleanup i status publishera pushed.
 Chronione pliki weryfikowane przed pracą; bez instalowania zależności.
 Pierwszy preflight bez inferencji zachowano; poprawiony przed właściwym startem.
 

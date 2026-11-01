@@ -6,6 +6,7 @@ wznawialna kolejka zwykłych ocen referencji, F01-b odłożony.
 Job: training/runs/f_series/leaderboard-requested-20261101/JOB.json.
 Nie jest to trening ani selekcja F; liczniki F GUARD/TEST bez zmian.
 Następny etap: odbiór kolejki. F01 pozostaje in_progress.
+Smoke i publikacja potwierdzone: [snapshot z SHA](../leaderboard_requested_20261101/launch-receipt.json).
 
 Aktualizacja: 2026-11-01; S03-F01-a zakończono: protokół v3-F i podział VizWiz A/B zamrożone z SHA. F01 in_progress; następny etap S04-F01-b.
 

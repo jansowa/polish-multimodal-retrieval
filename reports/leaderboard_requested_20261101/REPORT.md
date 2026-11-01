@@ -39,3 +39,12 @@ Poprawiono kontrolę D do małych logów, oddzielono publisher Windows i zastąp
 historyczny sync eksportem dopisującym. Rejestrację poprawiono przed inferencją.
 Wznowienie i kontrola: retrieval_benchmark/REQUESTED_QUEUE.md.
 Odbiór i końcowe potwierdzenie kompletu oraz pushu są osobnym etapem.
+
+Snapshot przy domknięciu: launch-receipt.json, SHA256
+14a08d5042b20c568dbfc7257b63a3cda2fda90be928546628d8fe3491f5ab20:
+24 nowe pomiary z ukończonych 4 modeli, cleanup z SHA/rozmiarami, publisher pushed.
+Nomic działa dalej; jego częściowe wyniki pozostają na dysku do eksportu po modelu.
+Zdalny snapshot miał niezależną historię, bez plików nieobecnych lokalnie;
+różnice wspólnych plików pochodziły ze wcześniejszych etapów. Połączono przodków
+strategią ours, zachowując bieżący checkout, a następnie wypchnięto fast-forward.
+Publisher Windows poprawiono: prawidłowy stderr Git nie oznacza błędu procesu.

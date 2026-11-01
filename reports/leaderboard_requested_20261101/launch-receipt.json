@@ -1,0 +1,347 @@
+{
+  "cleanup": [
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/Alibaba-NLP--gme-Qwen2-VL-2B-Instruct/cleanup.json",
+      "sha256": "943bd1154cc1bf37a8105a1c9998c551e833ee84955f50748e11442b9e527a1b",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:55:35.492210+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/BAAI--BGE-VL-large/cleanup.json",
+      "sha256": "14339ab20ed846fcae806ef9ac4a0eea39721cf7c316ea23b1e743df57c9bfca",
+      "value": {
+        "removed": [
+          {
+            "bytes": 855304818,
+            "partial": false,
+            "path": "/home/jsowa/.cache/pl_mmb_requested_20261101/hub/models--BAAI--BGE-VL-large/blobs/6d6c5dcd259b71a49a51916e5fd1dc248563ce08b41a713eb00dd296dfd8f5f4",
+            "sha256": "6d6c5dcd259b71a49a51916e5fd1dc248563ce08b41a713eb00dd296dfd8f5f4"
+          }
+        ],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T14:09:07.962411+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/M-CLIP--XLM-Roberta-Large-Vit-B-16Plus/cleanup.json",
+      "sha256": "c7a8ff7ba7799056549ea4e2d0c2e2d1178aca97f6fe855401338dbf6a23f1ea",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:54:51.422796+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/Qwen--Qwen3-VL-Embedding-2B/cleanup.json",
+      "sha256": "66f4e5673368ba4b8da0142bf4d12d5ab2b1aa350bea52c7baa4a62f11119156",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:55:13.174863+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/Qwen--Qwen3-VL-Embedding-8B/cleanup.json",
+      "sha256": "85a923bd87080fbdaf4cbcc2e5105e78ffa33e704371798fd50c6444a4e91ab2",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:55:50.117011+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/alphaedge-ai--clip-ViT-B-32-multilingual-v1-pl-16384/cleanup.json",
+      "sha256": "46cefe3c676ced400dfa5e8116cd7ad43c2fe41b684d65a8f88f6b6f6d18123b",
+      "value": {
+        "removed": [
+          {
+            "bytes": 222030624,
+            "partial": false,
+            "path": "/home/jsowa/.cache/pl_mmb_requested_20261101/hub/models--alphaedge-ai--clip-ViT-B-32-multilingual-v1-pl-16384/blobs/827fb95b5a199446ee4463dd2d0843564a56a4286035c4059e2e4aa63e9665b7",
+            "sha256": "827fb95b5a199446ee4463dd2d0843564a56a4286035c4059e2e4aa63e9665b7"
+          },
+          {
+            "bytes": 605247071,
+            "partial": false,
+            "path": "/home/jsowa/.cache/pl_mmb_requested_20261101/hub/models--openai--clip-vit-base-patch32/blobs/a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+            "sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f"
+          }
+        ],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T14:04:41.111906+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/alphaedge-ai--siglip2-base-patch16-512-pol-16384/cleanup.json",
+      "sha256": "ad7f91c4a21b1157f67e1d3c19e49ee3df5c5547fd0e9fdebfa94dd8d6e3a0e0",
+      "value": {
+        "removed": [
+          {
+            "bytes": 767243552,
+            "partial": false,
+            "path": "/home/jsowa/.cache/pl_mmb_requested_20261101/hub/models--alphaedge-ai--siglip2-base-patch16-512-pol-16384/blobs/9385fbcbaa32972080bf84eca393e9e23e74d9ad81b4cfc26b8f4c128d6c7475",
+            "sha256": "9385fbcbaa32972080bf84eca393e9e23e74d9ad81b4cfc26b8f4c128d6c7475"
+          }
+        ],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T14:00:20.388783+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/alphaedge-ai--siglip2-base-patch16-512-pol-32768/cleanup.json",
+      "sha256": "5a2f0c439a4863e542fa14f46fd49f1b05354e2d07ddf7d2618932e04340b5de",
+      "value": {
+        "removed": [
+          {
+            "bytes": 817575248,
+            "partial": false,
+            "path": "/home/jsowa/.cache/pl_mmb_requested_20261101/hub/models--alphaedge-ai--siglip2-base-patch16-512-pol-32768/blobs/85f9041b4fa521727757c1bcca40052f2bae009c00bfbf2f55cf89463fba3f81",
+            "sha256": "85f9041b4fa521727757c1bcca40052f2bae009c00bfbf2f55cf89463fba3f81"
+          }
+        ],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T14:02:08.970100+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/google--siglip2-large-patch16-512/cleanup.json",
+      "sha256": "7202b09d6933848151876243cba200b907c3d829d3e8d5459b372cf5cba706a4",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:54:58.855918+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/google--siglip2-so400m-patch16-512/cleanup.json",
+      "sha256": "b2c5ff0d6eafec7959ca3976b813abf7c63a7262431758f77ec6d0d67c11f242",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:55:20.645972+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/laion--CLIP-ViT-H-14-laion2B-s32B-b79K/cleanup.json",
+      "sha256": "cb72b1c531d0a12f684a9107c04fba083abe7bd84c89a74f2ccfbc0a76ef7469",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:55:06.313719+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/laion--CLIP-ViT-bigG-14-laion2B-39B-b160k/cleanup.json",
+      "sha256": "3173d77f649fe4f6c49d191def27594c9246adbc778b8ea4e67743cb4470c4e5",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:55:42.426748+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/laion--CLIP-ViT-g-14-laion2B-s12B-b42K/cleanup.json",
+      "sha256": "3e1d2c499b92e32adcb30d109a8fa564034a0aca4ca3cb00ca31503c8405a8d3",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:55:28.104165+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/nomic-ai--nomic-embed-vision-v1.5/cleanup.json",
+      "sha256": "ea3d74469aa110f94602a55eba027da3f6bff4931470420bd4f1cb86d2f641f0",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:54:36.259924+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/timm--ViT-B-16-SigLIP-i18n-256/cleanup.json",
+      "sha256": "f70571185c574bfdaec3259c94cd3a83d25bde2ee050c9c0e777972f045950d7",
+      "value": {
+        "removed": [],
+        "shared_cache_untouched": true,
+        "time": "2026-11-01T13:54:43.970161+00:00"
+      }
+    }
+  ],
+  "completed": [
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/BAAI--BGE-VL-large/complete.json",
+      "sha256": "ce7e008a7961c94e5de02e9197a3f1e4ceaac5694e29c4f35ed436b7aa842759",
+      "value": {
+        "artifacts": [
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/1edee2cd5a89044b440e2fa1c25de100a7444a4026bf64ca1b9cdd254c56881d/result.json",
+            "sha256": "48337a794db865552c7de4b8b24d0e8be1c02b76752645b816be6ba9d725d24b"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/59a7b35bde400e4808f1eaaa405b04810bc9f9a157718da7c5637cfc6efada40/result.json",
+            "sha256": "8d4a1907b90b7cefed525e1e8dff38784f13459f0bd2ad1fff56bc51894b4f9a"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/e596c947bcc3c5bce954a8bdc8b06cc12381e655f6c0d450317d1dfa7ee0df99/result.json",
+            "sha256": "21ce4905b865d24f516d55e20bf5e0503f7a50ac40d6f38f2da0dcaebef56b2d"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/7406f1b291d3e4d2e4c09180a75419fadfa9b0828407da6094f41d1673cf4009/result.json",
+            "sha256": "e107d079a5b89504fa08c66f486b84b5d74c20f3dd59ba25b4721f5aa593df4d"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/586c5b4011a936cfbb6d7c2ec019c53392ccd46d7e82f184a863d78388aafe3d/result.json",
+            "sha256": "17cdb587e6eaab821b10fa902b351305aaac22485a98e1c68e14a65bbbd0aa49"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/f5f75ad1c86e846e5197b9b33c8aaec0f9fd1348e8c074fa4b02b996e18cc56b/result.json",
+            "sha256": "bffdbc8bdd14e9cff5fad48448625c8550c384d66c5a2cdc76f56bef3596973e"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/4ad00d35a039fe783fa7b4bf4d38827d5c1c211af570b2c33f249df1bb3849c8/result.json",
+            "sha256": "969a03513e9e80a50554528155bbd84c6fdeec56e09ad6b480e31b7040c8da62"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/5963b55fd219ed87c83b2de807c1970d7f59dca501d34725ced7ac88b780b184/result.json",
+            "sha256": "688ac523985758e632b90a372bdb4a6841c312e4d1cd606ea89ae8e526798124"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/60cef4c427c2df3035258680066590da0fbc595124fda0055a34d3612dcf1742/result.json",
+            "sha256": "eec4d359e9e7fdc22bb5a8bc621a942a9dffa3794b1ed05e6dd66302ee43be25"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/e2f1080f5c1fdd9263fa2fb8c1ec7ff76256e084a75b059bda06bce5dca3cfbc/result.json",
+            "sha256": "25b867e875e455f750005b16b857dcce8ae6fe1da73e9ed261c473d9c02fb7ae"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/080b6ad04c57e5f5031d243d5eff27ad4908aa61959cd7717be1b404f6b79184/result.json",
+            "sha256": "da8ae086d421f449a780acb72dbb9cddaf1c0b57c8b17e6e8d11270979a7e455"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/835d55cfbd524b50ad452daf2421a82605bdd98869a36630e5f566725d93eb7e/result.json",
+            "sha256": "575fd0a61cccf6c3df16743d047c79be5b69467932c786ee4a49f26d6ebc62e0"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/b8dc3b824f9884bb38490060455a2812cb62b0d72e7db492dea17b5d229179e6/result.json",
+            "sha256": "af09bb491505692f834502acaaedacec30e2498e4084796dd1a733c9476331c4"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/3669a63e97e3c0ce674f6fea93177ac5c3ee8b6576de9d956afe82bc27b3866c/result.json",
+            "sha256": "f55497edf1611dea1b1d9fbbf110da172a5c282f67647725f58dd5b8b7ef9761"
+          }
+        ],
+        "status": "complete",
+        "time": "2026-11-01T14:09:06.581700+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/alphaedge-ai--clip-ViT-B-32-multilingual-v1-pl-16384/complete.json",
+      "sha256": "bf263b457836625a88be6548ba3a4603f9542d6b738d16d59159fa8d5e106d51",
+      "value": {
+        "artifacts": [
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/c1a69352adddadd0cca2c016b2d6376b1428a042db6f03102bbdf74a84e4e013/result.json",
+            "sha256": "860c6ee4fe83c7c81cb4dae528c1940a12a6e72c2a23163d7e1e197f4ed7aaa7"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/b548b10a0482decbec36987c987ae600b054361782e9bfb53f727704bf33614c/result.json",
+            "sha256": "b5ab1bd3748ff86725714b96b230584afdd391d489b944bfc0a3900255a6a53a"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/843bd68d22844d6005d592a408d75b57e84a363a37d74e8ddf1cf26a21ecb12c/result.json",
+            "sha256": "c439aa26cdb5319a58d79f86ec0973eb9309290a0d3710922145204d238ab453"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/8f43f3ad429a7ac1f7e6d5008cd51ff11762062426e62c677b5df7092770c8a9/result.json",
+            "sha256": "faba8f8b8ea07840b50bc8a1b0b549e5ad338f2a1174e1b2bfa61ba75a2ad437"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/18eeb7856372e49e8ea73eae6800af48c93fa5970b7a2519b17c07da71b7152a/result.json",
+            "sha256": "368110e180dc987894fb2198b7729e2d63380160072bd7691e8fdf2891f9c33f"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/55453e90d58248567fb6f7d3eca0b2813318f2993110a4d03c1a651f5a0e7828/result.json",
+            "sha256": "e79c71819142aad7665f11b885951f0b63f8d2e6a11baf9a7ec0f6eae741cb6f"
+          }
+        ],
+        "status": "complete",
+        "time": "2026-11-01T14:04:39.758078+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/alphaedge-ai--siglip2-base-patch16-512-pol-16384/complete.json",
+      "sha256": "82d427388a7531d8f4b2bd87b81045f4aae06d2f68e9df4ca40c21813f0f8531",
+      "value": {
+        "artifacts": [
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/387486db8322853c48a43d27982c0f6545903860edaa847496cdab6c207ee77c/result.json",
+            "sha256": "1114f0f1e1b69f28db3b5b01726c7781c3c0029928646f7cfadf0d2c91a13598"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/43938a53e03f13c70f7f0339756201704f6a11912c98492ed802be40048d2dab/result.json",
+            "sha256": "9e8c346ae937b6ba37b09fac539a309ed90b4233f880911aac41cae557580aa5"
+          }
+        ],
+        "status": "complete",
+        "time": "2026-11-01T14:00:19.047781+00:00"
+      }
+    },
+    {
+      "path": "training/runs/f_series/leaderboard-requested-20261101/alphaedge-ai--siglip2-base-patch16-512-pol-32768/complete.json",
+      "sha256": "a83fa5b71dc9a73b7a0422613a47f5608711fb5769223bd4d8f671a381c8b5de",
+      "value": {
+        "artifacts": [
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/0e20c29bbf2ed20d202b7a7391c443bb7a6aaa93d34240be84922c712ef42d6a/result.json",
+            "sha256": "a665af14e086e214e698873532c8391f738f1f1412e400cefe0b1430d717880d"
+          },
+          {
+            "path": "/mnt/c/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs/09ce36fbf6363e8b949b089237ff58b3729cd18d457ddb8d21fda5b9649df078/result.json",
+            "sha256": "afdd1bdb6120b277a745b6bdebc60a4a6f7df9c9da345f5a8da01de8633ac81e"
+          }
+        ],
+        "status": "complete",
+        "time": "2026-11-01T14:02:07.824555+00:00"
+      }
+    }
+  ],
+  "git_history": "Remote initial snapshot had no remote-only files; local changes in six shared files predated this stage. Merged remote ancestry with ours strategy, preserved current tree, then fast-forward pushed main.",
+  "new_results": 24,
+  "public_results_sha256": "2474243bc6ee5c61801430f39c842c065b1a6d6335ea7b0189c364cbeb4b2beb",
+  "publisher": {
+    "commit": "1f3ecd9bf120a0450d1041efd09f4aac6e3be397",
+    "pid": 250296,
+    "results_sha256": "2474243bc6ee5c61801430f39c842c065b1a6d6335ea7b0189c364cbeb4b2beb",
+    "status": "pushed",
+    "time": "2026-11-01T14:14:12.5348538Z"
+  },
+  "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+  "state": {
+    "index": 4,
+    "model": "nomic-embed-vision-v1.5",
+    "status": "running",
+    "supervisor_pid": 550636,
+    "time": "2026-11-01T14:09:36.002725+00:00",
+    "worker_pid": 554544
+  },
+  "tests": "python -m unittest retrieval_benchmark.tests.test_requested_queue -v",
+  "ticket": {
+    "estimated_end": "Within 48 hours; 8B CPU offload may extend runtime; not a measured ETA.",
+    "git_target": "origin main",
+    "log": "training/runs/f_series/leaderboard-requested-20261101/supervisor.log",
+    "output": "C:/Users/jsowa/benchmark-translations/retrieval-benchmark-v1/runs",
+    "pid": 550636,
+    "registration": "reports/leaderboard_requested_20261101/registration.json",
+    "registration_sha256": "c6394bce1059a1bf100106f2a6471f1cb86f343aef2a63c9a87d50db9b927707",
+    "resume_command": "~/.venvs/pl-mmb-benchmark/bin/python retrieval_benchmark/requested_queue.py start",
+    "run_id": "leaderboard-requested-20261101",
+    "simultaneous_models": 1,
+    "start_command": "~/.venvs/pl-mmb-benchmark/bin/python retrieval_benchmark/requested_queue.py start",
+    "started": "2026-11-01T13:58:50.335821+00:00",
+    "state": "training/runs/f_series/leaderboard-requested-20261101/STATE.json",
+    "user_authorized_weights_cleanup": true
+  }
+}
