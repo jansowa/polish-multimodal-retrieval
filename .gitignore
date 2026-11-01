@@ -71,3 +71,6 @@ training/runs/f_series/**
 /reports/data_study_20261030/**/STATUS.json
 /reports/data_study_20261030/**/TRAINING_STATUS.json
 /reports/ood_eval_20261030/resume_state.json
+
+# Generated Sites snapshot has its own Git history; canonical browser sources are tracked.
+/data_collection/browser_site/

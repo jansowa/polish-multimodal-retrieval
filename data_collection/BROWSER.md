@@ -85,3 +85,24 @@ Testy API, filtrów, stronicowania, odczytu i eksportu są w
 `tests/data_collection/test_browser.py`. Pełny test interfejsu desktop/mobile
 znajduje się w `tests/data_collection/browser_ui_check.mjs`; korzysta z lokalnego
 Chrome z DevTools na porcie 9335 i nie wymaga dodatkowych pakietów Node.
+
+
+## Wersjonowanie przeglądarki i migawki
+
+Przeglądarka pozostaje narzędziem projektu do ręcznej kontroli obrazów, podpisów
+i wyników scrapowania. W głównym repozytorium wersjonujemy skrypt
+[`browse.py`](browse.py), implementację serwera i eksportera w
+[`src/pl_mmb_collection/browser/`](../src/pl_mmb_collection/browser/), źródła
+interfejsu `browser/web/`, konfiguracje oraz testy w `tests/data_collection/`.
+
+`data_collection/browser_site/` to wygenerowany snapshot z osobnym repozytorium
+Git i lokalną konfiguracją tożsamości Sites. Jest ignorowany wyłącznie przez
+repozytorium nadrzędne; jego pliki, własna historia i konfiguracja hostingu
+pozostają na dysku. Reguła ignorowania nie zmienia opublikowanej strony.
+Źródłem zmian interfejsu jest `src/pl_mmb_collection/browser/web/`.
+
+Do pracy z aktualnymi danymi uruchom `python data_collection/browse.py serve --port 8766`.
+Do przygotowania nowej migawki użyj
+`python data_collection/browse.py export --site-dir data_collection/browser_site`.
+Eksport odświeża lokalny snapshot; publikacja Sites jest osobną czynnością.
+Nie dodawaj wygenerowanego katalogu do repozytorium nadrzędnego jako gitlink.
