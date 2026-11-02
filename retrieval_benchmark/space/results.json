@@ -5095,6 +5095,27 @@
       "trained_on_visualnews": true,
       "trained_on_wiki": false
     },
+    "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286": {
+      "efficiency": null,
+      "label": "gme-Qwen2-VL-2B-Instruct",
+      "license": {
+        "display": "apache-2.0",
+        "spdx": "apache-2.0",
+        "status": "reported",
+        "url": "https://huggingface.co/Alibaba-NLP/gme-Qwen2-VL-2B-Instruct/blob/9cfa6413f704a7c1cf5064d240748e10c876b286/README.md"
+      },
+      "parameters": {
+        "head": 0,
+        "shared": 0,
+        "text": 1543714304,
+        "total": 2208985600,
+        "vision": 665271296
+      },
+      "repository": "Alibaba-NLP/gme-Qwen2-VL-2B-Instruct",
+      "representative": true,
+      "revision": "9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "role": "reference"
+    },
     "hf:BAAI/BGE-VL-base@cc4c733ed997dbee4ac70ccffb911e70c9c24b93": {
       "efficiency": {
         "cpu_threads": 2,
@@ -38214,6 +38235,580 @@
       "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
       "tokenization": {
         "context_limit": 8192,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7373844278543263,
+          "ndcg@10": 0.7769586400694893,
+          "recall@1": 0.6385,
+          "recall@10": 0.9115,
+          "recall@5": 0.866
+        },
+        "t2i": {
+          "mrr": 0.6877727511163316,
+          "ndcg@10": 0.7245770218894991,
+          "recall@1": 0.5961058412381428,
+          "recall@10": 0.8562156764852721,
+          "recall@5": 0.7953070394408387
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "bd61046a4623797e428db717f0241ed2cf04439b89a2a487401cc7aa05ae84b9",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.723345313407514,
+          "ndcg@10": 0.6611371880672705,
+          "recall@1": 0.6205170975813178,
+          "recall@10": 0.9199332777314428,
+          "recall@5": 0.8571031415068112
+        },
+        "t2i": {
+          "mrr": 0.6258618869988791,
+          "ndcg@10": 0.6715979940368978,
+          "recall@1": 0.5141330333286458,
+          "recall@10": 0.836591196737449,
+          "recall@5": 0.7593868654197722
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "b231d3fac5f6c27cfe413420e8cf85b784684a60f1d8dec081dc08bef2e21065",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.847468853768799,
+          "ndcg@10": 0.6943767400467674,
+          "recall@1": 0.7689075630252101,
+          "recall@10": 0.9726890756302521,
+          "recall@5": 0.9453781512605042
+        },
+        "t2i": {
+          "mrr": 0.7120221709936033,
+          "ndcg@10": 0.7554415986179177,
+          "recall@1": 0.6049304677623262,
+          "recall@10": 0.9034976822587442,
+          "recall@5": 0.8468183733670459
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "312770e8dd381e466079ca6d2009cdbe8f1473a6e138f5562388a7a3f958e0a4",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xm3600_pl",
+      "exposure": "unknown",
+      "gallery_sha256": "1e75286a1b828c34252d4b7699f7f574a2d42c9877d1bf1a5c0b6e21aebcbd11",
+      "manifest_sha256": "669a9642e00f6a9a5df9d27266d0ef06e19c53a010597f51ddc2c1ba671dfed1",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.705030455450625,
+          "ndcg@10": 0.636808416633297,
+          "recall@1": 0.5991103697525716,
+          "recall@10": 0.9110369752571588,
+          "recall@5": 0.845148735056992
+        },
+        "t2i": {
+          "mrr": 0.6175735919520131,
+          "ndcg@10": 0.6638304764532317,
+          "recall@1": 0.5047110111095486,
+          "recall@10": 0.8311067360427506,
+          "recall@5": 0.7541836591196738
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "53f0fd8b537ed9bfce1410b70d50f66b02ad9057fcdc6ef52668d04099bceaad",
+      "query_counts": {
+        "i2t": 3597,
+        "t2i": 7111
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "687519561556b565ad392d61ebd1d6f77eb6b0601ab860a93f8a2b9cb4fb48de",
+      "text_gallery_sha256": "794296b3af9d64e0275d1d71aa9fbbb44542d74d7798d46c21c733c514667dd2",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "VN_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "6639b9b6aef677d02d85fc499a7300cabbb97c37a783bc2ea434b13c5b51e049",
+      "manifest_sha256": "750e5dbabead207b2a033f6229b70ea490ea2c380e2e1d4810df9adfa780e4eb",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.7348266704089407,
+          "ndcg@10": 0.7754781604645643,
+          "recall@1": 0.637,
+          "recall@10": 0.9135,
+          "recall@5": 0.8625
+        },
+        "t2i": {
+          "mrr": 0.6679050949468969,
+          "ndcg@10": 0.7059639632522139,
+          "recall@1": 0.5741387918122816,
+          "recall@10": 0.8427358961557664,
+          "recall@5": 0.7798302546180729
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "0be09c7246ce9c61cb58f96f3315a5a4e1501fb6e987d198f0ae19f145b25ffd",
+      "query_counts": {
+        "i2t": 2000,
+        "t2i": 2003
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "933089db17bb913d4835cdb7a2dcf7cd240659d792ea65d88416fb886017c2cd",
+      "text_gallery_sha256": "be858f95fd6e60625e2bba147ceb745f9299535bb600bc41644d1cb3b9bb2604",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6424016057646715,
+          "ndcg@10": 0.46017908247841116,
+          "recall@1": 0.549,
+          "recall@10": 0.826,
+          "recall@5": 0.756
+        },
+        "t2i": {
+          "mrr": 0.5250123898058118,
+          "ndcg@10": 0.5695871915998334,
+          "recall@1": 0.4172077922077922,
+          "recall@10": 0.7395640074211502,
+          "recall@5": 0.6500463821892394
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "377ee258e7f36fcdc404ed82bcdd29646f2eb6a73661a32ddc5215fcfc13ae0f",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "vizwiz_pl_local_validation",
+      "exposure": "unknown",
+      "gallery_sha256": "e287203f68b7a74568885f247b00163320b47ad5abdf7d541ad0b9ffffda83af",
+      "manifest_sha256": "19aae8e044fa78abc7aed86c08a0a6d28945fc389cc7d064e9c05433d9ae4bfa",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6663643558187303,
+          "ndcg@10": 0.48420297772355503,
+          "recall@1": 0.577,
+          "recall@10": 0.834,
+          "recall@5": 0.78
+        },
+        "t2i": {
+          "mrr": 0.5308680483467026,
+          "ndcg@10": 0.5750285623660712,
+          "recall@1": 0.42115027829313545,
+          "recall@10": 0.7428107606679035,
+          "recall@5": 0.6579313543599258
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "ecbafb5068d767c3809d954b401c73be5c5f96a1f8ecf19a9c8bf06276ddfd49",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 4312
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "73df4af4aa32f484a5c86fe18292fe7f65938a12e8d5fbd0fc07372617dc5ca9",
+      "text_gallery_sha256": "3691ef02da41d8a98dfa510d519322fdda0c382dea0541ad11c5f4e8e977b811",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.5549375702342999,
+          "ndcg@10": 0.6030147320069295,
+          "recall@1": 0.4357682619647355,
+          "recall@10": 0.7808564231738035,
+          "recall@5": 0.6876574307304786
+        },
+        "t2i": {
+          "mrr": 0.5621256084653735,
+          "ndcg@10": 0.587836894437952,
+          "recall@1": 0.4652567975830816,
+          "recall@10": 0.7492447129909365,
+          "recall@5": 0.6827794561933535
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "17daf23d86fa506aea63da4911090b48ef22240b162182914535e8742fbec059",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "flickr30k_pl_local_test",
+      "exposure": "unknown",
+      "gallery_sha256": "b558c18c3e5a12bd73b77a8728f7baf75001e162171619288a5ecf21fb9cb120",
+      "manifest_sha256": "bdd6b911bc1680de9518aca9503732cdfb005c29f410c85503cf3aad94f55807",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.8430194957980874,
+          "ndcg@10": 0.6876231047220098,
+          "recall@1": 0.7626050420168067,
+          "recall@10": 0.9747899159663865,
+          "recall@5": 0.944327731092437
+        },
+        "t2i": {
+          "mrr": 0.7104691159694622,
+          "ndcg@10": 0.7536969213658499,
+          "recall@1": 0.6038769490096924,
+          "recall@10": 0.9013906447534766,
+          "recall@5": 0.8415507796038769
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "49fb18812c5215e731ec47fcdaf50ef41490048d45b9787c006296eb4f610c2b",
+      "query_counts": {
+        "i2t": 952,
+        "t2i": 4746
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "36c5368981fa019b8ac68733a71bae9cb8d37c1a2ee339dfd6a64337189ae2e2",
+      "text_gallery_sha256": "e0cac91c3315ca788d4008f693fb4f6a484d2634a8c0865bc082e9667be14f97",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "wiki_native_dev",
+      "exposure": "unknown",
+      "gallery_sha256": "a2b295f8f875c84dfb635fce1ff5b9c35ff86f640a6dd141df8309ba7e6c0846",
+      "manifest_sha256": "e761b644719b8d8795bc56716fa6f67bdc1f5531b9f0e2f76955a1ca91e2c4a3",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.5898567328417194,
+          "ndcg@10": 0.6359956076834772,
+          "recall@1": 0.473551637279597,
+          "recall@10": 0.8035264483627204,
+          "recall@5": 0.7329974811083123
+        },
+        "t2i": {
+          "mrr": 0.5805977263583185,
+          "ndcg@10": 0.6194387360895269,
+          "recall@1": 0.4652567975830816,
+          "recall@10": 0.8036253776435045,
+          "recall@5": 0.7311178247734139
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "957036984d128de794a323e15c76d94995b3d51b67a6f2ff2fbf26d24eb6805b",
+      "query_counts": {
+        "i2t": 397,
+        "t2i": 331
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "e0bb5f476df707259d86101f382f4448a31eb4701ebea9757ab4fe27c1d5904d",
+      "text_gallery_sha256": "c7ae6c3425c02e8eba0e9e2a4152a7b33990e429c5447bcefaf8fb457e630877",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6588931952693158,
+          "ndcg@10": 0.7057645154724068,
+          "recall@1": 0.547,
+          "recall@10": 0.874,
+          "recall@5": 0.801
+        },
+        "t2i": {
+          "mrr": 0.6862935872229783,
+          "ndcg@10": 0.7316239230091608,
+          "recall@1": 0.575,
+          "recall@10": 0.89,
+          "recall@5": 0.831
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "8f02e8b1ebbbc7c9696764bb131834311035cb621068dea53cad8607a76def6c",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6798986531400464,
+          "ndcg@10": 0.7284977872495613,
+          "recall@1": 0.5696767001114827,
+          "recall@10": 0.8985507246376812,
+          "recall@5": 0.8149386845039019
+        },
+        "t2i": {
+          "mrr": 0.6963875485178578,
+          "ndcg@10": 0.7428783607304091,
+          "recall@1": 0.5841694537346711,
+          "recall@10": 0.903010033444816,
+          "recall@5": 0.8405797101449275
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "8b8fda341743bcc196302a487c36fb10ce1a7be93decaaccd8efe2ee6d9f765d",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_full_1k",
+      "exposure": "unknown",
+      "gallery_sha256": "9040921937dbd9ea2513d05b043fd5f4f15ec4e79cd754467653963d79182c3f",
+      "manifest_sha256": "770b90eebb795c5e93c8afeabc1a2443defd6f03f2843ab9e6b6c5d8baadf705",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6755280983241876,
+          "ndcg@10": 0.7233887356771731,
+          "recall@1": 0.569,
+          "recall@10": 0.892,
+          "recall@5": 0.805
+        },
+        "t2i": {
+          "mrr": 0.6865568129103097,
+          "ndcg@10": 0.7323316475283453,
+          "recall@1": 0.573,
+          "recall@10": 0.892,
+          "recall@5": 0.83
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "author_recommended",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "58045635b5b7c42e351732d95bd0d779f3d9688210f3b2b0492c7cafedf4294c",
+      "query_counts": {
+        "i2t": 1000,
+        "t2i": 1000
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "725fefb7596d1b5001cfdc4183b1a0753cfaa35ac3a1fb26e9f5306542728671",
+      "text_gallery_sha256": "4a7d9a432b10180dd17665e66abd3f8bc5a2a39c60a4771e0ae5891da464d46f",
+      "tokenization": {
+        "context_limit": 1800,
+        "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
+        "status": "unavailable"
+      }
+    },
+    {
+      "dataset_id": "xtd10_no_overlap",
+      "exposure": "unknown",
+      "gallery_sha256": "2a4728e543e636ff80a21e3fe17919692c7ebeb3a9c752834f522f9fbc83ed10",
+      "manifest_sha256": "b9f478751541e43e51b883549fb716f0699c7e6db8a41a7d1b1054cf4716c022",
+      "metrics": {
+        "i2t": {
+          "mrr": 0.6632483618325449,
+          "ndcg@10": 0.7134674626487492,
+          "recall@1": 0.5462653288740246,
+          "recall@10": 0.8896321070234113,
+          "recall@5": 0.8037904124860646
+        },
+        "t2i": {
+          "mrr": 0.6964490459263387,
+          "ndcg@10": 0.7404114823603998,
+          "recall@1": 0.5875139353400223,
+          "recall@10": 0.8940914158305463,
+          "recall@5": 0.8383500557413601
+        }
+      },
+      "model_id": "hf:Alibaba-NLP/gme-Qwen2-VL-2B-Instruct@9cfa6413f704a7c1cf5064d240748e10c876b286",
+      "precision": "cuda-bf16",
+      "profile": "historical-native-v2",
+      "prompt_mode": "v2_no_instructions",
+      "protocol": "v2-no-instructions-native-cosine-full-gallery-multi-positive",
+      "qrels_sha256": "37067442f861d56486bd51b24e8b4601476ba4cf7a417dbf5d46c21651efe074",
+      "query_counts": {
+        "i2t": 897,
+        "t2i": 897
+      },
+      "registration_sha256": "b0ebed1652b9eeb8d26512a719a703fcaf7dde1dd152bb8da9c4f3ddf4e4461c",
+      "source": "requested-reference-20261101",
+      "source_sha256": "a48d47926c1b21b4639ef17402a3629d9390bdb245ac3d42305680e9dafff9b0",
+      "text_gallery_sha256": "623073f8e455c58475aa6ae1a9e40132680417755b45c2ee8018d12d68f3c247",
+      "tokenization": {
+        "context_limit": 1800,
         "reason": "Native chat/prefix tokenization; raw-text lengths would omit template tokens",
         "status": "unavailable"
       }
